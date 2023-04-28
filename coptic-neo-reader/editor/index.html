@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Coptic New-Reader - Content Editor</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/71-smiling-face-with-horns.png" /> <!-- :D :D -->
+
+	<link rel="stylesheet" href="assets/material.css">
+	<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body onload="ContentEditor.init();">
+
+	<header class="inline">
+		<div class="input">
+			<input id="main-title" type="text" placeholder="Title">
+			<label>Title</label>
+		</div>
+		<button class="icon secondary justify-end" onclick="ContentEditor.open()">
+			<img src="assets/ic_folder.svg" alt="Load">
+		</button>
+		<button class="icon secondary" onclick="ContentEditor.download()">
+			<img src="assets/ic_download.svg" alt="Download">
+		</button>
+	</header>
+
+	<!-- sections -->
+	<!-- TODO use form (to check validity) -->
+	<main></main>
+
+	<!-- FAB -->
+	<button class="fab" onclick="ContentEditor.add()">
+		<img src="assets/ic_add.svg" alt="Add">
+	</button>
+
+	<input type="file" onchange="ContentEditor.load(this)" style="display: none;">
+
+	<script src="section.template.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+	max-width: 720px;
+	margin: auto;
+}
+
+section, header {
+	position: relative;
+	width: auto !important;
+	margin: 12px;
+	padding: 8px 12px;
+	border-radius: 12px;
+	background: #ece6f9;
+}
+header {
+	position: sticky;
+	top: 0;
+	margin: 0;
+	padding-top: 20px;
+	border-radius: 0;
+	background: var(--bg);
+	z-index: 1;
+}
+
+.content { margin-top: 28px; }
+.content textarea { min-height: 100px; }
+
+main:empty::before {
+	content: 'Start by adding sections using the plus button at the bottom right and when done, click on the download button';
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.close, .drag {
+	position: absolute;
+	top: -4px;
+	right: -48px;
+}
+.drag { top: 44px; }

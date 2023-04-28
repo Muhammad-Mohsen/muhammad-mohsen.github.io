@@ -1,0 +1,128 @@
+:root {
+	--bg: #fff;
+	--prime: #333;
+	--sec: #ccc;
+	--accent: #6e44d1;
+	--red: red;
+}
+
+/* RESETS */
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.margin { margin: 8px; }
+.justify-end { margin-left: auto; }
+
+.inline {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	gap: 12px;
+}
+.inline .input { width: auto; }
+.inline.equal .input { flex: 1 0 0; }
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 36px;
+	margin: 4px;
+	padding: 0 16px;
+	border: none;
+	border-radius: 28px;
+	color: var(--bg);
+	background: var(--accent);
+	font-weight: 500;
+	transition: 0.2s;
+	cursor: pointer;
+}
+button.secondary {
+	color: var(--accent);
+	background: var(--bg);
+}
+button.red {
+	color: var(--bg);
+	background: var(--red);
+}
+
+button.icon { max-width: 36px; min-width: 36px; }
+
+button:hover { filter: brightness(.8); }
+button:active { filter: brightness(.7); }
+
+/* FAB buttons */
+.fab {
+	position: fixed;
+	width: 56px;
+	height: 56px;
+	bottom: 24px;
+	right: 24px;
+	border-radius: 50%;
+	font-size: 28px;
+	box-shadow: 0px 3px 8px rgba(14, 54, 136, 0.2);
+}
+
+.fab.secondary.disabled { transform: scale(0); }
+.fab.scrolled { transform: scale(0); }
+
+.card {
+	margin: 12px 0;
+	padding: 12px;
+	border-radius: 6px;
+	border: 1px solid var(--sec);
+	/* box-shadow: 0px 3px 8px rgb(14 54 136 / 10%); */
+}
+
+/* INPUTS */
+.input {
+	position: relative;
+	width: 100%;
+}
+
+.input input, .input textarea, .input select {
+	width: 100%;
+	height: 48px;
+	border: none;
+	border-bottom: 1px solid var(--sec);
+	box-sizing: border-box;
+	padding: 24px 12px 4px 8px;
+	background: transparent;
+	font-size: 16px;
+	resize: vertical;
+	outline: none;
+	transition: 0.2s;
+}
+.input *::placeholder { color: transparent; }
+
+.input label {
+	position: absolute;
+	left: 4px;
+	top: 14px;
+	padding: 0 6px;
+	color: var(--prime);
+	pointer-events: none;
+	transition: 0.2s;
+}
+.input textarea + label {
+	top: 28px;
+}
+
+.input input:focus + label, .input input:not(:placeholder-shown) + label,
+.input select:focus + label, .input select:not(:placeholder-shown) + label,
+.input textarea:focus + label, .input textarea:not(:placeholder-shown) + label {
+	top: 4px;
+	color: var(--accent) !important;
+	font-size: 11px !important;
+	font-weight: bold;
+}
+
+.input input:focus, .input input:hover,
+.input select:focus, .input select:hover,
+.input textarea:focus, .input textarea:hover {
+	border-color: var(--accent);
+	box-shadow: 0 1px 0 0 var(--accent);
+}
