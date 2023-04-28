@@ -9,19 +9,20 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/71-smiling-face-with-horns.png" /> <!-- :D :D -->
 
-	<link rel="stylesheet" href="assets/material.css">
-	<link rel="stylesheet" href="assets/styles.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 <body onload="ContentEditor.init();">
 
 	<header class="inline">
-		<div class="input">
-			<input id="main-title" type="text" placeholder="Title">
+		<div class="input grow">
+			<input id="main-title" type="text" placeholder="Title" style="border: none; box-shadow: none;">
 			<label>Title</label>
 		</div>
 		<button class="icon secondary justify-end" onclick="ContentEditor.open()">
 			<img src="assets/ic_folder.svg" alt="Load">
 		</button>
+		<input type="file" onchange="ContentEditor.load(this)" style="display: none;" accept=".json">
+
 		<button class="icon secondary" onclick="ContentEditor.download()">
 			<img src="assets/ic_download.svg" alt="Download">
 		</button>
@@ -35,8 +36,6 @@
 	<button class="fab" onclick="ContentEditor.add()">
 		<img src="assets/ic_add.svg" alt="Add">
 	</button>
-
-	<input type="file" onchange="ContentEditor.load(this)" style="display: none;">
 
 	<script src="section.template.js"></script>
 	<script src="main.js"></script>
