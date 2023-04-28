@@ -3,6 +3,7 @@
 	--prime: #333;
 	--sec: #ccc;
 	--accent: #6e44d1;
+	--accent-transparent: #ece6f9;
 	--red: red;
 }
 
@@ -15,6 +16,7 @@ body {
 
 .margin { margin: 8px; }
 .justify-end { margin-left: auto; }
+.grow { flex-grow: 1; }
 
 .inline {
 	display: flex;
@@ -50,6 +52,7 @@ button.red {
 }
 
 button.icon { max-width: 36px; min-width: 36px; }
+button.icon img { width: 24px; height: 24px; }
 
 button:hover { filter: brightness(.8); }
 button:active { filter: brightness(.7); }
@@ -68,14 +71,6 @@ button:active { filter: brightness(.7); }
 
 .fab.secondary.disabled { transform: scale(0); }
 .fab.scrolled { transform: scale(0); }
-
-.card {
-	margin: 12px 0;
-	padding: 12px;
-	border-radius: 6px;
-	border: 1px solid var(--sec);
-	/* box-shadow: 0px 3px 8px rgb(14 54 136 / 10%); */
-}
 
 /* INPUTS */
 .input {
@@ -126,3 +121,57 @@ button:active { filter: brightness(.7); }
 	border-color: var(--accent);
 	box-shadow: 0 1px 0 0 var(--accent);
 }
+
+/* EDITOR-SPECIFIC */
+body {
+	max-width: 720px;
+	margin: auto;
+}
+
+section, header {
+	position: relative;
+	width: auto !important;
+	margin: 12px;
+	padding: 8px 12px;
+	border-radius: 12px;
+	background: #ece6f9;
+}
+header {
+	position: sticky;
+	top: 0;
+	margin: 0;
+	padding-top: 20px;
+	border-radius: 0;
+	background: var(--bg);
+	z-index: 1;
+}
+
+section { border: 1px solid var(--sec); }
+
+.content { margin-top: 28px; }
+.content textarea { min-height: 100px; }
+
+main:empty::before, main:empty::after {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 512px;
+	text-align: center;
+	transform: translateX(-50%);
+	color: #c9b4f8;
+}
+main:empty::before {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23ece6f9' fill-rule='evenodd' d='M20.5 3h-17c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1Zm-1 6V5h-15v4h15Zm0 10v-4h-15v4h15Zm-16-6h17c.55 0 1 .45 1 1v6c0 .55-.45 1-1 1h-17c-.55 0-1-.45-1-1v-6c0-.55.45-1 1-1Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+	width: 256px;
+	top: calc(50% - 256px)
+}
+main:empty::after {
+	content: 'Start by adding sections using the plus button at the bottom right and when done, click on the download button';
+}
+
+.close, .drag {
+	position: absolute;
+	top: -4px;
+	right: -48px;
+}
+.drag { top: 44px; }

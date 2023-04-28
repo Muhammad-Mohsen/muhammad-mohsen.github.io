@@ -1,5 +1,1 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="icon/navigation/unfold_more_24px">
-<path id="icon/navigation/unfold_more_24px_2" fill-rule="evenodd" clip-rule="evenodd" d="M15.17 9L12 5.82999L8.83008 9L7.41003 7.59L12 3L16.5801 7.59L15.17 9ZM8.83008 15L12 18.17L15.17 15L16.5901 16.41L12 21L7.42004 16.41L8.83008 15Z" fill="black" fill-opacity="0.54"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#000" fill-opacity=".54" fill-rule="evenodd" d="M15.17 9 12 5.83 8.83 9 7.41 7.59 12 3l4.58 4.59L15.17 9Zm-6.34 6L12 18.17 15.17 15l1.42 1.41L12 21l-4.58-4.59L8.83 15Z" clip-rule="evenodd"/></svg>
