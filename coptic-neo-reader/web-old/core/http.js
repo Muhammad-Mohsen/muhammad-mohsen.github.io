@@ -5,8 +5,7 @@ const HTTP = (() => {
 
 	async function get(path, headers) {
 		const response = await fetch(BASE_URL + path);
-		const json = await response.json();
-		console.log(json);
+		return await response.json();
 	}
 
 	return {
