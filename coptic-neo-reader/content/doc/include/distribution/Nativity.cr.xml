@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns="http://www.suscopts.org/CopticReader">   <Season id="NativityPeriod">      <Comment>         <Language id="English">            The following hymn may be said during the Distribution:         </Language>      </Comment>            <InsertDocument path="include/Geneylion"/>   </Season></Document>
