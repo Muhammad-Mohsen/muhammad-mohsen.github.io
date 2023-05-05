@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns="http://www.suscopts.org/CopticReader" Pascha="true">   <Title>      <Language id="English">Daytime Litanies and Conclusion</Language>   </Title>      <InsertDocument path="pascha/include/DaytimeLitaniesEmbed"/>   <InsertDocument path="pascha/include/Conclusion"/></Document>
