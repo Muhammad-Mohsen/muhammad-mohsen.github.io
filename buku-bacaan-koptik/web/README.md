@@ -1,0 +1,17 @@
+## TODO
+- home
+	- click handlers
+- list
+- reading
+	- loading & parsing resources
+	- outline
+	- search
+	- sub-components
+		- title (side-by-side)
+		- title (stacked)
+		- language columns (x2, and x3)
+- utils
+	- coptic date
+	- search highlight
+- Android wrapper with capacitor
+	- intercepting resource http calls

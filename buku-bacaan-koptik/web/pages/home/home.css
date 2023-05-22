@@ -1,0 +1,56 @@
+home header {
+	position: sticky;
+	top: 0;
+	padding: 20px 20px 48px;
+	background: var(--accent);
+	color: var(--sec);
+	z-index: 1;
+}
+
+home h1 {
+	margin: 0 0 16px;
+	font: 100 2.5rem/3rem Poppins;
+}
+
+home h4 {
+	margin: 0;
+	font-weight: 400;
+}
+
+home ul {
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	flex-wrap: wrap;
+	padding: 44px 20px 20px;
+}
+
+#copticDate { font: 400 1rem/1.25rem Poppins; }
+#gregorianDate { font: 300 .9rem/1.25rem Poppins; }
+
+home .header-buttons {
+	position: absolute;
+    bottom: 0;
+	display: flex;
+	gap: 16px;
+    transform: translateY(50%);
+}
+
+home .fab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	border-radius: 50px;
+	border: none;
+	background: var(--sec);
+	color: var(--accent);
+	box-shadow: 2px 4px 8px #00000026;
+}
+
+home ul .card {
+	width: 100%;
+	max-width: 400px;
+	min-height: 200px;
+}
