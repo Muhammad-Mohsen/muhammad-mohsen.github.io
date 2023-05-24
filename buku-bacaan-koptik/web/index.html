@@ -11,31 +11,39 @@
 
 	<link rel="stylesheet" href="styles.css">
 
-	<link rel="stylesheet" href="pages/home/home.css">
 	<link rel="stylesheet" href="components/card/card.css">
+	<link rel="stylesheet" href="components/list-item/list-item.css">
+
+	<link rel="stylesheet" href="pages/home/home.css">
+	<link rel="stylesheet" href="pages/details/details.css">
 
 </head>
 
 <body onload="HomePage.init();">
 
-	<home></home>
+	<home class="page show"></home>
 
-	<detail></detail>
+	<detail class="page"></detail>
 
-	<content></content>
+	<content class="page"></content>
 
 	<!-- data scripts -->
 	<script src="data/main-menu.js"></script>
 
 	<!-- core scripts -->
 	<script src="core/ext.js"></script>
+	<script src="core/router.js"></script>
 	<script src="core/http.js"></script>
 	<script src="core/cache.js"></script>
 	<script src="core/datetime.js"></script>
 
 	<!-- component scripts -->
-	<script src="pages/home/home.js"></script>
 	<script src="components/card/card.js"></script>
+	<script src="components/list-item/list-item.js"></script>
+
+	<!-- page scripts -->
+	<script src="pages/home/home.js"></script>
+	<script src="pages/details/details.js"></script>
 
 </body>
 </html>

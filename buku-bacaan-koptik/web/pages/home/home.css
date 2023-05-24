@@ -1,10 +1,11 @@
 home header {
 	position: sticky;
-	top: 0;
+	top: -150px;
 	padding: 20px 20px 48px;
 	background: var(--accent);
 	color: var(--sec);
 	z-index: 1;
+	box-shadow: 0 4px 4px #0004;
 }
 
 home h1 {
@@ -34,19 +35,6 @@ home .header-buttons {
 	display: flex;
 	gap: 16px;
     transform: translateY(50%);
-}
-
-home .fab {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 56px;
-	height: 56px;
-	border-radius: 50px;
-	border: none;
-	background: var(--sec);
-	color: var(--accent);
-	box-shadow: 2px 4px 8px #00000026;
 }
 
 home ul .card {

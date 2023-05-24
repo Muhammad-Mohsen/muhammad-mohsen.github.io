@@ -1322,3 +1322,28 @@ const mainMenu = [
 		constraints: undefined
 	}
 ];
+
+function setURI(base, menu) {
+	menu.forEach(m => {
+		m.uri = base + '/' + toURI(m.text.toLowerCase()?.replace(/ /g, '-'));
+		if (m.menu?.length) setURI(m.uri, m.menu);
+	});
+}
+
+function toURI(text) {
+	return text.toLowerCase()?.replace(/ /g, '-');
+}
+
+setURI('', mainMenu);
+
+function getEntry(uri) {
+	const parts = uri.split('/');
+	parts.shift();
+
+	let entry = { menu: mainMenu }; // to keep the symmetry
+	parts.forEach(p => entry = entry.menu.find(m => toURI(m.text) == p));
+
+	return entry;
+}
+
+// getEntry("/index/feasts/feast-of-the-cross")
