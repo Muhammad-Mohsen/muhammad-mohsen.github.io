@@ -31,18 +31,13 @@
 	--accent: #42628E;
 	--prime: #222;
 	--sec: #fff;
+	--brdr: #c7c7c7;
 
 	--radius: 8px;
 }
 
 * {
 	font-family: Poppins;
-}
-
-body {
-	margin: 0;
-	background: var(--bg);
-	overflow-x: hidden;
 }
 
 /* ICON FONT */
@@ -74,6 +69,13 @@ body {
 .ripple { transition: filter 0.5s; }
 .ripple:active { filter: brightness(.85); }
 
+body {
+	display: grid;
+	margin: 0;
+	background: var(--bg);
+	overflow-x: hidden;
+}
+
 body::before, header::before {
 	content: "";
 	position: fixed;
@@ -82,5 +84,31 @@ body::before, header::before {
 	opacity: 0.05;
 	background-size: 1500px;
     background-position: -450px -300px;
+	pointer-events: none;
 }
 header::before { position: absolute; }
+
+.page {
+	display: none;
+	opacity: 0;
+	transform: translateX(100vw);
+	transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.page.show {
+	display: block;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.fab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+	border-radius: 50px;
+	border: none;
+	background: var(--sec);
+	color: var(--accent);
+	box-shadow: 2px 4px 8px #00000026;
+}

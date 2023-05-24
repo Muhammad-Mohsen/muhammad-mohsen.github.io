@@ -7,21 +7,19 @@ const HomePage = (() => {
 	function init() {
 		element.innerHTML = template({
 			copticDate: new Date().toCoptic(),
-			gregorianDate: new Date().toUTCString(),
-			cards: createItems()
+			gregorianDate: new Date().toGregory(),
+			cards: createItems(mainMenu)
 		});
 	}
 
-	function createItems() {
+	function createItems(menu) {
 		let html = '';
-		mainMenu.forEach(i => {
+		menu.forEach(i => {
 			html += Card({
-				clickHandler: 'console.log(`there you go`)',
+				clickHandler: `Router.goto('${i.uri}')`,
 				src: i.img,
 				title: i.text
 			});
-
-			// TODO add click listener :D
 		});
 
 		return html;
