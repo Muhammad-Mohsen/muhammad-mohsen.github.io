@@ -8,7 +8,8 @@ const DetailsPage = (() => {
 
 		element.innerHTML = template({
 			header: data.text,
-			list: createItems(data.menu)
+			list: createItems(data.menu),
+			back: 'Router.back()'
 		});
 
 		element.classList.add('show');
@@ -34,7 +35,7 @@ const DetailsPage = (() => {
 	function template(params) {
 		return `
 		<header>
-			<button class="fab ripple"><span class="material-symbols-outlined">arrow_back</span></button>
+			<button class="fab ripple" onclick="${params.back}"><span class="material-symbols-outlined">arrow_back</span></button>
 			<h4 i18n>${params.header}</h4>
 		</header>
 
