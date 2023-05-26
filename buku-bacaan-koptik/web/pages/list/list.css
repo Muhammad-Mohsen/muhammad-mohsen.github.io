@@ -1,4 +1,4 @@
-detail header {
+list header {
 	position: sticky;
 	top: 0;
 	display: flex;
@@ -9,17 +9,17 @@ detail header {
 	z-index: 1;
 	box-shadow: 0 4px 4px #0004;
 }
-detail header .fab {
+list header .fab {
 	background: var(--accent);
 	color: var(--sec);
 	box-shadow: none;
 }
-detail header h4 {
+list header h4 {
 	margin: 0 8px;
 	font: 300 24px / 24px 'Poppins'
 }
 
-detail ul {
+list ul {
 	margin-top: 8px;
 	padding: 0;
 }

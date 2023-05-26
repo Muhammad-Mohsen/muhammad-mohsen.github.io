@@ -1331,7 +1331,7 @@ function setURI(base, menu) {
 }
 
 function toURI(text) {
-	return text.toLowerCase()?.replace(/ /g, '-');
+	return text.toLowerCase()?.replace(/ /g, '-')?.replace(/'/g, '');
 }
 
 setURI('', mainMenu);
@@ -1345,5 +1345,3 @@ function getEntry(uri) {
 
 	return entry;
 }
-
-// getEntry("/index/feasts/feast-of-the-cross")
