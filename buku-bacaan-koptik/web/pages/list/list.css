@@ -14,7 +14,7 @@ list header .fab {
 	color: var(--sec);
 	box-shadow: none;
 }
-list header h4 {
+list header h3 {
 	margin: 0 8px;
 	font: 300 24px / 24px 'Poppins'
 }

@@ -2,22 +2,14 @@ const ListPage = (() => {
 
 	let element = document.querySelector('list');
 
-	// menu uri initializer
-	function initFromUri(uri) {
-		const data = getEntry(uri);
-
+	function init(entry) {
 		element.innerHTML = template({
-			header: data.text,
-			list: createItems(data.menu),
-			back: 'Router.back()'
+			header: entry.text,
+			back: 'Router.back()',
+			list: createItems(entry.menu),
 		});
 
 		element.classList.add('show');
-	}
-
-	// raw data initializer
-	function initFromData(data) {
-
 	}
 
 	function createItems(menu) {
@@ -37,7 +29,7 @@ const ListPage = (() => {
 		return `
 		<header>
 			<button class="fab ripple" onclick="${params.back}"><span class="material-symbols-outlined">arrow_back</span></button>
-			<h4 i18n>${params.header}</h4>
+			<h3 i18n>${params.header}</h3>
 		</header>
 
 		<ul class="list">
@@ -46,8 +38,7 @@ const ListPage = (() => {
 	}
 
 	return {
-		initFromUri: initFromUri,
-		initFromData: initFromData
+		init: init,
 	}
 
 })();

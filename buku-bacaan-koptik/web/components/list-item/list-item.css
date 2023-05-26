@@ -6,7 +6,7 @@
 	/* give the background a bit of alpha so that the background shows through, and the 'ripple' effect shows when clicked */
 	background: #fff0d988;
 	border-bottom: 1px solid var(--brdr);
-	font-size: 18px;
+	font-size: 1.2rem;
 }
 
 .list-item .link-indicator {

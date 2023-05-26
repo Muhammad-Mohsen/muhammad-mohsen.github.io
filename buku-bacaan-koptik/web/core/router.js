@@ -15,10 +15,10 @@ const Router = (() => {
 			document.querySelector('home').classList.add('show');
 
 		} else if (entry?.menu) {
-			ListPage.initFromUri(route);
+			ListPage.init(entry);
 
 		} else if (entry?.path) {
-			console.log('TODO');
+			ContentPage.init(entry);
 
 		} else {
 			document.querySelector('home').classList.add('show');
