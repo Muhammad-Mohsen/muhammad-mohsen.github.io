@@ -89,15 +89,19 @@ body::before, header::before {
 header::before { position: absolute; }
 
 .page {
-	display: none;
+	grid-area: 1 / 1;
+	position: fixed;
+	inset: 0;
 	opacity: 0;
-	transform: translateX(100vw);
-	transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+	transform: translateY(20vh);
+	transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+	overflow-y: auto;
+	pointer-events: none;
 }
 .page.show {
-	display: block;
 	opacity: 1;
-	transform: translateX(0);
+	transform: translateY(0);
+	pointer-events: all;
 }
 
 .fab {

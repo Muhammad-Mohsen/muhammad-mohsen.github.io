@@ -15,15 +15,15 @@
 	<link rel="stylesheet" href="components/list-item/list-item.css">
 
 	<link rel="stylesheet" href="pages/home/home.css">
-	<link rel="stylesheet" href="pages/details/details.css">
+	<link rel="stylesheet" href="pages/list/list.css">
 
 </head>
 
-<body onload="HomePage.init();">
+<body onload="HomePage.init(); Router.process();">
 
 	<home class="page show"></home>
 
-	<detail class="page"></detail>
+	<list class="page"></list>
 
 	<content class="page"></content>
 
@@ -43,7 +43,7 @@
 
 	<!-- page scripts -->
 	<script src="pages/home/home.js"></script>
-	<script src="pages/details/details.js"></script>
+	<script src="pages/list/list.js"></script>
 
 </body>
 </html>

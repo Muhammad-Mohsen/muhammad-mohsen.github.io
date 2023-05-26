@@ -1,6 +1,6 @@
-const DetailsPage = (() => {
+const ListPage = (() => {
 
-	let element = document.querySelector('detail');
+	let element = document.querySelector('list');
 
 	// menu uri initializer
 	function initFromUri(uri) {
@@ -25,7 +25,8 @@ const DetailsPage = (() => {
 		menu.forEach(i => {
 			html += ListItem({
 				clickHandler: 'console.log(`there you go`)',
-				title: i.text
+				title: i.text,
+				clickHandler: `Router.goto('${i.uri}')`,
 			});
 		});
 
