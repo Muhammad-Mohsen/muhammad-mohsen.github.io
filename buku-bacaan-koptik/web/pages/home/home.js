@@ -17,7 +17,7 @@ const HomePage = (() => {
 		menu.forEach(i => {
 			html += Card({
 				clickHandler: `Router.goto('${i.uri}')`,
-				src: i.img,
+				src: i.image,
 				title: i.text
 			});
 		});

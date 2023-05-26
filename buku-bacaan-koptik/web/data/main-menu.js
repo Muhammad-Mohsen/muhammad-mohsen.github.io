@@ -3,7 +3,7 @@ const mainMenu = [
 	// AGPEYA
 	{
 		text: "Agpeya",
-		image: undefined,
+		image: 'assets/images/agpeya.jpg',
 		constraints: undefined,
 
 		menu: [
@@ -67,7 +67,7 @@ const mainMenu = [
 	// PSALMODY
 	{
 		text: "Psalmody",
-		image: undefined,
+		image: 'assets/images/menu_ic_church_services.jpg',
 		constraints: undefined,
 
 		menu: [
@@ -92,7 +92,7 @@ const mainMenu = [
 	// BIBLE
 	{
 		text: "Bible",
-		image: undefined,
+		image: 'assets/images/bible.jpg',
 		constraints: undefined,
 
 		menu: [
@@ -513,7 +513,7 @@ const mainMenu = [
 	// LITURGIES
 	{
 		text: "Liturgies",
-		image: undefined,
+		image: 'assets/images/liturgies.jpg',
 		constraints: undefined,
 
 		menu: [
@@ -607,7 +607,7 @@ const mainMenu = [
 	// READINGS
 	{
 		text: "Readings",
-		image: undefined,
+		image: 'assets/images/menu_ic_books.jpg',
 		constraints: undefined,
 
 		menu: [
@@ -669,7 +669,7 @@ const mainMenu = [
 	// MELODIES
 	{
 		text: "Melodies",
-		image: undefined,
+		image: 'assets/images/melodies.jpg',
 		constraints: undefined,
 		path: "",
 	},
@@ -677,7 +677,7 @@ const mainMenu = [
 	// INDEX
 	{
 		text: "Index",
-		image: undefined,
+		image: 'assets/images/index.jpg',
 		constraints: undefined,
 
 		menu: [
@@ -1307,7 +1307,7 @@ const mainMenu = [
 	// CLERGY
 	{
 		text: "Clergy",
-		image: undefined,
+		image: 'assets/images/clergy.jpg',
 		constraints: undefined,
 
 		menu: [
@@ -1318,7 +1318,7 @@ const mainMenu = [
 	// SPECIAL
 	{
 		text: "Special",
-		image: undefined,
+		image: 'assets/images/app_icon.png',
 		constraints: undefined
 	}
 ];

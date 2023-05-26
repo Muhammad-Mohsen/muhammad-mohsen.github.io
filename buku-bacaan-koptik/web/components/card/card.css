@@ -2,11 +2,15 @@ li.card {
 	position: relative;
 	border-radius: var(--radius);
 	background: var(--sec);
-	box-shadow: 2px 4px 8px 0 #ddd;
+	box-shadow: 2px 4px 8px 0 #ccc;
 	list-style: none;
 }
 
-li img { border-radius: var(--radius); }
+li img {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--radius);
+}
 
 li h5 {
 	position: absolute;
