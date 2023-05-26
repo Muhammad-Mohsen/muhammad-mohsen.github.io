@@ -2,7 +2,7 @@
 const HTTP = (() => {
 
 	const BASE_URL = location.host
-		? '' // ACTUAL
+		? 'assets/documents/' // ACTUAL
 		: 'https://muhammad-mohsen.github.io/buku-bacaan-koptik/web/assets/documents/'; // DEV
 
 	async function get(path) {
