@@ -1,17 +1,26 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 const HTTP = (() => {
 
-	const BASE_URL = 'https://muhammad-mohsen.github.io/coptic-neo-reader/content/';
+	const BASE_URL = location.host
+		? '' // ACTUAL
+		: 'https://muhammad-mohsen.github.io/buku-bacaan-koptik/web/assets/documents/'; // DEV
 
-	async function get(path, headers) {
-		const response = await fetch(BASE_URL + path);
-		return await response.json();
+	async function get(path) {
+		return new Promise((resolve, reject) => {
+			const request = new XMLHttpRequest();
+			request.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					resolve(request.responseXML?.documentElement);
+				}
+			};
+			request.open('GET', `${BASE_URL}${path}.cr.xml`, true);
+			// request.setRequestHeader('cache-control', 'max-age=1892160000'); // 1yr
+			request.send();
+		});
 	}
 
 	return {
-		BASE_URL: BASE_URL,
-
-		get: get,
+		get: get
 	}
 
 })();

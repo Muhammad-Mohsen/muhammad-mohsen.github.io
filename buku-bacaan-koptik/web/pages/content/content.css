@@ -1,0 +1,63 @@
+content header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	background: var(--accent);
+	color: var(--sec);
+	z-index: 1;
+	box-shadow: 0 4px 4px #0004;
+}
+content header .fab {
+	background: var(--accent);
+	color: var(--sec);
+	box-shadow: none;
+}
+content header h3 {
+	margin: 0 8px;
+	font: 300 24px / 24px 'Poppins'
+}
+content header h5 {
+	margin: 0 8px;
+	font: 500 14px / 14px 'Poppins'
+}
+
+content ul {
+	margin-top: 8px;
+	padding: 0;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.fab-container {
+	display: flex;
+    justify-content: center;
+	position: absolute;
+    inset: calc(100vh - 80px) auto auto calc(50vw - 64px);
+	border-radius: 50px;
+	box-shadow: 2px 4px 8px #0004;
+}
+
+.fab-container .fab {
+	position: relative;
+	height: 48px;
+	width: 64px;
+	border-radius: 0;
+}
+.fab-container .fab:first-child { border-radius: 50px 0 0 50px; }
+.fab-container .fab:last-child { border-radius: 0 50px 50px 0; }
+.fab-container .fab:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	width: 1px;
+	height: 24px;
+	background: var(--sec);
+}
+
+/* gives room for the floating-action-pill (fap :D) */
+main { padding-bottom: 100px; }

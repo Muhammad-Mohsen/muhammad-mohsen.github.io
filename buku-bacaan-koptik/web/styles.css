@@ -20,6 +20,19 @@
 }
 
 @font-face {
+	font-family: "Noto";
+	font-style: normal;
+	font-weight: normal;
+	src: url("assets/fonts/NotoSansArabic-Regular.ttf");
+}
+@font-face {
+	font-family: "Noto";
+	font-style: normal;
+	font-weight: 200;
+	src: url("assets/fonts/NotoSansArabic-Thin.ttf");
+}
+
+@font-face {
 	font-family: "Coptic";
 	font-style: normal;
 	font-weight: normal;

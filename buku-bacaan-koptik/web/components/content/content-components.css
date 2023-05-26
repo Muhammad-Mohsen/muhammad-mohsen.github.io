@@ -1,0 +1,98 @@
+language#Coptic, .Coptic { font-family: Coptic; }
+language#Arabic {
+	direction: rtl;
+	font-family: Noto;
+}
+
+/* titleelem */
+Comment, titleelem {
+	display: flex;
+}
+titleelem Language {
+	display: flex;
+    flex: 1 0 10%;
+    font-size: 1.25rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 4px;
+    color: var(--accent);
+}
+
+/* COMMENT */
+Comment {
+	display: flex;
+}
+Comment Language {
+	flex: 1 0 10%;
+	padding: 4px;
+	color: var(--accent);
+}
+
+Text {
+	display: flex;
+}
+Text Language {
+	flex: 1 0 10%;
+	min-width: 0;
+	padding: 4px;
+	text-align: start;
+}
+Text Language#English { order: 1; }
+Text Language#Arabic { order: 3; }
+Text Language#Coptic {
+	order: 2;
+	text-align: center;
+}
+
+/* SECTION */
+Section {
+	display: block;
+    margin: 4px;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    background: #42628e1a;
+}
+Section titleelem {
+	position: relative;
+	display: block;
+	padding: 12px;
+
+}
+Section titleelem Language {
+	justify-content: left;
+	text-align: left;
+    line-height: 1.25rem;
+}
+section[expanded] titleelem::after {
+	content: 'unfold_more';
+    font-family: 'Material Symbols Outlined';
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
+    position: absolute;
+    right: 16px;
+    top: calc(50% - 14px);
+    font-size: 24px;
+    color: var(--accent);
+}
+section[expanded="true"] titleelem { border-bottom: 1px solid var(--accent); }
+section[expanded="true"] titleelem::after { content: 'unfold_less'; }
+section[expanded="false"] titleelem ~ * { display: none; }
+
+/* ROLE */
+Role {
+
+}
+Role Text {
+
+}
+Role Text Language#English {
+
+}
+Role Text Language#Arabic {
+
+}
+Role Text Language#Coptic {
+
+}
+
+content main ul { padding-inline-start: 40px; }

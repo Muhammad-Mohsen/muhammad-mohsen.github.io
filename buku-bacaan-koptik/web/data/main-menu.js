@@ -11,13 +11,13 @@ const mainMenu = [
 				text: "1st Hour",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - 1st Hour"
 			},
 			{
 				text: "3rd Hour",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - 3rd Hour"
 			},
 			{
 				text: "6th Hour",
@@ -1344,4 +1344,12 @@ function getEntry(uri) {
 	parts.forEach(p => entry = entry.menu.find(m => toURI(m.text) == p));
 
 	return entry;
+}
+
+function getParent(uri) {
+	const parts = uri.split('/');
+	parts.shift();
+	parts.pop();
+
+	return getEntry(`/${parts.join('/')}`);
 }
