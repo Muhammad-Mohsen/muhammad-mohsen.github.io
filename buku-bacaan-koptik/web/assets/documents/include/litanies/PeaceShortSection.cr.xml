@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns="http://www.suscopts.org/CopticReader">   <Section expanded="true">      <Title>         <Language id="English">The Litany of Peace</Language>         <Language id="Arabic">أوشية السلام</Language>      </Title>            <InsertDocument path="include/litanies/PeaceShort"/>   </Section></Document>
