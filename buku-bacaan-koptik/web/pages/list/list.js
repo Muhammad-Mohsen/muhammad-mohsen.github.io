@@ -16,7 +16,6 @@ const ListPage = (() => {
 		let html = '';
 		menu.forEach(i => {
 			html += ListItem({
-				clickHandler: 'console.log(`there you go`)',
 				title: i.text,
 				clickHandler: `Router.goto('${i.uri}')`,
 			});

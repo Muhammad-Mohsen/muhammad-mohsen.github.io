@@ -23,37 +23,37 @@ const mainMenu = [
 				text: "6th Hour",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - 6th Hour"
 			},
 			{
 				text: "9th Hour",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - 9th Hour"
 			},
 			{
 				text: "11th Hour",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - 11th Hour"
 			},
 			{
 				text: "12th Hour",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - 12th Hour"
 			},
 			{
 				text: "Veil",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - Veil"
 			},
 			{
 				text: "Midnight",
 				constraints: undefined,
 				image: undefined,
-				path: ""
+				path: "agpeya/Agpeya - Midnight"
 			},
 			{
 				text: "Prayers",
