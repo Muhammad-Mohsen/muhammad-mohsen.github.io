@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns="http://www.suscopts.org/CopticReader" IgnoreCurrentSeason="true" IgnoreGroups="true">   <ForceSeason id="All">      <InsertDocument path="melodies/include/Saints"/>   </ForceSeason></Document>
