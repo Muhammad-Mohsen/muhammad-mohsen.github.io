@@ -4,11 +4,11 @@ language#Arabic {
 	font-family: Noto;
 }
 
-/* titleelem */
-Comment, titleelem {
+/* title-html */
+Comment, title-html {
 	display: flex;
 }
-titleelem Language {
+title-html Language {
 	display: flex;
     flex: 1 0 10%;
     font-size: 1.25rem;
@@ -53,18 +53,18 @@ Section {
     border-radius: 6px;
     background: #42628e1a;
 }
-Section titleelem {
+Section title-html {
 	position: relative;
 	display: block;
 	padding: 12px;
 
 }
-Section titleelem Language {
+Section title-html Language {
 	justify-content: left;
 	text-align: left;
     line-height: 1.25rem;
 }
-section[expanded] titleelem::after {
+section[expanded] title-html::after {
 	content: 'unfold_more';
     font-family: 'Material Symbols Outlined';
     font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
@@ -74,9 +74,9 @@ section[expanded] titleelem::after {
     font-size: 24px;
     color: var(--accent);
 }
-section[expanded="true"] titleelem { border-bottom: 1px solid var(--accent); }
-section[expanded="true"] titleelem::after { content: 'unfold_less'; }
-section[expanded="false"] titleelem ~ * { display: none; }
+section[expanded="true"] title-html { border-bottom: 1px solid var(--accent); }
+section[expanded="true"] title-html::after { content: 'unfold_less'; }
+section[expanded="false"] title-html ~ * { display: none; }
 
 /* ROLE */
 Role {
