@@ -15,21 +15,20 @@ So, I this app is me putting my money where my mouth is.
 	- calendar
 - DONE - list
 - reading
-	- DONE-ISH - loading & parsing resources
+	- DONE - loading & parsing resources
 	- DONE - outline
 	- DONE - search
 - constraints
 - utils
-	- DONE - coptic date
-- editor
-	- language selector
-	- load file
-	- processing
+	- coptic date
+- DONE - editor
+	- DONE - load file
+	- DONE - processing
 		- add `content-editable` attr
 		- render using `content component` (ignoring the `InsertDocument`)
 		- add closing tags to `InsertDocument`
 		- switch out the `Language` value
-	- save file
+	- DONE - save file
 		- dump the `innerHTML` to an anchor tag
 
 - Android wrapper with capacitor
