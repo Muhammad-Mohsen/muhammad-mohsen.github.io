@@ -1,24 +1,29 @@
 const ContentPage = (() => {
 
 	const element = document.querySelector('content');
+	let searchContainer, outlineContainer, documentContainer;
 
 	async function init(entry) {
-
 		element.innerHTML = template({
 			header: entry.text,
-			subHeader: getParent(entry.uri).text,
-			back: 'Router.back()',
-			onSearch: 'console.log(`SEARCH`)',
-			onOutline: 'console.log(`OUTLINE`)'
+			subHeader: getParent(entry.uri)?.text,
 		});
+
+		searchContainer = element.querySelector('.search-container');
+		outlineContainer = element.querySelector('aside');
+		documentContainer = element.querySelector('main');
+
+		toggleSearchMode(false); // reset the search (if any previous search was active!)
 
 		element.classList.add('show');
 
 		const doc = await renderDocument(entry.path);
-		element.querySelector('main').innerHTML = postProcessDocument(doc);
+		documentContainer.innerHTML = postProcessDocument(doc);
 
 		element.querySelector('loading').classList.remove('show'); // hide the loading indicator
 		element.querySelector('#document-actions').classList.add('show'); // show document actions
+
+		DocumentOutline.create(documentContainer, outlineContainer);
 	}
 
 	async function renderDocument(path) {
@@ -54,28 +59,38 @@ const ContentPage = (() => {
 			// remove extra 'document' elements
 			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">/gi, '')
 			.replace(/<\/document>/gi, '')
-			.replace(/data-section-header="true"/gi, `onclick="this.closest('section').setAttribute('expanded', this.closest('section').getAttribute('expanded') == 'false');"`);
+			.replace(/data-section-header="true"/gi, `onclick="ContentPage.sectionExpandCollapse(this);"`);
+	}
+
+	function sectionExpandCollapse(target) {
+		const section = target.closest('section');
+		section.setAttribute('expanded', section.getAttribute('expanded') == 'false');
 	}
 
 	function toggleSearchMode(force) {
-		element.classList.toggle('search-mode', force);
+		searchContainer.classList.toggle('show', force);
+		DocumentSearch.reset();
+		searchContainer.querySelector('input').value = '';
+		searchContainer.querySelector('#search-index').innerHTML = '';
 	}
 
-	// will have to use this apparently https://linuxhint.com/highlight-text-using-javascript
-	// window.find doesn't work for us because it only scrolls the body element, unfortunately
-	function search(backwardSearch) {
-		const searchBox = element.querySelector('input[type="search"]');
-		return window.find(searchBox.value, false, backwardSearch, true, false, false, false);
-	}
+	function search() {
+		// window.find doesn't work for us because it only scrolls the body element, unfortunately
+		// return window.find(element.querySelector('input').value, false, backwardSearch, true, false, false, false);
 
-	function getOutline() {
-		return [...element.querySelectorAll('title-html')];
+		DocumentSearch.reset(element);
+		DocumentSearch.exec(documentContainer, element.querySelector('input').value);
+		searchContainer.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);
+	}
+	function searchScroll(direction) {
+		DocumentSearch.scroll(element, direction);
+		element.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);
 	}
 
 	function template(params) {
 		return `
 		<header>
-			<button class="fab ripple" onclick="${params.back}"><span class="material-symbols-outlined">arrow_back</span></button>
+			<button class="fab ripple" onclick="Router.back()"><span class="material-symbols-outlined">arrow_back</span></button>
 			<div class="col">
 				<h5 i18n>${params.subHeader}</h5>
 				<h3 i18n>${params.header}</h3>
@@ -83,16 +98,21 @@ const ContentPage = (() => {
 
 			<!-- a bit of an unfortunate positioning, but I'll live with it -->
 			<div id="document-actions" class="actions-container">
-				<button class="fab ripple"><span class="material-symbols-outlined">format_align_left</span></button>
+				<button class="fab ripple" onclick="DocumentOutline.toggle(true)"><span class="material-symbols-outlined">format_align_left</span></button>
 				<button class="fab ripple" onclick="ContentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
 			</div>
 
 			<div class="actions-container search-container">
-				<input type="search">
-				<button class="fab ripple" onclick="ContentPage.search(true)"><span class="material-symbols-outlined">expand_less</span></button>
-				<button class="fab ripple" onclick="ContentPage.search(false)"><span class="material-symbols-outlined">expand_more</span></button>
+				<input onchange="ContentPage.search()">
+				<span id="search-index"></span>
+				<button class="fab ripple" onclick="ContentPage.searchScroll(false)"><span class="material-symbols-outlined">expand_less</span></button>
+				<button class="fab ripple" onclick="ContentPage.searchScroll(true)"><span class="material-symbols-outlined">expand_more</span></button>
 				<button class="fab ripple" onclick="ContentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
 			</div>
+
+			<!-- document outline -->
+			<aside><aside>
+
 		</header>
 		<loading class="show"></loading>
 
@@ -104,8 +124,11 @@ const ContentPage = (() => {
 	return {
 		init: init,
 
+		sectionExpandCollapse: sectionExpandCollapse,
+
 		toggleSearchMode: toggleSearchMode,
 		search: search,
+		searchScroll: searchScroll,
 	}
 
 })();
