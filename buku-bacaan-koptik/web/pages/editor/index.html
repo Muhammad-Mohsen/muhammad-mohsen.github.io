@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#42628e" />
+
+	<title>Buku Bacaan Koptik - Content Editor</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/71-smiling-face-with-horns.png" />
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../../components/content/content-components.css">
+</head>
+
+<body onload="ContentEditor.init();">
+
+	<header>
+		<h5>Buku Bacaan Koptik</h5>
+		<h1>Content Editor</h1>
+	</header>
+
+	<!-- document -->
+	<main></main>
+
+	<input type="file" onchange="ContentEditor.load(this)" style="display: none;" accept=".xml">
+	<button class="fab ripple primary" onclick="ContentEditor.open()"><span class="material-symbols-outlined">folder_open</span></button>
+	<button class="fab ripple secondary" onclick="ContentEditor.download()"><span class="material-symbols-outlined">download</span></button>
+
+	<script src="editor.js"></script>
+
+</body>
+</html>

@@ -73,7 +73,6 @@ const ContentPage = (() => {
 		searchContainer.querySelector('input').value = '';
 		searchContainer.querySelector('#search-index').innerHTML = '';
 	}
-
 	function search() {
 		// window.find doesn't work for us because it only scrolls the body element, unfortunately
 		// return window.find(element.querySelector('input').value, false, backwardSearch, true, false, false, false);
