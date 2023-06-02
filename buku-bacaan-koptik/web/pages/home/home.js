@@ -36,7 +36,7 @@ const HomePage = (() => {
 
 			<div class="header-buttons">
 				<button class="fab ripple"><span class="material-symbols-outlined">settings</span></button>
-				<button class="fab ripple"><span class="material-symbols-outlined">info</span></button>
+				<button class="fab ripple" onclick="Router.goto('/about')"><span class="material-symbols-outlined">info</span></button>
 				<button class="fab ripple"><span class="material-symbols-outlined">calendar_today</span></button>
 			</div>
 		</header>
