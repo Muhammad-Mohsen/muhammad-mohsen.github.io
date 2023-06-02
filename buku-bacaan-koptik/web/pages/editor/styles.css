@@ -79,6 +79,17 @@
 	'opsz' 48
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #fff; }
+::-webkit-scrollbar-thumb {
+	background: var(--accent);
+	border-radius: 5px;
+	border: 2px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--prime); }
+
+
 .ripple { transition: filter 0.5s; }
 .ripple:active { filter: brightness(.85); }
 
@@ -101,24 +112,29 @@ body::before {
 
 header {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	padding: 8px 24px;
 	border-bottom: 1px solid var(--brdr);
 	color: var(--accent);
 }
+header img {
+	width: 64px;
+	filter: hue-rotate(241deg);
+	margin-inline-end: 12px;
+}
 h1 {
 	margin: 0;
-	font-weight: 300;
+	font-weight: 400;
+	line-height: 2rem;
 }
 h5 {
-	margin: 0;
+	margin: 0 2px;
 	font-weight: 500;
 }
 
 main {
 	height: calc(100dvh - 86px);
-	padding: 0 4px;
+    padding: 4px;
 	overflow-y: auto;
 }
 
@@ -139,7 +155,7 @@ main:empty::before {
 	justify-content: center;
 	width: 56px;
 	height: 56px;
-	border-radius: 50px;
+	border-radius: 12px;
 	border: none;
 	background: var(--accent);
 	color: var(--sec);
