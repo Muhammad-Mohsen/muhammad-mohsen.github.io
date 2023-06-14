@@ -1,4 +1,4 @@
-content header {
+document header {
 	position: sticky;
 	top: 0;
 	display: flex;
@@ -9,21 +9,21 @@ content header {
 	z-index: 1;
 	box-shadow: 0 4px 4px #0004;
 }
-content header .fab {
+document header .fab {
 	background: var(--accent);
 	color: var(--sec);
 	box-shadow: none;
 }
-content header h3 {
+document header h3 {
 	margin: 0 8px;
 	font: 300 24px / 24px 'Poppins'
 }
-content header h5 {
+document header h5 {
 	margin: 0 8px;
 	font: 500 14px / 14px 'Poppins'
 }
 
-content ul {
+document ul {
 	margin-top: 8px;
 	padding: 0;
 }
@@ -66,7 +66,7 @@ content ul {
 main { padding-bottom: 100px; }
 
 /* SEARCH */
-content .search-container {
+document .search-container {
 	inset: calc(100dvh - 80px) 16px auto 16px;
 	color: var(--accent);
 	background: transparent;
@@ -74,12 +74,12 @@ content .search-container {
 	transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 	pointer-events: none;
 }
-content .search-container.show {
+document .search-container.show {
 	transform: scaleX(1);
 	pointer-events: all;
 }
 
-content .search-container input {
+document .search-container input {
 	width: 100%;
 	height: 48px;
 	padding: 8px 16px;
@@ -91,11 +91,11 @@ content .search-container input {
 	outline: none;
 }
 
-content .search-container .actions-container {
+document .search-container .actions-container {
 	inset: 0 0 auto auto;
 	box-shadow: none;
 }
-content .search-container .actions-container .fab { width: 48px; }
+document .search-container .actions-container .fab { width: 48px; }
 
 mark {
 	padding: 0 4px;

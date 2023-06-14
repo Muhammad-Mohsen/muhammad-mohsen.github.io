@@ -11,16 +11,22 @@ So, I this app is me putting my money where my mouth is.
 - home
 	- DONE - click handlers
 	- settings
+		- app language (radio)
+		- font size (slider)
+		- document languages (checkboxes)
+		- comments (single checkbox)
+		- roles (checkboxes)
+		- day transition (time input)
+		- non-customary prayers (single checkbox)
 	- about the season
-	- calendar
+	- calendar (seasons)
 - DONE - list
-- reading
+- DONE - reading
 	- DONE - loading & parsing resources
 	- DONE - outline
 	- DONE - search
 - constraints
-- utils
-	- coptic date
+- coptic date
 - DONE - editor
 	- DONE - load file
 	- DONE - processing
@@ -33,7 +39,24 @@ So, I this app is me putting my money where my mouth is.
 
 - Android wrapper with capacitor
 	- build the app to a `dist` directory
-	- intercepting resource http calls
+	- add a manifset file or whatever they need
+	- load documents from assets
+		- apparently, `Filesystem plugin` is all that is needed
+```
+import { Filesystem } from '@capacitor/filesystem';
+
+const filesystem = new Filesystem();
+
+filesystem.readFile('assets/my-asset.png', (err, data) => {
+  if (err) {
+    console.log(err);
+    return;
+  }
+
+  // Do something with the asset data.
+});
+```
+
 
 ## Environment Setup
 
