@@ -49,6 +49,15 @@
 
 	--radius: 8px;
 }
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #1a1817;
+		--accent: #515f72;
+		--prime: #eee;
+		--sec: #000;
+		--brdr: #c7c7c7;
+	}
+}
 
 * {
 	font-family: Poppins;
