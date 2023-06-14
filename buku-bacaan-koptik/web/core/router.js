@@ -18,7 +18,15 @@ const Router = (() => {
 			ListPage.init(entry);
 
 		} else if (entry?.path) {
-			ContentPage.init(entry);
+			DocumentPage.init(entry);
+
+		} else if (route == '/about') {
+			DocumentPage.init({ text: 'About The Season', path: 'About The Season', uri: 'About The Season' });
+
+		} else if (route == 'settings') {
+
+		} else if (route == 'calendar') {
+
 
 		} else {
 			document.querySelector('home').classList.add('show');

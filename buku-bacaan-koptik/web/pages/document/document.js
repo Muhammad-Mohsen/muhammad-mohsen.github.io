@@ -1,6 +1,6 @@
-const ContentPage = (() => {
+const DocumentPage = (() => {
 
-	const element = document.querySelector('content');
+	const element = document.querySelector('document');
 	let searchContainer, outlineContainer, documentContainer;
 
 	async function init(entry) {
@@ -59,7 +59,7 @@ const ContentPage = (() => {
 			// remove extra 'document' elements
 			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">/gi, '')
 			.replace(/<\/document>/gi, '')
-			.replace(/data-section-header="true"/gi, `onclick="ContentPage.sectionExpandCollapse(this);"`);
+			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
 	}
 
 	function sectionExpandCollapse(target) {
@@ -98,15 +98,15 @@ const ContentPage = (() => {
 			<!-- a bit of an unfortunate positioning, but I'll live with it -->
 			<div id="document-actions" class="actions-container">
 				<button class="fab ripple" onclick="DocumentOutline.toggle(true)"><span class="material-symbols-outlined">format_align_left</span></button>
-				<button class="fab ripple" onclick="ContentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
+				<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
 			</div>
 
 			<div class="actions-container search-container">
-				<input onchange="ContentPage.search()">
+				<input onchange="DocumentPage.search()">
 				<span id="search-index"></span>
-				<button class="fab ripple" onclick="ContentPage.searchScroll(false)"><span class="material-symbols-outlined">expand_less</span></button>
-				<button class="fab ripple" onclick="ContentPage.searchScroll(true)"><span class="material-symbols-outlined">expand_more</span></button>
-				<button class="fab ripple" onclick="ContentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
+				<button class="fab ripple" onclick="DocumentPage.searchScroll(false)"><span class="material-symbols-outlined">expand_less</span></button>
+				<button class="fab ripple" onclick="DocumentPage.searchScroll(true)"><span class="material-symbols-outlined">expand_more</span></button>
+				<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
 			</div>
 
 			<!-- document outline -->
