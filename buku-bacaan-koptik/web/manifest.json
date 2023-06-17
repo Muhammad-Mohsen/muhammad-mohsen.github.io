@@ -1,0 +1,13 @@
+{
+  "name": "Buku Bacaan Koptik",
+  "short_name": "Buku Bacaan Koptik",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/images/app-logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#fff0d9",
+  "theme_color": "#42628e"
+}

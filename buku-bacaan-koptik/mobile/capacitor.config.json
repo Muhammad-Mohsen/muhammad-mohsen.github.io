@@ -1,0 +1,11 @@
+{
+  "appId": "com.koptik.bacaan.buku",
+  "appName": "Buku Bacaan Koptik",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
