@@ -1,6 +1,7 @@
-// import { mainMenu } from "../../data/main-menu";
+import { Card } from "../../components/card/card.js";
+import { MainMenu } from "../../data/main-menu.js";
 
-const HomePage = (() => {
+export const HomePage = (() => {
 
 	let element = document.querySelector('home');
 
@@ -8,7 +9,7 @@ const HomePage = (() => {
 		element.innerHTML = template({
 			copticDate: new Date().toCoptic(),
 			gregorianDate: new Date().toGregory(),
-			cards: createItems(mainMenu)
+			cards: createItems(MainMenu.DATA)
 		});
 	}
 

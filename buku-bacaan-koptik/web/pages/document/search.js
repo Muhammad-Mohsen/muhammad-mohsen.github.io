@@ -1,10 +1,12 @@
 // I can't believe I had to do all this because the window.find couldn't scroll!!!
-const DocumentSearch = (() => {
+export const DocumentSearch = (() => {
 
 	let current = undefined;
 	let matches = [];
 
 	function exec(container, query) {
+		// window.find doesn't work for us because it only scrolls the body element, unfortunately
+		// return window.find(element.querySelector('input').value, false, backwardSearch, true, false, false, false);
 
 		if (container.children.length) { // element has child elements (not child nodes)
 			for (let c of [...container.childNodes]) {

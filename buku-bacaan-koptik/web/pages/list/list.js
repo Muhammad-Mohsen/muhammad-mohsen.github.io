@@ -1,11 +1,13 @@
-const ListPage = (() => {
+import { ListItem } from "../../components/list-item/list-item.js";
+
+export const ListPage = (() => {
 
 	let element = document.querySelector('list');
 
 	function init(entry) {
 		element.innerHTML = template({
 			header: entry.text,
-			back: 'Router.back()',
+			back: 'Router.back();',
 			list: createItems(entry.menu),
 		});
 

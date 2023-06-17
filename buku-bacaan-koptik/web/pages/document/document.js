@@ -1,4 +1,9 @@
-const DocumentPage = (() => {
+import { HTTP } from "../../core/http.js";
+import { MainMenu } from "../../data/main-menu.js";
+import { DocumentOutline } from "./outline.js";
+import { DocumentSearch } from "./search.js";
+
+export const DocumentPage = (() => {
 
 	const element = document.querySelector('document');
 	let searchContainer, outlineContainer, documentContainer;
@@ -6,7 +11,7 @@ const DocumentPage = (() => {
 	async function init(entry) {
 		element.innerHTML = template({
 			header: entry.text,
-			subHeader: getParent(entry.uri)?.text,
+			subHeader: MainMenu.getParent(entry.uri)?.text,
 		});
 
 		searchContainer = element.querySelector('.search-container');
@@ -74,9 +79,6 @@ const DocumentPage = (() => {
 		searchContainer.querySelector('#search-index').innerHTML = '';
 	}
 	function search() {
-		// window.find doesn't work for us because it only scrolls the body element, unfortunately
-		// return window.find(element.querySelector('input').value, false, backwardSearch, true, false, false, false);
-
 		DocumentSearch.reset(element);
 		DocumentSearch.exec(documentContainer, element.querySelector('input').value);
 		searchContainer.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);

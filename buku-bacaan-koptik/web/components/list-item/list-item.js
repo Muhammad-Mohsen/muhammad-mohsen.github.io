@@ -1,4 +1,4 @@
-const ListItem = (params) => {
+export const ListItem = (params) => {
 
 	const dataAttr = params.data ? `data="${params.data}"` : '';
 

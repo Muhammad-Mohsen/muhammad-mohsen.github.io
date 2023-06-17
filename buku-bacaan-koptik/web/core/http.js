@@ -1,5 +1,5 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-const HTTP = (() => {
+export const HTTP = (() => {
 
 	const BASE_URL = 'assets/documents/';
 
