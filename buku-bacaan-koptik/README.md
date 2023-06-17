@@ -37,26 +37,7 @@ So, I this app is me putting my money where my mouth is.
 	- DONE - save file
 		- dump the `innerHTML` to an anchor tag
 
-- Android wrapper with capacitor
-	- build the app to a `dist` directory
-	- add a manifset file or whatever they need
-	- load documents from assets
-		- apparently, `Filesystem plugin` is all that is needed
-```
-import { Filesystem } from '@capacitor/filesystem';
-
-const filesystem = new Filesystem();
-
-filesystem.readFile('assets/my-asset.png', (err, data) => {
-  if (err) {
-    console.log(err);
-    return;
-  }
-
-  // Do something with the asset data.
-});
-```
-
+- DONE - Android wrapper with capacitor
 
 ## Environment Setup
 
@@ -72,6 +53,13 @@ This one gave great results, but it failed to render some of the arabic characte
 No setup necessary!
 Just run index.html (or use IIS for example, create an application point it to the `web` folder, and just browse)
 
+### Capacitor App
+This is a Capacitor app that is used to create the actual Android app.
+- run `npm install`
+- run `npm run build`
+- run `npx capacitor sync android`
+- open Android Studio and build the app!
+
 ### web-ng (incomplete code)
 - Go to your new project: cd .\web-ng
 - Run ionic serve within the app directory to see your app in the browser
@@ -79,5 +67,3 @@ Just run index.html (or use IIS for example, create an application point it to t
 - Generate your app icon and splash screens using cordova-res --skip-config --copy
 - Explore the Ionic docs for components, tutorials, and more: https://ion.link/docs
 - Building an enterprise app? Ionic has Enterprise Support and Features: https://ion.link/enterprise-edition
-
-### Android App (TODO)

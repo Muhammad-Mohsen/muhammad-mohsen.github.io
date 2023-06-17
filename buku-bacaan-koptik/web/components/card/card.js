@@ -1,4 +1,4 @@
-const Card = (params) => {
+export const Card = (params) => {
 
 	function template(params) {
 		return `<li onclick="${params.clickHandler}" data="${params.data}" class="card ripple">

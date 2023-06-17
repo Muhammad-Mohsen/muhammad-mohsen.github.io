@@ -1,5 +1,5 @@
 // I can't believe I had to do all this because the window.find couldn't scroll!!!
-const DocumentOutline = (() => {
+export const DocumentOutline = (() => {
 
 	const HEADER_TEMPLATE = '<button id="close-outline" class="fab ripple" onclick="DocumentOutline.toggle()"><span class="material-symbols-outlined">close</span></button>';
 
