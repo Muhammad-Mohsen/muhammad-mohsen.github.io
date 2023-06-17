@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Buku Bacaan Koptik</string>
+    <string name="title_activity_main">Buku Bacaan Koptik</string>
+    <string name="package_name">com.koptik.bacaan.buku</string>
+    <string name="custom_url_scheme">com.koptik.bacaan.buku</string>
+</resources>

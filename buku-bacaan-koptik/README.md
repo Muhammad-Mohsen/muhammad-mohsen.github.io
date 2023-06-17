@@ -60,7 +60,15 @@ This is a Capacitor app that is used to create the actual Android app.
 - run `npx capacitor sync android`
 - open Android Studio and build the app!
 
-### web-ng (incomplete code)
+#### Generating App Icon & Splash Screen
+- The `www/manifest.json` file is needed for the assets package to work!
+- run the below command
+```
+npx @capacitor/assets generate --iconBackgroundColor #fff0d9 --iconBackgroundColorDark #fff0d9 --splashBackgroundColor #fff0d9 --splashBackgroundColorDark #fff0d9
+```
+More info [here](https://github.com/ionic-team/capacitor-assets)
+
+### web-ng (incomplete code) - DELETED in 4476f262bc397607dd3048ec2e4e3e2342f65fa3
 - Go to your new project: cd .\web-ng
 - Run ionic serve within the app directory to see your app in the browser
 - Run ionic capacitor add to add a native iOS or Android project using Capacitor
