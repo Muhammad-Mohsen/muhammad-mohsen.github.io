@@ -25,6 +25,8 @@ So, I this app is me putting my money where my mouth is.
 	- DONE - loading & parsing resources
 	- DONE - outline
 	- DONE - search
+	- links
+		<linkdocument path=""
 - constraints
 - coptic date
 - DONE - editor

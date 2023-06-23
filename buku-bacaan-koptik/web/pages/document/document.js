@@ -57,13 +57,13 @@ export const DocumentPage = (() => {
 			.replace(/�/gi, '')
 
 			// title element can only have text nodes, so we change it so it renders its inner HTML correctly
-			.replace(/<title>/gi, '<title-html>')
-			.replace(/<title /gi, '<title-html ')
+			.replace(/<title/gi, '<title-html')
 			.replace(/<\/title>/gi, '</title-html>')
 
 			// remove extra 'document' elements
 			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">/gi, '')
 			.replace(/<\/document>/gi, '')
+
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
 	}
 
