@@ -10,14 +10,14 @@ So, I this app is me putting my money where my mouth is.
 ## TODO
 - home
 	- DONE - click handlers
-	- settings
-		- app language (radio)
-		- font size (slider)
-		- document languages (checkboxes)
-		- comments (single checkbox)
-		- roles (checkboxes)
-		- day transition (time input)
-		- non-customary prayers (single checkbox)
+	- DONE - settings
+		- X - app language (radio)
+		- DONE - font size (slider)
+		- DONE - document languages (checkboxes)
+		- DONE - comments (single checkbox)
+		- DONE - roles (checkboxes)
+		- DONE - day transition (time input)
+		- DONE - non-customary prayers (single checkbox)
 	- about the season
 	- calendar (seasons)
 - DONE - list
@@ -27,6 +27,7 @@ So, I this app is me putting my money where my mouth is.
 	- DONE - search
 	- links
 		<linkdocument path=""
+	- apply settings
 - constraints
 - coptic date
 - DONE - editor

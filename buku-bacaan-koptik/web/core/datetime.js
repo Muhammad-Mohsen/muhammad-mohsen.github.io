@@ -1,5 +1,45 @@
 // DateTime extensions
 
+/*
+coptic seasons & months
+
+Akhet
+	Thout
+	Paopi
+	Hathor
+	Koiak
+
+Proyet, Peret, Poret
+	Tobi
+	Meshir
+	Paremhat
+	Parmouti
+
+Shomu or Shemu
+	Pashons
+	Paoni
+	Epip
+	Mesori
+	Pi Kogi Enavot
+*/
+
+const MONTHS_MAP = {
+	January: 'Thout',
+	February: 'Paopi',
+	March: 'Hathor',
+	April: 'Koiak',
+	May: 'Tobi',
+	June: 'Meshir',
+	July: 'Paremhat',
+	August: 'Parmouti',
+	September: 'Pashons',
+	October: 'Paoni',
+	November: 'Epip',
+	December: 'Mesori',
+
+	NewYear: 'Pi Kogi Enavot'
+};
+
 // TODO use Intl functions to do the conversions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
 Date.prototype.toCoptic = function () {
