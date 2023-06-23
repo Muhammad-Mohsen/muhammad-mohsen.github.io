@@ -1,6 +1,7 @@
 import { MainMenu } from "../data/main-menu.js";
 import { DocumentPage } from "../pages/document/document.js";
 import { ListPage } from "../pages/list/list.js";
+import { SettingsPage } from "../pages/settings/settings.js";
 
 export const Router = (() => {
 
@@ -12,7 +13,7 @@ export const Router = (() => {
 		const route = location.hash.substring(1);
 		const entry = MainMenu.getEntry(route);
 
-		document.querySelector('.show').classList.remove('show');
+		document.querySelector('.page.show').classList.remove('show');
 		document.querySelector('html').scrollTop = 0;
 
 		if (route == '') {
@@ -27,7 +28,8 @@ export const Router = (() => {
 		} else if (route == '/about') {
 			DocumentPage.init({ text: 'About The Season', path: 'About The Season', uri: 'About The Season' });
 
-		} else if (route == 'settings') {
+		} else if (route == '/settings') {
+			SettingsPage.init();
 
 		} else if (route == 'calendar') {
 
