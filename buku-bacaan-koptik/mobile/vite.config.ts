@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: './src',
+  root: '../web',
+  // publicDir: '../web/assets',
   build: {
-    outDir: '../dist',
+    outDir: '../mobile/dist',
     minify: false,
     emptyOutDir: true,
   },

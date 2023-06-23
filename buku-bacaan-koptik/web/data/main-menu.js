@@ -55,13 +55,44 @@ export const MainMenu = (() => {
 					text: "Midnight",
 					constraints: undefined,
 					image: undefined,
-					path: "agpeya/Agpeya - Midnight"
+					path: "agpeya/Agpeya - Midnight Hour"
 				},
 				{
 					text: "Prayers",
 					constraints: undefined,
 					image: undefined,
-					path: ""
+					menu: [
+						{
+							text: "Confession",
+							constraints: undefined,
+							path: "agpeya/Agpeya - Confession",
+						},
+						{
+							text: "Communion",
+							constraints: undefined,
+							path: "agpeya/Agpeya - Communion",
+						},
+						{
+							text: "Guidance",
+							constraints: undefined,
+							path: "agpeya/Agpeya - Guidance",
+						},
+						{
+							text: "Meals",
+							constraints: undefined,
+							path: "agpeya/Agpeya - Meals",
+						},
+						{
+							text: "Priests",
+							constraints: undefined,
+							path: "agpeya/Agpeya - Priests",
+						},
+						{
+							text: "Deacons",
+							constraints: undefined,
+							path: "agpeya/Agpeya - Deacons",
+						},
+					]
 				},
 			]
 		},
@@ -76,17 +107,17 @@ export const MainMenu = (() => {
 				{
 					text: "Vesper Praises",
 					constraints: undefined,
-					path: "",
+					path: "praises/Vesper Praises",
 				},
 				{
 					text: "Midnight Praises",
 					constraints: undefined,
-					path: "",
+					path: "praises/Midnight Praises",
 				},
 				{
 					text: "Morning Praises",
 					constraints: undefined,
-					path: "",
+					path: "praises/Morning Praises",
 				},
 			]
 		},
