@@ -40,12 +40,12 @@
 }
 
 :root {
-	--bg: #fff0d9;
-	--accent: #42628e;
-	--prime: #222;
-	--sec: #fff;
+	--main-bg: #fff0d9;
+	--accent-bg: #42628e;
+	--main-fg: #222;
+	--accent-fg: #fff;
 	--brdr: #c7c7c7;
-	--red: #eb5757;
+	--accent-red: #eb5757;
 
 	--radius: 8px;
 }
@@ -83,11 +83,11 @@
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #fff; }
 ::-webkit-scrollbar-thumb {
-	background: var(--accent);
+	background: var(--accent-bg);
 	border-radius: 5px;
 	border: 2px solid #fff;
 }
-::-webkit-scrollbar-thumb:hover { background: var(--prime); }
+::-webkit-scrollbar-thumb:hover { background: var(--main-fg); }
 
 
 .ripple { transition: filter 0.5s; }
@@ -115,7 +115,7 @@ header {
 	align-items: center;
 	padding: 8px 24px;
 	border-bottom: 1px solid var(--brdr);
-	color: var(--accent);
+	color: var(--accent-bg);
 }
 header img {
 	width: 64px;
@@ -157,16 +157,16 @@ main:empty::before {
 	height: 56px;
 	border-radius: 12px;
 	border: none;
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	box-shadow: 2px 4px 8px #00000026;
 }
 
 .fab.primary { bottom: 24px; }
 .fab.secondary {
 	bottom: 92px;
-	background: var(--sec);
-	color: var(--accent);
+	background: var(--accent-fg);
+	color: var(--accent-bg);
 }
 
 /* can be moved to content-components.css if it doesn't affect the doc */
@@ -175,6 +175,6 @@ insertdocument { display: none; }
 Language#Arabic { display: none; }
 Language#Indonesian { order: 4; }
 Language#Indonesian:focus-visible {
-	outline: 2px dashed var(--accent);
+	outline: 2px dashed var(--accent-bg);
 	outline-offset: 2px;
 }

@@ -3,13 +3,14 @@
     align-items: center;
 	list-style: none;
 	padding: 28px;
-	/* give the background a bit of alpha so that the background shows through, and the 'ripple' effect shows when clicked */
-	background: #fff0d988;
 	border-bottom: 1px solid var(--brdr);
-	font-size: 1.2rem;
+	color: var(--main-fg);
+	font-size: 1.2em;
 }
 
 .list-item .link-indicator {
 	margin-inline-start: auto;
 	color: var(--brdr);
 }
+
+.list-item:active {  }

@@ -4,14 +4,14 @@ document header {
 	display: flex;
 	align-items: center;
 	padding: 8px;
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	z-index: 1;
 	box-shadow: 0 4px 4px #0004;
 }
 document header .fab {
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	box-shadow: none;
 }
 document header h3 {
@@ -59,7 +59,7 @@ document ul {
 	width: 1px;
 	height: 20px;
 	opacity: 0.3;
-	background: var(--sec);
+	background: var(--accent-fg);
 }
 
 /* gives room for the floating-action-pill (fap :D) */
@@ -68,7 +68,7 @@ main { padding-bottom: 100px; }
 /* SEARCH */
 document .search-container {
 	inset: calc(100dvh - 80px) 16px auto 16px;
-	color: var(--accent);
+	color: var(--accent-bg);
 	background: transparent;
 	transform: scaleX(0);
 	transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
@@ -85,8 +85,8 @@ document .search-container input {
 	padding: 8px 16px;
 	border-radius: 50px 0 0 50px;
 	border: none;
-	color: var(--sec);
-	background: var(--accent);
+	color: var(--accent-fg);
+	background: var(--accent-bg);
 	box-sizing: border-box;
 	outline: none;
 }
@@ -100,13 +100,13 @@ document .search-container .actions-container .fab { width: 48px; }
 mark {
 	padding: 0 4px;
 	border-radius: 4px;
-	border: 1px dashed var(--accent);
-	background: var(--sec);
+	border: 1px dashed var(--accent-bg);
+	background: var(--accent-fg);
 }
 
 #search-index {
-	color: var(--sec);
-	background: var(--accent);
+	color: var(--accent-fg);
+	background: var(--accent-bg);
 	font-size: 12px;
 	line-height: 48px;
 }
@@ -117,7 +117,7 @@ aside {
 	height: calc(100dvh - 40px);
 	padding: 8px;
 	border-radius: 8px;
-	background: var(--sec);
+	background: var(--accent-fg);
 	box-shadow: 2px 4px 8px #0004;
 	z-index: 1;
 	overflow-y: auto;
@@ -136,7 +136,7 @@ aside title-html:not(:last-child) { border-bottom: 1px solid #42628e41; }
 	position: sticky;
     top: calc(100% - 64px);
     margin: auto;
-	background: var(--red);
+	background: var(--accent-red);
 	box-shadow: 2px 4px 8px #0004;
 }
 

@@ -1,7 +1,7 @@
 li.card {
 	position: relative;
 	border-radius: var(--radius);
-	background: var(--sec);
+	background: var(--accent-fg);
 	box-shadow: 2px 4px 8px 0 #ccc;
 	list-style: none;
 }
@@ -19,7 +19,7 @@ li h5 {
 	margin: 0;
 	padding: 8px 12px;
 	border-radius: 50px;
-	color: var(--sec);
-	background: var(--accent);
+	color: var(--accent-fg);
+	background: var(--accent-bg);
 	font-weight: 400;
 }

@@ -2,8 +2,8 @@ home header {
 	position: sticky;
 	top: -150px;
 	padding: 20px 20px 48px;
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	z-index: 1;
 	box-shadow: 0 4px 4px #0004;
 }

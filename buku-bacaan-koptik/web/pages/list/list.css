@@ -4,14 +4,14 @@ list header {
 	display: flex;
 	align-items: center;
 	padding: 8px;
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	z-index: 1;
 	box-shadow: 0 4px 4px #0004;
 }
 list header .fab {
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	box-shadow: none;
 }
 list header h3 {
