@@ -4,14 +4,14 @@ settings header {
 	display: flex;
 	align-items: center;
 	padding: 8px;
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	z-index: 1;
 	box-shadow: 0 4px 4px #0004;
 }
 settings header .fab {
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 	box-shadow: none;
 }
 settings header h3 {
@@ -21,12 +21,13 @@ settings header h3 {
 
 settings h4 {
 	margin: 20px 12px -4px;
-	color: var(--accent);
+	color: var(--accent-bg);
 	font-weight: 600;
 }
 settings p {
 	margin: 4px 12px;
 	font-size: 13px;
+	color: var(--main-fg);
 }
 
 .input-container {
@@ -36,7 +37,7 @@ settings p {
 	height: 48px;
 	margin: 12px;
 	padding: 8px;
-	border: 1px solid var(--accent);
+	border: 1px solid var(--accent-bg);
 	border-radius: 6px;
 	background: #42628e1a;
 }
@@ -55,7 +56,7 @@ settings p {
 }
 
 settings label {
-	color: var(--accent);
+	color: var(--accent-bg);
 	font-weight: 600;
 }
 
@@ -66,8 +67,8 @@ input[type="range"] {
 	height: 2px;
 	width: calc(100% - 4px);
 	border-radius: 50px;
-	background: var(--accent);
-	background: linear-gradient(to right, transparent 6px, var(--accent) 7px calc(100% - 6px), transparent calc(100% - 6px));;
+	background: var(--accent-bg);
+	background: linear-gradient(to right, transparent 6px, var(--accent-bg) 7px calc(100% - 6px), transparent calc(100% - 6px));;
 	outline: none;
 	transition: .2s;
 }
@@ -77,15 +78,15 @@ input[type="range"]::-webkit-slider-thumb {
 	width: 20px;
 	height: 20px;
 	border-radius: 50px;
-	background: var(--accent);
+	background: var(--accent-bg);
 	cursor: pointer;
 }
 input[type="range"]::-moz-range-thumb {
 	width: 20px;
 	height: 20px;
 	border-radius: 50px;
-	border: 2px solid var(--bg);
-	background: var(--accent);
+	border: 2px solid var(--main-bg);
+	background: var(--accent-bg);
 	cursor: pointer;
 }
 
@@ -100,7 +101,7 @@ input[type="range"]::-moz-range-thumb {
 	width: 6px;
 	height: 6px;
 	border-radius: 6px;
-	background: var(--accent);
+	background: var(--accent-bg);
 }
 
 /* CHECKBOX */
@@ -119,7 +120,7 @@ input[type="range"]::-moz-range-thumb {
 	width: 44px;
 	inset-inline-end: 12px;
 	border-radius: 50px;
-	border: 2px solid var(--accent);
+	border: 2px solid var(--accent-bg);
 	transition: .4s;
 }
 
@@ -136,7 +137,7 @@ input[type="range"]::-moz-range-thumb {
 	inset-inline-start: 2px;
 	bottom: 2px;
 	border-radius: 20px;
-	background: var(--accent);
+	background: var(--accent-bg);
 	transition: .3s;
 }
 
@@ -155,7 +156,7 @@ input[type="time"] {
 	margin-inline-start: auto;
     border: none;
     background: transparent;
-    color: var(--accent);
+    color: var(--accent-bg);
     outline: none;
     font-size: 20px;
 }
@@ -173,7 +174,7 @@ input[type="time"] {
 	justify-content: center;
 	flex: 1;
 	background: #42628e1a;
-	border: 1px solid var(--accent);
+	border: 1px solid var(--accent-bg);
 	transition: 0.3s;
 }
 .big-switch:first-child { border-radius: 6px 0 0 6px; }
@@ -181,8 +182,8 @@ input[type="time"] {
 .big-switch:not(:last-child) { border-inline-end: none; }
 
 .big-switch:has(:checked) {
-	background: var(--accent);
-	color: var(--sec);
+	background: var(--accent-bg);
+	color: var(--accent-fg);
 }
 .big-switch i, .big-switch span {
 	display: flex;

@@ -10,10 +10,10 @@ Comment, title-html {
 }
 title-html Language {
     flex: 1 0 10%;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     text-align: center;
     padding: 4px;
-    color: var(--accent);
+    color: var(--accent-bg);
 }
 
 /* COMMENT */
@@ -23,11 +23,12 @@ Comment {
 Comment Language {
 	flex: 1 0 10%;
 	padding: 4px;
-	color: var(--accent);
+	color: var(--accent-bg);
 }
 
 Text {
 	display: flex;
+	color: var(--main-fg);
 }
 Text Language {
 	flex: 1 0 10%;
@@ -46,7 +47,7 @@ Text Language#Coptic {
 Section {
 	display: block;
     margin: 4px;
-    border: 1px solid var(--accent);
+    border: 1px solid var(--accent-bg);
     border-radius: 6px;
     background: #42628e1a;
 }
@@ -70,9 +71,9 @@ section[expanded] title-html::after {
     right: 16px;
     top: calc(50% - 14px);
     font-size: 24px;
-    color: var(--accent);
+    color: var(--accent-bg);
 }
-section[expanded="true"] title-html { border-bottom: 1px solid var(--accent); }
+section[expanded="true"] title-html { border-bottom: 1px solid var(--accent-bg); }
 section[expanded="true"] title-html::after { content: 'unfold_less'; }
 section[expanded="false"] title-html ~ * { display: none; }
 

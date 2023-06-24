@@ -1,10 +1,10 @@
 :root {
-	--bg: #fff;
-	--prime: #333;
-	--sec: #ccc;
-	--accent: #6e44d1;
-	--accent-transparent: #ece6f9;
-	--red: red;
+	--main-bg: #fff;
+	--main-fg: #333;
+	--accent-fg: #ccc;
+	--accent-bg: #6e44d1;
+	--accent-bg-transparent: #ece6f9;
+	--accent-red: red;
 }
 
 /* RESETS */
@@ -36,19 +36,19 @@ button {
 	padding: 0 16px;
 	border: none;
 	border-radius: 28px;
-	color: var(--bg);
-	background: var(--accent);
+	color: var(--main-bg);
+	background: var(--accent-bg);
 	font-weight: 500;
 	transition: 0.2s;
 	cursor: pointer;
 }
 button.secondary {
-	color: var(--accent);
-	background: var(--bg);
+	color: var(--accent-bg);
+	background: var(--main-bg);
 }
 button.red {
-	color: var(--bg);
-	background: var(--red);
+	color: var(--main-bg);
+	background: var(--accent-red);
 }
 
 button.icon { max-width: 36px; min-width: 36px; }
@@ -82,7 +82,7 @@ button:active { filter: brightness(.7); }
 	width: 100%;
 	height: 48px;
 	border: none;
-	border-bottom: 1px solid var(--sec);
+	border-bottom: 1px solid var(--accent-fg);
 	box-sizing: border-box;
 	padding: 24px 12px 4px 8px;
 	background: transparent;
@@ -98,7 +98,7 @@ button:active { filter: brightness(.7); }
 	left: 4px;
 	top: 14px;
 	padding: 0 6px;
-	color: var(--prime);
+	color: var(--main-fg);
 	pointer-events: none;
 	transition: 0.2s;
 }
@@ -110,7 +110,7 @@ button:active { filter: brightness(.7); }
 .input select:focus + label, .input select:not(:placeholder-shown) + label,
 .input textarea:focus + label, .input textarea:not(:placeholder-shown) + label {
 	top: 4px;
-	color: var(--accent) !important;
+	color: var(--accent-bg) !important;
 	font-size: 11px !important;
 	font-weight: bold;
 }
@@ -118,8 +118,8 @@ button:active { filter: brightness(.7); }
 .input input:focus, .input input:hover,
 .input select:focus, .input select:hover,
 .input textarea:focus, .input textarea:hover {
-	border-color: var(--accent);
-	box-shadow: 0 1px 0 0 var(--accent);
+	border-color: var(--accent-bg);
+	box-shadow: 0 1px 0 0 var(--accent-bg);
 }
 
 /* EDITOR-SPECIFIC */
@@ -142,11 +142,11 @@ header {
 	margin: 0;
 	padding-top: 20px;
 	border-radius: 0;
-	background: var(--bg);
+	background: var(--main-bg);
 	z-index: 1;
 }
 
-/* section { border: 1px solid var(--sec); } */
+/* section { border: 1px solid var(--accent-fg); } */
 
 .content { margin-top: 28px; }
 .content textarea { min-height: 100px; }
