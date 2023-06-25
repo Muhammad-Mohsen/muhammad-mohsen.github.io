@@ -1,5 +1,6 @@
 import { HTTP } from "../../core/http.js";
 import { MainMenu } from "../../data/main-menu.js";
+import { SettingsPage } from "../settings/settings.js";
 import { DocumentOutline } from "./outline.js";
 import { DocumentSearch } from "./search.js";
 
@@ -51,6 +52,8 @@ export const DocumentPage = (() => {
 		const sectionHeaders = doc.querySelectorAll('Section Title');
 		for (let h of [...sectionHeaders]) h.setAttribute('data-section-header', 'true');
 
+		applySettings(doc);
+
 		return doc.outerHTML
 			// remove post-decryption encoding error
 			.replace(/\?�?/gi, '')
@@ -65,6 +68,32 @@ export const DocumentPage = (() => {
 			.replace(/<\/document>/gi, '')
 
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
+	}
+
+	function applySettings(doc) {
+		const settings = SettingsPage.get();
+		element.style.fontSize = settings.fontSize + 'em';
+
+		const falsy = (prop) => prop != 'true';
+		const removeAll = (selector) => [...doc.querySelectorAll(selector)].forEach(e => e.remove());
+
+		if (falsy(settings.comments)) removeAll('comment'); // comments
+
+		// if (falsy(settings.silentPrayers)) removeAll('comment'); // silent prayers
+		// if (falsy(settings.nonCustomaryPrayers)) removeAll('comment'); // non-customray prayers
+
+		// roles
+		// if (falsy(settings.rolePriest)) removeAll('rolePriest');
+		// if (falsy(settings.roleDeacon)) removeAll('roleDeacon');
+		// if (falsy(settings.rolePeople)) removeAll('rolePeople');
+
+		// transition time??
+
+		// languages...at the end to ensure that we removed the big, parent nodes first (roles/comments for example)
+		if (falsy(settings.langEn)) removeAll('[id="English"]');
+		if (falsy(settings.langCo)) removeAll('[id="Coptic"]');
+		if (falsy(settings.langAr)) removeAll('[id="Arabic"]');
+		if (falsy(settings.langId)) removeAll('[id="Indonesian"]');
 	}
 
 	function sectionExpandCollapse(target) {

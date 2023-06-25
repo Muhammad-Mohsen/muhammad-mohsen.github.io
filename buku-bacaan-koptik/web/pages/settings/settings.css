@@ -1,3 +1,4 @@
+document.page { transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1), font-size 0s; }
 settings header {
 	position: sticky;
 	top: 0;
