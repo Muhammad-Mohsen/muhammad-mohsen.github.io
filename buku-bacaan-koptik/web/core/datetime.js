@@ -23,28 +23,33 @@ Shomu or Shemu
 	Pi Kogi Enavot
 */
 
-const MONTHS_MAP = {
-	January: 'Thout',
-	February: 'Paopi',
-	March: 'Hathor',
-	April: 'Koiak',
-	May: 'Tobi',
-	June: 'Meshir',
-	July: 'Paremhat',
-	August: 'Parmouti',
-	September: 'Pashons',
-	October: 'Paoni',
-	November: 'Epip',
-	December: 'Mesori',
+const MONTHS = [
+	'', // no zero-indexed month...this isn't java
+	'Thout',
+	'Paopi',
+	'Hathor',
+	'Koiak',
+	'Tobi',
+	'Meshir',
+	'Paremhat',
+	'Parmouti',
+	'Pashons',
+	'Paoni',
+	'Epip',
+	'Mesori',
 
-	NewYear: 'Pi Kogi Enavot'
-};
+	'Pi Kogi Enavot' // this guy is the 13th month and it has 5 days -- current date (6/26/2023) comes back on mobile as '10/19/39'
+];
 
 // TODO use Intl functions to do the conversions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
 Date.prototype.toCoptic = function () {
-	const fullDate = new Intl.DateTimeFormat('en', { calendar:'coptic', dateStyle:'full'}).format(this);
-	return fullDate.substring(0, fullDate.indexOf('ERA') - 1);
+	let dateFull = new Intl.DateTimeFormat('en', { calendar:'coptic', dateStyle:'full'}).format(this);
+	let dateShort = new Intl.DateTimeFormat('en', { calendar:'coptic', dateStyle:'short'}).format(this);
+	const [month, day, year] = dateShort.match(/[0-9]{4}|[0-9]{2}/g);
+
+	return `${dateFull.split(',')[0]}, ${MONTHS[month]} ${day}, ${year}`;
+	// return fullDate.substring(0, fullDate.indexOf(' ERA1') - 1);
 }
 Date.prototype.fromCoptic = (coptic) => {
 	// TODO set the date

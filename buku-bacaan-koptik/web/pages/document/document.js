@@ -1,4 +1,5 @@
 import { HTTP } from "../../core/http.js";
+import { Router } from "../../core/router.js";
 import { MainMenu } from "../../data/main-menu.js";
 import { SettingsPage } from "../settings/settings.js";
 import { DocumentOutline } from "./outline.js";
@@ -67,6 +68,8 @@ export const DocumentPage = (() => {
 			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">/gi, '')
 			.replace(/<\/document>/gi, '')
 
+			.replace(/<linkdocument /gi, `<linkdocument onclick="DocumentPage.goto(this);" `)
+
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
 	}
 
@@ -88,6 +91,8 @@ export const DocumentPage = (() => {
 		// if (falsy(settings.rolePeople)) removeAll('rolePeople');
 
 		// transition time??
+
+		// season??
 
 		// languages...at the end to ensure that we removed the big, parent nodes first (roles/comments for example)
 		if (falsy(settings.langEn)) removeAll('[id="English"]');
@@ -115,6 +120,11 @@ export const DocumentPage = (() => {
 	function searchScroll(direction) {
 		DocumentSearch.scroll(element, direction);
 		element.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);
+	}
+	function goto(link) {
+		const path = link.getAttribute('path');
+		const entry = MainMenu.getEntryByPath(MainMenu.DATA, path);
+		if (entry) Router.goto(entry.uri);
 	}
 
 	function template(params) {
@@ -155,7 +165,7 @@ export const DocumentPage = (() => {
 		init: init,
 
 		sectionExpandCollapse: sectionExpandCollapse,
-
+		goto: goto,
 		toggleSearchMode: toggleSearchMode,
 		search: search,
 		searchScroll: searchScroll,

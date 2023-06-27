@@ -24,6 +24,7 @@ Comment Language {
 	flex: 1 0 10%;
 	padding: 4px;
 	color: var(--accent-bg);
+	font-style: italic;
 }
 
 Text {
@@ -76,6 +77,17 @@ section[expanded] title-html::after {
 section[expanded="true"] title-html { border-bottom: 1px solid var(--accent-bg); }
 section[expanded="true"] title-html::after { content: 'unfold_less'; }
 section[expanded="false"] title-html ~ * { display: none; }
+
+linkdocument {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 0 4px;
+	color: var(--accent-red);
+    font-weight: bold;
+    gap: 24px;
+}
+/* linkdocument language { flex: 1; } */
 
 /* ROLE */
 Role {
