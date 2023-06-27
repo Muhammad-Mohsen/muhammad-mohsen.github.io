@@ -1377,6 +1377,16 @@ export const MainMenu = (() => {
 		return entry;
 	}
 
+	function getEntryByPath(menu, path) {
+		for (let m of menu) {
+			if (m.path == path) return m;
+			if (m.menu) {
+				const mm = getEntryByPath(m.menu, path);
+				if (mm) return mm;
+			}
+		}
+	}
+
 	function getParent(uri) {
 		const parts = uri.split('/');
 		parts.shift();
@@ -1391,6 +1401,7 @@ export const MainMenu = (() => {
 		setURI: setURI,
 		toURI: toURI,
 		getEntry: getEntry,
+		getEntryByPath: getEntryByPath,
 		getParent: getParent,
 	}
 

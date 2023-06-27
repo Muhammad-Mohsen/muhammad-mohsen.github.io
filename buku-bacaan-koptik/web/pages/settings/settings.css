@@ -154,6 +154,7 @@ input[type="range"]::-moz-range-thumb {
 
 /* TIME */
 input[type="time"] {
+	width: auto;
 	margin-inline-start: auto;
     border: none;
     background: transparent;
