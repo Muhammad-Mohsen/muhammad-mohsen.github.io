@@ -21,7 +21,8 @@
   "devDependencies": {
     "@capacitor/assets": "^2.0.4",
     "@capacitor/cli": "latest",
-    "vite": "^2.9.13"
+    "vite": "^3.0.0",
+    "vite-plugin-static-copy": "0.16.0"
   },
   "author": "",
   "license": "ISC"
