@@ -11,7 +11,7 @@ So, I this app is me putting my money where my mouth is.
 - home
 	- DONE - click handlers
 	- DONE - settings
-		- X - app language (radio)
+		- CANCELED - app language (radio)
 		- DONE - font size (slider)
 		- DONE - document languages (checkboxes)
 		- DONE - comments (single checkbox)
@@ -20,16 +20,22 @@ So, I this app is me putting my money where my mouth is.
 		- DONE - non-customary prayers (single checkbox)
 	- about the season
 	- calendar (seasons)
+		- parsed from Seasons.cr.xml
+
 - DONE - list
-- DONE - reading
-	- DONE - loading & parsing resources
+- DONE - document
+	- DONE - recursive loading & parsing resources
 	- DONE - outline
 	- DONE - search
 	- DONE - links
-		<linkdocument path=""
-	- apply settings
+	- DONE - apply settings
+
 - constraints
-- coptic date
+- finish up the menu
+	- parse Menus.cr.xml into the MainMenu.DATA JSON
+- replace CopticReading language with Coptic
+
+- DONE? - coptic date
 - DONE - editor
 	- DONE - load file
 	- DONE - processing
