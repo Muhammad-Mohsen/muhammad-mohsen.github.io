@@ -49,7 +49,7 @@ document ul {
 .actions-container .fab {
 	position: relative;
 	height: 48px;
-	width: 64px;
+	min-width: 56px;
 	border-radius: 0;
 }
 .actions-container .fab:not(:last-child)::after {
@@ -93,6 +93,7 @@ document .search-container input {
 	box-sizing: border-box;
 	outline: none;
 }
+document .search-container input::placeholder { color: var(--brdr); }
 
 document .search-container .actions-container {
 	inset: 0 0 auto auto;

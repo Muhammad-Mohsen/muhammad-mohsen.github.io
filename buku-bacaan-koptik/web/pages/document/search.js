@@ -8,6 +8,8 @@ export const DocumentSearch = (() => {
 		// window.find doesn't work for us because it only scrolls the body element, unfortunately
 		// return window.find(element.querySelector('input').value, false, backwardSearch, true, false, false, false);
 
+		if (!query) return;
+
 		if (container.children.length) { // element has child elements (not child nodes)
 			for (let c of [...container.childNodes]) {
 
@@ -47,7 +49,7 @@ export const DocumentSearch = (() => {
 	}
 
 	function scroll(scrollElement, forward) {
-		if (current == undefined) return;
+		if (!matches.length) return;
 
 		const dir = forward ? 1 : -1;
 		current = (current + dir + matches.length) % matches.length;
@@ -57,8 +59,10 @@ export const DocumentSearch = (() => {
 
 	function index(container) {
 		matches = [...container.querySelectorAll('mark')];
+		if (!matches.length) return '';
+
 		current = current || 0;
-		return `${current}/${matches.length}`;
+		return `${current + 1}/${matches.length}`;
 	}
 
 	function reset() {

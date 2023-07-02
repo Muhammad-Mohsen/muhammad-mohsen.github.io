@@ -73,6 +73,20 @@ export const DocumentPage = (() => {
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
 	}
 
+	async function render2(container, path) {
+		const doc = await HTTP.get(path);
+		if (!doc) return '';
+
+		if (container) container.outerHTML = postProcessDocument(doc);
+
+		const includes = doc.querySelectorAll('InsertDocument');
+		for (let i of [...includes]) {
+			render2(i, i.getAttribute('path'));
+		}
+
+		return doc;
+	}
+
 	function applySettings(doc) {
 		const settings = SettingsPage.get();
 		element.style.fontSize = settings.fontSize + 'em';
@@ -143,7 +157,7 @@ export const DocumentPage = (() => {
 			</div>
 
 			<div class="actions-container search-container">
-				<input onchange="DocumentPage.search()">
+				<input onchange="DocumentPage.search()" placeholder="Search">
 				<span id="search-index"></span>
 				<button class="fab ripple" onclick="DocumentPage.searchScroll(false)"><span class="material-symbols-outlined">expand_less</span></button>
 				<button class="fab ripple" onclick="DocumentPage.searchScroll(true)"><span class="material-symbols-outlined">expand_more</span></button>
