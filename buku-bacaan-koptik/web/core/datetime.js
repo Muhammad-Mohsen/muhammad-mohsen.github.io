@@ -44,12 +44,10 @@ const MONTHS = [
 // TODO use Intl functions to do the conversions
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
 Date.prototype.toCoptic = function () {
-	let dateFull = new Intl.DateTimeFormat('en', { calendar:'coptic', dateStyle:'full'}).format(this);
-	let dateShort = new Intl.DateTimeFormat('en', { calendar:'coptic', dateStyle:'short'}).format(this);
-	const [month, day, year] = dateShort.match(/[0-9]{4}|[0-9]{2}/g);
+	let date = new Intl.DateTimeFormat('en', { calendar:'coptic', weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric'}).format(this);
+	const [month, day, year] = date.match(/[0-9]{4}|[0-9]{2}/g);
 
-	return `${dateFull.split(',')[0]}, ${MONTHS[month]} ${day}, ${year}`;
-	// return fullDate.substring(0, fullDate.indexOf(' ERA1') - 1);
+	return `${date.split(',')[0]}, ${MONTHS[month]} ${day}, ${year}`;
 }
 Date.prototype.fromCoptic = (coptic) => {
 	// TODO set the date
