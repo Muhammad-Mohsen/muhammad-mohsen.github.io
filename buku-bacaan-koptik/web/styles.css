@@ -58,7 +58,7 @@
 		--brdr: #333;
 	}
 
-	document main { --accent-bg: #8da4c7; }
+	document main, document aside title-html { --accent-bg: #8da4c7; }
 
 	body::before, header::before { filter: invert(1); }
 

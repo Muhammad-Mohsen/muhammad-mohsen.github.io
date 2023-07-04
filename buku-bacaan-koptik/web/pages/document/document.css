@@ -93,7 +93,11 @@ document .search-container input {
 	box-sizing: border-box;
 	outline: none;
 }
-document .search-container input::placeholder { color: var(--brdr); }
+document .search-container input::placeholder {
+	color: var(--accent-fg);
+	font-style: italic;
+	opacity: .6;
+}
 
 document .search-container .actions-container {
 	inset: 0 0 auto auto;
@@ -109,10 +113,11 @@ mark {
 }
 
 #search-index {
+	height: 48px;
 	color: var(--accent-fg);
 	background: var(--accent-bg);
 	font-size: 12px;
-	line-height: 48px;
+	line-height: 46px;
 }
 
 aside {
@@ -121,7 +126,7 @@ aside {
 	height: calc(100dvh - 40px);
 	padding: 8px;
 	border-radius: 8px;
-	background: var(--accent-fg);
+	background: var(--main-bg);
 	box-shadow: 2px 4px 8px #0004;
 	z-index: 1;
 	overflow-y: auto;
