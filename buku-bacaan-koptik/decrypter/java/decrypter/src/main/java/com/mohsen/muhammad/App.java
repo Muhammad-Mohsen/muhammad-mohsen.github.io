@@ -19,6 +19,7 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
+// to decrypt an image, BitmapFactory.decodeStream() alternative is needed
 
 public class App
 {
@@ -28,18 +29,25 @@ public class App
 	private static SecretKeySpec keySpec;
 	private static Cipher cipher;
 
-	private static final String INPUT_PATH = "D:/Code/personal/coptic-reader/resources/assets/encrypted_documents/";
+	// D:/Code/personal/coptic-reader/coptic-reader-actual/resources/assets
+	private static final String INPUT_DOCS = "D:/Code/personal/coptic-reader/coptic-reader-actual/resources/assets/encrypted_documents/";
+	private static final String INPUT_IMGS = "D:/Code/personal/coptic-reader/coptic-reader-actual/resources/assets/encrypted_images/";
+	private static final String INPUT_DB = "D:/Code/personal/coptic-reader/coptic-reader-actual/resources/assets/encrypted_databases/";
+
+	private static final String INPUT = INPUT_DB;
 
 	public static void main(String[] args) throws Exception {
 		init();
 
-		ArrayList<File> files = getInputFiles(new File(INPUT_PATH));
+		ArrayList<File> files = getInputFiles(new File(INPUT));
 		for (File file : files) {
 			BufferedInputStream stream = read(file.getAbsolutePath());
 			InputStream decryptedStream = decrypt(stream);
 			Scanner data = unzip(decryptedStream);
 			write(file, data);
 		}
+
+		System.out.println("DONE -- Processed file count: " + files.size());
 	}
 
 	static void init() throws Exception {
@@ -84,7 +92,7 @@ public class App
 	}
 
 	static void write(File file, Scanner data) throws Exception {
-		File output = new File(file.getAbsolutePath().replace("encrypted_documents", "decrypted_documents") + ".xml");
+		File output = new File(file.getAbsolutePath().replace("encrypted_", "decrypted_") + ".xml");
         if (!output.getParentFile().exists()) output.getParentFile().mkdirs();
 
 		FileWriter writer = new FileWriter(output);
