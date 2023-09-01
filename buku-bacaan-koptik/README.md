@@ -20,22 +20,27 @@ So, I this app is me putting my money where my mouth is.
 		- DONE - non-customary prayers (single checkbox)
 	- about the season
 	- calendar (seasons)
+		- see occasions.java for dates
 		- parsed from Seasons.cr.xml
 
 - DONE - list
 - DONE - document
 	- DONE - recursive loading & parsing resources
+	- DONE - parallel recursive loading & parsing resources!
 	- DONE - outline
 	- DONE - search
 	- DONE - links
 	- DONE - apply settings
+	- DONE - BibleReference
+		- CANCELED - SQL DB decryption
 
 - constraints
-- finish up the menu
+- DONE - finish up the menu
 	- parse Menus.cr.xml into the MainMenu.DATA JSON
-- replace CopticReading language with Coptic
+- DONE - replace CopticReadings language with Coptic
 
 - DONE? - coptic date
+	- Need to add the "Coptic day transition" to the calculation
 - DONE - editor
 	- DONE - load file
 	- DONE - processing
@@ -59,7 +64,7 @@ This one gave great results, but it failed to render some of the arabic characte
 - Using VSCode, install the Java extension pack, and set the source/destination folders.
 
 ### web
-No setup necessary!
+No setup necessary! (That's a lie!!)
 Just run index.html (or use IIS for example, create an application point it to the `web` folder, and just browse)
 
 ### Capacitor App
