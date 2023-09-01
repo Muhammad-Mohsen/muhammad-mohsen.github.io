@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#42628e" />
+
+	<title>Buku Bacaan Koptik - Bible Extractor</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/71-smiling-face-with-horns.png" />
+
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+	<header>
+		<img src="../../assets/images/cross.png" alt="Cross">
+		<div>
+			<h5>Buku Bacaan Koptik</h5>
+			<h1>Bible Extractor</h1>
+		</div>
+	</header>
+
+	<main>
+		<p>Import the bible XML from below.<br>This will split each book into its own file</p>
+
+		<input id="file-input" type="file" onchange="Extractor.load(this)" style="display: none;" accept=".xml">
+		<button class="ripple primary" onclick="Extractor.openBible()"><span class="material-symbols-outlined">import_contacts</span> IMPORT BIBLE</button>
+	</main>
+
+	<script src="kjv-books.js"></script>
+	<script src="extractor.js"></script>
+
+</body>
+</html>
