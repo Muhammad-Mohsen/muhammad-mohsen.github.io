@@ -3,6 +3,21 @@
 /*
 coptic seasons & months
 
+const COPTIC_ONE = new Date('0284-09-11T00:00:00Z')
+const GREGORIAN_ONE = new Date('0001-01-01T00:00:00Z')
+const EPOCH_OFFSET = 62135596800000;
+
+var copticOne = new Date('0284-09-11T00:00:00Z')
+var gregorianOne = new Date('0001-01-01T00:00:00Z')
+
+var copticDate = new Date('1739-11-07')
+var days = 7 + 11 * 30 + 1739 * 365 + parseInt(1739 / 4) // actual coptic date?
+var millis = days * 24 * 60 * 60 * 1000
+
+
+var diff = copticOne.getTime() - gregorianOne.getTime()
+
+
 Akhet
 	Thout
 	Paopi
@@ -38,7 +53,7 @@ const MONTHS = [
 	'Epip',
 	'Mesori',
 
-	'Pi Kogi Enavot' // this guy is the 13th month and it has 5 days -- current date (6/26/2023) comes back on mobile as '10/19/39'
+	'Pi Kogi Enavot' // this guy is the 13th month and it has 5 or 6 days -- current date (6/26/2023) comes back on mobile as '10/19/39'
 ];
 
 // TODO use Intl functions to do the conversions
@@ -51,6 +66,29 @@ Date.prototype.toCoptic = function () {
 }
 Date.prototype.fromCoptic = (coptic) => {
 	// TODO set the date
+}
+
+// TODO - from bard! dumb bard
+function convertCopticDateToGregorian(copticDate) {
+	const copticYear = copticDate.year;
+	const copticMonth = copticDate.month;
+	const copticDay = copticDate.day;
+
+	// The difference between the Coptic and Gregorian calendars is 28 years.
+	const gregorianYear = copticYear - 28;
+
+	// The Coptic calendar has 13 months, while the Gregorian calendar has 12.
+	// The first 12 months of the Coptic calendar are the same as the Gregorian calendar.
+	// The 13th month of the Coptic calendar is called Epagomenê, and it has 5 or 6 days.
+	const gregorianMonth = copticMonth;
+	if (copticMonth === 13) {
+	  gregorianMonth = 12;
+	  gregorianDay = copticDay - 5;
+	} else {
+	  gregorianDay = copticDay;
+	}
+
+	// return moment(`${gregorianYear}-${gregorianMonth}-${gregorianDay}`);
 }
 
 Date.prototype.toGregory = function () {

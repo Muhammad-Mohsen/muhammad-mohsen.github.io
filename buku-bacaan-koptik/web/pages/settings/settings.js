@@ -37,9 +37,8 @@ export const SettingsPage = (() => {
 	function load() {
 		const settings = element.querySelectorAll('[setting]');
 		[...settings].forEach(s => {
-			const val = localStorage.getItem(s.getAttribute('setting'));
-
-			if (val == null) return;
+			let val = localStorage.getItem(s.getAttribute('setting'));
+			if (val == null) val = DEFAULTS[s.getAttribute('setting')];
 
 			s.type == "checkbox"
 				? s.checked = val.toString() == 'true'
@@ -114,6 +113,7 @@ export const SettingsPage = (() => {
 				<span>Coptic</span>
 				<input type="checkbox" setting="langCo" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
 			</label>
+
 			<label class="big-switch">
 				<i>Id</i>
 				<span>Indonesian</span>

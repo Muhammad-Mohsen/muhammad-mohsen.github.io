@@ -18,7 +18,7 @@ export const HTTP = (() => {
 	}
 
 	return {
-		get: get
+		get,
 	}
 
 })();

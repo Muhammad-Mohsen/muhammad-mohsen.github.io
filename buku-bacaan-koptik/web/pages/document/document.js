@@ -2,6 +2,7 @@ import { HTTP } from "../../core/http.js";
 import { Router } from "../../core/router.js";
 import { MainMenu } from "../../data/main-menu.js";
 import { SettingsPage } from "../settings/settings.js";
+import { BibleRef } from "./bible.js";
 import { DocumentOutline } from "./outline.js";
 import { DocumentSearch } from "./search.js";
 
@@ -12,8 +13,8 @@ export const DocumentPage = (() => {
 
 	async function init(entry) {
 		element.innerHTML = template({
-			header: entry.text,
-			subHeader: MainMenu.getParent(entry.uri)?.text,
+			header: entry.name,
+			subHeader: MainMenu.getParent(entry.uri)?.name,
 		});
 
 		searchContainer = element.querySelector('.search-container');
@@ -24,7 +25,10 @@ export const DocumentPage = (() => {
 
 		element.classList.add('show');
 
-		const doc = await renderDocument(entry.path);
+		let doc = await HTTP.get(entry.path);
+		doc = await renderFaster(doc);
+		doc = await renderBible(doc);
+		// const doc = await renderDocument(entry.path);
 		documentContainer.innerHTML = postProcessDocument(doc);
 
 		element.querySelector('loading').classList.remove('show'); // hide the loading indicator
@@ -35,15 +39,37 @@ export const DocumentPage = (() => {
 
 	async function renderDocument(path) {
 		const doc = await HTTP.get(path);
-
 		if (!doc) return '';
 
 		const includes = doc.querySelectorAll('InsertDocument');
-
 		for (let i of [...includes]) {
 			const path = i.getAttribute('path');
 			const innerDoc = await renderDocument(path);
 			i.replaceWith(innerDoc);
+		}
+
+		return doc;
+	}
+	async function renderFaster(doc) {
+		const includes = doc.querySelectorAll('InsertDocument');
+		if (includes.length == 0) return doc;
+
+		const promises = [];
+		for (let i of [...includes]) {
+			const path = i.getAttribute('path');
+			promises.push(HTTP.get(path));
+		}
+
+		const innerDocs = await Promise.all(promises);
+		innerDocs.forEach((doc, i) => includes[i].replaceWith(doc));
+		return renderFaster(doc);
+	}
+	async function renderBible(doc) {
+		const refs = [...doc.querySelectorAll('BibleReference')];
+
+		for (let r of refs) {
+			const refNode = await BibleRef.render(r);
+			r.outerHTML = refNode; // replaceWith(refNode);
 		}
 
 		return doc;
@@ -60,6 +86,9 @@ export const DocumentPage = (() => {
 			.replace(/\?�?/gi, '')
 			.replace(/�/gi, '')
 
+			// replace CopticReading id with Coptic...the coptic-row attr is used as an extra css selector for custom display
+			.replace(/id="CopticReading"/gi, 'id="Coptic" coptic-row')
+
 			// title element can only have text nodes, so we change it so it renders its inner HTML correctly
 			.replace(/<title/gi, '<title-html')
 			.replace(/<\/title>/gi, '</title-html>')
@@ -71,20 +100,6 @@ export const DocumentPage = (() => {
 			.replace(/<linkdocument /gi, `<linkdocument onclick="DocumentPage.goto(this);" `)
 
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
-	}
-
-	async function render2(container, path) {
-		const doc = await HTTP.get(path);
-		if (!doc) return '';
-
-		if (container) container.outerHTML = postProcessDocument(doc);
-
-		const includes = doc.querySelectorAll('InsertDocument');
-		for (let i of [...includes]) {
-			render2(i, i.getAttribute('path'));
-		}
-
-		return doc;
 	}
 
 	function applySettings(doc) {
@@ -141,10 +156,15 @@ export const DocumentPage = (() => {
 		if (entry) Router.goto(entry.uri);
 	}
 
+	// documents can be very heavy, so they are removed once we navigate away
+	function clear() {
+		documentContainer.innerHTML = '';
+	}
+
 	function template(params) {
 		return `
 		<header>
-			<button class="fab ripple" onclick="Router.back()"><span class="material-symbols-outlined">arrow_back</span></button>
+			<button class="fab ripple" onclick="Router.back();DocumentPage.clear();"><span class="material-symbols-outlined">arrow_back</span></button>
 			<div class="col">
 				<h5 i18n>${params.subHeader}</h5>
 				<h3 i18n>${params.header}</h3>
@@ -183,6 +203,7 @@ export const DocumentPage = (() => {
 		toggleSearchMode: toggleSearchMode,
 		search: search,
 		searchScroll: searchScroll,
+		clear: clear,
 	}
 
 })();

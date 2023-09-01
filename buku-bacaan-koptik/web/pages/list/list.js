@@ -6,7 +6,7 @@ export const ListPage = (() => {
 
 	function init(entry) {
 		element.innerHTML = template({
-			header: entry.text,
+			header: entry.name,
 			back: 'Router.back();',
 			list: createItems(entry.menu),
 		});
@@ -18,7 +18,7 @@ export const ListPage = (() => {
 		let html = '';
 		menu.forEach(i => {
 			html += ListItem({
-				title: i.text,
+				title: i.name,
 				clickHandler: `Router.goto('${i.uri}')`,
 			});
 		});

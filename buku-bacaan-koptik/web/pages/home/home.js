@@ -19,7 +19,7 @@ export const HomePage = (() => {
 			html += Card({
 				clickHandler: `Router.goto('${i.uri}')`,
 				src: i.image,
-				title: i.text
+				title: i.name
 			});
 		});
 
