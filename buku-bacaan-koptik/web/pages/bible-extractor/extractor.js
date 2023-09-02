@@ -1,19 +1,9 @@
 const Extractor = (() => {
 
-	// MASTER TOGGLE
-	const isSVD = true;
-
-	const kjvKeys = {
-		BOOK: 'book',
-		NUM: 'num'
-	}
-
-	const svdKeys = {
+	const keys = {
 		BOOK: 'BIBLEBOOK',
 		NUM: 'bname'
 	}
-
-	const keys = isSVD ? svdKeys : kjvKeys;
 
 	function openBible() {
 		document.querySelector('input[type="file"]').click();
@@ -59,12 +49,9 @@ const Extractor = (() => {
 	async function downloadBook(book) {
 		return new Promise((resolve, reject) => {
 
-			const filename = isSVD
-				? book.getAttribute(keys.NUM) + '.cr.xml'
-				: kjvBooks[book.getAttribute(keys.NUM)] + '.cr.xml';
+			const filename = book.getAttribute(keys.NUM) + '.cr.xml'
 
-			book = processSVD(book);
-			book = `<book>${book}</book>`;
+			book = processBook(book);
 
 			const anchor = document.createElement('a');
 			const data = new Blob([book], { type: 'text/plain' });
@@ -82,12 +69,13 @@ const Extractor = (() => {
 		});
 	}
 
-	function processSVD(book) {
-		return book.innerHTML
+	function processBook(book) {
+		return `<book>${book.innerHTML
 			.replace(/CHAPTER/g, 'chapter')
 			.replace(/cnumber/g, 'num')
 			.replace(/vnumber/g, 'num')
-			.replace(/VERS/g, 'verse');
+			.replace(/VERS/g, 'verse')}
+		</book>`;
 	}
 
 	return {

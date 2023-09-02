@@ -13,7 +13,7 @@ export const BibleRef = (function () {
 	// semi-colon separated -> discrete chapter/verse
 	// dash separated -> continuous chapter/verse
 
-	let kjv, svd;
+	let nkjv, svd;
 
 	async function render(node) {
 		const ref = node.getAttribute('reference');
@@ -27,7 +27,7 @@ export const BibleRef = (function () {
 	function renderVerse(chapterVerse) {
 		// get verse from book
 		const [chapter, verse] = chapterVerse.split(':');
-		const kjvVerse = kjv.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''; // hide off-by-one errors!!
+		const kjvVerse = nkjv.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''; // hide off-by-one errors!!
 		const svdVerse = svd.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''; // hide off-by-one errors!!
 
 		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}">
@@ -40,8 +40,8 @@ export const BibleRef = (function () {
 		ref = ref.split(' ');
 		const book = ref.pop(); // remove the chapter-verse data
 
-		[kjv, svd] = await Promise.all([
-			HTTP.get(`bible/kjv/${ref.join(' ')}`),
+		[nkjv, svd] = await Promise.all([
+			HTTP.get(`bible/nkjv/${ref.join(' ')}`),
 			HTTP.get(`bible/svd/${ref.join(' ')}`)
 		]);
 	}
@@ -97,7 +97,7 @@ export const BibleRef = (function () {
 	}
 
 	function getLastVerseOfChapter(number) {
-		const chapter = kjv.querySelector(`chapter[num="${number}"]`);
+		const chapter = nkjv.querySelector(`chapter[num="${number}"]`);
 		return chapter.children.length;
 	}
 
