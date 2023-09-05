@@ -7,8 +7,8 @@ export const HomePage = (() => {
 
 	function init() {
 		element.innerHTML = template({
-			copticDate: new Date().toCoptic(),
-			gregorianDate: new Date().toGregory(),
+			copticDate: new Date().formatCoptic(),
+			gregorianDate: new Date().formatGregorian(), // .toGregorian(true),
 			cards: createItems(MainMenu.DATA)
 		});
 	}
@@ -38,7 +38,7 @@ export const HomePage = (() => {
 			<div class="header-buttons">
 				<button class="fab ripple" onclick="Router.goto('/settings')"><span class="material-symbols-outlined">settings</span></button>
 				<button class="fab ripple" onclick="Router.goto('/about')"><span class="material-symbols-outlined">info</span></button>
-				<button class="fab ripple"><span class="material-symbols-outlined">calendar_today</span></button>
+				<button class="fab ripple" onclick="Router.goto('/calendar')"><span class="material-symbols-outlined">calendar_today</span></button>
 			</div>
 		</header>
 

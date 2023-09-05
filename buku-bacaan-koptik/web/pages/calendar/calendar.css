@@ -1,0 +1,25 @@
+calendar header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	background: var(--accent-bg);
+	color: var(--accent-fg);
+	z-index: 1;
+	box-shadow: 0 4px 4px #0004;
+}
+calendar header .fab {
+	background: var(--accent-bg);
+	color: var(--accent-fg);
+	box-shadow: none;
+}
+calendar header h3 {
+	margin: 0 8px;
+	font: 300 24px / 24px 'Poppins'
+}
+
+calendar ul {
+	margin-top: 8px;
+	padding: 0;
+}

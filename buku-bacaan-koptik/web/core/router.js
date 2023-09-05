@@ -1,4 +1,5 @@
 import { MainMenu } from "../data/main-menu.js";
+import { CalendarPage } from "../pages/calendar/calendar.js";
 import { DocumentPage } from "../pages/document/document.js";
 import { ListPage } from "../pages/list/list.js";
 import { SettingsPage } from "../pages/settings/settings.js";
@@ -31,8 +32,8 @@ export const Router = (() => {
 		} else if (route == '/settings') {
 			SettingsPage.init();
 
-		} else if (route == 'calendar') {
-
+		} else if (route == '/calendar') {
+			CalendarPage.init();
 
 		} else {
 			document.querySelector('home').classList.add('show');

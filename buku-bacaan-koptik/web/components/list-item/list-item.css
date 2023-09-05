@@ -10,7 +10,12 @@
 
 .list-item .link-indicator {
 	margin-inline-start: auto;
-	color: var(--brdr);
+	color: var(--accent-bg);
+	opacity: .5;
 }
 
-.list-item:active {  }
+.list-item sub {
+	display: block;
+	color: var(--accent-bg);
+	font-size: .6em;
+}
