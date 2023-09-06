@@ -1,12 +1,12 @@
 // DateTime extensions related to coptic dates
-// current date (6/26/2023) comes back on mobile as '10/19/39'
 
-// const COPTIC_ONE = new Date('0284-09-11T00:00:00Z')
-// const GREGORIAN_ONE = new Date('0001-01-01T00:00:00Z')
-// const EPOCH_OFFSET = 62135596800000;
-
-// var copticOne = new Date('0284-09-11T00:00:00Z')
-// var gregorianOne = new Date('0001-01-01T00:00:00Z')
+Date.SUNDAY = 0;
+Date.MONDAY = 1;
+Date.TUESDAY = 2;
+Date.WEDNESDAY = 3;
+Date.THURSDAY = 4;
+Date.FRIDAY = 5;
+Date.SATURDAY = 6;
 
 // this is guaranteed to work (it uses Intl...not mylogic :D)
 Date.prototype.toCoptic = function () {
@@ -31,7 +31,7 @@ Date.fromCoptic = (copticMonth, copticDay) => {
 }
 
 // Intl's 'long' date style doesn't exactly work on mobile...the month names aren't there :D
-Date.prototype.formatCoptic = function () {
+Date.prototype.formatCoptic = function (hideWeekday) {
 	const COPTIC_MONTHS = [
 		'', // no zero-indexed month for you...this ain't java
 
@@ -57,15 +57,11 @@ Date.prototype.formatCoptic = function () {
 	];
 
 	const { weekday, day, month, year } = this.toCoptic();
-	return `${weekday}, ${COPTIC_MONTHS[parseInt(month)]} ${day}, ${year}`
+	return `${hideWeekday ? '' : (weekday + ', ')}${COPTIC_MONTHS[parseInt(month)]} ${day}, ${year}`
 }
 
-Date.prototype.formatGregorian = function () {
-	return new Intl.DateTimeFormat('en', { calendar:'gregory', dateStyle:'long'}).format(this);
-}
-
-Date.prototype.isBetween = function (from, to) {
-	return this >= from && this <= to;
+Date.prototype.formatGregorian = function (dateStyle) {
+	return new Intl.DateTimeFormat('en', { calendar:'gregory', dateStyle: dateStyle || 'long'}).format(this);
 }
 
 Date.prototype.addDays = function (daysToAdd) {
@@ -84,11 +80,11 @@ Date.prototype.firstSundayOfMonth = function () {
 
 	return this;
 }
+Date.isLeap = function (copticYear) {
+	// coptic leap day is added to the preceding year, that's why we + 1...they don't seem to be doing the 100 year correction thing
+	return (copticYear + 1) % 4 != 0;
+}
 
-Date.SUNDAY = 0;
-Date.MONDAY = 1;
-Date.TUESDAY = 2;
-Date.WEDNESDAY = 3;
-Date.THURSDAY = 4;
-Date.FRIDAY = 5;
-Date.SATURDAY = 6;
+Date.prototype.isBetween = function (from, to) {
+	return this >= from && this <= to;
+}

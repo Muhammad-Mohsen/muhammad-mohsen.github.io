@@ -17,7 +17,7 @@ export const ListItem2 = (params) => {
 	const dataAttr = params.data ? `data="${params.data}"` : '';
 
 	function template(params) {
-		return `<li onclick="${params.clickHandler}" ${dataAttr} class="list-item ripple" i18n>
+		return `<li onclick="${params.clickHandler}" ${dataAttr} class="list-item shallow ripple" i18n>
 			<div>
 				${params.title}
 				<sub>${params.subtitle}</sub>

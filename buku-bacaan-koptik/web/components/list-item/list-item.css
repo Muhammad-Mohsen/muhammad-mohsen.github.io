@@ -8,6 +8,8 @@
 	font-size: 1.2em;
 }
 
+.list-item.shallow { padding: 16px 28px; }
+
 .list-item .link-indicator {
 	margin-inline-start: auto;
 	color: var(--accent-bg);

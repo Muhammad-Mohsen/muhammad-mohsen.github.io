@@ -20,11 +20,9 @@ export const CalendarPage = (() => {
 		const occasions = Occasions();
 
 		Object.keys(occasions).forEach(k => {
-			console.log(k, occasions[k]);
-
 			html += ListItem2({
 				title: k.replace(/_/g, ' '),
-				subtitle: `${occasions[k].formatCoptic()} -- <i>${occasions[k].formatGregorian()}</i>`,
+				subtitle: `${occasions[k].formatGregorian('full')} &bull; <i>${occasions[k].formatCoptic(true)}</i>`,
 				clickHandler: `console.log('bitch')`,
 			});
 		});

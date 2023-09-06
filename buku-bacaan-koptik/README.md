@@ -19,8 +19,8 @@ So, I this app is me putting my money where my mouth is.
 		- DONE - day transition (time input)
 		- DONE - non-customary prayers (single checkbox)
 	- about the season
-	- calendar (seasons)
-		- see occasions.java for dates
+	- calendar (occasions)
+		- DONE - see occasions.java for dates
 		- parsed from Seasons.cr.xml
 
 - DONE - list
@@ -33,14 +33,15 @@ So, I this app is me putting my money where my mouth is.
 	- DONE - apply settings
 	- DONE - BibleReference
 		- CANCELED - SQL DB decryption
+	- SEASON EVAL
 
-- constraints
 - DONE - finish up the menu
 	- parse Menus.cr.xml into the MainMenu.DATA JSON
 - DONE - replace CopticReadings language with Coptic
 
-- DONE? - coptic date
+- DONE - coptic date
 	- Need to add the "Coptic day transition" to the calculation
+
 - DONE - editor
 	- DONE - load file
 	- DONE - processing

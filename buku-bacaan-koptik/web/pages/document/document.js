@@ -14,7 +14,7 @@ export const DocumentPage = (() => {
 	async function init(entry) {
 		element.innerHTML = template({
 			header: entry.name,
-			subHeader: MainMenu.getParent(entry.uri)?.name,
+			subHeader: MainMenu.getParent(entry.uri)?.name ?? entry.sub,
 		});
 
 		searchContainer = element.querySelector('.search-container');
@@ -25,11 +25,9 @@ export const DocumentPage = (() => {
 
 		element.classList.add('show');
 
-		let doc = await HTTP.get(entry.path);
+		let doc = await HTTP.get(entry.path); // = await renderDocument(entry.path);
 		doc = await renderFaster(doc);
-		doc = await renderBible(doc);
-		// const doc = await renderDocument(entry.path);
-		documentContainer.innerHTML = postProcessDocument(doc);
+		documentContainer.innerHTML = await postProcessDocument(doc);
 
 		element.querySelector('loading').classList.remove('show'); // hide the loading indicator
 		element.querySelector('#document-actions').classList.add('show'); // show document actions
@@ -37,6 +35,7 @@ export const DocumentPage = (() => {
 		DocumentOutline.create(documentContainer, outlineContainer);
 	}
 
+	// elegant(er) but slow(er)
 	async function renderDocument(path) {
 		const doc = await HTTP.get(path);
 		if (!doc) return '';
@@ -50,7 +49,11 @@ export const DocumentPage = (() => {
 
 		return doc;
 	}
+	// I hate that we have to get the document first then recurse
 	async function renderFaster(doc) {
+
+		// TODO
+
 		const includes = doc.querySelectorAll('InsertDocument');
 		if (includes.length == 0) return doc;
 
@@ -62,22 +65,24 @@ export const DocumentPage = (() => {
 
 		const innerDocs = await Promise.all(promises);
 		innerDocs.forEach((doc, i) => includes[i].replaceWith(doc));
+
 		return renderFaster(doc);
 	}
-	async function renderBible(doc) {
-		const refs = [...doc.querySelectorAll('BibleReference')];
 
-		for (let r of refs) {
-			const refNode = await BibleRef.render(r);
-			r.outerHTML = refNode; // replaceWith(refNode);
-		}
-
+	function discardOutOfSeason(doc) {
+		const seasons = [...doc.querySelectorAll('season')];
 		return doc;
 	}
-	function postProcessDocument(doc) {
+
+	// a final pass on the final document...some click handlers, and straight up string manipulations on the outerHTML!
+	// brute force-ish, but very effective
+	async function postProcessDocument(doc) {
+
 		// track down section headers so we can add expand/collapse functions on them
 		const sectionHeaders = doc.querySelectorAll('Section Title');
 		for (let h of [...sectionHeaders]) h.setAttribute('data-section-header', 'true');
+
+		doc = await renderBible(doc);
 
 		applySettings(doc);
 
@@ -102,6 +107,18 @@ export const DocumentPage = (() => {
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
 	}
 
+	// bible references aren't recursive, so they can just be called at the end
+	async function renderBible(doc) {
+		const refs = [...doc.querySelectorAll('BibleReference')];
+
+		for (let r of refs) {
+			const refNode = await BibleRef.render(r);
+			r.outerHTML = refNode; // replaceWith(refNode);
+		}
+
+		return doc;
+	}
+
 	function applySettings(doc) {
 		const settings = SettingsPage.get();
 		element.style.fontSize = settings.fontSize + 'em';
@@ -120,8 +137,6 @@ export const DocumentPage = (() => {
 		// if (falsy(settings.rolePeople)) removeAll('rolePeople');
 
 		// transition time??
-
-		// season??
 
 		// languages...at the end to ensure that we removed the big, parent nodes first (roles/comments for example)
 		if (falsy(settings.langEn)) removeAll('[id="English"]');
@@ -185,25 +200,25 @@ export const DocumentPage = (() => {
 			</div>
 
 			<!-- document outline -->
-			<aside><aside>
+			<aside></aside>
 
+			<loading class="show"></loading>
 		</header>
-		<loading class="show"></loading>
 
 		<!-- document is rendered asynchronously, and is injected after that completes -->
 		<main></main>
-		`;
+		`.trim();
 	}
 
 	return {
-		init: init,
+		init,
+		clear,
 
-		sectionExpandCollapse: sectionExpandCollapse,
-		goto: goto,
-		toggleSearchMode: toggleSearchMode,
-		search: search,
-		searchScroll: searchScroll,
-		clear: clear,
+		sectionExpandCollapse,
+		goto,
+		toggleSearchMode,
+		search,
+		searchScroll,
 	}
 
 })();

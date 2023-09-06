@@ -1,10 +1,3 @@
-// !Feasts ^ !Sundays ^ !GreatFast ^ !JonahFast ^ !PentecostPeriod
-// VesperPraises
-// Thoout.1-Meshir.30
-// ChurchConsecration ^ !Vespers
-// NativityPeriod | NativityParamoun | Circumcision
-// PreAscensionPentecostPeriod ^ !(Liturgy ^ ThomasSunday ^ DisplayNonCustomaryPrayers) // !!!WTF
-
 export const Occasions = (() => {
 
 	const THOOUT_2 = Date.fromCoptic(1, 2);
@@ -54,12 +47,12 @@ export const Occasions = (() => {
 	const PAREMHOTEP_24 = Date.fromCoptic(7, 24);
 	const ANNUNCIATION = Date.fromCoptic(7, 29);
 
+	const PARMOUTE_29 = Date.fromCoptic(8, 29);
+	const PARMOUTE_30 = Date.fromCoptic(8, 30);
+
 	const ENTRANCE_LORD_CHRIST = Date.fromCoptic(9, 24);
 	const TRANSFIGURATION = Date.fromCoptic(12, 13);
 	const APOSTLES_FEAST = Date.fromCoptic(11, 5);
-
-	const PARMOUTE_29 = Date.fromCoptic(8, 29);
-	const PARMOUTE_30 = Date.fromCoptic(8, 30);
 
 	const PASHONS_1 = Date.fromCoptic(9, 1);
 	const PASHONS_26 = Date.fromCoptic(9, 26);
@@ -72,9 +65,10 @@ export const Occasions = (() => {
 	const PAONE_29 = Date.fromCoptic(10, 29);
 	const PAONE_30 = Date.fromCoptic(10, 30);
 
-	const STMARY_FAST_BEGIN = Date.fromCoptic(12, 1);
 	const EPEP_27 = Date.fromCoptic(11, 27);
 	const EPEP_29 = Date.fromCoptic(11, 29);
+
+	const STMARY_FAST_BEGIN = Date.fromCoptic(12, 1);
 
 	const MESORE_7 = Date.fromCoptic(12, 7);
 	const MESORE_16 = Date.fromCoptic(12, 16);
@@ -116,7 +110,8 @@ export const Occasions = (() => {
 	else if (NATIVITY_PARAMOUN_END.getDay() == Date.SATURDAY) NATIVITY_PARAMOUN_START = new Date(NATIVITY_PARAMOUN_END).addDays(-1);
 	else NATIVITY_PARAMOUN_START = NATIVITY_PARAMOUN_END;
 
-    const NEW_YEAR_NEXT_YEAR = new Date(); // ???
+	const isLeap = Date.isLeap(thouut1.toCoptic().year);
+    const NEW_YEAR_NEXT_YEAR = isLeap ? new Date(thouut1).addDays(366) : new Date(thouut1).addDays(365);
 
 	const THEOPHANY = Date.fromCoptic(5, 11);
 	const DAY_AFTER_THEOPHANY = new Date(THEOPHANY).addDays(1);
@@ -288,4 +283,4 @@ export const Occasions = (() => {
 		PENTECOST_MONDAY_7,
 	};
 
-});
+}); // can't be immediately invoked because it depends on the datetime extensions

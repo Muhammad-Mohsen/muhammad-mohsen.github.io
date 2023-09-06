@@ -27,7 +27,7 @@ export const Router = (() => {
 			DocumentPage.init(entry);
 
 		} else if (route == '/about') {
-			DocumentPage.init({ text: 'About The Season', path: 'About The Season', uri: 'About The Season' });
+			DocumentPage.init({ name: 'About The Season', sub: '', path: 'About The Season', uri: 'About The Season' });
 
 		} else if (route == '/settings') {
 			SettingsPage.init();
