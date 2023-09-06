@@ -7,19 +7,16 @@ export const BibleRef = (function () {
 	// 2. <BibleReference reference="Titus 2:11-3:7" type="section"/> => from this chapter and verse to that chapter and verse
 	// 3. <BibleReference reference="Titus 138:1-2" type="section"/> => from this verse to that verse (same chapter)
 	// 4. <BibleReference reference="Psalms 104:4;138:1-2" type="comment"/> => discrete
-
-	// types
-	// single number -> whole chapter
-	// semi-colon separated -> discrete chapter/verse
-	// dash separated -> continuous chapter/verse
+	// 5. <BibleReference reference="Psalms 25:18, 20" type="comment"/> => bulljive is what that is!!
 
 	let nkjv, svd;
 
 	async function render(node) {
-		const ref = node.getAttribute('reference');
+		const ref = node.getAttribute('reference').replace(/, /g, '').replace(/; /g, ''); // remove stupid spaces;
 		await setBooks(ref);
 
-		const verses = ref.split(';').reduce((verses, r) => verses.concat(getVerses(r)), []);
+		const expandedRef = expandRef(ref);
+		const verses = expandedRef.split(';').reduce((verses, r) => verses.concat(getVerses(r)), []);
 
 		return verses.map(v => renderVerse(v)).join('');
 	}
@@ -38,7 +35,7 @@ export const BibleRef = (function () {
 
 	async function setBooks(ref) {
 		ref = ref.split(' ');
-		const book = ref.pop(); // remove the chapter-verse data
+		ref.pop(); // remove the chapter-verse data
 
 		[nkjv, svd] = await Promise.all([
 			HTTP.get(`bible/nkjv/${ref.join(' ')}`),
@@ -94,6 +91,20 @@ export const BibleRef = (function () {
 		}
 
 		return verses;
+	}
+
+	// stupid fucking formatting!!!
+	function expandRef(ref) {
+		if (!ref.includes(',')) return ref;
+
+		const refs = ref.split(';');
+
+		return refs.flatMap(r => {
+			if (!r.includes(',')) return r;
+
+			const [chapter, verses] = r.split(':');
+			return verses.split(',').map(v => `${chapter}:${v}`);
+		}).join(';');
 	}
 
 	function getLastVerseOfChapter(number) {
