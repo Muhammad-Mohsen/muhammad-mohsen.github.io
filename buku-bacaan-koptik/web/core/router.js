@@ -18,7 +18,7 @@ export const Router = (() => {
 		document.querySelector('html').scrollTop = 0;
 
 		if (route == '') {
-			document.querySelector('home').classList.add('show');
+			setTimeout(() => document.querySelector('home').classList.add('show'), 50);
 
 		} else if (entry?.menu) {
 			ListPage.init(entry);
@@ -36,7 +36,7 @@ export const Router = (() => {
 			CalendarPage.init();
 
 		} else {
-			document.querySelector('home').classList.add('show');
+			setTimeout(() => document.querySelector('home').classList.add('show'), 50);
 		}
 	}
 

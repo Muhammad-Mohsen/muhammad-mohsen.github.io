@@ -23,7 +23,7 @@ export const DocumentPage = (() => {
 
 		toggleSearchMode(false); // reset the search (if any previous search was active!)
 
-		element.classList.add('show');
+		setTimeout(() => element.classList.add('show'), 50);
 
 		let doc = await HTTP.get(entry.path); // = await renderDocument(entry.path);
 		doc = await renderFaster(doc);

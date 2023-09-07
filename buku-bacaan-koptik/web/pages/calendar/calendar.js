@@ -12,7 +12,7 @@ export const CalendarPage = (() => {
 			list: createItems(),
 		});
 
-		element.classList.add('show');
+		setTimeout(() => element.classList.add('show'), 50);
 	}
 
 	function createItems() {

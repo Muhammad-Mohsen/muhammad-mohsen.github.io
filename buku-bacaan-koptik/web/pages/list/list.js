@@ -11,7 +11,7 @@ export const ListPage = (() => {
 			list: createItems(entry.menu),
 		});
 
-		element.classList.add('show');
+		setTimeout(() => element.classList.add('show'), 50);
 	}
 
 	function createItems(menu) {
