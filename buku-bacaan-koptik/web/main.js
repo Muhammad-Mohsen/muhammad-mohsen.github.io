@@ -1,5 +1,6 @@
 import { Router } from "./core/router.js";
 import { MainMenu } from "./data/main-menu.js";
+import { CalendarPage } from "./pages/calendar/calendar.js";
 import { DocumentPage } from "./pages/document/document.js";
 import { DocumentOutline } from "./pages/document/outline.js";
 import { DocumentSearch } from "./pages/document/search.js";
@@ -16,3 +17,4 @@ window.DocumentPage = DocumentPage;
 window.DocumentSearch = DocumentSearch;
 window.DocumentOutline = DocumentOutline;
 window.SettingsPage = SettingsPage;
+window.CalendarPage = CalendarPage;

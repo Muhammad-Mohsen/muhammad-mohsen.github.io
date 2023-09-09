@@ -3,16 +3,24 @@ import { Occasions } from "../../data/occasions.js";
 
 export const CalendarPage = (() => {
 
-	let element = document.querySelector('calendar');
+	const element = document.querySelector('calendar');
+	let selectTodayContainer, subHeader;
 
-	function init(entry) {
+	let live = new Date();
+
+	function init() {
 		element.innerHTML = template({
 			header: 'Calendar',
+			subHeader: `${live.formatGregorian('full')}<br><i>${live.formatCoptic(true)}</i>`,
 			back: 'Router.back();',
 			list: createItems(),
+			date: live,
 		});
 
-		setTimeout(() => element.classList.add('show'), 50);
+		element.show(50);
+
+		subHeader = element.querySelector('header h5');
+		selectTodayContainer = element.querySelector('.date-container')
 	}
 
 	function createItems() {
@@ -23,18 +31,40 @@ export const CalendarPage = (() => {
 			html += ListItem2({
 				title: k.replace(/_/g, ' '),
 				subtitle: `${occasions[k].formatGregorian('full')} &bull; <i>${occasions[k].formatCoptic(true)}</i>`,
-				clickHandler: `console.log('bitch')`,
+				clickHandler: `CalendarPage.setLive('${occasions[k].toJSON()}')`,
 			});
 		});
 
 		return html;
 	}
 
+	function setLive(date) {
+		live = date ? new Date(date) : new Date();
+		subHeader.innerHTML = `${live.formatGregorian('full')}<br><i>${live.formatCoptic(true)}</i>`;
+	}
+
+	function getLive() {
+		return live;
+	}
+
 	function template(params) {
 		return `
 		<header>
 			<button class="fab ripple" onclick="${params.back}"><span class="material-symbols-outlined">arrow_back</span></button>
-			<h3 i18n>${params.header}</h3>
+			<div class="col">
+				<h3 i18n>${params.header}</h3>
+				<h5>${params.subHeader}</h5>
+			</div>
+
+			<!-- a bit of an unfortunate positioning, but I'll live with it -->
+			<div class="actions-container">
+				<button class="fab ripple text" onclick="CalendarPage.setLive();"><span>${params.date.getToday()}</span></button>
+				<button class="fab ripple">
+					<span class="material-symbols-outlined">calendar_month</span>
+					<input type="date" onchange="CalendarPage.setLive(this.value)" value="${params.date.value()}">
+				</button>
+			</div>
+
 		</header>
 
 		<ul class="list">
@@ -43,7 +73,10 @@ export const CalendarPage = (() => {
 	}
 
 	return {
-		init: init,
+		init,
+
+		getLive,
+		setLive
 	}
 
 })();
