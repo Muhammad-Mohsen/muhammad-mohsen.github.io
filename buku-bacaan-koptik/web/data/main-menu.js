@@ -1,5 +1,6 @@
 export const MainMenu = (() => {
 
+	// honestly, I could've just used the original XML format
 	const DATA = [
 
 		// AGPEYA

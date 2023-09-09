@@ -16,11 +16,11 @@ document header .fab {
 }
 document header h3 {
 	margin: 0 8px;
-	font: 300 24px / 28px 'Poppins'
+	font: 300 24px / 28px 'Poppins';
 }
 document header h5 {
 	margin: 0 8px;
-	font: 500 14px / 16px 'Poppins'
+	font: 500 13px / 16px 'Poppins';
 }
 
 document ul {

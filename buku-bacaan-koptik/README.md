@@ -32,8 +32,21 @@ So, I this app is me putting my money where my mouth is.
 	- DONE - links
 	- DONE - apply settings
 	- DONE - BibleReference
+	- BibleReference sections (that show book names and the like)
 		- CANCELED - SQL DB decryption
-	- SEASON EVAL
+	- SEASONS
+		- documentAttribute??
+		- `Seasons.java`
+			- isSeason -> actually evals the logical expression
+			- matchesCurrentSeason -> calls into the evaluator's `isCurrentSeason` & `checkCurrentSeason` methods
+			- isSupported???
+			- extractSeasonsFromExpression :)
+		- `SeasonEvaluator.java`
+			- isCurrentSeason
+			- checkCurrentSeason
+				- Saints.isSaintSeason
+				- isForceSeason???
+			- evaluateSeason
 
 - DONE - finish up the menu
 	- parse Menus.cr.xml into the MainMenu.DATA JSON

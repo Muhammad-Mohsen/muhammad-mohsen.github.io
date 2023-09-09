@@ -1974,39 +1974,3 @@ const MenuParser = (() => {
 	}
 
 })();
-
-const SeasonsParser = (() => {
-
-	const seasons = ``;
-
-	function toXML() {
-		const parser = new DOMParser();
-		return parser.parseFromString(menu,"text/xml").documentElement;
-	}
-
-	function toJSON(xml) {
-		const menu = [];
-
-		for (const c of [...xml.children]) {
-			const cj = {
-				name: c.hasAttribute('name')
-					? c.getAttribute('name')
-					: c.getAttribute('path').split('/').pop()
-				}
-
-
-			if (c.tagName == 'Document') cj.path = c.getAttribute('path'); // it's a document
-			else cj.menu = toJSON(c); // it's a path
-
-			menu.push(cj);
-		}
-
-		return menu;
-	}
-
-	return {
-		toXML,
-		toJSON,
-	}
-
-})();
