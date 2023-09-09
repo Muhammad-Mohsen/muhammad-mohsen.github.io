@@ -77,94 +77,97 @@ export const SettingsPage = (() => {
 			</div>
 		</header>
 
-		<div class="input-container font-size-container">
+		<main>
+			<div class="input-container font-size-container">
 
-			<label i18n>Text Size</label>
+				<label i18n>Text Size</label>
 
-			<!-- SNIPPET -->
-			<text>
-				<language id="Coptic">Qen v~ran m~Viwt nem Ps/ri nem Pip~neuma eyouab ounou] n~ouwt: a~m/n.</language>
-				<language id="English">In the name of the Father and the Son and the Holy Spirit, one God. Amen.</language>
-				<language id="Arabic">باسم الآب والابن والرّوح القدس الإله الواحد. آمين.</language>
-			</text>
+				<!-- SNIPPET -->
+				<text>
+					<language id="Coptic">Qen v~ran m~Viwt nem Ps/ri nem Pip~neuma eyouab ounou] n~ouwt: a~m/n.</language>
+					<language id="English">In the name of the Father and the Son and the Holy Spirit, one God. Amen.</language>
+					<language id="Arabic">باسم الآب والابن والرّوح القدس الإله الواحد. آمين.</language>
+				</text>
 
-			<input type="range" min=".8" max="2" step="0.2" setting="fontSize" onchange="SettingsPage.change(this);SettingsPage.setPreviewFontSize(this);">
-			<div class="notches">
-				<i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+				<input type="range" min=".8" max="2" step="0.2" setting="fontSize" onchange="SettingsPage.change(this);SettingsPage.setPreviewFontSize(this);">
+				<div class="notches">
+					<i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+				</div>
 			</div>
-		</div>
 
-		<h4 i18n>Document Languages</h4>
-		<p i18n>Up to 3 languages can be selected at the same time</p>
-		<div class="document-language-select">
-			<label class="big-switch">
-				<i>En</i>
-				<span>English</span>
-				<input type="checkbox" setting="langEn" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
-			</label>
-			<label class="big-switch">
-				<i style="font-family:noto; font-size: 30px;">أب</i>
-				<span style="font-family:noto; margin: -7px 0 7px;">عربي</span>
-				<input type="checkbox" setting="langAr" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
-			</label>
+			<h4 i18n>Document Languages</h4>
+			<p i18n>Up to 3 languages can be selected at the same time</p>
+			<div class="document-language-select">
+				<label class="big-switch">
+					<i>En</i>
+					<span>English</span>
+					<input type="checkbox" setting="langEn" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
+				</label>
+				<label class="big-switch">
+					<i style="font-family:noto; font-size: 30px;">أب</i>
+					<span style="font-family:noto; margin: -7px 0 7px;">عربي</span>
+					<input type="checkbox" setting="langAr" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
+				</label>
 
-			<label class="big-switch">
-				<i style="font-family:coptic;font-size: 36px; margin: -2px 0 2px;">v~r</i>
-				<span>Coptic</span>
-				<input type="checkbox" setting="langCo" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
-			</label>
+				<label class="big-switch">
+					<i style="font-family:coptic;font-size: 36px; margin: -2px 0 2px;">v~r</i>
+					<span>Coptic</span>
+					<input type="checkbox" setting="langCo" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
+				</label>
 
-			<label class="big-switch">
-				<i>Id</i>
-				<span>Indonesian</span>
-				<input type="checkbox" setting="langId" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
-			</label>
-		</div>
+				<label class="big-switch">
+					<i>Id</i>
+					<span>Indonesian</span>
+					<input type="checkbox" setting="langId" onchange="SettingsPage.change(this);SettingsPage.checkSelectedLanguageCount(this);">
+				</label>
+			</div>
 
-		<label class="input-container switch" i18n>
-			Display Comments
-			<input type="checkbox" setting="comments" onchange="SettingsPage.change(this);">
-			<span class="slider"></span>
-		</label>
-
-		<div class="input-group">
 			<label class="input-container switch" i18n>
-				Display Silent Prayers
-				<input type="checkbox" setting="silentPrayers" onchange="SettingsPage.change(this);">
+				Display Comments
+				<input type="checkbox" setting="comments" onchange="SettingsPage.change(this);">
 				<span class="slider"></span>
 			</label>
 
-			<label class="input-container switch" i18n>
-				Display Non-Customary Prayers
-				<input type="checkbox" setting="nonCustomaryPrayers" onchange="SettingsPage.change(this);">
-				<span class="slider"></span>
-			</label>
-		</div>
+			<div class="input-group">
+				<label class="input-container switch" i18n>
+					Display Silent Prayers
+					<input type="checkbox" setting="silentPrayers" onchange="SettingsPage.change(this);">
+					<span class="slider"></span>
+				</label>
 
-		<h4>Roles</h4>
-		<div class="input-group">
-			<label class="input-container switch" i18n>
-				Priest
-				<input type="checkbox" setting="rolePriest" onchange="SettingsPage.change(this);">
-				<span class="slider"></span>
-			</label>
-			<label class="input-container switch" i18n>
-				Deacon
-				<input type="checkbox" setting="roleDeacon" onchange="SettingsPage.change(this);">
-				<span class="slider"></span>
-			</label>
-			<label class="input-container switch" i18n>
-				People
-				<input type="checkbox" setting="rolePeople" onchange="SettingsPage.change(this);">
-				<span class="slider"></span>
-			</label>
-		</div>
+				<label class="input-container switch" i18n>
+					Display Non-Customary Prayers
+					<input type="checkbox" setting="nonCustomaryPrayers" onchange="SettingsPage.change(this);">
+					<span class="slider"></span>
+				</label>
+			</div>
 
-		<div class="input-container">
-			<label i18n>Coptic Day Transition</label>
-			<input type="time" id="transition-time" setting="transitionTime" onchange="SettingsPage.change(this);">
-		</div>
-		`;
+			<h4>Roles</h4>
+			<div class="input-group">
+				<label class="input-container switch" i18n>
+					Priest
+					<input type="checkbox" setting="rolePriest" onchange="SettingsPage.change(this);">
+					<span class="slider"></span>
+				</label>
+				<label class="input-container switch" i18n>
+					Deacon
+					<input type="checkbox" setting="roleDeacon" onchange="SettingsPage.change(this);">
+					<span class="slider"></span>
+				</label>
+				<label class="input-container switch" i18n>
+					People
+					<input type="checkbox" setting="rolePeople" onchange="SettingsPage.change(this);">
+					<span class="slider"></span>
+				</label>
+			</div>
+
+			<div class="input-container">
+				<label i18n>Coptic Day Transition</label>
+				<input type="time" id="transition-time" setting="transitionTime" onchange="SettingsPage.change(this);">
+			</div>
+		</main>
+
+		`.trim();
 	}
 
 	return {

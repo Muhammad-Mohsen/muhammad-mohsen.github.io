@@ -124,7 +124,6 @@ header::before { position: absolute; }
 	opacity: 0;
 	transform: translateY(20vh);
 	transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-	overflow-y: auto;
 	pointer-events: none;
 }
 .page.show {
@@ -144,4 +143,9 @@ header::before { position: absolute; }
 	background: var(--accent-fg);
 	color: var(--accent-bg);
 	box-shadow: 2px 4px 8px #00000026;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
 }

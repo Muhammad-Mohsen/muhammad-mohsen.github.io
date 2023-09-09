@@ -162,7 +162,7 @@ export const DocumentPage = (() => {
 		searchContainer.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);
 	}
 	function searchScroll(direction) {
-		DocumentSearch.scroll(element, direction);
+		DocumentSearch.scroll(documentContainer, direction);
 		element.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);
 	}
 	function goto(link) {
@@ -185,28 +185,28 @@ export const DocumentPage = (() => {
 				<h3 i18n>${params.header}</h3>
 			</div>
 
-			<!-- a bit of an unfortunate positioning, but I'll live with it -->
-			<div id="document-actions" class="actions-container">
-				<button class="fab ripple" onclick="DocumentOutline.toggle(true)"><span class="material-symbols-outlined">format_align_left</span></button>
-				<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
-			</div>
-
-			<div class="actions-container search-container">
-				<input onchange="DocumentPage.search()" placeholder="Search">
-				<span id="search-index"></span>
-				<button class="fab ripple" onclick="DocumentPage.searchScroll(false)"><span class="material-symbols-outlined">expand_less</span></button>
-				<button class="fab ripple" onclick="DocumentPage.searchScroll(true)"><span class="material-symbols-outlined">expand_more</span></button>
-				<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
-			</div>
-
-			<!-- document outline -->
-			<aside></aside>
-
 			<loading class="show"></loading>
 		</header>
 
 		<!-- document is rendered asynchronously, and is injected after that completes -->
 		<main></main>
+
+		<div id="document-actions" class="actions-container">
+			<button class="fab ripple" onclick="DocumentOutline.toggle(true)"><span class="material-symbols-outlined">format_align_left</span></button>
+			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
+		</div>
+
+		<div class="actions-container search-container">
+			<input onchange="DocumentPage.search()" placeholder="Search">
+			<span id="search-index"></span>
+			<button class="fab ripple" onclick="DocumentPage.searchScroll(false)"><span class="material-symbols-outlined">expand_less</span></button>
+			<button class="fab ripple" onclick="DocumentPage.searchScroll(true)"><span class="material-symbols-outlined">expand_more</span></button>
+			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
+		</div>
+
+		<!-- document outline -->
+		<aside></aside>
+
 		`.trim();
 	}
 

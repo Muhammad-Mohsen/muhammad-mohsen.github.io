@@ -1,70 +1,19 @@
-document header {
-	position: sticky;
-	top: 0;
+document {
 	display: flex;
-	align-items: center;
-	padding: 8px;
-	background: var(--accent-bg);
-	color: var(--accent-fg);
-	z-index: 1;
-	box-shadow: 0 4px 4px #0004;
+	flex-direction: column;
+	overflow: hidden;
 }
-document header .fab {
-	background: var(--accent-bg);
-	color: var(--accent-fg);
-	box-shadow: none;
-}
-document header h3 {
-	margin: 0 8px;
-	font: 300 24px / 28px 'Poppins';
-}
-document header h5 {
-	margin: 0 8px;
-	font: 500 13px / 16px 'Poppins';
-}
-
 document ul {
 	margin-top: 8px;
 	padding: 0;
 }
 
-.col {
-	display: flex;
-	flex-direction: column;
-}
-
 #document-actions { opacity: 0; transition: 0.2s; }
 #document-actions.show { opacity: 1; }
 
-.actions-container {
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	inset: calc(100dvh - 80px) auto auto calc(50vw - 64px);
-	border-radius: 50px;
-	box-shadow: 2px 4px 8px #0004;
-	overflow: hidden;
-}
-
-.actions-container .fab {
-	position: relative;
-	height: 48px;
-	min-width: 56px;
-	border-radius: 0;
-}
-.actions-container .fab:not(:last-child)::after {
-	content: '';
-	position: absolute;
-	right: 0;
-	width: 1px;
-	height: 20px;
-	opacity: 0.3;
-	background: var(--accent-fg);
-}
-
 /* gives room for the floating-action-pill (fap :D) */
 main {
-	padding-bottom: 100px;
+	padding-bottom: 110px;
 	overflow-x: hidden;
 }
 
@@ -145,9 +94,12 @@ aside title-html:not(:last-child) { border-bottom: 1px solid #42628e41; }
 	position: sticky;
     top: calc(100% - 64px);
     margin: auto;
+	color: var(--accent-fg);
 	background: var(--accent-red);
 	box-shadow: 2px 4px 8px #0004;
 }
 
 aside title-html:first-of-type { margin-top: -56px; }
 aside title-html:last-of-type { margin-bottom: 80px; }
+
+document.page { transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1), font-size 0s; }

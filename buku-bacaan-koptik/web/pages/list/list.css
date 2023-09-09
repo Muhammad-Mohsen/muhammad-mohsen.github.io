@@ -20,6 +20,7 @@ list header h3 {
 }
 
 list ul {
-	margin-top: 8px;
+	margin: 4px 0;
 	padding: 0;
+	overflow-y: auto;
 }

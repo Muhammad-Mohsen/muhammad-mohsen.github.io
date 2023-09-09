@@ -1,6 +1,8 @@
+home { overflow-y: auto; }
 home header {
 	position: sticky;
 	top: -150px;
+	display: block;
 	padding: 20px 20px 48px;
 	background: var(--accent-bg);
 	color: var(--accent-fg);
@@ -41,4 +43,10 @@ home ul .card {
 	width: 100%;
 	max-width: 400px;
 	min-height: 200px;
+}
+
+home header .fab {
+	background: var(--accent-fg);
+    color: var(--accent-bg);
+	box-shadow: 2px 4px 8px #00000026;
 }

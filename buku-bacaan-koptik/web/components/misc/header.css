@@ -1,0 +1,24 @@
+header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	background: var(--accent-bg);
+	color: var(--accent-fg);
+	z-index: 1;
+	box-shadow: 0 4px 4px #0004;
+}
+header h3 {
+	margin: 0 8px;
+	font: 300 24px / 28px 'Poppins';
+}
+header h5 {
+	margin: 0 8px;
+	font: 500 13px / 16px 'Poppins';
+}
+
+header .fab {
+	background: var(--accent-bg);
+	color: var(--accent-fg);
+	box-shadow: none;
+}
