@@ -15,3 +15,11 @@ HTMLCollection.prototype.toArray = function () {
 Element.prototype.childrenArray = function () {
 	return [...(this.children)];
 }
+
+HTMLElement.prototype.show = function (delay) {
+	if (delay) setTimeout(() => this.classList.add('show'), delay);
+	else this.classList.add('show');
+}
+HTMLElement.prototype.hide = function () {
+	this.classList.remove('show');
+}

@@ -23,14 +23,14 @@ export const DocumentPage = (() => {
 
 		toggleSearchMode(false); // reset the search (if any previous search was active!)
 
-		setTimeout(() => element.classList.add('show'), 50);
+		element.show(50);
 
 		let doc = await HTTP.get(entry.path); // = await renderDocument(entry.path);
 		doc = await renderFaster(doc);
 		documentContainer.innerHTML = await postProcessDocument(doc);
 
 		element.querySelector('loading').classList.remove('show'); // hide the loading indicator
-		element.querySelector('#document-actions').classList.add('show'); // show document actions
+		element.querySelector('#document-actions').show(); // show document actions
 
 		DocumentOutline.create(documentContainer, outlineContainer);
 	}

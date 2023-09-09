@@ -19,7 +19,7 @@ export const SettingsPage = (() => {
 
 	function init() {
 		element.innerHTML = template();
-		setTimeout(() => element.classList.add('show'), 50);
+		element.show(50);
 
 		load();
 		setPreviewFontSize(element.querySelector('[setting="fontSize"]'));

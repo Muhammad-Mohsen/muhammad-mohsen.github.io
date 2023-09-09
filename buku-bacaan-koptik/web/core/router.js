@@ -14,11 +14,11 @@ export const Router = (() => {
 		const route = location.hash.substring(1);
 		const entry = MainMenu.getEntry(route);
 
-		document.querySelector('.page.show').classList.remove('show');
+		document.querySelector('.page.show').hide();
 		document.querySelector('html').scrollTop = 0;
 
 		if (route == '') {
-			setTimeout(() => document.querySelector('home').classList.add('show'), 50);
+			document.querySelector('home').show(50);
 
 		} else if (entry?.menu) {
 			ListPage.init(entry);
@@ -36,7 +36,7 @@ export const Router = (() => {
 			CalendarPage.init();
 
 		} else {
-			setTimeout(() => document.querySelector('home').classList.add('show'), 50);
+			document.querySelector('home').show(50);
 		}
 	}
 
