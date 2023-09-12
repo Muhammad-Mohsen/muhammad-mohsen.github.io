@@ -121,8 +121,27 @@ export const Occasions = (() => {
 	else if (THEOPHANY_PARAMOUN_END.getDay() == Date.SATURDAY) THEOPHANY_PARAMOUN_START = new Date(THEOPHANY_PARAMOUN_END).addDays(-1);
 	else NATIVITY_PARAMOUN_START = THEOPHANY_PARAMOUN_END;
 
-	const RESURRECTION = new Date(); // const2; // ???
-	const DAY_AFTER_RESURRECTION = new Date(RESURRECTION); // crDateTime2.addDays(1);
+	// https://www.assa.org.au/edm#:~:text=In%20most%20years%2C%20Orthodox%20Easter,skipped%22%20in%20the%20Gregorian%20calendar.
+	// https://www.assa.org.au/edm#OrthCalculator
+	// https://blog.georgekosmidis.net/c-calculating-orthodox-and-catholic-easter.html
+	function getOrthodoxEaster(year) {
+		var a = year % 19;
+		var b = year % 7;
+		var c = year % 4;
+
+		var d = (19 * a + 16) % 30;
+		var e = (2 * c + 4 * b + 6 * d) % 7;
+		var f = (19 * a + 16) % 30;
+
+		var key = f + e + 3;
+		var month = (key > 30) ? 5 : 4;
+		var day = (key > 30) ? key - 30 : key;
+
+		return new Date(year, month - 1, day);
+	}
+
+	const RESURRECTION = getOrthodoxEaster(new Date().getUTCFullYear());
+	const DAY_AFTER_RESURRECTION = new Date(RESURRECTION);
 
 	const ASCENSION = new Date(RESURRECTION).addDays(39);
 
