@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Table</title>
+
+	<style>
+		* {
+			margin: 0 auto;
+			font-family: Helvetica;
+		}
+
+		html {
+			background-color: #e9e9e9;
+		}
+
+		table {
+			width: calc(100% - 32px);
+			margin: 16px;
+			border-collapse: collapse;
+			border-radius: 16px;
+			overflow: hidden;
+		}
+
+		td, th {
+			padding: 24px 12px;
+			text-align: left;
+		}
+		th {
+			color: #fff;
+			background: #333;
+		}
+
+		tr:nth-of-type(2n - 1) { background: #d9d9d9; }
+		tr:nth-of-type(2n) { background: #c9c9c9; }
+
+		@media screen and (max-width: 600px) {
+			thead { display: none; }
+
+			td, tr {
+				display: block;
+				padding: 12px;
+				transition: 0.2s ease-out;
+				overflow: hidden;
+			}
+
+			td::before {
+				content: attr(data-name)": ";
+				font-weight: 700;
+				text-transform: capitalize;
+			}
+
+			tr { padding: 12px 0; }
+
+			td:first-child::after {
+				content: "+";
+				float: right;
+			}
+			td:not(:first-child) {
+				max-height: 0;
+				padding: 0 12px;
+			}
+
+			tr:focus-within td:first-child::after { content: "-"; }
+
+			/* tr:focus-within { pointer-events: none; } */
+
+			tr:focus-within td:first-child ~ td {
+				max-height: 100px;
+				padding: 12px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<table class="table table-striped output">
+
+		<thead>
+			<tr tabindex="0">
+				<th>Name</th>
+				<th>Date</th>
+				<th>Phone Number</th>
+				<th>Address</th>
+			</tr>
+		</thead>
+
+		<tbody tabindex="0">
+			<tr tabindex="0">
+				<td data-name="name">Simon Wilkins</td>
+				<td data-name="date">6/18/2006 11:47</td>
+				<td data-name="phone number">(773) 974-6410</td>
+				<td data-name="address">1313 Wilkins St, Parkerburg KY 11230</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Guadalupe Smith</td>
+				<td data-name="date">9/16/2019 10:48</td>
+				<td data-name="phone number">(632) 488-6191</td>
+				<td data-name="address">4865 Bishop St, Gloverville TN 48558</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Simon Parker</td>
+				<td data-name="date">11/24/2015 11:11</td>
+				<td data-name="phone number">(978) 912-7648</td>
+				<td data-name="address">7627 Tucker Dr, Lopezburg CT 25194</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Yvonne Tucker</td>
+				<td data-name="date">4/20/2010 14:24</td>
+				<td data-name="phone number">(316) 248-6054</td>
+				<td data-name="address">9606 Darin Cir, Guadalupeburg NC 84841</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lela Lela</td>
+				<td data-name="date">6/7/2015 14:12</td>
+				<td data-name="phone number">(487) 493-3896</td>
+				<td data-name="address">4803 Bishop Blvd, Wilkinsburg OH 74865</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Parker Guadalupe</td>
+				<td data-name="date">3/2/2021 13:35</td>
+				<td data-name="phone number">(450) 489-8647</td>
+				<td data-name="address">3365 Lela Pl, Lucilleville MN 68957</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Roosevelt Yvonne</td>
+				<td data-name="date">2/18/2019 00:17</td>
+				<td data-name="phone number">(650) 152-5548</td>
+				<td data-name="address">9171 Lela St, Luisburg SD 83850</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lela Wilkins</td>
+				<td data-name="date">6/20/2008 14:01</td>
+				<td data-name="phone number">(549) 895-4243</td>
+				<td data-name="address">9431 Roosevelt Blvd, Wilkinsville WV 30235</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Bishop Parker</td>
+				<td data-name="date">2/5/2001 00:31</td>
+				<td data-name="phone number">(991) 961-2499</td>
+				<td data-name="address">3488 Smith St, Eloisetown GA 31889</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Yvonne Luis</td>
+				<td data-name="date">10/4/2006 00:24</td>
+				<td data-name="phone number">(687) 137-9443</td>
+				<td data-name="address">263 Glover Dr, Simonburg NY 98802</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Deanna Guadalupe</td>
+				<td data-name="date">2/19/2020 12:20</td>
+				<td data-name="phone number">(947) 453-4760</td>
+				<td data-name="address">9510 Smith Pl, Copelandville KS 69272</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Roosevelt Roosevelt</td>
+				<td data-name="date">9/8/2004 11:28</td>
+				<td data-name="phone number">(417) 483-5734</td>
+				<td data-name="address">8519 Smith Blvd, Parkerburg FL 74978</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Miles Eloise</td>
+				<td data-name="date">4/9/2002 04:21</td>
+				<td data-name="phone number">(920) 617-1488</td>
+				<td data-name="address">7496 Darin Blvd, Rooseveltburg OR 37227</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lopez Glover</td>
+				<td data-name="date">10/16/2007 12:41</td>
+				<td data-name="phone number">(881) 816-9688</td>
+				<td data-name="address">2868 Wilkins Cir, Tuckerburg MD 92127</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Copeland Eloise</td>
+				<td data-name="date">6/17/2019 00:24</td>
+				<td data-name="phone number">(992) 597-6528</td>
+				<td data-name="address">3618 Calvin Cir, Lopezville NM 88886</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Calvin Bishop</td>
+				<td data-name="date">11/20/2013 03:28</td>
+				<td data-name="phone number">(578) 329-5421</td>
+				<td data-name="address">7051 Eloise Dr, Glovertown AL 77400</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Smith Miles</td>
+				<td data-name="date">4/21/2018 01:13</td>
+				<td data-name="phone number">(604) 907-2847</td>
+				<td data-name="address">1272 Lela Cir, Milesburg MD 95883</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Bishop Guadalupe</td>
+				<td data-name="date">11/15/2001 14:27</td>
+				<td data-name="phone number">(338) 725-9791</td>
+				<td data-name="address">1007 Guadalupe Pl, Luisburg AR 38963</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Glover Deanna</td>
+				<td data-name="date">11/1/2014 14:44</td>
+				<td data-name="phone number">(654) 117-3763</td>
+				<td data-name="address">4305 Lopez Blvd, Gloverville MI 37657</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Glover Lucille</td>
+				<td data-name="date">4/14/2022 03:01</td>
+				<td data-name="phone number">(483) 611-5929</td>
+				<td data-name="address">2180 Lopez Cir, Tuckerburg KS 74794</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Tucker Smith</td>
+				<td data-name="date">3/8/2015 03:21</td>
+				<td data-name="phone number">(600) 738-5283</td>
+				<td data-name="address">5699 Glover Cir, Glovertown DE 51358</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Bishop Lela</td>
+				<td data-name="date">8/21/2021 11:33</td>
+				<td data-name="phone number">(891) 584-1345</td>
+				<td data-name="address">6525 Miles St, Yvonneville UT 72264</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lucille Glover</td>
+				<td data-name="date">5/20/2018 00:22</td>
+				<td data-name="phone number">(423) 551-5665</td>
+				<td data-name="address">7896 Wilkins St, Rooseveltburg MT 56950</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Bishop Copeland</td>
+				<td data-name="date">4/4/2002 02:28</td>
+				<td data-name="phone number">(563) 245-1209</td>
+				<td data-name="address">3879 Copeland St, Eloisetown VA 61693</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Parker Bishop</td>
+				<td data-name="date">3/14/2006 11:12</td>
+				<td data-name="phone number">(972) 737-7546</td>
+				<td data-name="address">8393 Darin Pl, Lucilleburg ME 18532</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Glover Guadalupe</td>
+				<td data-name="date">8/4/2012 14:17</td>
+				<td data-name="phone number">(526) 724-8203</td>
+				<td data-name="address">3358 Calvin St, Deannatown IA 43778</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Bishop Lucille</td>
+				<td data-name="date">6/3/2007 04:47</td>
+				<td data-name="phone number">(255) 311-3372</td>
+				<td data-name="address">5020 Luis St, Lelaburg HI 10070</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lucille Lopez</td>
+				<td data-name="date">3/4/2000 00:13</td>
+				<td data-name="phone number">(583) 536-9565</td>
+				<td data-name="address">6938 Roosevelt Cir, Lucilletown WV 33330</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lopez Yvonne</td>
+				<td data-name="date">9/11/2010 12:22</td>
+				<td data-name="phone number">(220) 780-6500</td>
+				<td data-name="address">1132 Copeland Dr, Calvinburg MA 94950</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Guadalupe Smith</td>
+				<td data-name="date">2/10/2004 13:38</td>
+				<td data-name="phone number">(216) 235-6086</td>
+				<td data-name="address">6262 Guadalupe Blvd, Luisville DC 54780</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Copeland Parker</td>
+				<td data-name="date">5/6/2015 02:00</td>
+				<td data-name="phone number">(561) 508-2327</td>
+				<td data-name="address">9528 Deanna Dr, Glovertown KY 57230</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Darin Copeland</td>
+				<td data-name="date">5/14/2011 12:32</td>
+				<td data-name="phone number">(606) 860-8800</td>
+				<td data-name="address">4307 Parker Blvd, Parkerville MA 59247</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Wilkins Eloise</td>
+				<td data-name="date">4/1/2002 10:21</td>
+				<td data-name="phone number">(496) 934-3606</td>
+				<td data-name="address">6901 Glover Cir, Lopezburg SC 90212</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Parker Luis</td>
+				<td data-name="date">9/4/2004 10:23</td>
+				<td data-name="phone number">(441) 139-9671</td>
+				<td data-name="address">5899 Glover Pl, Calvintown IA 51409</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Calvin Parker</td>
+				<td data-name="date">2/17/2004 02:36</td>
+				<td data-name="phone number">(608) 735-6501</td>
+				<td data-name="address">6710 Guadalupe Blvd, Tuckerburg ND 32929</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Deanna Copeland</td>
+				<td data-name="date">8/17/2007 13:46</td>
+				<td data-name="phone number">(281) 765-3568</td>
+				<td data-name="address">972 Calvin Cir, Bishoptown NY 29928</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Simon Roosevelt</td>
+				<td data-name="date">4/11/2010 13:13</td>
+				<td data-name="phone number">(450) 376-8359</td>
+				<td data-name="address">8271 Smith Dr, Copelandville TN 63866</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Bishop Parker</td>
+				<td data-name="date">7/24/2017 11:32</td>
+				<td data-name="phone number">(490) 761-6705</td>
+				<td data-name="address">6157 Parker Cir, Lopezburg DE 40147</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lela Glover</td>
+				<td data-name="date">10/24/2016 00:38</td>
+				<td data-name="phone number">(678) 939-8860</td>
+				<td data-name="address">7601 Tucker Pl, Luisville AL 83777</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Tucker Copeland</td>
+				<td data-name="date">10/23/2005 02:12</td>
+				<td data-name="phone number">(681) 939-2176</td>
+				<td data-name="address">9654 Guadalupe Pl, Tuckerville TX 89914</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Parker Darin</td>
+				<td data-name="date">9/1/2013 02:38</td>
+				<td data-name="phone number">(365) 587-2241</td>
+				<td data-name="address">4116 Roosevelt Blvd, Smithville DE 31932</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Roosevelt Yvonne</td>
+				<td data-name="date">6/5/2013 02:34</td>
+				<td data-name="phone number">(295) 189-7053</td>
+				<td data-name="address">1927 Calvin Blvd, Copelandtown WA 19620</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Eloise Parker</td>
+				<td data-name="date">2/24/2013 14:34</td>
+				<td data-name="phone number">(908) 760-5182</td>
+				<td data-name="address">7405 Calvin St, Parkerville VT 89728</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Calvin Yvonne</td>
+				<td data-name="date">10/13/2015 14:04</td>
+				<td data-name="phone number">(415) 126-4526</td>
+				<td data-name="address">7055 Deanna Dr, Smithburg RI 12010</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lela Lela</td>
+				<td data-name="date">4/10/2020 03:38</td>
+				<td data-name="phone number">(440) 561-2973</td>
+				<td data-name="address">4481 Simon St, Simonburg AZ 36270</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Glover Lucille</td>
+				<td data-name="date">2/1/2003 11:38</td>
+				<td data-name="phone number">(859) 371-1976</td>
+				<td data-name="address">2624 Lela Pl, Parkerville NH 23957</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Darin Copeland</td>
+				<td data-name="date">11/9/2005 14:02</td>
+				<td data-name="phone number">(290) 826-6378</td>
+				<td data-name="address">3834 Darin Pl, Wilkinstown TN 55694</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Lucille Deanna</td>
+				<td data-name="date">7/5/2020 13:02</td>
+				<td data-name="phone number">(276) 690-2833</td>
+				<td data-name="address">4148 Tucker Dr, Rooseveltburg MS 11240</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Guadalupe Deanna</td>
+				<td data-name="date">2/27/2011 03:11</td>
+				<td data-name="phone number">(614) 701-2199</td>
+				<td data-name="address">1522 Bishop Pl, Smithville CT 60598</td>
+			</tr>
+			<tr tabindex="0">
+				<td data-name="name">Tucker Calvin</td>
+				<td data-name="date">4/14/2006 14:33</td>
+				<td data-name="phone number">(665) 121-3338</td>
+				<td data-name="address">4674 Luis Dr, Darinville CT 54875</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>
