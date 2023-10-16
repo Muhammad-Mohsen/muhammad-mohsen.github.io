@@ -58,7 +58,7 @@ export const CalendarPage = (() => {
 
 			<!-- a bit of an unfortunate positioning, but I'll live with it -->
 			<div class="actions-container">
-				<button class="fab ripple text" onclick="CalendarPage.setLive();"><span>${params.date.getToday()}</span></button>
+				<button class="fab ripple text" onclick="CalendarPage.setLive();"><span>${params.date.getDateOrdinal()}</span></button>
 				<button class="fab ripple">
 					<span class="material-symbols-outlined">calendar_month</span>
 					<input type="date" onchange="CalendarPage.setLive(this.value)" value="${params.date.value()}">

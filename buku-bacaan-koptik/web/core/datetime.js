@@ -89,14 +89,23 @@ Date.prototype.isBetween = function (from, to) {
 	return this >= from && this <= to;
 }
 
-Date.prototype.getToday = function () {
-	var today = this.getDate().toString();
-	if (today.endsWith('1')) return today + 'st';
-	else if (today.endsWith('2')) return today + 'nd';
-	else if (today.endsWith('3')) return today + 'rd';
-	else return today + 'th';
-}
 // to set date inputs directly
 Date.prototype.value = function () {
 	return this.toJSON().substring(0, 10);
+}
+
+// not currently localized
+Date.prototype.getDateOrdinal = function () {
+	const suffixes = new Map([
+		['one', 'st'],
+		['two', 'nd'],
+		['few', 'rd'],
+		['other', 'th'],
+	]);
+
+	const rules = new Intl.PluralRules('en-US', { type: 'ordinal' });
+
+	const today = this.getDate();
+	const rule = rules.select(today);
+	return `${today}${suffixes.get(rule)}`;
 }
