@@ -86,7 +86,8 @@ const ContentEditor = (() => {
 			.replace(/<title-html>/gi, '<Title>')
 			.replace(/<title-html /gi, '<Title ')
 			.replace(/<\/title-html>/gi, '</Title>')
-			.replace(/ contenteditable="true"/gi, '');
+			.replace(/ contenteditable="true"/gi, '')
+			.replace(/&nbsp;/gi, ' '); // reaplce html-entity space with a text space
 
 		const a = document.createElement('a');
 		a.download = fileName || '';
