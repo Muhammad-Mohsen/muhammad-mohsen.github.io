@@ -41,7 +41,7 @@ public class App
 
 		ArrayList<File> files = getInputFiles(new File(INPUT));
 		for (File file : files) {
-			BufferedInputStream stream = read(file.getAbsolutePath());
+			InputStream stream = read(file.getAbsolutePath());
 			InputStream decryptedStream = decrypt(stream);
 			Scanner data = unzip(decryptedStream);
 			write(file, data);
@@ -72,9 +72,9 @@ public class App
 		return files;
 	}
 
-	public static BufferedInputStream read(String path) throws IOException {
+	public static InputStream read(String path) throws IOException {
         FileInputStream file = new FileInputStream(path);
-        BufferedInputStream buffer = new BufferedInputStream(file, 8192);
+        InputStream buffer = (InputStream) new BufferedInputStream(file, 8192);
 
         return buffer;
     }
