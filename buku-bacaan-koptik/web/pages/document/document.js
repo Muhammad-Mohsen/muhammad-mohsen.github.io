@@ -5,6 +5,7 @@ import { SettingsPage } from "../settings/settings.js";
 import { BibleRef } from "./bible.js";
 import { DocumentOutline } from "./outline.js";
 import { DocumentSearch } from "./search.js";
+// import { SeasonEvaluator } from "./season-evaluator.js";
 
 export const DocumentPage = (() => {
 
@@ -27,6 +28,9 @@ export const DocumentPage = (() => {
 
 		let doc = await HTTP.get(entry.path); // = await renderDocument(entry.path);
 		doc = await renderFaster(doc);
+		doc = await renderBible(doc);
+		applySettings(doc);
+
 		documentContainer.innerHTML = await postProcessDocument(doc);
 
 		element.querySelector('loading').classList.remove('show'); // hide the loading indicator
@@ -40,8 +44,8 @@ export const DocumentPage = (() => {
 		const doc = await HTTP.get(path);
 		if (!doc) return '';
 
-		const includes = doc.querySelectorAll('InsertDocument');
-		for (let i of [...includes]) {
+		const includes = doc.querySelectorAll('InsertDocument, insertdocument').toArray();
+		for (let i of includes) {
 			const path = i.getAttribute('path');
 			const innerDoc = await renderDocument(path);
 			i.replaceWith(innerDoc);
@@ -52,26 +56,72 @@ export const DocumentPage = (() => {
 	// I hate that we have to get the document first then recurse
 	async function renderFaster(doc) {
 
-		// TODO
+		// discard out-of-season...er...seasons
+		doc = discardOutOfSeasons(doc);
 
-		const includes = doc.querySelectorAll('InsertDocument');
+		// get all the includes, and if none, we're done
+		const includes = doc.querySelectorAll('InsertDocument, insertdocument');
 		if (includes.length == 0) return doc;
 
+		// actually get the XML
 		const promises = [];
 		for (let i of [...includes]) {
 			const path = i.getAttribute('path');
 			promises.push(HTTP.get(path));
 		}
 
+		// wait until everything everything resolves, and put the XML in the document
 		const innerDocs = await Promise.all(promises);
 		innerDocs.forEach((doc, i) => includes[i].replaceWith(doc));
 
+		// try again
 		return renderFaster(doc);
 	}
 
-	function discardOutOfSeason(doc) {
-		const seasons = [...doc.querySelectorAll('season')];
+	// bible references aren't recursive, so they can just be called at the end
+	async function renderBible(doc) {
+		const refs = [...doc.querySelectorAll('BibleReference, biblereference')];
+
+		for (let r of refs) {
+			const refNode = await BibleRef.render(r);
+			r.outerHTML = refNode; // replaceWith(refNode);
+		}
+
 		return doc;
+	}
+
+	function discardOutOfSeasons(doc) {
+		doc.querySelectorAll('season').toArray().forEach(s => {
+			// if (!SeasonEvaluator.exec(s)) s.remove();
+		});
+
+		return doc;
+	}
+
+	function applySettings(doc) {
+		const settings = SettingsPage.get();
+		element.style.fontSize = settings.fontSize + 'em';
+
+		const falsy = (prop) => prop != 'true';
+		const removeAll = (selector) => [...doc.querySelectorAll(selector)].forEach(e => e.remove());
+
+		if (falsy(settings.comments)) removeAll('comment'); // comments
+
+		if (falsy(settings.silentPrayers)) removeAll('comment'); // silent prayers
+		if (falsy(settings.nonCustomaryPrayers)) removeAll('comment'); // non-customray prayers
+
+		// roles
+		if (falsy(settings.rolePriest)) removeAll('rolePriest');
+		if (falsy(settings.roleDeacon)) removeAll('roleDeacon');
+		if (falsy(settings.rolePeople)) removeAll('rolePeople');
+
+		// transition time??
+
+		// languages...at the end to ensure that we removed the big, parent nodes first (roles/comments for example)
+		if (falsy(settings.langEn)) removeAll('[id="English"]');
+		if (falsy(settings.langCo)) removeAll('[id="Coptic"]');
+		if (falsy(settings.langAr)) removeAll('[id="Arabic"]');
+		if (falsy(settings.langId)) removeAll('[id="Indonesian"]');
 	}
 
 	// a final pass on the final document...some click handlers, and straight up string manipulations on the outerHTML!
@@ -82,15 +132,7 @@ export const DocumentPage = (() => {
 		const sectionHeaders = doc.querySelectorAll('Section Title');
 		for (let h of [...sectionHeaders]) h.setAttribute('data-section-header', 'true');
 
-		doc = await renderBible(doc);
-
-		applySettings(doc);
-
 		return doc.outerHTML
-			// remove post-decryption encoding error
-			.replace(/\?�?/gi, '')
-			.replace(/�/gi, '')
-
 			// replace CopticReading id with Coptic...the coptic-row attr is used as an extra css selector for custom display
 			.replace(/id="CopticReading"/gi, 'id="Coptic" coptic-row')
 
@@ -105,44 +147,6 @@ export const DocumentPage = (() => {
 			.replace(/<linkdocument /gi, `<linkdocument onclick="DocumentPage.goto(this);" `)
 
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
-	}
-
-	// bible references aren't recursive, so they can just be called at the end
-	async function renderBible(doc) {
-		const refs = [...doc.querySelectorAll('BibleReference')];
-
-		for (let r of refs) {
-			const refNode = await BibleRef.render(r);
-			r.outerHTML = refNode; // replaceWith(refNode);
-		}
-
-		return doc;
-	}
-
-	function applySettings(doc) {
-		const settings = SettingsPage.get();
-		element.style.fontSize = settings.fontSize + 'em';
-
-		const falsy = (prop) => prop != 'true';
-		const removeAll = (selector) => [...doc.querySelectorAll(selector)].forEach(e => e.remove());
-
-		if (falsy(settings.comments)) removeAll('comment'); // comments
-
-		// if (falsy(settings.silentPrayers)) removeAll('comment'); // silent prayers
-		// if (falsy(settings.nonCustomaryPrayers)) removeAll('comment'); // non-customray prayers
-
-		// roles
-		// if (falsy(settings.rolePriest)) removeAll('rolePriest');
-		// if (falsy(settings.roleDeacon)) removeAll('roleDeacon');
-		// if (falsy(settings.rolePeople)) removeAll('rolePeople');
-
-		// transition time??
-
-		// languages...at the end to ensure that we removed the big, parent nodes first (roles/comments for example)
-		if (falsy(settings.langEn)) removeAll('[id="English"]');
-		if (falsy(settings.langCo)) removeAll('[id="Coptic"]');
-		if (falsy(settings.langAr)) removeAll('[id="Arabic"]');
-		if (falsy(settings.langId)) removeAll('[id="Indonesian"]');
 	}
 
 	function sectionExpandCollapse(target) {
