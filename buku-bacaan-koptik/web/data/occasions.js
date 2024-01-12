@@ -252,10 +252,12 @@ export const Occasions = (() => {
 		NESI_5,
 		NATIVITY_CELEBRATE,
 		DAY_AFTER_NATIVITY,
+		NATIVITY_PARAMOUN_START,
 		NATIVITY_PARAMOUN_END,
 		NEW_YEAR_NEXT_YEAR,
 		THEOPHANY,
 		DAY_AFTER_THEOPHANY,
+		THEOPHANY_PARAMOUN_START,
 		THEOPHANY_PARAMOUN_END,
 		RESURRECTION,
 		DAY_AFTER_RESURRECTION,
@@ -302,4 +304,4 @@ export const Occasions = (() => {
 		PENTECOST_MONDAY_7,
 	};
 
-}); // can't be immediately invoked because it depends on the datetime extensions
+})();
