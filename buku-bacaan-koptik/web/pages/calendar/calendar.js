@@ -25,13 +25,14 @@ export const CalendarPage = (() => {
 
 	function createItems() {
 		let html = '';
-		const occasions = Occasions();
 
-		Object.keys(occasions).forEach(k => {
+		Object.keys(Occasions).forEach(k => {
+			if (!(Occasions[k] instanceof Date)) return;
+
 			html += ListItem2({
 				title: k.replace(/_/g, ' '),
-				subtitle: `${occasions[k].formatGregorian('full')} &bull; <i>${occasions[k].formatCoptic(true)}</i>`,
-				clickHandler: `CalendarPage.setLive('${occasions[k].toJSON()}')`,
+				subtitle: `${Occasions[k].formatGregorian('full')} &bull; <i>${Occasions[k].formatCoptic(true)}</i>`,
+				clickHandler: `CalendarPage.setLive('${Occasions[k].toJSON()}')`,
 			});
 		});
 
