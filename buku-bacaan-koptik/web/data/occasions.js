@@ -9,9 +9,9 @@ export const Occasions = (() => {
 
 	const thouut1 = Date.fromCoptic(1, 1);
 	const FIRST_SUNDAY_OF_THOOUT = thouut1.firstSundayOfMonth();
-    const SECOND_SUNDAY_OF_THOOUT = new Date(FIRST_SUNDAY_OF_THOOUT).addDays(7);
-    const THIRD_SUNDAY_OF_THOOUT = new Date(SECOND_SUNDAY_OF_THOOUT).addDays(7);
-    const FOURTH_SUNDAY_OF_THOOUT = new Date(THIRD_SUNDAY_OF_THOOUT).addDays(7);
+    const SECOND_SUNDAY_OF_THOOUT = FIRST_SUNDAY_OF_THOOUT.addDays(7);
+    const THIRD_SUNDAY_OF_THOOUT = SECOND_SUNDAY_OF_THOOUT.addDays(7);
+    const FOURTH_SUNDAY_OF_THOOUT = THIRD_SUNDAY_OF_THOOUT.addDays(7);
 
 	const PAOPE_10 = Date.fromCoptic(2, 10);
 	const PAOPE_29 = Date.fromCoptic(2, 29);
@@ -30,9 +30,9 @@ export const Occasions = (() => {
 
 	const koiahk1 = Date.fromCoptic(4, 1);
 	const FIRST_SUNDAY_OF_KOIAHK = koiahk1.firstSundayOfMonth();
-    const SECOND_SUNDAY_OF_KOIAHK = new Date(FIRST_SUNDAY_OF_KOIAHK).addDays(7);
-    const THIRD_SUNDAY_OF_KOIAHK = new Date(SECOND_SUNDAY_OF_KOIAHK).addDays(7);
-    const FOURTH_SUNDAY_OF_KOIAHK = new Date(THIRD_SUNDAY_OF_KOIAHK).addDays(7);
+    const SECOND_SUNDAY_OF_KOIAHK = FIRST_SUNDAY_OF_KOIAHK.addDays(7);
+    const THIRD_SUNDAY_OF_KOIAHK = SECOND_SUNDAY_OF_KOIAHK.addDays(7);
+    const FOURTH_SUNDAY_OF_KOIAHK = THIRD_SUNDAY_OF_KOIAHK.addDays(7);
 
 	const TOBE_1 = Date.fromCoptic(5, 1);
 	const CIRCUMCISION = Date.fromCoptic(5, 6);
@@ -90,35 +90,35 @@ export const Occasions = (() => {
 	if (dayOfMonth > 0) {
 	    const createDate2 = Date.fromCoptic(4, 28);
 	    NATIVITY_START = createDate2;
-	    NATIVITY_END = new Date(createDate2).addDays(1);
+	    NATIVITY_END = createDate2.addDays(1);
 
 	} else if (dayOfMonth < 0) {
 	    const createDate3 = Date.fromCoptic(4, 29);
 	    NATIVITY_START = createDate3;
-	    NATIVITY_END = newDate(createDate3).addDays(1);
+	    NATIVITY_END = createDate3.addDays(1);
 
 	} else {
 	    NATIVITY_START = Date.fromCoptic(4, 29);
 	    NATIVITY_END = NATIVITY_START;
 	}
 
-	const DAY_AFTER_NATIVITY = new Date(NATIVITY_END).addDays(1);
+	const DAY_AFTER_NATIVITY = NATIVITY_END.addDays(1);
 
-	const NATIVITY_PARAMOUN_END = new Date(NATIVITY_CELEBRATE).addDays(-1);
+	const NATIVITY_PARAMOUN_END = NATIVITY_CELEBRATE.addDays(-1);
 	let NATIVITY_PARAMOUN_START
-	if (NATIVITY_PARAMOUN_END.getDay() == Date.SUNDAY) NATIVITY_PARAMOUN_START = new Date(NATIVITY_PARAMOUN_END).addDays(-2);
-	else if (NATIVITY_PARAMOUN_END.getDay() == Date.SATURDAY) NATIVITY_PARAMOUN_START = new Date(NATIVITY_PARAMOUN_END).addDays(-1);
+	if (NATIVITY_PARAMOUN_END.getDay() == Date.SUNDAY) NATIVITY_PARAMOUN_START = NATIVITY_PARAMOUN_END.addDays(-2);
+	else if (NATIVITY_PARAMOUN_END.getDay() == Date.SATURDAY) NATIVITY_PARAMOUN_START = NATIVITY_PARAMOUN_END.addDays(-1);
 	else NATIVITY_PARAMOUN_START = NATIVITY_PARAMOUN_END;
 
 	const isLeap = Date.isLeap(thouut1.toCoptic().year);
-    const NEW_YEAR_NEXT_YEAR = isLeap ? new Date(thouut1).addDays(366) : new Date(thouut1).addDays(365);
+    const NEW_YEAR_NEXT_YEAR = isLeap ? thouut1.addDays(366) : thouut1.addDays(365);
 
 	const THEOPHANY = Date.fromCoptic(5, 11);
-	const DAY_AFTER_THEOPHANY = new Date(THEOPHANY).addDays(1);
-	const THEOPHANY_PARAMOUN_END = new Date(THEOPHANY).addDays(-1);
+	const DAY_AFTER_THEOPHANY = THEOPHANY.addDays(1);
+	const THEOPHANY_PARAMOUN_END = THEOPHANY.addDays(-1);
     let THEOPHANY_PARAMOUN_START = '';
-	if (THEOPHANY_PARAMOUN_END.getDay() == Date.SUNDAY) THEOPHANY_PARAMOUN_START = new Date(NATIVITY_PARAMOUN_END).addDays(-2);
-	else if (THEOPHANY_PARAMOUN_END.getDay() == Date.SATURDAY) THEOPHANY_PARAMOUN_START = new Date(THEOPHANY_PARAMOUN_END).addDays(-1);
+	if (THEOPHANY_PARAMOUN_END.getDay() == Date.SUNDAY) THEOPHANY_PARAMOUN_START = NATIVITY_PARAMOUN_END.addDays(-2);
+	else if (THEOPHANY_PARAMOUN_END.getDay() == Date.SATURDAY) THEOPHANY_PARAMOUN_START = THEOPHANY_PARAMOUN_END.addDays(-1);
 	else NATIVITY_PARAMOUN_START = THEOPHANY_PARAMOUN_END;
 
 	// https://www.assa.org.au/edm#:~:text=In%20most%20years%2C%20Orthodox%20Easter,skipped%22%20in%20the%20Gregorian%20calendar.
@@ -141,54 +141,54 @@ export const Occasions = (() => {
 	}
 
 	const RESURRECTION = getOrthodoxEaster(new Date().getUTCFullYear());
-	const DAY_AFTER_RESURRECTION = new Date(RESURRECTION);
+	const DAY_AFTER_RESURRECTION = RESURRECTION.addDays(1);
 
-	const ASCENSION = new Date(RESURRECTION).addDays(39);
+	const ASCENSION = RESURRECTION.addDays(39);
 
-	const PENTECOST_FEAST = new Date(ASCENSION).addDays(10);
-	const APOSTLES_FAST_BEGIN = new Date(PENTECOST_FEAST).addDays(1);
-	const JOYOUS_SATURDAY = new Date(RESURRECTION).addDays(-1);
-	const GREAT_FRIDAY = new Date(RESURRECTION).addDays(-2);
-	const COVENANT_THURSDAY = new Date(GREAT_FRIDAY).addDays(-1);
-	const HOSANNA_SUNDAY = new Date(RESURRECTION).addDays(-7);
-	const LAST_FRIDAY_OF_GREAT_FAST = new Date(HOSANNA_SUNDAY).addDays(-2);
+	const PENTECOST_FEAST = ASCENSION.addDays(10);
+	const APOSTLES_FAST_BEGIN = PENTECOST_FEAST.addDays(1);
+	const JOYOUS_SATURDAY = RESURRECTION.addDays(-1);
+	const GREAT_FRIDAY = RESURRECTION.addDays(-2);
+	const COVENANT_THURSDAY = GREAT_FRIDAY.addDays(-1);
+	const HOSANNA_SUNDAY = RESURRECTION.addDays(-7);
+	const LAST_FRIDAY_OF_GREAT_FAST = HOSANNA_SUNDAY.addDays(-2);
 	const PASCHA_BEGIN = HOSANNA_SUNDAY.addDays(1);
 	const LAZARUS_SATURDAY = HOSANNA_SUNDAY.addDays(-1);
-	const GREAT_FAST_BEGIN = new Date(RESURRECTION).addDays(-55);
-	const JONAH_FAST_BEGIN = new Date(GREAT_FAST_BEGIN).addDays(-14);
-	const JONAH_FAST_END = new Date(JONAH_FAST_BEGIN).addDays(2);
-	const JONAH_PASSOVER = new Date(JONAH_FAST_END).addDays(1);
+	const GREAT_FAST_BEGIN = RESURRECTION.addDays(-55);
+	const JONAH_FAST_BEGIN = GREAT_FAST_BEGIN.addDays(-14);
+	const JONAH_FAST_END = JONAH_FAST_BEGIN.addDays(2);
+	const JONAH_PASSOVER = JONAH_FAST_END.addDays(1);
 
-	const GREAT_FAST_SUNDAY_6 = new Date(HOSANNA_SUNDAY).addWeeks(-1);
-	const GREAT_FAST_SUNDAY_5 = new Date(HOSANNA_SUNDAY).addWeeks(-2);
-	const GREAT_FAST_SUNDAY_4 = new Date(HOSANNA_SUNDAY).addWeeks(-3);
-	const GREAT_FAST_SUNDAY_3 = new Date(HOSANNA_SUNDAY).addWeeks(-4);
-	const GREAT_FAST_SUNDAY_2 = new Date(HOSANNA_SUNDAY).addWeeks(-5);
-	const GREAT_FAST_SUNDAY_1 = new Date(HOSANNA_SUNDAY).addWeeks(-6);
+	const GREAT_FAST_SUNDAY_6 = HOSANNA_SUNDAY.addWeeks(-1);
+	const GREAT_FAST_SUNDAY_5 = HOSANNA_SUNDAY.addWeeks(-2);
+	const GREAT_FAST_SUNDAY_4 = HOSANNA_SUNDAY.addWeeks(-3);
+	const GREAT_FAST_SUNDAY_3 = HOSANNA_SUNDAY.addWeeks(-4);
+	const GREAT_FAST_SUNDAY_2 = HOSANNA_SUNDAY.addWeeks(-5);
+	const GREAT_FAST_SUNDAY_1 = HOSANNA_SUNDAY.addWeeks(-6);
 
-	const GREAT_FAST_SUNDAY_0 = new Date(HOSANNA_SUNDAY).addWeeks(-7);
-	const GREAT_FAST_SATURDAY_0 = new Date(GREAT_FAST_SUNDAY_0).addDays(-1);
-	const GREAT_FAST_MONDAY_1 = new Date(GREAT_FAST_SUNDAY_0).addDays(1);
-	const GREAT_FAST_MONDAY_2 = new Date(GREAT_FAST_SUNDAY_1).addDays(1);
-	const GREAT_FAST_MONDAY_3 = new Date(GREAT_FAST_SUNDAY_2).addDays(1);
-	const GREAT_FAST_MONDAY_4 = new Date(GREAT_FAST_SUNDAY_3).addDays(1);
-	const GREAT_FAST_MONDAY_5 = new Date(GREAT_FAST_SUNDAY_4).addDays(1);
-	const GREAT_FAST_MONDAY_6 = new Date(GREAT_FAST_SUNDAY_5).addDays(1);
-	const GREAT_FAST_MONDAY_7 = new Date(GREAT_FAST_SUNDAY_6).addDays(1);
+	const GREAT_FAST_SUNDAY_0 = HOSANNA_SUNDAY.addWeeks(-7);
+	const GREAT_FAST_SATURDAY_0 = GREAT_FAST_SUNDAY_0.addDays(-1);
+	const GREAT_FAST_MONDAY_1 = GREAT_FAST_SUNDAY_0.addDays(1);
+	const GREAT_FAST_MONDAY_2 = GREAT_FAST_SUNDAY_1.addDays(1);
+	const GREAT_FAST_MONDAY_3 = GREAT_FAST_SUNDAY_2.addDays(1);
+	const GREAT_FAST_MONDAY_4 = GREAT_FAST_SUNDAY_3.addDays(1);
+	const GREAT_FAST_MONDAY_5 = GREAT_FAST_SUNDAY_4.addDays(1);
+	const GREAT_FAST_MONDAY_6 = GREAT_FAST_SUNDAY_5.addDays(1);
+	const GREAT_FAST_MONDAY_7 = GREAT_FAST_SUNDAY_6.addDays(1);
 
-	const THOMAS_SUNDAY = new Date(RESURRECTION).addDays(7);
-	const PENTECOST_SUNDAY_2 = new Date(THOMAS_SUNDAY).addWeeks(1);
-	const PENTECOST_SUNDAY_3 = new Date(THOMAS_SUNDAY).addWeeks(2);
-	const PENTECOST_SUNDAY_4 = new Date(THOMAS_SUNDAY).addWeeks(3);
-	const PENTECOST_SUNDAY_5 = new Date(THOMAS_SUNDAY).addWeeks(4);
-	const PENTECOST_SUNDAY_6 = new Date(THOMAS_SUNDAY).addWeeks(5);
+	const THOMAS_SUNDAY = RESURRECTION.addDays(7);
+	const PENTECOST_SUNDAY_2 = THOMAS_SUNDAY.addWeeks(1);
+	const PENTECOST_SUNDAY_3 = THOMAS_SUNDAY.addWeeks(2);
+	const PENTECOST_SUNDAY_4 = THOMAS_SUNDAY.addWeeks(3);
+	const PENTECOST_SUNDAY_5 = THOMAS_SUNDAY.addWeeks(4);
+	const PENTECOST_SUNDAY_6 = THOMAS_SUNDAY.addWeeks(5);
 
-	const PENTECOST_MONDAY_2 = new Date(THOMAS_SUNDAY).addDays(1);
-	const PENTECOST_MONDAY_3 = new Date(PENTECOST_SUNDAY_2).addDays(1);
-	const PENTECOST_MONDAY_4 = new Date(PENTECOST_SUNDAY_3).addDays(1);
-	const PENTECOST_MONDAY_5 = new Date(PENTECOST_SUNDAY_4).addDays(1);
-	const PENTECOST_MONDAY_6 = new Date(PENTECOST_SUNDAY_5).addDays(1);
-	const PENTECOST_MONDAY_7 = new Date(PENTECOST_SUNDAY_6).addDays(1);
+	const PENTECOST_MONDAY_2 = THOMAS_SUNDAY.addDays(1);
+	const PENTECOST_MONDAY_3 = PENTECOST_SUNDAY_2.addDays(1);
+	const PENTECOST_MONDAY_4 = PENTECOST_SUNDAY_3.addDays(1);
+	const PENTECOST_MONDAY_5 = PENTECOST_SUNDAY_4.addDays(1);
+	const PENTECOST_MONDAY_6 = PENTECOST_SUNDAY_5.addDays(1);
+	const PENTECOST_MONDAY_7 = PENTECOST_SUNDAY_6.addDays(1);
 
 	return {
 		THOOUT_2,

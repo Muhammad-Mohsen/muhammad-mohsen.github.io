@@ -8,6 +8,30 @@ Date.THURSDAY = 4;
 Date.FRIDAY = 5;
 Date.SATURDAY = 6;
 
+Date.COPTIC_MONTHS = [
+	'', // no zero-indexed month for you...this ain't java
+
+	// Akhet
+	'Thouut', // 1 THOOUT
+	'Paope', // 2 PAOPE
+	'Hathor', // 3 HATHOR
+	'Koiahk', // 4 KOIAHK
+
+	// Proyet, Peret, or Poret
+	'Tobe', // 5 TOBE
+	'Meshir', // 6 // MESHIR
+	'Paremhotep', // 7 PAREMHOTEP
+	'Parmoute', // 8 PARMOUTE
+
+	// Shomu or Shemu
+	'Pashons', // 9 PASHONS
+	'Paone', // 10 PAONE
+	'Epep', // 11 EPEP
+	'Mesore', // 12 MESORE
+
+	'Nesi' // 13 NESI this guy is the 13th month and it has 5 or 6 days
+];
+
 // this is guaranteed to work (it uses Intl...not mylogic :D)
 Date.prototype.toCoptic = function () {
 	let date = new Intl.DateTimeFormat('en', { calendar:'coptic', weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric'}).format(this);
@@ -32,29 +56,7 @@ Date.fromCoptic = (copticMonth, copticDay) => {
 
 // Intl's 'long' date style doesn't exactly work on mobile...the month names aren't there :D
 Date.prototype.formatCoptic = function (hideWeekday) {
-	const COPTIC_MONTHS = [
-		'', // no zero-indexed month for you...this ain't java
 
-		// Akhet
-		'Thouut', // 1 THOOUT
-		'Paope', // 2 PAOPE
-		'Hathor', // 3 HATHOR
-		'Koiahk', // 4 KOIAHK
-
-		// Proyet, Peret, or Poret
-		'Tobe', // 5 TOBE
-		'Meshir', // 6 // MESHIR
-		'Paremhotep', // 7 PAREMHOTEP
-		'Parmoute', // 8 PARMOUTE
-
-		// Shomu or Shemu
-		'Pashons', // 9 PASHONS
-		'Paone', // 10 PAONE
-		'Epep', // 11 EPEP
-		'Mesore', // 12 MESORE
-
-		'Nesi' // 13 NESI this guy is the 13th month and it has 5 or 6 days
-	];
 
 	const { weekday, day, month, year } = this.toCoptic();
 	return `${hideWeekday ? '' : (weekday + ', ')}${COPTIC_MONTHS[parseInt(month)]} ${day}, ${year}`
@@ -66,19 +68,21 @@ Date.prototype.formatGregorian = function (dateStyle) {
 
 Date.prototype.addDays = function (daysToAdd) {
 	this.setDate(this.getDate() + daysToAdd);
-	return this;
+	return new Date(this);
 }
 Date.prototype.addWeeks = function (weeksToAdd) {
 	return this.addDays(weeksToAdd * 7);
+}
+Date.prototype.addYears = function (yearsToAdd) {
+	// of course leap years aren't considered because we're in coptic world anyway and it shouldn't matter much
+	return this.addDays(365);
 }
 Date.prototype.firstSundayOfMonth = function () {
 	const firstDayOfWeek = this.getDay();
 	if (firstDayOfWeek == Date.SUNDAY) return this; // already on Sunday, we're good
 
 	const daysToAdd = 7 - firstDayOfWeek;
-	this.addDays(daysToAdd);
-
-	return this;
+	return this.addDays(daysToAdd);
 }
 Date.isLeap = function (copticYear) {
 	// coptic leap day is added to the preceding year, that's why we + 1...they don't seem to be doing the 100 year correction thing
@@ -86,6 +90,7 @@ Date.isLeap = function (copticYear) {
 }
 
 Date.prototype.isBetween = function (from, to) {
+	if (from > to) to.addDays(365);
 	return this >= from && this <= to;
 }
 
@@ -108,4 +113,14 @@ Date.prototype.getDateOrdinal = function () {
 	const today = this.getDate();
 	const rule = rules.select(today);
 	return `${today}${suffixes.get(rule)}`;
+}
+
+Date.prototype.equals = function (arg0, arg1) {
+	if (arg0 instanceof Date) {
+		return this.getMonth() == arg0.getMonth() && this.getDate() == arg0.getDate();
+
+	} else if (arg0 && arg1) {
+		const date = Date.fromCoptic(arg0, arg1);
+		return this.getMonth() == date.getMonth() && this.getDate() == date.getDate();
+	}
 }

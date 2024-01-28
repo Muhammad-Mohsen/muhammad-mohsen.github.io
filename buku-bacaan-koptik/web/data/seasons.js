@@ -1,11 +1,3 @@
-// season expressions
-// !Feasts ^ !Sundays ^ !GreatFast ^ !JonahFast ^ !PentecostPeriod
-// VesperPraises
-// Thoout.1-Meshir.30
-// ChurchConsecration ^ !Vespers
-// NativityPeriod | NativityParamoun | Circumcision
-// PreAscensionPentecostPeriod ^ !(Liturgy ^ ThomasSunday ^ DisplayNonCustomaryPrayers) // !!!WTF
-
 export const Seasons = (() => {
 
 	const XML = `<?xml version="1.0" encoding="utf-8"?>
@@ -254,15 +246,6 @@ export const Seasons = (() => {
 		<Season id="JoyousSaturdayAttribute" name="JoyousSaturday" documentAttribute="true"/>
 	</Seasons>`;
 
-	const DATA = new DOMParser().parseFromString(XML, "text/xml").documentElement;
-
-	// takes a seasonExpression
-	function truthy(expression, today) {
-		return true;
-	}
-
-	return {
-		truthy
-	}
+	return new DOMParser().parseFromString(XML, "text/xml").documentElement;
 
 })();

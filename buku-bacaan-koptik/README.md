@@ -47,6 +47,7 @@ So, I this app is me putting my money where my mouth is.
 				- Saints.isSaintSeason
 				- isForceSeason???
 			- evaluateSeason
+	- FORCE SEASON :D :D
 
 - DONE - finish up the menu
 	- parse Menus.cr.xml into the MainMenu.DATA JSON
