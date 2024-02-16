@@ -1,4 +1,4 @@
-import { Occasions } from "../../data/occasions";
+import { Occasions } from "../../data/occasions.js";
 
 export const SaintEvaluator = (() => {
 

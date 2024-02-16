@@ -5,7 +5,7 @@ import { SettingsPage } from "../settings/settings.js";
 import { BibleRef } from "./bible.js";
 import { DocumentOutline } from "./outline.js";
 import { DocumentSearch } from "./search.js";
-// import { SeasonEvaluator } from "./season-evaluator.js";
+import { SeasonEvaluator } from "./season-evaluator.js";
 
 export const DocumentPage = (() => {
 
@@ -92,7 +92,7 @@ export const DocumentPage = (() => {
 
 	function discardOutOfSeasons(doc) {
 		doc.querySelectorAll('season').toArray().forEach(s => {
-			// if (!SeasonEvaluator.exec(s)) s.remove();
+			if (!SeasonEvaluator.exec(s)) s.remove();
 		});
 
 		return doc;

@@ -41,7 +41,13 @@ Date.prototype.toCoptic = function () {
 	return { year, month, day, weekday };
 }
 
-// I'm sure this will fail in some cases (leap years, maybe?)
+/**
+ * I'm sure this will fail in some cases (leap years, maybe?)
+ *
+ * @param {number} copticMonth
+ * @param {number} copticDay
+ * @returns Date
+ */
 Date.fromCoptic = (copticMonth, copticDay) => {
 	// just figure out the difference between today's coptic date and the one we want (assuming the same year)...
 	const copticToday = new Date().toCoptic();
@@ -56,10 +62,8 @@ Date.fromCoptic = (copticMonth, copticDay) => {
 
 // Intl's 'long' date style doesn't exactly work on mobile...the month names aren't there :D
 Date.prototype.formatCoptic = function (hideWeekday) {
-
-
 	const { weekday, day, month, year } = this.toCoptic();
-	return `${hideWeekday ? '' : (weekday + ', ')}${COPTIC_MONTHS[parseInt(month)]} ${day}, ${year}`
+	return `${hideWeekday ? '' : (weekday + ', ')}${Date.COPTIC_MONTHS[parseInt(month)]} ${day}, ${year}`
 }
 
 Date.prototype.formatGregorian = function (dateStyle) {

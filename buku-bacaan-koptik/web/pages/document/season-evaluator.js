@@ -10,15 +10,6 @@ import { SaintEvaluator } from "./saint-evaluator.js";
 3.2 ChurchConsecration ^ !Vespers
 3.3 NativityPeriod | NativityParamoun | Circumcision
 3.4 PreAscensionPentecostPeriod ^ !(Liturgy ^ ThomasSunday ^ DisplayNonCustomaryPrayers) // !!!WTF
-
-remaining functions
-- SaintEvaluator.isSeason
-	1. no psali for you
-	2. isFeast: is{saint_name}? (111 functions or something like that!!)
-	3. shouldDisplayCommemorations (from settings) not implemented :D
-- evaluateSeason
-	1. isDateInRange (if date...i.e. has a period)
-	2. isSeason another one of those idiotic is{occasion} implementations because fuck me, right!!
 */
 
 export const SeasonEvaluator = (() => {
@@ -28,13 +19,10 @@ export const SeasonEvaluator = (() => {
 	// takes the actual XML element because it needs to traverse up the tree to check forced seasons :)
 	function exec(elem, date) {
 		element = elem;
+		copticDate = date;
 
 		const expression = element.getAttribute('id');
 		const tokens = expression.replace(/(\^)|!/g, '').replace(/\s{2,}/g, ' ').split(' ');
-
-		copticDate = date; // TODO get today's date
-		// (from original constructor)
-		// setTime(isLive() ? new CrDateTime() : Globals.Instance().getUserOptions().getActualGregorianTime(), false);
 
 		tokens.forEach(t => expression = expression.replace(new RegExp(t, 'gi'), isInSeason(t))); // evaluate each token into the expression
 		expression = expression.replace(/|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
@@ -59,31 +47,19 @@ export const SeasonEvaluator = (() => {
 		if (SaintEvaluator.isSaint(token)) return SaintEvaluator.exec(token, copticDate);
 
 		// if token is date (includes '.'), check if current date is between the range in token
+		if (isCopticDate(token)) {
+			const [from, to] = token.split('.');
+			if (isDateInRange(from, to)) return true;
+		}
 
 		// else do the reflection thing :)
-		const season = Seasons.querySelector(`[id="${token}"]`);
-
-		// flatout date (range)
-		// if (token.includes('.')) {
-
-		// }
-
-		// const season = seasons.querySelector(`[id="${token}"]`);
-		// if (!season) throw new Error('tough titties!');
-
-		// let occasions = season.getAttribute('occasion');
-		// // if there's an occasion attr on the season, we're there, otherwise, look into all child occasions
-		// occasions = occasions ? [occasions] : season.querySelectorAll('[occasion]').toArray();
-
-		// for (let o of occasions) {
-		// 	// TODO if 'today' lies within 'o', return true...LOL, that's cute
-		// }
-
-		// return false;
+		return Function(`return is${token}()`)();
 	}
 
-	function isForced(element, season) { // DONE
-		// <ForceSeason id="{simple_expression}">
+	 // DONE - <ForceSeason id="{simple_expression}">
+	function isForced(season) {
+		if (!element) return false;
+
 		let current = element, parent, forced = [];
 
 		// get the upstream forced seasons in the document
@@ -99,35 +75,39 @@ export const SeasonEvaluator = (() => {
 
 		return forced.join(' ').includes(season);
 	}
-	function isDocumentAttr(element, season) { // DONE
+	function isDocumentAttr(season) {
+		if (!element) return false;
 		return element.getRootNode().hasAttribute(season);
 	}
 
-	function checkCurrentSeason(str) {
-		const activeDocument = Globals.Instance().getActiveDocument();
-		if (activeDocument == null) {
-			return false;
-		}
-		if (Saints.isSaintSeason(str)) {
-			if (activeDocument.getStateManager().isForceSeason(
-				Saints.createSaintSeason( // returns "{saintId}:All"
-					Globals.Instance().getSaints().getSaintFromSeason(str, new StringBuilder()).getId(), // the ID from saints.cr.xml :D
-					ALL
-				)
-			)) {
+	function isSeason(expression) {
+		if (!expression.length) return true;
 
-				return true;
+		const seasons = expression.replace(/(\^)|!/g, '').replace(/\s{2,}/g, ' ').split(' '); // this is extractSeasonsFromExpression
+		expression = expression.replace(/|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
+
+		// evaluate each token into the expression
+		seasons.forEach(s => {
+			const val = false;
+			for (let s of [s, ...Seasons.getChildren(s)]) {
+				if (isInSeason(s)) val = true; // if any match, we're good
 			}
-		}
-		return activeDocument.getStateManager().isForceSeason(str);
+
+			expression = expression.replace(new RegExp(s, 'gi'), val);
+		});
+
+		// replace stupid operators with real ones
+		expression = expression.replace(/|/g, '||').replace(/\^/g, '&&');
+
+		return new Function(`return ${expression}`)(); // better than calling eval!
 	}
 
 	// from saint-evaluator
-	function isDate(month, day) {
-		return isDate2(Date.fromCoptic(month, day));
-	}
-	function isDate2(date) {
-		return copticDate.getMonth() == date.getMonth() && copticDate.getDate() == date.getDate();
+	// can be called with a full-on date object, or month + day ints
+	function isDate(arg0, arg1) {
+		// if arg0 is date, then compare directly
+		if (arg0 instanceof Date) return copticDate.getMonth() == arg0.getMonth() && copticDate.getDate() == arg0.getDate();
+		else return copticDate.getMonth() == arg0 && copticDate.getDate() == arg1;
 	}
 	function isCopticDate(str) {
 		return str.includes('.');
@@ -172,7 +152,7 @@ export const SeasonEvaluator = (() => {
 		const nthSunday = parseInt(d.substring(0, 1));
 		const date = Date.fromCoptic(month, 1).firstSundayOfMonth();
 
-		return isDate2(date.addWeeks(nthSunday - 1));
+		return isDate(date.addWeeks(nthSunday - 1));
 	}
 	function isSundaySeason(str) { return isCopticDate(str) && str.includes("Sunday"); }
 	function isJonahFastSpecialSeason(str) { return str.includes('JonahFast'); }
@@ -181,65 +161,57 @@ export const SeasonEvaluator = (() => {
 	function isHosannaSundayFirstLiturgyGospel() { return false; }
 	function isOther() { return true; }
 
-	function isAfterDayTransitionTime() { // TODO
-		return false;
-	}
-
 	function isSeasonOfHerbs() { return isDateInRange(Occasions.PAOPE_10, Occasions.TOBE_11, false); }
 	function isSeasonOfAirAndFruits() { return isDateInRange(Occasions.TOBE_11, Occasions.PAONE_12, false); }
 	function isSeasonOfWaters() { return !isSeasonOfHerbs() && !isSeasonOfAirAndFruits(); }
 
 	function getFirstDayOfKoiahk() { return Occasions.KOIAHK_1 < Occasions.FIRST_SUNDAY_OF_KOIAHK ? Occasions.KOIAHK_1 : Occasions.FIRST_SUNDAY_OF_KOIAHK; }
 
-	function isActualDay(i) { return copticDate.getDay() == i; }
-	function isDay(i) { return copticDate.toCoptic().day == i; }
+	function isGregorianDay(i) { return copticDate.getDay() == i; }
+	function isCopticDay(i) { return copticDate.toCoptic().day == i; }
 
 	function isMondays(bool) {
 		if (isSundayEveningService()) return false;
-		return isDay(Date.MONDAY, bool);
+		return isCopticDay(Date.MONDAY, bool);
 	}
 	function isTodayMondays() { return isMondays(true); }
-	function isTuesdays() { return isDay(Date.TUESDAY, false); }
-	function isTodayTuesdays() { return isDay(Date.TUESDAY, true); }
-	function isWednesdays() { return isDay(Date.WEDNESDAY, false); }
-	function isTodayWednesdays() { return isDay(Date.WEDNESDAY, true); }
-	function isThursdays() { return isDay(Date.THURSDAY, false); }
-	function isTodayThursdays() { return isDay(Date.THURSDAY, true); }
-	function isFridays() { return isDay(Date.FRIDAY, false); }
-	function isTodayFridays() { return isDay(Date.FRIDAY, true); }
-	function isSaturdays() { return isDay(Date.SATURDAY, false); }
-	function isTodaySaturdays() { return isDay(CrDateTime.SATURDAY, true); }
+	function isTuesdays() { return isCopticDay(Date.TUESDAY, false); }
+	function isTodayTuesdays() { return isCopticDay(Date.TUESDAY, true); }
+	function isWednesdays() { return isCopticDay(Date.WEDNESDAY, false); }
+	function isTodayWednesdays() { return isCopticDay(Date.WEDNESDAY, true); }
+	function isThursdays() { return isCopticDay(Date.THURSDAY, false); }
+	function isTodayThursdays() { return isCopticDay(Date.THURSDAY, true); }
+	function isFridays() { return isCopticDay(Date.FRIDAY, false); }
+	function isTodayFridays() { return isCopticDay(Date.FRIDAY, true); }
+	function isSaturdays() { return isCopticDay(Date.SATURDAY, false); }
+	function isTodaySaturdays() { return isCopticDay(Date.SATURDAY, true); }
 	function isSundays(bool) {
 		if (isSundayEveningService()) return true;
-		return isDay(CrDateTime.SUNDAY, bool);
+		return isCopticDay(Date.SUNDAY, bool);
 	}
 	function isTodaySundays() { return isSundays(true); }
-	function isCopticSunday() { return isTodaySundays(); }  // here, it's the same as isActualDay, but the java implementation is different
+	function isCopticSunday() { return isTodaySundays(); }
 
-	function isSundayEveningService() {
-		return isCurrentSeason('Vespers') && isGreatFast() && isDay(Date.MONDAY) && isActualDay(Date.SUNDAY);
+	function isSundayEveningService() { // TODO
+		return isInSeason('Vespers') && isGreatFast() && isCopticDay(Date.MONDAY) && isGregorianDay(Date.SUNDAY);
 	}
 	function isVesperPraises() {
-		return isCurrentSeason('VesperPraises');
+		return isInSeason('VesperPraises');
 	}
 	function isPriestsOnly() {
-		return isCurrentSeason('PriestsOnly');
+		return isInSeason('PriestsOnly');
 	}
 	function isFuneralTune() {
-		return !isFeast() && (copticDate.getDay() != Date.SUNDAY || getSeasons().isSeason("Fasts"));
+		return !isFeast() && (copticDate.getDay() != Date.SUNDAY || isSeason("Fasts"));
 	}
 
-	function isDayBefore(crDateTime, crDateTime2) {
-		let withTimeAtStartOfDay = crDateTime.asCopticDate().withTimeAtStartOfDay();
-		return crDateTime2.isAfter(withTimeAtStartOfDay) && CrDateTime.daysBetween(withTimeAtStartOfDay, crDateTime2) == 1;
+	function isDayBefore(date1, date2) {
+		return date2.addDays(-1).equals(date1);
 	}
 
-	function isDayBeforeMajorNightFeast(crDateTime) {
-		return isDayBefore(crDateTime, Occasions.NATIVITY_CELEBRATE) || isDayBefore(crDateTime, Occasions.THEOPHANY) || isDayBefore(crDateTime, Occasions.RESURRECTION);
-	}
-
-	function isDayBeforeMajorNightFeast() {
-		return isDayBeforeMajorNightFeast(this.m_oActualGregorianTime);
+	function isDayBeforeMajorNightFeast(date) {
+		date = date || copticDate;
+		return isDayBefore(date, Occasions.NATIVITY_CELEBRATE) || isDayBefore(date, Occasions.THEOPHANY) || isDayBefore(date, Occasions.RESURRECTION);
 	}
 
 	function isMajorNightFeasts() {
@@ -347,15 +319,15 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isGreatFast() {
-		return isDateInRange(Occasions.GREAT_FAST_BEGIN, Occasions.LAZARUS_SATURDAY, false) && !getSeasons().isSeason("Feasts");
+		return isDateInRange(Occasions.GREAT_FAST_BEGIN, Occasions.LAZARUS_SATURDAY, false) && !isFeast();
 	}
 
 	function isLazarusSaturday() {
-		return isDate(Occasions.LAZARUS_SATURDAY) && !getSeasons().isSeason("Feasts");
+		return isDate(Occasions.LAZARUS_SATURDAY) && !isFeast();
 	}
 
 	function isLastFridayOfGreatFast() {
-		return isDate(Occasions.LAST_FRIDAY_OF_GREAT_FAST) && !getSeasons().isSeason("Feasts");
+		return isDate(Occasions.LAST_FRIDAY_OF_GREAT_FAST) && !isFeast();
 	}
 
 	function isHosannaSunday() {
@@ -514,8 +486,8 @@ export const SeasonEvaluator = (() => {
 		return isDate(Occasions.PENTECOST_SUNDAY_6);
 	}
 
-	function isJoyful29thOfTheMonthRaw() {
-		if (isFirstSundayOfKoiahk() || isMajorFeast() || getSeasons().isSeason("MinorFeastsOfTheLord") || isNativityPeriod() || isTheophanyPeriod()) {
+	function isJoyful29thOfTheMonthRaw() { // TODO
+		if (isFirstSundayOfKoiahk() || isMajorFeast() || isSeason("MinorFeastsOfTheLord") || isNativityPeriod() || isTheophanyPeriod()) {
 			return false;
 		}
 		if (isDate(Occasions.THOOUT_29) || isDate(Occasions.PAOPE_29) || isDate(Occasions.HATHOR_29) || isDate(Occasions.PARMOUTE_29) || isDate(Occasions.PASHONS_29) || isDate(Occasions.PAONE_29) || isDate(Occasions.EPEP_29) || isDate(Occasions.MESORE_29)) {
@@ -528,9 +500,9 @@ export const SeasonEvaluator = (() => {
 		return isDisplayNonCustomaryPrayers() && isJoyful29thOfTheMonthRaw();
 	}
 
-	function isAdamDays() {
-		if (isCurrentSeason("RaisingOfIncense")) {
-			if (isActualDay(CrDateTime.SUNDAY) || isActualDay(CrDateTime.MONDAY) || isActualDay(CrDateTime.TUESDAY)) {
+	function isAdamDays() { // TODO
+		if (isSeason("RaisingOfIncense")) {
+			if (isGregorianDay(Date.SUNDAY) || isGregorianDay(Date.MONDAY) || isGregorianDay(Date.TUESDAY)) {
 				return true;
 			}
 			return false;
@@ -551,7 +523,7 @@ export const SeasonEvaluator = (() => {
 
 	// TODO
 	function isFeast() {
-		return getSeasons().isSeason("Feasts");
+		return isSeason("Feasts");
 	}
 
 	function isWeekdayFastingDays() {
@@ -569,7 +541,7 @@ export const SeasonEvaluator = (() => {
 		return !isEffectiveKoiahkSeason() && !isDateInRange(Occasions.KOIAHK_1, Occasions.APOSTLES_FAST_BEGIN, false);
 	}
 
-	function isDisplayNonCustomaryPrayers() {
+	function isDisplayNonCustomaryPrayers() { // TODO
 		return Globals.Instance().getUserOptions().isDisplayNonCustomaryPrayers();
 	}
 
@@ -578,10 +550,10 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isAssumptionStMary() {
-		return isDate2(Occasions.MESORE_16);
+		return isDate(Occasions.MESORE_16);
 	}
 	function isStMaryFeast() {
-		return isDate2(Occasions.MESORE_7) || isDate2(Occasions.PASHONS_1) || isDate2(Occasions.KOIAHK_3) || isDate2(Occasions.TOBE_21) || isAssumptionStMary() || isDate2(Occasions.PAONE_21) || isDate2(Occasions.PAREMHOTEP_24);
+		return isDate(Occasions.MESORE_7) || isDate(Occasions.PASHONS_1) || isDate(Occasions.KOIAHK_3) || isDate(Occasions.TOBE_21) || isAssumptionStMary() || isDate(Occasions.PAONE_21) || isDate(Occasions.PAREMHOTEP_24);
 	}
 
 	function isStMaryCommemoration() {
@@ -619,39 +591,29 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function doesNesiHaveASunday() {
-
-		const monthOfYear = Occasions.getNthSundayOfMonth(13, 1).getMonthOfYear();
-
-		if (monthOfYear == 13) {
-			return true;
-		}
-		return false;
+		const nesi = Date.fromCoptic(13, 1); // if this is a monday (or a tuesday on non-leap years), this should return false
+		return ![Date.MONDAY, Date.TUESDAY].includes(nesi.getDay());
 	}
 
-	function isFirstSundayOfNesi() {
+	function isFirstSundayOfNesi() { // TODO
 		if (doesNesiHaveASunday()) {
 			return isDate(Occasions.getNthSundayOfMonth(13, 1));
 		}
-		Occasions.getClass();
 		return isDate(occasions2.getNthSundayOfMonth(12, 5));
 	}
 
 	function isFirstSundayOfKoiahk() {
 		return isDate(Occasions.FIRST_SUNDAY_OF_KOIAHK);
 	}
-
 	function isSecondSundayOfKoiahk() {
 		return isDate(Occasions.SECOND_SUNDAY_OF_KOIAHK);
 	}
-
 	function isThirdSundayOfKoiahk() {
 		return isDate(Occasions.THIRD_SUNDAY_OF_KOIAHK);
 	}
-
 	function isFourthSundayOfKoiahk() {
 		return isDate(Occasions.FOURTH_SUNDAY_OF_KOIAHK);
 	}
-
 	function isEffectiveKoiahkSeason() {
 		return isFirstWeekOfKoiahk() || isSecondWeekOfKoiahk() || isThirdWeekOfKoiahk() || isFourthWeekOfKoiahk();
 	}
@@ -701,11 +663,7 @@ export const SeasonEvaluator = (() => {
 
 	function isFifthSunday() {
 		const monthOfYear = copticDate.getMonth();
-
-		if ((monthOfYear != 12 || doesNesiHaveASunday()) && !isFourthSundayOfThoout() && isCopticSunday() && copticDate.getDate() > 28) {
-			return true;
-		}
-		return false;
+		return (monthOfYear != 12 || doesNesiHaveASunday()) && !isFourthSundayOfThoout() && isCopticSunday() && copticDate.getDate() > 28;
 	}
 
 	function is5thSundayOfFirstSixMonths() {
@@ -775,7 +733,7 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isPentecostPeriod() {
-		return getSeasons().isSeason("PentecostPeriod");
+		return isSeason("PentecostPeriod");
 	}
 
 	// used in selectable-occasions

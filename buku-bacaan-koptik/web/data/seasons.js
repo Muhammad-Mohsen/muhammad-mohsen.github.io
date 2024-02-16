@@ -246,6 +246,16 @@ export const Seasons = (() => {
 		<Season id="JoyousSaturdayAttribute" name="JoyousSaturday" documentAttribute="true"/>
 	</Seasons>`;
 
-	return new DOMParser().parseFromString(XML, "text/xml").documentElement;
+	const DATA = new DOMParser().parseFromString(XML, "text/xml").documentElement;
+
+	// matches getLeafChildren
+	function getChildren(id) {
+		return DATA.getElementById(id).querySelectorAll('Season').toArray().map(s => s.id);
+	}
+
+	return {
+		DATA,
+		getChildren,
+	}
 
 })();
