@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Virtual Scroll Test</title>
+
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			width: 512px;
+			margin: 0 auto;
+			padding: 0;
+			border-inline: 1px solid;
+			color: #ddd;
+			background: #222;
+			font-family: monospace, 'Courier New', Courier;
+			overflow: hidden;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 12px;
+			border-bottom: 1px solid;
+		}
+
+		#vList {
+			flex-grow: 1;
+			overflow: auto;
+		}
+
+		.item {
+			margin: 4px;
+			padding: 12px;
+			border-radius: 6px;
+			background: #333;
+		}
+		.item2 {
+			position: sticky;
+			top: 0;
+			height: 24px;
+			padding: 12px 12px 0;
+			background: #222;
+		}
+
+		.subscript {
+			font-size: 11px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Virtual List</h1>
+
+	<div id="vList"></div>
+
+	<script src="virtual-list.js"></script>
+
+	<script>
+		const data = [];
+		for (let i = 0; i < 50000; i++) data.push({ index: i });
+
+		VirtualList({
+			container: vList,
+			data: data,
+
+			getItemType: item => item.index % 10 ? 'n' : 'x',
+			getItemHeight: type => type == 'n' ? 60 : 24,
+			getItemTemplate: type => {
+				if (type == 'n') {
+					return `<div class="item">
+						<div>Index: {placeholder}</div>
+						<div class="subscript">pos: {placeholder}</div>
+					</div>`;
+
+				} else {
+					return `<div class="item item2">HEADER</div>`;
+				}
+			},
+			bindItem: (elem, item) => {
+				if (item && item.index % 10) {
+					const [main, sub] = elem.getElementsByTagName('div');
+					main.textContent = `Index: ${item.index}`;
+					sub.textContent = `pos: ${item.vlTop}`;
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>
