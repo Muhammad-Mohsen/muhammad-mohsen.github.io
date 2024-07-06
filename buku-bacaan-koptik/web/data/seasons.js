@@ -29,7 +29,7 @@ export const Seasons = (() => {
 						<Season occasion="HOSANNA_SUNDAY" id="HosannaSunday" name="Hosanna Sunday" selectable="true" displayable="true"/>
 						<Season occasion="RESURRECTION" id="Resurrection" name="Resurrection" selectable="true" displayable="true"/>
 						<Season occasion="ASCENSION" id="Ascension" name="Ascension" selectable="true" displayable="true"/>
-						<Season occasion=""PENTECOST_FEAST id="Pentecost" name="Pentecost" selectable="true" displayable="true"/>
+						<Season occasion="PENTECOST_FEAST" id="Pentecost" name="Pentecost" selectable="true" displayable="true"/>
 					</Season>
 					<Season id="NativityPeriod" name="Nativity Period" displayable="true"/>
 					<Season id="TheophanyPeriod" name="Theophany Period" displayable="true"/>
@@ -249,13 +249,20 @@ export const Seasons = (() => {
 	const DATA = new DOMParser().parseFromString(XML, "text/xml").documentElement;
 
 	// matches getLeafChildren
-	function getChildren(id) {
+	function children(id) {
 		return DATA.getElementById(id).querySelectorAll('Season').toArray().map(s => s.id);
+	}
+	function documentAttrSeasons() {
+		return DATA.querySelectorAll('[documentAttribute="true"]').toArray().map(s => ({
+			id: s.getAttribute('id'),
+			name: s.getAttribute('name')
+		}));
 	}
 
 	return {
 		DATA,
-		getChildren,
+		children,
+		documentAttrSeasons,
 	}
 
 })();

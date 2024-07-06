@@ -21,11 +21,11 @@ export const SeasonEvaluator = (() => {
 		element = elem;
 		copticDate = date;
 
-		const expression = element.getAttribute('id');
-		const tokens = expression.replace(/(\^)|!/g, '').replace(/\s{2,}/g, ' ').split(' ');
+		let expression = element.getAttribute('id');
+		const tokens = expression.replace(/[(\^)|!]/g, '').replace(/\s{2,}/g, ' ').split(' ');
 
 		tokens.forEach(t => expression = expression.replace(new RegExp(t, 'gi'), isInSeason(t))); // evaluate each token into the expression
-		expression = expression.replace(/|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
+		expression = expression.replace(/\|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
 
 		return new Function(`return ${expression}`)(); // better than calling eval!
 	}
@@ -33,11 +33,11 @@ export const SeasonEvaluator = (() => {
 	function isInSeason(token) {
 
 		if (isForced(token.replace(/:w+/, ':All'))) return true; // check forced seasons (including saints)
-		if (isDocumentAttr(token)) return true; // check document attrs
+		if (isDocumentAttrSeason(token)) return isDocumentAttr(token); // check document attrs
 
 		// I don't really know what that is to be honest
 		if (token != 'DisplayNonCustomaryPrayers' && isForced('All')) return true;
-		if (token != 'DisplayNonCustomaryPrayers' && token != 'Other' && !isSaint(token) && isForced('IgnoreCurrentSeason')) return false;
+		if (token != 'DisplayNonCustomaryPrayers' && token != 'Other' && !SaintEvaluator.isSaint(token) && isForced('IgnoreCurrentSeason')) return false;
 
 		// customary prayers
 		const displayNonCustomaryPrayers = SettingsPage.get().nonCustomaryPrayers;
@@ -71,25 +71,28 @@ export const SeasonEvaluator = (() => {
 		}
 
 		// if it's a saint season, change it to "Saint:All" before comparing
-		season = isSaint(season) ? season.split(':').shift() + ':All' : season;
+		season = SaintEvaluator.isSaint(season) ? season.split(':').shift() + ':All' : season;
 
 		return forced.join(' ').includes(season);
 	}
 	function isDocumentAttr(season) {
 		if (!element) return false;
-		return element.getRootNode().hasAttribute(season);
+		return element.getRootNode().documentElement.hasAttribute(season);
+	}
+	function isDocumentAttrSeason(season) {
+		return Seasons.documentAttrSeasons().find(s => s.id == season);
 	}
 
 	function isSeason(expression) {
 		if (!expression.length) return true;
 
-		const seasons = expression.replace(/(\^)|!/g, '').replace(/\s{2,}/g, ' ').split(' '); // this is extractSeasonsFromExpression
-		expression = expression.replace(/|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
+		const seasons = expression.replace(/[(\^)|!]/g, '').replace(/\s{2,}/g, ' ').split(' '); // this is extractSeasonsFromExpression
+		expression = expression.replace(/\|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
 
 		// evaluate each token into the expression
 		seasons.forEach(s => {
 			const val = false;
-			for (let s of [s, ...Seasons.getChildren(s)]) {
+			for (let s of [s, ...Seasons.children(s)]) {
 				if (isInSeason(s)) val = true; // if any match, we're good
 			}
 
@@ -192,7 +195,7 @@ export const SeasonEvaluator = (() => {
 	function isTodaySundays() { return isSundays(true); }
 	function isCopticSunday() { return isTodaySundays(); }
 
-	function isSundayEveningService() { // TODO
+	function isSundayEveningService() {
 		return isInSeason('Vespers') && isGreatFast() && isCopticDay(Date.MONDAY) && isGregorianDay(Date.SUNDAY);
 	}
 	function isVesperPraises() {
@@ -486,7 +489,7 @@ export const SeasonEvaluator = (() => {
 		return isDate(Occasions.PENTECOST_SUNDAY_6);
 	}
 
-	function isJoyful29thOfTheMonthRaw() { // TODO
+	function isJoyful29thOfTheMonthRaw() {
 		if (isFirstSundayOfKoiahk() || isMajorFeast() || isSeason("MinorFeastsOfTheLord") || isNativityPeriod() || isTheophanyPeriod()) {
 			return false;
 		}
@@ -500,7 +503,7 @@ export const SeasonEvaluator = (() => {
 		return isDisplayNonCustomaryPrayers() && isJoyful29thOfTheMonthRaw();
 	}
 
-	function isAdamDays() { // TODO
+	function isAdamDays() {
 		if (isSeason("RaisingOfIncense")) {
 			if (isGregorianDay(Date.SUNDAY) || isGregorianDay(Date.MONDAY) || isGregorianDay(Date.TUESDAY)) {
 				return true;
@@ -521,7 +524,6 @@ export const SeasonEvaluator = (() => {
 		return isMondays() || isTuesdays() || isWednesdays() || isThursdays() || isFridays();
 	}
 
-	// TODO
 	function isFeast() {
 		return isSeason("Feasts");
 	}
@@ -541,8 +543,8 @@ export const SeasonEvaluator = (() => {
 		return !isEffectiveKoiahkSeason() && !isDateInRange(Occasions.KOIAHK_1, Occasions.APOSTLES_FAST_BEGIN, false);
 	}
 
-	function isDisplayNonCustomaryPrayers() { // TODO
-		return Globals.Instance().getUserOptions().isDisplayNonCustomaryPrayers();
+	function isDisplayNonCustomaryPrayers() {
+		return SettingsPage.get().nonCustomaryPrayers == 'true';
 	}
 
 	function isStMaryFast() {
@@ -595,11 +597,12 @@ export const SeasonEvaluator = (() => {
 		return ![Date.MONDAY, Date.TUESDAY].includes(nesi.getDay());
 	}
 
-	function isFirstSundayOfNesi() { // TODO
+	function isFirstSundayOfNesi() {
 		if (doesNesiHaveASunday()) {
-			return isDate(Occasions.getNthSundayOfMonth(13, 1));
+			return isDate(Date.fromCoptic(13, 1).firstSundayOfMonth());
 		}
-		return isDate(occasions2.getNthSundayOfMonth(12, 5));
+
+		return isDate(Date.fromCoptic(12, 1).firstSundayOfMonth().addWeeks(4)); // check against fifth sunday of 12
 	}
 
 	function isFirstSundayOfKoiahk() {

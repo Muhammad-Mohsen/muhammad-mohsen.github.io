@@ -1,6 +1,7 @@
 import { HTTP } from "../../core/http.js";
 import { Router } from "../../core/router.js";
 import { MainMenu } from "../../data/main-menu.js";
+import { CalendarPage } from "../calendar/calendar.js";
 import { SettingsPage } from "../settings/settings.js";
 import { BibleRef } from "./bible.js";
 import { DocumentOutline } from "./outline.js";
@@ -15,7 +16,7 @@ export const DocumentPage = (() => {
 	async function init(entry) {
 		element.innerHTML = template({
 			header: entry.name,
-			subHeader: MainMenu.getParent(entry.uri)?.name ?? entry.sub,
+			subHeader: MainMenu.getParent(entry.uri)?.name || entry.sub || '',
 		});
 
 		searchContainer = element.querySelector('.search-container');
@@ -65,7 +66,7 @@ export const DocumentPage = (() => {
 
 		// actually get the XML
 		const promises = [];
-		for (let i of [...includes]) {
+		for (let i of includes.toArray()) {
 			const path = i.getAttribute('path');
 			promises.push(HTTP.get(path));
 		}
@@ -80,7 +81,7 @@ export const DocumentPage = (() => {
 
 	// bible references aren't recursive, so they can just be called at the end
 	async function renderBible(doc) {
-		const refs = [...doc.querySelectorAll('BibleReference, biblereference')];
+		const refs = doc.querySelectorAll('BibleReference, biblereference').toArray();
 
 		for (let r of refs) {
 			const refNode = await BibleRef.render(r);
@@ -91,8 +92,14 @@ export const DocumentPage = (() => {
 	}
 
 	function discardOutOfSeasons(doc) {
-		doc.querySelectorAll('season').toArray().forEach(s => {
-			if (!SeasonEvaluator.exec(s)) s.remove();
+		const today = CalendarPage.getLive();
+		if (SettingsPage.isPastTransitionTime()) today.addDays(1);
+
+		doc.querySelectorAll('Season, season').toArray().forEach(s => {
+			if (!SeasonEvaluator.exec(s, today)) {
+				console.log(`will remove ${s.id}`);
+				s.remove();
+			}
 		});
 
 		return doc;
@@ -103,7 +110,7 @@ export const DocumentPage = (() => {
 		element.style.fontSize = settings.fontSize + 'em';
 
 		const falsy = (prop) => prop != 'true';
-		const removeAll = (selector) => [...doc.querySelectorAll(selector)].forEach(e => e.remove());
+		const removeAll = (selector) => doc.querySelectorAll(selector).toArray().forEach(e => e.remove());
 
 		if (falsy(settings.comments)) removeAll('comment'); // comments
 
@@ -130,7 +137,7 @@ export const DocumentPage = (() => {
 
 		// track down section headers so we can add expand/collapse functions on them
 		const sectionHeaders = doc.querySelectorAll('Section Title');
-		for (let h of [...sectionHeaders]) h.setAttribute('data-section-header', 'true');
+		for (let h of sectionHeaders.toArray()) h.setAttribute('data-section-header', 'true');
 
 		return doc.outerHTML
 			// replace CopticReading id with Coptic...the coptic-row attr is used as an extra css selector for custom display
