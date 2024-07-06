@@ -11,7 +11,7 @@ export const DocumentSearch = (() => {
 		if (!query) return;
 
 		if (container.children.length) { // element has child elements (not child nodes)
-			for (let c of [...container.childNodes]) {
+			for (let c of container.childNodes.toArray()) {
 
 				// swap out inner text nodes with spans (if any) so we can highlight the matches with a mark tag (text nodes don't have no 'innerHTML'!)
 				if (c.nodeType == 3) {
@@ -54,11 +54,11 @@ export const DocumentSearch = (() => {
 		const dir = forward ? 1 : -1;
 		current = (current + dir + matches.length) % matches.length;
 
-		scrollElement.scrollBy(0, matches[current].getBoundingClientRect().y - 76);
+		scrollElement.scrollBy({ top: matches[current].getBoundingClientRect().y - 150, behavior: 'smooth' });
 	}
 
 	function index(container) {
-		matches = [...container.querySelectorAll('mark')];
+		matches = container.querySelectorAll('mark').toArray();
 		if (!matches.length) return '';
 
 		current = current || 0;
@@ -72,10 +72,10 @@ export const DocumentSearch = (() => {
 	}
 
 	return {
-		exec: exec,
-		scroll: scroll,
-		index: index,
-		reset: reset,
+		exec,
+		scroll,
+		index,
+		reset,
 	}
 
 })();

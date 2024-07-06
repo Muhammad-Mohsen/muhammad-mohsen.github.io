@@ -14,7 +14,7 @@ export const SettingsPage = (() => {
 		rolePriest: 'true',
 		roleDeacon: 'true',
 		rolePeople: 'true',
-		transitionTime: '00:00'
+		transitionTime: '23:59'
 	}
 
 	function init() {
@@ -25,9 +25,18 @@ export const SettingsPage = (() => {
 		setPreviewFontSize(element.querySelector('[setting="fontSize"]'));
 	}
 
+	function get() {
+		const settings = JSON.parse(JSON.stringify(DEFAULTS));
+		for (const s in settings) {
+			const stored = localStorage[s];
+			settings[s] = stored || settings[s];
+		}
+
+		return settings;
+	}
 	function change(target) {
 		const key = target.getAttribute('setting');
-		const val = target.type == "checkbox" ? target.checked : target.value;
+		const val = target.type == 'checkbox' ? target.checked : target.value;
 		save(key, val);
 	}
 
@@ -35,25 +44,13 @@ export const SettingsPage = (() => {
 		localStorage.setItem(key, val);
 	}
 	function load() {
-		const settings = element.querySelectorAll('[setting]');
-		[...settings].forEach(s => {
-			let val = localStorage.getItem(s.getAttribute('setting'));
-			if (val == null) val = DEFAULTS[s.getAttribute('setting')];
+		element.querySelectorAll('[setting]').toArray().forEach(s => {
+			const val = localStorage.getItem(s.getAttribute('setting')) ?? DEFAULTS[s.getAttribute('setting')];
 
-			s.type == "checkbox"
+			s.type == 'checkbox'
 				? s.checked = val.toString() == 'true'
 				: s.value = val;
 		});
-	}
-
-	function get() {
-		const settings = JSON.parse(JSON.stringify(DEFAULTS));
-		for (const s in settings) {
-			const storedSetting = localStorage[s];
-			settings[s] = storedSetting || settings[s];
-		}
-
-		return settings;
 	}
 
 	function setPreviewFontSize(target) {
@@ -66,6 +63,14 @@ export const SettingsPage = (() => {
 		// override this shit!!
 		target.checked = false;
 		change(target);
+	}
+
+	function isPastTransitionTime() {
+		const curr = new Date();
+		const [ch, cm] = [curr.getHours(), curr.getMinutes()]; // current
+		const [th, tm] = get().transitionTime.split(':').map(p => parseInt(p)); // transition
+
+		return ch > th || ch == th && cm > tm;
 	}
 
 	function template() {
@@ -171,12 +176,13 @@ export const SettingsPage = (() => {
 	}
 
 	return {
-		init: init,
-		change: change,
-		setPreviewFontSize: setPreviewFontSize,
-		checkSelectedLanguageCount: checkSelectedLanguageCount,
+		init,
+		change,
+		get,
 
-		get: get,
+		setPreviewFontSize,
+		checkSelectedLanguageCount,
+		isPastTransitionTime,
 	}
 
 })();
