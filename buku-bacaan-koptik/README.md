@@ -8,65 +8,20 @@ I've been saying for years that the web platform doesn't need frameworks any mor
 So, I this app is me putting my money where my mouth is.
 
 ## TODO
-- home
-	- DONE - click handlers
-	- DONE - settings
-		- CANCELED - app language (radio)
-		- DONE - font size (slider)
-		- DONE - document languages (checkboxes)
-		- DONE - comments (single checkbox)
-		- DONE - roles (checkboxes)
-		- DONE - day transition (time input)
-		- DONE - non-customary prayers (single checkbox)
-	- about the season
-	- calendar (occasions)
-		- DONE - see occasions.java for dates
-		- parsed from Seasons.cr.xml
+- BibleReference sections (that show book names and the like)
+- test the season stuff
+- repository
+	- network data source
+	- internal data source
 
-- DONE - list
-- DONE - document
-	- DONE - recursive loading & parsing resources
-	- DONE - parallel recursive loading & parsing resources!
-	- DONE - outline
-	- DONE - search
-	- DONE - links
-	- DONE - apply settings
-	- DONE - BibleReference
-	- BibleReference sections (that show book names and the like)
-		- CANCELED - SQL DB decryption
-	- SEASONS
-		- documentAttribute??
-		- `Seasons.java`
-			- isSeason -> actually evals the logical expression
-			- matchesCurrentSeason -> calls into the evaluator's `isCurrentSeason` & `checkCurrentSeason` methods
-			- isSupported???
-			- extractSeasonsFromExpression :)
-		- `SeasonEvaluator.java`
-			- isCurrentSeason
-			- checkCurrentSeason
-				- Saints.isSaintSeason
-				- isForceSeason???
-			- evaluateSeason
-	- FORCE SEASON :D :D
+- translations
 
-- DONE - finish up the menu
-	- parse Menus.cr.xml into the MainMenu.DATA JSON
-- DONE - replace CopticReadings language with Coptic
-
-- DONE - coptic date
-	- Need to add the "Coptic day transition" to the calculation
-
-- DONE - editor
-	- DONE - load file
-	- DONE - processing
-		- add `content-editable` attr
-		- render using `content component` (ignoring the `InsertDocument`)
-		- add closing tags to `InsertDocument`
-		- switch out the `Language` value
-	- DONE - save file
-		- dump the `innerHTML` to an anchor tag
-
-- DONE - Android wrapper with capacitor
+- DONE - SeasonEvaluator tests
+	- isFeast blows up
+		- in java, isFeast => Seasons.isSeason => Seasons.matchesCurrentSeason => SeasonEvaluator.checkCurrentSeason (including its leaves)
+		- SeasonEvaluator.checkCurrentSeason is like a mini version of SeasonEvaluator.isCurrentSeason it only checks:
+			- isSaintSeason
+			- isForceSeason
 
 ## Environment Setup
 
