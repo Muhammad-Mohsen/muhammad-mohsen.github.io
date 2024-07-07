@@ -59,4 +59,10 @@ VirtualList({
 ```
 
 ## TODO
-- use binary instead of linear search to find the first element to render
+- use binary instead of linear search to find the first element to render?
+- use the ViewHolder pattern from Android?
+
+
+## cheat README off of:
+- https://github.com/shyam-habarakada/js-virtual-list-view/blob/master/README.md
+- https://github.com/tbranyen/hyperlist/blob/master/README.md

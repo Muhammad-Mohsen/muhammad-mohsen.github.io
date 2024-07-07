@@ -74,9 +74,11 @@ const VirtualList = ({
 
 	container.onscroll(); // force first render
 
+	let prevFirstVisibleIndex;
 	function firstVisibleIndex(scrollTop) { // TODO more efficient with binary search
-		var visibleIndex = data.findIndex(d => Math.abs(d.vlTop - (scrollTop - RENDER_BUFFER)) < getItemHeight(d.vlType));
-		return visibleIndex == -1 ? 0 : visibleIndex;
+		var visibleIndex = Math.max(0, data.findIndex(d => Math.abs(d.vlTop - (scrollTop - RENDER_BUFFER)) < getItemHeight(d.vlType)));
+		if (Math.abs(prevFirstVisibleIndex - visibleIndex) <= 1) return prevFirstVisibleIndex; // ignore first visible changes if they're different by 1 (to stabilize the scrolling)
+		return prevFirstVisibleIndex = visibleIndex;
 	}
 	function optimalRenderCount() {
 		// honestly, using the total screen height won't be a bad idea (window.screen.height)
