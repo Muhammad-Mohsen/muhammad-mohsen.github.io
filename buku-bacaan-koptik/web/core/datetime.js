@@ -71,15 +71,16 @@ Date.prototype.formatGregorian = function (dateStyle) {
 }
 
 Date.prototype.addDays = function (daysToAdd) {
-	this.setDate(this.getDate() + daysToAdd);
-	return new Date(this);
+	const newDate = new Date(this);
+	newDate.setDate(newDate.getDate() + daysToAdd);
+	return newDate;
 }
 Date.prototype.addWeeks = function (weeksToAdd) {
 	return this.addDays(weeksToAdd * 7);
 }
 Date.prototype.addYears = function (yearsToAdd) {
 	// of course leap years aren't considered because we're in coptic world anyway and it shouldn't matter much
-	return this.addDays(365);
+	return this.addDays(365 * yearsToAdd);
 }
 Date.prototype.firstSundayOfMonth = function () {
 	const firstDayOfWeek = this.getDay();
@@ -94,7 +95,7 @@ Date.isLeap = function (copticYear) {
 }
 
 Date.prototype.isBetween = function (from, to) {
-	if (from > to) to.addDays(365);
+	if (from > to) to = to.addDays(365);
 	return this >= from && this <= to;
 }
 
