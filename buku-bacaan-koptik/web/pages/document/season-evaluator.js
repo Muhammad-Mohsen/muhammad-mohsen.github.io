@@ -549,6 +549,9 @@ export const SeasonEvaluator = (() => {
 		return SettingsPage.get().nonCustomaryPrayers == 'true';
 	}
 
+	function isStMary() {
+		return isInSeason('StMary', 'noreflection');
+	}
 	function isStMaryFast() {
 		return isDateInRange(Occasions.STMARY_FAST_BEGIN, Occasions.MESORE_16, false);
 	}
@@ -924,6 +927,7 @@ export const SeasonEvaluator = (() => {
 		isMajorFeast,
 		isApostlesFastToLastDayOfHathor,
 		isDisplayNonCustomaryPrayers,
+		isStMary,
 		isStMaryFast,
 		isAssumptionStMary,
 		isStMaryFeast,
