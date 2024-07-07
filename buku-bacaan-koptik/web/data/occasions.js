@@ -88,18 +88,16 @@ export const Occasions = (() => {
 	let NATIVITY_START;
 	let NATIVITY_END;
 	if (dayOfMonth > 0) {
-	    const createDate2 = Date.fromCoptic(4, 28);
-	    NATIVITY_START = createDate2;
-	    NATIVITY_END = createDate2.addDays(1);
+		NATIVITY_START = Date.fromCoptic(4, 28);
+		NATIVITY_END = NATIVITY_START.addDays(1);
 
 	} else if (dayOfMonth < 0) {
-	    const createDate3 = Date.fromCoptic(4, 29);
-	    NATIVITY_START = createDate3;
-	    NATIVITY_END = createDate3.addDays(1);
+		NATIVITY_START = Date.fromCoptic(4, 29);
+		NATIVITY_END = NATIVITY_START.addDays(1);
 
 	} else {
 	    NATIVITY_START = Date.fromCoptic(4, 29);
-	    NATIVITY_END = NATIVITY_START;
+	    NATIVITY_END = new Date(NATIVITY_START);
 	}
 
 	const DAY_AFTER_NATIVITY = NATIVITY_END.addDays(1);
@@ -119,7 +117,7 @@ export const Occasions = (() => {
     let THEOPHANY_PARAMOUN_START = '';
 	if (THEOPHANY_PARAMOUN_END.getDay() == Date.SUNDAY) THEOPHANY_PARAMOUN_START = NATIVITY_PARAMOUN_END.addDays(-2);
 	else if (THEOPHANY_PARAMOUN_END.getDay() == Date.SATURDAY) THEOPHANY_PARAMOUN_START = THEOPHANY_PARAMOUN_END.addDays(-1);
-	else NATIVITY_PARAMOUN_START = THEOPHANY_PARAMOUN_END;
+	else THEOPHANY_PARAMOUN_START = new Date(THEOPHANY_PARAMOUN_END);
 
 	// https://www.assa.org.au/edm#:~:text=In%20most%20years%2C%20Orthodox%20Easter,skipped%22%20in%20the%20Gregorian%20calendar.
 	// https://www.assa.org.au/edm#OrthCalculator
@@ -251,6 +249,8 @@ export const Occasions = (() => {
 		NESI_3,
 		NESI_5,
 		NATIVITY_CELEBRATE,
+		NATIVITY_START,
+		NATIVITY_END,
 		DAY_AFTER_NATIVITY,
 		NATIVITY_PARAMOUN_START,
 		NATIVITY_PARAMOUN_END,

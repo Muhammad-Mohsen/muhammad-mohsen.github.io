@@ -18,19 +18,20 @@ export const SeasonEvaluator = (() => {
 
 	// takes the actual XML element because it needs to traverse up the tree to check forced seasons :)
 	function exec(elem, date) {
+		if (!elem.getRootNode().documentElement) return true; // already removed
 		element = elem;
 		copticDate = date;
 
 		let expression = element.getAttribute('id');
 		const tokens = expression.replace(/[(\^)|!]/g, '').replace(/\s{2,}/g, ' ').split(' ');
 
-		tokens.forEach(t => expression = expression.replace(new RegExp(t, 'gi'), isInSeason(t))); // evaluate each token into the expression
+		tokens.forEach(t => expression = expression.replace(new RegExp(`\\b${t}\\b`, 'gi'), isInSeason(t))); // evaluate each token into the expression
 		expression = expression.replace(/\|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
 
-		return new Function(`return ${expression}`)(); // better than calling eval!
+		return Function(`return ${expression}`)(); // better than calling eval!
 	}
 
-	function isInSeason(token) {
+	function isInSeason(token, noReflection) {
 
 		if (isForced(token.replace(/:w+/, ':All'))) return true; // check forced seasons (including saints)
 		if (isDocumentAttrSeason(token)) return isDocumentAttr(token); // check document attrs
@@ -46,14 +47,19 @@ export const SeasonEvaluator = (() => {
 
 		if (SaintEvaluator.isSaint(token)) return SaintEvaluator.exec(token, copticDate);
 
-		// if token is date (includes '.'), check if current date is between the range in token
-		if (isCopticDate(token)) {
-			const [from, to] = token.split('.');
-			if (isDateInRange(from, to)) return true;
+		// if token is date, check if current date is between the range in token
+		if (isCopticDate(token)) return isDateInRange(token);
+
+		if (noReflection) {
+			for (let s of Seasons.children(token)) {
+				if (isInSeason(s)) return true;
+			}
+
+			return false;
 		}
 
 		// else do the reflection thing :)
-		return Function(`return is${token}()`)();
+		return Function(`return SeasonEvaluator.is${token}()`)();
 	}
 
 	 // DONE - <ForceSeason id="{simple_expression}">
@@ -83,28 +89,6 @@ export const SeasonEvaluator = (() => {
 		return Seasons.documentAttrSeasons().find(s => s.id == season);
 	}
 
-	function isSeason(expression) {
-		if (!expression.length) return true;
-
-		const seasons = expression.replace(/[(\^)|!]/g, '').replace(/\s{2,}/g, ' ').split(' '); // this is extractSeasonsFromExpression
-		expression = expression.replace(/\|/g, '||').replace(/\^/g, '&&'); // replace stupid operators with real ones
-
-		// evaluate each token into the expression
-		seasons.forEach(s => {
-			const val = false;
-			for (let s of [s, ...Seasons.children(s)]) {
-				if (isInSeason(s)) val = true; // if any match, we're good
-			}
-
-			expression = expression.replace(new RegExp(s, 'gi'), val);
-		});
-
-		// replace stupid operators with real ones
-		expression = expression.replace(/|/g, '||').replace(/\^/g, '&&');
-
-		return new Function(`return ${expression}`)(); // better than calling eval!
-	}
-
 	// from saint-evaluator
 	// can be called with a full-on date object, or month + day ints
 	function isDate(arg0, arg1) {
@@ -116,14 +100,20 @@ export const SeasonEvaluator = (() => {
 		return str.includes('.');
 	}
 
-	function isDateInRange(from, to, bool) { // DONE!!
+	function isDateInRange(from, to, bool) {
 		if (typeof from == 'string') {
-			if (isSpecialSeason(str)) return evaluateSpecialSeason(str);
-			if (isSundaySeason(str)) return evaluateSundaySeason(str);
+			if (isSpecialSeason(from)) return evaluateSpecialSeason(from);
+			if (isSundaySeason(from)) return evaluateSundaySeason(from);
 
 			[from, to] = from.split('-');
-			from = from.toLowerCase() == 'nesi.6' ? Occasions.NEW_YEAR_NEXT_YEAR : Date.fromCoptic(...from.split('.'));
-			to = to.toLowerCase() == 'nesi.6' ? Occasions.NEW_YEAR_NEXT_YEAR : Date.fromCoptic(...to.split('.'));
+
+			let [fm, fd] = from.split('.');
+			from = from.toLowerCase() == 'nesi.6' ? Occasions.NEW_YEAR_NEXT_YEAR : Date.fromCoptic(Date.COPTIC_MONTHS.indexOf(fm), fd);
+
+			if (!to) return copticDate.equals(from);
+
+			let [tm, td] = to.split('.');
+			to = to.toLowerCase() == 'nesi.6' ? Occasions.NEW_YEAR_NEXT_YEAR : Date.fromCoptic(Date.COPTIC_MONTHS.indexOf(tm), td);
 		}
 
 		if (from > to) to = to.addYears(1);
@@ -205,7 +195,7 @@ export const SeasonEvaluator = (() => {
 		return isInSeason('PriestsOnly');
 	}
 	function isFuneralTune() {
-		return !isFeast() && (copticDate.getDay() != Date.SUNDAY || isSeason("Fasts"));
+		return !isFeast() && (copticDate.getDay() != Date.SUNDAY || isInSeason('Fasts', 'noreflection'));
 	}
 
 	function isDayBefore(date1, date2) {
@@ -490,7 +480,7 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isJoyful29thOfTheMonthRaw() {
-		if (isFirstSundayOfKoiahk() || isMajorFeast() || isSeason("MinorFeastsOfTheLord") || isNativityPeriod() || isTheophanyPeriod()) {
+		if (isFirstSundayOfKoiahk() || isMajorFeast() || isInSeason('MinorFeastsOfTheLord', 'noreflection') || isNativityPeriod() || isTheophanyPeriod()) {
 			return false;
 		}
 		if (isDate(Occasions.THOOUT_29) || isDate(Occasions.PAOPE_29) || isDate(Occasions.HATHOR_29) || isDate(Occasions.PARMOUTE_29) || isDate(Occasions.PASHONS_29) || isDate(Occasions.PAONE_29) || isDate(Occasions.EPEP_29) || isDate(Occasions.MESORE_29)) {
@@ -504,7 +494,7 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isAdamDays() {
-		if (isSeason("RaisingOfIncense")) {
+		if (isInSeason('RaisingOfIncense', 'noreflection')) {
 			if (isGregorianDay(Date.SUNDAY) || isGregorianDay(Date.MONDAY) || isGregorianDay(Date.TUESDAY)) {
 				return true;
 			}
@@ -523,9 +513,21 @@ export const SeasonEvaluator = (() => {
 	function isWeekdays() {
 		return isMondays() || isTuesdays() || isWednesdays() || isThursdays() || isFridays();
 	}
+	function isWeekend() {
+		return isSaturdays() || isSundays();
+	}
 
 	function isFeast() {
-		return isSeason("Feasts");
+		return isInSeason('Feasts', 'noreflection');
+	}
+	function isFeastsOfTheLordPeriods() {
+		isInSeason('FeastsOfTheLordPeriods', 'noreflection');
+	}
+	function isMinorFeastsOfTheLord() {
+		isInSeason('MinorFeastsOfTheLord', 'noreflection');
+	}
+	function isFasts() {
+		return isInSeason('Fasts', 'noreflection');
 	}
 
 	function isWeekdayFastingDays() {
@@ -540,7 +542,7 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isApostlesFastToLastDayOfHathor() {
-		return !isEffectiveKoiahkSeason() && !isDateInRange(Occasions.KOIAHK_1, Occasions.APOSTLES_FAST_BEGIN, false);
+		return !isKoiahkSeason() && !isDateInRange(Occasions.KOIAHK_1, Occasions.APOSTLES_FAST_BEGIN, false);
 	}
 
 	function isDisplayNonCustomaryPrayers() {
@@ -617,7 +619,7 @@ export const SeasonEvaluator = (() => {
 	function isFourthSundayOfKoiahk() {
 		return isDate(Occasions.FOURTH_SUNDAY_OF_KOIAHK);
 	}
-	function isEffectiveKoiahkSeason() {
+	function isKoiahkSeason() {
 		return isFirstWeekOfKoiahk() || isSecondWeekOfKoiahk() || isThirdWeekOfKoiahk() || isFourthWeekOfKoiahk();
 	}
 
@@ -736,7 +738,7 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isPentecostPeriod() {
-		return isSeason("PentecostPeriod");
+		return isInSeason('PentecostPeriod', 'noreflection');
 	}
 
 	// used in selectable-occasions
@@ -792,8 +794,228 @@ export const SeasonEvaluator = (() => {
 	function getStCyrilId() { return "StCyrilLiturgy"; }
 	function getStGregoryId() { return "StGregoryLiturgy"; }
 
+	// fuck me
 	return {
-		exec
+		exec,
+
+		isInSeason,
+		isForced,
+		isDocumentAttr,
+		isDocumentAttrSeason,
+		isDate,
+		isCopticDate,
+		isDateInRange,
+		evaluateSpecialSeason,
+		isSpecialSeason,
+		evaluateSundaySeason,
+		isSundaySeason,
+		isJonahFastSpecialSeason,
+		isGreatFastSpecialSeason,
+		isPentecostPeriodSpecialSeason,
+		isHosannaSundayFirstLiturgyGospel,
+		isOther,
+		isSeasonOfHerbs,
+		isSeasonOfAirAndFruits,
+		isSeasonOfWaters,
+		getFirstDayOfKoiahk,
+		isGregorianDay,
+		isCopticDay,
+		isMondays,
+		isTodayMondays,
+		isTuesdays,
+		isTodayTuesdays,
+		isWednesdays,
+		isTodayWednesdays,
+		isThursdays,
+		isTodayThursdays,
+		isFridays,
+		isTodayFridays,
+		isSaturdays,
+		isTodaySaturdays,
+		isSundays,
+		isTodaySundays,
+		isCopticSunday,
+		isSundayEveningService,
+		isVesperPraises,
+		isPriestsOnly,
+		isFuneralTune,
+		isDayBefore,
+		isDayBeforeMajorNightFeast,
+		isMajorNightFeasts,
+		isAnnunciationRaw,
+		isAnnunciation,
+		isCopticNewYear,
+		isCopticNewYearPeriod,
+		isNativityFast,
+		isNativity,
+		isDayAfterNativity,
+		isNativityPeriod,
+		isCircumcision,
+		isTheophany,
+		isDayAfterTheophany,
+		isDayAfterResurrection,
+		isWeddingCana,
+		isTheophanyPeriod,
+		isPresentationInTemple,
+		isEntranceOfTheLordChrist,
+		isTransfiguration,
+		isApostlesFeast,
+		isThooutFeastOfTheCross1,
+		isThooutFeastOfTheCross2,
+		isThooutFeastOfTheCross3,
+		isParemhotepFeastOfTheCross,
+		isJonahFast,
+		isJonahPassover,
+		isGreatFast,
+		isLazarusSaturday,
+		isLastFridayOfGreatFast,
+		isHosannaSunday,
+		isPaschaWeek,
+		isCovenantThursday,
+		isGreatFriday,
+		isJoyousSaturday,
+		isResurrection,
+		isPreAscensionPentecostPeriod,
+		isThomasSunday,
+		isAscension,
+		isPostAscensionPentecostPeriod,
+		isPentecost,
+		isApostlesFast,
+		isGreatFastSaturday0,
+		isGreatFastSunday0,
+		isGreatFastWeek1,
+		isGreatFastWeek2,
+		isGreatFastWeek3,
+		isGreatFastWeek4,
+		isGreatFastWeek5,
+		isGreatFastWeek6,
+		isGreatFastWeek7,
+		isGreatFastSunday1,
+		isGreatFastSunday2,
+		isGreatFastSunday3,
+		isGreatFastSunday4,
+		isGreatFastSunday5,
+		isGreatFastSunday6,
+		isPentecostWeek1,
+		isPentecostWeek2,
+		isPentecostWeek3,
+		isPentecostWeek4,
+		isPentecostWeek5,
+		isPentecostWeek6,
+		isPentecostWeek7,
+		isPentecostSunday2,
+		isPentecostSunday3,
+		isPentecostSunday4,
+		isPentecostSunday5,
+		isPentecostSunday6,
+		isJoyful29thOfTheMonthRaw,
+		isJoyful29thOfTheMonth,
+		isAdamDays,
+		isWatosDays,
+		isWeekdays,
+		isWeekend,
+		isFeast,
+		isFeasts: isFeast,
+		isFeastOfTheCross,
+		isFeastsOfTheLordPeriods,
+		isMinorFeastsOfTheLord,
+		isFasts,
+		isWeekdayFastingDays,
+		isMajorFeast,
+		isApostlesFastToLastDayOfHathor,
+		isDisplayNonCustomaryPrayers,
+		isStMaryFast,
+		isAssumptionStMary,
+		isStMaryFeast,
+		isStMaryCommemoration,
+		isThoout,
+		isPaope,
+		isHathor,
+		isKoiahk,
+		isTobe,
+		isMeshir,
+		isParemhotep,
+		isParmoute,
+		isPashons,
+		isPaone,
+		isEpep,
+		isMesore,
+		isNesi,
+		isFirstSundayOfThoout,
+		isSecondSundayOfThoout,
+		isThirdSundayOfThoout,
+		isFourthSundayOfThoout,
+		doesNesiHaveASunday,
+		isFirstSundayOfNesi,
+		isFirstSundayOfKoiahk,
+		isSecondSundayOfKoiahk,
+		isThirdSundayOfKoiahk,
+		isFourthSundayOfKoiahk,
+		isKoiahkSeason,
+		isFirstWeekOfKoiahk,
+		isSecondWeekOfKoiahk,
+		isThirdWeekOfKoiahk,
+		isFourthWeekOfKoiahk,
+		isNativityParamounStart,
+		isNativityParamoun,
+		isTodayNativityParamoun,
+		isTheophanyParamounStart,
+		isTheophanyParamoun,
+		isTodayTheophanyParamoun,
+		isFifthSunday,
+		is5thSundayOfFirstSixMonths,
+		is5thSundayOfLastSixMonths,
+		isPentecostPeriod,
+		getAssumptionStMary,
+		getAnnunciation,
+		getNativity,
+		getTheophany,
+		getHosannaSunday,
+		getResurrection,
+		getAscension,
+		getPentecost,
+		getCircumcision,
+		getPresentationInTemple,
+		getEntranceOfTheLordChrist,
+		getWeddingCana,
+		getTransfiguration,
+		getCovenantThursday,
+		getGreatFriday,
+		getThomasSunday,
+		getFeastOfTheCross,
+		getParemhotepFeastOfTheCross,
+		getApostlesFeast,
+		getCopticNewYear,
+		getJoyousSaturday,
+		getLastFridayOfGreatFast,
+		getGreatFastSaturday0,
+		getGreatFastSunday0,
+		getGreatFastSunday1,
+		getGreatFastSunday2,
+		getGreatFastSunday3,
+		getGreatFastSunday4,
+		getGreatFastSunday5,
+		getGreatFastSunday6,
+		getPentecostSunday2,
+		getPentecostSunday3,
+		getPentecostSunday4,
+		getPentecostSunday5,
+		getPentecostSunday6,
+		getFirstSundayOfKoiahk,
+		getSecondSundayOfKoiahk,
+		getThirdSundayOfKoiahk,
+		getFourthSundayOfKoiahk,
+		getNativityParamoun,
+		getTheophanyParamoun,
+		getDayAfterTheophany,
+		getDayAfterNativity,
+		getDayAfterResurrection,
+		getJonahPassover,
+		getLazarusSaturday,
+		getJonahFast,
+		getStBasilId,
+		getStCyrilId,
+		getStGregoryId,
 	}
 
 })();

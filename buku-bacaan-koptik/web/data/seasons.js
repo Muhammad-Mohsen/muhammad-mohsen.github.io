@@ -250,7 +250,7 @@ export const Seasons = (() => {
 
 	// matches getLeafChildren
 	function children(id) {
-		return DATA.getElementById(id).querySelectorAll('Season').toArray().map(s => s.id);
+		return DATA.querySelectorAll(`#${id} Season:empty`).toArray().map(s => s.id);
 	}
 	function documentAttrSeasons() {
 		return DATA.querySelectorAll('[documentAttribute="true"]').toArray().map(s => ({
