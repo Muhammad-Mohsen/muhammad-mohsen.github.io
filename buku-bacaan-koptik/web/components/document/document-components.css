@@ -65,7 +65,8 @@ bibleverse Language {
 }
 
 bibleverse::before {
-	content: "--❖ " attr(verse) " ❖--";
+	/* content: "🙡🙠 " attr(chapterverse) " 🙣🙢"; */
+	content: "❖ " attr(chapterverse) " ❖";
 	flex-basis: 100%;
 	text-align: center;
 	font-size: 1.35rem;
