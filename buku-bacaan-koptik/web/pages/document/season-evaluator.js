@@ -1,7 +1,7 @@
-import { Occasions } from "../../data/occasions.js";
-import { Seasons } from "../../data/seasons.js";
-import { SettingsPage } from "../settings/settings.js";
-import { SaintEvaluator } from "./saint-evaluator.js";
+import { Occasions } from '../../data/occasions.js';
+import { Seasons } from '../../data/seasons.js';
+import { SettingsPage } from '../settings/settings.js';
+import { SaintEvaluator } from './saint-evaluator.js';
 
 /* season expressions
 1. Thoout.1-Meshir.30

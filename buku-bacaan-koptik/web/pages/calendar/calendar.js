@@ -1,5 +1,5 @@
-import { ListItem2 } from "../../components/list-item/list-item.js";
-import { Occasions } from "../../data/occasions.js";
+import { ListItem2 } from '../../components/list-item/list-item.js';
+import { Occasions } from '../../data/occasions.js';
 
 export const CalendarPage = (() => {
 

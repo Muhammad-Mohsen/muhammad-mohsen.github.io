@@ -1,4 +1,4 @@
-import { ListItem } from "../../components/list-item/list-item.js";
+import { ListItem } from '../../components/list-item/list-item.js';
 
 export const ListPage = (() => {
 

@@ -1,4 +1,4 @@
-import { HTTP } from "../../core/http.js";
+import { HTTP } from '../../core/http.js';
 
 export const BibleRef = (function () {
 
