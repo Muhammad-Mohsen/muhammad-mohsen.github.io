@@ -1,0 +1,91 @@
+{
+	"docs": {
+		"uri": 1
+	},
+
+	"menu": [
+		{
+			"name": "Agpeya",
+			"image": "assets/images/agpeya.jpg",
+			"menu": [
+				{
+					"name": "1st Hour",
+					"path": "agpeya/Agpeya - 1st Hour",
+					"uri": "/agpeya/1st-hour"
+				},
+				{
+					"name": "3rd Hour",
+					"path": "agpeya/Agpeya - 3rd Hour",
+					"uri": "/agpeya/3rd-hour"
+				},
+				{
+					"name": "6th Hour",
+					"path": "agpeya/Agpeya - 6th Hour",
+					"uri": "/agpeya/6th-hour"
+				},
+				{
+					"name": "9th Hour",
+					"path": "agpeya/Agpeya - 9th Hour",
+					"uri": "/agpeya/9th-hour"
+				},
+				{
+					"name": "11th Hour",
+					"path": "agpeya/Agpeya - 11th Hour",
+					"uri": "/agpeya/11th-hour"
+				},
+				{
+					"name": "12th Hour",
+					"path": "agpeya/Agpeya - 12th Hour",
+					"uri": "/agpeya/12th-hour"
+				},
+				{
+					"name": "Veil",
+					"path": "agpeya/Agpeya - Veil",
+					"uri": "/agpeya/veil"
+				},
+				{
+					"name": "Midnight",
+					"path": "agpeya/Agpeya - Midnight Hour",
+					"uri": "/agpeya/midnight"
+				},
+				{
+					"name": "Prayers",
+					"menu": [
+						{
+							"name": "Confession",
+							"path": "agpeya/Agpeya - Confession",
+							"uri": "/agpeya/prayers/confession"
+						},
+						{
+							"name": "Communion",
+							"path": "agpeya/Agpeya - Communion",
+							"uri": "/agpeya/prayers/communion"
+						},
+						{
+							"name": "Guidance",
+							"path": "agpeya/Agpeya - Guidance",
+							"uri": "/agpeya/prayers/guidance"
+						},
+						{
+							"name": "Meals",
+							"path": "agpeya/Agpeya - Meals",
+							"uri": "/agpeya/prayers/meals"
+						},
+						{
+							"name": "Priests",
+							"path": "agpeya/Agpeya - Priests",
+							"uri": "/agpeya/prayers/priests"
+						},
+						{
+							"name": "Deacons",
+							"path": "agpeya/Agpeya - Deacons",
+							"uri": "/agpeya/prayers/deacons"
+						}
+					],
+					"uri": "/agpeya/prayers"
+				}
+			],
+			"uri": "/agpeya"
+		}
+	]
+}
