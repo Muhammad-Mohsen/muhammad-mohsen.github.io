@@ -1,5 +1,5 @@
-import { Card } from "../../components/card/card.js";
-import { MainMenu } from "../../data/main-menu.js";
+import { Card } from '../../components/card/card.js';
+import { Menu } from '../../data/menu.js';
 
 export const HomePage = (() => {
 
@@ -9,7 +9,7 @@ export const HomePage = (() => {
 		element.innerHTML = template({
 			copticDate: new Date().formatCoptic(),
 			gregorianDate: new Date().formatGregorian(), // .toGregorian(true),
-			cards: createItems(MainMenu.DATA)
+			cards: createItems(Menu.getData())
 		});
 	}
 

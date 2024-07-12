@@ -9,7 +9,6 @@ So, I this app is me putting my money where my mouth is.
 
 ## TODO
 - BibleReference sections (that show book names and the like)
-- test the season stuff
 - repository
 	- network data source
 	- internal data source
@@ -22,6 +21,8 @@ So, I this app is me putting my money where my mouth is.
 		- SeasonEvaluator.checkCurrentSeason is like a mini version of SeasonEvaluator.isCurrentSeason it only checks:
 			- isSaintSeason
 			- isForceSeason
+
+## Notes
 
 ## Environment Setup
 
@@ -59,3 +60,20 @@ More info [here](https://github.com/ionic-team/capacitor-assets)
 - Generate your app icon and splash screens using cordova-res --skip-config --copy
 - Explore the Ionic docs for components, tutorials, and more: https://ion.link/docs
 - Building an enterprise app? Ionic has Enterprise Support and Features: https://ion.link/enterprise-edition
+
+## Notes
+menu URI code (for future reference)
+```javascript
+const xml = new DOMParser().parseFromString(DEFAULT_MENU, 'text/xml').documentElement;
+xml.querySelectorAll('[path]').toArray().forEach(p => {
+	let segments = [];
+	let seg = p;
+
+	while (seg) {
+		segments.unshift(seg);
+		seg = seg.parentElement;
+	}
+
+	p.setAttribute('uri', segments.map(s => s.getAttribute('name')).join('/').toLowerCase().replace(/ /g, '-').replace(/'/g, ''));
+});
+```

@@ -1,4 +1,4 @@
-import { HTTP } from '../../core/http.js';
+import { HTTP } from '../../core/util.js';
 
 export const BibleRef = (function () {
 
@@ -38,8 +38,8 @@ export const BibleRef = (function () {
 		ref.pop(); // remove the chapter-verse data
 
 		[nkjv, svd] = await Promise.all([
-			HTTP.get(`bible/nkjv/${ref.join(' ')}`),
-			HTTP.get(`bible/svd/${ref.join(' ')}`)
+			HTTP.get(`bible/nkjv/${ref.join(' ')}.cr.xml`),
+			HTTP.get(`bible/svd/${ref.join(' ')}.cr.xml`)
 		]);
 	}
 

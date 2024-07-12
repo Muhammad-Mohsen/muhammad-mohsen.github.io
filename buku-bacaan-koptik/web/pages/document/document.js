@@ -1,12 +1,12 @@
-import { HTTP } from "../../core/http.js";
-import { Router } from "../../core/router.js";
-import { MainMenu } from "../../data/main-menu.js";
-import { CalendarPage } from "../calendar/calendar.js";
-import { SettingsPage } from "../settings/settings.js";
-import { BibleRef } from "./bible.js";
-import { DocumentOutline } from "./outline.js";
-import { DocumentSearch } from "./search.js";
-import { SeasonEvaluator } from "./season-evaluator.js";
+import { HTTP } from '../../core/util.js';
+import { Router } from '../../core/router.js';
+import { Menu } from '../../data/menu.js';
+import { CalendarPage } from '../calendar/calendar.js';
+import { SettingsPage } from '../settings/settings.js';
+import { BibleRef } from './bible.js';
+import { DocumentOutline } from './outline.js';
+import { DocumentSearch } from './search.js';
+import { SeasonEvaluator } from './season-evaluator.js';
 
 export const DocumentPage = (() => {
 
@@ -16,7 +16,7 @@ export const DocumentPage = (() => {
 	async function init(entry) {
 		element.innerHTML = template({
 			header: entry.name,
-			subHeader: MainMenu.getParent(entry.uri)?.name || entry.sub || '',
+			subHeader: Menu.getParentItem(entry.uri)?.name || entry.sub || '',
 		});
 
 		searchContainer = element.querySelector('.search-container');
@@ -27,7 +27,7 @@ export const DocumentPage = (() => {
 
 		element.show(50);
 
-		let doc = await HTTP.get(entry.path); // = await renderDocument(entry.path);
+		let doc = await HTTP.get(entry.path + '.cr.xml'); // = await renderDocument(entry.path);
 		doc = await renderFaster(doc);
 		doc = await renderBible(doc);
 		applySettings(doc);
@@ -42,7 +42,7 @@ export const DocumentPage = (() => {
 
 	// elegant(er) but slow(er)
 	async function renderDocument(path) {
-		const doc = await HTTP.get(path);
+		const doc = await HTTP.get(path + '.cr.xml');
 		if (!doc) return '';
 
 		const includes = doc.querySelectorAll('InsertDocument, insertdocument').toArray();
@@ -68,7 +68,7 @@ export const DocumentPage = (() => {
 		const promises = [];
 		for (let i of includes.toArray()) {
 			const path = i.getAttribute('path');
-			promises.push(HTTP.get(path));
+			promises.push(HTTP.get(path + '.cr.xml'));
 		}
 
 		// wait until everything everything resolves, and put the XML in the document
@@ -178,7 +178,7 @@ export const DocumentPage = (() => {
 	}
 	function goto(link) {
 		const path = link.getAttribute('path');
-		const entry = MainMenu.getEntryByPath(MainMenu.DATA, path);
+		const entry = Menu.getItemByPath(Menu.getData(), path);
 		if (entry) Router.goto(entry.uri);
 	}
 

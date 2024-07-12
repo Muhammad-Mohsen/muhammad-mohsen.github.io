@@ -1,4 +1,4 @@
-import { Occasions } from "../../data/occasions.js";
+import { Occasions } from '../../data/occasions.js';
 
 export const SaintEvaluator = (() => {
 
@@ -64,6 +64,7 @@ export const SaintEvaluator = (() => {
 		return isDate2(Occasions.MESORE_16);
 	}
 
+	function isStLukeTheEvangelist() { return isDate(2, 22); }
 	function isStAndrewTheApostle() { return isDate(4, 4); }
 	function isStJohnOfHeraclia() { return isDate(4, 4); }
 	function isStIsiAndStThecla() { return isDate(4, 8); }
@@ -414,6 +415,7 @@ export const SaintEvaluator = (() => {
 		isThreeHolyYouth,
 		isStMary,
 		isStMaryFeast,
+		isStLukeTheEvangelist,
 		isAssumptionStMary,
 		isStAndrewTheApostle,
 		isStJohnOfHeraclia,

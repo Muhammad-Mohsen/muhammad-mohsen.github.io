@@ -54,3 +54,8 @@ loading::after {
         width: 10%;
     }
 }
+
+/* loading.init-loader {
+    inset: 40vh auto auto 40vw;
+    width: 20vw;
+} */

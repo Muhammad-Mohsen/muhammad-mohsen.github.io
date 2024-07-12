@@ -1,8 +1,8 @@
-import { MainMenu } from "../data/main-menu.js";
-import { CalendarPage } from "../pages/calendar/calendar.js";
-import { DocumentPage } from "../pages/document/document.js";
-import { ListPage } from "../pages/list/list.js";
-import { SettingsPage } from "../pages/settings/settings.js";
+import { Menu } from '../data/menu.js';
+import { CalendarPage } from '../pages/calendar/calendar.js';
+import { DocumentPage } from '../pages/document/document.js';
+import { ListPage } from '../pages/list/list.js';
+import { SettingsPage } from '../pages/settings/settings.js';
 
 export const Router = (() => {
 
@@ -12,7 +12,7 @@ export const Router = (() => {
 		// if (history.length <= 1) return console.log('NOTIFY CONTAINER!!');
 
 		const route = location.hash.substring(1);
-		const entry = MainMenu.getEntry(route);
+		const entry = Menu.getItem(route);
 
 		document.querySelector('.page.show').hide();
 		document.querySelector('html').scrollTop = 0;

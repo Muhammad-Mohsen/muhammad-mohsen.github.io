@@ -1,15 +1,19 @@
-import { Router } from "./core/router.js";
-import { MainMenu } from "./data/main-menu.js";
-import { CalendarPage } from "./pages/calendar/calendar.js";
-import { DocumentPage } from "./pages/document/document.js";
-import { DocumentOutline } from "./pages/document/outline.js";
-import { SaintEvaluator } from "./pages/document/saint-evaluator.js";
-import { DocumentSearch } from "./pages/document/search.js";
-import { SeasonEvaluator } from "./pages/document/season-evaluator.js";
-import { HomePage } from "./pages/home/home.js";
-import { SettingsPage } from "./pages/settings/settings.js";
+import { Repository } from './data/repository.js';
+import { Router } from './core/router.js';
+import { CalendarPage } from './pages/calendar/calendar.js';
+import { DocumentPage } from './pages/document/document.js';
+import { DocumentOutline } from './pages/document/outline.js';
+import { SaintEvaluator } from './pages/document/saint-evaluator.js';
+import { DocumentSearch } from './pages/document/search.js';
+import { SeasonEvaluator } from './pages/document/season-evaluator.js';
+import { HomePage } from './pages/home/home.js';
+import { SettingsPage } from './pages/settings/settings.js';
 
-MainMenu.setURI('', MainMenu.DATA);
+const loader = document.querySelector('loading.init-loader');
+loader.classList.add('show');
+await Repository.getUpdates();
+loader.classList.remove('show');
+
 HomePage.init();
 Router.process();
 
