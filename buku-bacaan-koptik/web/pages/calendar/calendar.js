@@ -24,19 +24,13 @@ export const CalendarPage = (() => {
 	}
 
 	function createItems() {
-		let html = '';
-
-		Object.keys(Occasions).forEach(k => {
-			if (!(Occasions[k] instanceof Date)) return;
-
-			html += ListItem2({
-				title: k.replace(/_/g, ' '),
-				subtitle: `${Occasions[k].formatGregorian('full')} &bull; <i>${Occasions[k].formatCoptic(true)}</i>`,
-				clickHandler: `CalendarPage.setLive('${Occasions[k].toJSON()}')`,
+		return Occasions.displayable().map(o => {
+			return ListItem2({
+				title: o.name,
+				subtitle: `${o.date.formatGregorian('full')} &bull; <i>${o.date.formatCoptic(true)}</i>`,
+				clickHandler: `CalendarPage.setLive('${o.date.toJSON()}')`,
 			});
-		});
-
-		return html;
+		}).join('');
 	}
 
 	function setLive(date) {

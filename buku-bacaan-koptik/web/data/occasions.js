@@ -188,6 +188,203 @@ export const Occasions = (() => {
 	const PENTECOST_MONDAY_6 = PENTECOST_SUNDAY_5.addDays(1);
 	const PENTECOST_MONDAY_7 = PENTECOST_SUNDAY_6.addDays(1);
 
+	function displayable() {
+		return [
+			{
+				name:'Coptic New Year',
+				date: thouut1
+			},
+			{
+				name:'Thoout Feast of the Cross',
+				date: THOOUT_FEAST_CROSS_1
+			},
+			{
+				name:'1st Sunday of Koiahk',
+				date: FIRST_SUNDAY_OF_KOIAHK
+			},
+			{
+				name:'2nd Sunday of Koiahk',
+				date: SECOND_SUNDAY_OF_KOIAHK
+			},
+			{
+				name:'3rd Sunday of Koiahk',
+				date: THIRD_SUNDAY_OF_KOIAHK
+			},
+			{
+				name:'Nativity Paramoun',
+				date: NATIVITY_PARAMOUN_START
+			},
+			{
+				name:'Nativity',
+				date: NATIVITY_START
+			},
+			{
+				name:'4th Sunday of Koiahk',
+				date: FOURTH_SUNDAY_OF_KOIAHK
+			},
+			{
+				name:'2nd Day of Nativity',
+				date: DAY_AFTER_NATIVITY
+			},
+			{
+				name:'Circumcision',
+				date: CIRCUMCISION
+			},
+			{
+				name:'Theophany Paramoun',
+				date: THEOPHANY_PARAMOUN_START
+			},
+			{
+				name:'Theophany',
+				date: THEOPHANY
+			},
+			{
+				name:'2nd Day of the Theophany',
+				date: DAY_AFTER_THEOPHANY
+			},
+			{
+				name:'Wedding at Cana Galilee',
+				date: WEDDING_CANA
+			},
+			{
+				name:'Presentation of the Lord Christ in the Temple',
+				date: PRESENTATION_IN_TEMPLE
+			},
+			{
+				name:'Jonah\'s Fast',
+				date: JONAH_FAST_BEGIN
+			},
+			{
+				name:'Jonah\'s Passover',
+				date: JONAH_PASSOVER
+			},
+			{
+				name:'Saturday before the Great Fast',
+				date: GREAT_FAST_SATURDAY_0
+			},
+			{
+				name:'Sunday before the Great Fast',
+				date: GREAT_FAST_SUNDAY_0
+			},
+			{
+				name:'1st Monday of the Great Fast',
+				date: GREAT_FAST_MONDAY_1
+			},
+			{
+				name:'1st Sunday of the Great Fast',
+				date: GREAT_FAST_SUNDAY_1
+			},
+			{
+				name:'Paremhotep Feast of the Cross',
+				date: PAREMHOTEP_FEAST_CROSS
+			},
+			{
+				name:'2nd Sunday of the Great Fast',
+				date: GREAT_FAST_SUNDAY_2
+			},
+			{
+				name:'3rd Sunday of the Great Fast',
+				date: GREAT_FAST_SUNDAY_3
+			},
+			{
+				name:'4th Sunday of the Great Fast',
+				date: GREAT_FAST_SUNDAY_4
+			},
+			{
+				name:'Annunciation',
+				date: ANNUNCIATION
+			},
+			{
+				name:'5th Sunday of the Great Fast',
+				date: GREAT_FAST_SUNDAY_5
+			},
+			{
+				name:'6th Sunday of the Great Fast',
+				date: GREAT_FAST_SUNDAY_6
+			},
+			{
+				name:'Last Friday of the Great Fast',
+				date: LAST_FRIDAY_OF_GREAT_FAST
+			},
+			{
+				name:'Lazarus Saturday',
+				date: LAZARUS_SATURDAY
+			},
+			{
+				name:'Hosanna Sunday',
+				date: HOSANNA_SUNDAY
+			},
+			{
+				name:'Covenant Thursday',
+				date: COVENANT_THURSDAY
+			},
+			{
+				name:'Great Friday',
+				date: GREAT_FRIDAY
+			},
+			{
+				name:'Joyous Saturday',
+				date: JOYOUS_SATURDAY
+			},
+			{
+				name:'Resurrection',
+				date: RESURRECTION
+			},
+			{
+				name:'2nd Day of Resurrection',
+				date: DAY_AFTER_RESURRECTION
+			},
+			{
+				name:'Thomas Sunday',
+				date: THOMAS_SUNDAY
+			},
+			{
+				name:'2nd Sunday of Pentecost',
+				date: PENTECOST_SUNDAY_2
+			},
+			{
+				name:'3rd Sunday of Pentecost',
+				date: PENTECOST_SUNDAY_3
+			},
+			{
+				name:'Entrance of the Lord Christ into The Land of Egypt',
+				date: ENTRANCE_LORD_CHRIST
+			},
+			{
+				name:'4th Sunday of Pentecost',
+				date: PENTECOST_SUNDAY_4
+			},
+			{
+				name:'5th Sunday of Pentecost',
+				date: PENTECOST_SUNDAY_5
+			},
+			{
+				name:'Ascension',
+				date: ASCENSION
+			},
+			{
+				name:'6th Sunday of Pentecost',
+				date: PENTECOST_SUNDAY_6
+			},
+			{
+				name:'Pentecost',
+				date: PENTECOST_FEAST
+			},
+			{
+				name:'Apostle\'s Feast',
+				date: APOSTLES_FEAST
+			},
+			{
+				name:'Transfiguration',
+				date: TRANSFIGURATION
+			},
+			{
+				name:'Assumption of the Body of St. Mary',
+				date: MESORE_16
+			}
+		].sort((a, b) => a.date - b.date);
+	}
+
 	return {
 		THOOUT_2,
 		THOOUT_15,
@@ -302,6 +499,8 @@ export const Occasions = (() => {
 		PENTECOST_MONDAY_5,
 		PENTECOST_MONDAY_6,
 		PENTECOST_MONDAY_7,
+
+		displayable,
 	};
 
 })();
