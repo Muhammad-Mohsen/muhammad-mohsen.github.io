@@ -1,4 +1,3 @@
-import { HTTP } from '../../core/util.js';
 import { Router } from '../../core/router.js';
 import { Menu } from '../../data/menu.js';
 import { CalendarPage } from '../calendar/calendar.js';
@@ -7,6 +6,7 @@ import { BibleRef } from './bible.js';
 import { DocumentOutline } from './outline.js';
 import { DocumentSearch } from './search.js';
 import { SeasonEvaluator } from './season-evaluator.js';
+import { Repository } from '../../data/repository.js';
 
 export const DocumentPage = (() => {
 
@@ -27,7 +27,7 @@ export const DocumentPage = (() => {
 
 		element.show(50);
 
-		let doc = await HTTP.get(entry.path + '.cr.xml'); // = await renderDocument(entry.path);
+		let doc = await Repository.getDocument(entry.path); // = await renderDocument(entry.path);
 		doc = await renderFaster(doc);
 		doc = await renderBible(doc);
 		applySettings(doc);
@@ -42,7 +42,7 @@ export const DocumentPage = (() => {
 
 	// elegant(er) but slow(er)
 	async function renderDocument(path) {
-		const doc = await HTTP.get(path + '.cr.xml');
+		const doc = await Repository.getDocument(path);
 		if (!doc) return '';
 
 		const includes = doc.querySelectorAll('InsertDocument, insertdocument').toArray();
@@ -68,7 +68,7 @@ export const DocumentPage = (() => {
 		const promises = [];
 		for (let i of includes.toArray()) {
 			const path = i.getAttribute('path');
-			promises.push(HTTP.get(path + '.cr.xml'));
+			promises.push(Repository.getDocument(path));
 		}
 
 		// wait until everything everything resolves, and put the XML in the document
