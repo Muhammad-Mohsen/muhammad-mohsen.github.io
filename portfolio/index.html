@@ -5,49 +5,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Muhammad Mohsen | Portfolio</title>
+
 	<link rel="stylesheet" href="style.css">
+	<script type="module" src="content-block.js"></script>
 </head>
 
 <body>
 
 	<main>
-		<section class="block-comment">
-			* Muhammad Mohsen
-			<br>
-			* maker
-		</section>
+		<h1 class="comment" line="1">Muhammad Mohsen</h1>
+		<h2 class="comment" line="2">maker</h2>
 
-		<details>
-			<summary>info {</summary>
-			<div class="content">
-				<p>
-					I'm a Software engineer with varying degrees of experience in multiple frameworks and platforms.
-					<br>
-					I participated in web projects that made use of Angular and .Net WebAPI, developed native and cross platform mobile apps and even a couple of chrome extensions. Recently I've been doing some fun AR stuff with Unity!
-				</p>
-				<p>
-					Writing code is not just work for me, I do it for fun as well! I have a few projects on my GitHub.
-					<br>
-					I also do some 3D Industrial Design whenever I get some free time.
-					<br>
-					Check those out using the links below.
-				</p>
-			</div>
-		</details>
+		<content-block open>
+			<header>info</header>
+			<content>
+				I'm a Software engineer with varying degrees of experience in multiple frameworks and platforms.
+				I participated in web projects that made use of Angular and .Net WebAPI, developed native and cross platform mobile apps and even a couple of chrome extensions. Recently I've been doing some fun AR stuff with Unity!
+				Writing code is not just work for me, I do it for fun as well! I have a few projects on my GitHub.
+				I also do some 3D Industrial Design whenever I get some free time.
+				Check those out using the links below.
+			</content>
+		</content-block>
 
-		<details>
-			<summary>projects {</summary>
-			<div class="content">
+		<content-block>
+			<header>projects</header>
+			<content>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis, veniam fuga veritatis necessitatibus laboriosam ducimus a mollitia, quidem error ut aspernatur dolorum. Iste totam nostrum molestias, quam asperiores expedita?
-			</div>
-		</details>
+			</content>
+		</content-block>
+
 	</main>
 
-	<ul class="footer">
-		<li><a href="https://github.com/Muhammad-Mohsen" target="_blank">github</a></li>
-		<li><a href="https://www.behance.net/muhammaabdel-" target="_blank">behance</a></li>
-		<li><a href="https://www.linkedin.com/in/muhammad-abd-el-hakam-a249159a/" target="_blank">linkedin</a></li>
-	</ul>
+	<footer>
+		<logo>
+			<svg width="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 37.714V2l5.673 5.714V32L8 37.714ZM17.218 37.714V2l5.673 5.714V32l-5.673 5.714ZM26.436 28.429V7.714L32.11 2v20.714l-5.673 5.715Z" fill="#1c1b22"/></svg>
+		</logo>
+
+		<ul>
+			<li><a href="https://github.com/Muhammad-Mohsen" target="_blank">github</a></li>
+			<li><a href="https://www.behance.net/muhammaabdel-" target="_blank">behance</a></li>
+			<li><a href="https://www.linkedin.com/in/muhammad-abd-el-hakam-a249159a/" target="_blank">linkedin</a></li>
+		</ul>
+	</footer>
 
 </body>
 
