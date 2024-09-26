@@ -10,6 +10,7 @@ html {
 	overflow: hidden;
 }
 
+* { font: 400 14px/normal consolas, 'Courier New', monospace; }
 body {
 	display: flex;
 	flex-direction: column;
@@ -54,7 +55,6 @@ content-block {
 		margin: 0;
 		padding-inline-start: 64px;
 		white-space: pre-wrap;
-		font: 400 16px/normal consolas, 'Courier New', monospace;
 	}
 
 	& .line-nums {
@@ -110,14 +110,13 @@ content-block {
 	position: relative;
 	margin: 0;
 	color: var(--comment);
-	font: 400 16px/normal consolas, 'Courier New', monospace;
 
 	&::before { content: '// '; }
 
 	&::after {
 		content: attr(line);
 		position: absolute;
-		inset-inline-start: -52px;
+		inset-inline-start: -53px;
 		color: var(--fg);
 	}
 }
@@ -154,19 +153,18 @@ footer {
 			gap: 6px;
 			padding: 4px 4px 5px 8px;
 			color: var(--fg-d);
-			font-size: 16px;
 			text-decoration: none;
 
 			/* arrow */
 			&::after {
-				content: '🡕';
-				font-size: 18px;
+				content: '↗';
+				font-size: 20px;
 				line-height: 12px;
-				translate: -2px 0;
+				translate: -2px -2px;
 				transition: .2s;
 			}
 			&:hover { color: var(--fg); }
-			&:hover::after { translate: 0 -2px; }
+			&:hover::after { translate: 0 -4px; }
 		}
 	}
 }
