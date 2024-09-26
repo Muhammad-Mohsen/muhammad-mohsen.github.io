@@ -151,20 +151,33 @@ footer {
 			display: flex;
 			align-items: center;
 			gap: 6px;
-			padding: 4px 4px 5px 8px;
+			padding: 4px 8px 5px 8px;
 			color: var(--fg-d);
 			text-decoration: none;
 
-			/* arrow */
-			&::after {
-				content: '↗';
-				font-size: 20px;
-				line-height: 12px;
-				translate: -2px -2px;
+			/* chevron */
+			& i {
+				--size: 5px;
+
+				width: var(--size);
+				height: var(--size);
+				border-top: 1px solid;
+				border-inline-end: 1px solid;
+				translate: 0 -2px;
 				transition: .2s;
+
+				&::before {
+					content: '';
+					display: block;
+					width: calc(2 * var(--size));
+					height: 1px;
+					background: var(--fg-d);
+					transform: translate(-3.5px, 3px) rotate(-45deg);
+				}
 			}
 			&:hover { color: var(--fg); }
-			&:hover::after { translate: 0 -4px; }
+			&:hover i { translate: 2px -4px; }
+			&:hover i::before { background: var(--fg); }
 		}
 	}
 }
