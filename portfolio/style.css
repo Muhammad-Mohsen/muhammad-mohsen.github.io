@@ -1,22 +1,24 @@
 html {
 	--bg: #1c1b22;
 	--border: #35323f;
-	--fg: #ccc;
+	--fg: #D4D4D4;
 	--fg-d: #999;
-	--comment: #3eaa00;
+	--accent: #9cdcfe;
+	--comment: #e4b074;
 
-	--gutter: 16px;
+	--win-inset: 16px;
+	--tab-width: 32px;
 
 	overflow: hidden;
 }
 
-* { font: 400 14px/normal consolas, 'Courier New', monospace; }
+*, *::before, *::after { font: 400 14px/normal consolas, 'Courier New', monospace; }
 body {
 	display: flex;
 	flex-direction: column;
-	height: calc(100dvh - 2 * var(--gutter));
+	height: calc(100dvh - 2 * var(--win-inset));
 	margin: 0;
-	padding: var(--gutter);
+	padding: var(--win-inset);
 	color: var(--fg);
 	background: var(--bg);
 	font-family: consolas, 'Courier New', monospace;
@@ -25,96 +27,118 @@ body {
 
 main {
 	flex-grow: 1;
-	padding: 12px 12px 12px 92px;
+	display: flex;
 	border: 1px solid var(--border);
 	box-sizing: border-box;
 	overflow: hidden auto;
+	scrollbar-color: #777 transparent;
 
+	/* guides */
 	&::before, &::after {
 		content: '';
 		position: fixed;
-		inset: var(--gutter) auto var(--gutter) calc(82px + var(--gutter));
+		inset: var(--win-inset) auto var(--win-inset) calc(82px + var(--win-inset));
 		width: 1px;
 		background: var(--border);
 	}
 	&::after {
-		inset: var(--gutter) auto calc(var(--gutter) + 29px) calc(64px + 80ch);
+		inset: var(--win-inset) auto calc(var(--win-inset) + 29px) calc(var(--tab-width) + 88ch);
 		opacity: .4;
 	}
 }
 
-/* content-block */
-content-block {
+gutter {
+	padding: 12px 32px;
+	color: var(--fg-d);
+	text-align: end;
+	user-select: none;
+}
+editor {
+	height: fit-content;
+	padding: 12px;
+}
+
+details {
 	position: relative;
-	display: block;
 	max-width: 80ch;
-	margin-inline-start: -32px;
 	overflow-y: clip;
-
-	& pre {
-		margin: 0;
-		padding-inline-start: 64px;
-		white-space: pre-wrap;
-	}
-
-	& .line-nums {
-		position: absolute;
-		inset: 0 auto 0 -56px;
-		width: 44px;
-		text-align: end;
-	}
-
-	& details[open] {
-		& summary::before { rotate: 135deg; translate: 1px -1px; }
-		& summary::after { display: none; }
-
-		& pre::after {
-			content: '}';
-			display: block;
-			margin-inline-start: -32px;
-		}
-	}
 
 	& summary {
 		display: flex;
 		align-items: center;
 		list-style: none;
+		color: var(--accent);
+		pointer-events: none;
 
 		&::before {
 			content: '';
 			width: 6px;
 			height: 6px;
-			margin: 0 24px 0 0;
+			margin: 0 calc((var(--level) - 1) * var(--tab-width) + 24px) 0 calc(var(--level) * var(--tab-width) * -1);
 			border-width: 2px 2px 0 0;
 			border-style: solid;
+			color: var(--fg);
 			rotate: 45deg;
-			transition: .05s;
+			transition: rotate .05s, opacity .2s;
 			cursor: pointer;
+			pointer-events: all;
 		}
 		&::after { /* ellipsis */
-			content: '\22EF';
-			margin: .1em .4em 0;
-			line-height: 1em;
+			content: '{ \22EF';
+			margin: 0 .4em;
+			color: var(--fg);
+			line-height: .1em;
 			cursor: pointer;
+		}
+	}
+
+	& pre {
+		position: relative;
+		margin: 0;
+		padding-inline-start: var(--tab-width);
+		white-space: pre-wrap;
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 2px auto calc(1em + 4px) 0;
+			width: 1px;
+			background: var(--border);
+			/* opacity: .5; */
+		}
+	}
+
+	&[open] {
+		& > summary::before { rotate: 135deg; translate: 1px -1px; opacity: 0; }
+		& > summary::after { content: '{'; }
+
+		& > pre::after {
+			content: '}';
+			display: block;
+			margin-inline-start: calc(-1 * var(--tab-width));
 		}
 	}
 }
 
-.block-comment {
+editor:has(summary:hover) summary::before,
+gutter:hover + editor summary::before { opacity: 1; }
+
+block-comment {
 	color: var(--comment);
 
 	&::before { content: '/*'; display: block; }
 	&::after { content: '*/'; display: block; }
 }
-.comment {
+line-comment {
 	position: relative;
+	display: block;
 	margin: 0;
 	color: var(--comment);
 
 	&::before { content: '// '; }
 
 	&::after {
-		content: attr(line);
+		/* content: attr(line); */
 		position: absolute;
 		inset-inline-start: -53px;
 		color: var(--fg);
@@ -181,3 +205,27 @@ footer {
 		}
 	}
 }
+
+.ic::before {
+	--size: 24px;
+	content: '';
+	width: var(--size);
+	height: var(--size);
+	border-radius: var(--size);
+}
+.ic-sun::before {
+
+}
+.i-moon::before {
+
+}
+.i-sun-moon::before {
+
+}
+/* <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330">
+<path d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+	s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
+	c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
+</svg> ☽◐☾☼︎ */
