@@ -87,6 +87,7 @@ const ContentEditor = (() => {
 			.replace(/<title-html /gi, '<Title ')
 			.replace(/<\/title-html>/gi, '</Title>')
 			.replace(/ contenteditable="true"/gi, '')
+			.replace(/<br>/gi, '<br/>')
 			.replace(/&nbsp;/gi, ' '); // reaplce html-entity space with a text space
 
 		const a = document.createElement('a');
