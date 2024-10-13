@@ -9,7 +9,7 @@ export const BibleRef = (function () {
 	// 4. <BibleReference reference="Psalms 104:4;138:1-2" type="comment"/> => discrete
 	// 5. <BibleReference reference="Psalms 25:18, 20" type="comment"/> => bulljive is what that is!!
 
-	let nkjv, svd;
+	let nkjv, svd, tb;
 
 	async function render(node) {
 		const ref = node.getAttribute('reference').replace(/, /g, '').replace(/; /g, ''); // remove stupid spaces;
@@ -24,12 +24,13 @@ export const BibleRef = (function () {
 	function renderVerse(chapterVerse) {
 		// get verse from book
 		const [chapter, verse] = chapterVerse.split(':');
-		const kjvVerse = nkjv.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''; // hide off-by-one errors!!
-		const svdVerse = svd.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''; // hide off-by-one errors!!
+		const [kjvVerse, svdVerse, tbVerse] = [nkjv, svd, tb].forEach(b =>
+			b.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''); // hide off-by-one errors!!
 
 		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}">
 			<language id="English">${kjvVerse}</language>
 			<language id="Arabic">${svdVerse}</language>
+			<language id="Indonesian">${tbVerse}</language>
 		</bibleverse>`;
 	}
 
@@ -37,9 +38,10 @@ export const BibleRef = (function () {
 		ref = ref.split(' ');
 		ref.pop(); // remove the chapter-verse data
 
-		[nkjv, svd] = await Promise.all([
+		[nkjv, svd, tb] = await Promise.all([
 			Repository.getDocument(`bible/nkjv/${ref.join(' ')}`),
-			Repository.getDocument(`bible/svd/${ref.join(' ')}`)
+			Repository.getDocument(`bible/svd/${ref.join(' ')}`),
+			Repository.getDocument(`bible/tb/${ref.join(' ')}`)
 		]);
 	}
 
