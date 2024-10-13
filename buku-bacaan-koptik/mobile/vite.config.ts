@@ -8,6 +8,7 @@ export default defineConfig({
     outDir: '../mobile/dist',
     minify: false,
     emptyOutDir: true,
+    target: 'esnext',
   },
 
   // publicDir: '../web/assets', // doesn't work because it breaks the non-built version
