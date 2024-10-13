@@ -24,7 +24,7 @@ export const BibleRef = (function () {
 	function renderVerse(chapterVerse) {
 		// get verse from book
 		const [chapter, verse] = chapterVerse.split(':');
-		const [kjvVerse, svdVerse, tbVerse] = [nkjv, svd, tb].forEach(b =>
+		const [kjvVerse, svdVerse, tbVerse] = [nkjv, svd, tb].map(b =>
 			b.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''); // hide off-by-one errors!!
 
 		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}">

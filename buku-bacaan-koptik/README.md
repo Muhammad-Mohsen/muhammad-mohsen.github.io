@@ -38,9 +38,14 @@ This one gave great results, but it failed to render some of the arabic characte
 No setup necessary! (That's a lie!!)
 Just run index.html (or use IIS for example, create an application point it to the `web` folder, and just browse)
 
-### Capacitor App
+### editor
+This is a document editor app where we can add new languages to the existing documents.
+- open `index.html`, open the document, make the changes in the right-hand column, and save
+- replace the old XML under `web/assets/documents/...` with the updated XML
+
+### mobile
 This is a Capacitor app that is used to create the actual Android app.
-- run `npm install`
+- run `npm install` (only after cloning the repo for the first time)
 - run `npm run build`
 - run `npx capacitor sync android`
 - open Android Studio and build the app!
