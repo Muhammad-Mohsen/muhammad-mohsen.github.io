@@ -39,6 +39,8 @@ Text Language {
 }
 Text Language#English { order: 1; }
 Text Language#Arabic { order: 3; }
+Language#Indonesian { order: 4; }
+
 Text Language#Coptic {
 	order: 2;
 	text-align: center;
