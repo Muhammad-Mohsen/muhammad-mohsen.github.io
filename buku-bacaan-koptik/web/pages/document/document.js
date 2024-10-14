@@ -136,7 +136,7 @@ export const DocumentPage = (() => {
 	async function postProcessDocument(doc) {
 
 		// track down section headers so we can add expand/collapse functions on them
-		const sectionHeaders = doc.querySelectorAll('Section Title');
+		const sectionHeaders = doc.querySelectorAll('Section Title, section title');
 		for (let h of sectionHeaders.toArray()) h.setAttribute('data-section-header', 'true');
 
 		return doc.outerHTML
@@ -144,15 +144,10 @@ export const DocumentPage = (() => {
 			.replace(/id="CopticReading"/gi, 'id="Coptic" coptic-row')
 
 			// title element can only have text nodes, so we change it so it renders its inner HTML correctly
-			.replace(/<title/gi, '<title-html')
-			.replace(/<\/title>/gi, '</title-html>')
+			.replace(/<title|<\/title>/gi, match => match.toLowerCase() == '<title' ? '<title-html' : '</title-html>')
 
-			// remove extra 'document' elements
-			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">/gi, '')
-			.replace(/<\/document>/gi, '')
-
+			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">|<\/document>/gi, '') // remove extra 'document' elements
 			.replace(/<linkdocument /gi, `<linkdocument onclick="DocumentPage.goto(this);" `)
-
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
 	}
 

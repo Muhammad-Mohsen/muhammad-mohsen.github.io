@@ -40,11 +40,11 @@ const ContentEditor = (() => {
 	}
 	function postProcessDocument(doc) {
 		// track down section headers so we can add expand/collapse functions on them
-		const sectionHeaders = doc.querySelectorAll('Section Title');
+		const sectionHeaders = doc.querySelectorAll('Section Title, section title');
 		for (let h of [...sectionHeaders]) h.setAttribute('data-section-header', 'true');
 
 		// add closing tags to InsertDocument so that they render correctly
-		const insertDocuments = doc.querySelectorAll('InsertDocument');
+		const insertDocuments = doc.querySelectorAll('InsertDocument, insertdocument');
 		for (let e of [...insertDocuments]) e.innerHTML = 'x';
 
 		// copy one language and add a contenteditable="true" to the copied one
@@ -66,27 +66,15 @@ const ContentEditor = (() => {
 		}
 
 		return doc.outerHTML
-			// remove post-decryption encoding error
-			.replace(/\?�?/gi, '')
-			.replace(/�/gi, '')
-
 			// title element can only have text nodes, so we change it so it renders its inner HTML correctly
-			.replace(/<title>/gi, '<title-html>')
-			.replace(/<title /gi, '<title-html ')
-			.replace(/<\/title>/gi, '</title-html>')
-
-			// remove extra 'document' elements
-			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">/gi, '')
-			.replace(/<\/document>/gi, '')
-			; // .replace(/data-section-header="true"/gi, `onclick="ContentEditor.sectionExpandCollapse(this);"`);
+			.replace(/<title|<\/title>/gi, match => match.toLowerCase() == '<title' ? '<title-html' : '</title-html>');
 	}
 
 	function download() {
-		const data = documentContainer.innerHTML
-			.replace(/<title-html>/gi, '<Title>')
-			.replace(/<title-html /gi, '<Title ')
-			.replace(/<\/title-html>/gi, '</Title>')
+		const data = '<?xml version="1.0" encoding="UTF-8"?>' + documentContainer.innerHTML
+			.replace(/<title-html|<\/title-html>/gi, match => match.toLowerCase() == '<title-html' ? '<Title' : '</Title>')
 			.replace(/ contenteditable="true"/gi, '')
+			.replace(/>x<\/insertdocument>/gi, '/>') // change insertdocument node to be self-closing again
 			.replace(/<br>/gi, '<br/>')
 			.replace(/&nbsp;/gi, ' '); // reaplce html-entity space with a text space
 
