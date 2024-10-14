@@ -119,7 +119,7 @@ header {
 }
 header img {
 	width: 64px;
-	filter: hue-rotate(241deg);
+	/*filter: hue-rotate(241deg);*/
 	margin-inline-end: 12px;
 }
 h1 {
