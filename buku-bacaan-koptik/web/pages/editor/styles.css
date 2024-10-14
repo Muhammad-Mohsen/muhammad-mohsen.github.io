@@ -171,8 +171,8 @@ main:empty::before {
 
 /* can be moved to content-components.css if it doesn't affect the doc */
 insertdocument { display: none; }
-
-Language#Arabic { display: none; }
+Language#Coptic { display: none }
+/*Language#Arabic { display: none; }*/
 Language#Indonesian { order: 4; }
 Language#Indonesian:focus-visible {
 	outline: 2px dashed var(--accent-bg);
