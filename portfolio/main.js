@@ -53,3 +53,19 @@ DetailsBlock.calcBounds();
 DetailsBlock.renderLineNumbers(); // initial line number rendering
 
 window.updateLineNumbers = DetailsBlock.renderLineNumbers;
+
+const currentTheme = localStorage.getItem('theme');
+const themeSelector = document.querySelector('.theme-selector');
+const icon = themeSelector.children[0];
+
+// set the icon
+icon.className = `ic ic-${currentTheme}`;
+
+themeSelector.onclick = () => {
+	const currentTheme = localStorage.getItem('theme');
+	const theme = currentTheme == 'moon' ? 'sun' : 'moon';
+
+	localStorage.setItem('theme', theme);
+	icon.className = `ic ic-${theme}`;
+	document.body.dataset.theme = theme;
+}

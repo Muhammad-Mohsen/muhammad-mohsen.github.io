@@ -9,7 +9,14 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-theme="moon">
+
+	<!-- theme -->
+	<script>
+		const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)') ? 'moon' : 'sun');
+		localStorage.setItem('theme', theme);
+		document.body.dataset.theme = theme;
+	</script>
 
 	<main>
 		<gutter></gutter>
@@ -17,8 +24,10 @@
 			<line-comment>Muhammad Mohsen</line-comment>
 			<line-comment>software engineer + ui designer + 3d artist</line-comment>
 
+			<!-- ABOUT -->
 			<details is="details-block" open>
 				<summary>about</summary>
+				<!-- edited AI slop -->
 				<pre>
 					I've been coding for about 15 years now, and I've loved -almost- every minute of it.
 					From building enterprise-level Angular, Android, and Flutter apps to diving into the creative world of UI design and game development, I've had the chance to work on some truly exciting projects.
@@ -28,7 +37,7 @@
 					<br>
 					<br>
 					<line-comment>I'm always up for a new challenge, so if you have a project in mind, don't hesitate to reach out. Let's create something amazing together!</line-comment>
-					<!-- more AI slop -->
+					<!-- unedited AI slop -->
 					<!-- As a seasoned Software Engineer, I've honed my skills across a diverse range of frameworks and platforms. My experience includes contributing to enterprise-level Angular, Android, and Flutter applications. I've also delved into UI design and accessibility, ensuring that my projects are both visually appealing and inclusive. Beyond coding, I have a passion for creative pursuits. I've worked on both 2D and 3D art projects, and I've even dabbled in AR development using Unity. Whether it's crafting functional software or exploring artistic endeavors, I approach every challenge with enthusiasm and a commitment to excellence.
 
 					I've always been driven by a curiosity to build things and solve problems.
@@ -44,6 +53,7 @@
 				</pre>
 			</details>
 
+			<!-- PROJECTS -->
 			<details is="details-block">
 				<summary>projects</summary>
 				<pre>
@@ -80,6 +90,7 @@
 				</pre>
 			</details>
 
+			<!-- LIBS + SNIPS -->
 			<details is="details-block">
 				<summary>mini-libraries + snippets</summary>
 				<pre>
@@ -104,11 +115,13 @@
 				</pre>
 			</details>
 
+			<!-- UI -->
 			<details is="details-block">
 				<summary>ui</summary>
 				<pre></pre>
 			</details>
 
+			<!-- 3D -->
 			<details is="details-block">
 				<summary>3d</summary>
 				<pre></pre>
@@ -121,15 +134,16 @@
 			<svg width="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 37.714V2l5.673 5.714V32L8 37.714ZM17.218 37.714V2l5.673 5.714V32l-5.673 5.714ZM26.436 28.429V7.714L32.11 2v20.714l-5.673 5.715Z" fill="#1c1b22"/></svg>
 		</logo>
 
-		<!-- add theme selector -->
+		<button class="theme-selector" onclick=""><i class="ic ic-moon"></i></button>
+
 		<ul>
-			<li><a href="https://github.com/Muhammad-Mohsen" target="_blank">github<i></i></a></li>
-			<li><a href="https://www.behance.net/muhammaabdel-" target="_blank">behance<i></i></a></li>
-			<li><a href="https://www.linkedin.com/in/muhammad-abd-el-hakam-a249159a/" target="_blank">linkedin<i></i></a></li>
+			<li><a href="https://github.com/Muhammad-Mohsen" target="_blank">github<i class="ic ic-link"></i></a></li>
+			<li><a href="https://www.behance.net/muhammaabdel-" target="_blank">behance<i class="ic ic-link"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/muhammad-abd-el-hakam-a249159a/" target="_blank">linkedin<i class="ic ic-link"></i></a></li>
 		</ul>
 	</footer>
 
-	<script type="module" src="details-block.js"></script>
+	<script type="module" src="main.js"></script>
 
 </body>
 
