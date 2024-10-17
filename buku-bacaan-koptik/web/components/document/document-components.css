@@ -35,7 +35,7 @@ Text Language {
 	flex: 1 0 10%;
 	min-width: 0;
 	padding: 4px;
-	text-align: start;
+	overflow-wrap: break-word;
 }
 Text Language#English { order: 1; }
 Text Language#Arabic { order: 3; }
