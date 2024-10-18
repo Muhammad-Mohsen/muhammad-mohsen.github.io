@@ -177,6 +177,28 @@ export const DocumentPage = (() => {
 		if (entry) Router.goto(entry.uri);
 	}
 
+	// TODO refactor some stuff + inline the styles
+	function exportDocument() {
+		var header = `<html xmlns:o="urn:schemas-microsoft-com:office:office"
+				xmlns:w="urn:schemas-microsoft-com:office:word"
+				xmlns="http://www.w3.org/TR/REC-html40">
+
+			<head><meta charset='utf-8'><title>Export HTML to Word Document with JavaScript</title></head>
+			<body>`;
+
+		var footer = "</body></html>";
+		var sourceHTML = header + document.getElementById("source-html").innerHTML + footer;
+
+		var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
+
+		var fileDownload = document.createElement("a");
+		document.body.appendChild(fileDownload);
+		fileDownload.href = source;
+		fileDownload.download = 'document.doc';
+		fileDownload.click();
+		document.body.removeChild(fileDownload);
+	}
+
 	// documents can be very heavy, so they are removed once we navigate away
 	function clear() {
 		documentContainer.innerHTML = '';
@@ -200,6 +222,7 @@ export const DocumentPage = (() => {
 		<div id="document-actions" class="actions-container">
 			<button class="fab ripple" onclick="DocumentOutline.toggle(true)"><span class="material-symbols-outlined">format_align_left</span></button>
 			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
+			<button class="fab ripple" onclick="Router.goto('/settings')"><span class="material-symbols-outlined">settings</span></button>
 		</div>
 
 		<div class="actions-container search-container">
@@ -225,6 +248,9 @@ export const DocumentPage = (() => {
 		toggleSearchMode,
 		search,
 		searchScroll,
+		exportDocument,
 	}
 
 })();
+
+window.exportDocument = DocumentPage.exportDocument;
