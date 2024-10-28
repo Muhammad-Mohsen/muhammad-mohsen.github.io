@@ -79,6 +79,7 @@ aside {
 	box-shadow: 2px 4px 8px #0004;
 	z-index: 1;
 	overflow-y: auto;
+	overscroll-behavior: contain;
 	transform: translateY(150vh);
 	transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
