@@ -46,8 +46,6 @@
 	--accent-fg: #fff;
 	--brdr: #c7c7c7;
 	--accent-red: #eb5757;
-
-	--radius: 22px;
 }
 @media (prefers-color-scheme: dark) {
 	:root {

@@ -11,21 +11,13 @@ home header {
 }
 
 home h1 {
-	margin: 0 0 16px;
-	font: 100 2.5rem/3rem Poppins;
+	margin: -8px 0 12px;
+	font: 100 2rem / 3rem Poppins;
 }
 
 home h4 {
 	margin: 0;
 	font-weight: 400;
-}
-
-home ul {
-	display: flex;
-	justify-content: center;
-	gap: 32px;
-	flex-wrap: wrap;
-	padding: 44px 20px 20px;
 }
 
 #copticDate { font: 400 1rem/1.25rem Poppins; }
@@ -39,14 +31,17 @@ home .header-buttons {
     transform: translateY(50%);
 }
 
-home ul .card {
-	width: 100%;
-	max-width: 400px;
-	min-height: 200px;
-}
-
 home header .fab {
 	background: var(--accent-fg);
-    color: var(--accent-bg);
+	color: var(--accent-bg);
 	box-shadow: 2px 4px 8px #00000026;
 }
+
+home ul {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 44px 0 20px;
+}
+
+home ul .card { width: 30%; }
