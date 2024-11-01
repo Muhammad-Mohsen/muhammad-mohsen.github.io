@@ -39,8 +39,8 @@ Text Language {
 	overflow-wrap: break-word;
 }
 Text Language#English { order: 1; }
-Text Language#Arabic { order: 3; }
-Language#Indonesian { order: 4; }
+Text Language#Arabic { order: 4; }
+Language#Indonesian { order: 1; }
 
 Text Language#Coptic {
 	order: 2;
@@ -130,20 +130,10 @@ linkdocument {
 /* linkdocument language { flex: 1; } */
 
 /* ROLE */
-Role {
-
-}
-Role Text {
-
-}
-Role Text Language#English {
-
-}
-Role Text Language#Arabic {
-
-}
-Role Text Language#Coptic {
-
-}
+/* Role {}
+Role Text {}
+Role Text Language#English {}
+Role Text Language#Arabic {}
+Role Text Language#Coptic {} */
 
 content main ul { padding-inline-start: 40px; }
