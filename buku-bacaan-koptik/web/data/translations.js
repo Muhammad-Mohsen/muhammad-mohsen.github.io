@@ -2,707 +2,707 @@
 const translations = {
 	"Agpeya": {
 		"en": "Agpeya",
-		"ar": "",
-		"id": ""
+		"ar": "أجبية",
+		"id": "Agpeya"
 	},
 	"1st Hour": {
 		"en": "1st Hour",
-		"ar": "",
+		"ar": "الساعة الأولى",
 		"id": ""
 	},
 	"3rd Hour": {
 		"en": "3rd Hour",
-		"ar": "",
+		"ar": "الساعة الثالثة",
 		"id": ""
 	},
 	"6th Hour": {
 		"en": "6th Hour",
-		"ar": "",
+		"ar": "الساعة السادسة",
 		"id": ""
 	},
 	"9th Hour": {
 		"en": "9th Hour",
-		"ar": "",
+		"ar": "الساعة التاسعة",
 		"id": ""
 	},
 	"11th Hour": {
 		"en": "11th Hour",
-		"ar": "",
+		"ar": "الساعة الحادية عشر",
 		"id": ""
 	},
 	"12th Hour": {
 		"en": "12th Hour",
-		"ar": "",
+		"ar": "الساعة الثانية عشر",
 		"id": ""
 	},
 	"Veil": {
 		"en": "Veil",
-		"ar": "",
+		"ar": "الستار",
 		"id": ""
 	},
 	"Midnight": {
 		"en": "Midnight",
-		"ar": "",
+		"ar": "نصف الليل",
 		"id": ""
 	},
 	"Prayers": {
 		"en": "Prayers",
-		"ar": "",
+		"ar": "صلوات",
 		"id": ""
 	},
 	"Confession": {
 		"en": "Confession",
-		"ar": "",
+		"ar": "الاعتراف",
 		"id": ""
 	},
 	"Communion": {
 		"en": "Communion",
-		"ar": "",
+		"ar": "التناول",
 		"id": ""
 	},
 	"Guidance": {
 		"en": "Guidance",
-		"ar": "",
+		"ar": "طلب المشورة",
 		"id": ""
 	},
 	"Meals": {
 		"en": "Meals",
-		"ar": "",
+		"ar": "الطعام",
 		"id": ""
 	},
 	"Priests": {
 		"en": "Priests",
-		"ar": "",
+		"ar": "الكهنة",
 		"id": ""
 	},
 	"Deacons": {
 		"en": "Deacons",
-		"ar": "",
+		"ar": "الشمامسة",
 		"id": ""
 	},
 	"Psalmody": {
 		"en": "Psalmody",
-		"ar": "",
+		"ar": "الأبصلمودية",
 		"id": ""
 	},
 	"Vesper Praises": {
 		"en": "Vesper Praises",
-		"ar": "",
+		"ar": "تسبحة عشية",
 		"id": ""
 	},
 	"Midnight Praises": {
 		"en": "Midnight Praises",
-		"ar": "",
+		"ar": "تسبحة نصف الليل",
 		"id": ""
 	},
 	"Morning Praises": {
 		"en": "Morning Praises",
-		"ar": "",
+		"ar": "ذكصولوجية باكر",
 		"id": ""
 	},
 	"Bible": {
 		"en": "Bible",
-		"ar": "",
+		"ar": "الكتاب المقدس",
 		"id": ""
 	},
 	"Genesis": {
 		"en": "Genesis",
-		"ar": "",
+		"ar": "تكوين",
 		"id": ""
 	},
 	"Chapter 1": {
 		"en": "Chapter 1",
-		"ar": "",
+		"ar": "اصحاح 1",
 		"id": ""
 	},
 	"Chapter 2": {
 		"en": "Chapter 2",
-		"ar": "",
+		"ar": "اصحاح 2",
 		"id": ""
 	},
 	"Chapter 3": {
 		"en": "Chapter 3",
-		"ar": "",
+		"ar": "اصحاح 3",
 		"id": ""
 	},
 	"Chapter 4": {
 		"en": "Chapter 4",
-		"ar": "",
+		"ar": "اصحاح 4",
 		"id": ""
 	},
 	"Chapter 5": {
 		"en": "Chapter 5",
-		"ar": "",
+		"ar": "اصحاح 5",
 		"id": ""
 	},
 	"Chapter 6": {
 		"en": "Chapter 6",
-		"ar": "",
+		"ar": "اصحاح 6",
 		"id": ""
 	},
 	"Chapter 7": {
 		"en": "Chapter 7",
-		"ar": "",
+		"ar": "اصحاح 7",
 		"id": ""
 	},
 	"Chapter 8": {
 		"en": "Chapter 8",
-		"ar": "",
+		"ar": "اصحاح 8",
 		"id": ""
 	},
 	"Chapter 9": {
 		"en": "Chapter 9",
-		"ar": "",
+		"ar": "اصحاح 9",
 		"id": ""
 	},
 	"Chapter 10": {
 		"en": "Chapter 10",
-		"ar": "",
+		"ar": "اصحاح 10",
 		"id": ""
 	},
 	"Chapter 11": {
 		"en": "Chapter 11",
-		"ar": "",
+		"ar": "اصحاح 11",
 		"id": ""
 	},
 	"Chapter 12": {
 		"en": "Chapter 12",
-		"ar": "",
+		"ar": "اصحاح 12",
 		"id": ""
 	},
 	"Chapter 13": {
 		"en": "Chapter 13",
-		"ar": "",
+		"ar": "اصحاح 13",
 		"id": ""
 	},
 	"Chapter 14": {
 		"en": "Chapter 14",
-		"ar": "",
+		"ar": "اصحاح 14",
 		"id": ""
 	},
 	"Chapter 15": {
 		"en": "Chapter 15",
-		"ar": "",
+		"ar": "اصحاح 15",
 		"id": ""
 	},
 	"Chapter 16": {
 		"en": "Chapter 16",
-		"ar": "",
+		"ar": "اصحاح 16",
 		"id": ""
 	},
 	"Chapter 17": {
 		"en": "Chapter 17",
-		"ar": "",
+		"ar": "اصحاح 17",
 		"id": ""
 	},
 	"Chapter 18": {
 		"en": "Chapter 18",
-		"ar": "",
+		"ar": "اصحاح 18",
 		"id": ""
 	},
 	"Chapter 19": {
 		"en": "Chapter 19",
-		"ar": "",
+		"ar": "اصحاح 19",
 		"id": ""
 	},
 	"Chapter 20": {
 		"en": "Chapter 20",
-		"ar": "",
+		"ar": "اصحاح 20",
 		"id": ""
 	},
 	"Chapter 21": {
 		"en": "Chapter 21",
-		"ar": "",
+		"ar": "اصحاح 21",
 		"id": ""
 	},
 	"Chapter 22": {
 		"en": "Chapter 22",
-		"ar": "",
+		"ar": "اصحاح 22",
 		"id": ""
 	},
 	"Chapter 23": {
 		"en": "Chapter 23",
-		"ar": "",
+		"ar": "اصحاح 23",
 		"id": ""
 	},
 	"Chapter 24": {
 		"en": "Chapter 24",
-		"ar": "",
+		"ar": "اصحاح 24",
 		"id": ""
 	},
 	"Chapter 25": {
 		"en": "Chapter 25",
-		"ar": "",
+		"ar": "اصحاح 25",
 		"id": ""
 	},
 	"Chapter 26": {
 		"en": "Chapter 26",
-		"ar": "",
+		"ar": "اصحاح 26",
 		"id": ""
 	},
 	"Chapter 27": {
 		"en": "Chapter 27",
-		"ar": "",
+		"ar": "اصحاح 27",
 		"id": ""
 	},
 	"Chapter 28": {
 		"en": "Chapter 28",
-		"ar": "",
+		"ar": "اصحاح 28",
 		"id": ""
 	},
 	"Chapter 29": {
 		"en": "Chapter 29",
-		"ar": "",
+		"ar": "اصحاح 29",
 		"id": ""
 	},
 	"Chapter 30": {
 		"en": "Chapter 30",
-		"ar": "",
+		"ar": "اصحاح 30",
 		"id": ""
 	},
 	"Chapter 31": {
 		"en": "Chapter 31",
-		"ar": "",
+		"ar": "اصحاح 31",
 		"id": ""
 	},
 	"Chapter 32": {
 		"en": "Chapter 32",
-		"ar": "",
+		"ar": "اصحاح 32",
 		"id": ""
 	},
 	"Chapter 33": {
 		"en": "Chapter 33",
-		"ar": "",
+		"ar": "اصحاح 33",
 		"id": ""
 	},
 	"Chapter 34": {
 		"en": "Chapter 34",
-		"ar": "",
+		"ar": "اصحاح 34",
 		"id": ""
 	},
 	"Chapter 35": {
 		"en": "Chapter 35",
-		"ar": "",
+		"ar": "اصحاح 35",
 		"id": ""
 	},
 	"Chapter 36": {
 		"en": "Chapter 36",
-		"ar": "",
+		"ar": "اصحاح 36",
 		"id": ""
 	},
 	"Chapter 37": {
 		"en": "Chapter 37",
-		"ar": "",
+		"ar": "اصحاح 37",
 		"id": ""
 	},
 	"Chapter 38": {
 		"en": "Chapter 38",
-		"ar": "",
+		"ar": "اصحاح 38",
 		"id": ""
 	},
 	"Chapter 39": {
 		"en": "Chapter 39",
-		"ar": "",
+		"ar": "اصحاح 39",
 		"id": ""
 	},
 	"Chapter 40": {
 		"en": "Chapter 40",
-		"ar": "",
+		"ar": "اصحاح 40",
 		"id": ""
 	},
 	"Chapter 41": {
 		"en": "Chapter 41",
-		"ar": "",
+		"ar": "اصحاح 41",
 		"id": ""
 	},
 	"Chapter 42": {
 		"en": "Chapter 42",
-		"ar": "",
+		"ar": "اصحاح 42",
 		"id": ""
 	},
 	"Chapter 43": {
 		"en": "Chapter 43",
-		"ar": "",
+		"ar": "اصحاح 43",
 		"id": ""
 	},
 	"Chapter 44": {
 		"en": "Chapter 44",
-		"ar": "",
+		"ar": "اصحاح 44",
 		"id": ""
 	},
 	"Chapter 45": {
 		"en": "Chapter 45",
-		"ar": "",
+		"ar": "اصحاح 45",
 		"id": ""
 	},
 	"Chapter 46": {
 		"en": "Chapter 46",
-		"ar": "",
+		"ar": "اصحاح 46",
 		"id": ""
 	},
 	"Chapter 47": {
 		"en": "Chapter 47",
-		"ar": "",
+		"ar": "اصحاح 47",
 		"id": ""
 	},
 	"Chapter 48": {
 		"en": "Chapter 48",
-		"ar": "",
+		"ar": "اصحاح 48",
 		"id": ""
 	},
 	"Chapter 49": {
 		"en": "Chapter 49",
-		"ar": "",
+		"ar": "اصحاح 49",
 		"id": ""
 	},
 	"Chapter 50": {
 		"en": "Chapter 50",
-		"ar": "",
+		"ar": "اصحاح 50",
 		"id": ""
 	},
 	"Exodus": {
 		"en": "Exodus",
-		"ar": "",
+		"ar": "الخروج",
 		"id": ""
 	},
 	"Leviticus": {
 		"en": "Leviticus",
-		"ar": "",
+		"ar": "لاويين",
 		"id": ""
 	},
 	"Numbers": {
 		"en": "Numbers",
-		"ar": "",
+		"ar": "العدد",
 		"id": ""
 	},
 	"Deuteronomy": {
 		"en": "Deuteronomy",
-		"ar": "",
+		"ar": "تثنية",
 		"id": ""
 	},
 	"Joshua": {
 		"en": "Joshua",
-		"ar": "",
+		"ar": "يشوع",
 		"id": ""
 	},
 	"Judges": {
 		"en": "Judges",
-		"ar": "",
+		"ar": "القضاة",
 		"id": ""
 	},
 	"Ruth": {
 		"en": "Ruth",
-		"ar": "",
+		"ar": "راعوث",
 		"id": ""
 	},
 	"1 Samuel": {
 		"en": "1 Samuel",
-		"ar": "",
+		"ar": "١ صموئيل",
 		"id": ""
 	},
 	"2 Samuel": {
 		"en": "2 Samuel",
-		"ar": "",
+		"ar": "٢ صموئيل",
 		"id": ""
 	},
 	"1 Kings": {
 		"en": "1 Kings",
-		"ar": "",
+		"ar": "١ ملوك",
 		"id": ""
 	},
 	"2 Kings": {
 		"en": "2 Kings",
-		"ar": "",
+		"ar": "٢ ملوك",
 		"id": ""
 	},
 	"1 Chronicles": {
 		"en": "1 Chronicles",
-		"ar": "",
+		"ar": "١ اخبار",
 		"id": ""
 	},
 	"2 Chronicles": {
 		"en": "2 Chronicles",
-		"ar": "",
+		"ar": "٢ اخبار",
 		"id": ""
 	},
 	"Ezra": {
 		"en": "Ezra",
-		"ar": "",
+		"ar": "عزرا",
 		"id": ""
 	},
 	"Nehemiah": {
 		"en": "Nehemiah",
-		"ar": "",
+		"ar": "نحميا",
 		"id": ""
 	},
 	"Tobit": {
 		"en": "Tobit",
-		"ar": "",
+		"ar": "طوبيا",
 		"id": ""
 	},
 	"Judith": {
 		"en": "Judith",
-		"ar": "",
+		"ar": "يهوديت",
 		"id": ""
 	},
 	"Esther": {
 		"en": "Esther",
-		"ar": "",
+		"ar": "استير",
 		"id": ""
 	},
 	"Job": {
 		"en": "Job",
-		"ar": "",
+		"ar": "ايوب",
 		"id": ""
 	},
 	"Psalms": {
 		"en": "Psalms",
-		"ar": "",
+		"ar": "مزامير",
 		"id": ""
 	},
 	"Chapter 51": {
 		"en": "Chapter 51",
-		"ar": "",
+		"ar": "اصحاح ٥١",
 		"id": ""
 	},
 	"Chapter 52": {
 		"en": "Chapter 52",
-		"ar": "",
+		"ar": "اصحاح ٥٢",
 		"id": ""
 	},
 	"Chapter 53": {
 		"en": "Chapter 53",
-		"ar": "",
+		"ar": "اصحاح ٥٣",
 		"id": ""
 	},
 	"Chapter 54": {
 		"en": "Chapter 54",
-		"ar": "",
+		"ar": "اصحاح ٥٤",
 		"id": ""
 	},
 	"Chapter 55": {
 		"en": "Chapter 55",
-		"ar": "",
+		"ar": "اصحاح ٥٥",
 		"id": ""
 	},
 	"Chapter 56": {
 		"en": "Chapter 56",
-		"ar": "",
+		"ar": "اصحاح ٥٦",
 		"id": ""
 	},
 	"Chapter 57": {
 		"en": "Chapter 57",
-		"ar": "",
+		"ar": "اصحاح ٥٧",
 		"id": ""
 	},
 	"Chapter 58": {
 		"en": "Chapter 58",
-		"ar": "",
+		"ar": "اصحاح ٥٨",
 		"id": ""
 	},
 	"Chapter 59": {
 		"en": "Chapter 59",
-		"ar": "",
+		"ar": "اصحاح ٥٩",
 		"id": ""
 	},
 	"Chapter 60": {
 		"en": "Chapter 60",
-		"ar": "",
+		"ar": "اصحاح ٦٠",
 		"id": ""
 	},
 	"Chapter 61": {
 		"en": "Chapter 61",
-		"ar": "",
+		"ar": "اصحاح ٦١",
 		"id": ""
 	},
 	"Chapter 62": {
 		"en": "Chapter 62",
-		"ar": "",
+		"ar": "اصحاح ٦٢",
 		"id": ""
 	},
 	"Chapter 63": {
 		"en": "Chapter 63",
-		"ar": "",
+		"ar": "اصحاح ٦٣",
 		"id": ""
 	},
 	"Chapter 64": {
 		"en": "Chapter 64",
-		"ar": "",
+		"ar": "اصحاح ٦٤",
 		"id": ""
 	},
 	"Chapter 65": {
 		"en": "Chapter 65",
-		"ar": "",
+		"ar": "اصحاح ٦٥",
 		"id": ""
 	},
 	"Chapter 66": {
 		"en": "Chapter 66",
-		"ar": "",
+		"ar": "اصحاح ٦٦",
 		"id": ""
 	},
 	"Chapter 67": {
 		"en": "Chapter 67",
-		"ar": "",
+		"ar": "اصحاح ٦٧",
 		"id": ""
 	},
 	"Chapter 68": {
 		"en": "Chapter 68",
-		"ar": "",
+		"ar": "اصحاح ٦٨",
 		"id": ""
 	},
 	"Chapter 69": {
 		"en": "Chapter 69",
-		"ar": "",
+		"ar": "اصحاح ٦٩",
 		"id": ""
 	},
 	"Chapter 70": {
 		"en": "Chapter 70",
-		"ar": "",
+		"ar": "اصحاح ٧٠",
 		"id": ""
 	},
 	"Chapter 71": {
 		"en": "Chapter 71",
-		"ar": "",
+		"ar": "اصحاح ٧١",
 		"id": ""
 	},
 	"Chapter 72": {
 		"en": "Chapter 72",
-		"ar": "",
+		"ar": "اصحاح ٧٢",
 		"id": ""
 	},
 	"Chapter 73": {
 		"en": "Chapter 73",
-		"ar": "",
+		"ar": "اصحاح ٧٣",
 		"id": ""
 	},
 	"Chapter 74": {
 		"en": "Chapter 74",
-		"ar": "",
+		"ar": "اصحاح ٧٤",
 		"id": ""
 	},
 	"Chapter 75": {
 		"en": "Chapter 75",
-		"ar": "",
+		"ar": "اصحاح ٧٥",
 		"id": ""
 	},
 	"Chapter 76": {
 		"en": "Chapter 76",
-		"ar": "",
+		"ar": "اصحاح ٧٦",
 		"id": ""
 	},
 	"Chapter 77": {
 		"en": "Chapter 77",
-		"ar": "",
+		"ar": "اصحاح ٧٧",
 		"id": ""
 	},
 	"Chapter 78": {
 		"en": "Chapter 78",
-		"ar": "",
+		"ar": "اصحاح ٧٨",
 		"id": ""
 	},
 	"Chapter 79": {
 		"en": "Chapter 79",
-		"ar": "",
+		"ar": "اصحاح ٧٩",
 		"id": ""
 	},
 	"Chapter 80": {
 		"en": "Chapter 80",
-		"ar": "",
+		"ar": "اصحاح ٨٠",
 		"id": ""
 	},
 	"Chapter 81": {
 		"en": "Chapter 81",
-		"ar": "",
+		"ar": "اصحاح ٨١",
 		"id": ""
 	},
 	"Chapter 82": {
 		"en": "Chapter 82",
-		"ar": "",
+		"ar": "اصحاح ٨٢",
 		"id": ""
 	},
 	"Chapter 83": {
 		"en": "Chapter 83",
-		"ar": "",
+		"ar": "اصحاح ٨٣",
 		"id": ""
 	},
 	"Chapter 84": {
 		"en": "Chapter 84",
-		"ar": "",
+		"ar": "اصحاح ٨٤",
 		"id": ""
 	},
 	"Chapter 85": {
 		"en": "Chapter 85",
-		"ar": "",
+		"ar": "اصحاح ٨٥",
 		"id": ""
 	},
 	"Chapter 86": {
 		"en": "Chapter 86",
-		"ar": "",
+		"ar": "اصحاح ٨٦",
 		"id": ""
 	},
 	"Chapter 87": {
 		"en": "Chapter 87",
-		"ar": "",
+		"ar": "اصحاح ٨٧",
 		"id": ""
 	},
 	"Chapter 88": {
 		"en": "Chapter 88",
-		"ar": "",
+		"ar": "اصحاح ٨٨",
 		"id": ""
 	},
 	"Chapter 89": {
 		"en": "Chapter 89",
-		"ar": "",
+		"ar": "اصحاح ٨٩",
 		"id": ""
 	},
 	"Chapter 90": {
 		"en": "Chapter 90",
-		"ar": "",
+		"ar": "اصحاح ٩٠",
 		"id": ""
 	},
 	"Chapter 91": {
 		"en": "Chapter 91",
-		"ar": "",
+		"ar": "اصحاح ٩١",
 		"id": ""
 	},
 	"Chapter 92": {
 		"en": "Chapter 92",
-		"ar": "",
+		"ar": "اصحاح ٩٢",
 		"id": ""
 	},
 	"Chapter 93": {
 		"en": "Chapter 93",
-		"ar": "",
+		"ar": "اصحاح ٩٣",
 		"id": ""
 	},
 	"Chapter 94": {
 		"en": "Chapter 94",
-		"ar": "",
+		"ar": "اصحاح ٩٤",
 		"id": ""
 	},
 	"Chapter 95": {
 		"en": "Chapter 95",
-		"ar": "",
+		"ar": "اصحاح ٩٥",
 		"id": ""
 	},
 	"Chapter 96": {
 		"en": "Chapter 96",
-		"ar": "",
+		"ar": "اصحاح ٩٦",
 		"id": ""
 	},
 	"Chapter 97": {
 		"en": "Chapter 97",
-		"ar": "",
+		"ar": "اصحاح ٩٧",
 		"id": ""
 	},
 	"Chapter 98": {
 		"en": "Chapter 98",
-		"ar": "",
+		"ar": "اصحاح ٩٨",
 		"id": ""
 	},
 	"Chapter 99": {
 		"en": "Chapter 99",
-		"ar": "",
+		"ar": "اصحاح ٩٩",
 		"id": ""
 	},
 	"Chapter 100": {
