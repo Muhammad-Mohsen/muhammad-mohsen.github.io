@@ -8,32 +8,32 @@ const translations = {
 	"1st Hour": {
 		"en": "1st Hour",
 		"ar": "الساعة الأولى",
-		"id": ""
+		"id": "Jam Pertama"
 	},
 	"3rd Hour": {
 		"en": "3rd Hour",
 		"ar": "الساعة الثالثة",
-		"id": ""
+		"id": "Jam Ketiga"
 	},
 	"6th Hour": {
 		"en": "6th Hour",
 		"ar": "الساعة السادسة",
-		"id": ""
+		"id": "Jam Keenam"
 	},
 	"9th Hour": {
 		"en": "9th Hour",
 		"ar": "الساعة التاسعة",
-		"id": ""
+		"id": "Jam Kesembilan"
 	},
 	"11th Hour": {
 		"en": "11th Hour",
 		"ar": "الساعة الحادية عشر",
-		"id": ""
+		"id": "Jam Kesebelas"
 	},
 	"12th Hour": {
 		"en": "12th Hour",
 		"ar": "الساعة الثانية عشر",
-		"id": ""
+		"id": "Jam kedua belas"
 	},
 	"Veil": {
 		"en": "Veil",
@@ -43,327 +43,327 @@ const translations = {
 	"Midnight": {
 		"en": "Midnight",
 		"ar": "نصف الليل",
-		"id": ""
+		"id": "Tengah Malam"
 	},
 	"Prayers": {
 		"en": "Prayers",
 		"ar": "صلوات",
-		"id": ""
+		"id": "Doa lain"
 	},
 	"Confession": {
 		"en": "Confession",
 		"ar": "الاعتراف",
-		"id": ""
+		"id": "Pengakuan Dosa"
 	},
 	"Communion": {
 		"en": "Communion",
 		"ar": "التناول",
-		"id": ""
+		"id": "Komuni"
 	},
 	"Guidance": {
 		"en": "Guidance",
 		"ar": "طلب المشورة",
-		"id": ""
+		"id": "Untuk meminta bimbingan"
 	},
 	"Meals": {
 		"en": "Meals",
 		"ar": "الطعام",
-		"id": ""
+		"id": "Makan"
 	},
 	"Priests": {
 		"en": "Priests",
 		"ar": "الكهنة",
-		"id": ""
+		"id": "Para Imam"
 	},
 	"Deacons": {
 		"en": "Deacons",
 		"ar": "الشمامسة",
-		"id": ""
+		"id": "Para Diakon"
 	},
 	"Psalmody": {
 		"en": "Psalmody",
 		"ar": "الأبصلمودية",
-		"id": ""
+		"id": "Psalmody (Pujian)"
 	},
 	"Vesper Praises": {
 		"en": "Vesper Praises",
 		"ar": "تسبحة عشية",
-		"id": ""
+		"id": "Pujian Doa Malam"
 	},
 	"Midnight Praises": {
 		"en": "Midnight Praises",
 		"ar": "تسبحة نصف الليل",
-		"id": ""
+		"id": "Pujian Tengah Malam"
 	},
 	"Morning Praises": {
 		"en": "Morning Praises",
 		"ar": "ذكصولوجية باكر",
-		"id": ""
+		"id": "Doxology Matins"
 	},
 	"Bible": {
 		"en": "Bible",
 		"ar": "الكتاب المقدس",
-		"id": ""
+		"id": "Alkitab"
 	},
 	"Genesis": {
 		"en": "Genesis",
 		"ar": "تكوين",
-		"id": ""
+		"id": "Kejadian"
 	},
 	"Chapter 1": {
 		"en": "Chapter 1",
 		"ar": "اصحاح 1",
-		"id": ""
+		"id": "Pasal 1"
 	},
 	"Chapter 2": {
 		"en": "Chapter 2",
 		"ar": "اصحاح 2",
-		"id": ""
+		"id": "Pasal 2"
 	},
 	"Chapter 3": {
 		"en": "Chapter 3",
 		"ar": "اصحاح 3",
-		"id": ""
+		"id": "Pasal 3"
 	},
 	"Chapter 4": {
 		"en": "Chapter 4",
 		"ar": "اصحاح 4",
-		"id": ""
+		"id": "Pasal 4"
 	},
 	"Chapter 5": {
 		"en": "Chapter 5",
 		"ar": "اصحاح 5",
-		"id": ""
+		"id": "Pasal 5"
 	},
 	"Chapter 6": {
 		"en": "Chapter 6",
 		"ar": "اصحاح 6",
-		"id": ""
+		"id": "Pasal 6"
 	},
 	"Chapter 7": {
 		"en": "Chapter 7",
 		"ar": "اصحاح 7",
-		"id": ""
+		"id": "Pasal 7"
 	},
 	"Chapter 8": {
 		"en": "Chapter 8",
 		"ar": "اصحاح 8",
-		"id": ""
+		"id": "Pasal 8"
 	},
 	"Chapter 9": {
 		"en": "Chapter 9",
 		"ar": "اصحاح 9",
-		"id": ""
+		"id": "Pasal 9"
 	},
 	"Chapter 10": {
 		"en": "Chapter 10",
 		"ar": "اصحاح 10",
-		"id": ""
+		"id": "Pasal 10"
 	},
 	"Chapter 11": {
 		"en": "Chapter 11",
 		"ar": "اصحاح 11",
-		"id": ""
+		"id": "Pasal 11"
 	},
 	"Chapter 12": {
 		"en": "Chapter 12",
 		"ar": "اصحاح 12",
-		"id": ""
+		"id": "Pasal 12"
 	},
 	"Chapter 13": {
 		"en": "Chapter 13",
 		"ar": "اصحاح 13",
-		"id": ""
+		"id": "Pasal 13"
 	},
 	"Chapter 14": {
 		"en": "Chapter 14",
 		"ar": "اصحاح 14",
-		"id": ""
+		"id": "Pasal 14"
 	},
 	"Chapter 15": {
 		"en": "Chapter 15",
 		"ar": "اصحاح 15",
-		"id": ""
+		"id": "Pasal 15"
 	},
 	"Chapter 16": {
 		"en": "Chapter 16",
 		"ar": "اصحاح 16",
-		"id": ""
+		"id": "Pasal 16"
 	},
 	"Chapter 17": {
 		"en": "Chapter 17",
 		"ar": "اصحاح 17",
-		"id": ""
+		"id": "Pasal 17"
 	},
 	"Chapter 18": {
 		"en": "Chapter 18",
 		"ar": "اصحاح 18",
-		"id": ""
+		"id": "Pasal 18"
 	},
 	"Chapter 19": {
 		"en": "Chapter 19",
 		"ar": "اصحاح 19",
-		"id": ""
+		"id": "Pasal 19"
 	},
 	"Chapter 20": {
 		"en": "Chapter 20",
 		"ar": "اصحاح 20",
-		"id": ""
+		"id": "Pasal 20"
 	},
 	"Chapter 21": {
 		"en": "Chapter 21",
 		"ar": "اصحاح 21",
-		"id": ""
+		"id": "Pasal 21"
 	},
 	"Chapter 22": {
 		"en": "Chapter 22",
 		"ar": "اصحاح 22",
-		"id": ""
+		"id": "Pasal 22"
 	},
 	"Chapter 23": {
 		"en": "Chapter 23",
 		"ar": "اصحاح 23",
-		"id": ""
+		"id": "Pasal 23"
 	},
 	"Chapter 24": {
 		"en": "Chapter 24",
 		"ar": "اصحاح 24",
-		"id": ""
+		"id": "Pasal 24"
 	},
 	"Chapter 25": {
 		"en": "Chapter 25",
 		"ar": "اصحاح 25",
-		"id": ""
+		"id": "Pasal 25"
 	},
 	"Chapter 26": {
 		"en": "Chapter 26",
 		"ar": "اصحاح 26",
-		"id": ""
+		"id": "Pasal 26"
 	},
 	"Chapter 27": {
 		"en": "Chapter 27",
 		"ar": "اصحاح 27",
-		"id": ""
+		"id": "Pasal 27"
 	},
 	"Chapter 28": {
 		"en": "Chapter 28",
 		"ar": "اصحاح 28",
-		"id": ""
+		"id": "Pasal 28"
 	},
 	"Chapter 29": {
 		"en": "Chapter 29",
 		"ar": "اصحاح 29",
-		"id": ""
+		"id": "Pasal 29"
 	},
 	"Chapter 30": {
 		"en": "Chapter 30",
 		"ar": "اصحاح 30",
-		"id": ""
+		"id": "Pasal 30"
 	},
 	"Chapter 31": {
 		"en": "Chapter 31",
 		"ar": "اصحاح 31",
-		"id": ""
+		"id": "Pasal 31"
 	},
 	"Chapter 32": {
 		"en": "Chapter 32",
 		"ar": "اصحاح 32",
-		"id": ""
+		"id": "Pasal 32"
 	},
 	"Chapter 33": {
 		"en": "Chapter 33",
 		"ar": "اصحاح 33",
-		"id": ""
+		"id": "Pasal 33"
 	},
 	"Chapter 34": {
 		"en": "Chapter 34",
 		"ar": "اصحاح 34",
-		"id": ""
+		"id": "Pasal 34"
 	},
 	"Chapter 35": {
 		"en": "Chapter 35",
 		"ar": "اصحاح 35",
-		"id": ""
+		"id": "Pasal 35"
 	},
 	"Chapter 36": {
 		"en": "Chapter 36",
 		"ar": "اصحاح 36",
-		"id": ""
+		"id": "Pasal 36"
 	},
 	"Chapter 37": {
 		"en": "Chapter 37",
 		"ar": "اصحاح 37",
-		"id": ""
+		"id": "Pasal 37"
 	},
 	"Chapter 38": {
 		"en": "Chapter 38",
 		"ar": "اصحاح 38",
-		"id": ""
+		"id": "Pasal 38"
 	},
 	"Chapter 39": {
 		"en": "Chapter 39",
 		"ar": "اصحاح 39",
-		"id": ""
+		"id": "Pasal 39"
 	},
 	"Chapter 40": {
 		"en": "Chapter 40",
 		"ar": "اصحاح 40",
-		"id": ""
+		"id": "Pasal 40"
 	},
 	"Chapter 41": {
 		"en": "Chapter 41",
 		"ar": "اصحاح 41",
-		"id": ""
+		"id": "Pasal 41"
 	},
 	"Chapter 42": {
 		"en": "Chapter 42",
 		"ar": "اصحاح 42",
-		"id": ""
+		"id": "Pasal 42"
 	},
 	"Chapter 43": {
 		"en": "Chapter 43",
 		"ar": "اصحاح 43",
-		"id": ""
+		"id": "Pasal 43"
 	},
 	"Chapter 44": {
 		"en": "Chapter 44",
 		"ar": "اصحاح 44",
-		"id": ""
+		"id": "Pasal 44"
 	},
 	"Chapter 45": {
 		"en": "Chapter 45",
 		"ar": "اصحاح 45",
-		"id": ""
+		"id": "Pasal 45"
 	},
 	"Chapter 46": {
 		"en": "Chapter 46",
 		"ar": "اصحاح 46",
-		"id": ""
+		"id": "Pasal 46"
 	},
 	"Chapter 47": {
 		"en": "Chapter 47",
 		"ar": "اصحاح 47",
-		"id": ""
+		"id": "Pasal 47"
 	},
 	"Chapter 48": {
 		"en": "Chapter 48",
 		"ar": "اصحاح 48",
-		"id": ""
+		"id": "Pasal 48"
 	},
 	"Chapter 49": {
 		"en": "Chapter 49",
 		"ar": "اصحاح 49",
-		"id": ""
+		"id": "Pasal 49"
 	},
 	"Chapter 50": {
 		"en": "Chapter 50",
 		"ar": "اصحاح 50",
-		"id": ""
+		"id": "Pasal 50"
 	},
 	"Exodus": {
 		"en": "Exodus",
 		"ar": "الخروج",
-		"id": ""
+		"id": "Keluaran"
 	},
 	"Leviticus": {
 		"en": "Leviticus",
@@ -463,512 +463,512 @@ const translations = {
 	"Chapter 51": {
 		"en": "Chapter 51",
 		"ar": "اصحاح ٥١",
-		"id": ""
+		"id": "Pasal 51"
 	},
 	"Chapter 52": {
 		"en": "Chapter 52",
 		"ar": "اصحاح ٥٢",
-		"id": ""
+		"id": "Pasal 52"
 	},
 	"Chapter 53": {
 		"en": "Chapter 53",
 		"ar": "اصحاح ٥٣",
-		"id": ""
+		"id": "Pasal 53"
 	},
 	"Chapter 54": {
 		"en": "Chapter 54",
 		"ar": "اصحاح ٥٤",
-		"id": ""
+		"id": "Pasal 54"
 	},
 	"Chapter 55": {
 		"en": "Chapter 55",
 		"ar": "اصحاح ٥٥",
-		"id": ""
+		"id": "Pasal 56"
 	},
 	"Chapter 56": {
 		"en": "Chapter 56",
 		"ar": "اصحاح ٥٦",
-		"id": ""
+		"id": "Pasal 56"
 	},
 	"Chapter 57": {
 		"en": "Chapter 57",
 		"ar": "اصحاح ٥٧",
-		"id": ""
+		"id": "Pasal 57"
 	},
 	"Chapter 58": {
 		"en": "Chapter 58",
 		"ar": "اصحاح ٥٨",
-		"id": ""
+		"id": "Pasal 58"
 	},
 	"Chapter 59": {
 		"en": "Chapter 59",
 		"ar": "اصحاح ٥٩",
-		"id": ""
+		"id": "Pasal 59"
 	},
 	"Chapter 60": {
 		"en": "Chapter 60",
 		"ar": "اصحاح ٦٠",
-		"id": ""
+		"id": "Pasal 60"
 	},
 	"Chapter 61": {
 		"en": "Chapter 61",
 		"ar": "اصحاح ٦١",
-		"id": ""
+		"id": "Pasal 61"
 	},
 	"Chapter 62": {
 		"en": "Chapter 62",
 		"ar": "اصحاح ٦٢",
-		"id": ""
+		"id": "Pasal 62"
 	},
 	"Chapter 63": {
 		"en": "Chapter 63",
 		"ar": "اصحاح ٦٣",
-		"id": ""
+		"id": "Pasal 63"
 	},
 	"Chapter 64": {
 		"en": "Chapter 64",
 		"ar": "اصحاح ٦٤",
-		"id": ""
+		"id": "Pasal 64"
 	},
 	"Chapter 65": {
 		"en": "Chapter 65",
 		"ar": "اصحاح ٦٥",
-		"id": ""
+		"id": "Pasal 65"
 	},
 	"Chapter 66": {
 		"en": "Chapter 66",
 		"ar": "اصحاح ٦٦",
-		"id": ""
+		"id": "Pasal 66"
 	},
 	"Chapter 67": {
 		"en": "Chapter 67",
 		"ar": "اصحاح ٦٧",
-		"id": ""
+		"id": "Pasal 67"
 	},
 	"Chapter 68": {
 		"en": "Chapter 68",
 		"ar": "اصحاح ٦٨",
-		"id": ""
+		"id": "Pasal 68"
 	},
 	"Chapter 69": {
 		"en": "Chapter 69",
 		"ar": "اصحاح ٦٩",
-		"id": ""
+		"id": "Pasal 69"
 	},
 	"Chapter 70": {
 		"en": "Chapter 70",
 		"ar": "اصحاح ٧٠",
-		"id": ""
+		"id": "Pasal 70"
 	},
 	"Chapter 71": {
 		"en": "Chapter 71",
 		"ar": "اصحاح ٧١",
-		"id": ""
+		"id": "Pasal 71"
 	},
 	"Chapter 72": {
 		"en": "Chapter 72",
 		"ar": "اصحاح ٧٢",
-		"id": ""
+		"id": "Pasal 72"
 	},
 	"Chapter 73": {
 		"en": "Chapter 73",
 		"ar": "اصحاح ٧٣",
-		"id": ""
+		"id": "Pasal 73"
 	},
 	"Chapter 74": {
 		"en": "Chapter 74",
 		"ar": "اصحاح ٧٤",
-		"id": ""
+		"id": "Pasal 74"
 	},
 	"Chapter 75": {
 		"en": "Chapter 75",
 		"ar": "اصحاح ٧٥",
-		"id": ""
+		"id": "Pasal 75"
 	},
 	"Chapter 76": {
 		"en": "Chapter 76",
 		"ar": "اصحاح ٧٦",
-		"id": ""
+		"id": "Pasal 76"
 	},
 	"Chapter 77": {
 		"en": "Chapter 77",
 		"ar": "اصحاح ٧٧",
-		"id": ""
+		"id": "Pasal 77"
 	},
 	"Chapter 78": {
 		"en": "Chapter 78",
 		"ar": "اصحاح ٧٨",
-		"id": ""
+		"id": "Pasal 78"
 	},
 	"Chapter 79": {
 		"en": "Chapter 79",
 		"ar": "اصحاح ٧٩",
-		"id": ""
+		"id": "Pasal 79"
 	},
 	"Chapter 80": {
 		"en": "Chapter 80",
 		"ar": "اصحاح ٨٠",
-		"id": ""
+		"id": "Pasal 80"
 	},
 	"Chapter 81": {
 		"en": "Chapter 81",
 		"ar": "اصحاح ٨١",
-		"id": ""
+		"id": "Pasal 81"
 	},
 	"Chapter 82": {
 		"en": "Chapter 82",
 		"ar": "اصحاح ٨٢",
-		"id": ""
+		"id": "Pasal 82"
 	},
 	"Chapter 83": {
 		"en": "Chapter 83",
 		"ar": "اصحاح ٨٣",
-		"id": ""
+		"id": "Pasal 83"
 	},
 	"Chapter 84": {
 		"en": "Chapter 84",
 		"ar": "اصحاح ٨٤",
-		"id": ""
+		"id": "Pasal 84"
 	},
 	"Chapter 85": {
 		"en": "Chapter 85",
 		"ar": "اصحاح ٨٥",
-		"id": ""
+		"id": "Pasal 85"
 	},
 	"Chapter 86": {
 		"en": "Chapter 86",
 		"ar": "اصحاح ٨٦",
-		"id": ""
+		"id": "Pasal 86"
 	},
 	"Chapter 87": {
 		"en": "Chapter 87",
 		"ar": "اصحاح ٨٧",
-		"id": ""
+		"id": "Pasal 87"
 	},
 	"Chapter 88": {
 		"en": "Chapter 88",
 		"ar": "اصحاح ٨٨",
-		"id": ""
+		"id": "Pasal 88"
 	},
 	"Chapter 89": {
 		"en": "Chapter 89",
 		"ar": "اصحاح ٨٩",
-		"id": ""
+		"id": "Pasal 89"
 	},
 	"Chapter 90": {
 		"en": "Chapter 90",
 		"ar": "اصحاح ٩٠",
-		"id": ""
+		"id": "Pasal 90"
 	},
 	"Chapter 91": {
 		"en": "Chapter 91",
 		"ar": "اصحاح ٩١",
-		"id": ""
+		"id": "Pasal 91"
 	},
 	"Chapter 92": {
 		"en": "Chapter 92",
 		"ar": "اصحاح ٩٢",
-		"id": ""
+		"id": "Pasal 92"
 	},
 	"Chapter 93": {
 		"en": "Chapter 93",
 		"ar": "اصحاح ٩٣",
-		"id": ""
+		"id": "Pasal 93"
 	},
 	"Chapter 94": {
 		"en": "Chapter 94",
 		"ar": "اصحاح ٩٤",
-		"id": ""
+		"id": "Pasal 94"
 	},
 	"Chapter 95": {
 		"en": "Chapter 95",
 		"ar": "اصحاح ٩٥",
-		"id": ""
+		"id": "Pasal 95"
 	},
 	"Chapter 96": {
 		"en": "Chapter 96",
 		"ar": "اصحاح ٩٦",
-		"id": ""
+		"id": "Pasal 96"
 	},
 	"Chapter 97": {
 		"en": "Chapter 97",
 		"ar": "اصحاح ٩٧",
-		"id": ""
+		"id": "Pasal 97"
 	},
 	"Chapter 98": {
 		"en": "Chapter 98",
 		"ar": "اصحاح ٩٨",
-		"id": ""
+		"id": "Pasal 98"
 	},
 	"Chapter 99": {
 		"en": "Chapter 99",
 		"ar": "اصحاح ٩٩",
-		"id": ""
+		"id": "Pasal 99"
 	},
 	"Chapter 100": {
 		"en": "Chapter 100",
-		"ar": "",
-		"id": ""
+		"ar": "اصحاح ١٠٠",
+		"id": "Pasal 100"
 	},
 	"Chapter 101": {
 		"en": "Chapter 101",
-		"ar": "",
+		"ar": "اصحاح ١٠١",
 		"id": ""
 	},
 	"Chapter 102": {
 		"en": "Chapter 102",
-		"ar": "",
-		"id": ""
+		"ar": "اصحاح ١٠٢",
+		"id": "Pasal 102"
 	},
 	"Chapter 103": {
 		"en": "Chapter 103",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 103"
 	},
 	"Chapter 104": {
 		"en": "Chapter 104",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 104"
 	},
 	"Chapter 105": {
 		"en": "Chapter 105",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 105"
 	},
 	"Chapter 106": {
 		"en": "Chapter 106",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 106"
 	},
 	"Chapter 107": {
 		"en": "Chapter 107",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 107"
 	},
 	"Chapter 108": {
 		"en": "Chapter 108",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 108"
 	},
 	"Chapter 109": {
 		"en": "Chapter 109",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 109"
 	},
 	"Chapter 110": {
 		"en": "Chapter 110",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 110"
 	},
 	"Chapter 111": {
 		"en": "Chapter 111",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 111"
 	},
 	"Chapter 112": {
 		"en": "Chapter 112",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 112"
 	},
 	"Chapter 113": {
 		"en": "Chapter 113",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 113"
 	},
 	"Chapter 114": {
 		"en": "Chapter 114",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 114"
 	},
 	"Chapter 115": {
 		"en": "Chapter 115",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 115"
 	},
 	"Chapter 116": {
 		"en": "Chapter 116",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 116"
 	},
 	"Chapter 117": {
 		"en": "Chapter 117",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 117"
 	},
 	"Chapter 118": {
 		"en": "Chapter 118",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 118"
 	},
 	"Chapter 119": {
 		"en": "Chapter 119",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 119"
 	},
 	"Chapter 120": {
 		"en": "Chapter 120",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 120"
 	},
 	"Chapter 121": {
 		"en": "Chapter 121",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 121"
 	},
 	"Chapter 122": {
 		"en": "Chapter 122",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 122"
 	},
 	"Chapter 123": {
 		"en": "Chapter 123",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 123"
 	},
 	"Chapter 124": {
 		"en": "Chapter 124",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 124"
 	},
 	"Chapter 125": {
 		"en": "Chapter 125",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 125"
 	},
 	"Chapter 126": {
 		"en": "Chapter 126",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 126"
 	},
 	"Chapter 127": {
 		"en": "Chapter 127",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 127"
 	},
 	"Chapter 128": {
 		"en": "Chapter 128",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 128"
 	},
 	"Chapter 129": {
 		"en": "Chapter 129",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 129"
 	},
 	"Chapter 130": {
 		"en": "Chapter 130",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 130"
 	},
 	"Chapter 131": {
 		"en": "Chapter 131",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 131"
 	},
 	"Chapter 132": {
 		"en": "Chapter 132",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 132"
 	},
 	"Chapter 133": {
 		"en": "Chapter 133",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 133"
 	},
 	"Chapter 134": {
 		"en": "Chapter 134",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 134"
 	},
 	"Chapter 135": {
 		"en": "Chapter 135",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 135"
 	},
 	"Chapter 136": {
 		"en": "Chapter 136",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 136"
 	},
 	"Chapter 137": {
 		"en": "Chapter 137",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 137"
 	},
 	"Chapter 138": {
 		"en": "Chapter 138",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 138"
 	},
 	"Chapter 139": {
 		"en": "Chapter 139",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 139"
 	},
 	"Chapter 140": {
 		"en": "Chapter 140",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 140"
 	},
 	"Chapter 141": {
 		"en": "Chapter 141",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 141"
 	},
 	"Chapter 142": {
 		"en": "Chapter 142",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 142"
 	},
 	"Chapter 143": {
 		"en": "Chapter 143",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 143"
 	},
 	"Chapter 144": {
 		"en": "Chapter 144",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 144"
 	},
 	"Chapter 145": {
 		"en": "Chapter 145",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 145"
 	},
 	"Chapter 146": {
 		"en": "Chapter 146",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 146"
 	},
 	"Chapter 147": {
 		"en": "Chapter 147",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 147"
 	},
 	"Chapter 148": {
 		"en": "Chapter 148",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 148"
 	},
 	"Chapter 149": {
 		"en": "Chapter 149",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 149"
 	},
 	"Chapter 150": {
 		"en": "Chapter 150",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 150"
 	},
 	"Chapter 151": {
 		"en": "Chapter 151",
 		"ar": "",
-		"id": ""
+		"id": "Pasal 151"
 	},
 	"Proverbs": {
 		"en": "Proverbs",
 		"ar": "",
-		"id": ""
+		"id": "Amsal"
 	},
 	"Ecclesiastes": {
 		"en": "Ecclesiastes",
@@ -1098,22 +1098,22 @@ const translations = {
 	"Matthew": {
 		"en": "Matthew",
 		"ar": "",
-		"id": ""
+		"id": "Matius"
 	},
 	"Mark": {
 		"en": "Mark",
 		"ar": "",
-		"id": ""
+		"id": "Markus"
 	},
 	"Luke": {
 		"en": "Luke",
 		"ar": "",
-		"id": ""
+		"id": "Lukas"
 	},
 	"John": {
 		"en": "John",
 		"ar": "",
-		"id": ""
+		"id": "Yohanes"
 	},
 	"Acts": {
 		"en": "Acts",
@@ -1232,477 +1232,477 @@ const translations = {
 	},
 	"Liturgies": {
 		"en": "Liturgies",
-		"ar": "",
-		"id": ""
+		"ar": "القداسات",
+		"id": "Misa Kudus"
 	},
 	"St. Basil": {
 		"en": "St. Basil",
-		"ar": "",
-		"id": ""
+		"ar": "الباسيلي",
+		"id": "Santo Basil"
 	},
 	"Offering of the Lamb": {
 		"en": "Offering of the Lamb",
-		"ar": "",
-		"id": ""
+		"ar": "تقديم الحمل",
+		"id": "Prosessi Domba Allah"
 	},
 	"Liturgy of the Word": {
 		"en": "Liturgy of the Word",
-		"ar": "",
-		"id": ""
+		"ar": "قداس الكلمة",
+		"id": "Liturgi Firman"
 	},
 	"Liturgy of the Faithful": {
 		"en": "Liturgy of the Faithful",
-		"ar": "",
-		"id": ""
+		"ar": "قداس المؤمنين",
+		"id": "Liturgi Orang Percaya"
 	},
 	"Distribution": {
 		"en": "Distribution",
-		"ar": "",
-		"id": ""
+		"ar": "التوزيع",
+		"id": "Distribusi"
 	},
 	"St. Gregory": {
 		"en": "St. Gregory",
-		"ar": "",
-		"id": ""
+		"ar": "الغريغوري",
+		"id": "Santo Gregorious"
 	},
 	"St. Cyril": {
 		"en": "St. Cyril",
-		"ar": "",
-		"id": ""
+		"ar": "الكيرلسي",
+		"id": "Santo Cyril"
 	},
 	"Matins": {
 		"en": "Matins",
-		"ar": "",
-		"id": ""
+		"ar": "باكر",
+		"id": "Matins (Doa Pagi)"
 	},
 	"Vespers": {
 		"en": "Vespers",
-		"ar": "",
-		"id": ""
+		"ar": "عشية",
+		"id": "Doa Malam (Vespers)"
 	},
 	"Readings": {
 		"en": "Readings",
-		"ar": "",
-		"id": ""
+		"ar": "القراءات",
+		"id": "Pembacaan"
 	},
 	"Prophecies": {
 		"en": "Prophecies",
-		"ar": "",
-		"id": ""
+		"ar": "النبوات",
+		"id": "Nubuat-Nubuat"
 	},
 	"Psalm and Gospel": {
 		"en": "Psalm and Gospel",
-		"ar": "",
-		"id": ""
+		"ar": "مزمور وانجيل",
+		"id": "Mazmur dan Injil"
 	},
 	"Liturgy": {
 		"en": "Liturgy",
-		"ar": "",
-		"id": ""
+		"ar": "القداس",
+		"id": "Liturgi"
 	},
 	"Pauline Epistle": {
 		"en": "Pauline Epistle",
-		"ar": "",
-		"id": ""
+		"ar": "البولس",
+		"id": "Santo Paulus"
 	},
 	"Catholic Epistle": {
 		"en": "Catholic Epistle",
-		"ar": "",
-		"id": ""
+		"ar": "الكاثوليكون",
+		"id": "Katolikon"
 	},
 	"Praxis": {
 		"en": "Praxis",
-		"ar": "",
-		"id": ""
+		"ar": "الابركسيس",
+		"id": "Praksis"
 	},
 	"Synaxarion": {
 		"en": "Synaxarion",
-		"ar": "",
-		"id": ""
+		"ar": "السنكسار",
+		"id": "Synaksarion"
 	},
 	"Antiphonary": {
 		"en": "Antiphonary",
-		"ar": "",
-		"id": ""
+		"ar": "الدفنار",
+		"id": "Antifonari"
 	},
 	"Melodies": {
 		"en": "Melodies",
-		"ar": "",
-		"id": ""
+		"ar": "مدائح",
+		"id": "Pujian pujian"
 	},
 	"Index": {
 		"en": "Index",
-		"ar": "",
-		"id": ""
+		"ar": "فهرس",
+		"id": "Indeks"
 	},
 	"Feasts": {
 		"en": "Feasts",
-		"ar": "",
-		"id": ""
+		"ar": "اعياد",
+		"id": "Perayaan"
 	},
 	"Coptic New Year": {
 		"en": "Coptic New Year",
-		"ar": "",
-		"id": ""
+		"ar": "النيروز",
+		"id": "Nayrouz"
 	},
 	"Feast of the Cross": {
 		"en": "Feast of the Cross",
-		"ar": "",
-		"id": ""
+		"ar": "عيد الصليب",
+		"id": "Perayaan Salib"
 	},
 	"Apostles' Feast": {
 		"en": "Apostles' Feast",
-		"ar": "",
-		"id": ""
+		"ar": "عيد الرسل",
+		"id": "Perayaan Para Rasul"
 	},
 	"Joyful 29th of the Month": {
 		"en": "Joyful 29th of the Month",
-		"ar": "",
-		"id": ""
+		"ar": "التاسع والعشرون من الشهر",
+		"id": "Hari Gembira - 29 dari bulan Koptik"
 	},
 	"Major Feasts of the Lord": {
 		"en": "Major Feasts of the Lord",
-		"ar": "",
-		"id": ""
+		"ar": "الأعياد السيدية الكبار",
+		"id": "Perayaan Besar tentang Tuhan Yesus"
 	},
 	"Nativity": {
 		"en": "Nativity",
-		"ar": "",
-		"id": ""
+		"ar": "الميلاد",
+		"id": "Natal"
 	},
 	"Theophany": {
 		"en": "Theophany",
-		"ar": "",
-		"id": ""
+		"ar": "الغطاس",
+		"id": "Theofani - Baptisan Tuhan Yesus"
 	},
 	"Annunciation": {
 		"en": "Annunciation",
-		"ar": "",
-		"id": ""
+		"ar": "البشارة",
+		"id": "Kabar Sukacita"
 	},
 	"Hosanna Sunday": {
 		"en": "Hosanna Sunday",
-		"ar": "",
-		"id": ""
+		"ar": "أحد الشعانين",
+		"id": "Minggu Palma"
 	},
 	"Holy 50 Days": {
 		"en": "Holy 50 Days",
-		"ar": "",
-		"id": ""
+		"ar": "الخمسين المقدسة",
+		"id": "50 Hari Suci"
 	},
 	"Days 1-39": {
 		"en": "Days 1-39",
-		"ar": "",
-		"id": ""
+		"ar": "أيام ١-٣٩ ",
+		"id": "Hari 1-39"
 	},
 	"Days 40-49": {
 		"en": "Days 40-49",
-		"ar": "",
-		"id": ""
+		"ar": "أيام ٤٠-٤٩",
+		"id": "Hari 40-49"
 	},
 	"Thomas Sunday": {
 		"en": "Thomas Sunday",
-		"ar": "",
-		"id": ""
+		"ar": "أحد توما",
+		"id": "Minggu Tomas"
 	},
 	"Pentecost": {
 		"en": "Pentecost",
-		"ar": "",
-		"id": ""
+		"ar": "العنصرة",
+		"id": "Pentakosta"
 	},
 	"Minor Feasts of the Lord": {
 		"en": "Minor Feasts of the Lord",
-		"ar": "",
-		"id": ""
+		"ar": "الأعياد السيدية الصغار",
+		"id": "Perayaan Kecil tentang Tuhan Yesus"
 	},
 	"Circumcision": {
 		"en": "Circumcision",
-		"ar": "",
-		"id": ""
+		"ar": "الختان",
+		"id": "
 	},
 	"Wedding at Cana of Galilee": {
 		"en": "Wedding at Cana of Galilee",
-		"ar": "",
+		"ar": "عرس قانا الجليل",
 		"id": ""
 	},
 	"Presentation of the Lord Christ in the Temple": {
 		"en": "Presentation of the Lord Christ in the Temple",
-		"ar": "",
+		"ar": "دخول المسيح الهيكل",
 		"id": ""
 	},
 	"Covenant Thursday": {
 		"en": "Covenant Thursday",
-		"ar": "",
+		"ar": "خميس العهد",
 		"id": ""
 	},
 	"Entrance of the Lord Christ into the Land of Egypt": {
 		"en": "Entrance of the Lord Christ into the Land of Egypt",
-		"ar": "",
+		"ar": "دخول السيد المسيح أرض مصر",
 		"id": ""
 	},
 	"Transfiguration": {
 		"en": "Transfiguration",
-		"ar": "",
+		"ar": "التجلي",
 		"id": ""
 	},
 	"Fasts": {
 		"en": "Fasts",
-		"ar": "",
+		"ar": "الأصوام",
 		"id": ""
 	},
 	"Nativity Fast": {
 		"en": "Nativity Fast",
-		"ar": "",
+		"ar": "صوم الميلاد",
 		"id": ""
 	},
 	"Month of Koiahk": {
 		"en": "Month of Koiahk",
-		"ar": "",
+		"ar": "شهر كيهك",
 		"id": ""
 	},
 	"Weekdays": {
 		"en": "Weekdays",
-		"ar": "",
+		"ar": "أيام الأسبوع",
 		"id": ""
 	},
 	"Weekends": {
 		"en": "Weekends",
-		"ar": "",
+		"ar": "السبوت والأحاد",
 		"id": ""
 	},
 	"Nativity Paramoun": {
 		"en": "Nativity Paramoun",
-		"ar": "",
+		"ar": "برمون الميلاد",
 		"id": ""
 	},
 	"Theophany Paramoun": {
 		"en": "Theophany Paramoun",
-		"ar": "",
+		"ar": "برمون الغطاس",
 		"id": ""
 	},
 	"Jonah's Fast": {
 		"en": "Jonah's Fast",
-		"ar": "",
+		"ar": "صوم نينوى",
 		"id": ""
 	},
 	"Jonah's Passover": {
 		"en": "Jonah's Passover",
-		"ar": "",
+		"ar": "فطر يونان",
 		"id": ""
 	},
 	"Great Fast": {
 		"en": "Great Fast",
-		"ar": "",
+		"ar": "الصوم الكبير",
 		"id": ""
 	},
 	"Preparation Sunday": {
 		"en": "Preparation Sunday",
-		"ar": "",
+		"ar": "أحد الاستعداد",
 		"id": ""
 	},
 	"Last Friday": {
 		"en": "Last Friday",
-		"ar": "",
+		"ar": "الجمعة الأخيرة",
 		"id": ""
 	},
 	"Lazarus Saturday": {
 		"en": "Lazarus Saturday",
-		"ar": "",
+		"ar": "سبت لعازر",
 		"id": ""
 	},
 	"Apostles' Fast": {
 		"en": "Apostles' Fast",
-		"ar": "",
+		"ar": "صوم الرسل",
 		"id": ""
 	},
 	"Saints": {
 		"en": "Saints",
-		"ar": "",
+		"ar": "القديسين",
 		"id": ""
 	},
 	"St. Mary the Mother of God": {
 		"en": "St. Mary the Mother of God",
-		"ar": "",
+		"ar": "السيدة العذراء مريم",
 		"id": ""
 	},
 	"Angels": {
 		"en": "Angels",
-		"ar": "",
+		"ar": "الملائكة",
 		"id": ""
 	},
 	"Archangel Michael": {
 		"en": "Archangel Michael",
-		"ar": "",
+		"ar": "الملاك ميخائيل",
 		"id": ""
 	},
 	"Archangel Gabriel": {
 		"en": "Archangel Gabriel",
-		"ar": "",
+		"ar": "الملاك جبرائيل",
 		"id": ""
 	},
 	"Archangel Raphael": {
 		"en": "Archangel Raphael",
-		"ar": "",
+		"ar": "الملاك روفائيل",
 		"id": ""
 	},
 	"Archangel Suriel": {
 		"en": "Archangel Suriel",
-		"ar": "",
+		"ar": "الملاك سوريال",
 		"id": ""
 	},
 	"Four Incorporeal Creatures": {
 		"en": "Four Incorporeal Creatures",
-		"ar": "",
+		"ar": "الأربعة الحيوانات الغير متجسدين",
 		"id": ""
 	},
 	"Twenty-Four Priests": {
 		"en": "Twenty-Four Priests",
-		"ar": "",
+		"ar": "الأربعة والعشرين قسيسا",
 		"id": ""
 	},
 	"Apostles": {
 		"en": "Apostles",
-		"ar": "",
+		"ar": "الرسل",
 		"id": ""
 	},
 	"St. Andrew the Apostle": {
 		"en": "St. Andrew the Apostle",
-		"ar": "",
+		"ar": "القديس أندراوس الرسول",
 		"id": ""
 	},
 	"St. John the Evangelist": {
 		"en": "St. John the Evangelist",
-		"ar": "",
+		"ar": "القديس يوحنا الانجيلي",
 		"id": ""
 	},
 	"St. Peter and St. Paul": {
 		"en": "St. Peter and St. Paul",
-		"ar": "",
+		"ar": "القديسين بطرس وبولس",
 		"id": ""
 	},
 	"St. Paul the Apostle": {
 		"en": "St. Paul the Apostle",
-		"ar": "",
+		"ar": "القديس يولس الرسول",
 		"id": ""
 	},
 	"St. Mark the Apostle": {
 		"en": "St. Mark the Apostle",
-		"ar": "",
+		"ar": "القديس مرقس الرسول",
 		"id": ""
 	},
 	"St. Luke the Evangelist": {
 		"en": "St. Luke the Evangelist",
-		"ar": "",
+		"ar": "القديس لوقا الانجيلي",
 		"id": ""
 	},
 	"Male Martyrs": {
 		"en": "Male Martyrs",
-		"ar": "",
+		"ar": "الشهداء",
 		"id": ""
 	},
 	"St. John the Baptist": {
 		"en": "St. John the Baptist",
-		"ar": "",
+		"ar": "القديس يوحنا المعمدان",
 		"id": ""
 	},
 	"Children of Bethlehem": {
 		"en": "Children of Bethlehem",
-		"ar": "",
+		"ar": "الأطفال المائة والأربعة والأربعين ألفا",
 		"id": ""
 	},
 	"St. Stephen the Archdeacon and Protomartyr": {
 		"en": "St. Stephen the Archdeacon and Protomartyr",
-		"ar": "",
+		"ar": "القديس استفانوس رئيس الشمامسة وأول الشهداء",
 		"id": ""
 	},
 	"St. George Prince of Martyrs": {
 		"en": "St. George Prince of Martyrs",
-		"ar": "",
+		"ar": "الشهيد مارجرجس الروماني امير الشهداء",
 		"id": ""
 	},
 	"Prince Theodore the Son of John of Shotep": {
 		"en": "Prince Theodore the Son of John of Shotep",
-		"ar": "",
+		"ar": "الأمير تادرس بن يوحنا الشطبي",
 		"id": ""
 	},
 	"Prince Theodore Anatolius": {
 		"en": "Prince Theodore Anatolius",
-		"ar": "",
+		"ar": "الأمير تادرس المشرقى",
 		"id": ""
 	},
 	"St. Philopater Mercurius": {
 		"en": "St. Philopater Mercurius",
-		"ar": "",
+		"ar": "الشهيد مرقوريوس",
 		"id": ""
 	},
 	"St. Mena the Wonderworker": {
 		"en": "St. Mena the Wonderworker",
-		"ar": "",
+		"ar": "الشهيد مارمينا العجايبي",
 		"id": ""
 	},
 	"St. Apanoub of Nehis": {
 		"en": "St. Apanoub of Nehis",
-		"ar": "",
+		"ar": "الشهيج أبانوب النهيسي",
 		"id": ""
 	},
 	"St. Victor Son of Romanus": {
 		"en": "St. Victor Son of Romanus",
-		"ar": "",
+		"ar": "القديس بقطر بن رومانيوس",
 		"id": ""
 	},
 	"St. Apatir and His Sister St. Irini": {
 		"en": "St. Apatir and His Sister St. Irini",
-		"ar": "",
+		"ar": "القديسين أبادير وايريني أخته",
 		"id": ""
 	},
 	"St. Claudius Son of Ptolemy": {
 		"en": "St. Claudius Son of Ptolemy",
-		"ar": "",
+		"ar": "القديس اقلاديوس ابن ابطلماوس",
 		"id": ""
 	},
 	"St. Apoli, Son of Justus": {
 		"en": "St. Apoli, Son of Justus",
-		"ar": "",
+		"ar": "القديس أبالي بن يسطس",
 		"id": ""
 	},
 	"St. Eskhyron of Callin": {
 		"en": "St. Eskhyron of Callin",
-		"ar": "",
+		"ar": "الشهيد اياسخيرون القليني",
 		"id": ""
 	},
 	"St. John of Heraclia": {
 		"en": "St. John of Heraclia",
-		"ar": "",
+		"ar": "القديس الأنبا يوحنا الهرقلي",
 		"id": ""
 	},
 	"St. Abe-Fam the Soldier": {
 		"en": "St. Abe-Fam the Soldier",
-		"ar": "",
+		"ar": "القديس أبي فام الجندي",
 		"id": ""
 	},
 	"St. Sergius and St. Bacchus": {
 		"en": "St. Sergius and St. Bacchus",
-		"ar": "",
+		"ar": "القديس سرجيوس و واخس",
 		"id": ""
 	},
 	"St. Cosmas and St. Damian, their Brothers and Mother": {
 		"en": "St. Cosmas and St. Damian, their Brothers and Mother",
-		"ar": "",
+		"ar": "الشهيدان قزمان ودميان واخوتهما وأمهم الشهداء",
 		"id": ""
 	},
 	"St. Apakir and St. John": {
 		"en": "St. Apakir and St. John",
-		"ar": "",
+		"ar": "القديسين أباكير ويوحنا",
 		"id": ""
 	},
 	"Sts. Apakir, John, Ptolemy, and Philip": {
 		"en": "Sts. Apakir, John, Ptolemy, and Philip",
-		"ar": "",
+		"ar": "الشهداء أباكير ويوحنا واخوتهما",
 		"id": ""
 	},
 	"St. Sarapamon Bishop of Nikios": {
 		"en": "St. Sarapamon Bishop of Nikios",
-		"ar": "",
+		"ar": "الشهيد الأنبا صرابامون",
 		"id": ""
 	},
 	"St. Pisura the Bishop": {
