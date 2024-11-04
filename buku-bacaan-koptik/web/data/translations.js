@@ -1418,7 +1418,7 @@ const translations = {
 	"Circumcision": {
 		"en": "Circumcision",
 		"ar": "الختان",
-		"id": "
+		"id": "Sunat"
 	},
 	"Wedding at Cana of Galilee": {
 		"en": "Wedding at Cana of Galilee",
