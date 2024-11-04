@@ -1423,282 +1423,282 @@ const translations = {
 	"Wedding at Cana of Galilee": {
 		"en": "Wedding at Cana of Galilee",
 		"ar": "عرس قانا الجليل",
-		"id": ""
+		"id": "Pernikahan di Kana Galilea"
 	},
 	"Presentation of the Lord Christ in the Temple": {
 		"en": "Presentation of the Lord Christ in the Temple",
 		"ar": "دخول المسيح الهيكل",
-		"id": ""
+		"id": "Tuhan Yesus Masuk ke Bait Allah"
 	},
 	"Covenant Thursday": {
 		"en": "Covenant Thursday",
 		"ar": "خميس العهد",
-		"id": ""
+		"id": "Kamis Agung"
 	},
 	"Entrance of the Lord Christ into the Land of Egypt": {
 		"en": "Entrance of the Lord Christ into the Land of Egypt",
 		"ar": "دخول السيد المسيح أرض مصر",
-		"id": ""
+		"id": "Tuhan Yesus Masuk ke Tanah Mesir"
 	},
 	"Transfiguration": {
 		"en": "Transfiguration",
 		"ar": "التجلي",
-		"id": ""
+		"id": "Transfigurasi"
 	},
 	"Fasts": {
 		"en": "Fasts",
 		"ar": "الأصوام",
-		"id": ""
+		"id": "Puasa"
 	},
 	"Nativity Fast": {
 		"en": "Nativity Fast",
 		"ar": "صوم الميلاد",
-		"id": ""
+		"id": "Puasa Natal"
 	},
 	"Month of Koiahk": {
 		"en": "Month of Koiahk",
 		"ar": "شهر كيهك",
-		"id": ""
+		"id": "Bulan Kiahk"
 	},
 	"Weekdays": {
 		"en": "Weekdays",
 		"ar": "أيام الأسبوع",
-		"id": ""
+		"id": "Hari hari biasa"
 	},
 	"Weekends": {
 		"en": "Weekends",
 		"ar": "السبوت والأحاد",
-		"id": ""
+		"id": "Sabtu dan Minggu"
 	},
 	"Nativity Paramoun": {
 		"en": "Nativity Paramoun",
 		"ar": "برمون الميلاد",
-		"id": ""
+		"id": "Paramouni Perayaan Natal"
 	},
 	"Theophany Paramoun": {
 		"en": "Theophany Paramoun",
 		"ar": "برمون الغطاس",
-		"id": ""
+		"id": "Paramoni Teofani"
 	},
 	"Jonah's Fast": {
 		"en": "Jonah's Fast",
 		"ar": "صوم نينوى",
-		"id": ""
+		"id": "Puasa Niniwe"
 	},
 	"Jonah's Passover": {
 		"en": "Jonah's Passover",
 		"ar": "فطر يونان",
-		"id": ""
+		"id": "Paskah Puasa Yunus"
 	},
 	"Great Fast": {
 		"en": "Great Fast",
 		"ar": "الصوم الكبير",
-		"id": ""
+		"id": "Puasa Agung"
 	},
 	"Preparation Sunday": {
 		"en": "Preparation Sunday",
 		"ar": "أحد الاستعداد",
-		"id": ""
+		"id": "Minggu Persiapan"
 	},
 	"Last Friday": {
 		"en": "Last Friday",
 		"ar": "الجمعة الأخيرة",
-		"id": ""
+		"id": "Jumat Terakhir"
 	},
 	"Lazarus Saturday": {
 		"en": "Lazarus Saturday",
 		"ar": "سبت لعازر",
-		"id": ""
+		"id": "Sabtu Lazarus"
 	},
 	"Apostles' Fast": {
 		"en": "Apostles' Fast",
 		"ar": "صوم الرسل",
-		"id": ""
+		"id": "Puasa Para Rasul"
 	},
 	"Saints": {
 		"en": "Saints",
 		"ar": "القديسين",
-		"id": ""
+		"id": "Orang-orang Kudus"
 	},
 	"St. Mary the Mother of God": {
 		"en": "St. Mary the Mother of God",
 		"ar": "السيدة العذراء مريم",
-		"id": ""
+		"id": "Perawan Santa Maria"
 	},
 	"Angels": {
 		"en": "Angels",
 		"ar": "الملائكة",
-		"id": ""
+		"id": "Malaikat"
 	},
 	"Archangel Michael": {
 		"en": "Archangel Michael",
 		"ar": "الملاك ميخائيل",
-		"id": ""
+		"id": "Malaikat Mikail"
 	},
 	"Archangel Gabriel": {
 		"en": "Archangel Gabriel",
 		"ar": "الملاك جبرائيل",
-		"id": ""
+		"id": "Malaikat Gabriel"
 	},
 	"Archangel Raphael": {
 		"en": "Archangel Raphael",
 		"ar": "الملاك روفائيل",
-		"id": ""
+		"id": "Malaikat Rafael"
 	},
 	"Archangel Suriel": {
 		"en": "Archangel Suriel",
 		"ar": "الملاك سوريال",
-		"id": ""
+		"id": "Malaikat Uriel"
 	},
 	"Four Incorporeal Creatures": {
 		"en": "Four Incorporeal Creatures",
 		"ar": "الأربعة الحيوانات الغير متجسدين",
-		"id": ""
+		"id": "Empat Makhluk Surgawi"
 	},
 	"Twenty-Four Priests": {
 		"en": "Twenty-Four Priests",
 		"ar": "الأربعة والعشرين قسيسا",
-		"id": ""
+		"id": "Dua Puluh Empat Imam"
 	},
 	"Apostles": {
 		"en": "Apostles",
 		"ar": "الرسل",
-		"id": ""
+		"id": "Para Rasul"
 	},
 	"St. Andrew the Apostle": {
 		"en": "St. Andrew the Apostle",
 		"ar": "القديس أندراوس الرسول",
-		"id": ""
+		"id": "Santo Andreas Sang Rasul"
 	},
 	"St. John the Evangelist": {
 		"en": "St. John the Evangelist",
 		"ar": "القديس يوحنا الانجيلي",
-		"id": ""
+		"id": "Santo Yohanes Penginjil"
 	},
 	"St. Peter and St. Paul": {
 		"en": "St. Peter and St. Paul",
 		"ar": "القديسين بطرس وبولس",
-		"id": ""
+		"id": "Santo Petrus dan Santo Paulus"
 	},
 	"St. Paul the Apostle": {
 		"en": "St. Paul the Apostle",
 		"ar": "القديس يولس الرسول",
-		"id": ""
+		"id": "Santo Paulus Sang Rasul"
 	},
 	"St. Mark the Apostle": {
 		"en": "St. Mark the Apostle",
 		"ar": "القديس مرقس الرسول",
-		"id": ""
+		"id": "Santo Markus sang Rasul"
 	},
 	"St. Luke the Evangelist": {
 		"en": "St. Luke the Evangelist",
 		"ar": "القديس لوقا الانجيلي",
-		"id": ""
+		"id": "Santo Lukas Penginjil"
 	},
 	"Male Martyrs": {
 		"en": "Male Martyrs",
 		"ar": "الشهداء",
-		"id": ""
+		"id": "Para Martir (Laki laki)"
 	},
 	"St. John the Baptist": {
 		"en": "St. John the Baptist",
 		"ar": "القديس يوحنا المعمدان",
-		"id": ""
+		"id": "Santo Yohanes Pembaptis"
 	},
 	"Children of Bethlehem": {
 		"en": "Children of Bethlehem",
 		"ar": "الأطفال المائة والأربعة والأربعين ألفا",
-		"id": ""
+		"id": "Anak-anak Betlehem"
 	},
 	"St. Stephen the Archdeacon and Protomartyr": {
 		"en": "St. Stephen the Archdeacon and Protomartyr",
 		"ar": "القديس استفانوس رئيس الشمامسة وأول الشهداء",
-		"id": ""
+		"id": "Santo Stefanus, Diakon Agung dan Martir Pertama"
 	},
 	"St. George Prince of Martyrs": {
 		"en": "St. George Prince of Martyrs",
 		"ar": "الشهيد مارجرجس الروماني امير الشهداء",
-		"id": ""
+		"id": "Pengeran Martir Santo Georgi "
 	},
 	"Prince Theodore the Son of John of Shotep": {
 		"en": "Prince Theodore the Son of John of Shotep",
 		"ar": "الأمير تادرس بن يوحنا الشطبي",
-		"id": ""
+		"id": "Pangeran Teodor anak Yohanes dari Shotep"
 	},
 	"Prince Theodore Anatolius": {
 		"en": "Prince Theodore Anatolius",
 		"ar": "الأمير تادرس المشرقى",
-		"id": ""
+		"id": "Pangeran Tadros Anatolius"
 	},
 	"St. Philopater Mercurius": {
 		"en": "St. Philopater Mercurius",
 		"ar": "الشهيد مرقوريوس",
-		"id": ""
+		"id": "Santo Filopatir Merkurius"
 	},
 	"St. Mena the Wonderworker": {
 		"en": "St. Mena the Wonderworker",
 		"ar": "الشهيد مارمينا العجايبي",
-		"id": ""
+		"id": "Santo Mina Pekerja Ajaib"
 	},
 	"St. Apanoub of Nehis": {
 		"en": "St. Apanoub of Nehis",
-		"ar": "الشهيج أبانوب النهيسي",
-		"id": ""
+		"ar": "الشهيد أبانوب النهيسي",
+		"id": "Santo Abanoub dari Nehis"
 	},
 	"St. Victor Son of Romanus": {
 		"en": "St. Victor Son of Romanus",
 		"ar": "القديس بقطر بن رومانيوس",
-		"id": ""
+		"id": "Santo Victor anak Romanus"
 	},
 	"St. Apatir and His Sister St. Irini": {
 		"en": "St. Apatir and His Sister St. Irini",
 		"ar": "القديسين أبادير وايريني أخته",
-		"id": ""
+		"id": "Santo Abatir dan Irini adiknya"
 	},
 	"St. Claudius Son of Ptolemy": {
 		"en": "St. Claudius Son of Ptolemy",
 		"ar": "القديس اقلاديوس ابن ابطلماوس",
-		"id": ""
+		"id": "Santo Klaudius anal Ptolemy"
 	},
 	"St. Apoli, Son of Justus": {
 		"en": "St. Apoli, Son of Justus",
 		"ar": "القديس أبالي بن يسطس",
-		"id": ""
+		"id": "Santo Apoli anak Justus"
 	},
 	"St. Eskhyron of Callin": {
 		"en": "St. Eskhyron of Callin",
 		"ar": "الشهيد اياسخيرون القليني",
-		"id": ""
+		"id": "Santo Eskhyron dari kallin"
 	},
 	"St. John of Heraclia": {
 		"en": "St. John of Heraclia",
 		"ar": "القديس الأنبا يوحنا الهرقلي",
-		"id": ""
+		"id": "Santo Yohanes dari Heraklia"
 	},
 	"St. Abe-Fam the Soldier": {
 		"en": "St. Abe-Fam the Soldier",
 		"ar": "القديس أبي فام الجندي",
-		"id": ""
+		"id": "Santo Abi Fam sang Prajurit "
 	},
 	"St. Sergius and St. Bacchus": {
 		"en": "St. Sergius and St. Bacchus",
 		"ar": "القديس سرجيوس و واخس",
-		"id": ""
+		"id": "Santo Sergiud dan Santo Bakhus"
 	},
 	"St. Cosmas and St. Damian, their Brothers and Mother": {
 		"en": "St. Cosmas and St. Damian, their Brothers and Mother",
 		"ar": "الشهيدان قزمان ودميان واخوتهما وأمهم الشهداء",
-		"id": ""
+		"id": "Santo Kosmas dan Santo Demian, saudara dan Ibun mereka"
 	},
 	"St. Apakir and St. John": {
 		"en": "St. Apakir and St. John",
 		"ar": "القديسين أباكير ويوحنا",
-		"id": ""
+		"id": "Santo Apakir dan Santo Yohanes"
 	},
 	"Sts. Apakir, John, Ptolemy, and Philip": {
 		"en": "Sts. Apakir, John, Ptolemy, and Philip",
 		"ar": "الشهداء أباكير ويوحنا واخوتهما",
-		"id": ""
+		"id": "Santo Apakir, Yohanes dan Ptolemy dan Filip"
 	},
 	"St. Sarapamon Bishop of Nikios": {
 		"en": "St. Sarapamon Bishop of Nikios",
