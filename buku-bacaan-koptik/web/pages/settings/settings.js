@@ -65,7 +65,7 @@ export const SettingsPage = (() => {
 		element.querySelector('text').style = `font-size: ${target.value}rem`
 	}
 	function checkSelectedLanguageCount(target) {
-		const checked = element.querySelectorAll('.document-language-select input:checked');
+		const checked = element.querySelectorAll('.document-language-select:not(.app-language-select) input:checked');
 		if (checked.length > 0 && checked.length <= 3) return;
 
 		// override this shit!!
@@ -103,7 +103,7 @@ export const SettingsPage = (() => {
 		<main>
 
 			<h4 i18n>Application Language</h4>
-			<div class="document-language-select">
+			<div class="app-language-select document-language-select">
 				<label class="big-switch">
 					<i>En</i>
 					<span>English</span>

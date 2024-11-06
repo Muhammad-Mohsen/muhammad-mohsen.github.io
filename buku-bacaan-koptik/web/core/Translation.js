@@ -2631,12 +2631,21 @@ export const Translation = (() => {
 		}
 	}
 
+	function setKeys() {
+		document.querySelectorAll('[i18n]').forEach(elem => {
+			if (!elem.getAttribute('i18n')) elem.setAttribute('i18n', elem.childNodes[0].textContent.replace(/[\t\n]/g, ''));
+
+		});
+	}
+
 	function exec() {
 		const lang = SettingsPage.get('appLang');
+		setKeys();
+
 		document.querySelectorAll('[i18n]').forEach(elem => {
 			const textNode = elem.childNodes[0];
-			const content = textNode.textContent.replace(/[\t\n]/g, '');
-			textNode.textContent = translations[content]?.[lang] || textNode.textContent;
+			const key = elem.getAttribute('i18n');
+			textNode.textContent = translations[key]?.[lang] || key;
 		});
 
 		document.documentElement.setAttribute('dir', lang == 'ar' ? 'rtl' : 'ltr');
