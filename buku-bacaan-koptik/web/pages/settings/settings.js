@@ -1,3 +1,5 @@
+import { Router } from "../../core/router.js";
+
 export const SettingsPage = (() => {
 
 	const element = document.querySelector('settings');
@@ -14,7 +16,7 @@ export const SettingsPage = (() => {
 		rolePriest: 'true',
 		roleDeacon: 'true',
 		rolePeople: 'true',
-		transitionTime: '23:59'
+		transitionTime: '18:00'
 	}
 
 	function init() {
@@ -73,6 +75,10 @@ export const SettingsPage = (() => {
 		return ch > th || ch == th && cm > tm;
 	}
 
+	function setAppLanguage() {
+		Router.goto('/settings');
+	}
+
 	function template() {
 		return `
 		<header>
@@ -83,6 +89,27 @@ export const SettingsPage = (() => {
 		</header>
 
 		<main>
+
+			<h4 i18n>Application Language</h4>
+			<div class="document-language-select">
+				<label class="big-switch">
+					<i>En</i>
+					<span>English</span>
+					<input name="appLangRadio" type="radio" setting="appLang" onchange="SettingsPage.change(this);SettingsPage.setAppLanguage();">
+				</label>
+				<label class="big-switch">
+					<i style="font-family:noto; font-size: 30px;">أب</i>
+					<span style="font-family:noto; margin: -7px 0 7px;">عربي</span>
+					<input name="appLangRadio" type="radio" setting="appLang" onchange="SettingsPage.change(this);SettingsPage.setAppLanguage();">
+				</label>
+
+				<label class="big-switch">
+					<i>Id</i>
+					<span>Indonesian</span>
+					<input name="appLangRadio" type="radio" setting="appLang" onchange="SettingsPage.change(this);SettingsPage.setAppLanguage();">
+				</label>
+			</div>
+
 			<div class="input-container font-size-container">
 
 				<label i18n>Text Size</label>
@@ -183,6 +210,7 @@ export const SettingsPage = (() => {
 		setPreviewFontSize,
 		checkSelectedLanguageCount,
 		isPastTransitionTime,
+		setAppLanguage,
 	}
 
 })();
