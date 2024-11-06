@@ -5,6 +5,7 @@ export const SettingsPage = (() => {
 	const element = document.querySelector('settings');
 
 	const DEFAULTS = {
+		appLang: 'en',
 		fontSize: '1',
 		langEn: 'true',
 		langCo: 'true',
@@ -25,9 +26,14 @@ export const SettingsPage = (() => {
 
 		load();
 		setPreviewFontSize(element.querySelector('[setting="fontSize"]'));
+		setAppLanguagePreview();
 	}
 
-	function get() {
+	function get(key) {
+		const defaults = JSON.parse(JSON.stringify(DEFAULTS));
+		return localStorage.getItem(key) || defaults[key];
+	}
+	function getAll() {
 		const settings = JSON.parse(JSON.stringify(DEFAULTS));
 		for (const s in settings) {
 			const stored = localStorage[s];
@@ -60,23 +66,29 @@ export const SettingsPage = (() => {
 	}
 	function checkSelectedLanguageCount(target) {
 		const checked = element.querySelectorAll('.document-language-select input:checked');
-		if (checked.length <= 3) return;
+		if (checked.length > 0 && checked.length <= 3) return;
 
 		// override this shit!!
-		target.checked = false;
+		target.checked = !target.checked;
 		change(target);
 	}
 
 	function isPastTransitionTime() {
 		const curr = new Date();
 		const [ch, cm] = [curr.getHours(), curr.getMinutes()]; // current
-		const [th, tm] = get().transitionTime.split(':').map(p => parseInt(p)); // transition
+		const [th, tm] = getAll().transitionTime.split(':').map(p => parseInt(p)); // transition
 
 		return ch > th || ch == th && cm > tm;
 	}
 
-	function setAppLanguage() {
-		Router.goto('/settings');
+	// unfortunately this doesn't use the same API as other settings
+	function setAppLanguage(lang) {
+		save('appLang', lang);
+		Router.process();
+	}
+	function setAppLanguagePreview() {
+		const lang = localStorage.getItem('appLang') || 'en';
+		element.querySelector(`[name="appLangRadio"][value="${lang}"]`).checked = true;
 	}
 
 	function template() {
@@ -95,18 +107,18 @@ export const SettingsPage = (() => {
 				<label class="big-switch">
 					<i>En</i>
 					<span>English</span>
-					<input name="appLangRadio" type="radio" setting="appLang" onchange="SettingsPage.change(this);SettingsPage.setAppLanguage();">
+					<input name="appLangRadio" type="radio" value="en" onchange="SettingsPage.setAppLanguage('en');">
 				</label>
 				<label class="big-switch">
 					<i style="font-family:noto; font-size: 30px;">أب</i>
 					<span style="font-family:noto; margin: -7px 0 7px;">عربي</span>
-					<input name="appLangRadio" type="radio" setting="appLang" onchange="SettingsPage.change(this);SettingsPage.setAppLanguage();">
+					<input name="appLangRadio" type="radio" value="ar" onchange="SettingsPage.setAppLanguage('ar');">
 				</label>
 
 				<label class="big-switch">
 					<i>Id</i>
 					<span>Indonesian</span>
-					<input name="appLangRadio" type="radio" setting="appLang" onchange="SettingsPage.change(this);SettingsPage.setAppLanguage();">
+					<input name="appLangRadio" type="radio" value="id" onchange="SettingsPage.setAppLanguage('id');">
 				</label>
 			</div>
 
@@ -128,7 +140,7 @@ export const SettingsPage = (() => {
 			</div>
 
 			<h4 i18n>Document Languages</h4>
-			<p i18n>Up to 3 languages can be selected at the same time</p>
+			<p i18n>At least one and up to three languages can be selected at the same time</p>
 			<div class="document-language-select">
 				<label class="big-switch">
 					<i>En</i>
@@ -205,6 +217,7 @@ export const SettingsPage = (() => {
 	return {
 		init,
 		change,
+		getAll,
 		get,
 
 		setPreviewFontSize,

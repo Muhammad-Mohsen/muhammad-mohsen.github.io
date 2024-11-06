@@ -22,7 +22,7 @@
 .actions-container .fab:not(:last-child)::after {
 	content: '';
 	position: absolute;
-	right: 0;
+	inset-inline-end: 0;
 	width: 1px;
 	height: 20px;
 	opacity: 0.3;

@@ -97,11 +97,12 @@ Section title-html {
 	display: flex;
 	flex-direction: column;
 	padding: 12px 48px 12px 12px;
-
 }
+:root[dir="rtl"] Section title-html { padding: 12px 12px 12px 48px; }
+
 Section title-html Language {
-	justify-content: left;
-	text-align: left;
+	justify-content: start;
+	text-align: start;
     line-height: 1.40rem;
 }
 section[expanded] title-html::after {
@@ -109,7 +110,7 @@ section[expanded] title-html::after {
     font-family: 'Material Symbols Outlined';
     font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
     position: absolute;
-    right: 16px;
+	inset-inline-end: 16px;
     top: calc(50% - 14px);
     font-size: 24px;
     color: var(--accent-bg);

@@ -63,9 +63,7 @@
 	* { box-shadow: none !important; }
 }
 
-* {
-	font-family: Poppins;
-}
+* { font-family: Poppins; }
 
 /* ICON FONT */
 .material-symbols-outlined {
@@ -79,10 +77,13 @@
 	display: inline-block;
 	white-space: nowrap;
 	word-wrap: normal;
-	direction: ltr;
 	-webkit-font-feature-settings: 'liga';
 	font-feature-settings: 'liga';
 	-webkit-font-smoothing: antialiased;
+}
+:root[dir="rtl"] {
+	& [i18n] { font-family: Noto; }
+	& .material-symbols-outlined { scale: -1 1; }
 }
 
 .material-symbols-outlined {

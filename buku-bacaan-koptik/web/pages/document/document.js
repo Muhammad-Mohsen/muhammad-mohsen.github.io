@@ -106,7 +106,7 @@ export const DocumentPage = (() => {
 	}
 
 	function applySettings(doc) {
-		const settings = SettingsPage.get();
+		const settings = SettingsPage.getAll();
 		element.style.fontSize = settings.fontSize + 'em';
 
 		const falsy = (prop) => prop != 'true';

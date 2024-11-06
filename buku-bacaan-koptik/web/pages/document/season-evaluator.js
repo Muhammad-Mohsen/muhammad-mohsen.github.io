@@ -41,7 +41,7 @@ export const SeasonEvaluator = (() => {
 		if (token != 'DisplayNonCustomaryPrayers' && token != 'Other' && !SaintEvaluator.isSaint(token) && isForced('IgnoreCurrentSeason')) return false;
 
 		// customary prayers
-		const displayNonCustomaryPrayers = SettingsPage.get().nonCustomaryPrayers;
+		const displayNonCustomaryPrayers = SettingsPage.getAll().nonCustomaryPrayers;
 		if (isForced('Joyful29thOfTheMonthRaw') && token == 'Joyful29thOfTheMonth') return displayNonCustomaryPrayers;
 		if (token == 'Annunciation') return !displayNonCustomaryPrayers;
 
@@ -546,7 +546,7 @@ export const SeasonEvaluator = (() => {
 	}
 
 	function isDisplayNonCustomaryPrayers() {
-		return SettingsPage.get().nonCustomaryPrayers == 'true';
+		return SettingsPage.getAll().nonCustomaryPrayers == 'true';
 	}
 
 	function isStMary() {

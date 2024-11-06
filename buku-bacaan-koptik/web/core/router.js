@@ -3,6 +3,7 @@ import { CalendarPage } from '../pages/calendar/calendar.js';
 import { DocumentPage } from '../pages/document/document.js';
 import { ListPage } from '../pages/list/list.js';
 import { SettingsPage } from '../pages/settings/settings.js';
+import { Translation } from './Translation.js';
 
 export const Router = (() => {
 
@@ -38,6 +39,8 @@ export const Router = (() => {
 		} else {
 			document.querySelector('home').show(50);
 		}
+
+		Translation.exec();
 	}
 
 	function goto(uri) {
