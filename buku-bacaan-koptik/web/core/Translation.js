@@ -41,7 +41,7 @@ export const Translation = (() => {
 		"Veil": {
 			"en": "Veil",
 			"ar": "الستار",
-			"id": ""
+			"id": "Veil"
 		},
 		"Midnight": {
 			"en": "Midnight",
@@ -86,7 +86,7 @@ export const Translation = (() => {
 		"Psalmody": {
 			"en": "Psalmody",
 			"ar": "الأبصلمودية",
-			"id": "Psalmody (Pujian)"
+			"id": "Psalmody"
 		},
 		"Vesper Praises": {
 			"en": "Vesper Praises",
@@ -371,97 +371,97 @@ export const Translation = (() => {
 		"Leviticus": {
 			"en": "Leviticus",
 			"ar": "لاويين",
-			"id": ""
+			"id": "lmamat"
 		},
 		"Numbers": {
 			"en": "Numbers",
 			"ar": "العدد",
-			"id": ""
+			"id": "Bilangan"
 		},
 		"Deuteronomy": {
 			"en": "Deuteronomy",
 			"ar": "تثنية",
-			"id": ""
+			"id": "Ulangan"
 		},
 		"Joshua": {
 			"en": "Joshua",
 			"ar": "يشوع",
-			"id": ""
+			"id": "Yosua"
 		},
 		"Judges": {
 			"en": "Judges",
 			"ar": "القضاة",
-			"id": ""
+			"id": "Hakim-hakim"
 		},
 		"Ruth": {
 			"en": "Ruth",
 			"ar": "راعوث",
-			"id": ""
+			"id": "Rut"
 		},
 		"1 Samuel": {
 			"en": "1 Samuel",
 			"ar": "١ صموئيل",
-			"id": ""
+			"id": "I Samuel"
 		},
 		"2 Samuel": {
 			"en": "2 Samuel",
 			"ar": "٢ صموئيل",
-			"id": ""
+			"id": "II Samuel"
 		},
 		"1 Kings": {
 			"en": "1 Kings",
 			"ar": "١ ملوك",
-			"id": ""
+			"id": "I Raja-Raja"
 		},
 		"2 Kings": {
 			"en": "2 Kings",
 			"ar": "٢ ملوك",
-			"id": ""
+			"id": "II Raja-Raja"
 		},
 		"1 Chronicles": {
 			"en": "1 Chronicles",
 			"ar": "١ اخبار",
-			"id": ""
+			"id": "I Tawarikh"
 		},
 		"2 Chronicles": {
 			"en": "2 Chronicles",
 			"ar": "٢ اخبار",
-			"id": ""
+			"id": "II Tawarikh"
 		},
 		"Ezra": {
 			"en": "Ezra",
 			"ar": "عزرا",
-			"id": ""
+			"id": "Ezra"
 		},
 		"Nehemiah": {
 			"en": "Nehemiah",
 			"ar": "نحميا",
-			"id": ""
+			"id": "Nehemia"
 		},
 		"Tobit": {
 			"en": "Tobit",
 			"ar": "طوبيا",
-			"id": ""
+			"id": "Tobit"
 		},
 		"Judith": {
 			"en": "Judith",
 			"ar": "يهوديت",
-			"id": ""
+			"id": "Yudit"
 		},
 		"Esther": {
 			"en": "Esther",
 			"ar": "استير",
-			"id": ""
+			"id": "Ester"
 		},
 		"Job": {
 			"en": "Job",
 			"ar": "ايوب",
-			"id": ""
+			"id": "Ayub"
 		},
 		"Psalms": {
 			"en": "Psalms",
 			"ar": "مزامير",
-			"id": ""
+			"id": "Mazmur"
 		},
 		"Chapter 51": {
 			"en": "Chapter 51",
@@ -716,7 +716,7 @@ export const Translation = (() => {
 		"Chapter 101": {
 			"en": "Chapter 101",
 			"ar": "اصحاح ١٠١",
-			"id": ""
+			"id": "Pasal 101"
 		},
 		"Chapter 102": {
 			"en": "Chapter 102",
@@ -725,7 +725,7 @@ export const Translation = (() => {
 		},
 		"Chapter 103": {
 			"en": "Chapter 103",
-			"ar": "",
+			"ar": "اصحاح",
 			"id": "Pasal 103"
 		},
 		"Chapter 104": {
@@ -970,268 +970,268 @@ export const Translation = (() => {
 		},
 		"Proverbs": {
 			"en": "Proverbs",
-			"ar": "",
+			"ar": "أمثال",
 			"id": "Amsal"
 		},
 		"Ecclesiastes": {
 			"en": "Ecclesiastes",
-			"ar": "",
-			"id": ""
+			"ar": "جامعة",
+			"id": "Pengkhotbah"
 		},
 		"Song of Solomon": {
 			"en": "Song of Solomon",
-			"ar": "",
-			"id": ""
+			"ar": "نشيد الأنشاد",
+			"id": "Kidung"
 		},
 		"Wisdom": {
 			"en": "Wisdom",
-			"ar": "",
-			"id": ""
+			"ar": "حكمة سليمان",
+			"id": "Kebijaksanaan Salomo"
 		},
 		"Sirach": {
 			"en": "Sirach",
-			"ar": "",
-			"id": ""
+			"ar": "يشوع بن سيراخ",
+			"id": "Yesus bin Sirakh"
 		},
 		"Isaiah": {
 			"en": "Isaiah",
-			"ar": "",
-			"id": ""
+			"ar": "أشعياء",
+			"id": "Yesaya"
 		},
 		"Jeremiah": {
 			"en": "Jeremiah",
-			"ar": "",
-			"id": ""
+			"ar": "أرميا",
+			"id": "Yeremia"
 		},
 		"Lamentations": {
 			"en": "Lamentations",
-			"ar": "",
-			"id": ""
+			"ar": "مراثى أرميا",
+			"id": "Ratapan"
 		},
 		"Baruch": {
 			"en": "Baruch",
-			"ar": "",
-			"id": ""
+			"ar": "باروخ",
+			"id": "Barukh"
 		},
 		"Ezekiel": {
 			"en": "Ezekiel",
-			"ar": "",
-			"id": ""
+			"ar": "حزقيال",
+			"id": "Yehezkiel"
 		},
 		"Daniel": {
 			"en": "Daniel",
-			"ar": "",
-			"id": ""
+			"ar": "دانيال",
+			"id": "Daniel"
 		},
 		"Hosea": {
 			"en": "Hosea",
-			"ar": "",
-			"id": ""
+			"ar": "هوشع",
+			"id": "Hosea"
 		},
 		"Joel": {
 			"en": "Joel",
-			"ar": "",
-			"id": ""
+			"ar": "يوئيل",
+			"id": "Yoel"
 		},
 		"Amos": {
 			"en": "Amos",
-			"ar": "",
-			"id": ""
+			"ar": "عاموس",
+			"id": "Amos"
 		},
 		"Obadiah": {
 			"en": "Obadiah",
-			"ar": "",
-			"id": ""
+			"ar": "عوبيديا",
+			"id": "Obaia"
 		},
 		"Jonah": {
 			"en": "Jonah",
-			"ar": "",
-			"id": ""
+			"ar": "يونان",
+			"id": "Yunus"
 		},
 		"Micah": {
 			"en": "Micah",
-			"ar": "",
-			"id": ""
+			"ar": "ميخا",
+			"id": "Mikha"
 		},
 		"Nahum": {
 			"en": "Nahum",
-			"ar": "",
-			"id": ""
+			"ar": "ناحوم",
+			"id": "Nahum"
 		},
 		"Habakkuk": {
 			"en": "Habakkuk",
-			"ar": "",
-			"id": ""
+			"ar": "حبقوق",
+			"id": "Habakuk"
 		},
 		"Zephaniah": {
 			"en": "Zephaniah",
-			"ar": "",
-			"id": ""
+			"ar": "صفنيا",
+			"id": "Zefanya"
 		},
 		"Haggai": {
 			"en": "Haggai",
-			"ar": "",
-			"id": ""
+			"ar": "حجي",
+			"id": "Hagai"
 		},
 		"Zechariah": {
 			"en": "Zechariah",
-			"ar": "",
-			"id": ""
+			"ar": "زكريا",
+			"id": "Zakharia"
 		},
 		"Malachi": {
 			"en": "Malachi",
-			"ar": "",
-			"id": ""
+			"ar": "ملاخي",
+			"id": "Maleakhi"
 		},
 		"1 Maccabees": {
 			"en": "1 Maccabees",
-			"ar": "",
-			"id": ""
+			"ar": "١ مكابيين",
+			"id": "1 Makabe"
 		},
 		"2 Maccabees": {
 			"en": "2 Maccabees",
-			"ar": "",
-			"id": ""
+			"ar": "٢ مكابيين",
+			"id": "2 Makabe"
 		},
 		"Prayer of Manasseh": {
 			"en": "Prayer of Manasseh",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة منسى",
+			"id": "Doa Manasye"
 		},
 		"Matthew": {
 			"en": "Matthew",
-			"ar": "",
+			"ar": "متى",
 			"id": "Matius"
 		},
 		"Mark": {
 			"en": "Mark",
-			"ar": "",
+			"ar": "مرقس",
 			"id": "Markus"
 		},
 		"Luke": {
 			"en": "Luke",
-			"ar": "",
+			"ar": "لوقا",
 			"id": "Lukas"
 		},
 		"John": {
 			"en": "John",
-			"ar": "",
+			"ar": "يوحنا",
 			"id": "Yohanes"
 		},
 		"Acts": {
 			"en": "Acts",
-			"ar": "",
-			"id": ""
+			"ar": "اعمال الرسل",
+			"id": "Kisah Para Rasul"
 		},
 		"Romans": {
 			"en": "Romans",
-			"ar": "",
-			"id": ""
+			"ar": "رومية",
+			"id": "Roma"
 		},
 		"1 Corinthians": {
 			"en": "1 Corinthians",
-			"ar": "",
-			"id": ""
+			"ar": "١ كورنثوس",
+			"id": "I Korintus"
 		},
 		"2 Corinthians": {
 			"en": "2 Corinthians",
-			"ar": "",
-			"id": ""
+			"ar": "٢ كورنثوس",
+			"id": "II Korintus"
 		},
 		"Galatians": {
 			"en": "Galatians",
-			"ar": "",
-			"id": ""
+			"ar": "غلاطية",
+			"id": "Galatia"
 		},
 		"Ephesians": {
 			"en": "Ephesians",
-			"ar": "",
-			"id": ""
+			"ar": "أفسس",
+			"id": "Efesus"
 		},
 		"Philippians": {
 			"en": "Philippians",
-			"ar": "",
-			"id": ""
+			"ar": "فيلبي",
+			"id": "Filipi"
 		},
 		"Colossians": {
 			"en": "Colossians",
-			"ar": "",
-			"id": ""
+			"ar": "كولوسي",
+			"id": "Kolose"
 		},
 		"1 Thessalonians": {
 			"en": "1 Thessalonians",
-			"ar": "",
-			"id": ""
+			"ar": "١ تسالونيكي",
+			"id": "I Tesalonika"
 		},
 		"2 Thessalonians": {
 			"en": "2 Thessalonians",
-			"ar": "",
-			"id": ""
+			"ar": "٢ تسالونيكي",
+			"id": "II Tesalonika"
 		},
 		"1 Timothy": {
 			"en": "1 Timothy",
-			"ar": "",
-			"id": ""
+			"ar": "١ تيموثاوس",
+			"id": "I Timotius"
 		},
 		"2 Timothy": {
 			"en": "2 Timothy",
-			"ar": "",
-			"id": ""
+			"ar": "٢ تيموثاوس",
+			"id": "II Timotius"
 		},
 		"Titus": {
 			"en": "Titus",
-			"ar": "",
-			"id": ""
+			"ar": "تيطس",
+			"id": "Titus"
 		},
 		"Philemon": {
 			"en": "Philemon",
-			"ar": "",
-			"id": ""
+			"ar": "فليمون",
+			"id": "Filemon"
 		},
 		"Hebrews": {
 			"en": "Hebrews",
-			"ar": "",
-			"id": ""
+			"ar": "عبرانيين",
+			"id": "Ibrani"
 		},
 		"James": {
 			"en": "James",
-			"ar": "",
-			"id": ""
+			"ar": "يعقوب",
+			"id": "Yakobus"
 		},
 		"1 Peter": {
 			"en": "1 Peter",
-			"ar": "",
-			"id": ""
+			"ar": "١ يطرس",
+			"id": "I Petrus"
 		},
 		"2 Peter": {
 			"en": "2 Peter",
-			"ar": "",
-			"id": ""
+			"ar": "٢ بطرس",
+			"id": "II Petrus"
 		},
 		"1 John": {
 			"en": "1 John",
-			"ar": "",
-			"id": ""
+			"ar": "١ يوحنا",
+			"id": "I Yohanes"
 		},
 		"2 John": {
 			"en": "2 John",
-			"ar": "",
-			"id": ""
+			"ar": "٢ يوحنا",
+			"id": "II Yohanes"
 		},
 		"3 John": {
 			"en": "3 John",
-			"ar": "",
-			"id": ""
+			"ar": "3 يوحنا",
+			"id": "III Yohanes"
 		},
 		"Jude": {
 			"en": "Jude",
-			"ar": "",
-			"id": ""
+			"ar": "يهوذا",
+			"id": "Yudas"
 		},
 		"Revelation": {
 			"en": "Revelation",
-			"ar": "",
-			"id": ""
+			"ar": "رؤيا يوحنا",
+			"id": "Wahyu"
 		},
 		"Liturgies": {
 			"en": "Liturgies",
@@ -1706,7 +1706,7 @@ export const Translation = (() => {
 		"St. Sarapamon Bishop of Nikios": {
 			"en": "St. Sarapamon Bishop of Nikios",
 			"ar": "الشهيد الأنبا صرابامون",
-			"id": ""
+			"id": "Santo Sarabamon dari Nikios"
 		},
 		"St. Pisura the Bishop": {
 			"en": "St. Pisura the Bishop",
@@ -2060,88 +2060,88 @@ export const Translation = (() => {
 		},
 		"Patriarch": {
 			"en": "Patriarch",
-			"ar": "",
-			"id": ""
+			"ar": "البطريرك",
+			"id": "Paus"
 		},
 		"Fractions": {
 			"en": "Fractions",
-			"ar": "",
-			"id": ""
+			"ar": "القسمة",
+			"id": "Fraksi"
 		},
 		"Doxologies": {
 			"en": "Doxologies",
 			"ar": "",
-			"id": ""
+			"id": "Doksologi"
 		},
 		"Papal": {
 			"en": "Papal",
-			"ar": "",
-			"id": ""
+			"ar": "البطريرك",
+			"id": "Paus"
 		},
 		"Papal Hymns": {
 			"en": "Papal Hymns",
 			"ar": "",
-			"id": ""
+			"id": "Lagu untuk Paus"
 		},
 		"Departed Patriarchs": {
 			"en": "Departed Patriarchs",
 			"ar": "",
-			"id": ""
+			"id": "Paus yang Berpulang "
 		},
 		"Psalms and Absolution": {
 			"en": "Psalms and Absolution",
 			"ar": "",
-			"id": ""
+			"id": "Mazmur dan Absolusi"
 		},
 		"Litanies": {
 			"en": "Litanies",
 			"ar": "",
-			"id": ""
+			"id": "Litani"
 		},
 		"Healing to the Sick": {
 			"en": "Healing to the Sick",
 			"ar": "",
-			"id": ""
+			"id": "Penyembuhan Orang Sakit"
 		},
 		"Three Absolutions": {
 			"en": "Three Absolutions",
 			"ar": "",
-			"id": ""
+			"id": "Tiga Absolusi"
 		},
 		"Procession of the Lamb": {
 			"en": "Procession of the Lamb",
 			"ar": "",
-			"id": ""
+			"id": "Prosessi Domba Allah"
 		},
 		"Absolution of the Servants": {
 			"en": "Absolution of the Servants",
 			"ar": "",
-			"id": ""
+			"id": "Absolusi Pelayan"
 		},
 		"Epistle Prayers": {
 			"en": "Epistle Prayers",
 			"ar": "",
-			"id": ""
+			"id": "Doa Surat"
 		},
 		"Mystery of the Gospel": {
 			"en": "Mystery of the Gospel",
 			"ar": "",
-			"id": ""
+			"id": "Rahasia Injil"
 		},
 		"Prayer of the Veil": {
 			"en": "Prayer of the Veil",
 			"ar": "",
-			"id": ""
+			"id": "Doa Veil"
 		},
 		"Great Fast Litanies": {
 			"en": "Great Fast Litanies",
 			"ar": "",
-			"id": ""
+			"id": "Litani Puasa Agung"
 		},
 		"Prayer at the Tomb": {
 			"en": "Prayer at the Tomb",
-			"ar": "",
-			"id": ""
+			"ar": "الصلاة على القبر",
+			"id": "Doa di depan Kubur"
 		},
 		"Benediction": {
 			"en": "Benediction",
