@@ -2145,78 +2145,78 @@ export const Translation = (() => {
 		},
 		"Benediction": {
 			"en": "Benediction",
-			"ar": "",
-			"id": ""
+			"ar": "البركة القصيرة",
+			"id": "Berkat Pendek"
 		},
 		"Special": {
 			"en": "Special",
-			"ar": "",
-			"id": ""
+			"ar": "مناسبات",
+			"id": "Acara Spesial"
 		},
 		"Baptism": {
 			"en": "Baptism",
-			"ar": "",
-			"id": ""
+			"ar": "المعمودية",
+			"id": "Baptisan"
 		},
 		"Absolution of the Woman (Boy)": {
 			"en": "Absolution of the Woman (Boy)",
-			"ar": "",
-			"id": ""
+			"ar": "تحليل المرأة (ذكرا)",
+			"id": "Absolusi Wanita (Laki-Laki)"
 		},
 		"Absolution of the Woman (Girl)": {
 			"en": "Absolution of the Woman (Girl)",
-			"ar": "",
-			"id": ""
+			"ar": "تحليل المرأة (انثى)",
+			"id": "Absolusi Wanita (Perempuan)"
 		},
 		"Holy Baptism": {
 			"en": "Holy Baptism",
-			"ar": "",
-			"id": ""
+			"ar": "المعمودية المقدسة",
+			"id": "Baptisan Suci"
 		},
 		"Consecrating the Water": {
 			"en": "Consecrating the Water",
-			"ar": "",
-			"id": ""
+			"ar": "تقديس ماء العماد",
+			"id": "Konsekrasi Air Baptisan"
 		},
 		"Holy Myron": {
 			"en": "Holy Myron",
-			"ar": "",
-			"id": ""
+			"ar": "الميرون المقدس",
+			"id": "Mairun Suci"
 		},
 		"Loosing the Girdle": {
 			"en": "Loosing the Girdle",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة حل زنار المعمدين",
+			"id": "Melepaskan Selempang Ikat Mereka yang Telah Dibaptis"
 		},
 		"Bathing Prayer": {
 			"en": "Bathing Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة الحميم",
+			"id": "Doa Pembasuhan"
 		},
 		"Crowning": {
 			"en": "Crowning",
-			"ar": "",
-			"id": ""
+			"ar": "الإكليل",
+			"id": "Pernikahan"
 		},
 		"Engagement Prayer": {
 			"en": "Engagement Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة الخطبة",
+			"id": "Doa Bertunangan"
 		},
 		"Crowning Prayer": {
 			"en": "Crowning Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة الاكليل",
+			"id": "Doa Pernikahan"
 		},
 		"Second Marriage Prayer": {
 			"en": "Second Marriage Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة الزيجة الثانية",
+			"id": "Doa untuk Pernikahan Kedua"
 		},
 		"Unction": {
 			"en": "Unction",
-			"ar": "",
-			"id": ""
+			"ar": "المسحة المقدسة",
+			"id": "Pengurapan Suci"
 		},
 		"First Prayer": {
 			"en": "First Prayer",
