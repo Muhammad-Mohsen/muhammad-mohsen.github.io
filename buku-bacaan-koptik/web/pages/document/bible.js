@@ -12,7 +12,7 @@ export const BibleRef = (function () {
 	let nkjv, svd, tb;
 
 	async function render(node) {
-		const ref = node.getAttribute('reference').replace(/, /g, '').replace(/; /g, ''); // remove stupid spaces;
+		const ref = node.getAttribute('reference').replace(/, /g, ',').replace(/; /g, ';'); // remove stupid spaces;
 		await setBooks(ref);
 
 		const expandedRef = expandRef(ref);
