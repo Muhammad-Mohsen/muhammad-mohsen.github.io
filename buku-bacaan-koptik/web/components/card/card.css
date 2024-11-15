@@ -18,4 +18,10 @@ li.card {
 		color: var(--main-fg);
 		font-weight: 400;
 	}
+
+	&[disabled] {
+		filter: grayscale(1);
+		opacity: .3;
+		pointer-events: none;
+	}
 }

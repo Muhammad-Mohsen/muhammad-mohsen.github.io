@@ -7405,7 +7405,9 @@
 			"name": "Melodies",
 			"image": "assets/images/melodies.jpg",
 			"path": "melodies/Melodies",
-			"uri": "/melodies"
+			"uri": "/melodies",
+
+			"disabled": true
 		},
 		{
 			"name": "Index",

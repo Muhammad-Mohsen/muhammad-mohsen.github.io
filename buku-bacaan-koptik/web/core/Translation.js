@@ -2644,6 +2644,8 @@ export const Translation = (() => {
 
 		document.querySelectorAll('[i18n]').forEach(elem => {
 			const textNode = elem.childNodes[0];
+			if (!textNode) return; // can be null if elem is empty
+
 			const key = elem.getAttribute('i18n');
 			textNode.textContent = translations[key]?.[lang] || key;
 		});
