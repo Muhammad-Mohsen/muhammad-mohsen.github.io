@@ -2633,8 +2633,8 @@ export const Translation = (() => {
 
 	function setKeys() {
 		document.querySelectorAll('[i18n]').forEach(elem => {
-			if (!elem.getAttribute('i18n')) elem.setAttribute('i18n', elem.childNodes[0].textContent.replace(/[\t\n]/g, ''));
-
+			if (elem.getAttribute('i18n') || !elem.innerHTML) return; // already has the key, or empty
+			elem.setAttribute('i18n', elem.childNodes[0].textContent.replace(/[\t\n]/g, ''));
 		});
 	}
 
@@ -2644,6 +2644,8 @@ export const Translation = (() => {
 
 		document.querySelectorAll('[i18n]').forEach(elem => {
 			const textNode = elem.childNodes[0];
+			if (!textNode) return; // can be null if elem is empty
+
 			const key = elem.getAttribute('i18n');
 			textNode.textContent = translations[key]?.[lang] || key;
 		});
