@@ -1710,122 +1710,122 @@ export const Translation = (() => {
 		},
 		"St. Pisura the Bishop": {
 			"en": "St. Pisura the Bishop",
-			"ar": "",
+			"ar": "القديس أنبا بيسوره الأسقف",
 			"id": ""
 		},
 		"St. Castor of Bardanuha": {
 			"en": "St. Castor of Bardanuha",
-			"ar": "",
+			"ar": "القديس أبا قسطور البردنوهي",
 			"id": ""
 		},
 		"St. Bisada the Bishop": {
 			"en": "St. Bisada the Bishop",
-			"ar": "",
+			"ar": "القديس الأنبا بِسادة الأسقف",
 			"id": ""
 		},
 		"St. Dioscorus and St. Esklabius": {
 			"en": "St. Dioscorus and St. Esklabius",
-			"ar": "",
+			"ar": "القديس ديسقورس وسكلابيوس أخيه",
 			"id": ""
 		},
 		"St. Maurice": {
 			"en": "St. Maurice",
-			"ar": "",
+			"ar": "الشهيد موريـــس",
 			"id": ""
 		},
 		"St. Philotheus": {
 			"en": "St. Philotheus",
-			"ar": "",
+			"ar": "القديس فيلوثاوُس",
 			"id": ""
 		},
 		"St. Isi and St. Thecla His Sister": {
 			"en": "St. Isi and St. Thecla His Sister",
-			"ar": "",
+			"ar": "لقديسين إيسى وتكلا أخته",
 			"id": ""
 		},
 		"St. George Muzahim": {
 			"en": "St. George Muzahim",
-			"ar": "",
+			"ar": "الشهيد مار جرجس المزاحم",
 			"id": ""
 		},
 		"St. Julius of Ekbehs": {
 			"en": "St. Julius of Ekbehs",
-			"ar": "",
+			"ar": "القديس يوليوس الإقفهصي",
 			"id": ""
 		},
 		"St. Peter the Seal of the Martyrs": {
 			"en": "St. Peter the Seal of the Martyrs",
-			"ar": "",
+			"ar": "استشهاد البابا بطرس خاتم الشهداء",
 			"id": ""
 		},
 		"St. Cyprian and St. Justina": {
 			"en": "St. Cyprian and St. Justina",
-			"ar": "",
+			"ar": "الشهيد كبريانوس و الشهيدة يوستينا",
 			"id": ""
 		},
 		"Forty-Nine Martyrs and Elders of Scetis": {
 			"en": "Forty-Nine Martyrs and Elders of Scetis",
-			"ar": "",
+			"ar": "تسعة وأربعون شهيدا شيوخ شيهات",
 			"id": ""
 		},
 		"Martyrs of Akmim": {
 			"en": "Martyrs of Akmim",
-			"ar": "",
+			"ar": "شهداء أخميم",
 			"id": ""
 		},
 		"Martyrs of Fayoum": {
 			"en": "Martyrs of Fayoum",
-			"ar": "",
+			"ar": "الشهداء الفيوم",
 			"id": ""
 		},
 		"Female Martyrs": {
 			"en": "Female Martyrs",
-			"ar": "",
+			"ar": "الشهيدات",
 			"id": ""
 		},
 		"St. Demiana": {
 			"en": "St. Demiana",
-			"ar": "",
+			"ar": "الشهيدة دميانه",
 			"id": ""
 		},
 		"St. Dolagy": {
 			"en": "St. Dolagy",
-			"ar": "",
+			"ar": "الشهيدة دولاجى",
 			"id": ""
 		},
 		"St. Barbara": {
 			"en": "St. Barbara",
-			"ar": "",
+			"ar": "القديسة بربارة",
 			"id": ""
 		},
 		"St. Juliana": {
 			"en": "St. Juliana",
-			"ar": "",
+			"ar": "القديسة يوليانه",
 			"id": ""
 		},
 		"St. Marina the Martyr": {
 			"en": "St. Marina the Martyr",
-			"ar": "",
+			"ar": "الشهيدة مارينا",
 			"id": ""
 		},
 		"St. Rebecca and Her Five Children": {
 			"en": "St. Rebecca and Her Five Children",
-			"ar": "",
+			"ar": "الشهيدة رفقة وأولادها الخمسة",
 			"id": ""
 		},
 		"St. Catherine of Alexandria": {
 			"en": "St. Catherine of Alexandria",
-			"ar": "",
+			"ar": "الشهيدة كاترين الإسكندرانية",
 			"id": ""
 		},
 		"Male Saints": {
 			"en": "Male Saints",
-			"ar": "",
+			"ar": "القديسون",
 			"id": ""
 		},
 		"St. Joseph the Carpenter": {
 			"en": "St. Joseph the Carpenter",
-			"ar": "",
+			"ar": "القديس يوسف النجار",
 			"id": ""
 		},
 		"St. Anthony the Great": {
@@ -2220,408 +2220,408 @@ export const Translation = (() => {
 		},
 		"First Prayer": {
 			"en": "First Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "الصلاة الأولى",
+			"id": "Doa Pertama"
 		},
 		"Second Prayer": {
 			"en": "Second Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "الصلاة الثانية",
+			"id": "Doa Kedua"
 		},
 		"Third Prayer": {
 			"en": "Third Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "الصلاة الثالثة",
+			"id": "Doa Ketiga"
 		},
 		"Fourth Prayer": {
 			"en": "Fourth Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "الصلاة الرابعة",
+			"id": "Doa Keempat"
 		},
 		"Fifth Prayer": {
 			"en": "Fifth Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "Doa Kelima",
+			"id": "الصلاة الخامسة"
 		},
 		"Sixth Prayer": {
 			"en": "Sixth Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "الصلاة السادسة",
+			"id": "Doa Keempat"
 		},
 		"Seventh Prayer": {
 			"en": "Seventh Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "الصلاة السابعة",
+			"id": "Doa Ketujuh"
 		},
 		"Veneration": {
 			"en": "Veneration",
-			"ar": "",
-			"id": ""
+			"ar": "التمجيد",
+			"id": "Pujian Orang Kudus"
 		},
 		"Funeral": {
 			"en": "Funeral",
-			"ar": "",
-			"id": ""
+			"ar": "الجناز",
+			"id": "Pemakaman"
 		},
 		"Men": {
 			"en": "Men",
-			"ar": "",
-			"id": ""
+			"ar": "الرجال الكبار",
+			"id": "Laki-Laki Dewasa"
 		},
 		"Women": {
 			"en": "Women",
-			"ar": "",
-			"id": ""
+			"ar": "النساء الكبار",
+			"id": "Perempuan Dewasa"
 		},
 		"Women During Delivery": {
 			"en": "Women During Delivery",
-			"ar": "",
-			"id": ""
+			"ar": "تجنيز النساء أثناء الولادة",
+			"id": "Perempuan Saat Mlahirkan"
 		},
 		"Boys": {
 			"en": "Boys",
-			"ar": "",
-			"id": ""
+			"ar": "الصبيان",
+			"id": "Pemuda - Laki-Laki"
 		},
 		"Girls": {
 			"en": "Girls",
-			"ar": "",
-			"id": ""
+			"ar": "البنات",
+			"id": "Pemuda - Perempuan"
 		},
 		"Bishops": {
 			"en": "Bishops",
-			"ar": "",
-			"id": ""
+			"ar": "الأساقفة",
+			"id": "Para Uskup"
 		},
 		"Monk Priests": {
 			"en": "Monk Priests",
-			"ar": "",
-			"id": ""
+			"ar": "الرهبان الكهنة",
+			"id": "Para Biarawan sang Imam"
 		},
 		"Monks": {
 			"en": "Monks",
-			"ar": "",
-			"id": ""
+			"ar": "الرهبان",
+			"id": "Para Biarawan"
 		},
 		"Nuns": {
 			"en": "Nuns",
-			"ar": "",
-			"id": ""
+			"ar": "الراهبات",
+			"id": "Para Biarawati"
 		},
 		"3rd and 40th Days": {
 			"en": "3rd and 40th Days",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة الثالث والاربعين",
+			"id": "Doa Hari Ketiga dan Keempat Puluh"
 		},
 		"Consecrations": {
 			"en": "Consecrations",
-			"ar": "",
-			"id": ""
+			"ar": "التكريس",
+			"id": "konsekrasi"
 		},
 		"Church": {
 			"en": "Church",
-			"ar": "",
-			"id": ""
+			"ar": "الكنيسة",
+			"id": "Gereja"
 		},
 		"Part 1": {
 			"en": "Part 1",
-			"ar": "",
-			"id": ""
+			"ar": "الجزء 1",
+			"id": "Bagian ke-1"
 		},
 		"Part 2": {
 			"en": "Part 2",
-			"ar": "",
-			"id": ""
+			"ar": "الجزء 2",
+			"id": "Bagian ke-2"
 		},
 		"Part 3": {
 			"en": "Part 3",
-			"ar": "",
-			"id": ""
+			"ar": "الجزء 3",
+			"id": "Bagian ke-3"
 		},
 		"Part 4": {
 			"en": "Part 4",
-			"ar": "",
-			"id": ""
+			"ar": "الجزء الرابع",
+			"id": "Bagian ke-4"
 		},
 		"Altar": {
 			"en": "Altar",
-			"ar": "",
-			"id": ""
+			"ar": "المذبح",
+			"id": "Altar"
 		},
 		"Vessels, Censers, and Icons": {
 			"en": "Vessels, Censers, and Icons",
-			"ar": "",
-			"id": ""
+			"ar": "صلوات تكريس الأواني والمجامر والأيقونات",
+			"id": "Konsekrasi Piring, Pedupaan dan Ikon"
 		},
 		"Baptistery": {
 			"en": "Baptistery",
-			"ar": "",
-			"id": ""
+			"ar": "المعمودية",
+			"id": "Kolam Baptisan"
 		},
 		"Cornerstone": {
 			"en": "Cornerstone",
-			"ar": "",
-			"id": ""
+			"ar": "حجر الأساس",
+			"id": "Batu Fondasi"
 		},
 		"Oil": {
 			"en": "Oil",
-			"ar": "",
-			"id": ""
+			"ar": "الزيت",
+			"id": "Minyak"
 		},
 		"Myron": {
 			"en": "Myron",
-			"ar": "",
-			"id": ""
+			"ar": "الميرون",
+			"id": "Mairon"
 		},
 		"Preparation": {
 			"en": "Preparation",
-			"ar": "",
-			"id": ""
+			"ar": "الأعداد",
+			"id": "Mempersiapkan"
 		},
 		"Consecration": {
 			"en": "Consecration",
-			"ar": "",
-			"id": ""
+			"ar": "التكريس",
+			"id": "Konsekrasi"
 		},
 		"Oil of Gladness": {
 			"en": "Oil of Gladness",
-			"ar": "",
-			"id": ""
+			"ar": "زيت الفرح",
+			"id": "Minyak Kegembiraan"
 		},
 		"Pre-sanctified Chrism": {
 			"en": "Pre-sanctified Chrism",
-			"ar": "",
-			"id": ""
+			"ar": "إيداع الخميرة",
+			"id": "Penambahan Fermipan"
 		},
 		"Ordinations": {
 			"en": "Ordinations",
-			"ar": "",
-			"id": ""
+			"ar": "الرسامات",
+			"id": "Ordinasi"
 		},
 		"Chanter": {
 			"en": "Chanter",
-			"ar": "",
-			"id": ""
+			"ar": "الابصلتس",
+			"id": "Penyanyi - Psaltos"
 		},
 		"Reader": {
 			"en": "Reader",
-			"ar": "",
-			"id": ""
+			"ar": "الاغنسطس",
+			"id": "Pembaca - Oghnostos"
 		},
 		"Subdeacon": {
 			"en": "Subdeacon",
-			"ar": "",
-			"id": ""
+			"ar": "الأيبوذياكون",
+			"id": "Ebediakon"
 		},
 		"Deacon": {
 			"en": "Deacon",
-			"ar": "",
-			"id": ""
+			"ar": "الشماس",
+			"id": "Diakon"
 		},
 		"Archdeacon": {
 			"en": "Archdeacon",
-			"ar": "",
-			"id": ""
+			"ar": "رئيس الشمامسة",
+			"id": "Kepala Diaken (Arch-diaken)"
 		},
 		"Priest": {
 			"en": "Priest",
-			"ar": "",
-			"id": ""
+			"ar": "الكاهن",
+			"id": "Imam"
 		},
 		"Hegumen": {
 			"en": "Hegumen",
-			"ar": "",
-			"id": ""
+			"ar": "القمص",
+			"id": "Hegumen"
 		},
 		"Bishop": {
 			"en": "Bishop",
-			"ar": "",
-			"id": ""
+			"ar": "الأسقف",
+			"id": "Seorang Uskup"
 		},
 		"Metropolitan": {
 			"en": "Metropolitan",
-			"ar": "",
-			"id": ""
+			"ar": "المطران",
+			"id": "Metropolitan"
 		},
 		"Papal Enthronement": {
 			"en": "Papal Enthronement",
-			"ar": "",
+			"ar": "تنصيب قداسة البابا",
 			"id": ""
 		},
 		"Monk": {
 			"en": "Monk",
-			"ar": "",
-			"id": ""
+			"ar": "الراهب",
+			"id": "seorang Biarawan"
 		},
 		"Sisters": {
 			"en": "Sisters",
-			"ar": "",
-			"id": ""
+			"ar": "المكرسات",
+			"id": "Wanita Ditahbiskan"
 		},
 		"Reception of New Priest": {
 			"en": "Reception of New Priest",
-			"ar": "",
-			"id": ""
+			"ar": "استقبال الكاهن الجديد",
+			"id": "Penerimaan Imam Baru"
 		},
 		"Home Blessing": {
 			"en": "Home Blessing",
-			"ar": "",
-			"id": ""
+			"ar": "تبريك المنازل",
+			"id": "Doa untuk Memberkati Rumah"
 		},
 		"Prostration": {
 			"en": "Prostration",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة السجدة",
+			"id": "Doa Bersujud"
 		},
 		"Praises": {
 			"en": "Praises",
-			"ar": "",
-			"id": ""
+			"ar": "تسبحة",
+			"id": "Pujian"
 		},
 		"First Prostration": {
 			"en": "First Prostration",
-			"ar": "",
-			"id": ""
+			"ar": "السجدة الأولى",
+			"id": "Doa Bersujud Pertama"
 		},
 		"Second Prostration": {
 			"en": "Second Prostration",
-			"ar": "",
-			"id": ""
+			"ar": "السجدة الثانية",
+			"id": "Doa Bersujud Kedua"
 		},
 		"Third Prostration": {
 			"en": "Third Prostration",
-			"ar": "",
-			"id": ""
+			"ar": "السجدة الثالثة",
+			"id": "Doa Bersujud Ketiga"
 		},
 		"Pascha": {
 			"en": "Pascha",
-			"ar": "",
-			"id": ""
+			"ar": "البصخة",
+			"id": "Doa Paskah"
 		},
 		"Sunday": {
 			"en": "Sunday",
-			"ar": "",
-			"id": ""
+			"ar": "الأحد",
+			"id": "Minggu"
 		},
 		"General Funeral Prayer": {
 			"en": "General Funeral Prayer",
-			"ar": "",
-			"id": ""
+			"ar": "صلاة الجناز العام",
+			"id": "Doa Pemakaman Umum"
 		},
 		"Insights": {
 			"en": "Insights",
-			"ar": "",
+			"ar": "بيان",
 			"id": ""
 		},
 		"Sunday Day": {
 			"en": "Sunday Day",
-			"ar": "",
-			"id": ""
+			"ar": "يوم الاحد",
+			"id": "Hari Minggu"
 		},
 		"Monday Eve": {
 			"en": "Monday Eve",
-			"ar": "",
-			"id": ""
+			"ar": "ليلة لأثنين",
+			"id": "Malam Hari Senin"
 		},
 		"Monday": {
 			"en": "Monday",
-			"ar": "",
-			"id": ""
+			"ar": "الاثنين",
+			"id": "Senin"
 		},
 		"Monday Day": {
 			"en": "Monday Day",
-			"ar": "",
-			"id": ""
+			"ar": "يوم الاثنين",
+			"id": "Hari Senin"
 		},
 		"Tuesday Eve": {
 			"en": "Tuesday Eve",
-			"ar": "",
-			"id": ""
+			"ar": "ليلة الثلاثاء",
+			"id": "Malam Hari Selasa"
 		},
 		"Tuesday": {
 			"en": "Tuesday",
-			"ar": "",
-			"id": ""
+			"ar": "الثلاثاء",
+			"id": "Selasa"
 		},
 		"Tuesday Day": {
 			"en": "Tuesday Day",
-			"ar": "",
-			"id": ""
+			"ar": "يوم الثلاثاء",
+			"id": "Hari Selasa"
 		},
 		"Wednesday Eve": {
 			"en": "Wednesday Eve",
-			"ar": "",
-			"id": ""
+			"ar": "ليلة الأربعاء",
+			"id": "Malam Hari Rabu"
 		},
 		"Wednesday": {
 			"en": "Wednesday",
-			"ar": "",
-			"id": ""
+			"ar": "الأربعاء",
+			"id": "Rabu"
 		},
 		"Wednesday Day": {
 			"en": "Wednesday Day",
-			"ar": "",
-			"id": ""
+			"ar": "يوم الأربعاء",
+			"id": "Hari Rabu"
 		},
 		"Thursday Eve": {
 			"en": "Thursday Eve",
-			"ar": "",
-			"id": ""
+			"ar": "ليلة الخميس",
+			"id": "Malam Hari Kamis"
 		},
 		"Thursday": {
 			"en": "Thursday",
-			"ar": "",
-			"id": ""
+			"ar": "الخميس",
+			"id": "Kamis"
 		},
 		"Thursday Day": {
 			"en": "Thursday Day",
-			"ar": "",
-			"id": ""
+			"ar": "يوم الخميس",
+			"id": "Hari Kamis"
 		},
 		"Liturgy of the Waters": {
 			"en": "Liturgy of the Waters",
-			"ar": "",
-			"id": ""
+			"ar": "قداس المياه",
+			"id": "Liturgi Air"
 		},
 		"Friday Eve": {
 			"en": "Friday Eve",
-			"ar": "",
-			"id": ""
+			"ar": "ليله الجمعة",
+			"id": "Malam hari Jumat"
 		},
 		"Friday": {
 			"en": "Friday",
-			"ar": "",
-			"id": ""
+			"ar": "الجمعة",
+			"id": "Jumat"
 		},
 		"Saturday": {
 			"en": "Saturday",
-			"ar": "",
-			"id": ""
+			"ar": "السبت",
+			"id": "Sabtu"
 		},
 		"Third and Sixth Hours": {
 			"en": "Third and Sixth Hours",
-			"ar": "",
-			"id": ""
+			"ar": "الساعة السادسة والتاسعة",
+			"id": "Jam Keenam dan Kesembilan"
 		},
 		"Ninth Hour": {
 			"en": "Ninth Hour",
-			"ar": "",
-			"id": ""
+			"ar": "الساعة التاسعة",
+			"id": "Kam Kesembilan"
 		},
 		"Resurrection": {
 			"en": "Resurrection",
-			"ar": "",
-			"id": ""
+			"ar": "القيامة",
+			"id": "Kebangkitan"
 		},
 		"Lakkan": {
 			"en": "Lakkan",
-			"ar": "",
-			"id": ""
+			"ar": "اللقان",
+			"id": "lakkan"
 		},
 		"Apostles Feast": {
 			"en": "Apostles Feast",
-			"ar": "",
-			"id": ""
+			"ar": "صوم الرسل",
+			"id": "Puasa Para Rasul"
 		},
 
 		"Settings": {
