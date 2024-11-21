@@ -8,13 +8,13 @@ export const DocumentOutline = (() => {
 		documentContainer = document;
 		outlineContainer = outline;
 
-		const titles = [...documentContainer.querySelectorAll('title-html')];
+		const titles = [...documentContainer.querySelectorAll('title-html, linkdocument')];
 		titles.forEach((t, i) => t.setAttribute('outline-index', i));
 
 		const html = titles.reduce((a, t) => a += t.outerHTML, HEADER_TEMPLATE);
 
 		outlineContainer.innerHTML = html;
-		[...outlineContainer.querySelectorAll('title-html')].forEach(t => t.setAttribute('onclick', 'DocumentOutline.scroll(this);'))
+		[...outlineContainer.querySelectorAll('title-html, linkdocument')].forEach(t => t.setAttribute('onclick', 'DocumentOutline.scroll(this);'))
 	}
 
 	function toggle(force) {
