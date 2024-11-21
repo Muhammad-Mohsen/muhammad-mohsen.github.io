@@ -9170,6 +9170,1634 @@
 				}
 			],
 			"uri": "/special"
+		},
+		{
+			"name": "include",
+			"image": "assets/images/agpeya.jpg",
+			"menu": [
+				{
+					"name": "AbsolutionOfTheServants",
+					"path": "include/AbsolutionOfTheServants",
+					"uri": "/include/AbsolutionOfTheServants"
+				},
+				{
+					"name": "AccordingToYourMercy",
+					"path": "include/AccordingToYourMercy",
+					"uri": "/include/AccordingToYourMercy"
+				},
+				{
+					"name": "Afermethre",
+					"path": "include/Afermethre",
+					"uri": "/include/Afermethre"
+				},
+				{
+					"name": "AfrekEtve",
+					"path": "include/AfrekEtve",
+					"uri": "/include/AfrekEtve"
+				},
+				{
+					"name": "AgainLetUsAsk",
+					"path": "include/AgainLetUsAsk",
+					"uri": "/include/AgainLetUsAsk"
+				},
+				{
+					"name": "Agios3",
+					"path": "include/Agios3",
+					"uri": "/include/Agios3"
+				},
+				{
+					"name": "AgiosAgiosAgios",
+					"path": "include/AgiosAgiosAgios",
+					"uri": "/include/AgiosAgiosAgios"
+				},
+				{
+					"name": "Alleluia",
+					"path": "include/Alleluia",
+					"uri": "/include/Alleluia"
+				},
+				{
+					"name": "Alleluia3",
+					"path": "include/Alleluia3",
+					"uri": "/include/Alleluia3"
+				},
+				{
+					"name": "AlleluiaGloryBeToOurGod",
+					"path": "include/AlleluiaGloryBeToOurGod",
+					"uri": "/include/AlleluiaGloryBeToOurGod"
+				},
+				{
+					"name": "AllTheChoirsRefrain",
+					"path": "include/AllTheChoirsRefrain",
+					"uri": "/include/AllTheChoirsRefrain"
+				},
+				{
+					"name": "AllYouHeavenlyOrders",
+					"path": "include/AllYouHeavenlyOrders",
+					"uri": "/include/AllYouHeavenlyOrders"
+				},
+				{
+					"name": "AlternateConfessionResponse",
+					"path": "include/AlternateConfessionResponse",
+					"uri": "/include/AlternateConfessionResponse"
+				},
+				{
+					"name": "AlternateLitanyOfTheGospel",
+					"path": "include/AlternateLitanyOfTheGospel",
+					"uri": "/include/AlternateLitanyOfTheGospel"
+				},
+				{
+					"name": "Amen",
+					"path": "include/Amen",
+					"uri": "/include/Amen"
+				},
+				{
+					"name": "AmenLordHaveMercy10",
+					"path": "include/AmenLordHaveMercy10",
+					"uri": "/include/AmenLordHaveMercy10"
+				},
+				{
+					"name": "AmenLordHaveMercy3",
+					"path": "include/AmenLordHaveMercy3",
+					"uri": "/include/AmenLordHaveMercy3"
+				},
+				{
+					"name": "AmenPeople",
+					"path": "include/AmenPeople",
+					"uri": "/include/AmenPeople"
+				},
+				{
+					"name": "Anaphora",
+					"path": "include/Anaphora",
+					"uri": "/include/Anaphora"
+				},
+				{
+					"name": "AnaphoraIntro.1",
+					"path": "include/AnaphoraIntro.1",
+					"uri": "/include/AnaphoraIntro.1"
+				},
+				{
+					"name": "AnaphoraIntro",
+					"path": "include/AnaphoraIntro",
+					"uri": "/include/AnaphoraIntro"
+				},
+				{
+					"name": "AnaphoraTheCherubim.1",
+					"path": "include/AnaphoraTheCherubim.1",
+					"uri": "/include/AnaphoraTheCherubim.1"
+				},
+				{
+					"name": "AnaphoraTheCherubim.2",
+					"path": "include/AnaphoraTheCherubim.2",
+					"uri": "/include/AnaphoraTheCherubim.2"
+				},
+				{
+					"name": "AnaphoraTheCherubim",
+					"path": "include/AnaphoraTheCherubim",
+					"uri": "/include/AnaphoraTheCherubim"
+				},
+				{
+					"name": "AndThoseWhoRightly",
+					"path": "include/AndThoseWhoRightly",
+					"uri": "/include/AndThoseWhoRightly"
+				},
+				{
+					"name": "AndWithYourSpirit",
+					"path": "include/AndWithYourSpirit",
+					"uri": "/include/AndWithYourSpirit"
+				},
+				{
+					"name": "AriseOLordGod",
+					"path": "include/AriseOLordGod",
+					"uri": "/include/AriseOLordGod"
+				},
+				{
+					"name": "AsItWasBasil",
+					"path": "include/AsItWasBasil",
+					"uri": "/include/AsItWasBasil"
+				},
+				{
+					"name": "Asomen",
+					"path": "include/Asomen",
+					"uri": "/include/Asomen"
+				},
+				{
+					"name": "AsomenRefrainEnglishArabic",
+					"path": "include/AsomenRefrainEnglishArabic",
+					"uri": "/include/AsomenRefrainEnglishArabic"
+				},
+				{
+					"name": "AsomenRefrainGreekCoptic",
+					"path": "include/AsomenRefrainGreekCoptic",
+					"uri": "/include/AsomenRefrainGreekCoptic"
+				},
+				{
+					"name": "AxionKeDikeon3",
+					"path": "include/AxionKeDikeon3",
+					"uri": "/include/AxionKeDikeon3"
+				},
+				{
+					"name": "BeforeYou",
+					"path": "include/BeforeYou",
+					"uri": "/include/BeforeYou"
+				},
+				{
+					"name": "BlessedBeTheLord",
+					"path": "include/BlessedBeTheLord",
+					"uri": "/include/BlessedBeTheLord"
+				},
+				{
+					"name": "BlessMeBlessMe",
+					"path": "include/BlessMeBlessMe",
+					"uri": "/include/BlessMeBlessMe"
+				},
+				{
+					"name": "BlessMeLo",
+					"path": "include/BlessMeLo",
+					"uri": "/include/BlessMeLo"
+				},
+				{
+					"name": "BowYourHeads",
+					"path": "include/BowYourHeads",
+					"uri": "/include/BowYourHeads"
+				},
+				{
+					"name": "CatholicEpistle",
+					"path": "include/CatholicEpistle",
+					"uri": "/include/CatholicEpistle"
+				},
+				{
+					"name": "CatholicEpistleIntroduction",
+					"path": "include/CatholicEpistleIntroduction",
+					"uri": "/include/CatholicEpistleIntroduction"
+				},
+				{
+					"name": "ChantedPsalmIntro",
+					"path": "include/ChantedPsalmIntro",
+					"uri": "/include/ChantedPsalmIntro"
+				},
+				{
+					"name": "ChristOurGod",
+					"path": "include/ChristOurGod",
+					"uri": "/include/ChristOurGod"
+				},
+				{
+					"name": "CommemorationOfTheSaints",
+					"path": "include/CommemorationOfTheSaints",
+					"uri": "/include/CommemorationOfTheSaints"
+				},
+				{
+					"name": "CommemorationOfTheSaintsDeaconResponse",
+					"path": "include/CommemorationOfTheSaintsDeaconResponse",
+					"uri": "/include/CommemorationOfTheSaintsDeaconResponse"
+				},
+				{
+					"name": "CommemorationOfTheSaintsHymns",
+					"path": "include/CommemorationOfTheSaintsHymns",
+					"uri": "/include/CommemorationOfTheSaintsHymns"
+				},
+				{
+					"name": "CommonHymnsOfResurrection",
+					"path": "include/CommonHymnsOfResurrection",
+					"uri": "/include/CommonHymnsOfResurrection"
+				},
+				{
+					"name": "Confession",
+					"path": "include/Confession",
+					"uri": "/include/Confession"
+				},
+				{
+					"name": "Creed",
+					"path": "include/Creed",
+					"uri": "/include/Creed"
+				},
+				{
+					"name": "CreedCollapsed",
+					"path": "include/CreedCollapsed",
+					"uri": "/include/CreedCollapsed"
+				},
+				{
+					"name": "CreedContents",
+					"path": "include/CreedContents",
+					"uri": "/include/CreedContents"
+				},
+				{
+					"name": "CreedPeople",
+					"path": "include/CreedPeople",
+					"uri": "/include/CreedPeople"
+				},
+				{
+					"name": "DoxaPatri",
+					"path": "include/DoxaPatri",
+					"uri": "/include/DoxaPatri"
+				},
+				{
+					"name": "DoxaPatriAlleluia",
+					"path": "include/DoxaPatriAlleluia",
+					"uri": "/include/DoxaPatriAlleluia"
+				},
+				{
+					"name": "EAghapy",
+					"path": "include/EAghapy",
+					"uri": "/include/EAghapy"
+				},
+				{
+					"name": "Ensofia",
+					"path": "include/Ensofia",
+					"uri": "/include/Ensofia"
+				},
+				{
+					"name": "EParthenos",
+					"path": "include/EParthenos",
+					"uri": "/include/EParthenos"
+				},
+				{
+					"name": "EpiclesisCyril",
+					"path": "include/EpiclesisCyril",
+					"uri": "/include/EpiclesisCyril"
+				},
+				{
+					"name": "EthveFai",
+					"path": "include/EthveFai",
+					"uri": "/include/EthveFai"
+				},
+				{
+					"name": "Eulogimenoc",
+					"path": "include/Eulogimenoc",
+					"uri": "/include/Eulogimenoc"
+				},
+				{
+					"name": "EulogimenocIntro.1",
+					"path": "include/EulogimenocIntro.1",
+					"uri": "/include/EulogimenocIntro.1"
+				},
+				{
+					"name": "EulogimenocIntro",
+					"path": "include/EulogimenocIntro",
+					"uri": "/include/EulogimenocIntro"
+				},
+				{
+					"name": "EveryNight",
+					"path": "include/EveryNight",
+					"uri": "/include/EveryNight"
+				},
+				{
+					"name": "EvnotiNaiNan.1",
+					"path": "include/EvnotiNaiNan.1",
+					"uri": "/include/EvnotiNaiNan.1"
+				},
+				{
+					"name": "EvnotiNaiNan.2",
+					"path": "include/EvnotiNaiNan.2",
+					"uri": "/include/EvnotiNaiNan.2"
+				},
+				{
+					"name": "EvnotiNaiNan.3",
+					"path": "include/EvnotiNaiNan.3",
+					"uri": "/include/EvnotiNaiNan.3"
+				},
+				{
+					"name": "EvnotiNaiNan.4",
+					"path": "include/EvnotiNaiNan.4",
+					"uri": "/include/EvnotiNaiNan.4"
+				},
+				{
+					"name": "EvnotiNaiNan",
+					"path": "include/EvnotiNaiNan",
+					"uri": "/include/EvnotiNaiNan"
+				},
+				{
+					"name": "EyrenhwcSeasonalResponse",
+					"path": "include/EyrenhwcSeasonalResponse",
+					"uri": "/include/EyrenhwcSeasonalResponse"
+				},
+				{
+					"name": "EyrenhwcSeasonalResponseShort",
+					"path": "include/EyrenhwcSeasonalResponseShort",
+					"uri": "/include/EyrenhwcSeasonalResponseShort"
+				},
+				{
+					"name": "FaiErePeoo",
+					"path": "include/FaiErePeoo",
+					"uri": "/include/FaiErePeoo"
+				},
+				{
+					"name": "FeastOfTheCrossExpositions",
+					"path": "include/FeastOfTheCrossExpositions",
+					"uri": "/include/FeastOfTheCrossExpositions"
+				},
+				{
+					"name": "FeeEthemsi",
+					"path": "include/FeeEthemsi",
+					"uri": "/include/FeeEthemsi"
+				},
+				{
+					"name": "FempsaGar",
+					"path": "include/FempsaGar",
+					"uri": "/include/FempsaGar"
+				},
+				{
+					"name": "FiveShortLitanies",
+					"path": "include/FiveShortLitanies",
+					"uri": "/include/FiveShortLitanies"
+				},
+				{
+					"name": "ForThisWeGlorifyHim",
+					"path": "include/ForThisWeGlorifyHim",
+					"uri": "/include/ForThisWeGlorifyHim"
+				},
+				{
+					"name": "ForYourPeople",
+					"path": "include/ForYourPeople",
+					"uri": "/include/ForYourPeople"
+				},
+				{
+					"name": "ForYourPeopleContents.1",
+					"path": "include/ForYourPeopleContents.1",
+					"uri": "/include/ForYourPeopleContents.1"
+				},
+				{
+					"name": "ForYourPeopleContents.2",
+					"path": "include/ForYourPeopleContents.2",
+					"uri": "/include/ForYourPeopleContents.2"
+				},
+				{
+					"name": "ForYourPeopleContents",
+					"path": "include/ForYourPeopleContents",
+					"uri": "/include/ForYourPeopleContents"
+				},
+				{
+					"name": "ForYourPeopleCyril",
+					"path": "include/ForYourPeopleCyril",
+					"uri": "/include/ForYourPeopleCyril"
+				},
+				{
+					"name": "Geneylion",
+					"path": "include/Geneylion",
+					"uri": "/include/Geneylion"
+				},
+				{
+					"name": "GloryAndHonor",
+					"path": "include/GloryAndHonor",
+					"uri": "/include/GloryAndHonor"
+				},
+				{
+					"name": "GloryBeToGodForever",
+					"path": "include/GloryBeToGodForever",
+					"uri": "/include/GloryBeToGodForever"
+				},
+				{
+					"name": "GloryBeToOurGodAgain",
+					"path": "include/GloryBeToOurGodAgain",
+					"uri": "/include/GloryBeToOurGodAgain"
+				},
+				{
+					"name": "GospelBishopIntro",
+					"path": "include/GospelBishopIntro",
+					"uri": "/include/GospelBishopIntro"
+				},
+				{
+					"name": "GreatFastLitanies",
+					"path": "include/GreatFastLitanies",
+					"uri": "/include/GreatFastLitanies"
+				},
+				{
+					"name": "GreatPinishti",
+					"path": "include/GreatPinishti",
+					"uri": "/include/GreatPinishti"
+				},
+				{
+					"name": "GreetOneAnotherLong",
+					"path": "include/GreetOneAnotherLong",
+					"uri": "/include/GreetOneAnotherLong"
+				},
+				{
+					"name": "GreetOneAnotherShort",
+					"path": "include/GreetOneAnotherShort",
+					"uri": "/include/GreetOneAnotherShort"
+				},
+				{
+					"name": "HailToTheBridalChamber",
+					"path": "include/HailToTheBridalChamber",
+					"uri": "/include/HailToTheBridalChamber"
+				},
+				{
+					"name": "HaveMercyUponUsPantocrator3",
+					"path": "include/HaveMercyUponUsPantocrator3",
+					"uri": "/include/HaveMercyUponUsPantocrator3"
+				},
+				{
+					"name": "HaveMercyUponUsPantocratorPriest3",
+					"path": "include/HaveMercyUponUsPantocratorPriest3",
+					"uri": "/include/HaveMercyUponUsPantocratorPriest3"
+				},
+				{
+					"name": "HaveMercyUponUsSavior3",
+					"path": "include/HaveMercyUponUsSavior3",
+					"uri": "/include/HaveMercyUponUsSavior3"
+				},
+				{
+					"name": "HaveMercyUponUsSaviorPriest3",
+					"path": "include/HaveMercyUponUsSaviorPriest3",
+					"uri": "/include/HaveMercyUponUsSaviorPriest3"
+				},
+				{
+					"name": "HealingToTheSick",
+					"path": "include/HealingToTheSick",
+					"uri": "/include/HealingToTheSick"
+				},
+				{
+					"name": "HealingToTheSickContents",
+					"path": "include/HealingToTheSickContents",
+					"uri": "/include/HealingToTheSickContents"
+				},
+				{
+					"name": "HealingToTheSickSilent",
+					"path": "include/HealingToTheSickSilent",
+					"uri": "/include/HealingToTheSickSilent"
+				},
+				{
+					"name": "HeWhoSitsUponTheCherubim",
+					"path": "include/HeWhoSitsUponTheCherubim",
+					"uri": "/include/HeWhoSitsUponTheCherubim"
+				},
+				{
+					"name": "HosannaInTheHighest",
+					"path": "include/HosannaInTheHighest",
+					"uri": "/include/HosannaInTheHighest"
+				},
+				{
+					"name": "HosannaResponse",
+					"path": "include/HosannaResponse",
+					"uri": "/include/HosannaResponse"
+				},
+				{
+					"name": "HosannaSundayExpositions",
+					"path": "include/HosannaSundayExpositions",
+					"uri": "/include/HosannaSundayExpositions"
+				},
+				{
+					"name": "HymnForThomas",
+					"path": "include/HymnForThomas",
+					"uri": "/include/HymnForThomas"
+				},
+				{
+					"name": "HymnOfBlessing",
+					"path": "include/HymnOfBlessing",
+					"uri": "/include/HymnOfBlessing"
+				},
+				{
+					"name": "HymnOfConstantine",
+					"path": "include/HymnOfConstantine",
+					"uri": "/include/HymnOfConstantine"
+				},
+				{
+					"name": "HymnOfSevenTunes",
+					"path": "include/HymnOfSevenTunes",
+					"uri": "/include/HymnOfSevenTunes"
+				},
+				{
+					"name": "HymnOfTheCenser",
+					"path": "include/HymnOfTheCenser",
+					"uri": "/include/HymnOfTheCenser"
+				},
+				{
+					"name": "HymnOfTheCross",
+					"path": "include/HymnOfTheCross",
+					"uri": "/include/HymnOfTheCross"
+				},
+				{
+					"name": "HymnOfTheOblations",
+					"path": "include/HymnOfTheOblations",
+					"uri": "/include/HymnOfTheOblations"
+				},
+				{
+					"name": "HymnOfTheResurrection",
+					"path": "include/HymnOfTheResurrection",
+					"uri": "/include/HymnOfTheResurrection"
+				},
+				{
+					"name": "HymnOfVirtues",
+					"path": "include/HymnOfVirtues",
+					"uri": "/include/HymnOfVirtues"
+				},
+				{
+					"name": "HymnsOfTheResurrection",
+					"path": "include/HymnsOfTheResurrection",
+					"uri": "/include/HymnsOfTheResurrection"
+				},
+				{
+					"name": "InaudiblePrayerForThePraxis",
+					"path": "include/InaudiblePrayerForThePraxis",
+					"uri": "/include/InaudiblePrayerForThePraxis"
+				},
+				{
+					"name": "InChristJesusOurLord",
+					"path": "include/InChristJesusOurLord",
+					"uri": "/include/InChristJesusOurLord"
+				},
+				{
+					"name": "InstitutionNarrative",
+					"path": "include/InstitutionNarrative",
+					"uri": "/include/InstitutionNarrative"
+				},
+				{
+					"name": "Jefcmarwout",
+					"path": "include/Jefcmarwout",
+					"uri": "/include/Jefcmarwout"
+				},
+				{
+					"name": "JesusChristIsTheSame",
+					"path": "include/JesusChristIsTheSame",
+					"uri": "/include/JesusChristIsTheSame"
+				},
+				{
+					"name": "JoyfulDaysComment",
+					"path": "include/JoyfulDaysComment",
+					"uri": "/include/JoyfulDaysComment"
+				},
+				{
+					"name": "JudasWhoHasBrokenTheLaw",
+					"path": "include/JudasWhoHasBrokenTheLaw",
+					"uri": "/include/JudasWhoHasBrokenTheLaw"
+				},
+				{
+					"name": "JudasWhoHasBrokenTheLawRefrain",
+					"path": "include/JudasWhoHasBrokenTheLawRefrain",
+					"uri": "/include/JudasWhoHasBrokenTheLawRefrain"
+				},
+				{
+					"name": "KcmarwoutSeasonalResponse",
+					"path": "include/KcmarwoutSeasonalResponse",
+					"uri": "/include/KcmarwoutSeasonalResponse"
+				},
+				{
+					"name": "KcmarwoutSeasonalResponseComment",
+					"path": "include/KcmarwoutSeasonalResponseComment",
+					"uri": "/include/KcmarwoutSeasonalResponseComment"
+				},
+				{
+					"name": "KcmarwoutSeasonalResponseNoComment",
+					"path": "include/KcmarwoutSeasonalResponseNoComment",
+					"uri": "/include/KcmarwoutSeasonalResponseNoComment"
+				},
+				{
+					"name": "KcmarwoutSeasonalResponseShort",
+					"path": "include/KcmarwoutSeasonalResponseShort",
+					"uri": "/include/KcmarwoutSeasonalResponseShort"
+				},
+				{
+					"name": "KcmarwoutSeasonalResponseShortNoComment",
+					"path": "include/KcmarwoutSeasonalResponseShortNoComment",
+					"uri": "/include/KcmarwoutSeasonalResponseShortNoComment"
+				},
+				{
+					"name": "KeepHimSecureForUs",
+					"path": "include/KeepHimSecureForUs",
+					"uri": "/include/KeepHimSecureForUs"
+				},
+				{
+					"name": "KeepThemSecureForUs",
+					"path": "include/KeepThemSecureForUs",
+					"uri": "/include/KeepThemSecureForUs"
+				},
+				{
+					"name": "KeNinAmenAlleluia",
+					"path": "include/KeNinAmenAlleluia",
+					"uri": "/include/KeNinAmenAlleluia"
+				},
+				{
+					"name": "KhenEfran",
+					"path": "include/KhenEfran",
+					"uri": "/include/KhenEfran"
+				},
+				{
+					"name": "KhenEfranAmen",
+					"path": "include/KhenEfranAmen",
+					"uri": "/include/KhenEfranAmen"
+				},
+				{
+					"name": "LetMySoulLive",
+					"path": "include/LetMySoulLive",
+					"uri": "/include/LetMySoulLive"
+				},
+				{
+					"name": "LetUsAttend",
+					"path": "include/LetUsAttend",
+					"uri": "/include/LetUsAttend"
+				},
+				{
+					"name": "LetUsBow",
+					"path": "include/LetUsBow",
+					"uri": "/include/LetUsBow"
+				},
+				{
+					"name": "LetUsEntreat",
+					"path": "include/LetUsEntreat",
+					"uri": "/include/LetUsEntreat"
+				},
+				{
+					"name": "LetUsEntreatContents",
+					"path": "include/LetUsEntreatContents",
+					"uri": "/include/LetUsEntreatContents"
+				},
+				{
+					"name": "LetUsGiveThanks",
+					"path": "include/LetUsGiveThanks",
+					"uri": "/include/LetUsGiveThanks"
+				},
+				{
+					"name": "LetUsPray",
+					"path": "include/LetUsPray",
+					"uri": "/include/LetUsPray"
+				},
+				{
+					"name": "LiftUpYourHearts",
+					"path": "include/LiftUpYourHearts",
+					"uri": "/include/LiftUpYourHearts"
+				},
+				{
+					"name": "LitanyOfTheGospel",
+					"path": "include/LitanyOfTheGospel",
+					"uri": "/include/LitanyOfTheGospel"
+				},
+				{
+					"name": "LitanyOfTheGospelIntro",
+					"path": "include/LitanyOfTheGospelIntro",
+					"uri": "/include/LitanyOfTheGospelIntro"
+				},
+				{
+					"name": "LitanyOfTheGospelIntroStandard",
+					"path": "include/LitanyOfTheGospelIntroStandard",
+					"uri": "/include/LitanyOfTheGospelIntroStandard"
+				},
+				{
+					"name": "LiturgyExpositions",
+					"path": "include/LiturgyExpositions",
+					"uri": "/include/LiturgyExpositions"
+				},
+				{
+					"name": "LiturgyOfTheFaithfulContent",
+					"path": "include/LiturgyOfTheFaithfulContent",
+					"uri": "/include/LiturgyOfTheFaithfulContent"
+				},
+				{
+					"name": "LiturgyOfTheWordContent",
+					"path": "include/LiturgyOfTheWordContent",
+					"uri": "/include/LiturgyOfTheWordContent"
+				},
+				{
+					"name": "LookTowardsTheEast",
+					"path": "include/LookTowardsTheEast",
+					"uri": "/include/LookTowardsTheEast"
+				},
+				{
+					"name": "LooseRemit",
+					"path": "include/LooseRemit",
+					"uri": "/include/LooseRemit"
+				},
+				{
+					"name": "LooseTheBound.1",
+					"path": "include/LooseTheBound.1",
+					"uri": "/include/LooseTheBound.1"
+				},
+				{
+					"name": "LooseTheBound.2",
+					"path": "include/LooseTheBound.2",
+					"uri": "/include/LooseTheBound.2"
+				},
+				{
+					"name": "LooseTheBound.3",
+					"path": "include/LooseTheBound.3",
+					"uri": "/include/LooseTheBound.3"
+				},
+				{
+					"name": "LooseTheBound.4",
+					"path": "include/LooseTheBound.4",
+					"uri": "/include/LooseTheBound.4"
+				},
+				{
+					"name": "LooseTheBound.5",
+					"path": "include/LooseTheBound.5",
+					"uri": "/include/LooseTheBound.5"
+				},
+				{
+					"name": "LooseTheBound.6",
+					"path": "include/LooseTheBound.6",
+					"uri": "/include/LooseTheBound.6"
+				},
+				{
+					"name": "LooseTheBound",
+					"path": "include/LooseTheBound",
+					"uri": "/include/LooseTheBound"
+				},
+				{
+					"name": "LooseTheBoundBishop",
+					"path": "include/LooseTheBoundBishop",
+					"uri": "/include/LooseTheBoundBishop"
+				},
+				{
+					"name": "LordHaveMercy",
+					"path": "include/LordHaveMercy",
+					"uri": "/include/LordHaveMercy"
+				},
+				{
+					"name": "LordHaveMercy10",
+					"path": "include/LordHaveMercy10",
+					"uri": "/include/LordHaveMercy10"
+				},
+				{
+					"name": "LordHaveMercy100",
+					"path": "include/LordHaveMercy100",
+					"uri": "/include/LordHaveMercy100"
+				},
+				{
+					"name": "LordHaveMercy3",
+					"path": "include/LordHaveMercy3",
+					"uri": "/include/LordHaveMercy3"
+				},
+				{
+					"name": "LordHaveMercy41",
+					"path": "include/LordHaveMercy41",
+					"uri": "/include/LordHaveMercy41"
+				},
+				{
+					"name": "LordHaveMercy41Intro",
+					"path": "include/LordHaveMercy41Intro",
+					"uri": "/include/LordHaveMercy41Intro"
+				},
+				{
+					"name": "LordHaveMercyNoRole",
+					"path": "include/LordHaveMercyNoRole",
+					"uri": "/include/LordHaveMercyNoRole"
+				},
+				{
+					"name": "LordHearUs",
+					"path": "include/LordHearUs",
+					"uri": "/include/LordHearUs"
+				},
+				{
+					"name": "LordsPrayer",
+					"path": "include/LordsPrayer",
+					"uri": "/include/LordsPrayer"
+				},
+				{
+					"name": "LordsPrayerCollapsed",
+					"path": "include/LordsPrayerCollapsed",
+					"uri": "/include/LordsPrayerCollapsed"
+				},
+				{
+					"name": "LordsPrayerContents",
+					"path": "include/LordsPrayerContents",
+					"uri": "/include/LordsPrayerContents"
+				},
+				{
+					"name": "LordsPrayerNoTitle",
+					"path": "include/LordsPrayerNoTitle",
+					"uri": "/include/LordsPrayerNoTitle"
+				},
+				{
+					"name": "MayGodBlessUs",
+					"path": "include/MayGodBlessUs",
+					"uri": "/include/MayGodBlessUs"
+				},
+				{
+					"name": "MayTheClergy",
+					"path": "include/MayTheClergy",
+					"uri": "/include/MayTheClergy"
+				},
+				{
+					"name": "MayTheSayingsOfGod",
+					"path": "include/MayTheSayingsOfGod",
+					"uri": "/include/MayTheSayingsOfGod"
+				},
+				{
+					"name": "Nefcenti",
+					"path": "include/Nefcenti",
+					"uri": "/include/Nefcenti"
+				},
+				{
+					"name": "Niromi",
+					"path": "include/Niromi",
+					"uri": "/include/Niromi"
+				},
+				{
+					"name": "Nisavev.1",
+					"path": "include/Nisavev.1",
+					"uri": "/include/Nisavev.1"
+				},
+				{
+					"name": "Nisavev.2",
+					"path": "include/Nisavev.2",
+					"uri": "/include/Nisavev.2"
+				},
+				{
+					"name": "Nisavev",
+					"path": "include/Nisavev",
+					"uri": "/include/Nisavev"
+				},
+				{
+					"name": "NiSherobim",
+					"path": "include/NiSherobim",
+					"uri": "/include/NiSherobim"
+				},
+				{
+					"name": "NonCustomaryComments",
+					"path": "include/NonCustomaryComments",
+					"uri": "/include/NonCustomaryComments"
+				},
+				{
+					"name": "NonLiturgyConcludingAbsolutions",
+					"path": "include/NonLiturgyConcludingAbsolutions",
+					"uri": "/include/NonLiturgyConcludingAbsolutions"
+				},
+				{
+					"name": "NonLiturgyConcludingAbsolutionsIntro",
+					"path": "include/NonLiturgyConcludingAbsolutionsIntro",
+					"uri": "/include/NonLiturgyConcludingAbsolutionsIntro"
+				},
+				{
+					"name": "Nywten",
+					"path": "include/Nywten",
+					"uri": "/include/Nywten"
+				},
+				{
+					"name": "OfferatoryChant",
+					"path": "include/OfferatoryChant",
+					"uri": "/include/OfferatoryChant"
+				},
+				{
+					"name": "OfferatoryChantConclusion",
+					"path": "include/OfferatoryChantConclusion",
+					"uri": "/include/OfferatoryChantConclusion"
+				},
+				{
+					"name": "OfferatoryChantIntro",
+					"path": "include/OfferatoryChantIntro",
+					"uri": "/include/OfferatoryChantIntro"
+				},
+				{
+					"name": "OfferatoryChant_Bishop",
+					"path": "include/OfferatoryChant_Bishop",
+					"uri": "/include/OfferatoryChant_Bishop"
+				},
+				{
+					"name": "Offering.Priest.1",
+					"path": "include/Offering.Priest.1",
+					"uri": "/include/Offering.Priest.1"
+				},
+				{
+					"name": "Offering.Priest.2",
+					"path": "include/Offering.Priest.2",
+					"uri": "/include/Offering.Priest.2"
+				},
+				{
+					"name": "Offering.Priest.3",
+					"path": "include/Offering.Priest.3",
+					"uri": "/include/Offering.Priest.3"
+				},
+				{
+					"name": "OfferingOfTheLambContent",
+					"path": "include/OfferingOfTheLambContent",
+					"uri": "/include/OfferingOfTheLambContent"
+				},
+				{
+					"name": "OfferingOfTheLambPostThanksgivingPrayer",
+					"path": "include/OfferingOfTheLambPostThanksgivingPrayer",
+					"uri": "/include/OfferingOfTheLambPostThanksgivingPrayer"
+				},
+				{
+					"name": "OfferingOfTheLamb_LordHaveMercy_3",
+					"path": "include/OfferingOfTheLamb_LordHaveMercy_3",
+					"uri": "/include/OfferingOfTheLamb_LordHaveMercy_3"
+				},
+				{
+					"name": "OfferInOrder",
+					"path": "include/OfferInOrder",
+					"uri": "/include/OfferInOrder"
+				},
+				{
+					"name": "OLordOfKnowledge",
+					"path": "include/OLordOfKnowledge",
+					"uri": "/include/OLordOfKnowledge"
+				},
+				{
+					"name": "Omonogenees",
+					"path": "include/Omonogenees",
+					"uri": "/include/Omonogenees"
+				},
+				{
+					"name": "OneIsTheAllHoly",
+					"path": "include/OneIsTheAllHoly",
+					"uri": "/include/OneIsTheAllHoly"
+				},
+				{
+					"name": "OneIsTheHoly",
+					"path": "include/OneIsTheHoly",
+					"uri": "/include/OneIsTheHoly"
+				},
+				{
+					"name": "OnTheWayTheySpreadGarments",
+					"path": "include/OnTheWayTheySpreadGarments",
+					"uri": "/include/OnTheWayTheySpreadGarments"
+				},
+				{
+					"name": "Ontos",
+					"path": "include/Ontos",
+					"uri": "/include/Ontos"
+				},
+				{
+					"name": "Ordinations",
+					"path": "include/Ordinations",
+					"uri": "/include/Ordinations"
+				},
+				{
+					"name": "OurFatherGreatFast",
+					"path": "include/OurFatherGreatFast",
+					"uri": "/include/OurFatherGreatFast"
+				},
+				{
+					"name": "PanotiPanoti",
+					"path": "include/PanotiPanoti",
+					"uri": "/include/PanotiPanoti"
+				},
+				{
+					"name": "PaulineEpistle",
+					"path": "include/PaulineEpistle",
+					"uri": "/include/PaulineEpistle"
+				},
+				{
+					"name": "PaulineEpistleConclusion",
+					"path": "include/PaulineEpistleConclusion",
+					"uri": "/include/PaulineEpistleConclusion"
+				},
+				{
+					"name": "PaulineEpistleGreatResponse",
+					"path": "include/PaulineEpistleGreatResponse",
+					"uri": "/include/PaulineEpistleGreatResponse"
+				},
+				{
+					"name": "PaulineEpistleIntroduction",
+					"path": "include/PaulineEpistleIntroduction",
+					"uri": "/include/PaulineEpistleIntroduction"
+				},
+				{
+					"name": "PaulineEpistleResponses",
+					"path": "include/PaulineEpistleResponses",
+					"uri": "/include/PaulineEpistleResponses"
+				},
+				{
+					"name": "PaulineEpistleStandardResponse",
+					"path": "include/PaulineEpistleStandardResponse",
+					"uri": "/include/PaulineEpistleStandardResponse"
+				},
+				{
+					"name": "PeaceBeWithAll",
+					"path": "include/PeaceBeWithAll",
+					"uri": "/include/PeaceBeWithAll"
+				},
+				{
+					"name": "PentecostThirdHourRefrain",
+					"path": "include/PentecostThirdHourRefrain",
+					"uri": "/include/PentecostThirdHourRefrain"
+				},
+				{
+					"name": "PiEpnevma",
+					"path": "include/PiEpnevma",
+					"uri": "/include/PiEpnevma"
+				},
+				{
+					"name": "PiEpnevmaPope",
+					"path": "include/PiEpnevmaPope",
+					"uri": "/include/PiEpnevmaPope"
+				},
+				{
+					"name": "Pijenmisi",
+					"path": "include/Pijenmisi",
+					"uri": "/include/Pijenmisi"
+				},
+				{
+					"name": "PopeGospelIntro",
+					"path": "include/PopeGospelIntro",
+					"uri": "/include/PopeGospelIntro"
+				},
+				{
+					"name": "PostEvnotiNaiNan",
+					"path": "include/PostEvnotiNaiNan",
+					"uri": "/include/PostEvnotiNaiNan"
+				},
+				{
+					"name": "PostLitanyOfTheGospel",
+					"path": "include/PostLitanyOfTheGospel",
+					"uri": "/include/PostLitanyOfTheGospel"
+				},
+				{
+					"name": "PostProcessionOfTheLambIntro",
+					"path": "include/PostProcessionOfTheLambIntro",
+					"uri": "/include/PostProcessionOfTheLambIntro"
+				},
+				{
+					"name": "Pouro.1",
+					"path": "include/Pouro.1",
+					"uri": "/include/Pouro.1"
+				},
+				{
+					"name": "Pouro.2",
+					"path": "include/Pouro.2",
+					"uri": "/include/Pouro.2"
+				},
+				{
+					"name": "Pouro.3",
+					"path": "include/Pouro.3",
+					"uri": "/include/Pouro.3"
+				},
+				{
+					"name": "Pouro.4",
+					"path": "include/Pouro.4",
+					"uri": "/include/Pouro.4"
+				},
+				{
+					"name": "Pouro",
+					"path": "include/Pouro",
+					"uri": "/include/Pouro"
+				},
+				{
+					"name": "PouroConclusion",
+					"path": "include/PouroConclusion",
+					"uri": "/include/PouroConclusion"
+				},
+				{
+					"name": "PouroSection",
+					"path": "include/PouroSection",
+					"uri": "/include/PouroSection"
+				},
+				{
+					"name": "Praxis",
+					"path": "include/Praxis",
+					"uri": "/include/Praxis"
+				},
+				{
+					"name": "PraxisReading",
+					"path": "include/PraxisReading",
+					"uri": "/include/PraxisReading"
+				},
+				{
+					"name": "Pray",
+					"path": "include/Pray",
+					"uri": "/include/Pray"
+				},
+				{
+					"name": "PrayerAfterOurFather",
+					"path": "include/PrayerAfterOurFather",
+					"uri": "/include/PrayerAfterOurFather"
+				},
+				{
+					"name": "PrayerOfAbsolutionToTheFather",
+					"path": "include/PrayerOfAbsolutionToTheFather",
+					"uri": "/include/PrayerOfAbsolutionToTheFather"
+				},
+				{
+					"name": "PrayerOfAbsolutionToTheSon",
+					"path": "include/PrayerOfAbsolutionToTheSon",
+					"uri": "/include/PrayerOfAbsolutionToTheSon"
+				},
+				{
+					"name": "PrayerOfAbsolutionToTheSonContent",
+					"path": "include/PrayerOfAbsolutionToTheSonContent",
+					"uri": "/include/PrayerOfAbsolutionToTheSonContent"
+				},
+				{
+					"name": "PrayerOfIncenseForPaulineEpistle",
+					"path": "include/PrayerOfIncenseForPaulineEpistle",
+					"uri": "/include/PrayerOfIncenseForPaulineEpistle"
+				},
+				{
+					"name": "PrayerOfProthesis",
+					"path": "include/PrayerOfProthesis",
+					"uri": "/include/PrayerOfProthesis"
+				},
+				{
+					"name": "PrayerOfReconciliation",
+					"path": "include/PrayerOfReconciliation",
+					"uri": "/include/PrayerOfReconciliation"
+				},
+				{
+					"name": "PrayerOfReconciliationResponse",
+					"path": "include/PrayerOfReconciliationResponse",
+					"uri": "/include/PrayerOfReconciliationResponse"
+				},
+				{
+					"name": "PrayerOfReconciliationStCyril1",
+					"path": "include/PrayerOfReconciliationStCyril1",
+					"uri": "/include/PrayerOfReconciliationStCyril1"
+				},
+				{
+					"name": "PrayerOfReconciliationStCyril2",
+					"path": "include/PrayerOfReconciliationStCyril2",
+					"uri": "/include/PrayerOfReconciliationStCyril2"
+				},
+				{
+					"name": "PrayerOfSubmissionToTheFather",
+					"path": "include/PrayerOfSubmissionToTheFather",
+					"uri": "/include/PrayerOfSubmissionToTheFather"
+				},
+				{
+					"name": "PrayerOfSubmissionToTheSon",
+					"path": "include/PrayerOfSubmissionToTheSon",
+					"uri": "/include/PrayerOfSubmissionToTheSon"
+				},
+				{
+					"name": "PrayerOfTheVeil",
+					"path": "include/PrayerOfTheVeil",
+					"uri": "/include/PrayerOfTheVeil"
+				},
+				{
+					"name": "PrayerOfVeilIntroComment",
+					"path": "include/PrayerOfVeilIntroComment",
+					"uri": "/include/PrayerOfVeilIntroComment"
+				},
+				{
+					"name": "PreHymnOfTheResurrection",
+					"path": "include/PreHymnOfTheResurrection",
+					"uri": "/include/PreHymnOfTheResurrection"
+				},
+				{
+					"name": "ProcessionOfIncense",
+					"path": "include/ProcessionOfIncense",
+					"uri": "/include/ProcessionOfIncense"
+				},
+				{
+					"name": "ProcessionOfIncenseDuringDoxologies",
+					"path": "include/ProcessionOfIncenseDuringDoxologies",
+					"uri": "/include/ProcessionOfIncenseDuringDoxologies"
+				},
+				{
+					"name": "ProcessionOfIncenseSilentPart",
+					"path": "include/ProcessionOfIncenseSilentPart",
+					"uri": "/include/ProcessionOfIncenseSilentPart"
+				},
+				{
+					"name": "ProcessionOfIncense_Matins",
+					"path": "include/ProcessionOfIncense_Matins",
+					"uri": "/include/ProcessionOfIncense_Matins"
+				},
+				{
+					"name": "ProcessionOfIncense_Vespers",
+					"path": "include/ProcessionOfIncense_Vespers",
+					"uri": "/include/ProcessionOfIncense_Vespers"
+				},
+				{
+					"name": "ProcessionOfTheCross",
+					"path": "include/ProcessionOfTheCross",
+					"uri": "/include/ProcessionOfTheCross"
+				},
+				{
+					"name": "ProcessionOfTheCrossIntro",
+					"path": "include/ProcessionOfTheCrossIntro",
+					"uri": "/include/ProcessionOfTheCrossIntro"
+				},
+				{
+					"name": "ProcessionOfTheLambIntro.1",
+					"path": "include/ProcessionOfTheLambIntro.1",
+					"uri": "/include/ProcessionOfTheLambIntro.1"
+				},
+				{
+					"name": "ProcessionOfTheLambIntro",
+					"path": "include/ProcessionOfTheLambIntro",
+					"uri": "/include/ProcessionOfTheLambIntro"
+				},
+				{
+					"name": "ProcessionOfTheResurrection",
+					"path": "include/ProcessionOfTheResurrection",
+					"uri": "/include/ProcessionOfTheResurrection"
+				},
+				{
+					"name": "ProcessionOfTheResurrection_SilentPrayer",
+					"path": "include/ProcessionOfTheResurrection_SilentPrayer",
+					"uri": "/include/ProcessionOfTheResurrection_SilentPrayer"
+				},
+				{
+					"name": "Psalm114Content",
+					"path": "include/Psalm114Content",
+					"uri": "/include/Psalm114Content"
+				},
+				{
+					"name": "Psalm151Chant",
+					"path": "include/Psalm151Chant",
+					"uri": "/include/Psalm151Chant"
+				},
+				{
+					"name": "Psalm50AndGloryBeToOurGod",
+					"path": "include/Psalm50AndGloryBeToOurGod",
+					"uri": "/include/Psalm50AndGloryBeToOurGod"
+				},
+				{
+					"name": "RememberMe.1",
+					"path": "include/RememberMe.1",
+					"uri": "/include/RememberMe.1"
+				},
+				{
+					"name": "RememberMe.2",
+					"path": "include/RememberMe.2",
+					"uri": "/include/RememberMe.2"
+				},
+				{
+					"name": "RememberMe.3",
+					"path": "include/RememberMe.3",
+					"uri": "/include/RememberMe.3"
+				},
+				{
+					"name": "ResurrectionReenactment",
+					"path": "include/ResurrectionReenactment",
+					"uri": "/include/ResurrectionReenactment"
+				},
+				{
+					"name": "SavedAmen",
+					"path": "include/SavedAmen",
+					"uri": "/include/SavedAmen"
+				},
+				{
+					"name": "SavedAmenMedium",
+					"path": "include/SavedAmenMedium",
+					"uri": "/include/SavedAmenMedium"
+				},
+				{
+					"name": "SavedAmenShort",
+					"path": "include/SavedAmenShort",
+					"uri": "/include/SavedAmenShort"
+				},
+				{
+					"name": "SevenGreatLitanies",
+					"path": "include/SevenGreatLitanies",
+					"uri": "/include/SevenGreatLitanies"
+				},
+				{
+					"name": "ShallComeUpon",
+					"path": "include/ShallComeUpon",
+					"uri": "/include/ShallComeUpon"
+				},
+				{
+					"name": "ShereMaria",
+					"path": "include/ShereMaria",
+					"uri": "/include/ShereMaria"
+				},
+				{
+					"name": "ShortBlessing",
+					"path": "include/ShortBlessing",
+					"uri": "/include/ShortBlessing"
+				},
+				{
+					"name": "ShortBlessingToEnd",
+					"path": "include/ShortBlessingToEnd",
+					"uri": "/include/ShortBlessingToEnd"
+				},
+				{
+					"name": "ShortLiturgyLitanies",
+					"path": "include/ShortLiturgyLitanies",
+					"uri": "/include/ShortLiturgyLitanies"
+				},
+				{
+					"name": "SilentPrayerCatholicEpistle",
+					"path": "include/SilentPrayerCatholicEpistle",
+					"uri": "/include/SilentPrayerCatholicEpistle"
+				},
+				{
+					"name": "SilentPrayerGospel.1",
+					"path": "include/SilentPrayerGospel.1",
+					"uri": "/include/SilentPrayerGospel.1"
+				},
+				{
+					"name": "SilentPrayerGospel.10",
+					"path": "include/SilentPrayerGospel.10",
+					"uri": "/include/SilentPrayerGospel.10"
+				},
+				{
+					"name": "SilentPrayerGospel.11",
+					"path": "include/SilentPrayerGospel.11",
+					"uri": "/include/SilentPrayerGospel.11"
+				},
+				{
+					"name": "SilentPrayerGospel.12",
+					"path": "include/SilentPrayerGospel.12",
+					"uri": "/include/SilentPrayerGospel.12"
+				},
+				{
+					"name": "SilentPrayerGospel.13",
+					"path": "include/SilentPrayerGospel.13",
+					"uri": "/include/SilentPrayerGospel.13"
+				},
+				{
+					"name": "SilentPrayerGospel.2",
+					"path": "include/SilentPrayerGospel.2",
+					"uri": "/include/SilentPrayerGospel.2"
+				},
+				{
+					"name": "SilentPrayerGospel.3",
+					"path": "include/SilentPrayerGospel.3",
+					"uri": "/include/SilentPrayerGospel.3"
+				},
+				{
+					"name": "SilentPrayerGospel.4",
+					"path": "include/SilentPrayerGospel.4",
+					"uri": "/include/SilentPrayerGospel.4"
+				},
+				{
+					"name": "SilentPrayerGospel.5",
+					"path": "include/SilentPrayerGospel.5",
+					"uri": "/include/SilentPrayerGospel.5"
+				},
+				{
+					"name": "SilentPrayerGospel.6",
+					"path": "include/SilentPrayerGospel.6",
+					"uri": "/include/SilentPrayerGospel.6"
+				},
+				{
+					"name": "SilentPrayerGospel.7",
+					"path": "include/SilentPrayerGospel.7",
+					"uri": "/include/SilentPrayerGospel.7"
+				},
+				{
+					"name": "SilentPrayerGospel.8",
+					"path": "include/SilentPrayerGospel.8",
+					"uri": "/include/SilentPrayerGospel.8"
+				},
+				{
+					"name": "SilentPrayerGospel.9",
+					"path": "include/SilentPrayerGospel.9",
+					"uri": "/include/SilentPrayerGospel.9"
+				},
+				{
+					"name": "SilentPrayerGospel",
+					"path": "include/SilentPrayerGospel",
+					"uri": "/include/SilentPrayerGospel"
+				},
+				{
+					"name": "SilentPrayerPraxisBaptism",
+					"path": "include/SilentPrayerPraxisBaptism",
+					"uri": "/include/SilentPrayerPraxisBaptism"
+				},
+				{
+					"name": "SilentPrayerPraxisPart",
+					"path": "include/SilentPrayerPraxisPart",
+					"uri": "/include/SilentPrayerPraxisPart"
+				},
+				{
+					"name": "SilentPriestConclusion",
+					"path": "include/SilentPriestConclusion",
+					"uri": "/include/SilentPriestConclusion"
+				},
+				{
+					"name": "SilentPriestConclusionEnding",
+					"path": "include/SilentPriestConclusionEnding",
+					"uri": "/include/SilentPriestConclusionEnding"
+				},
+				{
+					"name": "SilentPriestOfferingPreparation",
+					"path": "include/SilentPriestOfferingPreparation",
+					"uri": "/include/SilentPriestOfferingPreparation"
+				},
+				{
+					"name": "SilentPriestOfferingPreparationPart",
+					"path": "include/SilentPriestOfferingPreparationPart",
+					"uri": "/include/SilentPriestOfferingPreparationPart"
+				},
+				{
+					"name": "SilentPriestProcession",
+					"path": "include/SilentPriestProcession",
+					"uri": "/include/SilentPriestProcession"
+				},
+				{
+					"name": "SilentPriestProcessionIntroduction",
+					"path": "include/SilentPriestProcessionIntroduction",
+					"uri": "/include/SilentPriestProcessionIntroduction"
+				},
+				{
+					"name": "SilentPriestProcessionIntroduction1",
+					"path": "include/SilentPriestProcessionIntroduction1",
+					"uri": "/include/SilentPriestProcessionIntroduction1"
+				},
+				{
+					"name": "SilentPriestProcessionIntroIntro",
+					"path": "include/SilentPriestProcessionIntroIntro",
+					"uri": "/include/SilentPriestProcessionIntroIntro"
+				},
+				{
+					"name": "SilentPriestProcession_Matins",
+					"path": "include/SilentPriestProcession_Matins",
+					"uri": "/include/SilentPriestProcession_Matins"
+				},
+				{
+					"name": "SilentPriestProcession_Vespers",
+					"path": "include/SilentPriestProcession_Vespers",
+					"uri": "/include/SilentPriestProcession_Vespers"
+				},
+				{
+					"name": "StandardPachoicConclusion",
+					"path": "include/StandardPachoicConclusion",
+					"uri": "/include/StandardPachoicConclusion"
+				},
+				{
+					"name": "StandardPrayerIntro",
+					"path": "include/StandardPrayerIntro",
+					"uri": "/include/StandardPrayerIntro"
+				},
+				{
+					"name": "StartOfService.1",
+					"path": "include/StartOfService.1",
+					"uri": "/include/StartOfService.1"
+				},
+				{
+					"name": "StartOfService",
+					"path": "include/StartOfService",
+					"uri": "/include/StartOfService"
+				},
+				{
+					"name": "Synaxarion",
+					"path": "include/Synaxarion",
+					"uri": "/include/Synaxarion"
+				},
+				{
+					"name": "Taishoree",
+					"path": "include/Taishoree",
+					"uri": "/include/Taishoree"
+				},
+				{
+					"name": "TaishoreeContents",
+					"path": "include/TaishoreeContents",
+					"uri": "/include/TaishoreeContents"
+				},
+				{
+					"name": "Teeshoree",
+					"path": "include/Teeshoree",
+					"uri": "/include/Teeshoree"
+				},
+				{
+					"name": "TenichiciEmo",
+					"path": "include/TenichiciEmo",
+					"uri": "/include/TenichiciEmo"
+				},
+				{
+					"name": "TenouwstSeasonalResponse",
+					"path": "include/TenouwstSeasonalResponse",
+					"uri": "/include/TenouwstSeasonalResponse"
+				},
+				{
+					"name": "TenouwstSeasonalResponseShort",
+					"path": "include/TenouwstSeasonalResponseShort",
+					"uri": "/include/TenouwstSeasonalResponseShort"
+				},
+				{
+					"name": "TentiNem",
+					"path": "include/TentiNem",
+					"uri": "/include/TentiNem"
+				},
+				{
+					"name": "ThanksgivingPrayer",
+					"path": "include/ThanksgivingPrayer",
+					"uri": "/include/ThanksgivingPrayer"
+				},
+				{
+					"name": "ThanksgivingPrayer.Priest.1",
+					"path": "include/ThanksgivingPrayer.Priest.1",
+					"uri": "/include/ThanksgivingPrayer.Priest.1"
+				},
+				{
+					"name": "ThanksgivingPrayer.Priest.2",
+					"path": "include/ThanksgivingPrayer.Priest.2",
+					"uri": "/include/ThanksgivingPrayer.Priest.2"
+				},
+				{
+					"name": "ThanksgivingPrayer.Priest.3",
+					"path": "include/ThanksgivingPrayer.Priest.3",
+					"uri": "/include/ThanksgivingPrayer.Priest.3"
+				},
+				{
+					"name": "ThanksgivingPrayer.Priest.4",
+					"path": "include/ThanksgivingPrayer.Priest.4",
+					"uri": "/include/ThanksgivingPrayer.Priest.4"
+				},
+				{
+					"name": "ThanksgivingPrayer_Bishop",
+					"path": "include/ThanksgivingPrayer_Bishop",
+					"uri": "/include/ThanksgivingPrayer_Bishop"
+				},
+				{
+					"name": "ThatChristOurGod",
+					"path": "include/ThatChristOurGod",
+					"uri": "/include/ThatChristOurGod"
+				},
+				{
+					"name": "TheLoveOfGodTheFather",
+					"path": "include/TheLoveOfGodTheFather",
+					"uri": "/include/TheLoveOfGodTheFather"
+				},
+				{
+					"name": "TheWorshipOfIdols",
+					"path": "include/TheWorshipOfIdols",
+					"uri": "/include/TheWorshipOfIdols"
+				},
+				{
+					"name": "ThreeAbsolutions",
+					"path": "include/ThreeAbsolutions",
+					"uri": "/include/ThreeAbsolutions"
+				},
+				{
+					"name": "ThreeGreatLitanies",
+					"path": "include/ThreeGreatLitanies",
+					"uri": "/include/ThreeGreatLitanies"
+				},
+				{
+					"name": "TodayTheSayingsAreFulfilled",
+					"path": "include/TodayTheSayingsAreFulfilled",
+					"uri": "/include/TodayTheSayingsAreFulfilled"
+				},
+				{
+					"name": "ToMakario",
+					"path": "include/ToMakario",
+					"uri": "/include/ToMakario"
+				},
+				{
+					"name": "VespersNotPrayedComment",
+					"path": "include/VespersNotPrayedComment",
+					"uri": "/include/VespersNotPrayedComment"
+				},
+				{
+					"name": "WhereCanIGo",
+					"path": "include/WhereCanIGo",
+					"uri": "/include/WhereCanIGo"
+				},
+				{
+					"name": "WorshipGodInFear",
+					"path": "include/WorshipGodInFear",
+					"uri": "/include/WorshipGodInFear"
+				},
+				{
+					"name": "YeaOLord",
+					"path": "include/YeaOLord",
+					"uri": "/include/YeaOLord"
+				},
+				{
+					"name": "YeaOLordContents",
+					"path": "include/YeaOLordContents",
+					"uri": "/include/YeaOLordContents"
+				},
+				{
+					"name": "YouShallSprinkle",
+					"path": "include/YouShallSprinkle",
+					"uri": "/include/YouShallSprinkle"
+				},
+				{
+					"name": "YouShallSprinkleIntroduction",
+					"path": "include/YouShallSprinkleIntroduction",
+					"uri": "/include/YouShallSprinkleIntroduction"
+				},
+				{
+					"name": "YouWhoAreSeated",
+					"path": "include/YouWhoAreSeated",
+					"uri": "/include/YouWhoAreSeated"
+				}
+			],
+			"uri": "/include",
+			"hidden": true
 		}
 	]
 }

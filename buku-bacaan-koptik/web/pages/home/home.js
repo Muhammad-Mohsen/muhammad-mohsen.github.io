@@ -16,6 +16,8 @@ export const HomePage = (() => {
 	function createItems(menu) {
 		let html = '';
 		menu.forEach(i => {
+			if (menu.hidden) return;
+
 			html += Card({
 				clickHandler: `Router.goto('${i.uri}')`,
 				src: i.image,
