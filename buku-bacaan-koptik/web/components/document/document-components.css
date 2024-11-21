@@ -122,11 +122,12 @@ section[expanded="false"] title-html ~ * { display: none; }
 linkdocument {
     display: flex;
     align-items: center;
-    justify-content: center;
-	margin: 0 4px;
+    justify-content: space-around;
+	margin: 4px 4px 0;
+	border-radius: 6px;
 	color: var(--accent-red);
+	background: #eb57572d;
     font-weight: bold;
-    gap: 24px;
 }
 /* linkdocument language { flex: 1; } */
 

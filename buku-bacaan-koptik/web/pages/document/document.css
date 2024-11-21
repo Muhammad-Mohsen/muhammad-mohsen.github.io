@@ -89,10 +89,12 @@ aside title-html {
 	flex-direction: column;
 	align-items: start;
 }
+aside title-html language { text-align: start; }
 aside > *:not(:last-child) {
 	margin: 0;
 	border-bottom: 1px solid #42628e41;
 }
+aside linkdocument { border-radius: 0; }
 
 #close-outline {
 	position: sticky;
