@@ -9,6 +9,55 @@ So, I this app is me putting my money where my mouth is.
 
 ## TODO
 - BibleReference sections (that show book names and the like)
+	- handle attributes:
+		- intro/conclusion
+			- get intro/conclusion
+				- replace vars
+			- hideIntroConclusion
+			- hideIntro
+			- hideConclusion
+		- type: section/title -> doesn't matter apparently?
+		- showVerseNumbers -> doesn't matter to me
+
+	- handle vars
+		[AUTHOR]
+		[BOOK]
+		[BOOK_NAME]
+		[ORDINAL]
+
+	- non-bibleverse vars
+		baptism/...
+		consecrations/
+			church
+			oil
+			reception
+		crowning
+		funeral
+		lakkan
+		liturgies/index/pentecost
+		papal
+		pascha
+		prostration
+		raisingofincense
+			LitanyOfTheGospel
+				include\GospelBishopIntro.cr.xml
+
+		Papal Hymns
+			include\GospelBishopIntro.cr.xml
+
+		include\LitanyOfTheGospel.cr.xml
+		include\PopeGospelIntro.cr.xml
+		readings\StandInTheFear.cr.xml
+
+	- BibleBooks creation loops through `BibleBooks.cr.xml`
+		- `m_oStyles` = <Style id>
+			- <Introduction> & <Conclusion>
+			- possible 3 languages
+		- `m_oBooks` = <Book id style>
+			- <Book> & <Author>
+			- possible 3 languages
+			- style attr is the link between <Style> & <Book>
+
 - repository
 	- network data source
 	- internal data source

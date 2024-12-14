@@ -15,9 +15,9 @@ body[data-theme="moon"] {
 	--tab-width: 32px;
 }
 body[data-theme="sun"] {
-	--bg: #F8F8F8;
-	--border: #E5E5E5;
-	--fg: #222;
+	--bg: #E8E8E8;
+	--border: #C9C9C9;
+	--fg: #363636;
 	--fg-d: #6E7681;
 	--accent: #005FB8;
 	--comment: #bb7e3c; /* E50000 */
@@ -73,7 +73,6 @@ editor {
 details {
 	position: relative;
 	max-width: 80ch;
-	overflow-y: clip;
 
 	& summary {
 		display: flex;
@@ -81,6 +80,10 @@ details {
 		list-style: none;
 		color: var(--accent);
 		pointer-events: none;
+
+		&:focus-visible {
+			background: var(--border);
+		}
 
 		&::before {
 			content: '';

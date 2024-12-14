@@ -1,3 +1,4 @@
+import { BibleAddendums } from '../../data/bible-addendums.js';
 import { Repository } from '../../data/repository.js';
 
 export const BibleRef = (function () {
@@ -12,26 +13,28 @@ export const BibleRef = (function () {
 	let nkjv, svd, tb;
 
 	async function render(node) {
-		const ref = node.getAttribute('reference').replace(/, /g, ',').replace(/; /g, ';'); // remove stupid spaces;
+		const ref = node.getAttribute('reference').replace(/, /g, ',').replace(/; /g, ';'); // remove stupid spaces
 		await setBooks(ref);
 
 		const expandedRef = expandRef(ref);
 		const verses = expandedRef.split(';').reduce((verses, r) => verses.concat(getVerses(r)), []);
+		const addendums = getAddendums(node);
+		const attrs = [...node.attributes].map(a => `${a.name}="${a.value}"`).join(' ');
 
-		return verses.map(v => renderVerse(v)).join('');
+		return verses.map(v => renderVerse(v, attrs, addendums)).join('');
 	}
 
-	function renderVerse(chapterVerse) {
+	function renderVerse(chapterVerse, attrs, addendums) {
 		// get verse from book
 		const [chapter, verse] = chapterVerse.split(':');
 		const [kjvVerse, svdVerse, tbVerse] = [nkjv, svd, tb].map(b =>
 			b.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''); // hide off-by-one errors!!
 
-		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}">
+		return `${addendums.introduction}<bibleverse chapterverse="${chapterVerse}" verse="${verse}" ${attrs}>
 			<language id="English">${kjvVerse}</language>
 			<language id="Arabic">${svdVerse}</language>
 			<language id="Indonesian">${tbVerse}</language>
-		</bibleverse>`;
+		</bibleverse>${addendums.conclusion}`;
 	}
 
 	async function setBooks(ref) {
@@ -108,14 +111,53 @@ export const BibleRef = (function () {
 			return verses.split(',').map(v => `${chapter}:${v}`);
 		}).join(';');
 	}
-
 	function getLastVerseOfChapter(number) {
 		const chapter = nkjv.querySelector(`chapter[num="${number}"]`);
 		return chapter.children.length;
 	}
 
+	function getAddendums(node) {
+		const ref = node.getAttribute('reference');
+		const name = getBibleName(ref);
+		const addendums = BibleAddendums.get(name);
+
+		const ignoreAddendums = !ref.match(/psalm.*:/i); // addendums are only shown if psalm & the verses have a colon!!
+		const hideIntro = ignoreAddendums || node.getAttribute('hideIntro')?.toLowerCase() == 'true';
+		const hideConclusion = ignoreAddendums || node.getAttribute('hideConclusion')?.toLowerCase() == 'true';
+		const hideIntroConclusion = ignoreAddendums || node.getAttribute('hideIntroConclusion')?.toLowerCase() == 'true';
+
+		return {
+			introduction: (hideIntro || hideIntroConclusion) ? '' : addendums.introduction,
+			conclusion: (hideConclusion || hideIntroConclusion) ? '' : addendums.conclusion,
+		}
+	}
+	function updateGospelIntroductions(doc) {
+		const gospelIntros = doc.querySelectorAll('Text[type="GospelIntro"], text[type="GospelIntro"]').toArray();
+		if (!gospelIntros.length) return;
+
+		// assume only one book!!
+		const ref = doc.querySelector('bibleverse')?.getAttribute('reference');
+		if (!ref) return;
+
+		const name = getBibleName(ref);
+		const title = BibleAddendums.getTitle(name);
+
+		gospelIntros.forEach(gi => {
+			gi.children.toArray().forEach(elem => {
+				elem.innerHTML = elem.innerHTML.replace(/\[AUTHOR\]/g, title[elem.id]);
+			});
+		});
+	}
+
+	function getBibleName(ref) {
+		let name = ref.replace(/, /g, ',').replace(/; /g, ';').split(' '); // remove stupid spaces
+		name.pop(); // remove the chapter-verse data
+		return name.join(' ');
+	}
+
 	return {
 		render,
+		updateGospelIntroductions,
 	}
 
 })();

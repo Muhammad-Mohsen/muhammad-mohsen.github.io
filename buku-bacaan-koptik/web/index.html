@@ -40,8 +40,8 @@
 	<loading class="init-loader"></loading>
 
 	<!-- core scripts -->
-	<script src="./core/datetime.js"></script>
-	<script src="./core/ext.js"></script>
+	<script type="module" src="./core/datetime.js"></script> <!-- needs to be a module so it can be bundled :) -->
+	<script type="module" src="./core/ext.js"></script> <!-- ditto -->
 	<script type="module" src="./core/router.js"></script>
 	<script type="module" src="./pages/document/search.js"></script>
 	<script type="module" src="./pages/document/outline.js"></script>

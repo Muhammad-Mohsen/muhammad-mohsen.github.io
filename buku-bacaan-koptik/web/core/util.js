@@ -78,6 +78,8 @@ export const LS = (function () {
 
 })();
 
+export const IS_DEBUG = false;
+
 IDBDatabase.prototype.select = function (store, key) {
 	return new Promise((resolve, reject) => {
 		const transaction = this.transaction([store]);

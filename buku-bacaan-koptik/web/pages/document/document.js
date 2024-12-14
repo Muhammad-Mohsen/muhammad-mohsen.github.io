@@ -88,6 +88,8 @@ export const DocumentPage = (() => {
 			r.outerHTML = refNode; // replaceWith(refNode);
 		}
 
+		BibleRef.updateGospelIntroductions(doc);
+
 		return doc;
 	}
 
@@ -148,7 +150,8 @@ export const DocumentPage = (() => {
 
 			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">|<\/document>/gi, '') // remove extra 'document' elements
 			.replace(/<linkdocument /gi, `<linkdocument onclick="DocumentPage.goto(this);" `)
-			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`);
+			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`)
+			.replace(/<section>/gi, '<section expanded="false">'); // collapse sections that aren't expanded by default
 	}
 
 	function sectionExpandCollapse(target) {

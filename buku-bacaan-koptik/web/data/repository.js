@@ -1,4 +1,4 @@
-import { LS, XML, HTTP } from '../core/util.js';
+import { LS, XML, HTTP, IS_DEBUG } from '../core/util.js';
 
 export const Repository = (() => {
 
@@ -13,7 +13,7 @@ export const Repository = (() => {
 
 	// get the list of uri => ver & menu
 	async function getUpdates() {
-		if (HTTP.isConnected()) {
+		if (HTTP.isConnected() && !IS_DEBUG) {
 			cache = (await HTTP.get(UPDATES_URL, 'text')) || DEFAULT_UPDATES;
 			LS.set(LS.K.UPDATES, cache);
 

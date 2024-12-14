@@ -5,7 +5,7 @@ language#Arabic {
 }
 
 /* title-html */
-Comment, title-html {
+Comment, title-html, introduction, conclusion {
 	display: flex;
 }
 title-html Language {
@@ -17,10 +17,7 @@ title-html Language {
 }
 
 /* COMMENT */
-Comment {
-	display: flex;
-}
-Comment Language {
+Comment Language, introduction language, conclusion language {
 	flex: 1 0 10%;
 	padding: 4px;
 	color: var(--accent-bg);
