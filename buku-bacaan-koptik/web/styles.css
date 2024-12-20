@@ -148,3 +148,6 @@ header::before { position: absolute; }
 	display: flex;
 	flex-direction: column;
 }
+
+body.ios header { padding-top: 52px; }
+body.ios home header { padding-top: 64px; }

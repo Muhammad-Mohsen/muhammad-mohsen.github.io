@@ -9,6 +9,9 @@ import { SeasonEvaluator } from './pages/document/season-evaluator.js';
 import { HomePage } from './pages/home/home.js';
 import { SettingsPage } from './pages/settings/settings.js';
 import { DocumentExporter } from './pages/document/exporter.js';
+import { isIOS } from './core/util.js';
+
+if (isIOS()) document.body.classList.add('ios');
 
 const loader = document.querySelector('loading.init-loader');
 loader.classList.add('show');
