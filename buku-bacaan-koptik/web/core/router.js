@@ -15,14 +15,17 @@ export const Router = (() => {
 		const route = location.hash.substring(1);
 		const entry = Menu.getItem(route);
 
-		document.querySelector('.page.show').hide();
+		const currentRoute = document.querySelector('.page.show');
+		currentRoute.hide();
 		document.querySelector('html').scrollTop = 0;
 
 		if (route == '') {
 			document.querySelector('home').show(50);
 
 		} else if (entry?.menu) {
-			ListPage.init(entry);
+			// add a small delay when going from a list to another list to give the hide/show animation a bit of time
+			setTimeout(() => ListPage.init(entry),
+				currentRoute.tagName.toLowerCase() == 'list' ? 50 : 0);
 
 		} else if (entry?.path) {
 			DocumentPage.init(entry);
