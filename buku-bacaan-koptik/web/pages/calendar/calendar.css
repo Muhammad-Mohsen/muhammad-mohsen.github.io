@@ -15,7 +15,10 @@ calendar .actions-container .fab.text span {
 }
 calendar .actions-container .material-symbols-outlined { margin-bottom: 2px; }
 
-calendar .actions-container button { position: relative; }
+calendar .actions-container button {
+	position: relative;
+	width: 64px;
+}
 
 calendar .actions-container input[type="date"] {
 	position: absolute;
