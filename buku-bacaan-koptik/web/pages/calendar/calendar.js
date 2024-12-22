@@ -1,5 +1,6 @@
 import { ListItem2 } from '../../components/list-item/list-item.js';
 import { Occasions } from '../../data/occasions.js';
+import { HomePage } from '../home/home.js';
 
 export const CalendarPage = (() => {
 
@@ -36,6 +37,7 @@ export const CalendarPage = (() => {
 	function setLive(date) {
 		live = date ? new Date(date) : new Date();
 		subHeader.innerHTML = `${live.formatGregorian('full')}<br><i>${live.formatCoptic(true)}</i>`;
+		HomePage.setDate(live);
 	}
 
 	function getLive() {
@@ -53,7 +55,7 @@ export const CalendarPage = (() => {
 
 			<!-- a bit of an unfortunate positioning, but I'll live with it -->
 			<div class="actions-container">
-				<button class="fab ripple text" onclick="CalendarPage.setLive();"><span>${params.date.getDateOrdinal()}</span></button>
+				<button class="fab ripple text" onclick="CalendarPage.setLive();"><span>${new Date().getDateOrdinal()}</span></button>
 				<button class="fab ripple">
 					<span class="material-symbols-outlined">calendar_month</span>
 					<input type="date" onchange="CalendarPage.setLive(this.value)" value="${params.date.value()}">

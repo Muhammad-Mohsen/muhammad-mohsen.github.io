@@ -8,7 +8,7 @@ export const HomePage = (() => {
 	function init() {
 		element.innerHTML = template({
 			copticDate: new Date().formatCoptic(),
-			gregorianDate: new Date().formatGregorian(), // .toGregorian(true),
+			gregorianDate: new Date().formatGregorian(),
 			cards: createItems(Menu.getData())
 		});
 	}
@@ -50,8 +50,14 @@ export const HomePage = (() => {
 		</ul>`;
 	}
 
+	function setDate(date) {
+		document.querySelector('home #copticDate').innerHTML = date.formatCoptic();
+		document.querySelector('home #gregorianDate').innerHTML = date.formatGregorian();
+	}
+
 	return {
-		init: init,
+		init,
+		setDate,
 	}
 
 })();
