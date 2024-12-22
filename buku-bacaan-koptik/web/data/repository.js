@@ -13,7 +13,7 @@ export const Repository = (() => {
 
 	// get the list of uri => ver & menu
 	async function getUpdates() {
-		if (HTTP.isConnected() && !IS_DEBUG) {
+		if (await HTTP.isConnected() && !IS_DEBUG) {
 			cache = (await HTTP.get(UPDATES_URL, 'text')) || DEFAULT_UPDATES;
 			LS.set(LS.K.UPDATES, cache);
 

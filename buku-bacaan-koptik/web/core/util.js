@@ -1,7 +1,14 @@
 export const HTTP = (function () {
 
-	function isConnected() {
-		return navigator.onLine;
+	async function isConnected() {
+		if (!window.navigator.onLine) return false;
+
+		try {
+			await fetch(`https://github.com?r=${Math.random()}`, { method: 'HEAD', mode: 'no-cors' });
+			return true;
+		} catch {
+			return false;
+		}
 	}
 
 	function get(fullURI, accept) {
