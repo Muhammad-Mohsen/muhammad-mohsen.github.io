@@ -133,9 +133,9 @@ export const SettingsPage = (() => {
 					<language id="Arabic">باسم الآب والابن والرّوح القدس الإله الواحد. آمين.</language>
 				</text>
 
-				<input type="range" min=".8" max="2" step="0.2" setting="fontSize" onchange="SettingsPage.change(this);SettingsPage.setPreviewFontSize(this);">
+				<input type="range" min=".4" max="2" step="0.2" setting="fontSize" onchange="SettingsPage.change(this);SettingsPage.setPreviewFontSize(this);">
 				<div class="notches">
-					<i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+					<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
 				</div>
 			</div>
 
