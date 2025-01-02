@@ -109,7 +109,8 @@
 					"uri": "/psalmody/morning-praises"
 				}
 			],
-			"uri": "/psalmody"
+			"uri": "/psalmody",
+			"disabled": true
 		},
 		{
 			"name": "Bible",
@@ -7399,7 +7400,8 @@
 					"uri": "/readings/antiphonary"
 				}
 			],
-			"uri": "/readings"
+			"uri": "/readings",
+			"disabled": true
 		},
 		{
 			"name": "Melodies",
