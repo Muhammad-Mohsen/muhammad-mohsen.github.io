@@ -20,6 +20,7 @@ export const ListPage = (() => {
 			html += ListItem({
 				title: i.name,
 				clickHandler: `Router.goto('${i.uri}')`,
+				disabled: i.disabled,
 			});
 		});
 

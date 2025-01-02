@@ -21,3 +21,9 @@
 	color: var(--accent-bg);
 	font-size: .6em;
 }
+
+.list-item[disabled] {
+	filter: grayscale(1);
+	opacity: .3;
+	pointer-events: none;
+}
