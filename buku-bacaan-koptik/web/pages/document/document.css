@@ -20,6 +20,7 @@ main {
 /* SEARCH */
 document .search-container {
 	inset: calc(100dvh - 80px) 16px auto 16px;
+	width: auto; /* on ios, width: fit-content breaks the layout! */
 	color: var(--accent-bg);
 	background: transparent;
 	transform: scaleX(0);
@@ -71,8 +72,8 @@ mark {
 
 aside {
 	position: absolute;
-	inset: 12px 12px auto;
-	height: calc(100dvh - 40px);
+	inset: 12px;
+	/* height: calc(100dvh - 40px); */
 	padding: 8px;
 	border-radius: 8px;
 	background: var(--main-bg);

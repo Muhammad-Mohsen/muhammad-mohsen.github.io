@@ -149,5 +149,9 @@ header::before { position: absolute; }
 	flex-direction: column;
 }
 
-body.ios header { padding-top: 52px; }
-body.ios home header { padding-top: 64px; }
+/* ios safe-area styles */
+body.ios {
+	& header { padding-top: 52px; }
+	& home header { padding-top: 64px; }
+	& document aside { inset: 64px 12px 28px; }
+}
