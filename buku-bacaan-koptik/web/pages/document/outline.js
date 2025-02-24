@@ -24,7 +24,7 @@ export const DocumentOutline = (() => {
 	function scroll(outlineTitle) {
 		const index = outlineTitle.getAttribute('outline-index');
 		const documentTitle = documentContainer.querySelector(`[outline-index="${index}"]`);
-		documentTitle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		documentTitle.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 		toggle(false);
 	}

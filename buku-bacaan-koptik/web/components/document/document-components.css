@@ -31,9 +31,10 @@ Text {
 Text Language {
 	flex: 1 0 10%;
 	min-width: 0;
-	padding: 4px;
-	text-align: start;
+	padding: 8px;
+	text-align: justify;
 	overflow-wrap: break-word;
+	hyphens: auto;
 }
 Text Language#English { order: 1; }
 Text Language#Arabic { order: 4; }
@@ -41,11 +42,15 @@ Language#Indonesian { order: 1; }
 
 Text Language#Coptic {
 	order: 2;
-	text-align: center;
+	line-height: 1.55;
 }
 Text Language#Coptic[coptic-row] { /* dispay coptic-row in its own row */
 	order: 5;
 	flex-basis: 100%;
+}
+
+Text Language:nth-child(2) {
+	background-color: #0000001a;
 }
 
 /* BIBLE */
