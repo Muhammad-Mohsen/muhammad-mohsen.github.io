@@ -101,7 +101,7 @@ body {
 	display: grid;
 	margin: 0;
 	background: var(--main-bg);
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 body::before, header::before {

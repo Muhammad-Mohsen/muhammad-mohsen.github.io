@@ -49,10 +49,6 @@ Text Language#Coptic[coptic-row] { /* dispay coptic-row in its own row */
 	flex-basis: 100%;
 }
 
-Text Language:nth-child(2) {
-	background-color: #0000001a;
-}
-
 /* BIBLE */
 bibleverse {
 	position: relative;
@@ -124,8 +120,9 @@ section[expanded="false"] title-html ~ * { display: none; }
 linkdocument {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 	margin: 4px 4px 0;
+	padding: 0 16px;
 	border-radius: 6px;
 	color: var(--accent-red);
 	background: #eb57572d;

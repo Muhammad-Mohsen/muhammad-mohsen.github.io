@@ -73,8 +73,6 @@ mark {
 aside {
 	position: absolute;
 	inset: 12px;
-	/* height: calc(100dvh - 40px); */
-	padding: 8px;
 	border-radius: 8px;
 	background: var(--main-bg);
 	box-shadow: 2px 4px 8px #0004;
@@ -86,16 +84,25 @@ aside {
 }
 aside.show { transform: translateY(0); }
 
+aside > * {
+	flex-direction: column;
+	align-items: start;
+	margin: 8px 0;
+	padding: 0 12px;
+}
+aside > *:not(:last-child) { border-bottom: 1px solid #42628e41; }
+
 aside title-html {
 	flex-direction: column;
 	align-items: start;
 }
-aside title-html language { text-align: start; }
-aside > *:not(:last-child) {
-	margin: 0;
-	border-bottom: 1px solid #42628e41;
+
+aside linkdocument {
+	flex-direction: row;
+	margin: 8px 0;
+	border: none !important;
+	border-radius: 0;
 }
-aside linkdocument { border-radius: 0; }
 
 #close-outline {
 	position: sticky;
