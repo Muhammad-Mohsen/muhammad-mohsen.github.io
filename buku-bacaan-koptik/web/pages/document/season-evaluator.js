@@ -23,6 +23,12 @@ export const SeasonEvaluator = (() => {
 		copticDate = date;
 
 		let expression = element.getAttribute('id');
+
+		// a member of the coptic christian faith was consulted when creating the below expansions
+		expression = expression
+			.replace(/Weekdays \^ Fasts/g, 'Weekdays ^ Fasts ^ !(GreatFast | TheophanyParamoun | NativityParamoun | JonahFast)')
+			.replace(/Weekdays \^ GreatFast/g, 'Weekdays ^ (GreatFast | TheophanyParamoun | NativityParamoun | JonahFast)');
+
 		const tokens = expression.replace(/[(\^)|!]/g, '').replace(/\s{2,}/g, ' ').split(' ');
 
 		tokens.forEach(t => expression = expression.replace(new RegExp(`\\b${t}\\b`, 'gi'), isInSeason(t))); // evaluate each token into the expression
@@ -62,7 +68,7 @@ export const SeasonEvaluator = (() => {
 		return Function(`return SeasonEvaluator.is${token}()`)();
 	}
 
-	 // DONE - <ForceSeason id="{simple_expression}">
+	// DONE - <ForceSeason id="{simple_expression}">
 	function isForced(season) {
 		if (!element) return false;
 
