@@ -12,8 +12,9 @@ export const Router = (() => {
 	function process(event) {
 		// if (history.length <= 1) return console.log('NOTIFY CONTAINER!!');
 
-		const route = location.hash.substring(1);
+		const [route, query] = location.hash.substring(1).split('?');
 		const entry = Menu.getItem(route);
+		entry.query = query;
 
 		const currentRoute = document.querySelector('.page.show');
 		currentRoute.hide();

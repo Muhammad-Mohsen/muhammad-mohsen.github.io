@@ -38,6 +38,10 @@ export const DocumentPage = (() => {
 		element.querySelector('#document-actions').show(); // show document actions
 
 		DocumentOutline.create(documentContainer, outlineContainer);
+		if (entry.query) {
+			DocumentOutline.scroll(entry.query);
+			element.scrollTop = 0;
+		}
 	}
 
 	// elegant(er) but slow(er)
@@ -98,10 +102,7 @@ export const DocumentPage = (() => {
 		if (SettingsPage.isPastTransitionTime()) today.addDays(1);
 
 		doc.querySelectorAll('Season, season').toArray().forEach(s => {
-			if (!SeasonEvaluator.exec(s, today)) {
-				console.log(`will remove ${s.id}`);
-				s.remove();
-			}
+			if (!SeasonEvaluator.exec(s, today)) s.remove();
 		});
 
 		return doc;
@@ -175,6 +176,10 @@ export const DocumentPage = (() => {
 		element.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);
 	}
 	function goto(link) {
+		const index = link.getAttribute('outline-index');
+		const [currentPath, _] = location.href.split('?');
+		history.pushState({ path: currentPath + `?${index}` }, '', currentPath + `?${index}`);
+
 		const path = link.getAttribute('path');
 		const entry = Menu.getItemByPath(Menu.getData(), path);
 		if (entry) Router.goto(entry.uri);
