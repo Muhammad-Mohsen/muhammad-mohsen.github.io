@@ -120,9 +120,9 @@ export const DocumentPage = (() => {
 		if (falsy(settings.nonCustomaryPrayers)) removeAll('comment'); // non-customray prayers
 
 		// roles
-		if (falsy(settings.rolePriest)) removeAll('rolePriest');
-		if (falsy(settings.roleDeacon)) removeAll('roleDeacon');
-		if (falsy(settings.rolePeople)) removeAll('rolePeople');
+		if (falsy(settings.rolePriest)) removeAll('role[id="Priest"], Role[id="Priest"]');
+		if (falsy(settings.roleDeacon)) removeAll('role[id="Deacon"], Role[id="Deacon"]');
+		if (falsy(settings.rolePeople)) removeAll('role[id="People"], Role[id="People"]');
 
 		// transition time??
 
