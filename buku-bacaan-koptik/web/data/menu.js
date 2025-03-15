@@ -7316,6 +7316,12 @@ export const Menu = (() => {
 							"name": "Distribution",
 							"path": "liturgies/gregory/Distribution of the Holy Mysteries",
 							"uri": "/liturgies/st.-gregory/distribution"
+						},
+						{
+							"name": "Healing to the Sick",
+							"path": "liturgies/gregory/Healing to the Sick",
+							"uri": "/liturgies/st.-gregory/healing-to-the-sick",
+							"hidden": true
 						}
 					],
 					"uri": "/liturgies/st.-gregory"
