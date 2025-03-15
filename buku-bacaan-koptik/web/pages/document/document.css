@@ -3,10 +3,6 @@ document {
 	flex-direction: column;
 	overflow: hidden;
 }
-document ul {
-	margin-top: 8px;
-	padding: 0;
-}
 
 #document-actions { opacity: 0; transition: 0.2s; }
 #document-actions.show { opacity: 1; }

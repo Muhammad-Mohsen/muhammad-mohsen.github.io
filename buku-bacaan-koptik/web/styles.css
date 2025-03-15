@@ -116,6 +116,10 @@ body::before, header::before {
 }
 header::before { position: absolute; }
 
+ol, ul {
+	padding: 4px 12px 12px 20px;
+}
+
 .page {
 	grid-area: 1 / 1;
 	position: fixed;
