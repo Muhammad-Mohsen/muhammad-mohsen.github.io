@@ -8,6 +8,7 @@ import { Translation } from './Translation.js';
 export const Router = (() => {
 
 	window.onpopstate = process;
+	handleAndroidBack();
 
 	function process(event) {
 		// if (history.length <= 1) return console.log('NOTIFY CONTAINER!!');
@@ -51,14 +52,33 @@ export const Router = (() => {
 		location.hash = '#' + uri;
 	}
 
+	function setQuery(param) {
+		const [currentPath, _] = location.href.split('?');
+		history.replaceState({ path: currentPath + `?${param}` }, '', currentPath + `?${param}`);
+	}
+
 	function back() {
 		history.back();
 	}
 
+	async function handleAndroidBack() {
+		try {
+			const app = require('@capacitor/app');
+
+			app.addListener('backButton', () => {
+				if (history.length > 1) back();
+				else app.exitApp();
+			})
+
+		} catch {}
+
+	}
+
 	return {
-		process: process,
-		goto: goto,
-		back: back,
+		process,
+		goto,
+		setQuery,
+		back,
 	}
 
 })();
