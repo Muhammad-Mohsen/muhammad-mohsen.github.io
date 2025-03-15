@@ -83,10 +83,14 @@ aside.show { transform: translateY(0); }
 aside > * {
 	flex-direction: column;
 	align-items: start;
-	margin: 8px 0;
-	padding: 0 12px;
+	margin: 0 0 8px;
+	padding: 0 12px 8px;
 }
 aside > *:not(:last-child) { border-bottom: 1px solid #42628e41; }
+aside > * language {
+	padding: 4px 0 !important;
+	text-align: left !important;
+}
 
 aside title-html {
 	flex-direction: column;
@@ -96,6 +100,7 @@ aside title-html {
 aside linkdocument {
 	flex-direction: row;
 	margin: 8px 0;
+	padding: 0 16px !important;
 	border: none !important;
 	border-radius: 0;
 }
@@ -104,6 +109,7 @@ aside linkdocument {
 	position: sticky;
     top: calc(100% - 64px);
     margin: auto;
+	padding: 0;
 	color: var(--accent-fg);
 	background: var(--accent-red);
 	box-shadow: 2px 4px 8px #0004;

@@ -132,7 +132,7 @@ linkdocument {
     align-items: center;
     justify-content: space-between;
 	margin: 4px 4px 0;
-	padding: 0 16px;
+	padding: 4px 16px;
 	border-radius: 6px;
 	color: var(--accent-red);
 	background: #eb57572d;
