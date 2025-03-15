@@ -14,7 +14,7 @@ export const Router = (() => {
 
 		const [route, query] = location.hash.substring(1).split('?');
 		const entry = Menu.getItem(route);
-		entry.query = query;
+		if (entry) entry.query = query;
 
 		const currentRoute = document.querySelector('.page.show');
 		currentRoute.hide();
