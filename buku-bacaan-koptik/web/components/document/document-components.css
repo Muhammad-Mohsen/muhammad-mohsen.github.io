@@ -8,11 +8,14 @@ language#Arabic {
 Comment, title-html, introduction, conclusion {
 	display: flex;
 }
+title-html { align-items: center; }
 title-html Language {
     flex: 1 0 10%;
     font-size: 1.25em;
+	line-height: 1.25;
     text-align: center;
-    padding: 4px;
+    padding-inline: 12px 4px;
+	padding-block: 12px;
     color: var(--accent-bg);
 }
 
@@ -22,6 +25,12 @@ Comment Language, introduction language, conclusion language {
 	padding: 4px;
 	color: var(--accent-bg);
 	font-style: italic;
+}
+
+/* SILENT PRAYER */
+[silent="true"] > * {
+	opacity: .6;
+	filter: grayscale(1);
 }
 
 Text {
@@ -94,14 +103,14 @@ Section title-html {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 12px 48px 12px 12px;
+	align-items: flex-start;
+	padding: 8px 48px 8px 12px;
 }
-:root[dir="rtl"] Section title-html { padding: 12px 12px 12px 48px; }
+:root[dir="rtl"] Section title-html { padding: 8px 12px 8px 48px; }
 
 Section title-html Language {
-	justify-content: start;
-	text-align: start;
-    line-height: 1.40rem;
+	padding: 4px;
+	text-align: left;
 }
 section[expanded] title-html::after {
 	content: 'unfold_more';

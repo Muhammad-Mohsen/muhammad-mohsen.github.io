@@ -128,10 +128,11 @@ export const DocumentPage = (() => {
 		// transition time??
 
 		// languages...at the end to ensure that we removed the big, parent nodes first (roles/comments for example)
-		if (falsy(settings.langEn)) removeAll('[id="English"]');
-		if (falsy(settings.langCo)) removeAll('[id="Coptic"]');
-		if (falsy(settings.langAr)) removeAll('[id="Arabic"]');
-		if (falsy(settings.langId)) removeAll('[id="Indonesian"]');
+		// remove elements that have the languageId directly, as well as titles that only have the languageId
+		if (falsy(settings.langEn)) removeAll('[id="English"], title-html:has(:only-child[id="English"])');
+		if (falsy(settings.langCo)) removeAll('[id="Coptic"], title-html:has(:only-child[id="Coptic"])');
+		if (falsy(settings.langAr)) removeAll('[id="Arabic"], title-html:has(:only-child[id="Arabic"])');
+		if (falsy(settings.langId)) removeAll('[id="Indonesian"], title-html:has(:only-child[id="Indonesian"])');
 	}
 
 	// a final pass on the final document...some click handlers, and straight up string manipulations on the outerHTML!
