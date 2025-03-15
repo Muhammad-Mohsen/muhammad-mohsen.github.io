@@ -1,7 +1,6 @@
 document {
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 }
 
 #document-actions { opacity: 0; transition: 0.2s; }

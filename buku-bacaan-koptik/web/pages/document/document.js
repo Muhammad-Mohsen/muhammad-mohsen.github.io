@@ -38,10 +38,7 @@ export const DocumentPage = (() => {
 		element.querySelector('#document-actions').show(); // show document actions
 
 		DocumentOutline.create(documentContainer, outlineContainer);
-		if (entry.query) {
-			DocumentOutline.scroll(entry.query);
-			element.scrollTop = 0;
-		}
+		if (entry.query) DocumentOutline.scroll(entry.query);
 	}
 
 	// elegant(er) but slow(er)
@@ -178,6 +175,7 @@ export const DocumentPage = (() => {
 	}
 	function goto(link) {
 		const index = link.getAttribute('outline-index');
+		Router.setQuery(index);
 		const [currentPath, _] = location.href.split('?');
 		history.pushState({ path: currentPath + `?${index}` }, '', currentPath + `?${index}`);
 
