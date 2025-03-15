@@ -22,9 +22,10 @@ title-html Language {
 /* COMMENT */
 Comment Language, introduction language, conclusion language {
 	flex: 1 0 10%;
-	padding: 4px;
+	padding-inline: 8px;
 	color: var(--accent-bg);
 	font-style: italic;
+	text-align: justify;
 }
 
 /* SILENT PRAYER */
