@@ -117,7 +117,7 @@ export const DocumentPage = (() => {
 
 		if (falsy(settings.comments)) removeAll('comment'); // comments
 
-		if (falsy(settings.silentPrayers)) removeAll('comment'); // silent prayers
+		if (falsy(settings.silentPrayers)) removeAll('[silent], [Silent]'); // silent prayers
 		if (falsy(settings.nonCustomaryPrayers)) removeAll('comment'); // non-customray prayers
 
 		// roles
