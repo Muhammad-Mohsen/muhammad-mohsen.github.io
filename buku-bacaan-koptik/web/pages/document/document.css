@@ -21,6 +21,7 @@ document .search-container {
 	transform: scaleX(0);
 	transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 	pointer-events: none;
+	z-index: 1;
 }
 document .search-container.show {
 	transform: scaleX(1);
@@ -89,6 +90,8 @@ aside > *:not(:last-child) { border-bottom: 1px solid #42628e41; }
 aside > * language {
 	padding: 4px 0 !important;
 	text-align: left !important;
+	scale: .9;
+	transform-origin: 0;
 }
 
 aside title-html {
@@ -98,9 +101,8 @@ aside title-html {
 
 aside linkdocument {
 	flex-direction: row;
-	margin: 8px 0;
-	padding: 0 16px !important;
-	border: none !important;
+	margin: 0 0 8px;
+	padding: 0 16px 8px;
 	border-radius: 0;
 }
 
