@@ -46,15 +46,15 @@ Text Language {
 	overflow-wrap: break-word;
 	hyphens: auto;
 }
-Text Language#English { order: 1; }
-Text Language#Arabic { order: 4; }
+Language#English { order: 1; }
+Language#Arabic { order: 4; }
 Language#Indonesian { order: 1; }
 
-Text Language#Coptic {
+Language#Coptic {
 	order: 2;
 	line-height: 1.55;
 }
-Text Language#Coptic[coptic-row] { /* dispay coptic-row in its own row */
+Language#Coptic[coptic-row] { /* dispay coptic-row in its own row */
 	order: 5;
 	flex-basis: 100%;
 }
