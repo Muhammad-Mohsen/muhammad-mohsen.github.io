@@ -109,8 +109,8 @@
 					"uri": "/psalmody/morning-praises"
 				}
 			],
-			"uri": "/psalmody",
-			"disabled": true
+			"uri": "/psalmody"
+	
 		},
 		{
 			"name": "Bible",
@@ -2503,7 +2503,8 @@
 							"uri": "/bible/judith/chapter-16"
 						}
 					],
-					"uri": "/bible/judith"
+					"uri": "/bible/judith",
+					"disabled": true
 				},
 				{
 					"name": "Esther",
@@ -3940,7 +3941,8 @@
 							"uri": "/bible/wisdom/chapter-19"
 						}
 					],
-					"uri": "/bible/wisdom"
+					"uri": "/bible/wisdom",
+					"disabled": true
 				},
 				{
 					"name": "Sirach",
@@ -4201,7 +4203,8 @@
 							"uri": "/bible/sirach/chapter-51"
 						}
 					],
-					"uri": "/bible/sirach"
+					"uri": "/bible/sirach",
+					"disabled": true
 				},
 				{
 					"name": "Isaiah",
@@ -4870,7 +4873,8 @@
 							"uri": "/bible/baruch/chapter-6"
 						}
 					],
-					"uri": "/bible/baruch"
+					"uri": "/bible/baruch",
+					"disabled": true
 				},
 				{
 					"name": "Ezekiel",
@@ -5685,7 +5689,8 @@
 							"uri": "/bible/1-maccabees/chapter-16"
 						}
 					],
-					"uri": "/bible/1-maccabees"
+					"uri": "/bible/1-maccabees",
+					"disabled": true
 				},
 				{
 					"name": "2 Maccabees",
@@ -5766,7 +5771,8 @@
 							"uri": "/bible/2-maccabees/chapter-15"
 						}
 					],
-					"uri": "/bible/2-maccabees"
+					"uri": "/bible/2-maccabees",
+					"disabled": true
 				},
 				{
 					"name": "Prayer of Manasseh",
@@ -5777,7 +5783,8 @@
 							"uri": "/bible/prayer-of-manasseh/chapter-1"
 						}
 					],
-					"uri": "/bible/prayer-of-manasseh"
+					"uri": "/bible/prayer-of-manasseh",
+					"disabled": true
 				},
 				{
 					"name": "Matthew",
@@ -7407,8 +7414,8 @@
 					"uri": "/readings/antiphonary"
 				}
 			],
-			"uri": "/readings",
-			"disabled": true
+			"uri": "/readings"
+			
 		},
 		{
 			"name": "Melodies",
