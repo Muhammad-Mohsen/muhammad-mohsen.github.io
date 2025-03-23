@@ -2416,7 +2416,8 @@
 							"uri": "/bible/tobit/chapter-14"
 						}
 					],
-					"uri": "/bible/tobit"
+					"uri": "/bible/tobit",
+					"disabled": true
 				},
 				{
 					"name": "Judith",
