@@ -148,37 +148,36 @@ Role Text Language#Coptic {} */
 
 role text language::before {
 	display: block;
-	font-style: italic;
-	text-decoration: underline;
+	font-weight: 600;
 }
 role#Bishop {
-	& text #English::before { content: 'Bishop' }
-	& text #Arabic::before { content: 'الأسقف' }
-	& text #Indonesian::before { content: 'Uskup' }
-	& text #Coptic::before { content: 'Piepickopoc' }
+	& text:first-child #English::before { content: 'Bishop' }
+	& text:first-child #Arabic::before { content: 'الأسقف' }
+	& text:first-child #Indonesian::before { content: 'Uskup' }
+	& text:first-child #Coptic::before { content: 'Piepickopoc' }
 }
 role#Priest {
-	& text #English::before { content: 'Priest' }
-	& text #Arabic::before { content: 'الكاهن' }
-	& text #Indonesian::before { content: 'Abouna' }
-	& text #Coptic::before { content: 'Piouhb' }
+	& text:first-child #English::before { content: 'Priest' }
+	& text:first-child #Arabic::before { content: 'الكاهن' }
+	& text:first-child #Indonesian::before { content: 'Abouna' }
+	& text:first-child #Coptic::before { content: 'Piouhb' }
 }
 role#Reader {
-	& text #English::before { content: 'Reader' }
-	& text #Arabic::before { content: 'القارئ' }
-	& text #Indonesian::before { content: 'Pembaca' }
+	& text:first-child #English::before { content: 'Reader' }
+	& text:first-child #Arabic::before { content: 'القارئ' }
+	& text:first-child #Indonesian::before { content: 'Pembaca' }
 }
 role#Deacon {
-	& text #English::before { content: 'Deacon' }
-	& text #Arabic::before { content: 'الشماس' }
-	& text #Indonesian::before { content: 'Diakon' }
-	& text #Coptic::before { content: 'Pidiakwn' }
+	& text:first-child #English::before { content: 'Deacon' }
+	& text:first-child #Arabic::before { content: 'الشماس' }
+	& text:first-child #Indonesian::before { content: 'Diakon' }
+	& text:first-child #Coptic::before { content: 'Pidiakwn' }
 }
 role#People {
-	& text #English::before { content: 'People' }
-	& text #Arabic::before { content: 'الشعب' }
-	& text #Indonesian::before { content: 'Umat' }
-	& text #Coptic::before { content: 'Pilaoc' }
+	& text:first-child #English::before { content: 'People' }
+	& text:first-child #Arabic::before { content: 'الشعب' }
+	& text:first-child #Indonesian::before { content: 'Umat' }
+	& text:first-child #Coptic::before { content: 'Pilaoc' }
 }
 
 content main ul { padding-inline-start: 40px; }

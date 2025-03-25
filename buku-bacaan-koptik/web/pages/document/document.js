@@ -152,7 +152,8 @@ export const DocumentPage = (() => {
 			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">|<\/document>/gi, '') // remove extra 'document' elements
 			.replace(/<linkdocument /gi, `<linkdocument onclick="DocumentPage.goto(this);" `)
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`)
-			.replace(/<section>/gi, '<section expanded="false">'); // collapse sections that aren't expanded by default
+			.replace(/<section>/gi, '<section expanded="false">') // collapse sections that aren't expanded by default
+			.replace(/<section silent="true">/gi, '<section silent="true" expanded="false">'); // collapse sections that aren't expanded by default x2
 	}
 
 	function sectionExpandCollapse(target) {
