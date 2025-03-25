@@ -44,7 +44,7 @@ export const Router = (() => {
 			document.querySelector('home').show(50);
 		}
 
-		Translation.exec();
+		setTimeout(() => Translation.exec(), 100);
 	}
 
 	function goto(uri) {
