@@ -3,6 +3,169 @@ import { SettingsPage } from "../pages/settings/settings.js";
 export const Translation = (() => {
 
 	const translations = {
+		"Thoout": {
+			"en": "Thoout",
+			"ar": "توت",
+			"id": "Tut"
+		},
+		"Paope": {
+			"en": "Paope",
+			"ar": "بابة",
+			"id": "Babah"
+		},
+		"Hathor": {
+			"en": "Hathor",
+			"ar": "هاتور",
+			"id": "Hatur"
+		},
+		"Koiahk": {
+			"en": "Koiahk",
+			"ar": "كيهك",
+			"id": "Kiahk"
+		},
+		"Tobe": {
+			"en": "Tobe",
+			"ar": "طوبة",
+			"id": "Tubah"
+		},
+		"Meshir": {
+			"en": "Meshir",
+			"ar": "أمشير",
+			"id": "Amshir"
+		},
+		"Paremhotep": {
+			"en": "Paremhotep",
+			"ar": "برمهات",
+			"id": "Baramhat"
+		},
+		"Parmoute": {
+			"en": "Parmoute",
+			"ar": "برمودة",
+			"id": "Baramudah"
+		},
+		"Pashons": {
+			"en": "Pashons",
+			"ar": "بشنس",
+			"id": "Bashan"
+		},
+		"Paone": {
+			"en": "Paone",
+			"ar": "بوؤنة",
+			"id": "Baonah"
+		},
+		"Epep": {
+			"en": "Epep",
+			"ar": "أبييب",
+			"id": "Abib"
+		},
+		"Mesore": {
+			"en": "Mesore",
+			"ar": "مسرى",
+			"id": "Misra"
+		},
+		"Nesi": {
+			"en": "Nesi",
+			"ar": "النسيء",
+			"id": "Alnasi"
+		},
+
+		// the comma and extra space make it simpler to split the full date
+		"Satu, ": {
+			"en": "Satu, ",
+			"ar": "السبت",
+			"id": "Sabtu, "
+		},
+		"Sunday, ": {
+			"en": "Sunday, ",
+			"ar": "الأحد",
+			"id": "Minggu, "
+		},
+		"Monday, ": {
+			"en": "Monday, ",
+			"ar": "الإثنين",
+			"id": "Senin, "
+		},
+		"Tuesday, ": {
+			"en": "Tuesday, ",
+			"ar": "الثلاثاء",
+			"id": "Selasa, "
+		},
+		"Wednesday, ": {
+			"en": "Wednesday, ",
+			"ar": "الأربعاء",
+			"id": "Rabu, "
+		},
+		"Thursday, ": {
+			"en": "Thursday, ",
+			"ar": "الخميس",
+			"id": "Kamis, "
+		},
+		"Friday, ": {
+			"en": "Friday, ",
+			"ar": "الجمعة",
+			"id": "Jumat, "
+		},
+		"January": {
+			"en": "January",
+			"ar": "يناير",
+			"id": "Januari"
+		},
+		"February": {
+			"en": "February",
+			"ar": "فبراير",
+			"id": "Februari"
+		},
+		"March": {
+			"en": "March",
+			"ar": "مارس",
+			"id": "Maret"
+		},
+		"April": {
+			"en": "April",
+			"ar": "أبريل",
+			"id": "April"
+		},
+		"May": {
+			"en": "May",
+			"ar": "مايو",
+			"id": "Mei"
+		},
+		"June": {
+			"en": "June",
+			"ar": "يونيو",
+			"id": "Juni"
+		},
+		"July": {
+			"en": "July",
+			"ar": "يوليو",
+			"id": "Juli"
+		},
+		"August": {
+			"en": "August",
+			"ar": "أغسطس",
+			"id": "Agustus"
+		},
+		"September": {
+			"en": "September",
+			"ar": "سبتمبر",
+			"id": "September"
+		},
+		"October": {
+			"en": "October",
+			"ar": "أكتوبر",
+			"id": "Oktober"
+		},
+		"November": {
+			"en": "November",
+			"ar": "نوفمبر",
+			"id": "November"
+		},
+		"December": {
+			"en": "December",
+			"ar": "ديسمبر",
+			"id": "Desember"
+		},
+
 		"Agpeya": {
 			"en": "Agpeya",
 			"ar": "أجبية",

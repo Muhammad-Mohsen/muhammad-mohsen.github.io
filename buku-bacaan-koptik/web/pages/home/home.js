@@ -30,13 +30,17 @@ export const HomePage = (() => {
 	}
 
 	function template(params) {
+
+		const [cDay, cMonth, cDate, cY] = params.copticDate.split(' ');
+		const [month, date, year] = params.gregorianDate.split(' ');
+
 		return `
 		<header>
 			<h4 i18n>Coptic Orthodox Church</h4>
 			<h1 i18n>Buku Bacaan Koptik</h1>
 
-			<div id="copticDate">${params.copticDate}</div>
-			<div id="gregorianDate">${params.gregorianDate}</div>
+			<div id="copticDate"><span i18n>${cDay} </span><span i18n>${cMonth}</span><span> ${cDate} ${cY}</span></div>
+			<div id="gregorianDate"><span i18n>${month}</span><span> ${date} ${year}</span></div>
 
 			<div class="header-buttons">
 				<button class="fab ripple" onclick="Router.goto('/settings')"><span class="material-symbols-outlined">settings</span></button>
