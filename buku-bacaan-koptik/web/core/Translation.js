@@ -41,7 +41,7 @@ export const Translation = (() => {
 		"Veil": {
 			"en": "Veil",
 			"ar": "الستار",
-			"id": "Veil"
+			"id": "Tudung"
 		},
 		"Midnight": {
 			"en": "Midnight",
