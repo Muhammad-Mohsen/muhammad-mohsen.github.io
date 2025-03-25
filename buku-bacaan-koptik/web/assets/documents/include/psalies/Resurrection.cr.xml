@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><Document xmlns="http://www.suscopts.org/CopticReader">   <Season id="PreAscensionPentecostPeriod">      <Group>         <InsertDocument path="include/psalies/ResurrectionContent"/>      </Group>   </Season></Document>
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns="http://www.ortodokskoptik.id/BukuBacaanKoptik">   <Season id="PreAscensionPentecostPeriod">      <Group>         <InsertDocument path="include/psalies/ResurrectionContent"/>      </Group>   </Season></Document>
