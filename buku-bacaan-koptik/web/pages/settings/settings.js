@@ -5,16 +5,18 @@ export const SettingsPage = (() => {
 	const element = document.querySelector('settings');
 
 	const DEFAULTS = {
-		appLang: 'en',
+		appLang: 'id',
 		fontSize: '1',
 		langEn: 'true',
-		langCo: 'true',
+		langCo: 'false',
 		langAr: 'true',
-		langId: 'false',
+		langId: 'true',
 		comments: 'true',
 		silentPrayers: 'true',
 		nonCustomaryPrayers: 'false',
+		roleBishop: 'true',
 		rolePriest: 'true',
+		roleReader: 'true',
 		roleDeacon: 'true',
 		rolePeople: 'true',
 		transitionTime: '18:00'
@@ -189,8 +191,18 @@ export const SettingsPage = (() => {
 			<h4>Roles</h4>
 			<div class="input-group">
 				<label class="input-container switch" i18n>
+					Bishop
+					<input type="checkbox" setting="roleBishop" onchange="SettingsPage.change(this);">
+					<span class="slider"></span>
+				</label>
+				<label class="input-container switch" i18n>
 					Priest
 					<input type="checkbox" setting="rolePriest" onchange="SettingsPage.change(this);">
+					<span class="slider"></span>
+				</label>
+				<label class="input-container switch" i18n>
+					Reader
+					<input type="checkbox" setting="roleReader" onchange="SettingsPage.change(this);">
 					<span class="slider"></span>
 				</label>
 				<label class="input-container switch" i18n>

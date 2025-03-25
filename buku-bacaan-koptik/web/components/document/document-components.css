@@ -146,4 +146,39 @@ Role Text Language#English {}
 Role Text Language#Arabic {}
 Role Text Language#Coptic {} */
 
+role text language::before {
+	display: block;
+	font-style: italic;
+	text-decoration: underline;
+}
+role#Bishop {
+	& text #English::before { content: 'Bishop' }
+	& text #Arabic::before { content: 'الأسقف' }
+	& text #Indonesian::before { content: 'Uskup' }
+	& text #Coptic::before { content: 'Piepickopoc' }
+}
+role#Priest {
+	& text #English::before { content: 'Priest' }
+	& text #Arabic::before { content: 'الكاهن' }
+	& text #Indonesian::before { content: 'Abouna' }
+	& text #Coptic::before { content: 'Piouhb' }
+}
+role#Reader {
+	& text #English::before { content: 'Reader' }
+	& text #Arabic::before { content: 'القارئ' }
+	& text #Indonesian::before { content: 'Pembaca' }
+}
+role#Deacon {
+	& text #English::before { content: 'Deacon' }
+	& text #Arabic::before { content: 'الشماس' }
+	& text #Indonesian::before { content: 'Diakon' }
+	& text #Coptic::before { content: 'Pidiakwn' }
+}
+role#People {
+	& text #English::before { content: 'People' }
+	& text #Arabic::before { content: 'الشعب' }
+	& text #Indonesian::before { content: 'Umat' }
+	& text #Coptic::before { content: 'Pilaoc' }
+}
+
 content main ul { padding-inline-start: 40px; }

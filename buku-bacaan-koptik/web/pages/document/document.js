@@ -118,7 +118,9 @@ export const DocumentPage = (() => {
 		if (falsy(settings.nonCustomaryPrayers)) removeAll('comment'); // non-customray prayers
 
 		// roles
+		if (falsy(settings.roleBishop)) removeAll('role[id="Bishop"], Role[id="Bishop"]');
 		if (falsy(settings.rolePriest)) removeAll('role[id="Priest"], Role[id="Priest"]');
+		if (falsy(settings.roleReader)) removeAll('role[id="Reader"], Role[id="Reader"]');
 		if (falsy(settings.roleDeacon)) removeAll('role[id="Deacon"], Role[id="Deacon"]');
 		if (falsy(settings.rolePeople)) removeAll('role[id="People"], Role[id="People"]');
 
