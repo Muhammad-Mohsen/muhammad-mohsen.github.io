@@ -6,11 +6,11 @@ export const DocumentExporter = (() => {
 		const html = new DOMParser().parseFromString(document.querySelector('body > document > main').innerHTML, 'text/html');
 
 		// try to get the max language count (3 at most, and if not, then two), then get their IDs in a map
-		const languages = (html.querySelector('language:nth-child(3)') || html.querySelector('language:nth-child(2)'))
+		const languages = (html.querySelector('language:nth-child(3)') || html.querySelector('language:nth-child(2)') || html.querySelector('language:nth-child(1)'))
 			.parentElement.querySelectorAll('language').toArray().map(l => l.id);
 
 		// if coptic is the first language, just put it in second, because I know this will be a requirment :D
-		if (languages[0] == 'Coptic') {
+		if (languages[0] == 'Coptic' && languages.length > 1) {
 			languages[0] = languages[1];
 			languages[1] = 'Coptic';
 		}
