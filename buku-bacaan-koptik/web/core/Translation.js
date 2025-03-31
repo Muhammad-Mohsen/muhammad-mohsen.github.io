@@ -888,248 +888,128 @@ export const Translation = (() => {
 		},
 		"Chapter 103": {
 			"en": "Chapter 103",
-			"ar": "اصحاح",
+			"ar": "الإصحاح ١٠٣",
 			"id": "Pasal 103"
 		},
 		"Chapter 104": {
 			"en": "Chapter 104",
-			"ar": "",
+			"ar": "الإصحاح ١٠٤",
 			"id": "Pasal 104"
 		},
 		"Chapter 105": {
 			"en": "Chapter 105",
-			"ar": "",
+			"ar": "الإصحاح ١٠٥",
 			"id": "Pasal 105"
 		},
 		"Chapter 106": {
 			"en": "Chapter 106",
-			"ar": "",
+			"ar": "الإصحاح ١٠٦",
 			"id": "Pasal 106"
 		},
 		"Chapter 107": {
 			"en": "Chapter 107",
-			"ar": "",
+			"ar": "الإصحاح ١٠٧",
 			"id": "Pasal 107"
 		},
 		"Chapter 108": {
 			"en": "Chapter 108",
-			"ar": "",
+			"ar": "الإصحاح ١٠٨",
 			"id": "Pasal 108"
 		},
 		"Chapter 109": {
 			"en": "Chapter 109",
-			"ar": "",
+			"ar": "الإصحاح ١٠٩",
 			"id": "Pasal 109"
 		},
 		"Chapter 110": {
 			"en": "Chapter 110",
-			"ar": "",
+			"ar": "الإصحاح ١١٠",
 			"id": "Pasal 110"
 		},
 		"Chapter 111": {
 			"en": "Chapter 111",
-			"ar": "",
+			"ar": "الإصحاح ١١١",
 			"id": "Pasal 111"
 		},
 		"Chapter 112": {
 			"en": "Chapter 112",
-			"ar": "",
+			"ar": "الإصحاح ١١٢",
 			"id": "Pasal 112"
 		},
 		"Chapter 113": {
 			"en": "Chapter 113",
-			"ar": "",
+			"ar": "الإصحاح ١١٣",
 			"id": "Pasal 113"
 		},
 		"Chapter 114": {
 			"en": "Chapter 114",
-			"ar": "",
+			"ar": "الإصحاح ١١٤",
 			"id": "Pasal 114"
 		},
 		"Chapter 115": {
 			"en": "Chapter 115",
-			"ar": "",
+			"ar": "الإصحاح ١١٥",
 			"id": "Pasal 115"
 		},
 		"Chapter 116": {
 			"en": "Chapter 116",
-			"ar": "",
+			"ar": "الإصحاح ١١٦",
 			"id": "Pasal 116"
 		},
 		"Chapter 117": {
 			"en": "Chapter 117",
-			"ar": "",
+			"ar": "الإصحاح ١١٧",
 			"id": "Pasal 117"
 		},
 		"Chapter 118": {
 			"en": "Chapter 118",
-			"ar": "",
+			"ar": "الإصحاح ١١٨",
 			"id": "Pasal 118"
 		},
 		"Chapter 119": {
 			"en": "Chapter 119",
-			"ar": "",
+			"ar": "الإصحاح ١١٩",
 			"id": "Pasal 119"
 		},
 		"Chapter 120": {
 			"en": "Chapter 120",
-			"ar": "",
+			"ar": "الإصحاح ١٢٠",
 			"id": "Pasal 120"
 		},
 		"Chapter 121": {
 			"en": "Chapter 121",
-			"ar": "",
+			"ar": "الإصحاح ١٢١",
 			"id": "Pasal 121"
 		},
 		"Chapter 122": {
 			"en": "Chapter 122",
-			"ar": "",
+			"ar": "الإصحاح ١٢٢",
 			"id": "Pasal 122"
 		},
 		"Chapter 123": {
 			"en": "Chapter 123",
-			"ar": "",
+			"ar": "الإصحاح ١٢٣",
 			"id": "Pasal 123"
 		},
 		"Chapter 124": {
 			"en": "Chapter 124",
-			"ar": "",
+			"ar": "الإصحاح ١٢٤",
 			"id": "Pasal 124"
 		},
 		"Chapter 125": {
 			"en": "Chapter 125",
-			"ar": "",
+			"ar": "الإصحاح ١٢٥",
 			"id": "Pasal 125"
 		},
 		"Chapter 126": {
 			"en": "Chapter 126",
-			"ar": "",
+			"ar": "الإصحاح ١٢٦",
 			"id": "Pasal 126"
 		},
 		"Chapter 127": {
 			"en": "Chapter 127",
-			"ar": "",
+			"ar": "الإصحاح ١٢٧",
 			"id": "Pasal 127"
-		},
-		"Chapter 128": {
-			"en": "Chapter 128",
-			"ar": "",
-			"id": "Pasal 128"
-		},
-		"Chapter 129": {
-			"en": "Chapter 129",
-			"ar": "",
-			"id": "Pasal 129"
-		},
-		"Chapter 130": {
-			"en": "Chapter 130",
-			"ar": "",
-			"id": "Pasal 130"
-		},
-		"Chapter 131": {
-			"en": "Chapter 131",
-			"ar": "",
-			"id": "Pasal 131"
-		},
-		"Chapter 132": {
-			"en": "Chapter 132",
-			"ar": "",
-			"id": "Pasal 132"
-		},
-		"Chapter 133": {
-			"en": "Chapter 133",
-			"ar": "",
-			"id": "Pasal 133"
-		},
-		"Chapter 134": {
-			"en": "Chapter 134",
-			"ar": "",
-			"id": "Pasal 134"
-		},
-		"Chapter 135": {
-			"en": "Chapter 135",
-			"ar": "",
-			"id": "Pasal 135"
-		},
-		"Chapter 136": {
-			"en": "Chapter 136",
-			"ar": "",
-			"id": "Pasal 136"
-		},
-		"Chapter 137": {
-			"en": "Chapter 137",
-			"ar": "",
-			"id": "Pasal 137"
-		},
-		"Chapter 138": {
-			"en": "Chapter 138",
-			"ar": "",
-			"id": "Pasal 138"
-		},
-		"Chapter 139": {
-			"en": "Chapter 139",
-			"ar": "",
-			"id": "Pasal 139"
-		},
-		"Chapter 140": {
-			"en": "Chapter 140",
-			"ar": "",
-			"id": "Pasal 140"
-		},
-		"Chapter 141": {
-			"en": "Chapter 141",
-			"ar": "",
-			"id": "Pasal 141"
-		},
-		"Chapter 142": {
-			"en": "Chapter 142",
-			"ar": "",
-			"id": "Pasal 142"
-		},
-		"Chapter 143": {
-			"en": "Chapter 143",
-			"ar": "",
-			"id": "Pasal 143"
-		},
-		"Chapter 144": {
-			"en": "Chapter 144",
-			"ar": "",
-			"id": "Pasal 144"
-		},
-		"Chapter 145": {
-			"en": "Chapter 145",
-			"ar": "",
-			"id": "Pasal 145"
-		},
-		"Chapter 146": {
-			"en": "Chapter 146",
-			"ar": "",
-			"id": "Pasal 146"
-		},
-		"Chapter 147": {
-			"en": "Chapter 147",
-			"ar": "",
-			"id": "Pasal 147"
-		},
-		"Chapter 148": {
-			"en": "Chapter 148",
-			"ar": "",
-			"id": "Pasal 148"
-		},
-		"Chapter 149": {
-			"en": "Chapter 149",
-			"ar": "",
-			"id": "Pasal 149"
-		},
-		"Chapter 150": {
-			"en": "Chapter 150",
-			"ar": "",
-			"id": "Pasal 150"
-		},
-		"Chapter 151": {
-			"en": "Chapter 151",
-			"ar": "",
-			"id": "Pasal 151"
 		},
 		"Proverbs": {
 			"en": "Proverbs",
@@ -1874,352 +1754,352 @@ export const Translation = (() => {
 		"St. Pisura the Bishop": {
 			"en": "St. Pisura the Bishop",
 			"ar": "القديس أنبا بيسوره الأسقف",
-			"id": ""
+			"id": "St. Pisura Sang Uskup"
 		},
 		"St. Castor of Bardanuha": {
 			"en": "St. Castor of Bardanuha",
 			"ar": "القديس أبا قسطور البردنوهي",
-			"id": ""
+			"id": "St. Castor dari Bardanuha"
 		},
 		"St. Bisada the Bishop": {
 			"en": "St. Bisada the Bishop",
 			"ar": "القديس الأنبا بِسادة الأسقف",
-			"id": ""
+			"id": "St. Bisada Sang Uskup"
 		},
 		"St. Dioscorus and St. Esklabius": {
 			"en": "St. Dioscorus and St. Esklabius",
 			"ar": "القديس ديسقورس وسكلابيوس أخيه",
-			"id": ""
+			"id": "St. Dioscorus dan St. Esklabius"
 		},
 		"St. Maurice": {
 			"en": "St. Maurice",
 			"ar": "الشهيد موريـــس",
-			"id": ""
+			"id": "St. Maurice"
 		},
 		"St. Philotheus": {
 			"en": "St. Philotheus",
 			"ar": "القديس فيلوثاوُس",
-			"id": ""
+			"id": "St. Philotheus"
 		},
 		"St. Isi and St. Thecla His Sister": {
 			"en": "St. Isi and St. Thecla His Sister",
 			"ar": "لقديسين إيسى وتكلا أخته",
-			"id": ""
+			"id": "St. Isi dan St. Thekla Saudarinya"
 		},
 		"St. George Muzahim": {
 			"en": "St. George Muzahim",
 			"ar": "الشهيد مار جرجس المزاحم",
-			"id": ""
+			"id": "St. George Muzahim"
 		},
 		"St. Julius of Ekbehs": {
 			"en": "St. Julius of Ekbehs",
 			"ar": "القديس يوليوس الإقفهصي",
-			"id": ""
+			"id": "St. Julius dari Ekbehs"
 		},
 		"St. Peter the Seal of the Martyrs": {
 			"en": "St. Peter the Seal of the Martyrs",
 			"ar": "استشهاد البابا بطرس خاتم الشهداء",
-			"id": ""
+			"id": "St. Peter segel para martir"
 		},
 		"St. Cyprian and St. Justina": {
 			"en": "St. Cyprian and St. Justina",
 			"ar": "الشهيد كبريانوس و الشهيدة يوستينا",
-			"id": ""
+			"id": "St. Cyprian dan St. Justina"
 		},
 		"Forty-Nine Martyrs and Elders of Scetis": {
 			"en": "Forty-Nine Martyrs and Elders of Scetis",
 			"ar": "تسعة وأربعون شهيدا شيوخ شيهات",
-			"id": ""
+			"id": "Empat Puluh Sembilan Martir dan Para Pemimpin Scetis"
 		},
 		"Martyrs of Akmim": {
 			"en": "Martyrs of Akmim",
 			"ar": "شهداء أخميم",
-			"id": ""
+			"id": "Para Martir Akmim"
 		},
 		"Martyrs of Fayoum": {
 			"en": "Martyrs of Fayoum",
 			"ar": "الشهداء الفيوم",
-			"id": ""
+			"id": "Para Martir Fayoum"
 		},
 		"Female Martyrs": {
 			"en": "Female Martyrs",
 			"ar": "الشهيدات",
-			"id": ""
+			"id": "Martir Wanita"
 		},
 		"St. Demiana": {
 			"en": "St. Demiana",
 			"ar": "الشهيدة دميانه",
-			"id": ""
+			"id": "St. Demiana"
 		},
 		"St. Dolagy": {
 			"en": "St. Dolagy",
 			"ar": "الشهيدة دولاجى",
-			"id": ""
+			"id": "St. Dolagy"
 		},
 		"St. Barbara": {
 			"en": "St. Barbara",
 			"ar": "القديسة بربارة",
-			"id": ""
+			"id": "St. Barbara"
 		},
 		"St. Juliana": {
 			"en": "St. Juliana",
 			"ar": "القديسة يوليانه",
-			"id": ""
+			"id": "St. Juliana"
 		},
 		"St. Marina the Martyr": {
 			"en": "St. Marina the Martyr",
 			"ar": "الشهيدة مارينا",
-			"id": ""
+			"id": "St. Marina Sang Martir"
 		},
 		"St. Rebecca and Her Five Children": {
 			"en": "St. Rebecca and Her Five Children",
 			"ar": "الشهيدة رفقة وأولادها الخمسة",
-			"id": ""
+			"id": "St. Rebecca dan Lima Anak-anaknya"
 		},
 		"St. Catherine of Alexandria": {
 			"en": "St. Catherine of Alexandria",
 			"ar": "الشهيدة كاترين الإسكندرانية",
-			"id": ""
+			"id": "St. Catherine dari Alexandria"
 		},
 		"Male Saints": {
 			"en": "Male Saints",
 			"ar": "القديسون",
-			"id": ""
+			"id": "Para Santo Lelaki"
 		},
 		"St. Joseph the Carpenter": {
 			"en": "St. Joseph the Carpenter",
 			"ar": "القديس يوسف النجار",
-			"id": ""
+			"id": "St. Yusuf sang Tukang Kayu"
 		},
 		"St. Anthony the Great": {
 			"en": "St. Anthony the Great",
-			"ar": "",
-			"id": ""
+			"ar": "القديس أنطونيوس الكبير",
+			"id": "St. Anthony yang Agung"
 		},
 		"St. Paul the Hermit": {
 			"en": "St. Paul the Hermit",
-			"ar": "",
-			"id": ""
+			"ar": "القديس بولس الناسك",
+			"id": "St. Paulus si Pertapa"
 		},
 		"St. Thomas the Hermit": {
 			"en": "St. Thomas the Hermit",
-			"ar": "",
-			"id": ""
+			"ar": "القديس توما الناسك",
+			"id": "St. Thomas si Pertapa"
 		},
 		"St. Macarius the Great": {
 			"en": "St. Macarius the Great",
-			"ar": "",
-			"id": ""
+			"ar": "القديس مكاريوس الكبير",
+			"id": "St. Macarius yang Agung"
 		},
 		"St. Macarius of Alexandria": {
 			"en": "St. Macarius of Alexandria",
-			"ar": "",
-			"id": ""
+			"ar": "القديس مكاريوس الإسكندري",
+			"id": "St. Macarius dari Aleksandria"
 		},
 		"St. Macarius Bishop of Edkow": {
 			"en": "St. Macarius Bishop of Edkow",
-			"ar": "",
-			"id": ""
+			"ar": "القديس مكاريوس أسقف إدفو",
+			"id": "St. Macarius Uskup Edkow"
 		},
 		"St. John the Short": {
 			"en": "St. John the Short",
-			"ar": "",
-			"id": ""
+			"ar": "القديس يوحنا القصير",
+			"id": "St. Yohanes si Pendek"
 		},
 		"St. Pishoy and St. Paul of Tammah": {
 			"en": "St. Pishoy and St. Paul of Tammah",
-			"ar": "",
-			"id": ""
+			"ar": "القديس بشوي والقديس بولس الطماوي",
+			"id": "St. Pishoy dan St. Paulus dari Tammah"
 		},
 		"St. Arsenius the Teacher of the Kings": {
 			"en": "St. Arsenius the Teacher of the Kings",
-			"ar": "",
-			"id": ""
+			"ar": "القديس أرسانيوس معلم الملوك",
+			"id": "St. Arsenius Pengajar Para Raja"
 		},
 		"St. Maximus and St. Dometius": {
 			"en": "St. Maximus and St. Dometius",
-			"ar": "",
-			"id": ""
+			"ar": "القديس ماكسيموس والقديس دومتياس",
+			"id": "St. Maximus dan St. Dometius"
 		},
 		"St. Moses the Strong": {
 			"en": "St. Moses the Strong",
-			"ar": "",
-			"id": ""
+			"ar": "القديس موسى القوي",
+			"id": "St. Musa yang Kuat"
 		},
 		"St. John Kame": {
 			"en": "St. John Kame",
-			"ar": "",
-			"id": ""
+			"ar": "القديس يوحنا كامي",
+			"id": "St. Yohanes Kame"
 		},
 		"St. Pachom and St. Theodore": {
 			"en": "St. Pachom and St. Theodore",
-			"ar": "",
-			"id": ""
+			"ar": "القديس باخوميوس والقديس ثيودورس",
+			"id": "St. Pachom dan St. Theodore"
 		},
 		"St. Misael the Anchorite": {
 			"en": "St. Misael the Anchorite",
-			"ar": "",
-			"id": ""
+			"ar": "القديس ميسائيل الناسك",
+			"id": "St. Misael si Pertapa"
 		},
 		"St. Shenute the Archimandrite": {
 			"en": "St. Shenute the Archimandrite",
-			"ar": "",
-			"id": ""
+			"ar": "القديس شنودة رئيس المتوحدين",
+			"id": "St. Shenute si Kepala Pertapa"
 		},
 		"St. Besa": {
 			"en": "St. Besa",
-			"ar": "",
-			"id": ""
+			"ar": "القديس بيسا",
+			"id": "St. Besa"
 		},
 		"St. Samuel the Confessor": {
 			"en": "St. Samuel the Confessor",
-			"ar": "",
-			"id": ""
+			"ar": "القديس صموئيل المعترف",
+			"id": "St. Samuel si Pengaku iman"
 		},
 		"St. Nopher the Anchorite": {
 			"en": "St. Nopher the Anchorite",
-			"ar": "",
-			"id": ""
+			"ar": "القديس نوفير الناسك",
+			"id": "St. Nopher si Pertapa"
 		},
 		"King David the Prophet": {
 			"en": "King David the Prophet",
-			"ar": "",
-			"id": ""
+			"ar": "الملك داوود النبي",
+			"id": "Raja Daud sang Nabi"
 		},
 		"St. Karas the Anchorite": {
 			"en": "St. Karas the Anchorite",
-			"ar": "",
-			"id": ""
+			"ar": "القديس كاراس الناسك",
+			"id": "St. Karas si Pertapa"
 		},
 		"St. Apollo and St. Apip": {
 			"en": "St. Apollo and St. Apip",
-			"ar": "",
-			"id": ""
+			"ar": "القديس أبولونيوس والقديس أبيب",
+			"id": "St. Apollo dan St. Apip"
 		},
 		"St. Parsouma the Naked": {
 			"en": "St. Parsouma the Naked",
-			"ar": "",
-			"id": ""
+			"ar": "القديس بارسوميا العاري",
+			"id": "St. Parsouma si Telanjang"
 		},
 		"St. Roweis (Teji)": {
 			"en": "St. Roweis (Teji)",
-			"ar": "",
-			"id": ""
+			"ar": "القديس رويس (تيجي)",
+			"id": "St. Roweis (Teji)"
 		},
 		"St. Mark Abba Antony": {
 			"en": "St. Mark Abba Antony",
-			"ar": "",
-			"id": ""
+			"ar": "القديس مرقس أبا أنطونيوس",
+			"id": "St. Markus Abba Antonius"
 		},
 		"St. Bashouna the Monk and Martyr": {
 			"en": "St. Bashouna the Monk and Martyr",
-			"ar": "",
-			"id": ""
+			"ar": "القديس باشونة الراهب والشهيد",
+			"id": "St. Bashouna si Rahib dan Martir"
 		},
 		"St. Athanasius the Apostolic": {
 			"en": "St. Athanasius the Apostolic",
-			"ar": "",
-			"id": ""
+			"ar": "القديس أثناسيوس الرسولي",
+			"id": "St. Athanasius sang Rasul"
 		},
 		"St. Gregory the Theologian": {
 			"en": "St. Gregory the Theologian",
-			"ar": "",
-			"id": ""
+			"ar": "القديس غريغوريوس اللاهوتي",
+			"id": "St. Gregorius sang Teolog"
 		},
 		"St. Severus Patriarch of Antioch": {
 			"en": "St. Severus Patriarch of Antioch",
-			"ar": "",
-			"id": ""
+			"ar": "القديس سيفيروس بطريرك أنطاكية",
+			"id": "St. Severus Patriark dari Antiokhia"
 		},
 		"St. Cyril of Alexandria": {
 			"en": "St. Cyril of Alexandria",
-			"ar": "",
-			"id": ""
+			"ar": "القديس سيريلوس الإسكندري",
+			"id": "St. Cyril dari Aleksandria"
 		},
 		"St. Takla Haymanout": {
 			"en": "St. Takla Haymanout",
-			"ar": "",
-			"id": ""
+			"ar": "القديسة تكلة هيمانوت",
+			"id": "St. Takla Haymanout"
 		},
 		"St. Pistavros": {
 			"en": "St. Pistavros",
-			"ar": "",
-			"id": ""
+			"ar": "القديس بيستافروس",
+			"id": "St. Pistavros"
 		},
 		"St. Simon the Tanner": {
 			"en": "St. Simon the Tanner",
-			"ar": "",
-			"id": ""
+			"ar": "القديس سمعان الجلودي",
+			"id": "St. Simon si Pengolahan Kulit"
 		},
 		"King Constantine and Queen Helen": {
 			"en": "King Constantine and Queen Helen",
-			"ar": "",
-			"id": ""
+			"ar": "الملك قسطنطين والملكة هيلانة",
+			"id": "Raja Konstantinus dan Ratu Helena"
 		},
 		"Patriarchs Abraham, Isaac, and Jacob": {
 			"en": "Patriarchs Abraham, Isaac, and Jacob",
-			"ar": "",
-			"id": ""
+			"ar": "الآباء إبراهيم وإسحاق ويعقوب",
+			"id": "Para Patriark Abraham, Ishak, dan Yakub"
 		},
 		"The Three Holy Youth": {
 			"en": "The Three Holy Youth",
-			"ar": "",
-			"id": ""
+			"ar": "الفتيان الثلاثة القديسون",
+			"id": "Tiga Pemuda Suci"
 		},
 		"Female Saints": {
 			"en": "Female Saints",
-			"ar": "",
-			"id": ""
+			"ar": "القديسات",
+			"id": "Para Santa Wanita"
 		},
 		"St. Mary Magdalene": {
 			"en": "St. Mary Magdalene",
-			"ar": "",
-			"id": ""
+			"ar": "القديسة مريم المجدلية",
+			"id": "St. Maria Magdalena"
 		},
 		"St. Verena": {
 			"en": "St. Verena",
-			"ar": "",
-			"id": ""
+			"ar": "القديسة فيرينا",
+			"id": "St. Verena"
 		},
 		"St. Monica and St. Augustine": {
 			"en": "St. Monica and St. Augustine",
-			"ar": "",
-			"id": ""
+			"ar": "القديسة مونيكا والقديس أوغسطينوس",
+			"id": "St. Monica dan St. Agustinus"
 		},
 		"St. Mary of Egypt": {
 			"en": "St. Mary of Egypt",
-			"ar": "",
-			"id": ""
+			"ar": "القديسة مريم المصرية",
+			"id": "St. Maria dari Mesir"
 		},
 		"St. Veronica": {
 			"en": "St. Veronica",
-			"ar": "",
-			"id": ""
+			"ar": "القديسة فيرونيكا",
+			"id": "St. Veronika"
 		},
 		"Clergy": {
 			"en": "Clergy",
-			"ar": "",
-			"id": ""
+			"ar": "رجال الدين",
+			"id": "Klerus"
 		},
 		"Anba Abraam Bishop of Fayoum": {
 			"en": "Anba Abraam Bishop of Fayoum",
-			"ar": "",
-			"id": ""
+			"ar": "الأنبا إبرام أسقف الفيوم",
+			"id": "Anba Abraam Uskup Fayoum"
 		},
 		"Fr. Abdelmessih El-Manahri": {
 			"en": "Fr. Abdelmessih El-Manahri",
-			"ar": "",
-			"id": ""
+			"ar": "القس عبدالمسيح المنهري",
+			"id": "Fr. Abdelmessih El-Manahri"
 		},
 		"His Holiness Pope Kyrillos VI": {
 			"en": "His Holiness Pope Kyrillos VI",
-			"ar": "",
-			"id": ""
+			"ar": "قداسة البابا كيرلس السادس",
+			"id": "Kudus Paus Kyrillos VI"
 		},
 		"St. Habib Girgis": {
 			"en": "St. Habib Girgis",
-			"ar": "",
-			"id": ""
+			"ar": "القديس حبيب جرجس",
+			"id": "St. Habib Girgis"
 		},
 		"Patriarch": {
 			"en": "Patriarch",
@@ -2233,7 +2113,7 @@ export const Translation = (() => {
 		},
 		"Doxologies": {
 			"en": "Doxologies",
-			"ar": "",
+			"ar": "الذكصولوجيات",
 			"id": "Doksologi"
 		},
 		"Papal": {
@@ -2243,62 +2123,62 @@ export const Translation = (() => {
 		},
 		"Papal Hymns": {
 			"en": "Papal Hymns",
-			"ar": "",
+			"ar": "ألحان البطرك",
 			"id": "Lagu untuk Paus"
 		},
 		"Departed Patriarchs": {
 			"en": "Departed Patriarchs",
-			"ar": "",
-			"id": "Paus yang Berpulang "
+			"ar": "البطاركة الراحلون",
+			"id": "Paus yang Berpulang"
 		},
 		"Psalms and Absolution": {
 			"en": "Psalms and Absolution",
-			"ar": "",
+			"ar": "المزامير والتحليل",
 			"id": "Mazmur dan Absolusi"
 		},
 		"Litanies": {
 			"en": "Litanies",
-			"ar": "",
+			"ar": "الاواشي",
 			"id": "Litani"
 		},
 		"Healing to the Sick": {
 			"en": "Healing to the Sick",
-			"ar": "",
+			"ar": "اوشية المرضى",
 			"id": "Penyembuhan Orang Sakit"
 		},
 		"Three Absolutions": {
 			"en": "Three Absolutions",
-			"ar": "",
+			"ar": "ثلاث تحاليل",
 			"id": "Tiga Absolusi"
 		},
 		"Procession of the Lamb": {
 			"en": "Procession of the Lamb",
-			"ar": "",
+			"ar": "دورة الحمل",
 			"id": "Prosessi Domba Allah"
 		},
 		"Absolution of the Servants": {
 			"en": "Absolution of the Servants",
-			"ar": "",
+			"ar": "تحليل الخدام",
 			"id": "Absolusi Pelayan"
 		},
 		"Epistle Prayers": {
 			"en": "Epistle Prayers",
-			"ar": "",
-			"id": "Doa Surat"
+			"ar": "صلوات الرسائل",
+			"id": "Doa Surat-surat"
 		},
 		"Mystery of the Gospel": {
 			"en": "Mystery of the Gospel",
-			"ar": "",
+			"ar": "سر الإنجيل",
 			"id": "Rahasia Injil"
 		},
 		"Prayer of the Veil": {
 			"en": "Prayer of the Veil",
-			"ar": "",
+			"ar": "صلاة الحجاب",
 			"id": "Doa Veil"
 		},
 		"Great Fast Litanies": {
 			"en": "Great Fast Litanies",
-			"ar": "",
+			"ar": "طلبات للصوم الكبير",
 			"id": "Litani Puasa Agung"
 		},
 		"Prayer at the Tomb": {
@@ -2338,7 +2218,7 @@ export const Translation = (() => {
 		},
 		"Consecrating the Water": {
 			"en": "Consecrating the Water",
-			"ar": "تقديس ماء العماد",
+			"ar": "تقديس ماء المعمودية",
 			"id": "Konsekrasi Air Baptisan"
 		},
 		"Holy Myron": {
@@ -2609,12 +2489,12 @@ export const Translation = (() => {
 		"Papal Enthronement": {
 			"en": "Papal Enthronement",
 			"ar": "تنصيب قداسة البابا",
-			"id": ""
+			"id": "Penobatan Paus"
 		},
 		"Monk": {
 			"en": "Monk",
 			"ar": "الراهب",
-			"id": "seorang Biarawan"
+			"id": "Seorang Biarawan"
 		},
 		"Sisters": {
 			"en": "Sisters",
@@ -2674,7 +2554,7 @@ export const Translation = (() => {
 		"Insights": {
 			"en": "Insights",
 			"ar": "بيان",
-			"id": ""
+			"id": "Wawasan"
 		},
 		"Sunday Day": {
 			"en": "Sunday Day",
@@ -2790,7 +2670,7 @@ export const Translation = (() => {
 		"Settings": {
 			"en": "Settings",
 			"ar": "الخصائص",
-			"id": ""
+			"id": "Pengaturan"
 		}
 	}
 
