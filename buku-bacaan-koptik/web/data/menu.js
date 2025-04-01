@@ -10824,6 +10824,24 @@ export const Menu = (() => {
 			],
 			"uri": "/include",
 			"hidden": true
+		},
+		{
+			"name": "pascha",
+			"image": "assets/images/agpeya.jpg",
+			"menu": [
+				{
+					"name": "Evening Litanies",
+					"path": "pascha/Evening Litanies",
+					"uri": "/pascha/evening-litanies"
+				},
+				{
+					"name": "Daytime Litanies",
+					"path": "pascha/Daytime Litanies",
+					"uri": "/pascha/daytime-litanies"
+				}
+			],
+			"uri": "/pascha",
+			"hidden": true
 		}
 	];
 
