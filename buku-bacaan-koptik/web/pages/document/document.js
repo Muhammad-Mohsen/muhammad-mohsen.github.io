@@ -176,6 +176,12 @@ export const DocumentPage = (() => {
 		DocumentSearch.scroll(documentContainer, direction);
 		element.querySelector('#search-index').innerHTML = DocumentSearch.index(documentContainer);
 	}
+
+	function presentationScroll(dir) {
+		const scrollValue = .9 * documentContainer.clientHeight * (dir == 'upward' ? -1 : 1);
+		documentContainer.scrollBy({ top: scrollValue, behavior: 'smooth' });
+	}
+
 	function goto(link) {
 		const index = link.getAttribute('outline-index');
 		Router.setQuery(index);
@@ -221,6 +227,13 @@ export const DocumentPage = (() => {
 			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
 		</div>
 
+		<!-- landscape controls -->
+		<button class="fab ripple landscape-back" onclick="Router.back();DocumentPage.clear();"><span class="material-symbols-outlined">arrow_back</span></button>
+		<div class="actions-container landscape-actions">
+			<button class="fab ripple" onclick="DocumentPage.presentationScroll('upward')"><span class="material-symbols-outlined">expand_less</span></button>
+			<button class="fab ripple" onclick="DocumentPage.presentationScroll('downward')"><span class="material-symbols-outlined">expand_more</span></button>
+		</div>
+
 		<!-- document outline -->
 		<aside></aside>
 
@@ -236,6 +249,7 @@ export const DocumentPage = (() => {
 		toggleSearchMode,
 		search,
 		searchScroll,
+		presentationScroll,
 	}
 
 })();

@@ -8,7 +8,7 @@ document {
 
 /* gives room for the floating-action-pill (fap :D) */
 main {
-	padding-bottom: 110px;
+	padding-bottom: 84px;
 	overflow-x: hidden;
 }
 
@@ -120,3 +120,19 @@ aside > :nth-child(2) { margin-top: -56px; }
 aside > :last-child { margin-bottom: 80px; }
 
 document.page { transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1), font-size 0s; }
+
+/* LANDSCAPE */
+.landscape-back, .landscape-actions {
+	display: none;
+	opacity: .6;
+}
+.landscape-back {
+	position: fixed;
+	inset: 8px auto auto 8px;
+	color: var(--accent-fg);
+	background: var(--accent-bg);
+}
+@media (orientation: landscape) {
+	document header, #document-actions { display: none; }
+	.landscape-back, .landscape-actions { display: flex; }
+}
