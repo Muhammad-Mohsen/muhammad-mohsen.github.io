@@ -43,9 +43,12 @@ const ContentEditor = (() => {
 		const sectionHeaders = doc.querySelectorAll('Section Title, section title');
 		for (let h of [...sectionHeaders]) h.setAttribute('data-section-header', 'true');
 
-		// add closing tags to InsertDocument so that they render correctly
-		const insertDocuments = doc.querySelectorAll('InsertDocument, insertdocument');
-		for (let e of [...insertDocuments]) e.innerHTML = 'x';
+		// force a proper closing tag for self-closing tags...the html parser ignores the 'closing' in self-closing tags
+		doc.querySelectorAll('*').forEach(elem => {
+			if (elem.childNodes.length) return;
+			elem.innerHTML = '&#xA0;';
+			elem.setAttribute('self-closing', 'true');
+		});
 
 		// copy one language and add a contenteditable="true" to the copied one
 		let langs = doc.querySelectorAll('[id="Indonesian"]');
