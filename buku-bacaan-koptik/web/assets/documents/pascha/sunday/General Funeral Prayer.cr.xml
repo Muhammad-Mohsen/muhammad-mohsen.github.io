@@ -1,1 +1,133 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><document xmlns="http://www.ortodokskoptik.id/BukuBacaanKoptik" generalfuneralprayer="true" fixeddatedocument="true">   <forceseason id="Feasts ^ FeastsOfTheLordPeriods ^ MajorFeastsOfTheLordPeriods ^ MajorFeastsOfTheLord ^ HosannaSunday ^ AdamDays ^ Weekend ^ Sundays ^ SeasonOfAirAndFruits">      <Title>         <language id="English">General Funeral Prayer</language><language id="Indonesian"><div>Doa Pemakaman Umum</div></language>         <language id="Arabic">صلاة الجناز العام</language>      </Title>            <comment>         <language id="English">            The priest closes the veil of the sanctuary and begins the General Funeral Prayer.         </language><language id="Indonesian">            Imam menutup tirai Altar dan memulai Doa Pemakaman Umum.         </language>      </comment>            <insertdocument path="include/StartOfService"/>      <insertdocument path="include/ThanksgivingPrayer"/>            <comment>         <language id="English">            The priest raises incense while the congregation chants the verses of the cymbals:         </language><language id="Indonesian">            Imam menaikkan dupa sementara jemaat menyanyikan ayat-ayat simbal:         </language>      </comment>            <insertdocument path="include/versesofthecymbals/VersesOfTheCymbals"/>      <insertdocument path="include/Psalm50AndGloryBeToOurGod"/>            <role id="Deacon">         <biblereference reference="Ezekiel 37:1-14" type="section">            </biblereference></role>      <insertdocument path="include/StandardPrayerIntro"/>      <insertdocument path="include/litanies/Sick"/>      <insertdocument path="include/EveryNight"/>            <role id="People">            <insertdocument path="include/DoxaPatriAlleluia"/>               </role>            <role id="People">            <insertdocument path="include/TenouwstSeasonalResponse"/>      </role>            <comment>         <language id="English">            The Introduction to the Pauline Epistle is chanted in the Paschal tune "For the Resurrection (<span class="Coptic">Eybe ]a~nactacic</span>)" in Coptic and then the Epistle is translated:         </language><language id="Indonesian">Pendahuluan untuk Surat Rasul Paulus dinyanyikan dengan nada Paskah "Untuk Kebangkitan (<span style="font-family: Coptic;">Eybe ]a~nactacic</span>)" dalam bahasa Koptik, lalu Surat Rasul Paulus diterjemahkan:</language>      </comment>            <section expanded="true">         <Title data-section-header="true">            <language id="English">Introduction to the Coptic Pauline Epistle</language><language id="Indonesian">Pendahulan Surat Paulus dalam Bahasa Koptik</language>            <language id="Coptic">Eybe ]a~nactacic</language>         </Title>                  <insertdocument path="pascha/include/EthveTiAnastasisVerse"/>            <insertdocument path="include/PaulineEpistleIntroduction"/>                  <text>            <language id="Coptic">               }tamou de m~mwten nac~n/ou e~pieuagglion...            </language>            <language id="English">               Moreover, brethren, I declare to you the Gospel...            </language><language id="Indonesian">Dan sekarang, saudara-saudara, aku mau mengingatkan kamu kepada Injil yang aku beritakan kepadamu...</language>            <language id="Arabic">               وأنا اعلمكم يا اخوتى ان الأنجيل...            </language>                  </text>                  <insertdocument path="include/PaulineEpistleConclusion"/>      </section>            <role id="People">         <insertdocument path="include/PaulineEpistleResponses"/>      </role>            <biblereference reference="1 Corinthians 15:1-23" type="section">                  <insertdocument path="include/trisagion/Seasonal"/>          <insertdocument path="include/LitanyOfTheGospelIntro"/>         <comment>         <language id="English">            Then deacon chants the psalm in the (Adribi) tune.          </language><language id="Indonesian">            Kemudian diakon menyanyikan mazmur dengan nada (Adribi).          </language>         <language id="Arabic">            ثم يرتل الشماس المزمور بالطريقه الادريبي.         </language>      </comment>            <role id="Reader">         <section expanded="true">            <Title data-section-header="true">               <language id="English">Psalms 64:5</language><language id="Indonesian">Mazmur 65:5</language>               <language id="Arabic">مزمور 64: 5</language>            </Title>                        <insertdocument path="pascha/include/PsalmOfDavid"/>            <text>               <language id="Coptic">                  Wouniatf m~v/e~takcotpf ouoh aksopf e~rok               </language>               <language id="English">                  Blessed is he whom You choose and help               </language><language id="Indonesian"><div>Berbahagialah orang yang Engkau pilih </div></language>               <language id="Arabic">                  ليسكن في ديارك إلي الأبد,               </language>            </text>            <text>               <language id="Coptic">                  Efe~swpi qen nekaul/ou sae~neh.               </language>               <language id="English">                  He shall dwell in Your courts.               </language><language id="Indonesian"><div>dan yang Engkau suruh mendekat untuk diam di pelataran-Mu! </div></language>               <language id="Arabic">                  طوبي لمن أخترته وقبلته               </language>            </text>            <text>               <language id="Coptic">                  Ene~ci e~bol qen nia~gayon n~te pek/i.               </language>               <language id="English">                  We shall be satisfied with the goodness of Your house.               </language><language id="Indonesian">                  Kiranya kami menjadi kenyang dengan segala yang baik di rumah-Mu,</language>               <language id="Arabic">                  سَنَشْبَعُ من خَيْرَاتِ بَيْتِكَ.               </language>            </text>            <text>               <language id="Coptic">                  F~ouab n~je pekervei: ouoh foi n~s~v/ri qen oumeym/i: all/louia.               </language>               <language id="English">                  Holy is Your temple, wondrous in righteousness. Alleluia.               </language><language id="Indonesian">di bait- Mu yang kudus. Alleluia.               </language>               <language id="Arabic">                  قدوس هو هيكلك وعجيب بالبر. الليلويا.               </language>            </text>                        <comment>               <language id="English">                  Then they say the following hymn with its known (Adribi) tune or the fast one.               </language><language id="Indonesian">                  Setelah itu, mereka menyanyikan himne berikut dengan nada (Adribi) yang sudah dikenal atau dengan versi cepat</language>               <language id="Arabic">                  ثم يقولون مقدمة الانجيل بالطريقه الادريبي أو دمجاً.               </language>            </comment>         </section>      </role>            <section expanded="true">         <Title data-section-header="true">            <language id="English">John 5:19-29</language><language id="Indonesian">Yohanes 5:19-29</language>            <language id="Arabic">يوحنا 5: 19-29</language>         </Title>                  <insertdocument path="pascha/include/KeEperto"/>         <insertdocument path="pascha/include/GospelIntroJohn"/>         <insertdocument path="include/GloryBeToGodForever"/>                  <role id="Reader">            <biblereference reference="John 5:19-29" hideintroconclusion="true">            <insertdocument path="pascha/include/BowDownBeforeTheHolyGospel"/>         </biblereference></role>      </section>                  <insertdocument path="include/gospelResponse/GospelResponse"/>      <insertdocument path="include/ThreeGreatLitanies"/>         <insertdocument path="include/Ensofia"/>      <insertdocument path="include/CreedPeople"/>      <insertdocument path="include/StandardPrayerIntro"/>      <insertdocument path="include/litanies/Departed"/>      <insertdocument path="include/NonLiturgyConcludingAbsolutions"/>      <insertdocument path="pascha/include/Conclusion"/>   </biblereference></forceseason></document>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.ortodokskoptik.id/BukuBacaanKoptik" generalfuneralprayer="true" fixeddatedocument="true">
+	<forceseason id="Feasts ^ FeastsOfTheLordPeriods ^ MajorFeastsOfTheLordPeriods ^ MajorFeastsOfTheLord ^ HosannaSunday ^ AdamDays ^ Weekend ^ Sundays ^ SeasonOfAirAndFruits">
+		<Title>
+			<language id="English">General Funeral Prayer</language>
+			<language id="Indonesian">
+				<div>Doa Pemakaman Umum</div>
+			</language>
+			<language id="Arabic">صلاة الجناز العام</language>
+		</Title>
+		<comment>
+			<language id="English">            The priest closes the veil of the sanctuary and begins the General Funeral Prayer.         </language>
+			<language id="Indonesian">            Imam menutup tirai Altar dan memulai Doa Pemakaman Umum.         </language>
+		</comment>
+		<insertdocument path="include/StartOfService"/>
+		<insertdocument path="include/ThanksgivingPrayer"/>
+		<comment>
+			<language id="English">            The priest raises incense while the congregation chants the verses of the cymbals:         </language>
+			<language id="Indonesian">            Imam menaikkan dupa sementara jemaat menyanyikan ayat-ayat simbal:         </language>
+		</comment>
+		<insertdocument path="include/versesofthecymbals/VersesOfTheCymbals"/>
+		<insertdocument path="include/Psalm50AndGloryBeToOurGod"/>
+		<role id="Deacon">
+			<biblereference reference="Ezekiel 37:1-14" type="section">            </biblereference>
+		</role>
+		<insertdocument path="include/StandardPrayerIntro"/>
+		<insertdocument path="include/litanies/Sick"/>
+		<insertdocument path="include/EveryNight"/>
+		<role id="People">
+			<insertdocument path="include/DoxaPatriAlleluia"/>
+		</role>
+		<role id="People">
+			<insertdocument path="include/TenouwstSeasonalResponse"/>
+		</role>
+		<comment>
+			<language id="English">            The Introduction to the Pauline Epistle is chanted in the Paschal tune "For the Resurrection (<span class="Coptic">Eybe ]a~nactacic</span>)" in Coptic and then the Epistle is translated:         </language>
+			<language id="Indonesian">Pendahuluan untuk Surat Rasul Paulus dinyanyikan dengan nada Paskah "Untuk Kebangkitan (<span style="font-family: Coptic;">Eybe ]a~nactacic</span>)" dalam bahasa Koptik, lalu Surat Rasul Paulus diterjemahkan:</language>
+		</comment>
+		<section expanded="true">
+			<Title data-section-header="true">
+				<language id="English">Introduction to the Coptic Pauline Epistle</language>
+				<language id="Indonesian">Pendahulan Surat Paulus dalam Bahasa Koptik</language>
+				<language id="Coptic">Eybe ]a~nactacic</language>
+			</Title>
+			<insertdocument path="pascha/include/EthveTiAnastasisVerse"/>
+			<insertdocument path="include/PaulineEpistleIntroduction"/>
+			<text>
+				<language id="Coptic">               }tamou de m~mwten nac~n/ou e~pieuagglion...            </language>
+				<language id="English">               Moreover, brethren, I declare to you the Gospel...            </language>
+				<language id="Indonesian">Dan sekarang, saudara-saudara, aku mau mengingatkan kamu kepada Injil yang aku beritakan kepadamu...</language>
+				<language id="Arabic">               وأنا اعلمكم يا اخوتى ان الأنجيل...            </language>
+			</text>
+			<insertdocument path="include/PaulineEpistleConclusion"/>
+		</section>
+		<role id="People">
+			<insertdocument path="include/PaulineEpistleResponses"/>
+		</role>
+		<biblereference reference="1 Corinthians 15:1-23" type="section"/>
+			<insertdocument path="include/trisagion/Seasonal"/>
+			<insertdocument path="include/LitanyOfTheGospelIntro"/>
+			<comment>
+				<language id="English">            Then deacon chants the psalm in the (Adribi) tune.          </language>
+				<language id="Indonesian">            Kemudian diakon menyanyikan mazmur dengan nada (Adribi).          </language>
+				<language id="Arabic">            ثم يرتل الشماس المزمور بالطريقه الادريبي.         </language>
+			</comment>
+			<role id="Reader">
+				<section expanded="true">
+					<Title data-section-header="true">
+						<language id="English">Psalms 64:5</language>
+						<language id="Indonesian">Mazmur 65:5</language>
+						<language id="Arabic">مزمور 64: 5</language>
+					</Title>
+					<insertdocument path="pascha/include/PsalmOfDavid"/>
+					<text>
+						<language id="Coptic">                  Wouniatf m~v/e~takcotpf ouoh aksopf e~rok               </language>
+						<language id="English">                  Blessed is he whom You choose and help               </language>
+						<language id="Indonesian">
+							<div>Berbahagialah orang yang Engkau pilih </div>
+						</language>
+						<language id="Arabic">                  ليسكن في ديارك إلي الأبد,               </language>
+					</text>
+					<text>
+						<language id="Coptic">                  Efe~swpi qen nekaul/ou sae~neh.               </language>
+						<language id="English">                  He shall dwell in Your courts.               </language>
+						<language id="Indonesian">
+							<div>dan yang Engkau suruh mendekat untuk diam di pelataran-Mu! </div>
+						</language>
+						<language id="Arabic">                  طوبي لمن أخترته وقبلته               </language>
+					</text>
+					<text>
+						<language id="Coptic">                  Ene~ci e~bol qen nia~gayon n~te pek/i.               </language>
+						<language id="English">                  We shall be satisfied with the goodness of Your house.               </language>
+						<language id="Indonesian">                  Kiranya kami menjadi kenyang dengan segala yang baik di rumah-Mu,</language>
+						<language id="Arabic">                  سَنَشْبَعُ من خَيْرَاتِ بَيْتِكَ.               </language>
+					</text>
+					<text>
+						<language id="Coptic">                  F~ouab n~je pekervei: ouoh foi n~s~v/ri qen oumeym/i: all/louia.               </language>
+						<language id="English">                  Holy is Your temple, wondrous in righteousness. Alleluia.               </language>
+						<language id="Indonesian">di bait- Mu yang kudus. Alleluia.               </language>
+						<language id="Arabic">                  قدوس هو هيكلك وعجيب بالبر. الليلويا.               </language>
+					</text>
+					<comment>
+						<language id="English">                  Then they say the following hymn with its known (Adribi) tune or the fast one.               </language>
+						<language id="Indonesian">                  Setelah itu, mereka menyanyikan himne berikut dengan nada (Adribi) yang sudah dikenal atau dengan versi cepat</language>
+						<language id="Arabic">                  ثم يقولون مقدمة الانجيل بالطريقه الادريبي أو دمجاً.               </language>
+					</comment>
+				</section>
+			</role>
+			<section expanded="true">
+				<Title data-section-header="true">
+					<language id="English">John 5:19-29</language>
+					<language id="Indonesian">Yohanes 5:19-29</language>
+					<language id="Arabic">يوحنا 5: 19-29</language>
+				</Title>
+				<insertdocument path="pascha/include/KeEperto"/>
+				<insertdocument path="pascha/include/GospelIntroJohn"/>
+				<insertdocument path="include/GloryBeToGodForever"/>
+				<role id="Reader">
+					<biblereference reference="John 5:19-29" hideintroconclusion="true">
+						<insertdocument path="pascha/include/BowDownBeforeTheHolyGospel"/>
+					</biblereference>
+				</role>
+			</section>
+			<insertdocument path="include/gospelResponse/GospelResponse"/>
+			<insertdocument path="include/ThreeGreatLitanies"/>
+			<insertdocument path="include/Ensofia"/>
+			<insertdocument path="include/CreedPeople"/>
+			<insertdocument path="include/StandardPrayerIntro"/>
+			<insertdocument path="include/litanies/Departed"/>
+			<insertdocument path="include/NonLiturgyConcludingAbsolutions"/>
+			<insertdocument path="pascha/include/Conclusion"/>
+	</forceseason>
+</document>
