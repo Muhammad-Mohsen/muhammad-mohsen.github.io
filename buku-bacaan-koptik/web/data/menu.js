@@ -10820,7 +10820,12 @@ export const Menu = (() => {
 					"name": "YouWhoAreSeated",
 					"path": "include/YouWhoAreSeated",
 					"uri": "/include/YouWhoAreSeated"
-				}
+				},
+				{
+					"name": "Doxologies",
+					"path": "include/doxologies/Doxologies",
+					"uri": "/index/doxologies"
+				},
 			],
 			"uri": "/include",
 			"hidden": true
