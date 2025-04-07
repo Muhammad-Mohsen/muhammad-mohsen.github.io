@@ -60,6 +60,7 @@ Language#Coptic[coptic-row] { /* dispay coptic-row in its own row */
 }
 
 /* BIBLE */
+biblereference { display: contents; }
 bibleverse {
 	position: relative;
 	display: flex;

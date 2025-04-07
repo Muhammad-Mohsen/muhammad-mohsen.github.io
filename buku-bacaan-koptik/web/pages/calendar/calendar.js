@@ -1,4 +1,5 @@
 import { ListItem2 } from '../../components/list-item/list-item.js';
+import { Router } from '../../core/router.js';
 import { Occasions } from '../../data/occasions.js';
 import { HomePage } from '../home/home.js';
 
@@ -38,6 +39,7 @@ export const CalendarPage = (() => {
 		live = date ? new Date(date) : new Date();
 		subHeader.innerHTML = `${live.formatGregorian('full')}<br><i>${live.formatCoptic(true)}</i>`;
 		HomePage.setDate(live);
+		Router.back();
 	}
 
 	function getLive() {

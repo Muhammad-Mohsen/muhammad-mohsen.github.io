@@ -21,20 +21,20 @@ export const BibleRef = (function () {
 		const addendums = getAddendums(node);
 		const attrs = [...node.attributes].map(a => `${a.name}="${a.value}"`).join(' ');
 
-		return verses.map(v => renderVerse(v, attrs, addendums)).join('');
+		return (addendums.introduction || '') + verses.map(v => renderVerse(v, attrs)).join('') + (addendums.conclusion || '');
 	}
 
-	function renderVerse(chapterVerse, attrs, addendums) {
+	function renderVerse(chapterVerse, attrs) {
 		// get verse from book
 		const [chapter, verse] = chapterVerse.split(':');
 		const [kjvVerse, svdVerse, tbVerse] = [nkjv, svd, tb].map(b =>
 			b.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''); // hide off-by-one errors!!
 
-		return `${addendums.introduction}<bibleverse chapterverse="${chapterVerse}" verse="${verse}" ${attrs}>
+		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}" ${attrs}>
 			<language id="English">${kjvVerse}</language>
 			<language id="Arabic">${svdVerse}</language>
 			<language id="Indonesian">${tbVerse}</language>
-		</bibleverse>${addendums.conclusion}`;
+		</bibleverse>`;
 	}
 
 	async function setBooks(ref) {
@@ -121,10 +121,10 @@ export const BibleRef = (function () {
 		const name = getBibleName(ref);
 		const addendums = BibleAddendums.get(name);
 
-		const ignoreAddendums = !ref.match(/psalm.*:/i); // addendums are only shown if psalm & the verses have a colon!!
+		const ignoreAddendums = !ref.match(/[-:]/); // addendums are only shown if ref has a dash or a colon (see boolRef in BibleReference.java#getBibleVerses)
 		const hideIntro = ignoreAddendums || node.getAttribute('hideIntro')?.toLowerCase() == 'true';
 		const hideConclusion = ignoreAddendums || node.getAttribute('hideConclusion')?.toLowerCase() == 'true';
-		const hideIntroConclusion = ignoreAddendums || node.getAttribute('hideIntroConclusion')?.toLowerCase() == 'true';
+		const hideIntroConclusion = node.getAttribute('hideIntroConclusion')?.toLowerCase() == 'true';
 
 		return {
 			introduction: (hideIntro || hideIntroConclusion) ? '' : addendums.introduction,
