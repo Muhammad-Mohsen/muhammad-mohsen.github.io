@@ -2,11 +2,12 @@ export const DocumentOutline = (() => {
 
 	const HEADER_TEMPLATE = '<button id="close-outline" class="fab ripple" onclick="DocumentOutline.toggle()"><span class="material-symbols-outlined">close</span></button>';
 
-	let outlineContainer, documentContainer;
+	let outlineContainer, documentContainer, backButton;
 
-	function create(document, outline) {
+	function create(document, outline, back) {
 		documentContainer = document;
 		outlineContainer = outline;
+		backButton = back;
 
 		const titles = [...documentContainer.querySelectorAll('title-html, linkdocument')];
 		titles.forEach((t, i) => t.setAttribute('outline-index', i));
@@ -19,6 +20,7 @@ export const DocumentOutline = (() => {
 
 	function toggle(force) {
 		outlineContainer.classList.toggle('show', force);
+		backButton.classList.toggle('hide', force);
 	}
 
 	function scroll(outline) {

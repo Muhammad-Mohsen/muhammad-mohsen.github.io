@@ -37,7 +37,7 @@ export const DocumentPage = (() => {
 		element.querySelector('loading').classList.remove('show'); // hide the loading indicator
 		element.querySelector('#document-actions').show(); // show document actions
 
-		DocumentOutline.create(documentContainer, outlineContainer);
+		DocumentOutline.create(documentContainer, outlineContainer, element.querySelector('header button'));
 		if (entry.query) DocumentOutline.scroll(entry.query);
 	}
 
@@ -86,7 +86,7 @@ export const DocumentPage = (() => {
 
 		for (let r of refs) {
 			const refNode = await BibleRef.render(r);
-			r.outerHTML = refNode; // replaceWith(refNode);
+			r.innerHTML = refNode; // replaceWith(refNode);
 		}
 
 		BibleRef.updateGospelIntroductions(doc);
@@ -149,7 +149,7 @@ export const DocumentPage = (() => {
 			// title element can only have text nodes, so we change it so it renders its inner HTML correctly
 			.replace(/<title|<\/title>/gi, match => match.toLowerCase() == '<title' ? '<title-html' : '</title-html>')
 
-			.replace(/<document xmlns="http:\/\/www.suscopts.org\/CopticReader">|<\/document>/gi, '') // remove extra 'document' elements
+			.replace(/<document xmlns="http:\/\/www.ortodokskoptik.id\/BukuBacaanKoptik">|<\/document>/gi, '') // remove extra 'document' elements
 			.replace(/<linkdocument /gi, `<linkdocument onclick="DocumentPage.goto(this);" `)
 			.replace(/data-section-header="true"/gi, `onclick="DocumentPage.sectionExpandCollapse(this);"`)
 			.replace(/<section>/gi, '<section expanded="false">') // collapse sections that aren't expanded by default
@@ -185,8 +185,6 @@ export const DocumentPage = (() => {
 	function goto(link) {
 		const index = link.getAttribute('outline-index');
 		Router.setQuery(index);
-		const [currentPath, _] = location.href.split('?');
-		history.pushState({ path: currentPath + `?${index}` }, '', currentPath + `?${index}`);
 
 		const path = link.getAttribute('path');
 		const entry = Menu.getItemByPath(Menu.getData(), path);
@@ -210,13 +208,20 @@ export const DocumentPage = (() => {
 			<loading class="show"></loading>
 		</header>
 
+		<!-- landscape back -->
+		<button class="fab ripple landscape-back" onclick="Router.back();DocumentPage.clear();"><span class="material-symbols-outlined">arrow_back</span></button>
+
 		<!-- document is rendered asynchronously, and is injected after that completes -->
 		<main></main>
 
 		<div id="document-actions" class="actions-container">
+			<button class="fab ripple landscape-action" onclick="DocumentPage.presentationScroll('upward')"><span class="material-symbols-outlined">expand_less</span></button>
+
 			<button class="fab ripple" onclick="DocumentOutline.toggle(true)"><span class="material-symbols-outlined">format_align_left</span></button>
 			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
 			<button class="fab ripple" onclick="Router.goto('/settings')"><span class="material-symbols-outlined">settings</span></button>
+
+			<button class="fab ripple landscape-action" onclick="DocumentPage.presentationScroll('downward')"><span class="material-symbols-outlined">expand_more</span></button>
 		</div>
 
 		<div class="actions-container search-container">
@@ -225,13 +230,6 @@ export const DocumentPage = (() => {
 			<button class="fab ripple" onclick="DocumentPage.searchScroll(false)"><span class="material-symbols-outlined">expand_less</span></button>
 			<button class="fab ripple" onclick="DocumentPage.searchScroll(true)"><span class="material-symbols-outlined">expand_more</span></button>
 			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
-		</div>
-
-		<!-- landscape controls -->
-		<button class="fab ripple landscape-back" onclick="Router.back();DocumentPage.clear();"><span class="material-symbols-outlined">arrow_back</span></button>
-		<div class="actions-container landscape-actions">
-			<button class="fab ripple" onclick="DocumentPage.presentationScroll('upward')"><span class="material-symbols-outlined">expand_less</span></button>
-			<button class="fab ripple" onclick="DocumentPage.presentationScroll('downward')"><span class="material-symbols-outlined">expand_more</span></button>
 		</div>
 
 		<!-- document outline -->

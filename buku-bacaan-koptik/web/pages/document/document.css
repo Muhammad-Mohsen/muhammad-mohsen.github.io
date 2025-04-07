@@ -6,6 +6,9 @@ document {
 #document-actions { opacity: 0; transition: 0.2s; }
 #document-actions.show { opacity: 1; }
 
+header button.ripple { transition: .2s, filter 0.5s; }
+header button.hide { margin-left: -60px; }
+
 /* gives room for the floating-action-pill (fap :D) */
 main {
 	padding-bottom: 84px;
@@ -14,7 +17,7 @@ main {
 
 /* SEARCH */
 document .search-container {
-	inset: calc(100dvh - 80px) 16px auto 16px;
+	inset: calc(100dvh - 64px) 16px auto;
 	width: auto; /* on ios, width: fit-content breaks the layout! */
 	color: var(--accent-bg);
 	background: transparent;
@@ -68,10 +71,12 @@ mark {
 
 aside {
 	position: absolute;
-	inset: 12px;
-	border-radius: 8px;
+	inset: 72px 0 0;
+	padding-top: 12px;
+	/* border-radius: 8px;
 	background: var(--main-bg);
-	box-shadow: 2px 4px 8px #0004;
+	box-shadow: 2px 4px 8px #0004; */
+	backdrop-filter: blur(16px);
 	z-index: 1;
 	overflow-y: auto;
 	overscroll-behavior: contain;
@@ -122,10 +127,7 @@ aside > :last-child { margin-bottom: 80px; }
 document.page { transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1), font-size 0s; }
 
 /* LANDSCAPE */
-.landscape-back, .landscape-actions {
-	display: none;
-	opacity: .6;
-}
+.landscape-back, .landscape-action { display: none; }
 .landscape-back {
 	position: fixed;
 	inset: 8px auto auto 8px;
@@ -133,6 +135,8 @@ document.page { transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1), font-size 0s
 	background: var(--accent-bg);
 }
 @media (orientation: landscape) {
-	document header, #document-actions { display: none; }
-	.landscape-back, .landscape-actions { display: flex; }
+	document header { display: none; }
+	.landscape-back, .landscape-action { display: flex; }
+	.landscape-back, #document-actions.show { opacity: .6; }
+	aside.show { inset: 0; }
 }
