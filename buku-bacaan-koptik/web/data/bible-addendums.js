@@ -27,8 +27,7 @@ export const BibleAddendums = (() => {
 				<Language id="Coptic">            Ouw~ou n~]t~riac eyouab Pennou] sa e~neh nem sa e~neh n~te nie~neh t/rou: a~m/n.         </Language>
 				<Language id="English">            Glory be to the Holy Trinity, our God, forever and unto the ages of all ages. Amen.         </Language>
 				<Language id="Arabic">            مـجداً للثالوث القدوس إلـهنا الـى أبد الآبدين کاﻬا آمين.         </Language>
-				<Language id="Indonesian">			Kemuliaan bagi Tritunggal Kudus untuk selamanya dan hingga segala abad. Amin.</Language>
-			</
+				<Language id="Indonesian">			Kemuliaan bagi Tritunggal Kudus untuk selamanya dan hingga segala abad. Amin. </Language>
 			</Conclusion>
 		</Style>
 		<Style id="lamentations">
@@ -44,7 +43,7 @@ export const BibleAddendums = (() => {
 				<Language id="English">            Glory be to the Holy Trinity, our God, forever and unto the ages of all ages. Amen.         </Language>
 				<Language id="Arabic">            مـجداً للثالوث القدوس إلـهنا الـى أبد الآبدين کاﻬا آمين.         </Language>
 				<Language id="Indonesian">			Kemuliaan bagi Tritunggal kudus, Allah Kita, untuk selamanya dan hingga segala abad. Amin</Language>
-			</
+			
 			</Conclusion>
 		</Style>
 		<Style id="prophecy_author">
