@@ -132,7 +132,7 @@ export const BibleAddendums = (() => {
 			<Introduction>
 				<Language id="English">            Paul, the servant of our Lord Jesus Christ, called to be an apostle, appointed to the Gospel of God. A reading from the[ORDINAL] Epistle of our teacher Paul to the [BOOK_NAME]. May his holy blessings be with us. Amen.         </Language>
 				<Language id="Arabic">            بولس عبد يسوع المسيح الرسول المدعو المفرز لبشرى الله. فصل من رسالة معلمنا بولس الرسول[ORDINAL] الى اهل [BOOK_NAME] بركته تكون معنا. آمين.         </Language>
-				<Language id="Indonesian"> Paulus, hamba Tuhan kita Yesus Kristus, dipanggil sebagai rasul, dipilih untuk memberitakan Injil Allah. Pembacaan dari surat [BOOK_Name] oleh guru kita Rasul Paulus kepada [ORDINAL]. Kiranya berkat-berkatnya beserta kita. Amin. </Language>
+				<Language id="Indonesian"> Paulus, hamba Tuhan kita Yesus Kristus, dipanggil sebagai rasul, dipilih untuk memberitakan Injil Allah. Pembacaan dari surat [BOOK_NAME] oleh guru kita Rasul Paulus kepada [ORDINAL]. Kiranya berkat-berkatnya beserta kita. Amin. </Language>
 				</Introduction>
 			<Conclusion>
 				<Language id="English">            The grace of God the Father be with you all. Amen.         </Language>
