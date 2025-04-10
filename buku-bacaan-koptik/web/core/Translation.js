@@ -2696,8 +2696,19 @@ export const Translation = (() => {
 		document.documentElement.setAttribute('dir', lang == 'ar' ? 'rtl' : 'ltr');
 	}
 
+	function of(key) {
+		const translations = structuredClone(translations[key]);
+		Object.keys(translations).forEach(k => {
+			k = k[0].toUpperCase() + k.slice(1); // en -> En
+			if (SettingsPage.get(`lang${k}`) != 'true') delete translations[k]; // remove inactive translations
+		});
+
+		return translations;
+	}
+
 	return {
 		exec,
+		of
 	}
 
 })();

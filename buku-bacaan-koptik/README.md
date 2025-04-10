@@ -12,7 +12,11 @@ So, I this app is me putting my money where my mouth is.
 	- handle attributes:
 		- intro/conclusion
 			- get intro/conclusion
-				- replace vars
+				- go to http://localhost/buku-bacaan-koptik/#/readings/matins/prophecies (weekday)
+				- intro missing. should be:
+				- need to double check the `ignoreAddendums` condition
+				- need to show intro only for the first `bibleverse` element
+				- need to show conclusion only for last `bibleverse` element
 			- hideIntroConclusion
 			- hideIntro
 			- hideConclusion
@@ -58,11 +62,11 @@ So, I this app is me putting my money where my mouth is.
 			- possible 3 languages
 			- style attr is the link between <Style> & <Book>
 
-- repository
+- DONE - repository
 	- network data source
 	- internal data source
 
-- translations
+- DONE - translations
 
 - DONE - SeasonEvaluator tests
 	- isFeast blows up
@@ -70,6 +74,42 @@ So, I this app is me putting my money where my mouth is.
 		- SeasonEvaluator.checkCurrentSeason is like a mini version of SeasonEvaluator.isCurrentSeason it only checks:
 			- isSaintSeason
 			- isForceSeason
+
+## TODO 2: MOAR STUFF
+- DONE - get intro/conclusion
+	- go to http://localhost/buku-bacaan-koptik/#/readings/matins/prophecies (weekday)
+	- DONE - intro missing. should be:
+	- DONE - need to double check the `ignoreAddendums` condition
+	- DONE - need to show intro only for the first `bibleverse` element
+	- DONE - need to show conclusion only for last `bibleverse` element
+	- DONE - need to use `innerHTML` instead of `outerHTML` for `bibleref` tag and set its `display` to `contents`
+- DONE - go back after selecting a calendar date
+- localize the dates using code (in home header + calendar header + each event entry) :'(
+- support bible xml format in editor
+- DONE - issue with nested bibleverse nodes "pascha\resurrection\Prophecies.cr.xml"
+- menu
+	HOME
+		Acara Spesial
+			Doa Paskah
+				Senin
+					Hari Senin
+
+						Jam Pertama
+						chevron_right
+						Jam Ketiga
+						chevron_right
+						Jam Keenam
+						chevron_right
+						Jam Kesembilan
+						chevron_right
+						Jam Kesebelas
+
+	+ outline
+- menu buttons
+	- settings
+	- calendar
+	- outline vs shortcuts?
+
 
 ## Notes
 
