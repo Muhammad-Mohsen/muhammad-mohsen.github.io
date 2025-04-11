@@ -10,8 +10,6 @@ export const Router = (() => {
 	window.onpopstate = process;
 
 	function process(event) {
-		// if (history.length <= 1) return console.log('NOTIFY CONTAINER!!');
-
 		const [route, query] = location.hash.substring(1).split('?');
 		const entry = Menu.getItem(route);
 		if (entry) entry.query = query;
@@ -44,7 +42,7 @@ export const Router = (() => {
 			document.querySelector('home').show(50);
 		}
 
-		setTimeout(() => Translation.exec(), 100);
+		Translation.exec(); // this won't translate the list (because of the setTimeout) nor the the document (becuase the rendering is asyc)
 	}
 
 	function goto(uri) {

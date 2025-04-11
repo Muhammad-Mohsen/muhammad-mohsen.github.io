@@ -7,7 +7,12 @@ document {
 #document-actions.show { opacity: 1; }
 
 header button.ripple { transition: .2s, filter 0.5s; }
-header button.hide { margin-left: -60px; }
+header button.hide {
+	margin-inline-start: -60px;
+	opacity: 0;
+	pointer-events: none;
+}
+header button.menu { margin-inline-start: auto; } /* after .hide so it overrides its margin-inline-start */
 
 /* gives room for the floating-action-pill (fap :D) */
 main {
@@ -69,21 +74,25 @@ mark {
 	line-height: 46px;
 }
 
+/* the aside styling is a horror!! */
 aside {
 	position: absolute;
 	inset: 72px 0 0;
 	padding-top: 12px;
-	/* border-radius: 8px;
-	background: var(--main-bg);
-	box-shadow: 2px 4px 8px #0004; */
 	backdrop-filter: blur(16px);
 	z-index: 1;
+	opacity: 0;
+	transform: translateY(110vh);
+
 	overflow-y: auto;
 	overscroll-behavior: contain;
-	transform: translateY(150vh);
-	transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+
+	transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity .6s;
 }
-aside.show { transform: translateY(0); }
+aside.show {
+	transform: translateY(0);
+	opacity: 1;
+}
 
 aside > * {
 	flex-direction: column;
@@ -92,18 +101,17 @@ aside > * {
 	padding: 0 12px 8px;
 }
 aside > *:not(:last-child) { border-bottom: 1px solid #42628e41; }
-aside > * language {
-	padding: 4px 0 !important;
-	text-align: left !important;
-	scale: .9;
-	transform-origin: 0;
-}
 
 aside title-html {
 	flex-direction: column;
 	align-items: start;
 }
-
+aside language {
+	padding: 4px 0 !important;
+	text-align: left !important;
+	scale: .9;
+	transform-origin: 0;
+}
 aside linkdocument {
 	flex-direction: row;
 	margin: 0 0 8px;
@@ -111,14 +119,34 @@ aside linkdocument {
 	border-radius: 0;
 }
 
-#close-outline {
+aside ul {
+	margin: -68px 0 0 !important;
+	padding: 0 0 80px !important;
+
+	& .list-item { padding: 24px 12px; }
+}
+
+aside .actions {
 	position: sticky;
-    top: calc(100% - 64px);
-    margin: auto;
+	top: calc(100% - 64px);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 12px;
+	margin: auto;
+	border: none;
 	padding: 0;
-	color: var(--accent-fg);
-	background: var(--accent-red);
-	box-shadow: 2px 4px 8px #0004;
+	z-index: 1;
+
+	& button.fab {
+		padding: 0;
+		box-shadow: 2px 4px 8px #0004;
+	}
+
+	& button.close-outline {
+		color: var(--accent-fg);
+		background: var(--accent-red);
+	}
 }
 
 aside > :nth-child(2) { margin-top: -56px; }
@@ -127,16 +155,17 @@ aside > :last-child { margin-bottom: 80px; }
 document.page { transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1), font-size 0s; }
 
 /* LANDSCAPE */
-.landscape-back, .landscape-action { display: none; }
-.landscape-back {
+.landscape-back, .landscape-menu, .landscape-action { display: none; }
+.landscape-back, .landscape-menu {
 	position: fixed;
 	inset: 8px auto auto 8px;
 	color: var(--accent-fg);
 	background: var(--accent-bg);
 }
+.landscape-menu { inset: 8px 8px auto auto; }
 @media (orientation: landscape) {
 	document header { display: none; }
-	.landscape-back, .landscape-action { display: flex; }
-	.landscape-back, #document-actions.show { opacity: .6; }
+	.landscape-back, .landscape-menu, .landscape-action { display: flex; }
+	.landscape-back, .landscape-menu, #document-actions.show { opacity: .6; }
 	aside.show { inset: 0; }
 }

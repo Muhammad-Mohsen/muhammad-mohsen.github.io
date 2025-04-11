@@ -7,11 +7,12 @@ import { DocumentOutline } from './outline.js';
 import { DocumentSearch } from './search.js';
 import { SeasonEvaluator } from './season-evaluator.js';
 import { Repository } from '../../data/repository.js';
+import { Translation } from '../../core/Translation.js';
 
 export const DocumentPage = (() => {
 
 	const element = document.querySelector('document');
-	let searchContainer, outlineContainer, documentContainer;
+	let searchContainer, outlineContainer, menuContainer, documentContainer;
 
 	async function init(entry) {
 		element.innerHTML = template({
@@ -21,6 +22,7 @@ export const DocumentPage = (() => {
 
 		searchContainer = element.querySelector('.search-container');
 		outlineContainer = element.querySelector('aside');
+		menuContainer = element.querySelector('aside.menu');
 		documentContainer = element.querySelector('main');
 
 		toggleSearchMode(false); // reset the search (if any previous search was active!)
@@ -37,7 +39,9 @@ export const DocumentPage = (() => {
 		element.querySelector('loading').classList.remove('show'); // hide the loading indicator
 		element.querySelector('#document-actions').show(); // show document actions
 
-		DocumentOutline.create(documentContainer, outlineContainer, element.querySelector('header button'));
+		DocumentOutline.create(documentContainer, outlineContainer, element.querySelector('header button'), element.querySelector('header button.menu'));
+		DocumentOutline.createMenu(menuContainer, entry.uri);
+		Translation.exec(); // to translate the header + menu
 		if (entry.query) DocumentOutline.scroll(entry.query);
 	}
 
@@ -204,12 +208,14 @@ export const DocumentPage = (() => {
 				<h5 i18n>${params.subHeader}</h5>
 				<h3 i18n>${params.header}</h3>
 			</div>
+			<button class="fab ripple menu" onclick="DocumentOutline.toggleMenu(true);"><span class="material-symbols-outlined">more_vert</span></button>
 
 			<loading class="show"></loading>
 		</header>
 
 		<!-- landscape back -->
 		<button class="fab ripple landscape-back" onclick="Router.back();DocumentPage.clear();"><span class="material-symbols-outlined">arrow_back</span></button>
+		<button class="fab ripple landscape-menu" onclick="DocumentOutline.toggleMenu(true);"><span class="material-symbols-outlined">more_vert</span></button>
 
 		<!-- document is rendered asynchronously, and is injected after that completes -->
 		<main></main>
@@ -219,7 +225,6 @@ export const DocumentPage = (() => {
 
 			<button class="fab ripple" onclick="DocumentOutline.toggle(true)"><span class="material-symbols-outlined">format_align_left</span></button>
 			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(true)"><span class="material-symbols-outlined">search</span></button>
-			<button class="fab ripple" onclick="Router.goto('/settings')"><span class="material-symbols-outlined">settings</span></button>
 
 			<button class="fab ripple landscape-action" onclick="DocumentPage.presentationScroll('downward')"><span class="material-symbols-outlined">expand_more</span></button>
 		</div>
@@ -232,8 +237,9 @@ export const DocumentPage = (() => {
 			<button class="fab ripple" onclick="DocumentPage.toggleSearchMode(false)"><span class="material-symbols-outlined">close</span></button>
 		</div>
 
-		<!-- document outline -->
-		<aside></aside>
+		<!-- document outline/menu -->
+		<aside class="outline"></aside>
+		<aside class="menu"></aside>
 
 		`.trim();
 	}

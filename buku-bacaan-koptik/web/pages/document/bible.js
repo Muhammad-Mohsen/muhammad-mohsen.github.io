@@ -31,9 +31,9 @@ export const BibleRef = (function () {
 			b.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''); // hide off-by-one errors!!
 
 		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}" ${attrs}>
-			<language id="English">${kjvVerse}</language>
-			<language id="Arabic">${svdVerse}</language>
-			<language id="Indonesian">${tbVerse}</language>
+			<language id="English" verse="${verse}">${kjvVerse}</language>
+			<language id="Arabic" verse="${verse}">${svdVerse}</language>
+			<language id="Indonesian" verse="${verse}">${tbVerse}</language>
 		</bibleverse>`;
 	}
 

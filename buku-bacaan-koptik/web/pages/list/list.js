@@ -1,4 +1,5 @@
 import { ListItem } from '../../components/list-item/list-item.js';
+import { Translation } from '../../core/Translation.js';
 
 export const ListPage = (() => {
 
@@ -10,6 +11,7 @@ export const ListPage = (() => {
 			back: 'Router.back();',
 			list: createItems(entry.menu),
 		});
+		Translation.exec();
 
 		element.show(50);
 	}
@@ -40,7 +42,7 @@ export const ListPage = (() => {
 	}
 
 	return {
-		init: init,
+		init,
 	}
 
 })();
