@@ -7,7 +7,7 @@ export const BibleAddendums = (() => {
 				<Language id="Coptic">            Ebolqen [BOOK] n~te [AUTHOR] pip~rov/t/c: e~repefc~mou eyouab swpi neman a~m/n efjw m~moc:         </Language>
 				<Language id="English">            A reading from the Book of [BOOK] of [AUTHOR] the prophet. May his holy blessings be with us. Amen.         </Language>
 				<Language id="Arabic">            من سفر [BOOK] ل[AUTHOR] النبي بركته  المقدسة تکون معنا. آمين.         </Language>
-				<Language id="Indonesian">			Pembacaan dari Kitab [Book] oleh [AUTHOR] sang nabi. Kiranya berkat-berkatnya beserta kita. Amin.</Language>
+				<Language id="Indonesian">			Pembacaan dari Kitab [BOOK] oleh [AUTHOR] sang nabi. Kiranya berkat-berkatnya beserta kita. Amin.</Language>
 			</Introduction>
 			<Conclusion>
 				<Language id="Coptic">            Ouw~ou n~]t~riac eyouab Pennou] sa e~neh nem sa e~neh n~te nie~neh t/rou: a~m/n.         </Language>
