@@ -50,7 +50,7 @@ export const DocumentOutline = (() => {
 		const ancestors = uri.split('/')
 			.slice(1, -1) // remove the first empty element (because of the leading slash) + the current route segment
 			.reduce((ancestors, m) => {
-				ancestors.push([...ancestors, m].join('/'));
+				ancestors.push([...ancestors.slice(-1) || '', m].join('/')); // append the current part to the previous path
 				return ancestors;
 			}, [])
 			.map(a => Menu.getItem('/' + a)); // add the leading slash back in
