@@ -3,6 +3,11 @@ import { SettingsPage } from "../pages/settings/settings.js";
 export const Translation = (() => {
 
 	const translations = {
+		"Thouut": {
+			"en": "Thouut",
+			"ar": "توت",
+			"id": "Tut"
+		},
 		"Thoout": {
 			"en": "Thoout",
 			"ar": "توت",
@@ -69,42 +74,6 @@ export const Translation = (() => {
 			"id": "Alnasi"
 		},
 
-		// the comma and extra space make it simpler to split the full date
-		"Satu, ": {
-			"en": "Satu, ",
-			"ar": "السبت",
-			"id": "Sabtu, "
-		},
-		"Sunday, ": {
-			"en": "Sunday, ",
-			"ar": "الأحد",
-			"id": "Minggu, "
-		},
-		"Monday, ": {
-			"en": "Monday, ",
-			"ar": "الإثنين",
-			"id": "Senin, "
-		},
-		"Tuesday, ": {
-			"en": "Tuesday, ",
-			"ar": "الثلاثاء",
-			"id": "Selasa, "
-		},
-		"Wednesday, ": {
-			"en": "Wednesday, ",
-			"ar": "الأربعاء",
-			"id": "Rabu, "
-		},
-		"Thursday, ": {
-			"en": "Thursday, ",
-			"ar": "الخميس",
-			"id": "Kamis, "
-		},
-		"Friday, ": {
-			"en": "Friday, ",
-			"ar": "الجمعة",
-			"id": "Jumat, "
-		},
 		"January": {
 			"en": "January",
 			"ar": "يناير",
@@ -2697,13 +2666,15 @@ export const Translation = (() => {
 	}
 
 	function of(key) {
-		const translations = structuredClone(translations[key]);
-		Object.keys(translations).forEach(k => {
+		const t = structuredClone(translations[key]);
+		Object.keys(t).forEach(k => {
 			k = k[0].toUpperCase() + k.slice(1); // en -> En
-			if (SettingsPage.get(`lang${k}`) != 'true') delete translations[k]; // remove inactive translations
+			if (SettingsPage.get(`lang${k}`) != 'true') delete t[k]; // remove inactive translation
 		});
 
-		return translations;
+		t.current = t[SettingsPage.get('appLang')];
+
+		return t;
 	}
 
 	return {
