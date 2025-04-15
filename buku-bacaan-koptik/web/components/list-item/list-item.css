@@ -20,6 +20,7 @@
 	display: block;
 	color: var(--accent-bg);
 	font-size: .6em;
+	font-weight: 600;
 }
 
 .list-item[disabled] {

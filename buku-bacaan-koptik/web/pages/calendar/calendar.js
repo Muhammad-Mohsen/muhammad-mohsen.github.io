@@ -1,5 +1,6 @@
 import { ListItem2 } from '../../components/list-item/list-item.js';
 import { Router } from '../../core/router.js';
+import { Translation } from '../../core/Translation.js';
 import { Occasions } from '../../data/occasions.js';
 import { HomePage } from '../home/home.js';
 
@@ -13,7 +14,7 @@ export const CalendarPage = (() => {
 	function init() {
 		element.innerHTML = template({
 			header: 'Calendar',
-			subHeader: `${live.formatGregorian('full')}<br><i>${live.formatCoptic(true)}</i>`,
+			subHeader: ``,
 			back: 'Router.back();',
 			list: createItems(),
 			date: live,
@@ -22,24 +23,32 @@ export const CalendarPage = (() => {
 		element.show(50);
 
 		subHeader = element.querySelector('header h5');
-		selectTodayContainer = element.querySelector('.date-container')
+		selectTodayContainer = element.querySelector('.date-container');
+
+		setLive(live, false);
 	}
 
 	function createItems() {
 		return Occasions.displayable().map(o => {
+			const [_c, cDay, cMonth, cRest] = o.date.formatCoptic().match(/(\w+), (\w+) (\d{1,2}, \d{4})/);
+			const [_, month, rest] = o.date.formatGregorian().match(/(\w+) (\d{1,2}, \d{4})/);
+
 			return ListItem2({
 				title: o.name,
-				subtitle: `${o.date.formatGregorian('full')} &bull; <i>${o.date.formatCoptic(true)}</i>`,
+				subtitle: `${Translation.of(cDay).current}, ${Translation.of(cMonth).current} ${cRest} &bull; <i>${Translation.of(month).current} ${rest}</i>`,
 				clickHandler: `CalendarPage.setLive('${o.date.toJSON()}')`,
 			});
 		}).join('');
 	}
 
-	function setLive(date) {
+	function setLive(date, withNav = true) {
 		live = date ? new Date(date) : new Date();
-		subHeader.innerHTML = `${live.formatGregorian('full')}<br><i>${live.formatCoptic(true)}</i>`;
+		const [_c, cDay, cMonth, cRest] = live.formatCoptic().match(/(\w+), (\w+) (\d{1,2}, \d{4})/);
+		const [_, month, rest] = live.formatGregorian().match(/(\w+) (\d{1,2}, \d{4})/);
+
+		subHeader.innerHTML = `${Translation.of(cDay).current}, ${Translation.of(cMonth).current} ${cRest} &bull; <i>${Translation.of(month).current} ${rest}</i>`;
 		HomePage.setDate(live);
-		Router.back();
+		if (withNav) Router.back();
 	}
 
 	function getLive() {
