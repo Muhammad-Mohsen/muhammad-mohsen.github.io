@@ -156,5 +156,25 @@ ol, ul {
 body.ios {
 	& header { padding-top: 52px; }
 	& home header { padding-top: 64px; }
-	& document aside { inset: 64px 12px 28px; }
+	& document aside {
+		inset: 116px 0 0;
+		background: var(--main-bg);
+
+		& .actions { top: calc(100% - 80px); }
+		& > :last-child { margin-bottom: 92px; }
+	}
+}
+
+/* ios land-scape styles */
+@media (orientation: landscape) {
+	body.ios {
+		& header { padding-top: 12px; }
+		& home header { padding-top: 12px; }
+
+		& document .landscape-back { inset: 16px auto auto 16px; }
+		& document .landscape-menu { inset: 16px 16px auto auto; }
+		& document aside { inset: 0; }
+		& document aside > * { padding: 0 16px 8px; }
+		& document aside > ul .list-item { padding: 24px 16px; }
+	}
 }
