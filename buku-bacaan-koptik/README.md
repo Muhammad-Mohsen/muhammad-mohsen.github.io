@@ -84,32 +84,11 @@ So, I this app is me putting my money where my mouth is.
 	- DONE - need to show conclusion only for last `bibleverse` element
 	- DONE - need to use `innerHTML` instead of `outerHTML` for `bibleref` tag and set its `display` to `contents`
 - DONE - go back after selecting a calendar date
-- localize the dates using code (in home header + calendar header + each event entry) :'(
+- DONE - localize the dates using code (in home header + calendar header + each event entry) :'(
 - support bible xml format in editor
 - DONE - issue with nested bibleverse nodes "pascha\resurrection\Prophecies.cr.xml"
-- menu
-	HOME
-		Acara Spesial
-			Doa Paskah
-				Senin
-					Hari Senin
-
-						Jam Pertama
-						chevron_right
-						Jam Ketiga
-						chevron_right
-						Jam Keenam
-						chevron_right
-						Jam Kesembilan
-						chevron_right
-						Jam Kesebelas
-
-	+ outline
-- menu buttons
-	- settings
-	- calendar
-	- outline vs shortcuts?
-
+- DONE - menu
+- bibleref title + outline
 
 ## Notes
 
