@@ -1,3 +1,4 @@
+import { Translation } from '../../core/Translation.js';
 import { BibleAddendums } from '../../data/bible-addendums.js';
 import { Repository } from '../../data/repository.js';
 
@@ -21,7 +22,7 @@ export const BibleRef = (function () {
 		const addendums = getAddendums(node);
 		const attrs = [...node.attributes].map(a => `${a.name}="${a.value}"`).join(' ');
 
-		return (addendums.introduction || '') + verses.map(v => renderVerse(v, attrs)).join('') + (addendums.conclusion || '');
+		return (addendums.introduction || '') + renderSectionTitle(node) + verses.map(v => renderVerse(v, attrs)).join('') + (addendums.conclusion || '');
 	}
 
 	function renderVerse(chapterVerse, attrs) {
@@ -98,6 +99,22 @@ export const BibleRef = (function () {
 		return verses;
 	}
 
+	function renderSectionTitle(node) {
+		const type = node.getAttribute('type');
+		if (type != 'section') return '';
+
+		const ref = node.getAttribute('reference');
+		let { name, chapaterVerse } = getBibleName(ref);
+		name = Translation.of(name);
+
+		// document post-processing is yet to run, so we don't use title-html directly here
+		return `<title class="hidden">
+			<language id="English">${name['en']} ${chapaterVerse}</language>
+			<language id="Arabic">${name['ar']} ${chapaterVerse}</language>
+			<language id="Indonesian">${name['id']} ${chapaterVerse}</language>
+		</title>`;
+	}
+
 	// stupid fucking formatting!!!
 	function expandRef(ref) {
 		if (!ref.includes(',')) return ref;
@@ -118,7 +135,7 @@ export const BibleRef = (function () {
 
 	function getAddendums(node) {
 		const ref = node.getAttribute('reference');
-		const name = getBibleName(ref);
+		const name = getBibleName(ref).name;
 		const addendums = BibleAddendums.get(name);
 
 		const ignoreAddendums = !ref.match(/[-:]/); // addendums are only shown if ref has a dash or a colon (see boolRef in BibleReference.java#getBibleVerses)
@@ -139,7 +156,7 @@ export const BibleRef = (function () {
 		const ref = doc.querySelector('bibleverse')?.getAttribute('reference');
 		if (!ref) return;
 
-		const name = getBibleName(ref);
+		const name = getBibleName(ref).name;
 		const title = BibleAddendums.getTitle(name);
 
 		gospelIntros.forEach(gi => {
@@ -150,9 +167,12 @@ export const BibleRef = (function () {
 	}
 
 	function getBibleName(ref) {
-		let name = ref.replace(/, /g, ',').replace(/; /g, ';').split(' '); // remove stupid spaces
-		name.pop(); // remove the chapter-verse data
-		return name.join(' ');
+		const name = ref.replace(/, /g, ',').replace(/; /g, ';').split(' '); // remove stupid spaces
+		const chapaterVerse = name.pop(); // remove the chapter-verse data
+		return {
+			name: name.join(' '),
+			chapaterVerse
+		};
 	}
 
 	return {

@@ -125,6 +125,14 @@ section[expanded="true"] title-html { border-bottom: 1px solid var(--accent-bg);
 section[expanded="true"] title-html::after { content: 'unfold_less'; }
 section[expanded="false"] title-html ~ * { display: none; }
 
+/* hide them in the document (but not in the outliner) */
+main title-html.hidden {
+	max-height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
 linkdocument {
     display: flex;
     align-items: center;
