@@ -80,6 +80,7 @@ aside {
 	inset: 72px 0 0;
 	padding-top: 12px;
 	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
 	z-index: 1;
 	opacity: 0;
 	transform: translateY(110vh);
