@@ -1,11 +1,8 @@
 const ContentEditor = (() => {
 
-	// TODO replace the language id attr
-	// TODO add contenteditable="true"
-	// TODO add save button
-
 	let file, documentContainer;
 	let fileName;
+	let isBible;
 
 	function init() {
 		file = document.querySelector('input[type="file"]');
@@ -30,6 +27,7 @@ const ContentEditor = (() => {
 			const doc = parser.parseFromString(event.target.result,"text/xml").documentElement;
 			if (!doc) return;
 
+			isBible = doc.tagName.toLowerCase() == 'book';
 			fileName = file.name;
 			documentContainer.innerHTML = postProcessDocument(doc);
 		}
@@ -39,6 +37,12 @@ const ContentEditor = (() => {
 		input.value = null; // clear out the input
 	}
 	function postProcessDocument(doc) {
+		// for bible XML, simply set the contenteditable attribute on the verses
+		if (isBible) {
+			doc.querySelectorAll('verse').forEach(v => v.setAttribute('contenteditable', true));
+			return doc.outerHTML;
+		}
+
 		// track down section headers so we can add expand/collapse functions on them
 		const sectionHeaders = doc.querySelectorAll('Section Title, section title');
 		for (let h of [...sectionHeaders]) h.setAttribute('data-section-header', 'true');

@@ -178,3 +178,23 @@ Language#Indonesian:focus-visible {
 	outline: 2px dashed var(--accent-bg);
 	outline-offset: 2px;
 }
+
+verse {
+	display: block;
+	margin: 8px 0;
+	padding: 8px;
+	border-radius: 6px;
+	text-align: start;
+	color: var(--main-fg);
+	background: #42628e33;
+
+	&::before {
+		content: attr(num);
+		padding-inline-end: 4px;
+		color: var(--accent-bg);
+	}
+
+	&:focus {
+		outline-color: var(--accent-bg);
+	}
+}

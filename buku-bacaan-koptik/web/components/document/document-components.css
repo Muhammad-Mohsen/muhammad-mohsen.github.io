@@ -10,13 +10,13 @@ Comment, title-html, introduction, conclusion {
 }
 title-html { align-items: center; }
 title-html Language {
-    flex: 1 0 10%;
-    font-size: 1.25em;
+	flex: 1 0 10%;
+	font-size: 1.25em;
 	line-height: 1.25;
-    text-align: center;
-    padding-inline: 12px 4px;
+	text-align: center;
+	padding-inline: 12px 4px;
 	padding-block: 12px;
-    color: var(--accent-bg);
+	color: var(--accent-bg);
 }
 
 /* COMMENT */
@@ -79,13 +79,13 @@ bibleverse Language {
 bibleverse Language::before {
 	content: attr(verse);
 	padding-inline-end: 4px;
-	color: var(--accent-bg)
+	color: var(--accent-bg);
 }
 bibleverse::after {
 	content: '';
 	position: absolute;
 	inset: 0;
-    border-radius: 6px;
+	border-radius: 6px;
 	background: var(--accent-bg);
 	opacity: 0.2;
 }
@@ -93,10 +93,10 @@ bibleverse::after {
 /* SECTION */
 Section {
 	display: block;
-    margin: 4px;
-    border: 1px solid var(--accent-bg);
-    border-radius: 6px;
-    background: #42628e1a;
+	margin: 4px;
+	border: 1px solid var(--accent-bg);
+	border-radius: 6px;
+	background: #42628e1a;
 }
 Section title-html {
 	position: relative;
@@ -113,13 +113,13 @@ Section title-html Language {
 }
 section[expanded] title-html::after {
 	content: 'unfold_more';
-    font-family: 'Material Symbols Outlined';
-    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
-    position: absolute;
+	font-family: 'Material Symbols Outlined';
+	font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
+	position: absolute;
 	inset-inline-end: 16px;
-    top: calc(50% - 14px);
-    font-size: 24px;
-    color: var(--accent-bg);
+	top: calc(50% - 14px);
+	font-size: 24px;
+	color: var(--accent-bg);
 }
 section[expanded="true"] title-html { border-bottom: 1px solid var(--accent-bg); }
 section[expanded="true"] title-html::after { content: 'unfold_less'; }
@@ -134,14 +134,14 @@ main title-html.hidden {
 }
 
 linkdocument {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	margin: 4px 4px 0;
 	padding: 16px;
 	border-radius: 6px;
 	color: var(--accent-red);
-    font-weight: bold;
+	font-weight: bold;
 }
 /* linkdocument language { flex: 1; } */
 
