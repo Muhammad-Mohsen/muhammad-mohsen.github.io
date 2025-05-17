@@ -16,7 +16,7 @@ export const DocumentExporter = (() => {
 		}
 
 		// check each element
-		html.querySelectorAll('title-html, comment, text').toArray().forEach(e => {
+		html.querySelectorAll('title-html, comment, text, bibleverse').toArray().forEach(e => {
 			e.innerHTML = languages.reduce((html, l) => {
 				html += e.querySelector('#' + l)?.outerHTML || `<Language id="${l}"></Language>`; // put in an empty language if it isn't already there
 				return html;
@@ -47,6 +47,7 @@ export const DocumentExporter = (() => {
 				.replace(/<title-html/gi, '</table><table><tr class="title"').replace(/<\/title-html>/gi, '</tr>')
 				.replace(/<comment>/gi, '<tr>').replace(/<\/comment>/gi, '</tr>')
 				.replace(/<text>/gi, '<tr>').replace(/<\/text>/gi, '</tr>')
+				.replace(/<bibleverse/gi, '<tr').replace(/<\/bibleverse>/gi, '</tr>')
 				.replace(/<Language/gi, '<td').replace(/<\/Language>/gi, '</td>')
 			}
 				</table>
