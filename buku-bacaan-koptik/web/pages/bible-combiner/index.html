@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#42628e" />
+
+	<title>Buku Bacaan Koptik - Bible Extractor</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/71-smiling-face-with-horns.png" />
+
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+	<header>
+		<img src="../../assets/images/cross.png" alt="Cross">
+		<div>
+			<h5>Buku Bacaan Koptik</h5>
+			<h1>Bible Combiner</h1>
+		</div>
+	</header>
+
+	<main>
+		<p>Select <em>all</em> books from each bible (language)</p>
+
+		<input type="file" onchange="Combiner.load(this)" lang="English" style="display: none;" accept=".xml" multiple="true">
+		<input type="file" onchange="Combiner.load(this)" lang="Arabic" style="display: none;" accept=".xml" multiple="true">
+		<input type="file" onchange="Combiner.load(this)" lang="Indonesian" style="display: none;" accept=".xml" multiple="true">
+		<div class="row">
+			<button class="ripple secondary" onclick="Combiner.open('English')"><span class="material-symbols-outlined">import_contacts</span> IMPORT NKJV</button>
+			<button class="ripple secondary" onclick="Combiner.open('Arabic')"><span class="material-symbols-outlined">import_contacts</span> IMPORT SVD</button>
+			<button class="ripple secondary" onclick="Combiner.open('Indonesian')"><span class="material-symbols-outlined">import_contacts</span> IMPORT TB</button>
+		</div>
+
+		<button class="fab ripple primary" onclick="Combiner.exec()"><span class="material-symbols-outlined">download</span></button>
+	</main>
+
+	<script src="combiner.js"></script>
+
+</body>
+</html>

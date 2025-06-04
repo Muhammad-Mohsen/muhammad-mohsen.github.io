@@ -45,7 +45,6 @@ const Extractor = (() => {
 		return errs;
 	}
 
-	// mock process function
 	async function downloadBook(book) {
 		return new Promise((resolve, reject) => {
 

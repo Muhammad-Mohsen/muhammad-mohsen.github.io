@@ -90,6 +90,9 @@ So, I this app is me putting my money where my mouth is.
 - DONE - menu
 - bibleref title + outline
 
+- DONE - combine bible chapters into a single document (similar to existing documents)
+- hide outline button if empty
+
 ## Notes
 
 ## Environment Setup

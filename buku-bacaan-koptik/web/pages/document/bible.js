@@ -11,11 +11,11 @@ export const BibleRef = (function () {
 	// 4. <BibleReference reference="Psalms 104:4;138:1-2" type="comment"/> => discrete
 	// 5. <BibleReference reference="Psalms 25:18, 20" type="comment"/> => bulljive is what that is!!
 
-	let nkjv, svd, tb;
+	let book;
 
 	async function render(node) {
 		const ref = node.getAttribute('reference').replace(/, /g, ',').replace(/; /g, ';'); // remove stupid spaces
-		await setBooks(ref);
+		await setBook(ref);
 
 		const expandedRef = expandRef(ref);
 		const verses = expandedRef.split(';').reduce((verses, r) => verses.concat(getVerses(r)), []);
@@ -28,25 +28,15 @@ export const BibleRef = (function () {
 	function renderVerse(chapterVerse, attrs) {
 		// get verse from book
 		const [chapter, verse] = chapterVerse.split(':');
-		const [kjvVerse, svdVerse, tbVerse] = [nkjv, svd, tb].map(b =>
-			b.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? ''); // hide off-by-one errors!!
+		const bibleverse = book.querySelector(`chapter[num="${chapter}"] verse[num="${verse}"]`)?.innerHTML ?? '';
 
-		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}" ${attrs}>
-			<language id="English" verse="${verse}">${kjvVerse}</language>
-			<language id="Arabic" verse="${verse}">${svdVerse}</language>
-			<language id="Indonesian" verse="${verse}">${tbVerse}</language>
-		</bibleverse>`;
+		return `<bibleverse chapterverse="${chapterVerse}" verse="${verse}" ${attrs}>${bibleverse}</bibleverse>`;
 	}
 
-	async function setBooks(ref) {
+	async function setBook(ref) {
 		ref = ref.split(' ');
 		ref.pop(); // remove the chapter-verse data
-
-		[nkjv, svd, tb] = await Promise.all([
-			Repository.getDocument(`bible/nkjv/${ref.join(' ')}`),
-			Repository.getDocument(`bible/svd/${ref.join(' ')}`),
-			Repository.getDocument(`bible/tb/${ref.join(' ')}`)
-		]);
+		book = await Repository.getDocument(`bible/${ref.join(' ')}`);
 	}
 
 	// called AFTER splitting by ';'
@@ -129,7 +119,7 @@ export const BibleRef = (function () {
 		}).join(';');
 	}
 	function getLastVerseOfChapter(number) {
-		const chapter = nkjv.querySelector(`chapter[num="${number}"]`);
+		const chapter = book.querySelector(`chapter[num="${number}"]`);
 		return chapter.children.length;
 	}
 

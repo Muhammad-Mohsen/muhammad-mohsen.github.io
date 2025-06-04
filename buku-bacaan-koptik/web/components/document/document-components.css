@@ -61,7 +61,7 @@ Language#Coptic[coptic-row] { /* dispay coptic-row in its own row */
 
 /* BIBLE */
 biblereference { display: contents; }
-bibleverse {
+bibleverse, verse {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -69,25 +69,26 @@ bibleverse {
 	padding: 4px;
 	color: var(--main-fg);
 }
-bibleverse Language {
+bibleverse Language, verse Language {
 	flex: 1 0 10%;
 	min-width: 0;
 	padding: 4px;
 	text-align: start;
 }
 
-bibleverse Language::before {
+bibleverse Language::before, verse Language::before {
 	content: attr(verse);
 	padding-inline-end: 4px;
 	color: var(--accent-bg);
 }
-bibleverse::after {
+bibleverse::after, verse::after {
 	content: '';
 	position: absolute;
 	inset: 0;
 	border-radius: 6px;
 	background: var(--accent-bg);
 	opacity: 0.2;
+	pointer-events: none;
 }
 
 /* SECTION */
