@@ -123,7 +123,7 @@ body::before {
 	background: url(../../assets/images/coptic-cross.svg);
 	opacity: 0.02;
 	background-size: 2500px;
-    background-position: 65% 35%;
+	background-position: 65% 35%;
 	pointer-events: none;
 }
 
@@ -151,7 +151,7 @@ h5 {
 
 main {
 	height: calc(100dvh - 92px);
-    padding: 4px;
+	padding: 4px;
 	overflow-y: auto;
 }
 
@@ -194,4 +194,20 @@ Language#Indonesian { order: 4; }
 Language#Indonesian:focus-visible {
 	outline: 2px dashed var(--accent-bg);
 	outline-offset: 2px;
+}
+
+/* CUSTOM RENDERING FOR BIBLE */
+book chapter::before {
+	content: attr(num);
+	position: sticky;
+	top: 0;
+	display: block;
+	width: 48px;
+	margin: auto;
+	border: 1px solid var(--brdr);
+	border-radius: 12px;
+	background: var(--main-bg);
+	text-align: center;
+	font-size: 32px;
+	z-index: 1;
 }
