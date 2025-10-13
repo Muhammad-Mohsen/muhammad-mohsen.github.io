@@ -12,7 +12,7 @@ Date.COPTIC_MONTHS = [
 	'', // no zero-indexed month for you...this ain't java
 
 	// Akhet
-	'Thouut', // 1 THOOUT
+	'Thoout', // 1 THOOUT
 	'Paope', // 2 PAOPE
 	'Hathor', // 3 HATHOR
 	'Koiahk', // 4 KOIAHK

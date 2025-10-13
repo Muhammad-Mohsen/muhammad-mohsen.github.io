@@ -7,8 +7,8 @@ export const Occasions = (() => {
 	const THOOUT_FEAST_CROSS_3 = Date.fromCoptic(1, 19);
 	const THOOUT_29 = Date.fromCoptic(1, 29);
 
-	const thouut1 = Date.fromCoptic(1, 1);
-	const FIRST_SUNDAY_OF_THOOUT = thouut1.firstSundayOfMonth();
+	const Thoout1 = Date.fromCoptic(1, 1);
+	const FIRST_SUNDAY_OF_THOOUT = Thoout1.firstSundayOfMonth();
     const SECOND_SUNDAY_OF_THOOUT = FIRST_SUNDAY_OF_THOOUT.addDays(7);
     const THIRD_SUNDAY_OF_THOOUT = SECOND_SUNDAY_OF_THOOUT.addDays(7);
     const FOURTH_SUNDAY_OF_THOOUT = THIRD_SUNDAY_OF_THOOUT.addDays(7);
@@ -108,8 +108,8 @@ export const Occasions = (() => {
 	else if (NATIVITY_PARAMOUN_END.getDay() == Date.SATURDAY) NATIVITY_PARAMOUN_START = NATIVITY_PARAMOUN_END.addDays(-1);
 	else NATIVITY_PARAMOUN_START = NATIVITY_PARAMOUN_END;
 
-	const isLeap = Date.isLeap(thouut1.toCoptic().year);
-    const NEW_YEAR_NEXT_YEAR = isLeap ? thouut1.addDays(366) : thouut1.addDays(365);
+	const isLeap = Date.isLeap(Thoout1.toCoptic().year);
+    const NEW_YEAR_NEXT_YEAR = isLeap ? Thoout1.addDays(366) : Thoout1.addDays(365);
 
 	const THEOPHANY = Date.fromCoptic(5, 11);
 	const DAY_AFTER_THEOPHANY = THEOPHANY.addDays(1);
@@ -192,7 +192,7 @@ export const Occasions = (() => {
 		return [
 			{
 				name:'Coptic New Year',
-				date: thouut1
+				date: Thoout1
 			},
 			{
 				name:'Thoout Feast of the Cross',

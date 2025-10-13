@@ -3,8 +3,8 @@ import { SettingsPage } from "../pages/settings/settings.js";
 export const Translation = (() => {
 
 	const translations = {
-		"Thouut": {
-			"en": "Thouut",
+		"Thoout": {
+			"en": "Thoout",
 			"ar": "توت",
 			"id": "Tut"
 		},
