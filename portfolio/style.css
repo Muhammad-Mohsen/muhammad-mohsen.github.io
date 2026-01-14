@@ -1,6 +1,6 @@
 /* reset */
 html { overflow: hidden; }
-*, *::before, *::after { font: 400 14px/normal consolas, 'Courier New', monospace; transition: .2s; }
+*, *::before, *::after { font: 400 14px/17px consolas, 'Courier New', monospace; transition: .2s; }
 
 /* theme */
 body[data-theme="moon"] {
