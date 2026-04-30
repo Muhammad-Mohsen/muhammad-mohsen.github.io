@@ -117,9 +117,7 @@ export const DocumentPage = (() => {
 		const removeAll = (selector) => doc.querySelectorAll(selector).toArray().forEach(e => e.remove());
 
 		if (falsy(settings.comments)) removeAll('comment'); // comments
-
 		if (falsy(settings.silentPrayers)) removeAll('[silent], [Silent]'); // silent prayers
-		if (falsy(settings.nonCustomaryPrayers)) removeAll('comment'); // non-customray prayers
 
 		// roles
 		if (falsy(settings.roleBishop)) removeAll('role[id="Bishop"], Role[id="Bishop"]');
@@ -127,8 +125,6 @@ export const DocumentPage = (() => {
 		if (falsy(settings.roleReader)) removeAll('role[id="Reader"], Role[id="Reader"]');
 		if (falsy(settings.roleDeacon)) removeAll('role[id="Deacon"], Role[id="Deacon"]');
 		if (falsy(settings.rolePeople)) removeAll('role[id="People"], Role[id="People"]');
-
-		// transition time??
 
 		// languages...at the end to ensure that we removed the big, parent nodes first (roles/comments for example)
 		// remove elements that have the languageId directly, as well as titles that only have the languageId
