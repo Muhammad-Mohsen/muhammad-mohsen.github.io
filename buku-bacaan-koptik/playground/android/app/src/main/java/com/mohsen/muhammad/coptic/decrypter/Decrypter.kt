@@ -26,8 +26,10 @@ class AssetDecrypter (c: Context) {
 		const val ENCRYPTED_IMAGES = "encrypted_images"
 	}
 
-	private val key = "BF0CD490B522DB71"
-	private val iv = "4F754474483D7CA9"
+
+
+	private val key = "vs802hnf92hn2bg"
+	private val iv = "08hsdf08h2trh02"
 	private var ivSpec: IvParameterSpec = IvParameterSpec(iv.toByteArray())
 	private var keySpec: SecretKeySpec = SecretKeySpec(key.toByteArray(), "AES")
 
