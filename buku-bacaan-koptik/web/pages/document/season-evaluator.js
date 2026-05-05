@@ -158,7 +158,17 @@ export const SeasonEvaluator = (() => {
 	function isGreatFastSpecialSeason(str) { return str.includes('GreatFast'); }
 	function isPentecostPeriodSpecialSeason(str) { return str.includes('PentecostPeriod'); }
 	function isHosannaSundayFirstLiturgyGospel() { return false; }
-	function isOther() { return true; }
+
+	// apparently, this is an `else` statement in a given context (group of Seasons)
+	function isOther() {
+		// if any of the previous Seasons is true, we're good...else, take the 'Other' season
+		// the calls to exec will change the `element` member, but I don't think we'll need it, as we're assuming that the 'Other' season will always be the last
+		for (let s of element.parentElement.querySelectorAll('Season:not(#Other)')) {
+			if (exec(s, copticDate)) return false;
+		}
+
+		return true;
+	}
 
 	function isSeasonOfHerbs() { return isDateInRange(Occasions.PAOPE_10, Occasions.TOBE_11, false); }
 	function isSeasonOfAirAndFruits() { return isDateInRange(Occasions.TOBE_11, Occasions.PAONE_12, false); }
