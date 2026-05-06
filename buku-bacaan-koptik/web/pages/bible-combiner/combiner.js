@@ -1,3 +1,4 @@
+// combines the multiple bibles books (different languages) to a single file
 const Combiner = (() => {
 
 	const bibles = {

@@ -1,3 +1,4 @@
+// extracts each book from an entire bible xml file
 const Extractor = (() => {
 
 	const keys = {

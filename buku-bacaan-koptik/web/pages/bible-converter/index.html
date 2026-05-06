@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#42628e" />
+
+	<title>Buku Bacaan Koptik - Bible Converter</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://www.emoji.co.uk/files/apple-emojis/smileys-people-ios/71-smiling-face-with-horns.png" />
+
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+	<header>
+		<img src="../../assets/images/cross.png" alt="Cross">
+		<div>
+			<h5>Buku Bacaan Koptik</h5>
+			<h1>Bible Converter</h1>
+		</div>
+	</header>
+
+	<main>
+		<input type="file" onchange="Converter.load(this)" style="display: none;" accept=".xml" multiple="true">
+		<button class="ripple secondary" onclick="Converter.open()"><span class="material-symbols-outlined">import_contacts</span>Select books to convert</button>
+	</main>
+
+	<script src="converter.js"></script>
+
+</body>
+</html>
