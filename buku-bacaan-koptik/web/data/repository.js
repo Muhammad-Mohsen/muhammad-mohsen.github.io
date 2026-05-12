@@ -51,10 +51,11 @@ export const Repository = (() => {
 	}
 
 	async function openDB() {
+
 		return new Promise((resolve, reject) => {
 			const dbRequest = indexedDB.open('BBK_DB', 1);
 			dbRequest.onerror = (event) => reject(event);
-			dbRequest.onsuccess = () => resolve(augmentDB(dbRequest.result));
+			dbRequest.onsuccess = () => resolve(dbRequest.result);
 
 			dbRequest.onupgradeneeded = event => {
 				const db = event.target.result;
