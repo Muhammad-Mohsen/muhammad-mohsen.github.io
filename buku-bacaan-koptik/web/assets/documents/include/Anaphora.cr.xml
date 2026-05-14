@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<document xmlns="http://www.ortodokskoptik.id/BukuBacaanKoptik">
+﻿<?xml version="1.0" encoding="UTF-8"?><document xmlns="http://www.ortodokskoptik.id/BukuBacaanKoptik">
 	<Title>
 		<language id="English">Anaphora</language>
 		<language id="Indonesian">Anaphora</language>
@@ -31,7 +30,7 @@
 				<text>
 					<language id="Coptic">                  V/etsop qajwou n~nie~neh: ouoh etoi n~ouro sa e~neh.               </language>
 					<language id="English">                  being before the ages and reigning for ever;               </language>
-					<language id="Indonesian">                  Yang ada sebelum segala zaman dan memerintah untuk selama-selamanya.</language>
+					<language id="Indonesian">                  Yang ada sebelum segala zaman dan memerintah untuk selama-lamanya.</language>
 					<language id="Arabic">                  الكائِنُ قبلَ الدهورِ، والمالِكُ إلى الأبد.               </language>
 				</text>
 				<text>
@@ -125,7 +124,7 @@
 					<text>
 						<language id="Coptic">                  Nyok pe e~touc~mou e~rok n~je niaynau e~rwou: n~yok pe e~tououwst m~mok n~je n/eyouwnh e~bol.               </language>
 						<language id="English">                  You are He whom the invisible bless and the visible worship.               </language>
-						<language id="Indonesian">                  Engkaulah Dia yang dipuji para makhluk tak kasat mata. Engkaulah Dia yang disembah para makhluk kasat mata.</language>
+						<language id="Indonesian">                  Engkaulah Dia yang dipuji para makhluk tak kasat mata. Engkaulah Dia yang disujud sembah para makhluk kasat mata.</language>
 						<language id="Arabic">                  أنتَ الذي يباركُكَ غيرُ المرئيين. وأنتَ الذي يسجُدُ لكَ الظاهرون.               </language>
 					</text>
 					<text>
