@@ -2440,6 +2440,11 @@ export const Translation = (() => {
 			"ar": "الكاهن",
 			"id": "Imam"
 		},
+		"Sponsor": {
+			"en": "Sponsor",
+			"ar": "الاشبين",
+			"id": "Ibu/Ayah Baptis"
+		},
 		"Hegumen": {
 			"en": "Hegumen",
 			"ar": "القمص",
