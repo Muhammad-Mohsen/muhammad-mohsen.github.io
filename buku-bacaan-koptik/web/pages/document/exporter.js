@@ -42,23 +42,39 @@ export const DocumentExporter = (() => {
 
 			/* Table cells */
 			td {
-				padding: 4px 6px 2px 6px;
+  				padding: 8px;
 				vertical-align: top;
 				word-wrap: break-word;
+			}
+
+
+			td#English {
+				font-family: Poppins;
+				text-align: justify;
 			}
 
 			/* Arabic text */
 			td#Arabic {
 				direction: rtl;
-				text-align: right;
-				font-family : Noto;
+				font-family : Noto Sans Arabic;
 				font-size : 16px;
+				text-align: justify;
 			}
 
 			/* Coptic font */
 			td#Coptic {
 				font-family: Coptic;
+				text-align: justify;
+				font-size : 16px;
 			}
+
+			td#Indonesian {
+				font-family: Poppins;
+				text-align: justify;
+				font-size : 16px;
+			}
+
+			
 
 			/* Title rows */
 			tr.title{
@@ -75,7 +91,6 @@ export const DocumentExporter = (() => {
 			/* Comments in blue */
 			tr.comment td {
 				color: rgb(66, 98, 142);
-				/*font-style: italic; optional */
 			}
 			/* Role rows in red */
 			tr.role td {
@@ -138,6 +153,7 @@ export const DocumentExporter = (() => {
 					.replace(/<span\b[^>]*>/gi, '').replace(/<\/span>/gi, '')
 					.replace(/<br\b[^>]*>/gi, '').replace(/<\/br>/gi, '')
 					.replace(/<biblereference\b[^>]*>/gi, '').replace(/<\/biblereference>/gi, '')
+					.replace(/<font\b[^>]*>/gi, '').replace(/<\/font>/gi, '')
 				}
 			</body>
 		</html>`;
