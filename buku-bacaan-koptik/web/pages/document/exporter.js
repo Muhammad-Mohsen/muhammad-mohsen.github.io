@@ -1,3 +1,5 @@
+import { Translation } from '../../core/Translation.js';
+
 export const DocumentExporter = (() => {
 
 	const NAMESPACES = 'xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"';
@@ -31,29 +33,115 @@ export const DocumentExporter = (() => {
 				<meta charset='utf-8'>
 				<title>Buku Bacaan Koptik Document</title>
 				<style>
-					td { padding: 4px 6px 2px 6px; }
-					td#Arabic { direction: rtl; }
-					td#Coptic { font: Coptic; }
-					.title {
-						font-size: 16px;
-						font-weight: bold;
-					}
+			/* Make all exported tables the same width */
+			table {
+				width: 100%;
+				table-layout: fixed;
+				border-collapse: collapse;
+			}
 
-				</style>
+			/* Table cells */
+			td {
+				padding: 4px 6px 2px 6px;
+				vertical-align: top;
+				word-wrap: break-word;
+			}
+
+			/* Arabic text */
+			td#Arabic {
+				direction: rtl;
+				text-align: right;
+				font-family : Noto;
+				font-size : 16px;
+			}
+
+			/* Coptic font */
+			td#Coptic {
+				font-family: Coptic;
+			}
+
+			/* Title rows */
+			tr.title{
+				font-size: 18px;
+				font-weight: bold;
+				color: rgb(66, 98, 142);
+			}
+
+			.role {
+				font-size: 16px;
+				font-weight: bold;
+				color: red;
+			}
+			/* Comments in blue */
+			tr.comment td {
+				color: rgb(66, 98, 142);
+				/*font-style: italic; optional */
+			}
+			/* Role rows in red */
+			tr.role td {
+				color: red;
+				font-weight: bold;
+			}
+
+		</style>
 			</head>
 			<body>
-				<table>
-						${html.body.innerHTML
-				.replace(/<title-html/gi, '</table><table><tr class="title"').replace(/<\/title-html>/gi, '</tr>')
-				.replace(/<comment>/gi, '<tr>').replace(/<\/comment>/gi, '</tr>')
-				.replace(/<text>/gi, '<tr>').replace(/<\/text>/gi, '</tr>')
-				.replace(/<bibleverse/gi, '<tr').replace(/<\/bibleverse>/gi, '</tr>')
-				.replace(/<Language/gi, '<td').replace(/<\/Language>/gi, '</td>')
-			}
-				</table>
+				${html.body.innerHTML
+    				.replace(/<title-html/gi, '</table><table><tr class="title"').replace(/<\/title-html>/gi, '</tr>')
+
+					// ROLE SUPPORT
+					.replace(/<role\b([^>]*)id="([^"]+)"([^>]*)>/gi,
+					(match, before, roleId, after) => {
+						// Create one <td> for each language
+						const cells = languages.map((lang, index) => {
+						let text = '';
+
+						// Put custom text in each column
+						switch (lang) {
+							case 'Arabic':
+							text = Translation.ofwithlang(roleId,'ar').current; // or translate to Arabic if you want
+							break;
+
+							case 'Coptic':
+							text = ''; // leave blank
+							break;
+
+							case 'English':
+							text =  Translation.ofwithlang(roleId,'en').current;
+							break;
+
+							case 'Indonesian':
+							text =  Translation.ofwithlang(roleId,'id').current;
+							break;
+
+							default:
+							text = roleId;
+						}
+
+						return `<td id="${lang}">${text}</td>`;
+						}).join('');
+
+						return `</table><table><tr class="role title">${cells}</tr>`;
+					}
+					)
+					.replace(/<\/role>/gi, '')
+
+
+					
+					.replace(/<comment\b[^>]*>/gi, '<tr class="comment">').replace(/<\/comment>/gi, '</tr>')
+					.replace(/<text>/gi, '<tr>').replace(/<\/text>/gi, '</tr>')
+					.replace(/<bibleverse/gi, '<tr').replace(/<\/bibleverse>/gi, '</tr>')
+					.replace(/<Language/gi, '<td').replace(/<\/Language>/gi, '</td>')
+					.replace(/<group>/gi, '').replace(/<\/group>/gi, '')
+					.replace(/<season\b[^>]*>/gi, '').replace(/<\/season>/gi, '')
+					.replace(/<section\b[^>]*>/gi, '').replace(/<\/section>/gi, '')
+					.replace(/<span\b[^>]*>/gi, '').replace(/<\/span>/gi, '')
+					.replace(/<br\b[^>]*>/gi, '').replace(/<\/br>/gi, '')
+					.replace(/<biblereference\b[^>]*>/gi, '').replace(/<\/biblereference>/gi, '')
+				}
 			</body>
 		</html>`;
-
+		console.log(raw);
 		const anchor = document.createElement('a');
 		anchor.href = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(raw);
 		anchor.download = `${document.querySelector('document header h5').innerHTML} - ${document.querySelector('document header h3').innerHTML}.doc`;
@@ -77,7 +165,7 @@ export const DocumentExporter = (() => {
 			<body>
 				${document.querySelector('body > document > main').innerHTML
 						.replace(/<title-html/gi, '<table class="title"').replace(/<\/title-html>/gi, '</table>') // table
-						.replace(/<comment>/gi, '<table>').replace(/<\/comment>/gi, '</table>') // table
+						.replace(/<comment>/gi, '<table class="comment">').replace(/<\/comment>/gi, '</table>') // table
 						.replace(/<text>/gi, '<table>').replace(/<\/text>/gi, '</table>') // table
 						.replace(/<Language/gi, '<td').replace(/<\/Language>/gi, '</td>')
 				}

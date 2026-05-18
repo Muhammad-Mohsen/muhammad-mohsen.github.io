@@ -2677,9 +2677,25 @@ export const Translation = (() => {
 		return t;
 	}
 
+	function ofwithlang(key,lang) {
+		const t = structuredClone(translations[key]);
+			if (!t) {
+		return { current: key };
+	}
+		Object.keys(t).forEach(k => {
+			k = k[0].toUpperCase() + k.slice(1); // en -> En
+			if (lang != 'true') delete t[k]; // remove inactive translation
+		});
+
+		t.current = t[lang];
+
+		return t;
+	}
+
 	return {
 		exec,
-		of
+		of,
+		ofwithlang
 	}
 
 })();
