@@ -2445,6 +2445,11 @@ export const Translation = (() => {
 			"ar": "الاشبين",
 			"id": "Ibu/Ayah Baptis"
 		},
+		"People": {
+			"en": "People",
+			"ar": "الشعب",
+			"id": "Umat"
+		},
 		"Hegumen": {
 			"en": "Hegumen",
 			"ar": "القمص",
