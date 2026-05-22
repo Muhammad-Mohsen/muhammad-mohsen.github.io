@@ -161,13 +161,20 @@ export const SeasonEvaluator = (() => {
 
 	// apparently, this is an `else` statement in a given context (group of Seasons)
 	function isOther() {
-		// if any of the previous Seasons is true, we're good...else, take the 'Other' season
-		// the calls to exec will change the `element` member, but I don't think we'll need it, as we're assuming that the 'Other' season will always be the last
-		for (let s of element.parentElement.querySelectorAll('Season:not(#Other)')) {
-			if (exec(s, copticDate)) return false;
-		}
+		  for (const sibling of element.parentElement.children) {
+        if (sibling === element) break;
 
-		return true;
+        if (
+            sibling.tagName === 'Season' &&
+            sibling.getAttribute('id') !== 'Other'
+        ) {
+            if (exec(sibling, copticDate)) {
+                return false;
+            }
+        }
+    }
+
+    return true;
 	}
 
 	function isSeasonOfHerbs() { return isDateInRange(Occasions.PAOPE_10, Occasions.TOBE_11, false); }
