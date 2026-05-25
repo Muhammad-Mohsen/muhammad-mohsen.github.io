@@ -38,7 +38,7 @@ export const Repository = (() => {
 
 			// otherwise, fetch, store, and return
 			doc = await XML.fetch(EXTERNAL_DOCS + uri);
-			db.insert('documents', { ver: ver, xml: XML.stringify(doc) });
+			db.insert('documents', { uri, ver, xml: XML.stringify(doc) });
 			return doc;
 		}
 

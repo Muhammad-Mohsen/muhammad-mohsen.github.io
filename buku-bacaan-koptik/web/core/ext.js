@@ -36,7 +36,7 @@ IDBDatabase.prototype.select = function (store, key) {
 }
 IDBDatabase.prototype.insert = function (store, objects) {
 	return new Promise((resolve, reject) => {
-		const transaction = db.transaction([store], 'readwrite');
+		const transaction = this.transaction([store], 'readwrite');
 		const objectStore = transaction.objectStore(store);
 
 		if (!Array.isArray(objects)) objects = [objects];
