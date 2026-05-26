@@ -2437,8 +2437,7 @@ export const Menu = (() => {
 							"uri": "/bible/tobit/chapter-14"
 						}
 					],
-					"uri": "/bible/tobit",
-					"disabled": true
+					"uri": "/bible/tobit"
 				},
 				{
 					"name": "Judith",
@@ -2524,8 +2523,7 @@ export const Menu = (() => {
 							"uri": "/bible/judith/chapter-16"
 						}
 					],
-					"uri": "/bible/judith",
-					"disabled": true
+					"uri": "/bible/judith"
 				},
 				{
 					"name": "Esther",
@@ -3962,8 +3960,7 @@ export const Menu = (() => {
 							"uri": "/bible/wisdom/chapter-19"
 						}
 					],
-					"uri": "/bible/wisdom",
-					"disabled": true
+					"uri": "/bible/wisdom"
 				},
 				{
 					"name": "Sirach",
@@ -4224,8 +4221,7 @@ export const Menu = (() => {
 							"uri": "/bible/sirach/chapter-51"
 						}
 					],
-					"uri": "/bible/sirach",
-					"disabled": true
+					"uri": "/bible/sirach"
 				},
 				{
 					"name": "Isaiah",
@@ -4894,8 +4890,7 @@ export const Menu = (() => {
 							"uri": "/bible/baruch/chapter-6"
 						}
 					],
-					"uri": "/bible/baruch",
-					"disabled": true
+					"uri": "/bible/baruch"
 				},
 				{
 					"name": "Ezekiel",
@@ -5710,8 +5705,7 @@ export const Menu = (() => {
 							"uri": "/bible/1-maccabees/chapter-16"
 						}
 					],
-					"uri": "/bible/1-maccabees",
-					"disabled": true
+					"uri": "/bible/1-maccabees"
 				},
 				{
 					"name": "2 Maccabees",
@@ -5792,8 +5786,7 @@ export const Menu = (() => {
 							"uri": "/bible/2-maccabees/chapter-15"
 						}
 					],
-					"uri": "/bible/2-maccabees",
-					"disabled": true
+					"uri": "/bible/2-maccabees"
 				},
 				{
 					"name": "Prayer of Manasseh",
@@ -5804,8 +5797,7 @@ export const Menu = (() => {
 							"uri": "/bible/prayer-of-manasseh/chapter-1"
 						}
 					],
-					"uri": "/bible/prayer-of-manasseh",
-					"disabled": true
+					"uri": "/bible/prayer-of-manasseh"
 				},
 				{
 					"name": "Matthew",

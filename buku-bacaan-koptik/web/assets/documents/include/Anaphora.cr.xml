@@ -36,7 +36,7 @@
 				<text>
 					<language id="Coptic">                  V/etsop qen n/et[oci: ouoh etjoust e~jen n/etyebi/out.               </language>
 					<language id="English">                  who dwells in the highest and looks upon the lowly;               </language>
-					<language id="Indonesian">Yang bersemayam/berdiam di tempat yang Mahatinggi dan melihat orang yang hina; (Mazmur 138:6)</language>
+					<language id="Indonesian">Yang bersemayam di tempat yang Mahatinggi dan melihat orang yang hina; (Mazmur 138:6)</language>
 					<language id="Arabic">                  الساكِنُ في الأعالي والناظِرُ إلى المتواضعاتِ.               </language>
 				</text>
 				<text>
@@ -60,7 +60,7 @@
 				<text>
 					<language id="Coptic">                  V/ethemci hijen piy~ronoc n~te pefw~ou: v/e~tououwst m~mof hiten jom niben eyouab.               </language>
 					<language id="English">                  who is seated upon the throne of His glory; and who is worshiped by all the holy powers.               </language>
-					<language id="Indonesian">                  Yang duduk di atas takhta kemuliaan-Nya, dan yang layak disujud sembah oleh semua kuasa yang suci.               </language>
+					<language id="Indonesian">                  Yang duduk di atas takhta kemuliaan-Nya, dan yang disujud sembah oleh semua kuasa yang suci.               </language>
 					<language id="Arabic">                  الجالسُ على عَرْشِ مجدِهِ، المسجودُ لهُ من جميعِ القواتِ المقدسةِ.               </language>
 				</text>
 			</role>
@@ -71,22 +71,20 @@
 				<text>
 					<language id="Coptic">                  Femp~sa qen oumeym/i ouoh oudikeon pe: e~hwc e~rok: e~c~mou e~rok: e~semsi m~mok: e~ouwst m~mok: e~]w~ou nak piouai m~mauatf n~tav~m/i: Vnou] pimairwmi.               </language>
 					<language id="English">                  It is fitting indeed, and right, that we praise You, bless You, serve You, worship You, and glorify You, the one, only, true God, the Lover of Mankind,               </language>
-					<language id="Indonesian">Sesungguhnya layak dan benar, bahwa kami memuji-Mu, memberkati-Mu, melayani-Mu,<span style="white-space:pre">	</span>sujud menyembah-Mu,<span style="white-space:pre">	</span>dan memuliakan-Mu; wahai Engkau satu-satunya Allah yang sejati; Pengasih umat manusia;<span style="white-space:pre">	</span>
+					<language id="Indonesian">Sesungguhnya layak dan benar, bahwa kami memuji-Mu, memberkati-Mu, melayani-Mu,<span style="white-space:pre">	</span>sujud menyembah-Mu,<span style="white-space:pre">	</span>dan memuliakan-Mu;  Yang satu-satunya Allah yang sejati; Pengasih umat manusia;<span style="white-space:pre">	</span>
 					</language>
 					<language id="Arabic">                  مستحقٌ بالحقيقةِ وعادلٌ أن نسبحَكَ، ونباركَكَ، ونخدُمَكَ، ونسجُدَ لكَ،  ونمجِّدَكَ أيها الواحدُ وحدَهُ الحقيقي، اللهُ محبُّ البشرِ.               </language>
 				</text>
 				<text>
 					<language id="Coptic">                  Piats~caji m~mof: piaynau e~rof: piatsopf: piatar,/: pisa e~neh: piatc/ou: piats~]si e~rof: piats~qetqwtf: piatvonh: pirefyamio n~te p~t/rf: pirefcw] n~te ouon niben.               </language>
 					<language id="English">                  ineffable, invisible, infinite, without beginning, everlasting, timeless, immeasurable, incomprehensible, unchangeable, creator of all, Savior of everyone,               </language>
-					<language id="Indonesian">Yang tak terkatakan, tak kelihatan, tak terbatas, tanpa awal, kekal, melampaui waktu, tak terukur, tak terselami, tak berubah, Pencipta segalanya, Juruselamat semua orang,
-						Arabic:Yang tak terkatakan, tak kelihatan, tak terwadahi, tanpa awal, kekal, tak terikat waktu, tak terbatas, tak terselami, tak berubah, Pencipta segalanya, Juruselamat semua orang.</language>
+					<language id="Indonesian">Yang tak terkatakan, tak kelihatan, tak terbatas, tanpa awal, kekal, melampaui waktu, tak terukur, tak terselami, tak terubahkan, Pencipta segalanya, Juruselamat semua orang, </language>
 					<language id="Arabic">                  الذي لا ينُطقُ بهِ، غيرُ المرئي، غيرُ المحوي، غيرُ المبتدِئ، الأبديُّ، غيرُ الزمنيِّ، الذي لا يُحَدُّ، غيرُ المفحوصِ، غيرُ المستحيلِ، خالقُ الكلِّ، مخلِّصُ الجميعِ.               </language>
 				</text>
 				<text>
 					<language id="Coptic">                  V/et,w e~bol n~nennobi: v/etcw] m~penwnq e~bolqen p~tako: v/et],~lom e~jwn qen hannai nem hanmetsenh/t.               </language>
 					<language id="English">                  who forgives our sins, who saves our life from corruption, who crowns us with mercy and compassion.               </language>
-					<language id="Indonesian">Yang mengampuni dosa-dosa kami, yang menyelamatkan hidup kami dari kebinasaan, yang memahkotai kami dengan belas kasih dan kasih sayang/rahmat dan belas kasihan.
-						Arabic:Pengampun dosa-dosa kami, Penyelamat hidup kami dari kebinasaan, Pemahkota kami dengan rahmat dan belas kasihan.</language>
+					<language id="Indonesian">Yang mengampuni dosa-dosa kami, yang menyelamatkan hidup kami dari kerusakan, yang memahkotai kami dengan belas kasihan dan kasih sayang. </language>
 					<language id="Arabic">                  غافرُ خطايانا، منقذُ حياتِنا من الفسادِ. مُكَلِّلُنا بالمراحِمِ والرأفاتِ.               </language>
 				</text>
 				<text>
@@ -105,14 +103,14 @@
 				<text>
 					<language id="Coptic">                  N~yok pe e~te~re niexoucia jw m~pekw~ou.               </language>
 					<language id="English">                  You are He whose glory the authorities declare.               </language>
-					<language id="Indonesian">Engkaulah Dia  yang kemuliaan-Nya diucapkan para penguasa.
+					<language id="Indonesian">Engkaulah Dia  yang kemuliaan-Nya dinyatakan para penguasa.
 						</language>
 						<language id="Arabic">                  أنتَ الذي تنطقُ السلاطينُ بمجدِكَ.               </language>
 					</text>
 					<text>
 						<language id="Coptic">                  Nyok pe e~te~re niy~ronoc ouwrp nak e~p~swi m~pitaio.               </language>
 						<language id="English">                  You are He unto whom the thrones send up honor.               </language>
-						<language id="Indonesian">                  Engkaulah Dia yang kepada-Nya takhta-takhta menaikkan hormat.               </language>
+						<language id="Indonesian">                  Engkaulah Dia yang kepada-Mu semua takhta menaikkan hormat.               </language>
 						<language id="Arabic">                  أنتَ الذي تُرسلُ لكَ الكراسيُّ الكرامةَ.               </language>
 					</text>
 					<text>
@@ -130,7 +128,7 @@
 					<text>
 						<language id="Coptic">                  Eui~ri t/rou m~pekcaji penn/b.               </language>
 						<language id="English">                  They all do Your word, O our Master.               </language>
-						<language id="Indonesian">                  Dan mereka semua melaksanakan firman-Mu, ya Guru kami.               </language>
+						<language id="Indonesian">                  Dan mereka semua melakukan firman-Mu, ya Guru kami.               </language>
 						<language id="Arabic">                  ويصنعونَ كلٌّهُم كلمتَكَ يا سيِّدَنا.               </language>
 					</text>
 				</role>
@@ -175,13 +173,13 @@
 					<text>
 						<language id="Coptic">                  V/etafouwnh nan e~bol m~v~ouwini m~V~iwt.               </language>
 						<language id="English">                  who has manifested to us the Light of the Father,               </language>
-						<language id="Indonesian">yang telah menyatakan kepada kami Terang Bapa,</language>
+						<language id="Indonesian">yang telah menyatakan kepada kami Terang dari Bapa,</language>
 						<language id="Arabic">                  الذي أظهرَ لنا نورَ الآبِ.               </language>
 					</text>
 					<text>
 						<language id="Coptic">                  V/etaferh~mot nan m~pie~mi m~m/i n~te Pip~neuma eyouab.               </language>
 						<language id="English">                  who has granted us the true knowledge of the Holy Spirit,               </language>
-						<language id="Indonesian">                  yang telah menganugerahkan kepada kami pengetahuan yang benar tentang Roh Kudus,</language>
+						<language id="Indonesian">                  yang telah memberikan kepada kami pengetahuan yang benar dari Roh Kudus,</language>
 						<language id="Arabic">                  الذي أَنعَمَ علينا بمعرفةِ الروحِ القدسِ الحقيقيةِ.               </language>
 					</text>
 					<text>
@@ -193,7 +191,7 @@
 					<text>
 						<language id="Coptic">                  V/e~taftajro n~]metrefo~hi e~ratf n~te p~,oroc n~te nia~cwmatoc qen nirwmi.               </language>
 						<language id="English">                  who has established the rising of the choir of the incorporeal among men,               </language>
-						<language id="Indonesian">                  yang telah menetapkan nyanyian paduan suara yang tak berjasmani di tengah manusia,               </language>
+						<language id="Indonesian">                  yang telah menetapkan nyanyian paduan suara yang tak berwujud di tengah manusia,               </language>
 						<language id="Arabic">                  الذي ثبَّتَ قيامَ مَصافِِ غيرِ المتجسدين لَدَى البشرِ.                </language>
 					</text>
 					<text>
@@ -224,13 +222,13 @@
 					<text>
 						<language id="Coptic">                  Marenjoc hwn nem n/e~te m~mau: e~anhioui~ cabol m~mon m~meui~ niben n~te nilogicmoc n~a~topon.               </language>
 						<language id="English">                  Let us also say with them, having cast away from us all the thoughts of evil imagination,               </language>
-						<language id="Indonesian">Biarlah kami juga berkata bersama mereka, setelah kami menyingkirkan dari kami pikiran dari khayalan yang jahat.,</language>
+						<language id="Indonesian">Biarlah kami juga berkata bersama mereka, setelah kami menyingkirkan dari kami semua khayalan yang jahat.,</language>
 						<language id="Arabic">                  ولنَقُلْ نحنُ أيضاً مع أولئكَ، إذ قد طَرَحْنا عنا كل أفكارِ الخواطرِ الشريرةِ.                </language>
 					</text>
 					<text>
 						<language id="Coptic">                  Ntenws e~bol n~n/e~nare n/e~te m~mau taouo~ m~mwou: qen hanc~m/ n~at,arwou: nem hanrwf n~aymounk ouoh n~tenc~mou e~tekmetnis].               </language>
 						<language id="English">                  and proclaim that which they send up with unceasing voices and unfailing lips, and praise Your greatness.               </language>
-						<language id="Indonesian">                  dan memaklumkan/berseru dengan apa yang mereka naikkan, dengan suara yang tak henti-hentinya dan bibir yang tak pernah berhenti/lelah, serta memuji kebesaran-Mu.</language>
+						<language id="Indonesian">                  dan memaklumkan bersama yang mereka naikkan, dengan suara yang tak henti-hentinya dan bibir yang tak pernah lelah, serta memuji kebesaran-Mu.</language>
 						<language id="Arabic">                  ونصرُخُ بما يرسلُهُ أولئك، بأصواتٍ لا تسكتُ، وأفواهٍ لا تفترُ، ونباركُ عظمَتَكَ.               </language>
 					</text>
 				</role>
@@ -246,7 +244,7 @@
 					<text>
 						<language id="Coptic">                  N~yok gar pe e~touo~hi e~ratou m~pekkw]: n~je ni,eroubim eymeh m~bal: nem niceravim na picoou n~tenh: euerhumnoc qen oumoun e~bol n~at,arwou eujw m~moc.               </language>
 						<language id="English">                  You are He around whom stand the cherubim full of eyes, and the seraphim with six wings, praising continuously, without ceasing, saying—               </language>
-						<language id="Indonesian">                  Di sekitar-Mu/sekeliling-Mu berdiri Kerubim yang bermata banyak, dan Serafim yang bersayap enam, yang tanpa henti-hentinya memuji-Mu, dan mengatakan:</language>
+						<language id="Indonesian">Engkaulah Dia dimana para Kerubim yang bermata banyak dan Serafim yang bersayap enam, berdiri mengelilingi-Mu, mereka tanpa henti-hentinya memuji-Mu, dan mengatakan:</language>
 						<language id="Arabic">                  أنتَ هو الذي يقفُ حولَكَ الشاروبيم الممتلئونَ أعيناً، والسارافيم ذَوُو الستةِ الأجنحةِ، يسبحونَ على الدوامِ بغيرِ سكوتٍ قائلين:               </language>
 					</text>
 				</season>
@@ -254,7 +252,7 @@
 					<text>
 						<language id="Coptic">                  N~yok gar pe e~touo~hi e~ratou m~pekkw]: n~je ni,eroubim nem niceravim: e~re 6 (coou) n~tenh m~piouai: ouoh 6 (coou) n~tenh m~pikeouai.               </language>
 						<language id="English">                  You are He around whom stand the cherubim and the seraphim, six wings to the one and six wings to the other,               </language>
-						<language id="Indonesian">Engkaulah Dia yang di sekitar-Mu/sekeliling-Mu berdiri  Kerubim dan Serafim:  enam sayap bagi yang satu dan enam sayap bagi yang lain,</language>
+						<language id="Indonesian">Engkaulah Dia dimana Kerubim dan Serafim berdiri mengelilingi-Mu, enam sayap bagi yang satu dan enam sayap bagi yang lain,</language>
 						<language id="Arabic">                  أنتَ هو القيامُ حولَكَ الشاروبيمُ والسارافيمُ، ستةُ أجنحةٍ للواحدِ، وستةُ أجنحةٍ للآخرِ.               </language>
 					</text>
 					<text>
@@ -266,13 +264,13 @@
 					<text>
 						<language id="Coptic">                  Eutaouo~ m~pihumnoc n~te pi[~ro ouoh n~oujai n~tan: qen ouc~m/ ecmeh n~w~ou.               </language>
 						<language id="English">                  They send up the hymn of victory and salvation which is ours, with a voice full of glory.               </language>
-						<language id="Indonesian">                  Mereka menaikkan nyanyian kemenangan dan keselamatan yang menjadi  milik kami, dengan suara yang penuh kemuliaan.               </language>
+						<language id="Indonesian">                  Mereka menaikkan himne kemenangan dan keselamatan yang menjadi  milik kami, dengan suara yang penuh kemuliaan.               </language>
 						<language id="Arabic">                  يُرسِلونَ تسبحةَ الغلبةِ والخلاصِ الذي لنا بصوتٍ مُمتلئ مجداً.               </language>
 					</text>
 					<text>
 						<language id="Coptic">                  Euhwc eujw: euws e~bol eu] q~rwou eujw m~moc.               </language>
 						<language id="English">                  They praise, they sing, they proclaim, they cry out, saying—               </language>
-						<language id="Indonesian">                  Mereka memuji, mereka bernyanyi, mereka mewartakan, mereka berseru, sambil berkata:</language>
+						<language id="Indonesian">                  Mereka memuji, mereka bernyanyi, mereka memaklumkan, mereka berseru, sambil berkata:</language>
 						<language id="Arabic">                  يُسبحونَ، ويُنشدونَ، ويصرخونَ، ويصوِّتونَ قائلين:               </language>
 					</text>
 				</season>
@@ -293,14 +291,14 @@
 						<language id="Coptic">                  Nyok gar pe e~touohi e~ratou nahrak n~je pekzwon c~nau ettai/out e~masw: na picoou n~tenh ouoh etos m~bal: n~ceravim ouoh n~,eroubim.               </language>
 						<language id="English">                  You are He before whom stand Your two most honored living creatures, with their six wings and many eyes, the seraphim and the cherubim.               </language>
 						<language id="Indonesian">
-							<div>Engkaulah Dia, di hadapan-Mu berdiri dua makhluk hidup-Mu yang paling mulia, dengan enam sayap dan banyak mata, yaitu para Serafim dan Kerubim.</div>
+							<div>Engkaulah Dia, di hadapan-Mu berdiri dua makhluk hidup-Mu yang paling mulia, dengan enam sayap dan bermata banyak, yaitu para Serafim dan Kerubim.</div>
 						</language>
 						<language id="Arabic">                  أنت الذي يقومُ أمامَكَ مخلوقاكَ الحيَّانِ الكريمانِ جداً، ذَوَا الستةِ الأجنحةِ، الكثيرا الأعيُنِ، السارافيم والشاروبيم.               </language>
 					</text>
 					<text>
 						<language id="Coptic">                  Qen c~nau men n~tenh euhwbc n~nouho: eybe tekmeynou] n~ats~eryew~rin m~moc ouoh n~ats~mokmek e~roc: qen c~nau de euhwbc n~nou[alauj: euh/l de qen pikec~nau.               </language>
 						<language id="English">                  With two wings they cover their faces on account of Your divinity that cannot be beheld or comprehended, and with two they cover their feet, and with the other two they fly.               </language>
-						<language id="Indonesian">Dengan dua sayap mereka menutupi wajah mereka karena keilahian-Mu yang tidak dapat dipandang maupun dipahami/diselami, dengan dua sayap mereka menutupi kaki mereka, dan dengan dua sayap lainnya mereka terbang.</language>
+						<language id="Indonesian">Dengan dua sayap mereka menutupi wajah mereka karena keilahian-Mu yang tidak dapat dipandang maupun dipahami, dengan dua sayap mereka menutupi kaki mereka, dan dengan dua sayap lainnya mereka terbang.</language>
 						<language id="Arabic">                  فبجناحينِ يغطونَ وجُوهَهُم من أجلِ لاهوتِكَ الذي لا يُستطاعُ النظرُ إليهِ ولا التفكُّرُ فيهِ، وباثنينِ يغطونَ أرجُلَهُم، ويطيرونَ بالاثنينِ الآخَرَيْنِ.               </language>
 					</text>
 					<comment>
