@@ -222,13 +222,13 @@
 					<text>
 						<language id="Coptic">                  Marenjoc hwn nem n/e~te m~mau: e~anhioui~ cabol m~mon m~meui~ niben n~te nilogicmoc n~a~topon.               </language>
 						<language id="English">                  Let us also say with them, having cast away from us all the thoughts of evil imagination,               </language>
-						<language id="Indonesian">Biarlah kami juga berkata bersama mereka, setelah kami menyingkirkan dari kami semua khayalan yang jahat.,</language>
+						<language id="Indonesian">Biarlah kami juga berkata bersama mereka, setelah kami menyingkirkan  semua khayalan yang jahat dari kami,</language>
 						<language id="Arabic">                  ولنَقُلْ نحنُ أيضاً مع أولئكَ، إذ قد طَرَحْنا عنا كل أفكارِ الخواطرِ الشريرةِ.                </language>
 					</text>
 					<text>
 						<language id="Coptic">                  Ntenws e~bol n~n/e~nare n/e~te m~mau taouo~ m~mwou: qen hanc~m/ n~at,arwou: nem hanrwf n~aymounk ouoh n~tenc~mou e~tekmetnis].               </language>
 						<language id="English">                  and proclaim that which they send up with unceasing voices and unfailing lips, and praise Your greatness.               </language>
-						<language id="Indonesian">                  dan memaklumkan bersama yang mereka naikkan, dengan suara yang tak henti-hentinya dan bibir yang tak pernah lelah, serta memuji kebesaran-Mu.</language>
+						<language id="Indonesian">                  dan memaklumkan bersama dengan yang mereka naikkan, suara yang tak henti-hentinya dan bibir yang tak pernah lelah, serta memuji kebesaran-Mu.</language>
 						<language id="Arabic">                  ونصرُخُ بما يرسلُهُ أولئك، بأصواتٍ لا تسكتُ، وأفواهٍ لا تفترُ، ونباركُ عظمَتَكَ.               </language>
 					</text>
 				</role>
@@ -284,14 +284,14 @@
 					<text>
 						<language id="Coptic">                  Nyok gar pe e~touo~hi e~ratou nahrak n~je nia~nanso n~so nem nia~nany~ba n~y~ba: n~te niaggeloc nem niar,iaggeloc eyouab eusemsi nak.               </language>
 						<language id="English">                  You are He before whom stand thousands of thousands and ten thousand times ten thousand of holy angels and archangels, serving You.               </language>
-						<language id="Indonesian">Engkaulah Dia, di hadapan-Mu berdiri seribu kali beribu-ribu dan selaksa kali berlaksa-laksa malaikat dan penghulu malaikat yang kudus, yang melayani Engkau.               </language>
+						<language id="Indonesian">Engkaulah Dia, yang di hadapan-Mu berdiri seribu kali beribu-ribu dan selaksa kali berlaksa-laksa malaikat dan penghulu malaikat yang kudus, yang melayani Engkau.               </language>
 						<language id="Arabic">                  أنتَ الذي يقومُ أمامَكَ ألوفُ ألوفِ، وربواتُ ربواتِ الملائكةِ، ورؤساءِ الملائكةِ المقدَّسينَ يخدمونَكَ.               </language>
 					</text>
 					<text>
 						<language id="Coptic">                  Nyok gar pe e~touohi e~ratou nahrak n~je pekzwon c~nau ettai/out e~masw: na picoou n~tenh ouoh etos m~bal: n~ceravim ouoh n~,eroubim.               </language>
 						<language id="English">                  You are He before whom stand Your two most honored living creatures, with their six wings and many eyes, the seraphim and the cherubim.               </language>
 						<language id="Indonesian">
-							<div>Engkaulah Dia, di hadapan-Mu berdiri dua makhluk hidup-Mu yang paling mulia, dengan enam sayap dan bermata banyak, yaitu para Serafim dan Kerubim.</div>
+							<div>Engkaulah Dia, yang di hadapan-Mu berdiri dua makhluk hidup-Mu yang paling mulia, dengan enam sayap dan bermata banyak, yaitu para Serafim dan Kerubim.</div>
 						</language>
 						<language id="Arabic">                  أنت الذي يقومُ أمامَكَ مخلوقاكَ الحيَّانِ الكريمانِ جداً، ذَوَا الستةِ الأجنحةِ، الكثيرا الأعيُنِ، السارافيم والشاروبيم.               </language>
 					</text>
@@ -315,7 +315,7 @@
 					<text>
 						<language id="Coptic">                  Alla nem ouon niben e~tera~gia~zin m~mok: [i m~pena~giacmoc n~toten hwn P[oic: enhwc e~rok nemwou enjw m~moc.               </language>
 						<language id="English">                  But with all who hallow You, receive from us—we, too—our hallowing, O Lord, as we praise You with them, saying—               </language>
-						<language id="Indonesian">                  Tetapi bersama semua yang menguduskan-Mu, terimalah dari kami juga pengudusan kami, ya Tuhan, ketika kami memuji-Mu bersama mereka, sambil berkata:</language>
+						<language id="Indonesian">                  Tetapi bersama semua yang menguduskan-Mu, terimalah dari kami pengudusan kami juga, ya Tuhan, ketika kami memuji-Mu bersama mereka, sambil berkata:</language>
 						<language id="Arabic">                  لكن مَعَ كلِّ من يقدِّسُكَ، اقبل تقديسَنا منا نحنُ أيضاً ياربُّ، إذ نسبحُكَ معهُم قائلين:               </language>
 					</text>
 				</season>
@@ -325,7 +325,7 @@
 		<role id="People">
 			<comment>
 				<language id="English">            The congregation may chant the following short Watos Aspasmos hymn.         </language>
-				<language id="Indonesian">            Umat dapat menyanyikan hymn Watos Aspasmos yang singkat berikut ini.         </language>
+				<language id="Indonesian">            Umat dapat menyanyikan himne Watos Aspasmos yang singkat berikut ini.         </language>
 				<language id="Arabic">            يقول الشعب أسبسمس واطس مختصر سنوي:         </language>
 			</comment>
 			<group>
@@ -336,7 +336,7 @@
 			<insertdocument path="include/AnaphoraTheCherubim.2" self-closing="true"> </insertdocument>
 			<comment>
 				<language id="English">            The congregation may chant the following Watos Aspasmos hymn:         </language>
-				<language id="Indonesian">            Umat dapat menyanyikan hymn Watos Aspasmos berikut ini:         </language>
+				<language id="Indonesian">            Umat dapat menyanyikan himne Watos Aspasmos berikut ini:         </language>
 				<language id="Arabic">            أو يقول الشعب هذا الأسبسمس الواطس:         </language>
 			</comment>
 			<insertdocument path="include/watosAspasmos/WatosAspasmos" self-closing="true"> </insertdocument>
