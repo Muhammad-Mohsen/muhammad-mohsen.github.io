@@ -1,2318 +1,2342 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><book book="Baruch">
-   <chapter num="1">
-      <verse num="1">
-         <language id="English">
+<?xml version="1.0" encoding="utf-8"?>
+<book book="Baruch">
+<chapter num="1">
+<verse num="1">
+<language id="English" verse="1">
             And these are the words of the book, which Baruch the son of Neraiah, the son of Mahseiah, the son of Zedekiah, the son of Hasadiah, the son Hilkiah, wrote in Babylon,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="1">
             Inilah segala perkataan kitab yang ditulis oleh Barukh bin Neria bin Mahseya bin Zedekia bin Asadia bin Hilkia di negeri Babel
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="1">
             هذَا كَلاَمُ الْكِتَابِ الَّذِي كَتَبَهُ بَارُوخُ بْنُ نِيرِيَّا بْنِ مَعَسْيَا بْنِ صِدْقِيَّا بْنِ حَسَدْيَا ابْنِ حِلْقِيَّا فِي بَابِلَ.
          </language>
-      </verse>
-
-      <verse num="2">
-         <language id="English">
+</verse>
+<verse num="2">
+<language id="English" verse="2">
             in the fifth year, on the seventh day of the month, since the time when the Chaldeans captured Jerusalem and set it on fire.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="2">
             pada tanggal tujuh bulan itu dalam tahun kelima semenjak Yerusalem direbut orang-orang Kasdim dan dibakar oleh mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="2">
             فِي السَّنَةِ الْخَامِسَةِ فِي السَّابِعِ مِنَ الشَّهْرِ حِينَ أَخَذَ الْكَلْدَانِيُّونَ أُورُشَلِيمَ وَأَحْرَقُوهَا بِالنَّارِ
          </language>
-      </verse>
-
-      <verse num="3">
-         <language id="English">
+</verse>
+<verse num="3">
+<language id="English" verse="3">
             And Baruch read the words of this book to the ears of Jeconiah, the son of Jehoiakim king of Judah, and to the ears of the entire people, who came to the book:
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="3">
             Segala perkataan kitab ini dibacakan oleh Barukh sendiri di hadapan Yekhonya putera Yoyakim, raja Yehuda, dan di depan seluruh rakyat yang telah datang untuk pembacaan kitab itu,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="3">
             وَتَلاَ بَارُوخُ كَلاَمَ هذَا الْكِتَابِ عَلَى مِسْمَعَيْ يَكُنْيَا بْنِ يُويَاقِيمَ مَلِكِ يَهُوذَا وَعَلَى مَسَامِعِ جَمِيعِ الشَّعْبِ الَّذِينَ جَاءُوا لاِسْتِمَاعِ الْكِتَابِ
          </language>
-      </verse>
-
-      <verse num="4">
-         <language id="English">
+</verse>
+<verse num="4">
+<language id="English" verse="4">
             even to the ears of the powerful sons of kings, and to the ears of the elders, and to the ears of the people, from the least to the greatest of them, of all those living in Babylon, near the river Sud.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="4">
             lagipula di depan para pejabat serta para pangeran, di depan kaum tua-tua dan segenap rakyat, besar kecil, pendeknya di hadapan semua orang yang diam di negeri Babel di dekat sungai Sud.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="4">
             وَعَلَى مَسَامِعِ الْمُقْتَدِرِينَ وَبَنِي الْمُلُوكِ وَمَسَامِعِ الشُّيُوخِ وَمَسَامِعِ جَمِيعِ الشَّعْبِ مِنَ الصِّغَارِ إِلَى الْكِبَارِ جَمِيعِ السَّاكِنِينَ فِي بَابِلَ عَلَى نَهْرِ سُودٍ.
          </language>
-      </verse>
-
-      <verse num="5">
-         <language id="English">
+</verse>
+<verse num="5">
+<language id="English" verse="5">
             And upon hearing it, they wept and fasted and prayed in the sight of the Lord.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="5">
             Maka menangislah mereka semua, berpuasa dan berdoa di hadapan Tuhan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="5">
             فَبَكَوْا وَصَامُوا وَصَلَّوْا أَمَامَ الرَّبِّ
          </language>
-      </verse>
-
-      <verse num="6">
-         <language id="English">
+</verse>
+<verse num="6">
+<language id="English" verse="6">
             And they collected money in accordance with whatever each one was able to handover.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="6">
             Dikumpulkannya uang, sekedar kemampuan masing-masing,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="6">
             وَجَمَعُوا مِنَ الْفِضَّةِ قَدْرَ مَا اسْتَطَاعَتْ يَدُ كُلِّ وَاحِدٍ
          </language>
-      </verse>
-
-      <verse num="7">
-         <language id="English">
+</verse>
+<verse num="7">
+<language id="English" verse="7">
             And they sent it to Jerusalem to Jehoiakim, the son of Hilkiah, the son of Shalum the priest, and to the priests, and to all the people, who were found with him in Jerusalem.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="7">
             lalu dikirimnya ke Yerusalem kepada imam Yoyakim bin Hilkia bin Syalom, kepada para imam serta segenap rakyat, semua yang terdapat di Yerusalem bersama dengan imam Yoyakim.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="7">
             وَبَعَثُوا إِلَى أُورُشَلِيمَ إِلَى يُويَاقِيمَ بْنِ حِلْقِيَّا بْنِ شَلُّومَ الْكَاهِنِ وَإِلَى الْكَهَنَةِ وَإِلَى جَمِيعِ الشَّعْبِ الَّذِينَ مَعَهُ فِي أُورُشَلِيمَ
          </language>
-      </verse>
-
-      <verse num="8">
-         <language id="English">
+</verse>
+<verse num="8">
+<language id="English" verse="8">
             At that time, he received the vessels of the temple of the Lord (which had been carried away from the temple) so as to return them to the land of Judah, on the tenth day of the month Sivan. These were the silver vessels, which Zedekiah, the son of Josiah king of Judah, had made.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="8">
             Pada tanggal sepuluh bulan Siwan Barukh menerima perkakas dari Rumah Tuhan yang telah dirampas dari Bait Allah, untuk dikembalikannya ke negeri Yehuda, yaitu perkakas perak yang dahulu dibuat oleh Zedekia putera Yosia, raja Yehuda,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="8">
             عِنْدَمَا أَخَذَ آنِيَةَ بَيْتِ الرَّبِّ الْمَسْلُوبَةَ مِنَ الْهَيْكَلِ لِيَرُدَّهَا إِلَى أَرْضِ يَهُوذَا فِي الْعَاشِرِ مِنْ سِيوَانَ وَهِيَ آنِيَةُ الْفِضَّةِ الَّتِي صَنَعَهَا صِدْقِيَّا بْنُ يُوشِيَّا مَلِكُ يَهُوذَا
          </language>
-      </verse>
-
-      <verse num="9">
-         <language id="English">
+</verse>
+<verse num="9">
+<language id="English" verse="9">
             After this, Nebuchadnezzar, the king of Babylon, captured Jeconiah, and the leaders, and all the powerful, and the people of the land, and led them captive from Jerusalem to Babylon.
-         </language><language id="Indonesian"><div>sesudah Nebukadnezar, raja Babel, membuang Yekhonya, para pemimpin, pandai besi, para pemuka serta rakyat negeri dari Yerusalem dan membawa mereka ke negeri Babel.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="9">
+sesudah Nebukadnezar, raja Babel, membuang Yekhonya, para pemimpin, pandai besi, para pemuka serta rakyat negeri dari Yerusalem dan membawa mereka ke negeri Babel.
+</language>
+<language id="Arabic" verse="9">
             بَعْدَمَا أَجْلَى نَبُوخَذْنَصَّرُ مَلِكُ بَابِلَ يَكُنْيَا وَالرُّؤَسَاءَ وَالْمُحَصِّنِينَ وَالْمُقْتَدِرِينَ وَشَعْبَ الأَرْض مِنْ أُورُشَلِيمَ وَذَهَب بِهِمْ إِلَى بَابِلَ
          </language>
-      </verse>
-
-      <verse num="10">
-         <language id="English">
+</verse>
+<verse num="10">
+<language id="English" verse="10">
             And they said, “Behold we have sent you money with which to buy holocausts and frankincense. Therefore, make manna and offer it for sin at the altar of the Lord our God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="10">
             Dalam sepucuk surat orang-orang Yahudi menyatakan sebagai berikut: Bersama dengan ini kami mengirim uang kepadamu. Belikanlah itu kepada korban bakaran, korban penghapus dosa serta kemenyan. Selanjutnya hendaklah menyediakan korban sajian dan menaruhnya di atas mezbah Tuhan, Allah kita.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="10">
             وَقَالُوا إِنَّا قَدْ أَرْسَلْنَا إِلَيْكُمْ فِضَّةً فَابْتَاعُوا بِالْفِضَّةِ مُحْرَقَاتٍ وَذَبَائِحَ لِلْخَطِيَّةِ وَلُبَاناً وَاصْنَعُوا تَقَادِمَ وَقَدِّمُوهَا عَلَى مَذْبَحِ الرَّبِّ
          </language>
-      </verse>
-
-      <verse num="11">
-         <language id="English">
+</verse>
+<verse num="11">
+<language id="English" verse="11">
             And pray for the life of Nebuchadnezzar, the king of Babylon, and for the life of Belshazzar his son, so that their days may be just like the days of the heaven above the earth,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="11">
             Hendaklah mendoakan kesejahteraan Nebukadnezar, raja Babel, serta kesejahteraan puteranya Beltsazar, supaya masa hidup mereka di bumi menjadi seperti masa langit.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="11">
             وَصَلُّوا مِنْ أَجْلِ حَيَاةِ نَبُوكَدْنَصَّرَ مَلِكِ بَابِلَ وَحَيَاةِ بَلْشَصَّرَ ابْنِهِ لِكَيْ تَكُونَ أَيَّامُهُمَا كَأَيَّامِ السَّمَاءِ عَلَى الأَرْضِ
          </language>
-      </verse>
-
-      <verse num="12">
-         <language id="English">
+</verse>
+<verse num="12">
+<language id="English" verse="12">
             and so that the Lord may give virtue to us, and enlighten our eyes, so that we may live under the shadow of Nebuchadnezzar the king of Babylon, and under the shadow of Belshazzar his son, and so that we may serve them for many days and may find favor in their sight.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="12">
             Semoga Tuhan menganugerahi kami sendiri kekuatan dan menerangi mata kami, supaya kami hidup bahagia di bawah naungan Nebukadnezar, raja Babel dan di bawah naungan puteranya Beltsazar, agar supaya kami lama mengabdi kepada mereka serta mendapat kasih karunia di hadapan mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="12">
             فَيُؤْتِيَنَا الرَّبُّ قُوَّةً وَيُنِيرَ عُيُونَنَا وَنَحْيَا تَحْتَ ظِلِّ نَبُوكَدْنَصَّرَ مَلِكِ بَابِلَ وَظِلِّ بَلْشَصَّرَ ابْنِهِ وَنَتَعَبَّدَ لَهُمَا أَيَّاماً كَثِيرَةً وَنَحْنُ نَائِلُونَ لَدَيْهِمَا حُظْوَةً
          </language>
-      </verse>
-
-      <verse num="13">
-         <language id="English">
+</verse>
+<verse num="13">
+<language id="English" verse="13">
             And pray for us also to the Lord our God, for we have sinned against the Lord our God, and the madness of our sin has not been driven away from us even to this day.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="13">
             Berdoalah juga kepada Tuhan, Allah kita, untuk kami ini. Sebab kami telah berdosa kepada Tuhan, Allah kita, dan hingga sekarangpun geram Tuhan serta kemurkaan-Nya belum juga undur dari kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="13">
             وَصَلُّوا مِنْ أَجْلِنَا إِلَى الرَّبِّ إِلهِنَا فَإِنَّا قَدْ خَطِئْنَا إِلَى الرَّبِّ إِلهِنَا وَلَمْ يَرْتَدَّ سُخْطُ الرَّبِّ وَغَضَبُهُ عَنَّا إِلَى هذَا الْيَوْمِ.
          </language>
-      </verse>
-
-      <verse num="14">
-         <language id="English">
+</verse>
+<verse num="14">
+<language id="English" verse="14">
             And read this book, which we have sent to you to be recited in the temple of the Lord, on solemn days and on other suitable days.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="14">
             Hendaklah membacakan kitab yang kami kirim ini, untuk diumumkan di dalam Rumah Tuhan pada hari raya dan pada hari-hari perhimpunan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="14">
             وَاتْلُوا هذَا الْكِتَابَ الَّذِي أَرْسَلْنَاهُ إِلَيْكُمْ لِيُنَادَى بِهِ فِي بَيْتِ الرَّبِّ فِي يَوْمِ الْعِيدِ وَفِي أَيَّامِ الْمَحْفِلِ
          </language>
-      </verse>
-
-      <verse num="15">
-         <language id="English">
+</verse>
+<verse num="15">
+<language id="English" verse="15">
             And you will say, ‘To the Lord our God is justice, but to us is confusion of our face, just as it is this day for all of Judah and the inhabitants of Jerusalem,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="15">
             Katakanlah sebagai berikut: Keadilan ada pada Tuhan, Allah kita, sedangkan malu muka pada kami, sebagaimana halnya hari ini, yaitu: pada orang-orang Yehuda dan penduduk Yerusalem,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="15">
             وَقُولُوا لِلرَّبِّ إِلهِنَا الْعَدْلُ وَلَنَا خِزْيُ الْوُجُوهِ كَمَا فِي هذَا الْيَوْمِ لِرِجَالِ يَهُوذَا وَسُكَّانِ أُورُشَلِيمَ
          </language>
-      </verse>
-
-      <verse num="16">
-         <language id="English">
+</verse>
+<verse num="16">
+<language id="English" verse="16">
             even for our kings, and our leaders, and our priests, and our prophets, and our fathers.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="16">
             pada sekalian raja kami, para pemimpin, para imam dan nabi serta pada nenek moyang kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="16">
             وَلِمُلُوكِنَا وَرُؤَسَائِنَا وَكَهَنَتِنَا وَأَنْبِيَائِنَا وَآبَائِنَا
          </language>
-      </verse>
-
-      <verse num="17">
-         <language id="English">
+</verse>
+<verse num="17">
+<language id="English" verse="17">
             We have sinned before the Lord our God and we have not believed, lacking confidence in him.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="17">
             Memang kami telah berdosa kepada Tuhan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="17">
             لأَنَّا خَطِئْنَا أَمَامَ الرَّبِّ وَعَصَيْنَاهُ
          </language>
-      </verse>
-
-      <verse num="18">
-         <language id="English">
+</verse>
+<verse num="18">
+<language id="English" verse="18">
             And we have not been submissive to him, and we have not listened to the voice of the Lord our God, so as to walk in his commandments, which he has given to us.
-         </language><language id="Indonesian"><div>Kami tidak taat kepada-Nya dan tidak mendengarkan suara Tuhan, Allah kami, untuk mengikuti segala ketetapan Tuhan yang telah ditaruh-Nya di hadapan kami.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="18">
+Kami tidak taat kepada-Nya dan tidak mendengarkan suara Tuhan, Allah kami, untuk mengikuti segala ketetapan Tuhan yang telah ditaruh-Nya di hadapan kami.
+</language>
+<language id="Arabic" verse="18">
             وَلَمْ نَسْمَعْ لِصَوْتِ الرَّبِّ إِلهِنَا لِنَسْلُكَ فِي أَوَامِرِ الرَّبِّ الَّتِي جَعَلَهَا أَمَامَ وُجُوهِنَا.
          </language>
-      </verse>
-
-      <verse num="19">
-         <language id="English">
+</verse>
+<verse num="19">
+<language id="English" verse="19">
             From the day that he led our fathers out of the land of Egypt, even to this day, we were unfaithful to the Lord our God, and, having been scattered, we fell away. We did not listen to his voice.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="19">
             Semenjak hari Tuhan membawa nenek moyang kami keluar dari negeri Mesir hingga dengan hari ini kami tidak taat kepada Tuhan, Allah kami. Sebaliknya Tuhan telah kami alpakan karena tidak mendengarkan suara-Nya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="19">
             مِنْ يَوْمَ أَخْرَجَ الرَّبُّ آبَاءَنَا مِنْ أَرْضِ مِصْرَ إِلَى هذَا الْيَوْمِ مَا زِلْنَا نُعَاصِي الرَّبَّ إِلهَنَا وَنُعْرِضُ عَنِ اسْتِمَاعِ صَوْتِهِ
          </language>
-      </verse>
-
-      <verse num="20">
-         <language id="English">
+</verse>
+<verse num="20">
+<language id="English" verse="20">
             And we joined ourselves to many evils and to the curses which the Lord established through Moses, his servant, who led our fathers out of the land of Egypt, to give us a land flowing with milk and honey, just as it is in the present day.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="20">
             Dari sebab itu maka melekatlah kepada kami semua bencana dan laknat yang telah diperintahkan Tuhan kepada Musa, hamba-Nya, waktu nenek moyang kami dibawa-Nya keluar dari negeri Mesir untuk dianugerahkan-Nya kepada kami suatu tanah yang berlimpah susu dan madunya, sebagaimana halnya hari ini.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="20">
             فَلَحِقَ بِنَا الشَّرُّ وَاللَّعْنَةُ اللَّذَانِ أَمَرَ الرَّبُّ مُوسَى عَبْدَهُ أَنْ يُوعِدَ بِهِمَا يَوْمَ أَخْرَجَ آبَاءَنَا مِنْ أَرْضِ مِصْرَ لِيُعْطِيَنَا أَرْضاً تَدُرُّ لَبَناً وَعَسَلاً كَمَا فِي هذَا الْيَوْمِ.
          </language>
-      </verse>
-
-      <verse num="21">
-         <language id="English">
+</verse>
+<verse num="21">
+<language id="English" verse="21">
             And we have not listened to the voice of the Lord our God, according to all the words of the prophets whom he sent to us.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="21">
             Tetapi kami tidak mendengarkan suara Tuhan, Allah kami, sesuai dengan firman para nabi yang telah Tuhan utus kepada kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="21">
             فَلَمْ نَسْمَعْ لِصَوْتِ الرَّبِّ إِلهِنَا وَلاَ لِجَمِيعِ كَلاَمِ الأَنْبِيَاءِ الَّذِينَ أَرْسَلَهُمْ إِلَيْنَا
          </language>
-      </verse>
-
-      <verse num="22">
-         <language id="English">
+</verse>
+<verse num="22">
+<language id="English" verse="22">
             And we have gone astray, each one after the inclinations of his own malignant heart, serving strange gods and doing evil before the eyes of the Lord our God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="22">
             Bahkan kami telah pergi berbakti kepada allah lain, masing-masing menurut angan-angan hati jahatnya, dan kami melakukan apa yang durjana dalam pandangan Tuhan, Allah kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="22">
             وَمَضَيْنَا كُلُّ وَاحِدٍ عَلَى إِصْرَارِ قَلْبِهِ الشِّرِّيرِ عَابِدِينَ آلِهَةً أُخَرَ صَانِعِينَ الشَّرَّ أَمَامَ عَيْنَيِ الرَّبِّ إِلهِنَا.
          </language>
-      </verse>
-   </chapter>
-
-   <chapter num="2">
-      <verse num="1">
-         <language id="English">
+</verse>
+</chapter>
+<chapter num="2">
+<verse num="1">
+<language id="English" verse="1">
             “ ‘For this reason, the Lord our God has fulfilled his word, which he has spoken to us, and to our judges, who have judged Israel, and to our kings, and to our leaders, and to all Israel and Judah.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="1">
             Dari sebab itu maka Tuhan memenuhi firman yang telah difirmankan-Nya melawan kami dan melawan para hakim kami yang telah menghakimi Israel, dan melawan segala raja dan pemimpin kami serta melawan semua orang Israel dan Yehuda.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="1">
             فَأَقَامَ الرَّبُّ كَلاَمَهُ الَّذِي تَكَلَّمَ بِهِ عَلَيْنَا وَعَلَى قُضَاتِنَا الَّذِينَ يَقْضُونَ فِي إِسْرَائِيلَ وَعَلَى مُلُوكِنَا وَرُؤَسَائِنَا وَعَلَى رِجَالِ إِسْرَائِيلَ وَيَهُوذَا
          </language>
-      </verse>
-
-      <verse num="2">
-         <language id="English">
+</verse>
+<verse num="2">
+<language id="English" verse="2">
             And so the Lord has brought upon us great evils, such as never before happened under heaven, (but which have come to pass in Jerusalem according to what was written in the law of Moses)
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="2">
             Di bawah kolong langit belum pernah terjadi seperti yang terjadi di Yerusalem sesuai dengan apa yang tertulis dalam Taurat Musa:
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="2">
             جَالِباً عَلَيْنَا شَرًّا عَظِيماً بِحَيْثُ لَمْ يَحْدُثْ تَحْتَ السَّمَاءِ بِأَسْرِهَا مِثْلُ مَا أَحْدَثَهُ فِي أُورُشَلِيمَ عَلَى حَسَبِ مَا كُتِبَ فِي شَرِيعَةِ مُوسَى
          </language>
-      </verse>
-
-      <verse num="3">
-         <language id="English">
+</verse>
+<verse num="3">
+<language id="English" verse="3">
             even that a man would eat the flesh of his son and the flesh of his daughter.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="3">
             kami masing-masing sampai makan daging anak-anak kami sendiri.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="3">
             حَتَّى أَكَلَ بَعْضُنَا لَحْمَ ابْنِهِ وَالآخَرُ لَحْمَ بِنْتِهِ.
          </language>
-      </verse>
-
-      <verse num="4">
-         <language id="English">
+</verse>
+<verse num="4">
+<language id="English" verse="4">
             And so he placed them under the hand of all the kings who surround us, in disgrace and desolation among all the people where the Lord has scattered us.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="4">
             Tuhan telah membuat mereka semua menjadi takluk kepada segala kerajaan di sekeliling kami, sehingga menjadi ternista dan lengang di antara sekalian bangsa sekeliling, di mana mereka telah dicerai-beraikan oleh Tuhan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="4">
             وَأَخْضَعَهُمْ تَحْتَ أَيْدِي جَمِيعِ الْمَمَالِكِ الَّتِي حوْلَنَا وَجَعَلَهُمْ عَاراً وَدَهَشاً فِي جَمِيعِ الشُّعُوبِ الَّذِينَ شَتَّتَهُمُ الرَّبُّ بَيْنَهُمْ
          </language>
-      </verse>
-
-      <verse num="5">
-         <language id="English">
+</verse>
+<verse num="5">
+<language id="English" verse="5">
             And we were brought down low and were not raised up, because we sinned against the Lord our God, by not obeying his voice.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="5">
             Mereka menjadi bawahan dan bukan atasan, oleh karena kami telah berdosa kepada Tuhan, Allah kami, dengan tidak mendengarkan suara-Nya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="5">
             فَإِذَا هُمْ فِي الاِنْحِطَاطِ بَدَلَ الرِّفْعَةِ لأَنَّا خَطِئْنَا إِلَى الرَّبِّ إِلهِنَا غَيْرَ سَامِعِينَ لِصَوْتِهِ.
          </language>
-      </verse>
-
-      <verse num="6">
-         <language id="English">
+</verse>
+<verse num="6">
+<language id="English" verse="6">
             To the Lord our God is justice, but to us and to our fathers is confusion of face, just as on this day.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="6">
             Keadilan ada pada Tuhan, Allah kami, sedangkan malu muka pada kami dan pada nenek moyang kami, sebagaimana halnya pada hari ini.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="6">
             لِلرَّبِّ إِلهِنَا الْعَدْلُ وَلَنَا وَلآبَائِنَا خِزْيُ الْوُجُوهِ كَمَا فِي هذَا الْيَوْمِ
          </language>
-      </verse>
-
-      <verse num="7">
-         <language id="English">
+</verse>
+<verse num="7">
+<language id="English" verse="7">
             For the Lord has pronounced against us all these evils, which have overcome us.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="7">
             Apa yang telah difirmankan Tuhan melawan kami telah mendatangi diri kami, yaitu segala bencana itu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="7">
             لأَنَّ الرَّبَّ تَكَلَّمَ عَلَيْنَا بِجَمِيعِ هذَا الشَّرِّ الَّذِي حَلَّ بِنَا
          </language>
-      </verse>
-
-      <verse num="8">
-         <language id="English">
+</verse>
+<verse num="8">
+<language id="English" verse="8">
             And we have not beseeched the face of the Lord our God, so that we might return, each one of us from our most sinful ways.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="8">
             Namun demikian belum juga kami melembutkan wajah Tuhan, oleh karena kami masing-masing tidak berbalik dari pikiran-pikiran hati yang jahat.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="8">
             وَنَحْنُ لَمْ نَسْتَعْطِفْ وَجْهَ الرَّبِّ تَائِبِينَ كُلُّ وَاحِدٍ عَنْ أَفْكَارِ قَلْبِهِ الشِّرِّيرِ.
          </language>
-      </verse>
-
-      <verse num="9">
-         <language id="English">
+</verse>
+<verse num="9">
+<language id="English" verse="9">
             And the Lord has watched over us for evil and has brought it upon us, because the Lord is just in all his works that he has commanded us,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="9">
             Maka dari itu Tuhan telah menjaga segala bencana itu, lalu didatangkan-Nya atas diri kami. Sebab Tuhan adalah adil dalam segala sesuatunya yang diperintahkan-Nya kepada kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="9">
             فَسَهِرَ الرَّبُّ عَلَى الشَّرِّ وَجَلَبَهُ الرَّبُّ عَلَيْنَا لأَنَّ الرَّبَّ عَادِلٌ فِي جَمِيعِ أَعْمَالِهِ الَّتِي أَوْصَانَا بِهَا
          </language>
-      </verse>
-
-      <verse num="10">
-         <language id="English">
+</verse>
+<verse num="10">
+<language id="English" verse="10">
             and we have not listened to his own voice, so as to walk according to the teachings of the Lord, which he has set before our face.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="10">
             Namun demikian belum juga kami mendengarkan suara Tuhan untuk mengikuti segala ketetapan yang telah ditaruh-Nya di hadapan kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="10">
             فَلَمْ نَسْمَعْ لِصَوْتِهِ لِنَسْلُكَ فِي أَوَامِرِ الرَّبِّ الَّتِي جَعَلَهَا أَمَامَ وُجُوهِنَا.
          </language>
-      </verse>
-
-      <verse num="11">
-         <language id="English">
+</verse>
+<verse num="11">
+<language id="English" verse="11">
             And now, O Lord God of Israel, who has led your people out of the land of Egypt with a strong hand, and with signs, and with wonders, and with your great power, and with an exalted arm, and has made a name for yourself, just as on this day,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="11">
             Oleh sebab itu ya Tuhan, Allah Israel, yang telah membawa umat-Mu keluar dari negeri Mesir dengan tangan kuat, dengan berbagai tanda dan tanda ajaib, dengan kekuatan besar dan lengan teracung dan yang telah membuat bagi diri-Mu suatu nama, sebagaimana halnya pada hari ini.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="11">
             فَالآنَ أَيُّهَا الرَّبُّ إِلهُ إِسْرَائِيلَ الَّذِي أَخْرَجَ شَعْبَهُ مِنْ أَرْضِ مِصْرَ بِيَدٍ قَدِيرَةٍ وَبِآيَاتٍ وَمُعْجِزَاتٍ وَقُوَّةٍ عَظِيمَةٍ وَذِرَاعٍ مَبْسُوطَةٍ وَأَقَامَ لَهُ اسْماً كَمَا فِي هذَا الْيَوْمِ.
          </language>
-      </verse>
-
-      <verse num="12">
-         <language id="English">
+</verse>
+<verse num="12">
+<language id="English" verse="12">
             we have sinned, we have become impious, we have acted unjustly, O Lord our God, against all your principles.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="12">
             Kami telah berdosa, kami telah berjahat, kami telah berbuat fasik, ya Tuhan, Allah kami, melawan segala peraturan-Mu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="12">
             إِنَّا خَطِئْنَا وَنَافَقْنَا وَأَثِمْنَا أَيُّهَا الرَّبُّ إِلهُنَا فِي جَمِيعِ رُسُومِكَ
          </language>
-      </verse>
-
-      <verse num="13">
-         <language id="English">
+</verse>
+<verse num="13">
+<language id="English" verse="13">
             May your wrath be turned away from us because, having been forsaken, we are few among the irreligious where you have scattered us.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="13">
             Semoga murka-Mu undur dari kami, sebab kami ini hanya tinggal sedikit saja di antara sekalian bangsa di mana kami telah Kauceraiberaikan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="13">
             لِيَنْصَرِفْ غَضَبُكَ عَنَّا فَقَدْ بَقِينَا نَفَراً قَلِيلاً فِي الأُمَمِ الَّذِينَ شَتَّتَّنَا بَيْنَهُمْ.
          </language>
-      </verse>
-
-      <verse num="14">
-         <language id="English">
+</verse>
+<verse num="14">
+<language id="English" verse="14">
             Heed, O Lord, our petitions and our prayers, and deliver us for your own sake, and grant that we may find favor before the face of those who have led us away,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="14">
             Ya Tuhan, dengarkanlah doa serta permohonan kami; lepaskanlah kami demi diri Tuhan sendiri dan berilah, supaya kami mendapat kasih karunia di hadapan mereka yang telah membuang kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="14">
             اسْمَعْ يَا رَبُّ صَلاَتَنَا وَتَضَرُّعَنَا وَأَنْقِذْنَا لأَجْلِكَ وَأَنِلْنَا حُظْوَةً أَمَامَ وُجُوهِ الَّذِينَ أَجْلَوْنَا
          </language>
-      </verse>
-
-      <verse num="15">
-         <language id="English">
+</verse>
+<verse num="15">
+<language id="English" verse="15">
             so that all the earth may know that you are the Lord our God, and because your name has been invoked over Israel and over his posterity.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="15">
             Maka bumi seluruhnya akan mengetahui bahwa Engkaulah Tuhan, Allah kami, karena nama-Mu telah disebut atas Israel serta keturunannya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="15">
             لِكَيْ تَعْرِفَ الأَرْضُ بِأَسْرِهَا أَنَّكَ أَنْتَ الرَّبُّ إِلهُنَا وَأَنَّهُ بِاسْمِكَ دُعِيَ إِسْرَائِيلُ وَعَشَائِرُهُ.
          </language>
-      </verse>
-
-      <verse num="16">
-         <language id="English">
+</verse>
+<verse num="16">
+<language id="English" verse="16">
             Gaze upon us, O Lord, from your holy home, and incline your ear, and heed us.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="16">
             Tuhan, pandanglah dari Rumah-Mu yang suci dan ingatlah kepada kami ini. Condongkanlah telinga, ya Tuhan, dan dengarlah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="16">
             أَيُّهَا الرَّبُّ اِلْتَفِتْ مِنْ بَيْتِ قُدْسِكَ وَانْظُرْ إِلَيْنَا وَأَمِلْ أَيُّهَا الرَّبُّ أُذُنَكَ وَاسْتَجِبْ.
          </language>
-      </verse>
-
-      <verse num="17">
-         <language id="English">
+</verse>
+<verse num="17">
+<language id="English" verse="17">
             Open your eyes and see, because the dead, who are in the underworld, whose spirit has been taken away from their vital organs, will not give honor and justification to the Lord.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="17">
             Sudilah kiranya, ya Tuhan, membuka mata-Mu dan memandang. Memang bukan orang di dalam dunia orang mati yang nyawanya sudah dicabut dari batinnya itulah yang menyampaikan kemuliaan yang menjadi hak Tuhan,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="17">
             افْتَحْ عَيْنَيْكَ وَانْظُرْ فَإِنَّهُ لَيْسَ الأَمْوَاتُ فِي الْجَحِيمِ الَّذِينَ أُخِذَتْ أَرْوَاحُهُمْ عَنْ أَحْشَائِهِمْ يَعْتَرِفُونَ لِلرَّبِّ بِالْمَجْدِ وَالْعَدْلِ
          </language>
-      </verse>
-
-      <verse num="18">
-         <language id="English">
+</verse>
+<verse num="18">
+<language id="English" verse="18">
             But the soul that is sorrowful for the greatness of evil, approaches bowed down and weak, and the failing eyes and the hungering soul give glory and justice to you, the Lord.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="18">
             melainkan yang menyampaikan kemuliaan yang menjadi hak Tuhan ialah orang hidup yang amat pilu hati sekali dan yang berjalan sambil membungkuk dengan tidak berdaya dan juga mereka yang kusam matanya dan yang lapar.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="18">
             لكِنَّ الرُّوحَ الْكَئِيبَ مِنَ الشِّدَّةِ وَالَّذِي يَمْشِي مُنْحَنِياً ضَعِيفاً وَالْعُيُونَ الْكَلِيلَةَ وَالنَّفْسَ الْجَائِعَةَ هُمْ يَعْتَرِفُونَ لَكَ بِالْمَجْدِ وَالْعَدْلِ يَا رَبُّ.
          </language>
-      </verse>
-
-      <verse num="19">
-         <language id="English">
+</verse>
+<verse num="19">
+<language id="English" verse="19">
             For it is not according to the righteousness of our fathers that we pour out our petitions and beg mercy in your sight, O Lord our God,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="19">
             Memang bukan demi kebajikan nenek moyang kami dan para raja kami maka kami mencurahkan permohonan kami ke hadapan-Mu, ya Tuhan, Allah kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="19">
             فَإِنَّا لاَ لأَجْلِ بِرِّ آبَائِنَا وَمُلُوكِنَا نُلْقِي تَضَرُّعَنَا أَمَامَكَ أَيُّهَا الرَّبُّ إِلهُنَا
          </language>
-      </verse>
-
-      <verse num="20">
-         <language id="English">
+</verse>
+<verse num="20">
+<language id="English" verse="20">
             but because you have sent your wrath and your fury upon us, just as you have spoken by the hand of your children the prophets, saying:
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="20">
             Sebab murka-Mu dan geram-Mu telah Kaukirim kepada kami, seperti yang telah Kaufirmankan dengan perantaraan hamba-Mu, para nabi.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="20">
             بَلْ لأَنَّكَ أَرْسَلْتَ سُخْطَكَ وَغَضَبَكَ عَلَيْنَا كَمَا تَكَلَّمْتَ عَلَى أَلْسِنَةِ عَبِيدِكَ الأَنْبِيَاءِ.
          </language>
-      </verse>
-
-      <verse num="21">
-         <language id="English">
+</verse>
+<verse num="21">
+<language id="English" verse="21">
             “Thus says the Lord, ‘Bow down your shoulder and your neck, and do work for the king of Babylon, and settle in the land which I gave to your fathers,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="21">
             Tuhan telah berfirman begini: "Tundukkanlah tengkukmu dan berhambalah kepada raja Babel, maka kamu boleh tinggal di negeri yang telah Kuanugerahkan kepada nenek moyangmu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="21">
             هكَذَا قَالَ الرَّبُّ احْنُوا مَنَاكِبَكُمْ وَتَعَبَّدُوا لِمَلِكِ بَابِلَ فَتَسْكُنُوا فِي الأَرْضِ الَّتِي أَعْطَيْتُهَا لآبَائِكُمْ
          </language>
-      </verse>
-
-      <verse num="22">
-         <language id="English">
+</verse>
+<verse num="22">
+<language id="English" verse="22">
             because, if you will not listen to the voice of the Lord your God, to serve the king of Babylon, I will cause you to depart from the cities of Judah and from the gates of Jerusalem.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="22">
             Tetapi jika kamu tidak mendengarkan suara Tuhan dan berhamba kepada raja Babel,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="22">
             وَإِنْ لَمْ تَسْمَعُوا لِصَوْتِ الرَّبِّ بِأَنْ تَتَعَبَّدُوا لِمَلِكِ بَابِلَ
          </language>
-      </verse>
-
-      <verse num="23">
-         <language id="English">
+</verse>
+<verse num="23">
+<language id="English" verse="23">
             And I will take away from you the voice of cheerfulness and the voice of joy, and the voice of the bridegroom and the voice of the bride, and all the land will be without any trace of its inhabitants.’ ”
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="23">
             niscaya Kulenyapkan dari segala kota Yehuda dan dari Yerusalem lagu sukacita dan gembira, lagu mempelai laki-laki dan lagu mempelai perempuan. Seluruh negeri ini akan menjadi suatu kelengangan tanpa penghuni."
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="23">
             فَإِنِّي أُبْطِلُ مِنْ مُدُنِ يَهُوذَا وَمنْ شَوَارِعِ أُورُشَلِيمَ صَوْتَ الطَّرَبِ وَصَوْتَ الْفَرَحِ صَوْتَ الْعَرُوسِ وَصَوْتَ الْعَرُوسَةِ وَتَكُونُ كُلُّ الأَرْضِ مُسْتَوْحِشَةً لاَ سَاكِنَ فِيهَا
          </language>
-      </verse>
-
-      <verse num="24">
-         <language id="English">
+</verse>
+<verse num="24">
+<language id="English" verse="24">
             And they did not listen to your voice, that they should serve the king of Babylon, and so you have fulfilled your words, which you spoke by the hands of your children the prophets, so that the bones of our kings and the bones of our fathers would be carried away from their place.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="24">
             Namun demikian kami belum juga mendengarkan suara-Mu untuk berhamba kepada raja Babel, maka telah Kaupenuhi firman-Mu yang telah Kaufirmankan dengan perantaraan hamba-Mu, para nabi ini: "Tulang-tulang para raja kami dan tulang-tulang nenek moyang kami akan dilemparkan dari kubur mereka."
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="24">
             فَلَمْ نَسْمَعْ لِصَوْتِكَ بِأَنْ نَتَعَبَّدَ لِمَلِكِ بَابِلَ فَأَقَمْتَ كَلاَمَكَ الَّذِي تَكَلَّمْتَ بِهِ عَلَى أَلْسِنَةِ عَبِيدِكَ الأَنْبِيَاءِ أَن تُخْرَجَ عِظَامُ مُلُوكِنَا وَعِظَامُ آبَائِنَا مِنْ مَوَاضِعِهَا
          </language>
-      </verse>
-
-      <verse num="25">
-         <language id="English">
+</verse>
+<verse num="25">
+<language id="English" verse="25">
             And, behold, they have been cast out into the heat of the sun and the frost of the night, and they have died by means of grievous evils, by famine, and by the sword, and by banishment.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="25">
             Dan sesungguhnya, semua sudah tercampak, sehingga kena panas di waktu siang dan kena dingin di waktu malam. Mereka sudah mati dengan derita yang hebat, karena kelaparan, pedang dan wabah sampar.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="25">
             وَهَا إِنَّهَا مَطْرُوحَةٌ لِحَرِّ النَّهَارِ وَقَرْسِ اللَّيْلِ وَقَدْ مَاتُوا فِي أَوْجَاعٍ أَلِيمَةٍ بِالْجُوعِ وَالسَّيْفِ وَالطَّرْدِ.
          </language>
-      </verse>
-
-      <verse num="26">
-         <language id="English">
+</verse>
+<verse num="26">
+<language id="English" verse="26">
             And you have set up the temple, in which your name itself was called upon, just as it is on this day, because of the iniquity of the house of Israel and the house of Judah.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="26">
             Rumah yang atasnya nama-Mu telah disebut itu telah Kaujadikan sebagaimana sekarang keadaannya, oleh sebab kejahatan kaum Israel dan Yehuda.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="26">
             وَجَعَلْتَ الْبَيْتَ الَّذِي دُعِيَ بِاسْمِكَ كَمَا فِي هذَا الْيَوْمِ لأَجْلِ شَرِّ آلِ إِسْرَائِيلَ وَآلِ يَهُوذَا.
          </language>
-      </verse>
-
-      <verse num="27">
-         <language id="English">
+</verse>
+<verse num="27">
+<language id="English" verse="27">
             And you have accomplished in us, O Lord our God, according to all your goodness and according to all your great mercy,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="27">
             Namun demikian, ya Tuhan, Allah kami, kami Kauperlakukan sekedar kemurahan-Mu serta rahmat-Mu yang besar,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="27">
             وَقَدْ عَامَلْتَنَا أَيُّهَا الرَّبُّ إِلهُنَا بِكُلِّ رَأْفَتِكَ وَكُلِّ رَحْمَتِكَ الْعَظِيمَةِ
          </language>
-      </verse>
-
-      <verse num="28">
-         <language id="English">
+</verse>
+<verse num="28">
+<language id="English" verse="28">
             just as you spoke by the hand of your child Moses, in the day when you commanded him to write your law before the sons of Israel,
-         </language><language id="Indonesian"><div>sebagaimana telah Kaufirmankan dengan perantaraan hamba-Mu, Musa, pada hari Kauperintahkan kepadanya untuk menuliskan hukum-Mu di hadapan orang Israel.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="28">
+sebagaimana telah Kaufirmankan dengan perantaraan hamba-Mu, Musa, pada hari Kauperintahkan kepadanya untuk menuliskan hukum-Mu di hadapan orang Israel.
+</language>
+<language id="Arabic" verse="28">
             كَمَا تَكَلَّمْتَ عَلَى لِسَانِ عَبْدِكَ مُوسَى يَوْمَ أَمَرْتَهُ أَنْ يَكْتُبَ شَرِيعَتَكَ أَمَامَ بَنِي إِسْرَائِيلَ قَائِلاً:
          </language>
-      </verse>
-
-      <verse num="29">
-         <language id="English">
+</verse>
+<verse num="29">
+<language id="English" verse="29">
             saying: “If you will not listen to my voice, this great multitude will be changed into the least among the peoples, where I will scatter them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="29">
             Firman-Mu: "Jika kamu tidak medengarkan suara-Ku, niscaya bangsa yang besar dan banyak ini akan bersusut menjadi jumlah yang kecil di antara sekalian bangsa di mana mereka hendak Kuceraiberaikan
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="29">
             «إِنْ لَمْ تَسْمَعُوا لِصَوْتِي فَإِنَّ هذَا الْجَمْعَ الْعَظِيمَ الْكَثِيرَ لَيَصِيرَنَّ نَفَراً قَلِيلاً فِي الأُمَمِ الَّذِينَ أُشَتِّتُهُمْ بَيْنَهُمْ.
          </language>
-      </verse>
-
-      <verse num="30">
-         <language id="English">
+</verse>
+<verse num="30">
+<language id="English" verse="30">
             For I know that the people will not listen to me, for the people are stiff necked. But they will have a change of their heart in the land of their captivity,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="30">
             Sebab Aku tahu bahwa mereka tidak akan mendengarkan Daku, oleh karena mereka itu kaum yang bertegang leher. Tetapi di negeri pembuangan itu mereka akan menjadi insaf.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="30">
             فَإِنِّي عَالِمٌ بَأَنَّهُمْ لاَ يَسْمَعُونَ لِي لأَنَّهُمْ شَعْبٌ قُسَاةُ الرِّقَابِ لكِنَّهُمْ سَيَرْجِعُونَ إِلَى قُلُوبِهِمْ فِي أَرْضِ جَلاَئِهِمْ
          </language>
-      </verse>
-
-      <verse num="31">
-         <language id="English">
+</verse>
+<verse num="31">
+<language id="English" verse="31">
             and they will know that I am the Lord their God. And I will give them a heart, and they will understand, ears, and they will hear.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="31">
             Maka akan diketahuilah mereka bahwa Aku ini Tuhan, Allah mereka. Mereka akan Kuanugerahi hati dan telinga yang dengar-dengaran.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="31">
             وَيَعْلَمُونَ أَنِّي أَنَا الرَّبُّ إِلهُهُمْ، وَأُعْطِيهِمْ قُلُوباً وَآذَاناً سَامِعَةً
          </language>
-      </verse>
-
-      <verse num="32">
-         <language id="English">
+</verse>
+<verse num="32">
+<language id="English" verse="32">
             And they will praise me in the land of their captivity, and will remember my name.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="32">
             Maka dipujinyalah Aku di negeri pembuangan mereka dan diingatnya nama-Ku.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="32">
             فَيُسَبِّحُونَنِي فِي أَرْضِ جَلاَئِهِمْ وَيَذْكُرُونَ اسْمِي
          </language>
-      </verse>
-
-      <verse num="33">
-         <language id="English">
+</verse>
+<verse num="33">
+<language id="English" verse="33">
             And they will turn themselves away from their stiff back, and from their wicked deeds, for they will call to mind the way of their fathers, who sinned against me.
-         </language><language id="Indonesian"><div>Mereka akan berbalik dari ketegangan lehernya dan dari perbuatan-perbuatan jahat mereka, oleh karena ingatlah mereka kepada nasib nenek moyangnya yang berdosa kepada Tuhan.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="33">
+Mereka akan berbalik dari ketegangan lehernya dan dari perbuatan-perbuatan jahat mereka, oleh karena ingatlah mereka kepada nasib nenek moyangnya yang berdosa kepada Tuhan.
+</language>
+<language id="Arabic" verse="33">
             وَيَتُوبُونَ عَنْ صَلاَبَةِ رِقَابِهِمْ وَعَنْ شَرِّ أَعْمَالِهِمْ لأَنَّهُمْ يَتَذَكَّرُونَ طَرِيقَ آبَائِهِمِ الَّذِينَ خَطِئُوا أَمَامَ الرَّبِّ
          </language>
-      </verse>
-
-      <verse num="34">
-         <language id="English">
+</verse>
+<verse num="34">
+<language id="English" verse="34">
             And I will restore them to the land which I pledged to their fathers, Abraham, Isaac, and Jacob, and they will rule over it, and I will multiply them, and they will not be diminished.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="34">
             Kemudian mereka akan Kukembalikan ke negeri yang dengan bersumpah telah Kujanjikan kepada nenek moyang mereka, kepada Abraham, Ishak dan Yakub. Maka negeri itu akan dikuasai oleh mereka. Mereka akan Kulipatgandakan dan jumlahnya tidak akan berkurang lagi.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="34">
             وَأُعِيدُهُمْ إِلَى الأَرْضِ الَّتِي حَلَفْتُ عَلَيْهَا لآبَائِهِمْ إِبْرَاهِيمَ وَإِسْحَاقَ وَيَعْقُوبَ فَيَتَسَلَّطُونَ عَلَيْهَا وَأُكَثِّرُهُمْ فَلاَ يَقِلُّونَ
          </language>
-      </verse>
-
-      <verse num="35">
-         <language id="English">
+</verse>
+<verse num="35">
+<language id="English" verse="35">
             And I will establish for them a new and everlasting covenant, so that I will be their God and they will be my people. And I will no longer move my people, the sons of Israel, out of the land which I have given them.”
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="35">
             Lagipula Aku akan mengikat perjanjian kekal dengan mereka, yaitu bahwasanya Aku akan menjadi Allah mereka dan mereka menjadi umat-Ku. Umat-Ku Israel tidak akan Kusingkirkan lagi dari negeri yang telah Kuanugerahkan kepada mereka."
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="35">
             وَأُقِيمُ لَهُمْ عَهْداً أَبَدِيًّا فَأَكُونُ لَهُمْ إِلهاً وَيَكُونُونَ لِي شَعْباً وَلاَ أَعُودُ أُزَعْزِعُ شَعْبِي إِسْرَائِيلَ مِنَ الأَرْضِ الَّتِي أَعْطَيْتُهَا لَهُمْ».
          </language>
-      </verse>
-   </chapter>
-
-   <chapter num="3">
-      <verse num="1">
-         <language id="English">
+</verse>
+</chapter>
+<chapter num="3">
+<verse num="1">
+<language id="English" verse="1">
             “ ‘And now, O Lord Almighty, the God of Israel, the soul in anguish and the troubled spirit cry out to you.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="1">
             Ya Tuhan Yang Mahakuasa, Allah Israel, dengan jiwa yang kesesakan dan roh terlantar aku menjerit kepada-Mu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="1">
             أَيُّهَا الرَّبُّ الْقَدِيرُ إِلهُ إِسْرَائِيلَ قَدْ صَرَخَتْ إِلَيْكَ النَّفْسُ فِي الْمَضَايِقِ وَالرُّوحُ فِي الْكُرُوبِ.
          </language>
-      </verse>
-
-      <verse num="2">
-         <language id="English">
+</verse>
+<verse num="2">
+<language id="English" verse="2">
             Listen, O Lord, and be merciful, for you are a merciful God, and so be merciful to us, for we have sinned before you.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="2">
             Dengarlah, ya Tuhan, dan kasihanilah. Memang kami telah berdosa kepada-Mu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="2">
             فَاسْمَعْ يَا رَبُّ وَارْحَمْ فَإِنَّكَ إِلهٌ رَحِيمٌ، ارْحَمْ فَإِنَّا قَدْ خَطِئْنَا إِلَيْكَ.
          </language>
-      </verse>
-
-      <verse num="3">
-         <language id="English">
+</verse>
+<verse num="3">
+<language id="English" verse="3">
             For you are enthroned in eternity, but we will pass away in time.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="3">
             Engkau bertakhta kekal, sedangkan kami jatuh binasa terus-menerus.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="3">
             فَإِنَّكَ أَنْتَ تَدُومُ إِلَى الأَبَدِ أَمَّا نَحْنُ فَنَهْلِكُ إِلَى الأَبَدِ.
          </language>
-      </verse>
-
-      <verse num="4">
-         <language id="English">
+</verse>
+<verse num="4">
+<language id="English" verse="4">
             O Lord Almighty, the God of Israel, listen now to the prayer of the dead of Israel and of their sons, who have sinned before you and have not listened to the voice of the Lord their God, and have joined themselves to evil.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="4">
             Tuhan Yang Mahakuasa, Allah Israel, dengarkanlah doa dari orang yang nyaris mati di Israel dan doa dari anak-anak orang yang telah berdosa kepada-Mu dan tidak mendengarkan suara Tuhan, Allah mereka. Oleh karena itulah maka bencana-bencana melekat pada diri kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="4">
             أَيُّهَا الرَّبُّ الْقَدِيرُ إِلهُ إِسْرَائِيلَ اسْمَعْ صَلاَةَ موتى بَني إِسْرَائِيلَ وَبَنِي الَّذِينَ خَطِئُوا إِلَيْكَ الَّذِينَ لَمْ يَسْمَعُوا لِصَوْتِ إِلهِهِمْ وَقَدْ لَحِقَ الشَّرُّ بِنَا
          </language>
-      </verse>
-
-      <verse num="5">
-         <language id="English">
+</verse>
+<verse num="5">
+<language id="English" verse="5">
             Remember not the iniquities of our fathers, but remember your hand and your name at this time.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="5">
             Jangan ingat kepada kefasikan nenek moyang kami, tetapi sudilah kiranya pada saat ini juga ingat kepada tangan-Mu dan nama-Mu sendiri.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="5">
             لاَ تَذْكُرْ أَثَامَ آبَائِنَا بَلِ اَذْكُرْ يَدَكَ وَاسْمَكَ فِي هذَا الزَّمَانِ
          </language>
-      </verse>
-
-      <verse num="6">
-         <language id="English">
+</verse>
+<verse num="6">
+<language id="English" verse="6">
             For you are the Lord our God, and we will praise you, O Lord.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="6">
             Oleh karena Engkaulah Tuhan, Allah kami, maka kami hendak memuji Engkau, ya Tuhan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="6">
             فَإِنَّكَ أَنْتَ الرَّبُّ إِلهُنَا وَإِيَّاكَ نُسَبِّحُ يَا رَبُّ.
          </language>
-      </verse>
-
-      <verse num="7">
-         <language id="English">
+</verse>
+<verse num="7">
+<language id="English" verse="7">
             And for this reason, you have imparted your fear into our hearts, and also, so that we may call upon your name and may praise you in our captivity, for we are converted from the iniquity of our fathers, who sinned before you.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="7">
             Sebab ketakutan kepada-Mu telah Kautaruh di dalam hati kami, supaya nama-Mu kami serukan. Kamipun akan memuji Engkau di dalam pembuangan kami, oleh karena kami telah menjauhkan dari hati kami segala kefasikan nenek moyang kami yang telah berdosa kepada-Mu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="7">
             لأَنَّكَ لِذلِكَ جَعَلْتَ مَخَافَتَكَ فِي قُلُوبِنَا وَلِنَدْعُوَ بِاسْمِكَ، إِنَّا نُسَبِّحُكَ فِي جَلاَئِنَا لأَنَّا قَدْ نَبَذْنَا عَنْ قُلُوبِنَا كُلَّ إِثْمِ آبَائِنَا الَّذِينَ خَطِئُوا أَمَامَكَ
          </language>
-      </verse>
-
-      <verse num="8">
-         <language id="English">
+</verse>
+<verse num="8">
+<language id="English" verse="8">
             And, behold, we are still in our captivity on this day, where you have scattered us into disgrace, and into slander, and into sin, according to all the iniquities of our fathers, who withdrew from you, O Lord our God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="8">
             Lihatlah sekarang ini kami di dalam pembuangan kami, di mana kami telah Kauceraiberaikan menjadi orang ternista, terlaknat dan terhukum, setimpal dengan segenap kefasikan nenek moyang kami yang telah berpaling dari Tuhan, Allah kami.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="8">
             وَهَا إِنَّا الْيَوْمَ فِي الْجَلاَءِ حَيْثُ شَتَّتَّنَا لِلتَّعْيِيرِ وَاللَّعْنَةِ وَالْعِقَابِ لأَجْلِ جَمِيعِ آثَامِ آبَائِنَا الَّذِينَ ارْتَدُّوا عَنِ الرَّبِّ إِلهِنَا.
          </language>
-      </verse>
-
-      <verse num="9">
-         <language id="English">
+</verse>
+<verse num="9">
+<language id="English" verse="9">
             Listen, O Israel, to the commandments of life! Pay attention, so that you may learn prudence!
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="9">
             Dengarkanlah, hai Israel, segala perintah kehidupan, condongkanlah telinga untuk mengenal kearifan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="9">
             اِسْمَعْ يَا إِسْرَائِيلُ وَصَايَا الْحَيَاةِ، أَصْغُوْا وَتَعَلَّمُوا الْفِطْنَةَ.
          </language>
-      </verse>
-
-      <verse num="10">
-         <language id="English">
+</verse>
+<verse num="10">
+<language id="English" verse="10">
             How is it, O Israel, that you are in the land of your enemies,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="10">
             Apa sebabnya, hai Israel, apa sebabnya maka engkau berada di negeri musuhmu serta menjadi tua di negeri yang asing
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="10">
             لِمَاذَا يَا إِسْرَائِيلُ لِمَاذَا أَنْتَ فِي أَرْضِ الأَعْدَاءِ؟
          </language>
-      </verse>
-
-      <verse num="11">
-         <language id="English">
+</verse>
+<verse num="11">
+<language id="English" verse="11">
             that you have grown old in a foreign land, that you are defiled with the dead, that you are regarded as among those who are descending into hell?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="11">
             dan menajiskan dirimu dengan yang mati dan terbilang di antara mereka yang turun ke dunia orang mati?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="11">
             قَدْ ذَبَلْتَ فِي أَرْضِ الْغُرْبَةِ وَتَنَجَّسْتَ بِالأَمْوَاتِ وَحُسِبْتَ مَعَ الَّذِينَ هُمْ فِي الْجَحِيمِ.
          </language>
-      </verse>
-
-      <verse num="12">
-         <language id="English">
+</verse>
+<verse num="12">
+<language id="English" verse="12">
             You have forsaken the fountain of wisdom.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="12">
             Engkau telah meninggalkan sumber kebijaksanaan!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="12">
             إِنَّكَ قَدْ تَرَكْتَ يَنْبُوعَ الْحِكْمَةِ
          </language>
-      </verse>
-
-      <verse num="13">
-         <language id="English">
+</verse>
+<verse num="13">
+<language id="English" verse="13">
             For if you had walked in the way of God, you would certainly have lived in everlasting peace.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="13">
             Jikalau engkau berjalan di jalan Allah, niscaya selamanya engkau diam dengan damai sejahtera.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="13">
             وَلَوْ أَنَّكَ سَلَكْتَ فِي طَرِيقِ اللهِ لَسَكَنْتَ فِي السَّلاَمِ مَدَى الدَّهْرِ.
          </language>
-      </verse>
-
-      <verse num="14">
-         <language id="English">
+</verse>
+<verse num="14">
+<language id="English" verse="14">
             Learn where prudence is, where virtue is, where understanding is, so that you may know at the same time where long life and prosperity are, where the light of the eyes and peace are.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="14">
             Belajarlah di mana ada kearifan, di mana kekuatan dan di mana pengertian, supaya sekaligus kauketahui tempat umur panjang dan kehidupan, tempat cahaya mata dan damai sejahtera.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="14">
             تَعَلَّمْ أَيْنَ الْفِطْنَةُ وَأَيْنَ الْقُوَّةُ وَأَيْنَ التَّعَقُّلُ لِكَيْ تَعْلَمَ أَيْضاً أَيْنَ طُولُ الأَيَّامِ وَالْحَيَاةُ وَأَيْنَ نُورُ الْعُيُونِ وَالسَّلاَمُ.
          </language>
-      </verse>
-
-      <verse num="15">
-         <language id="English">
+</verse>
+<verse num="15">
+<language id="English" verse="15">
             Who has discovered its place? And who has entered its treasure chamber?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="15">
             Siapakah telah menemukan tempat kebijaksanaan, siapakah telah masuk ke dalam perbendaharaannya?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="15">
             مَنْ وَجَدَ مَوْضِعَهَا وَمَنْ بَلَغَ إِلَى كُنُوزِهَا
          </language>
-      </verse>
-
-      <verse num="16">
-         <language id="English">
+</verse>
+<verse num="16">
+<language id="English" verse="16">
             Where are the leaders of the peoples, and those who rule over the beasts that are upon the earth,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="16">
             Di manakah para pemimpin sekalian bangsa dan para penguasa binatang di bumi,
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="16">
             أَيْنَ رُؤَسَاءُ الأُمَمِ وَالَّذِينَ يَتَسَلَّطُونَ عَلَى وُحُوشِ الأَرْضِ
          </language>
-      </verse>
-
-      <verse num="17">
-         <language id="English">
+</verse>
+<verse num="17">
+<language id="English" verse="17">
             who play among the birds of the air,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="17">
             yang bermain-main dengan burung-burung di udara </language>
-         <language id="Arabic">
+<language id="Arabic" verse="17">
             وَالَّذِينَ يُلاَعِبُونَ طُيُورَ السَّمَاءِ
          </language>
-      </verse>
-
-      <verse num="18">
-         <language id="English">
+</verse>
+<verse num="18">
+<language id="English" verse="18">
             who store up treasures of silver and gold, in which men trust, and with whom there is no end to their acquiring, who work with silver and are anxious about it, and whose works are inexplicable?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="18">
             dan yang menimbun perak dan emas -- yang dipercaya oleh manusia -- dan yang miliknya tak kunjung habis? Di manakah mereka yang mengerjakan perak dengan saksama, hingga karyanya tidak terselami?</language>
-         <language id="Arabic">
+<language id="Arabic" verse="18">
             وَيَكْنِزُونَ الْفِضَّةَ وَالذَّهَبَ مِمَّا يَتَوَكَّلُ عَلَيْهِ الْبَشَرُ وَلاَ حَدَّ لِكَسْبِهِمْ وَيَصُوغُونَ الْفِضَّةَ وَيَهْتَمُّونَ وَلاَ اسْتِقْصَاءَ لِمَسَاعِيهِمْ.
          </language>
-      </verse>
-
-      <verse num="19">
-         <language id="English">
+</verse>
+<verse num="19">
+<language id="English" verse="19">
             They have been banished and have descended to hell, and others are risen up in their place.
-         </language><language id="Indonesian">Mereka sudah lenyap semua dan turun ke dunia orang mati, dan orang-orang lain muncul sebagai penggantinya.</language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="19">Mereka sudah lenyap semua dan turun ke dunia orang mati, dan orang-orang lain muncul sebagai penggantinya.</language>
+<language id="Arabic" verse="19">
             إِنَّهُمْ قَدِ اضْمَحَلُّوا وَإِلَى الْجَحِيمِ هَبَطُوا وَآخَرُونَ قَامُوا فِي مَكَانِهِمْ.
          </language>
-      </verse>
-
-      <verse num="20">
-         <language id="English">
+</verse>
+<verse num="20">
+<language id="English" verse="20">
             The youth have seen the light and have dwelt upon the earth, yet they are ignorant of the way of instruction.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="20">
             Orang-orang yang lebih muda melihat cahaya dan diam di atas bumi, tetapi merekapun tidak mengenal pula jalan pengetahuan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="20">
             أَحْدَاثٌ رَأَوُا النُّورَ وَسَكَنُوا الأَرْضَ لكِنَّهُمْ لَمْ يَعْرِفُوا طَرِيقَ التَّأَدُّبِ
          </language>
-      </verse>
-
-      <verse num="21">
-         <language id="English">
+</verse>
+<verse num="21">
+<language id="English" verse="21">
             They have neither understood the paths of it, nor have their sons accepted it. It is far from their face.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="21">
             Jalan-jalan kebijaksanaan tidak juga dipahaminya dan tidak diketahuinya. Dan anak cucu merekapun berjauh dari jalannya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="21">
             وَلَمْ يَفْهَمُوا سُبُلَهُ وَبَنُوهُمْ لَمْ يُدْرِكُوهُ وَابْتَعَدُوا عَنْ طَرِيقِهِ.
          </language>
-      </verse>
-
-      <verse num="22">
-         <language id="English">
+</verse>
+<verse num="22">
+<language id="English" verse="22">
             It has not been heard of in the land of Canaan, nor has it been seen in Teman.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="22">
             Orang tidak mendengar sedikitpun tentang kebijaksanaan di negeri Kanaan, dan ia tidak kelihatan di Téman.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="22">
             لَمْ يُسْمَعْ بِهِ فِي كَنْعَانَ وَلاَ تَرَاءَى فِي تَيْمَانَ.
          </language>
-      </verse>
-
-      <verse num="23">
-         <language id="English">
+</verse>
+<verse num="23">
+<language id="English" verse="23">
             It is likewise with the sons of Hagar, who search for the practicality that is of the earth, the negotiators of Merran and Teman, and the storytellers, and the searchers of discretion and intelligence. Yet the way of wisdom they have not known, nor have they called to mind its paths.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="23">
             Bani Hagarpun yang mencari pengertian di bumi dan para pedagang dari Meran dan Téman, para pemantun dan para penuntut pengertian, mereka semua tidak sampai mengenal jalan kebijaksanaan dan tidaklah ingat kepadanya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="23">
             وَبَنُو هَاجَرَ أَيْضاً الْمُبْتَغُونَ لِلتَّعَقُّلِ عَلَى الأَرْضِ وَتُجَّارُ مَرَّانَ وَتَيْمَانَ وَقَائِلُو الأَمْثَالِ وَمُبْتَغُو التَّعَقُّلِ لَمْ يَعْرِفُوا طَرِيقَ الْحِكْمَةِ وَلَمْ يَتَذَكَّرُوا سُبُلَهَا.
          </language>
-      </verse>
-
-      <verse num="24">
-         <language id="English">
+</verse>
+<verse num="24">
+<language id="English" verse="24">
             O Israel, how great is the house of God, and how vast is the place of his possession!
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="24">
             Hai Israel! Alangkah megahnya Rumah Allah, dan betapa mujurlah daerah milik-Nya!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="24">
             يَا إِسْرَائِيلُ مَا أَعْظَمَ بَيْتَ اللهِ وَمَا أَوْسَعَ مَوْضِعَ مِلْكِهِ.
          </language>
-      </verse>
-
-      <verse num="25">
-         <language id="English">
+</verse>
+<verse num="25">
+<language id="English" verse="25">
             It is great and has no end! It is exalted and immense!
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="25">
             Sungguh besar dan tidak berbatas tinggi dan tidak terukur!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="25">
             عَظِيمٌ هُوَ بِغَيْرِ حَدٍّ وَعَالٍ بِغَيْرِ قِيَاسٍ.
          </language>
-      </verse>
-
-      <verse num="26">
-         <language id="English">
+</verse>
+<verse num="26">
+<language id="English" verse="26">
             There were those who were called giants, who existed from the beginning, of great stature, expert in war.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="26">
             Di sana dilahirkanlah para raksasa, yang tersohor di masa yang purba, besar perawakannya, dan mahirlah mereka dalam perang.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="26">
             هُنَاكَ وُلِدَ الْجَبَابِرَةُ الْمَذْكُورُونَ الَّذِينَ كَانُوا فِي الْبَدْءِ الطِّوَالُ الْقَامَاتِ الْحَاذِقُونَ بِالْقِتَالِ.
          </language>
-      </verse>
-
-      <verse num="27">
-         <language id="English">
+</verse>
+<verse num="27">
+<language id="English" verse="27">
             The Lord did not choose them, nor did they discover the way of instruction; for this reason they perished,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="27">
             Namun bukan merekalah yang dipilih Allah, dan mereka tidak dianugerahi-Nya jalan pengetahuan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="27">
             أُولئِكَ لَمْ يَخْتَرْهُمُ الرَّبُّ وَلَمْ يَجْعَلْ لَهُمْ طَرِيقَ التَّأَدُّبِ
          </language>
-      </verse>
-
-      <verse num="28">
-         <language id="English">
+</verse>
+<verse num="28">
+<language id="English" verse="28">
             and, because they did not have wisdom, they passed away as a result of their foolishness.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="28">
             Mereka jatuh binasa karena tidak mempunyai kearifan, jatuh binasa oleh karena kepandirannya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="28">
             فَهَلَكُوا لِعَدَمِ الْفِطْنَةِ. هَلَكُوا لِغَبَاوَتِهِمْ.
          </language>
-      </verse>
-
-      <verse num="29">
-         <language id="English">
+</verse>
+<verse num="29">
+<language id="English" verse="29">
             Who has gone up into heaven, and taken her, and brought her down from the clouds?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="29">
             Siapakah telah naik ke sorga mengambil kebijaksanaan serta menurunkannya dari awan?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="29">
             مَنْ صَعِدَ إِلَى السَّمَاءِ فَتَنَاوَلَهَا وَنَزَلَ بِهَا مِنَ الْغُيُومِ.
          </language>
-      </verse>
-
-      <verse num="30">
-         <language id="English">
+</verse>
+<verse num="30">
+<language id="English" verse="30">
             Who has crossed the sea, and found her, and brought her, chosen instead of gold?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="30">
             Siapakah telah mengarungi laut lalu mendapatinya serta memperolehnya dengan emas pilihan?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="30">
             مَنِ اجْتَازَ إِلَى عَبْرِ الْبَحْرِ وَوَجَدَهَا وَآثَرَهَا عَلَى الذَّهَبِ الإِبْرِيزِ.
          </language>
-      </verse>
-
-      <verse num="31">
-         <language id="English">
+</verse>
+<verse num="31">
+<language id="English" verse="31">
             There is no one who is able to know her ways, nor any who can search out her paths.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="31">
             Tiada seorangpun mengetahui jalannya, atau mengenal lorong yang menuju kepadanya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="31">
             لَيْسَ أَحَدٌ يَعْرِفُ طَرِيقَهَا وَيَطَّلِعُ عَلَى سَبِيلِهَا
          </language>
-      </verse>
-
-      <verse num="32">
-         <language id="English">
+</verse>
+<verse num="32">
+<language id="English" verse="32">
             Yet he who knows the universe is familiar with her, and in his foresight he invented her, he who prepared the earth for time without end, and filled it with cattle and four-footed beasts,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="32">
             Tetapi Yang Mahatahu mengetahuinya dan dengan pengertian-Nya mendapatinya; Ia menyediakan bumi untuk selama-lamanya dan mengisinya dengan hewan yang berkaki empat;
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="32">
             لكِنَّ الْعَالِمَ بِكُلِّ شَيْءٍ هُوَ يَعْلَمُهَا وَبِعَقْلِهِ وَجَدَهَا. الَّذِي ثَبَّتَ الأَرْضَ إِلَى الأَبَدِ وَمَلأَهَا حَيَوَاناً ذَا أَرْبَعٍ.
          </language>
-      </verse>
-
-      <verse num="33">
-         <language id="English">
+</verse>
+<verse num="33">
+<language id="English" verse="33">
             who sends out the light, and it goes, and who summoned it, and it obeyed him in fear.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="33">
             Ia mengirim cahaya yang lalu pergi, memanggil cahaya yang dengan gentar mendengarkan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="33">
             الَّذِي يُرْسِلُ النُّورَ فَيَنْطَلِقُ. يَدْعُوهُ فَيُطِيعُهُ بِرَعْدَةٍ.
          </language>
-      </verse>
-
-      <verse num="34">
-         <language id="English">
+</verse>
+<verse num="34">
+<language id="English" verse="34">
             Yet the stars have given light from their posts, and they rejoiced.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="34">
             Sekalian bintang gemerlapan di tempat penjagaannya dan bersukacita;
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="34">
             إِنَّ النُّجُومَ أَشْرَقَتْ فِي مَحَارِسِهَا وَتَهَلَّلَتْ.
          </language>
-      </verse>
-
-      <verse num="35">
-         <language id="English">
+</verse>
+<verse num="35">
+<language id="English" verse="35">
             They were called, and so they said, “Here we are,” and they shined with cheerfulness to him who made them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="35">
             pabila dipanggil oleh Allah semua menyahut: "Kami sini!" Gemerlapanlah semua dengan sukacita bagi Pembuatnya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="35">
             دَعَاهَا فَقَالَتْ نَحْنُ لَدَيْكَ وَأَشْرَقَتْ مُتَهَلِّلَةً لِلَّذِي صَنَعَهَا.
          </language>
-      </verse>
-
-      <verse num="36">
-         <language id="English">
+</verse>
+<verse num="36">
+<language id="English" verse="36">
             This is our God, and no other can compare to him.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="36">
             Itulah Dia Allah kita! Tiada satupun yang terbilang di samping-Nya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="36">
             هذَا هُوَ إِلهُنَا وَلاَ يُعْتَبَرُ حِذَاءَهُ آخَرُ.
          </language>
-      </verse>
-
-      <verse num="37">
-         <language id="English">
+</verse>
+<verse num="37">
+<language id="English" verse="37">
             He invented the way of all instruction, and delivered it to Jacob his child, and to Israel his beloved.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="37">
             Segala jalan pengetahuan ditemukan oleh-Nya, lalu dianugerahkan-Nya kepada Yakub, hamba-Nya, kepada Israel, yang dikasihi-Nya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="37">
             هُوَ وَجَدَ طَرِيقَ التَّأَدُّبِ بِكَمَالِهِ وَجَعَلَهُ لِيَعْقُوبَ عَبْدِهِ وَلإِسْرَائِيلَ حَبِيبِهِ.
          </language>
-      </verse>
-
-      <verse num="38">
-         <language id="English">
+</verse>
+<verse num="38">
+<language id="English" verse="38">
             After this, he was seen on earth, and he conversed with men.
-         </language><language id="Indonesian"><div>Sesudahnya kebijaksanaan tampil di bumi, lalu bergaul di tengah-tengah manusia.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="38">
+Sesudahnya kebijaksanaan tampil di bumi, lalu bergaul di tengah-tengah manusia.
+</language>
+<language id="Arabic" verse="38">
             وَبَعْدَ ذلِكَ تَرَاءَى عَلَى الأَرْضِ وَتَرَدَّدَ بَيْنَ الْبَشَرِ
          </language>
-      </verse>
-   </chapter>
-
-   <chapter num="4">
-      <verse num="1">
-         <language id="English">
+</verse>
+</chapter>
+<chapter num="4">
+<verse num="1">
+<language id="English" verse="1">
             “ ‘This is the book of the commandments of God and of the law, which exists in eternity. All those who keep it will attain to life, but those who have forsaken it, to death.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="1">
             Kebijaksanaan itu ialah kitab ketetapan-ketetapan Allah, hukum Taurat yang tinggal tetap untuk selama-lamanya. Semua yang berpegang kepadanya memperoleh kehidupan, sedangkan yang meninggalkannya mendapat kematian.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="1">
             هذَا كِتَابُ أَوَامِرِ اللهِ وَالشَّرِيعَةُ الَّتِي إِلَى الأَبَدِ كُلُّ مَنْ تَمَسَّكَ بِهَا فَلَهُ الْحَيَاةُ وَالَّذِينَ يُهْمِلُونَهَا يَمُوتُونَ.
          </language>
-      </verse>
-
-      <verse num="2">
-         <language id="English">
+</verse>
+<verse num="2">
+<language id="English" verse="2">
             Convert, O Jacob, and embrace it, walk in the way of its splendor, facing its light.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="2">
             Berbaliklah, hai Yakub, genggamlah kebijaksanaan itu, berjalanlah menuju kilauan di hadapan cahayanya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="2">
             تُبْ يَا يَعْقُوبُ وَاتَّخِذْهَا وَسِرْ فِي الضِّيَاءِ تُجَاهَ نُورِهَا.
          </language>
-      </verse>
-
-      <verse num="3">
-         <language id="English">
+</verse>
+<verse num="3">
+<language id="English" verse="3">
             Do not surrender your glory to another, nor your value to a foreign people.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="3">
             Kemuliaan itu jangan kauserahkan kepada orang lain, atau kemujuranmu kepada bangsa yang asing.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="3">
             لاَ تُعْطِ مَجْدَكَ لآخَرَ وَمَزِيَّتَكَ لأُمَّةٍ غَرِيبَةٍ.
          </language>
-      </verse>
-
-      <verse num="4">
-         <language id="English">
+</verse>
+<verse num="4">
+<language id="English" verse="4">
             We have been happy, O Israel, because the things that are pleasing to God have been made clear to us.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="4">
             Berbahagialah kita ini, hai Israel, oleh karena kita mengetahui apa yang berkenan pada Tuhan
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="4">
             طُوبَى لَنَا يَا إِسْرَائِيلُ لأَنَّ مَا يُرْضَى عِنْدَ اللهِ مَعْرُوفٌ لَدَيْنَا.
          </language>
-      </verse>
-
-      <verse num="5">
-         <language id="English">
+</verse>
+<verse num="5">
+<language id="English" verse="5">
             Be ever more peaceful in soul, O people of God, the memorial of Israel.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="5">
             Kuatkanlah hatimu, hai bangsaku, yang membawa nama Israel!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="5">
             ثِقُوا يَا شَعْبِي يَا تَذْكَارَ إِسْرَائِيلَ
          </language>
-      </verse>
-
-      <verse num="6">
-         <language id="English">
+</verse>
+<verse num="6">
+<language id="English" verse="6">
             You have been sold to the nations, not into destruction, but because of this, in resentment, you provoked God to wrath, and so you have been delivered to adversity.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="6">
             Kamu telah dijual kepada bangsa-bangsa lain, tetapi tidak untuk dibinasakan. Karena telah memurkakan Allah maka kamu diserahkan kepada para lawan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="6">
             فَإِنَّكُمْ لَمْ تُبَاعُوا لِلأُمَمِ لِهَلاَكِكُمْ وَلكِنْ بِمَا أَنَّكُمْ أَسْخَطْتُمُ اللهَ قَدْ أُسْلِمْتُمْ إِلَى أَعْدَائِكُمْ
          </language>
-      </verse>
-
-      <verse num="7">
-         <language id="English">
+</verse>
+<verse num="7">
+<language id="English" verse="7">
             For you have exasperated him who made you, the eternal God, by sacrificing to evil spirits, and not to God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="7">
             Sebab Pembuatmu telah kamu marahkan, dengan mempersembahkan korban kepada setan, bukannya kepada Allah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="7">
             لأَنَّكُمْ أَغْضَبْتُمْ صَانِعَكُمْ إِذْ ذَبَحْتُمْ لِلشَّيَاطِينِ لاَ للهِ
          </language>
-      </verse>
-
-      <verse num="8">
-         <language id="English">
+</verse>
+<verse num="8">
+<language id="English" verse="8">
             For you have forgotten God, who nurtured you, and you have saddened Jerusalem, your nurse.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="8">
             Pengasuhmu telah kamu lupakan, yakni Allah kekal, dan hati Yerusalem, dayahmupun telah kamu dukakan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="8">
             وَنَسِيتُمْ رَازِقَكُمُ الإِلهَ الأَزَلِيَّ وَحَزَنْتُمْ مُرَبِّيَتَكُمْ أُورُشَلِيمَ.
          </language>
-      </verse>
-
-      <verse num="9">
-         <language id="English">
+</verse>
+<verse num="9">
+<language id="English" verse="9">
             For she saw the wrath of God approaching you, and she said, “Listen, region of Zion, for God has brought upon me great sorrow.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="9">
             Melihat kemurkaan Allah mendatangi diri kamu maka Yerusalem berkata: "Dengarlah, hai sekalian tetangga Sion! Allah telah mengirim kepadaku kesedihan besar."
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="9">
             إِنَّهَا رَأَتِ الْغَضَبَ الَّذِي حَلَّ بِكُمْ مِنْ قِبَلِ اللهِ فَقَالَتِ اسْمَعْنَ يَا جَارَاتِ صِهْيُونَ إِنَّ اللهَ قَدْ جَلَبَ عَلَيَّ نَوْحاً عَظِيماً
          </language>
-      </verse>
-
-      <verse num="10">
-         <language id="English">
+</verse>
+<verse num="10">
+<language id="English" verse="10">
             For I have seen the captivity of my people, my sons and daughters, which the Eternal has led over them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="10">
             Sebab anak-anakku yang laki-laki dan perempuan kulihat tertawan, sebagaimana yang telah dikirimkan Yang Kekal kepada mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="10">
             فَإِنِّي رَأَيْتُ سَبْيَ بَنِيَّ وَبَنَاتِيَ الَّذِي جَلَبَهُ عَلَيْهِمْ الأَزَلِيُّ.
          </language>
-      </verse>
-
-      <verse num="11">
-         <language id="English">
+</verse>
+<verse num="11">
+<language id="English" verse="11">
             For I nurtured them with joy, but I sent them away with weeping and sorrow.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="11">
             Mereka telah kuasuh dengan sukacita, tetapi sekarang kulihat pergi dengan tangisan dan sedih hati.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="11">
             إِنِّي رَبَّيْتُهُمْ بِفَرَحٍ ثُمَّ وَدَّعْتُهُمْ بِبُكَاءٍ وَنَوْحٍ.
          </language>
-      </verse>
-
-      <verse num="12">
-         <language id="English">
+</verse>
+<verse num="12">
+<language id="English" verse="12">
             Let no one rejoice over me, a widow and a desolation, for I am forsaken by many because of the sins of my sons, because they strayed from the law of God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="12">
             Janganlah seorangpun bersukaria oleh karena diriku, seorang janda yang telah ditinggalkan banyak anak. Karena dosa anak-anakku aku menjadi kesepian, sebab mereka telah berpaling dari hukum Taurat Allah
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="12">
             لاَ يَشْمَتَنَّ أَحَدٌ بِي أَنَا الأَرْمَلَةَ الَّتِي ثَكِلَتْ كَثِيرِينَ فَإِنِّي قَدْ أُوحِشْتُ لأَجْلِ خَطَايَا بَنِيَّ لأَنَّهُمْ زَاغُوا عَنْ شَرِيعَةِ اللهِ
          </language>
-      </verse>
-
-      <verse num="13">
-         <language id="English">
+</verse>
+<verse num="13">
+<language id="English" verse="13">
             And they have not known his righteousness, nor walked in the ways of the commandments of God, nor have they advanced with justice along the paths of his truth.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="13">
             dan tidak mau mengenal peraturan-peraturan-Nya; mereka tidak berjalan di jalan perintah-perintah Allah, dan tidak menempuh jalan-jalan pengajaran sesuai dengan kebenaran Allah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="13">
             وَلَمْ يَعْرِفُوا رُسُومَهُ وَلَمْ يَسْلُكُوا فِي طُرُقِ وَصَايَا اللهِ وَلَمْ يَسِيرُوا فِي سُبُلِ التَّأَدُّبِ بِبِرِّهِ.
          </language>
-      </verse>
-
-      <verse num="14">
-         <language id="English">
+</verse>
+<verse num="14">
+<language id="English" verse="14">
             Let the region of Zion approach, and remember the captivity of my sons and daughters, which the Eternal led over them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="14">
             Hendaklah para tetangga Sion datang, dan hendaklah kamu ingat kepada anak-anakku yang laki-laki dan perempuan yang tertawan, sebagaimana yang telah dikirimkan Yang Kekal kepada mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="14">
             هَلُمَّ يَا جَارَاتِ صِهْيُونَ فَاذْكُرْنَ سَبْيَ بَنِيَّ وَبَنَاتِيَ الَّذِي جَلَبَهُ عَلَيْهِمْ الأَزَلِيُّ.
          </language>
-      </verse>
-
-      <verse num="15">
-         <language id="English">
+</verse>
+<verse num="15">
+<language id="English" verse="15">
             For he has brought a far away people upon them, a guilty people, and of another language,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="15">
             Sebab Allah telah mengirim kepada mereka suatu bangsa dari jauh, suatu bangsa biadab dengan bahasa yang asing,</language>
-         <language id="Arabic">
+<language id="Arabic" verse="15">
             فَإِنَّهُ جَلَبَ عَلَيْهِمْ أُمَّةً مِنْ بَعِيدٍ أُمَّةً وَقِحَةً أَعْجَمِيَّةَ اللِّسَانِ
          </language>
-      </verse>
-
-      <verse num="16">
-         <language id="English">
+</verse>
+<verse num="16">
+<language id="English" verse="16">
             who have not reverenced the aged, nor had mercy on the children, and who have led away the beloved of the widow, leaving me deserted and alone, without sons.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="16">
             yang tidak menghormat uban, dan tidak pula menyayangkan kanak-kanak. Anak-anak kesayangan si janda dibawa mereka dan ia sendiri ditinggalkannya kesepian tanpa anak-anak perempuannya.</language>
-         <language id="Arabic">
+<language id="Arabic" verse="16">
             لَمْ تَهَبْ شَيْخاً وَلَمْ تُشْفِقْ عَلَى طِفْلٍ فَذَهَبُوا بِأَحِبَّاءِ الأَرْمَلَةِ وَأَثْكَلُوا الْمُتَوَحِّدَةَ بَنَاتِهَا.
          </language>
-      </verse>
-
-      <verse num="17">
-         <language id="English">
+</verse>
+<verse num="17">
+<language id="English" verse="17">
             But as for me, how am I able to help you?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="17">
             Adapun aku, bagaimana kamu dapat kutolong?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="17">
             بِأَيِّ شَيْءٍ أَسْتَطِيعُ أَنْ أُغِيثَكُمْ.
          </language>
-      </verse>
-
-      <verse num="18">
-         <language id="English">
+</verse>
+<verse num="18">
+<language id="English" verse="18">
             For he who has brought these evils upon you, will rescue you from the hands of your enemies.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="18">
             Dia yang telah mengirim bencana-bencana itu kepadamu akan melepaskan kamu dari genggaman musuhmu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="18">
             الَّذِي جَلَبَ عَلَيْكُمُ الشَّرَّ هُوَ يُنْقِذُكُمْ مِنْ أَيْدِي أَعْدَائِكُمْ.
          </language>
-      </verse>
-
-      <verse num="19">
-         <language id="English">
+</verse>
+<verse num="19">
+<language id="English" verse="19">
             Walk on, sons, walk on, for I have been abandoned and I am alone.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="19">
             Pergilah saja, hai anak-anakku, pergilah, sebab aku telah tertinggal kesepian.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="19">
             سِيرُوا يَا بَنِيَّ سِيرُوا. إِنِّي بَقِيتُ مُسْتَوْحِشَةً.
          </language>
-      </verse>
-
-      <verse num="20">
-         <language id="English">
+</verse>
+<verse num="20">
+<language id="English" verse="20">
             I have taken off the garment of peace and have put on the sackcloth of supplication, and I will cry out to the most High in my days.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="20">
             Pakaian kebahagiaan telah kutanggalkan dan karung permohonan kukenakan. Sepanjang umur hidupku hendak kujerit kepada Yang Kekal!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="20">
             قَدْ خَلَعْتُ حُلَّةَ السَّلاَمِ وَلَبِسْتُ مِسْحَ التَّضَرُّعِ. أَصْرُخُ إِلَى الأَزَلِيِّ مَدَى أَيَّامِي.
          </language>
-      </verse>
-
-      <verse num="21">
-         <language id="English">
+</verse>
+<verse num="21">
+<language id="English" verse="21">
             Be ever more peaceful, sons. Cry out to the Lord, and he will rescue you from the hand of the hostile leaders.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="21">
             Kuatkanlah hatimu, anak-anakku, berserulah kepada Allah, niscaya kamu akan dilepaskan-Nya dari kekuasaan dan genggaman musuh.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="21">
             ثِقُوا يَا بَنِيَّ وَاسْتَغِيثُوا بِاللهِ فَيُنْقِذَكُمْ مِنْ أَيْدِي الأَعْدَاءِ الْمُتَسَلِّطِينَ عَلَيْكُمْ
          </language>
-      </verse>
-
-      <verse num="22">
-         <language id="English">
+</verse>
+<verse num="22">
+<language id="English" verse="22">
             For I have placed my hope in your eternal salvation, and joy approaches me from the Holy One, over the mercy which will come to you by our eternal salvation.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="22">
             Sebab aku mengharapkan keselamatanmu dari Yang Kekal, maka sukacita telah datang kepadaku dari Yang Kudus, oleh karena belas kasihan yang segera datang kepada kamu dari Yang Kekal ialah Penyelamatmu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="22">
             فَإِنِّي قَدْ رَجَوْتُ بِالأَزَلِيِّ خَلاَصَكُمْ وَحَلَّتْ بِي مَسَرَّةٌ مِنْ لَدُنِ الْقُدُّوسِ بِالرَّحْمَةِ الَّتِي تُؤْتَوْنَهَا عَمَّا قَلِيلٍ مِنْ عِنْدِ الأَزَلِيِّ مُخَلِّصِكُمْ.
          </language>
-      </verse>
-
-      <verse num="23">
-         <language id="English">
+</verse>
+<verse num="23">
+<language id="English" verse="23">
             For I sent you forth with sorrow and weeping, but the Lord will restore you to me with joy and gladness for eternity.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="23">
             Sebab dengan sedih hati dan tangisan aku membiarkan kamu pergi, tetapi kamu dikembalikan kepadaku oleh Allah dengan sukaria dan sukacita untuk selama-lamanya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="23">
             قَدْ وَدَّعْتُكُمْ بِبُكَاءٍ وَنَوْحٍ لكِنَّ اللهَ سَيَرُدُّكُمْ لِي بِفَرَحٍ وَمَسَرَّةٍ إِلَى الأَبَدِ.
          </language>
-      </verse>
-
-      <verse num="24">
-         <language id="English">
+</verse>
+<verse num="24">
+<language id="English" verse="24">
             For just as the neighbors of Zion have seen your captivity from God, so also will they soon see your salvation from God, which will overcome you with great honor and eternal splendor.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="24">
             Sebab seperti sekarang tetangga Sion melihat kamu tertawan, demikianpun mereka segera akan melihat penyelamatanmu yang datang dari Allah, yang akan sampai kepada kamu dengan kemuliaan besar dan dengan kilauan dari Yang kekal.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="24">
             فَكَمَا تَرَى الآنَ جَارَاتُ صِهْيَوْنَ سَبْيَكُمْ هكَذَا عَمَّا قَلِيلٍ سَيَرَيْنَ خَلاَصَكُمْ مِنْ عِنْدِ اللهِ تُؤْتَوْنَهُ بِمَجْدٍ عَظِيمٍ وَبِبَهَاءِ الأَزَلِيِّ.
          </language>
-      </verse>
-
-      <verse num="25">
-         <language id="English">
+</verse>
+<verse num="25">
+<language id="English" verse="25">
             Sons, endure patiently the wrath that has come upon you, for your enemy has persecuted you, but you will quickly see his destruction and you will climb over his neck.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="25">
             Hai anak-anakku, hendaklah tabah menanggung kemurkaan, yang mendatangi diri kamu dari Allah. Engkau dikejar-kejar oleh musuhmu, tetapi segera akan kaulihat kebinasaannya, dan akan kauinjak tengkuknya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="25">
             يَا بَنِيَّ احْتَمِلُوا بِالصَّبْرِ الْغَضَبَ الَّذِي حَلَّ بِكُمْ مِنَ اللهِ. قَدِ اضْطَهَدَكَ الْعَدُوُّ لكِنَّكَ سَتَرَى هَلاَكَهُ عَنْ قَلِيلٍ وَتَطَأُ رِقَابَهُمْ.
          </language>
-      </verse>
-
-      <verse num="26">
-         <language id="English">
+</verse>
+<verse num="26">
+<language id="English" verse="26">
             My delicate ones have walked rough ways, for they were regarded as a flock torn apart by enemies.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="26">
             Timanganku harus menempuh jalan-jalan yang jendal-jendul seperti kawanan yang dirampas, dihalaukanlah mereka oleh musuh.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="26">
             إِنَّ مُتْرَفِيَّ سَلَكُوا طُرُقاً وَعْرَةً وَسِيقُوا كَغَنَمٍ نَهَبَتْهَا الأَعْدَاءُ.
          </language>
-      </verse>
-
-      <verse num="27">
-         <language id="English">
+</verse>
+<verse num="27">
+<language id="English" verse="27">
             Be ever more peaceful in soul, sons, and call out to the Lord, for you will be remembered by him who led you away.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="27">
             Kuatkanlah hatimu, anak-anakku, berserulah kepada Allah; Dia yang mengirim bencana itu akan teringat kepadamu pula.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="27">
             ثِقُوا يَا بَنِيَّ وَاسْتَغِيثُوا بِاللهِ فَإِنَّ الَّذِي جَلَبَ عَلَيْكُمْ هذِهِ سَيَتَذَكَّرُكُمْ.
          </language>
-      </verse>
-
-      <verse num="28">
-         <language id="English">
+</verse>
+<verse num="28">
+<language id="English" verse="28">
             For as much as you thought to go astray from God, ten times as much again he will require of you when converting.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="28">
             Seperti dahulu angan-angan hatimu tertuju untuk bersesat dari Allah, demikian hendaklah kamu sekarang berbalik untuk mencari Dia dengan sepuluh kali lebih rajin.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="28">
             وَكَمَا كُنْتُمْ تَهْوَوْنَ أَنْ تَشْرُدُوا عَنِ اللهِ فَبِقَدْرِ ذلِكَ عَشْرَ مَرَّاتٍ تَلْتَمِسُونَهُ تَائِبِينَ
          </language>
-      </verse>
-
-      <verse num="29">
-         <language id="English">
+</verse>
+<verse num="29">
+<language id="English" verse="29">
             For he who led you into evil, he himself will again lead you to eternal happiness with your salvation.”
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="29">
             Memang Dia yang telah mengirim segala bencana itu kepada kamu akan mengirim pula sukacita abadi bersama dengan penyelamatanmu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="29">
             وَالَّذِي جَلَبَ عَلَيْكُمُ الشَّرَّ يَجْلُبُ لَكُمُ المَسَرَّةَ الأَبَدِيَّةَ مَعَ خَلاَصِكُم.
          </language>
-      </verse>
-
-      <verse num="30">
-         <language id="English">
+</verse>
+<verse num="30">
+<language id="English" verse="30">
             Be ever more peaceful in soul, Jerusalem, for he who has named you, has been affected by you.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="30">
             Kuatkanlah hatimu, hai Yerusalem! Dia yang telah memberikan nama kepadamu akan menghibur engkau.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="30">
             ثِقِي يَا أُورُشَلِيمُ فَإِنَّ الَّذِي سَمَّاكِ بِاسْمِهِ سَيُعَزِّيكِ.
          </language>
-      </verse>
-
-      <verse num="31">
-         <language id="English">
+</verse>
+<verse num="31">
+<language id="English" verse="31">
             The criminals who have troubled you, will perish, and those who rejoiced in your ruin, will be punished.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="31">
             Celakalah mereka yang menganiaya engkau, dan yang bersukacita atas kejatuhanmu!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="31">
             وَيْلٌ لِلَّذِينَ جَارُوا عَلَيْكِ وَشَمِتُوا بِسُقُوطِكِ.
          </language>
-      </verse>
-
-      <verse num="32">
-         <language id="English">
+</verse>
+<verse num="32">
+<language id="English" verse="32">
             The cities that your sons have served, will be punished, and also, she who received your sons.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="32">
             Celakalah sekalian kota yang memperbudak anak-anakmu, celakalah kota yang menerima anak-anakmu sebagai tawanan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="32">
             وَيْلٌ لِلْمُدُنِ الَّتِي اسْتَعْبَدَتْ بَنِيكِ. وَيْلٌ لِلَّتِي أَخَذَتْ أَوْلاَدَكِ.
          </language>
-      </verse>
-
-      <verse num="33">
-         <language id="English">
+</verse>
+<verse num="33">
+<language id="English" verse="33">
             For just as she was glad at your ruin, and she rejoiced in your fall, so also will she be grieved in her own desolation,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="33">
             Sebab sebagaimana kota itu bersukaria karena kejatuhanmu dan bersukacita atas keruntuhanmu, demikianpun ia sedih karena kesepiannya sendiri kelak.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="33">
             فَإِنَّهَا كَمَا شَمِتَتْ بِسُقُوطِكِ وَفَرِحَتْ بِخَرَابِكِ كَذلِكَ سَتَكْتَئِبُ عِنْدَ دَمَارِهَا
          </language>
-      </verse>
-
-      <verse num="34">
-         <language id="English">
+</verse>
+<verse num="34">
+<language id="English" verse="34">
             and the exaltation of her multitude will be cut off, and her gladness will be turned to sorrow.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="34">
             Dari padanya akan Kurenggut sorak-sorai rakyat besar, dan kecongkakannya akan berubah menjadi kesedihan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="34">
             وَأُبْطِلُ مُفَاخَرَتَهَا بِكَثْرَةِ سُكَّانِهَا وَأُحَوِّلُ مَرَحَهَا إِلَى نَوْحٍ
          </language>
-      </verse>
-
-      <verse num="35">
-         <language id="English">
+</verse>
+<verse num="35">
+<language id="English" verse="35">
             For fire will overcome her from the Eternal for many days, and she will be inhabited by evil spirits for a long time.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="35">
             Sebab api dari pihak Yang Kekal akan mendatanginya untuk waktu yang lama, dan ia akan didiami setan untuk masa yang lama.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="35">
             لأَنَّ نَاراً تَنْزِلُ عَلَيْهَا مِنْ عِنْدِ الأَزَلِيِّ إِلَى أَيَّامٍ كَثِيرَةٍ وَتَسْكُنُهَا الشَيَّاطِينُ طُولَ الزَّمَانِ.
          </language>
-      </verse>
-
-      <verse num="36">
-         <language id="English">
+</verse>
+<verse num="36">
+<language id="English" verse="36">
             Look around, Jerusalem, towards the east, and see the happiness that comes to you from God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="36">
             Tengoklah ke timur, hai Yerusalem, dan pandangilah sukacita yang tengah datang kepadamu dari pihak Allah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="36">
             تَطَلَّعِي يَا أُورُشَلِيمُ مِنْ حَوْلِكِ نَحْوَ الْمَشْرِقِ وَانْظُرِي الْمَسَرَّةَ الْوَافِدَةَ عَلَيْكِ مِنْ عِنْدِ اللهِ.
          </language>
-      </verse>
-
-      <verse num="37">
-         <language id="English">
+</verse>
+<verse num="37">
+<language id="English" verse="37">
             For behold, your sons approach, whom you sent away scattered. They approach, gathering together, from the east all the way to the west, at the word of the Holy One, rejoicing in the honor of God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="37">
             Sungguh, akan datanglah anak-anakmu yang telah kaubiarkan pergi. Mereka datang, terkumpul dari timur dan barat atas firman dari Yang Kudus, seraya bersukacita karena kemuliaan Allah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="37">
             هَا إِنَّ بَنِيكِ الَّذِينَ وَدَّعْتِهِمْ قَادِمُونَ. يَقْدَمُونَ مُجْتَمِعِينَ مِنَ الْمَشْرِقِ إِلَى الْمَغْرِبِ بِكَلِمَةِ الْقُدُّوسِ مُبْتَهِجِينَ بِمَجْدِ اللهِ.
          </language>
-      </verse>
-   </chapter>
-
-   <chapter num="5">
-      <verse num="1">
-         <language id="English">
+</verse>
+</chapter>
+<chapter num="5">
+<verse num="1">
+<language id="English" verse="1">
             “ ‘Take off, O Jerusalem, the garment of your sorrow and troubles, and put on your beauty and the honor of that eternal glory, which you have from God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="1">
             Hendaklah, hai Yerusalem, menanggalkan pakaian kesedihan dan kesengsaraanmu, dan mengenakan perhiasan kemuliaan Allah untuk selama-lamanya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="1">
             اخْلَعِي يَا أُورُشَلِيمُ حُلَّةَ النَّوْحِ وَالْمَذَلَّةِ وَالْبَسِي بَهَاءَ الْمَجْدِ مِنْ عِنْدِ اللهِ إِلَى الأَبَدِ.
          </language>
-      </verse>
-
-      <verse num="2">
-         <language id="English">
+</verse>
+<verse num="2">
+<language id="English" verse="2">
             God will surround you with a double garment of justice, and he will set a crown on your head of everlasting honor.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="2">
             Hendaklah berselubungkan kampuh kebenaran Allah, dan memasang di atas kepalamu tajuk kemuliaan dari Yang Kekal.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="2">
             تَسَرْبَلِي ثَوْبَ الْبِرِّ الَّذِي مِنَ اللهِ وَاجْعَلِي عَلَى رَأْسِكِ تَاجَ مَجْدِ الأَزَلِيِّ.
          </language>
-      </verse>
-
-      <verse num="3">
-         <language id="English">
+</verse>
+<verse num="3">
+<language id="English" verse="3">
             For God will reveal his splendor in you to all who are under heaven.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="3">
             Sebab di bawah kolong langit seluruhnya serimu akan dipertunjukkan oleh Allah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="3">
             فَإِنَّ اللهَ يُظْهِرُ سَنَاكِ لِكُلِّ مَا تَحْتَ السَّمَاءِ
          </language>
-      </verse>
-
-      <verse num="4">
-         <language id="English">
+</verse>
+<verse num="4">
+<language id="English" verse="4">
             For your name will be given to you by God for eternity: the peace of justice and the honor of piety.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="4">
             Dari pihak Allah engkau akan diberi nama ini untuk selamanya: "Damai sejahtera hasil kebenaran" dan "Kemuliaan hasil dari takwa".
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="4">
             وَيَكُونُ اسْمُكِ مِنْ قِبَلِ اللهِ إِلَى الأَبَدِ سَلاَمَ الْبِرِّ وَمَجْدَ عِبَادَةِ اللهِ.
          </language>
-      </verse>
-
-      <verse num="5">
-         <language id="English">
+</verse>
+<verse num="5">
+<language id="English" verse="5">
             Arise, O Jerusalem, and stand in exaltation, and look around towards the east, and see your sons, gathering together, from the rising of the sun to the setting of the sun, by the word of the Holy One, rejoicing in the remembrance of God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="5">
             Bangkitlah, hai Yerusalem, hendaklah berdiri tegak di ketinggian! Tengoklah ke timur! Lihatlah anak-anakmu sudah berkumpul atas firman dari Yang Kudus, dari tempat matahari terbenam hingga ke tempat terbitnya, seraya bersukaria karena Allah telah teringat kepada mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="5">
             اِنْهَضِي يَا أُورُشَلِيمُ وَقِفِي فِي الأَعَالِي وَتَطَلَّعِي مِنْ حَوْلِكِ نَحْوَ الْمَشْرِقِ وَانْظُرِي بَنِيكِ مُجْتَمِعِينَ مِنْ مَغْرِبِ الشَّمْسِ إِلَى مَشْرِقِهَا بِكَلِمَةِ الْقُدُّوسِ مُبْتَهِجِينَ بِذِكْرِ اللهِ.
          </language>
-      </verse>
-
-      <verse num="6">
-         <language id="English">
+</verse>
+<verse num="6">
+<language id="English" verse="6">
             For they went out from you on foot, led by the enemies, but the Lord will lead them to you, being carried in honor like sons of the kingdom.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="6">
             Memang dahulu mereka pergi dari padamu dengan berjalan kaki, digiring oleh musuh. Tetapi kini mereka dikembalikan kepadamu oleh Allah diusung dengan hormat seolah-olah di atas tandu kerajaan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="6">
             قَدْ ذَهَبُوا عَنْكِ رَاجِلِينَ تَسُوقُهُمُ الأَعْدَاءُ لكِنَّ اللهَ يُعِيدُهُمْ إِلَيْكِ رَاكِبِينَ بِكَرَامَةٍ كَمَنْ هُوَ عَلَى عَرْشِ الْمُلْكِ.
          </language>
-      </verse>
-
-      <verse num="7">
-         <language id="English">
+</verse>
+<verse num="7">
+<language id="English" verse="7">
             For God has resolved to humble every high mountain and the longstanding cliffs, and to fill up the steep valleys in order to level the ground, so that Israel may walk diligently in the honor of God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="7">
             Sebab Allah memerintahkan, supaya diratakanlah segala gunung yang tinggi dan segenap bukit abadi, dan supaya ditimbuslah sekalian jurang menjadi tanah yang rata, sehingga Israel dapat berjalan dengan aman di bawah naungan kemuliaan Allah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="7">
             لأَنَّ الرَّبَّ قَدْ عَزَمَ أَنْ يَخْفِضَ كُلَّ جَبَلٍ عَالٍ وَالتِّلاَلَ الدَّهْرِيَّةَ وَأَنْ يَملأَ الأَوْدِيَةَ لِتَمْهِيدِ الأَرْضِ كَيْمَا يَسِيرَ إِسْرَائِيلُ بِغَيْرِ عِثَارٍ لِمَجْدِ اللهِ
          </language>
-      </verse>
-
-      <verse num="8">
-         <language id="English">
+</verse>
+<verse num="8">
+<language id="English" verse="8">
             Yet the woods and every sweet-smelling tree have provided shade for Israel by the commandment of God.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="8">
             Hutan rimba dan segala pohon yang harum semerbakpun menaungi Israel atas perintah Allah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="8">
             حَتَّى إِنَّ الْغَابَ وَكُلَّ شَجَرٍ طَيِّبِ الْعَرْفِ قَدْ ظَلَّلَ عَلَى إِسْرَائِيلَ بِأَمْرِ اللهِ.
          </language>
-      </verse>
-
-      <verse num="9">
-         <language id="English">
+</verse>
+<verse num="9">
+<language id="English" verse="9">
             For God will lead Israel with joy into the light of his majesty, with mercy and justice, which is from him.’ ”
-         </language><language id="Indonesian"><div>Sebab Israel akan dituntun dengan sukacita oleh Allah, oleh cahaya kemuliaan-Nya dan dengan belas kasihan dan kebenaran-Nya.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="9">
+Sebab Israel akan dituntun dengan sukacita oleh Allah, oleh cahaya kemuliaan-Nya dan dengan belas kasihan dan kebenaran-Nya.
+</language>
+<language id="Arabic" verse="9">
             إِنَّ اللهَ سَيُعِيدُ إِسْرَائِيلَ بِسُرُورٍ فِي نُورِ مَجْدِهِ بِرَحْمَةٍ وَعَدْلٍ مِنْ عِنْدِهِ
          </language>
-      </verse>
-   </chapter>
-
-   <chapter num="6">
-      <verse num="1">
-         <language id="English">
+</verse>
+</chapter>
+<chapter num="6">
+<verse num="1">
+<language id="English" verse="1">
             This is a copy of the letter that Jeremiah sent to those who would be taken captive into Babylon by the king of Babylon, so as to prophesy to them according to the warning he had received about them from God. “Because of the sins which you have sinned before God, you will be carried away into the captivity of Babylon by Nebuchadnezzar, the king of Babylon.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="1">
             Salinan sepucuk surat yang dikirim Yeremia kepada mereka yang hendak diangkut sebagai tawanan di Babel oleh raja orang-orang Babel, untuk memberitahukan kepada mereka apa yang telah dipesan Allah kepada Yeremia. Karena segala dosa yang telah kamu lakukan kepada Allah maka kamu diangkut sebagai tawanan ke Babel oleh Nebukadnezar, raja orang-orang Babel.</language>
-         <language id="Arabic">
+<language id="Arabic" verse="1">
             نُسْخَةُ الرِّسَالَةِ الَّتِي أَرْسَلَ بِهَا إِرْمِيَا إِلَى الَّذِينَ كَانَ مَلِكُ بَابِلَ مُزْمِعاً أَنْ يَسُوقَهُمْ فِي الْجَلاَءِ إِلَى بَابِلَ يُخْبِرُهُمْ بِمَا أَمَرَهُ اللهُ بِهِ. إِنَّهُ لأَجْلِ الْخَطَايَا الَّتِي خَطِئْتُمْ أَمَامَ اللهِ يَسُوقُكُمْ نَبُوخَذْنَصَّرُ مَلِكُ بَابِلَ فِي الْجَلاَءِ إِلَى بَابِلَ.
          </language>
-      </verse>
-
-      <verse num="2">
-         <language id="English">
+</verse>
+<verse num="2">
+<language id="English" verse="2">
             And so, having been taken into Babylon, you will be there many years and for a long time, even to seven generations, yet after this, I will lead you away from there with peace.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="2">
             Setelah kamu tiba di Babel maka kamu akan tinggal di sana bertahun-tahun lamanya untuk waktu yang lama, sampai tujuh angkatan. Tetapi sesudahnya kamu akan Kubawa dari sana dengan selamat.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="2">
             فَإِذَا دَخَلْتُمْ بَابِلَ فَسَتَكُونُونَ هُنَاكَ سِنِينَ كَثِيرَةً وَزَمَاناً طَوِيلاً إِلَى سَبْعَةِ أَجْيَالٍ وَبَعْدَ ذلِكَ أُخْرِجُكُمْ مِنْ هُنَاكَ بِسَلاَمٍ.
          </language>
-      </verse>
-
-      <verse num="3">
-         <language id="English">
+</verse>
+<verse num="3">
+<language id="English" verse="3">
             But now, you will see in Babylon gods of gold and of silver, and of stone and of wood, carried upon shoulders, an awful display for the peoples.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="3">
             Maka di negeri Babel kamu akan melihat allah-allah perak, emas dan kayu yang diusung di atas pundak dan yang menakutkan orang-orang asing.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="3">
             وَالآنَ فَإِنَّكُمْ سَتَرَوْنَ فِي بَابِلَ آلِهَةً مِنَ الْفِضَّةِ وَالذَّهَبِ وَالْخَشَبِ تُحْمَلُ عَلَى الْمَنَاكِبِ وَتُلْقِي الرَّهْبَةَ عَلَى الأُمَمِ
          </language>
-      </verse>
-
-      <verse num="4">
-         <language id="English">
+</verse>
+<verse num="4">
+<language id="English" verse="4">
             See to it, then, that you do not in effect become like these strangers and become afraid, so that in awe you would be carried away into their midst.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="4">
             Hendaklah kamu sekalian ingat-ingat jangan sampai menyamai orang-orang itu dan jangan sampai kejangkitan ketakutan kepada allah-allah itu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="4">
             فَاحْتَرِزُوا أَنْ تَتَشَبَّهُوا بِالْغُرَبَاءِ وَتَأْخُذَكُمْ مِنْهَا رَهْبَةٌ.
          </language>
-      </verse>
-
-      <verse num="5">
-         <language id="English">
+</verse>
+<verse num="5">
+<language id="English" verse="5">
             And so, seeing the turmoil, behind you and in front of you, as they are worshiping, say in your hearts, ‘You ought to be adored, O Lord.’
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="5">
             Apabila kamu melihat orang banyak berjalan di depan dan di belakang allah-allah itu menyembah mereka, hendaklah kamu berkata dalam hati: "Engkaulah, ya Tuhan yang patut disembah!"
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="5">
             وَإِذَا رَأَيْتُمُ الْجُمُوعَ أَمَامَهَا وَوَرَاءَهَا يَسْجُدُونَ لَهَا فَقُولُوا فِي قُلُوبِكُمْ: «لَكَ يَا رَبُّ يَنْبَغِي السُّجُودُ».
          </language>
-      </verse>
-
-      <verse num="6">
-         <language id="English">
+</verse>
+<verse num="6">
+<language id="English" verse="6">
             For my angel is with you. And I myself will examine your souls.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="6">
             Sebab malaikat-Ku menyertai kamu dan menghidupi diri kamu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="6">
             فَإِنَّ مَلاَكِي مَعَكُمْ وَهُوَ يُطَالِبُ بِأَنْفُسِكُمْ.
          </language>
-      </verse>
-
-      <verse num="7">
-         <language id="English">
+</verse>
+<verse num="7">
+<language id="English" verse="7">
             For their tongue is polished by the craftsman, and they themselves are even inlaid with gold and silver, yet they are false and unable to speak.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="7">
             Lidah allah-allah itu diketam oleh seorang tukang dan merekapun dilapis dengan perak dan emas. Penipuanlah mereka itu dan bicarapun tidak dapat!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="7">
             أَمَّا تِلْكَ فَإِنَّ لَهَا أَلْسِنَةً قَدْ نَحَتَهَا النَّجَّارُ وَهِيَ مُغَشَّاةٌ بِالذَّهَبِ وَالْفِضَّةِ لكِنَّهَا آلِهَةُ زُورٍ لاَ تَسْتَطِيعُ نُطْقاً.
          </language>
-      </verse>
-
-      <verse num="8">
-         <language id="English">
+</verse>
+<verse num="8">
+<language id="English" verse="8">
             And, just like a virgin who loves to decorate herself, so do they take up gold and make designs with it.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="8">
             Seperti bagi seorang anak dara yang suka akan perhiasan demikian orang mengambil emas lalu dibuatnya mahkota bagi kepala allah-allah mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="8">
             يَأْخُذُ النَّاسُ لَهَا ذَهَباً كَمَا يُؤْخَذُ لِعَذْرَاءَ تُحِبُّ الزِّينَةَ
          </language>
-      </verse>
-
-      <verse num="9">
-         <language id="English">
+</verse>
+<verse num="9">
+<language id="English" verse="9">
             Their gods have crowns of certified gold upon their heads, from which the priests subtract gold and silver, and spend it on themselves.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="9">
             Sering pula terjadi bahwa para imam curi-curi mengambil emas dan perak itu dari allah-allah mereka lalu dipakainya untuk kepentingan mereka sendiri. </language>
-         <language id="Arabic">
+<language id="Arabic" verse="9">
             فَيَصُوغُونَ أَكَالِيلَ يَجْعَلُونَهَا عَلَى رُؤُوسِ آلِهَتِهِمْ، وَرُبَّمَا سَرَقَ الْكَهَنَةُ مِنْ آلِهَتِهِمِ الذَّهَبَ وَالْفِضَّةَ لِمَنْفَعَةِ أَنْفُسِهِمْ
          </language>
-      </verse>
-
-      <verse num="10">
-         <language id="English">
+</verse>
+<verse num="10">
+<language id="English" verse="10">
             Moreover, they even give from it to prostitutes, and use it to adorn kept women, and when they receive it back from the kept women, they use it to adorn their gods.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="10">
             Bahkan emas perak itu dihadiahkannya kepada pelacur-pelacur di serambi-serambi. Allah-allah emas, perak dan kayu itu diberinya berdandan dan berpakaian seperti manusia saja. </language>
-         <language id="Arabic">
+<language id="Arabic" verse="10">
             وَقَدْ يَبْذُلُونَ مِنْهُمَا لِلزَّوَانِي اللاَّتِي فِي الْبَيْتِ. يُزَيِّنُونَ الآلِهَةَ بِالْمَلاَبِسِ كَالْبَشَرِ وَهِيَ مِنَ الْفِضَّةِ وَالذَّهَبِ وَالْخَشَبِ
          </language>
-      </verse>
-
-      <verse num="11">
-         <language id="English">
+</verse>
+<verse num="11">
+<language id="English" verse="11">
             But these cannot be freed from rust and moths.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="11">
             Allah-allah itu sendiri tidak dapat membela dirinya terhadap karat dan bubuk, meski berselubungkan pakaian ungu tua sekalipun. </language>
-         <language id="Arabic">
+<language id="Arabic" verse="11">
             فَهِيَ لاَ تَسْلَمُ مِنَ الصَّدَإِ وَالسُّوسِ وَإِنْ كَانَتْ تَلْبَسُ الأُرْجُوَانَ.
          </language>
-      </verse>
-
-      <verse num="12">
-         <language id="English">
+</verse>
+<verse num="12">
+<language id="English" verse="12">
             Although they are covered with a purple garment, they must wipe off their face, because of the dust of the house, which is very great around them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="12">
             Mereka harus disapu mukanya karena debu kuil berhamburan atas mereka. </language>
-         <language id="Arabic">
+<language id="Arabic" verse="12">
             وَيَمْسَحُونَ وُجُوهَهَا مِنْ غُبَارِ الْبَيْتِ الْمُتَرَاكِمِ عَلَيْهَا.
          </language>
-      </verse>
-
-      <verse num="13">
-         <language id="English">
+</verse>
+<verse num="13">
+<language id="English" verse="13">
             Yet he who holds a scepter like a man, like the judge of the region, cannot put to death one who sins against him.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="13">
             Allah-allah itu memegang tongkat kerajaan seperti seorang penguasa negeri, tetapi tidak dapat menumpas seorangpun yang bersalah kepadanya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="13">
             وَفِي يَدِ كُلٍّ مِنْهَا صَوْلَجَانٌ كَالْحَاكِمِ عَلَى بَلَدٍ لكِنَّهُ لاَ يَقْتُلُ مَنْ يُجْرِمُ إِلَيْهِ.
          </language>
-      </verse>
-
-      <verse num="14">
-         <language id="English">
+</verse>
+<verse num="14">
+<language id="English" verse="14">
             And though he holds in his hand a sword and an axe, yet he cannot free himself from war and robbers. From this let it be known to you that they are not gods.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="14">
             Di tangan kanannya dipegangnya keris dan kapak, tetapi bahkan dirinya tidak dapat dilepaskan dari perang dan perampok. Dari padanya nyatalah bahwa mereka bukan allah adanya.</language>
-         <language id="Arabic">
+<language id="Arabic" verse="14">
             وَفِي يَمِينِهِ سَيْفٌ وَفَأْسٌ لكِنَّهُ لاَ يُنَجِّي نَفْسَهُ مِنَ الْحَرْبِ وَاللُّصُوصِ. فَحَقَّ بِذلِكَ أَنَّهَا لَيْسَتْ بآلِهَةٍ
          </language>
-      </verse>
-
-      <verse num="15">
-         <language id="English">
+</verse>
+<verse num="15">
+<language id="English" verse="15">
             Therefore, do not fear them. For just as the vessel a man uses becomes useless when broken, so also are their gods.
-         </language><language id="Indonesian"><div>Jadi jangan takut kepada mereka. Seperti sebuah bejana manusia yang pecah tidak berguna lagi, demikianpun halnya dengan allah-allah mereka. </div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="15">
+Jadi jangan takut kepada mereka. Seperti sebuah bejana manusia yang pecah tidak berguna lagi, demikianpun halnya dengan allah-allah mereka.
+</language>
+<language id="Arabic" verse="15">
             فَلاَ تَخَافُوهَا فَإِنَّهُ كَمَا أَنَّ الإِنَاءَ الْمَكْسُورَ لاَ يَنْفَعُ صَاحِبَهُ كَذلِكَ آلِهَتُهُمْ.
          </language>
-      </verse>
-
-      <verse num="16">
-         <language id="English">
+</verse>
+<verse num="16">
+<language id="English" verse="16">
             When they are set up in a house, their eyes are full of dust from the feet of those who enter.
-         </language><language id="Indonesian">Jika ditempatkan di kuil maka mata mereka penuh dengan debu yang diterbangkan kaki orang yang masuk.</language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="16">Jika ditempatkan di kuil maka mata mereka penuh dengan debu yang diterbangkan kaki orang yang masuk.</language>
+<language id="Arabic" verse="16">
             إِذَا نُصِبَتْ فِي الْبُيُوتِ فَعُيُونُهَا تَمْتَلِئُ غُبَاراً مِنْ أَقْدَامِ الدَّاخِلِينَ.
          </language>
-      </verse>
-
-      <verse num="17">
-         <language id="English">
+</verse>
+<verse num="17">
+<language id="English" verse="17">
             And like one who has offended the king and is surrounded at every door, or like a corpse about to be carried to the grave, so do the priests secure the doors with bars and locks, lest they be plundered by robbers.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="17">
             Sebagaimana pintu ditutup di keliling seseorang yang bersalah terhadap raja dan yang akan diantar ke tempat hukuman mati, demikianpun para imam allah-allah itu mengukuhkan kuil-kuil mereka dengan pintu, kancing dan palang, supaya allah-allah itu jangan dilucuti oleh perampok.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="17">
             يُحْظَرُ عَلَيْهَا فِي الدِّيَارِ كَمَا يُحْظَرُ عَلَى مَنْ أَجْرَمَ إِلَى الْمَلِكِ وَكَهَنَتُهَا يُحَصِّنُونَ بُيُوتَهَا بِأَبْوَابٍ وَأَقْفَالٍ وَمَزَالِيجَ كَمَا يُفْعَلُ بِمَنْ حُكِمَ عَلَيْهِ بِالْمَوْتِ لِئَلاَّ تَسْلُبَهَا اللُّصُوصُ.
          </language>
-      </verse>
-
-      <verse num="18">
-         <language id="English">
+</verse>
+<verse num="18">
+<language id="English" verse="18">
             They light candles to them, and in great number, and still they are unable to see, for they are like logs in the house.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="18">
             Para imam memasang lebih banyak lampu bagi mereka dari pada untuk dirinya sendiri. Namun demikian allah-allah itu belum juga dapat melihat apa-apa.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="18">
             يُوقِدُونَ لَهَا مِنَ السُّرُجِ أَكْثَرَ مِمَّا يُوقِدُونَ لأَنْفُسِهِمْ وَهِيَ لاَ تَسْتَطِيعُ أَنْ تَرَى مِنْهَا شَيْئاً.
          </language>
-      </verse>
-
-      <verse num="19">
-         <language id="English">
+</verse>
+<verse num="19">
+<language id="English" verse="19">
             It is truly said that the creeping things, which are of the earth, gnaw their hearts, and yet when these devour them and their garments, they do not feel it.
-         </language><language id="Indonesian"><div>Sama halnya seperti kasau kuil mereka. Kata orang: "hatinya sudah dimakan bubuk." Bila allah-allah itu sendiri serta pakaiannya dimakan rayap, mereka tidak merasa.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="19">
+Sama halnya seperti kasau kuil mereka. Kata orang: "hatinya sudah dimakan bubuk." Bila allah-allah itu sendiri serta pakaiannya dimakan rayap, mereka tidak merasa.
+</language>
+<language id="Arabic" verse="19">
             إِنَّمَا هِيَ كَجَوَائِزِ الْبَيْتِ وَقَدْ ذُكِرَ أَنَّ حَشَرَاتِ الأَرْضِ تَنْهَشُ قُلُوبَهَا فَتُؤْكَلُ هِيَ وَثِيَابُهَا وَلاَ تَشْعُرُ.
          </language>
-      </verse>
-
-      <verse num="20">
-         <language id="English">
+</verse>
+<verse num="20">
+<language id="English" verse="20">
             Their faces are made black by the smoke that is made in the house.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="20">
             Muka mereka menjadi hitam karena asap di kuil.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="20">
             تَسْوَدُّ وُجُوهُهَا مِنَ الدُّخَانِ الَّذِي فِي الْبَيْتِ.
          </language>
-      </verse>
-
-      <verse num="21">
-         <language id="English">
+</verse>
+<verse num="21">
+<language id="English" verse="21">
             Over their bodies and over their heads fly owls and swallows and birds, and similarly, even cats.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="21">
             Kelawar, burung layang-layang dan burung lainnya beterbangan di atas sosok tubuh dan kepala mereka. Demikianpun kucing-kucing.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="21">
             عَلَى أَبْدَانِهَا وَرُؤُوسِهَا يَثِبُ الْبُومُ وَالْخُطَّافُ وَسَائِرُ الطُّيُورِ وَالسَّنَانِيرُ.
          </language>
-      </verse>
-
-      <verse num="22">
-         <language id="English">
+</verse>
+<verse num="22">
+<language id="English" verse="22">
             From this you should understand that they are not gods. Therefore, neither should you fear them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="22">
             Dari padanya tahulah kamu bahwa mereka bukan allah adanya. Jadi, jangan takut kepada mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="22">
             فَاعْلَمُوا مِنْ ذلِكَ أَنَّهَا لَيْسَتْ بِآلِهَةٍ فَلاَ تَخَافُوهَا.
          </language>
-      </verse>
-
-      <verse num="23">
-         <language id="English">
+</verse>
+<verse num="23">
+<language id="English" verse="23">
             Furthermore, the gold which they have is shiny, but unless someone wipes off the rust, they will not shine. And even when they were molten, they did not feel it.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="23">
             Jika emas yang dengannya mereka dihiasi, tidak digosok karatnya, maka mereka tidak mengkilap. Mereka tidak merasa ketika dituang.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="23">
             وَالذَّهَبُ الَّذِي يُغَشِّيهَا لِلزِّينَةِ إِنْ لَمْ يُمْسَحْ صَدَأُهُ لَمْ يَكُنْ لَهَا رَوْنَقٌ كَمَا أَنَّهَا إِذْ صِيغَ عَلَيْهَا لَمْ تَشْعُرْ.
          </language>
-      </verse>
-
-      <verse num="24">
-         <language id="English">
+</verse>
+<verse num="24">
+<language id="English" verse="24">
             They acquire all kinds of costly things, yet there is no breath in them.
-         </language><language id="Indonesian"><div>Mereka dibeli dengan harga apa saja, walaupun mereka tidak bernyawa.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="24">
+Mereka dibeli dengan harga apa saja, walaupun mereka tidak bernyawa.
+</language>
+<language id="Arabic" verse="24">
             تُبْتَاعُ بِكُلِّ ثَمَنٍ وَإِنْ لَمْ يَكُنْ فِيهَا رُوحٌ.
          </language>
-      </verse>
-
-      <verse num="25">
-         <language id="English">
+</verse>
+<verse num="25">
+<language id="English" verse="25">
             Without feet, they are carried upon shoulders, showing their unworthiness to all men. And so, may those who worship them be confounded.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="25">
             Karena tidak berkaki maka mereka diusung di atas pundak dan dengan demikian ditunjukkannya kepada semua orang bahwa mereka tidak berharga. Juga penyembah-penyembah mereka bermalu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="25">
             لَيْسَ لَهَا أَرْجُلٌ، فَتُحْمَلُ عَلَى الْمَنَاكِبِ وَبِذلِكَ تُبْدِي لِلنَّاسِ هَوَانَهَا وَالَّذِينَ يَعْبُدُونَهَا هُمْ أَيْضاً يَخْزَوْنَ.
          </language>
-      </verse>
-
-      <verse num="26">
-         <language id="English">
+</verse>
+<verse num="26">
+<language id="English" verse="26">
             Because of this, if they fall to the ground, they do not get up by themselves; and if someone sets it upright, they will not stand firm on their own; yet, just like the dead, offerings are placed next to them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="26">
             Sebab jika allah-allah itu jatuh ke tanah, maka mesti ditegakkan oleh penyembah-penyembahnya; jika ditaruh tegak maka mereka tidak dapat bergerak sendiri; jika miring maka tidak dapatlah mereka berdiri tegak kembali. Persembahan-persembahan ditaruh di depan mereka seperti untuk orang-orang mati.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="26">
             لأَنَّهَا إِذَا سَقَطَتْ عَلَى الأَرْضِ لاَ تَقُومُ مِنْ نَفْسِهَا وَلاَ إِذَا نَصَبَهَا أَحَدٌ تَتَحَرَّكُ مِنْ نَفْسِهَا وَلاَ إِذَا أُمِيلَتْ تَسْتَقِيمُ بَلْ تُقَدَّمُ إِلَيْهَا الْهَدَايَا كَمَا تُقَدَّمُ إِلَى أَمْوَاتٍ.
          </language>
-      </verse>
-
-      <verse num="27">
-         <language id="English">
+</verse>
+<verse num="27">
+<language id="English" verse="27">
             The priests themselves sell their sacrifices, and they spend it wastefully; and, in like manner, their wives take part of it, never sharing anything with the sick or the beggars.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="27">
             Korban-korban bagi mereka dijual oleh para imamnya dan dipakainya untuk kepentingan sendiri. Lagi-lagi isteri mereka mengasinkan sebagian, tetapi tidak sedikitpun diberikan kepada orang miskin dan lemah.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="27">
             وَكَهَنَتُهَا يَبِيعُونَ ذَبَائِحَهَا لِمَنْفَعَةِ أَنْفُسِهِمْ. وَكَذلِكَ نِسَاؤُهُمْ يُمَلِّحْنَ مَا بَقِيَ مِنْهَا وَلاَ يَجْعَلْنَ فِيهَا حَظًّا لِمِسْكِينٍ وَلاَ سَقِيمٍ.
          </language>
-      </verse>
-
-      <verse num="28">
-         <language id="English">
+</verse>
+<verse num="28">
+<language id="English" verse="28">
             Fertile and menstruous women contaminate their sacrifices. And so, knowing from this that they are not gods, you should not fear them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="28">
             Perempuan-perempuan yang mendapat bulan atau yang baru bersalin menjamah korban-korbannya. Jadi, karena dari padanya kamu tahu bahwa mereka bukan allah adanya, jangan takut kepada mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="28">
             الطَّامِثُ وَالنُّفْسَاءُ تَلْمُسَانِ ذَبَائِحَهَا. فَإِذْ قَدْ عَلِمْتُمْ مِنْ ذلِكَ أَنَّهَا لَيْسَتْ بِآلِهَةٍ فَلاَ تَخَافُوهَا.
          </language>
-      </verse>
-
-      <verse num="29">
-         <language id="English">
+</verse>
+<verse num="29">
+<language id="English" verse="29">
             For what reason are they called gods? It is because the women serve before the gods of silver and gold and wood,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="29">
             Bagaimana mereka dapat dinamakan allah? Sebab bahkan perempuan-perempuan menyajikan korban bagi allah-allah perak, emas dan kayu itu!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="29">
             لِمَاذَا تُسَمَّى آلِهَةً؟ لأَنَّ النِّسَاءَ يُقَدِّمْنَ الْهَدَايَا لِهذِهِ الآلِهَةِ الَّتِي هِيَ مِنَ الْفِضَّةِ وَالذَّهَبِ وَالْخَشَبِ.
          </language>
-      </verse>
-
-      <verse num="30">
-         <language id="English">
+</verse>
+<verse num="30">
+<language id="English" verse="30">
             and the priests sit in their houses, with torn garments, and their heads and beards shaven, and nothing on their heads.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="30">
             Di dalam kuil-kuilnya para imam bersila dengan jubah terkoyak, dengan kepala dan janggut tercukur dan dengan kepala tidak bertudung.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="30">
             وَلأَنَّ الْكَهَنَةَ يَجْلِسُونَ فِي بُيُوتِهَا بِأَقْمِصَةٍ مُمَزَّقَةٍ وَهُمْ مَحْلُوقُو الرُّؤُوسِ وَاللِّحَى وَرُؤُوسُهُمْ مَكْشُوفَةٌ
          </language>
-      </verse>
-
-      <verse num="31">
-         <language id="English">
+</verse>
+<verse num="31">
+<language id="English" verse="31">
             But they roar, shouting out to their gods, just as at a feast for the dead.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="31">
             Melolong-lolonglah para imam dan berteriak-teriak di depan allah-allahnya seperti orang berbuat dalam kenduri.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="31">
             وَيَعِجُّونَ صَائِحِينَ أَمَامَ آلِهَتِهِمْ كَالْجَالِسِينَ عَلَى مَأْدُبَةِ الْمَيْتِ.
          </language>
-      </verse>
-
-      <verse num="32">
-         <language id="English">
+</verse>
+<verse num="32">
+<language id="English" verse="32">
             The priests take away the garments of their gods, and clothe their wives and their sons.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="32">
             Dan lagi-lagi para imam mengambil dari pakaian allah-allah itu, lalu digunakannya untuk isteri-isteri serta anak-anak mereka sendiri.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="32">
             الْكَهَنَةُ يَنْزِعُونَ مِنْ ثِيَابِهَا مَا يَكْسُونَ نِسَاءَهُمْ وَأَوْلاَدَهُمْ.
          </language>
-      </verse>
-
-      <verse num="33">
-         <language id="English">
+</verse>
+<verse num="33">
+<language id="English" verse="33">
             And whether they endure evil from someone, or good, they are not able to repay it. They can neither establish a king, nor remove him.
-         </language><language id="Indonesian"><div>Jika allah-allah itu mengalami baik buruk dari seseorang, maka membalas mereka tak dapat. Mengangkat atau memecat rajapun mereka tak dapat.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="33">
+Jika allah-allah itu mengalami baik buruk dari seseorang, maka membalas mereka tak dapat. Mengangkat atau memecat rajapun mereka tak dapat.
+</language>
+<language id="Arabic" verse="33">
             وَإِذَا أَسَاءَ إِلَيْهَا أَحَدٌ أَوْ أَحْسَنَ فَلاَ تَسْتَطِيعُ الْمُكَافَأَةَ وَلاَ فِي وُسْعِهَا أَنْ تُقِيمَ مَلِكاً أَوْ تَخْلَعَهُ
          </language>
-      </verse>
-
-      <verse num="34">
-         <language id="English">
+</verse>
+<verse num="34">
+<language id="English" verse="34">
             Similarly, they can neither give riches, nor avenge evil. If anyone makes a vow to them, and does not keep it, they cannot require it.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="34">
             Kekayaan maupun uang tidak dapat mereka berikan. Jika seseorang bernazar tapi tidak membayar, maka merekapun tidak dapat menagih.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="34">
             وَلاَ تَقْدِرُ أَنْ تَهَبَ عَرْضاً وَلاَ نَقْداً. وَإِذَا نَذَرَ أَحَدٌ نَذْراً وَلَمْ يَقْضِهِ فَلاَ تُطَالِبُ.
          </language>
-      </verse>
-
-      <verse num="35">
-         <language id="English">
+</verse>
+<verse num="35">
+<language id="English" verse="35">
             They cannot free a man from death, nor rescue the weak from the strong.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="35">
             Merekapun tidak dapat melepaskan seorangpun dari maut dan tidak pula dapat disentaknya orang lemah dari genggaman orang kuat.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="35">
             لاَ تُنَحِّي أَحَداً مِنَ الْمَوْتِ وَلاَ تُنْقِذُ الضَّعِيفَ مِنْ يَدِ الْقَوِيِّ.
          </language>
-      </verse>
-
-      <verse num="36">
-         <language id="English">
+</verse>
+<verse num="36">
+<language id="English" verse="36">
             They cannot restore sight to the blind, nor free a man from need.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="36">
             Penglihatan tidak dapat mereka pulihkan kepada seorang yang buta dan tidak pula dapat dilepaskannya orang yang dalam kesesakan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="36">
             لاَ تَرُدُّ الْبَصَرَ لِلأَعْمَى وَلاَ تُفَرِّجُ عَنْ ذِي شِدَّةٍ.
          </language>
-      </verse>
-
-      <verse num="37">
-         <language id="English">
+</verse>
+<verse num="37">
+<language id="English" verse="37">
             They will not have mercy on the widow, nor do good to orphans.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="37">
             Mereka tidak mengasihani seorang janda dan tidak berbuat baik kepada yatim piatu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="37">
             لاَ تَرْحَمُ أَرْمَلَةً وَلاَ تُحْسِنُ إِلَى يَتِيمٍ.
          </language>
-      </verse>
-
-      <verse num="38">
-         <language id="English">
+</verse>
+<verse num="38">
+<language id="English" verse="38">
             Their gods of wood, and of stone, and of gold, and of silver, are like stones from the mountain; and those who worship them will be confounded.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="38">
             Mereka hanya dari kayu yang disalut dengan emas dan perak, mirip dengan batu-batu dari bukit. Orang yang menyembah mereka akan mendapat malu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="38">
             فَهذِهِ الآلِهَةُ الَّتِي هِيَ مِنَ الْخَشَبِ مُغَشَّاةً بِالذَّهَبِ وَالْفِضَّةِ تُمَاثِلُ حِجَارَةً مِنَ الْجَبَلِ وَالَّذِينَ يَعْبُدُونَهَا يَخْزَوْنَ
          </language>
-      </verse>
-
-      <verse num="39">
-         <language id="English">
+</verse>
+<verse num="39">
+<language id="English" verse="39">
             In what way, then, is it to be supposed or said that they are gods?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="39">
             Bagaimana orang dapat menyangka atau berkata bahwa mereka itu allah adanya?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="39">
             فَكَيْفَ يَسُوغُ أَنْ تُحْسَبَ أَوْ تُسَمَّى آلِهَةً.
          </language>
-      </verse>
-
-      <verse num="40">
-         <language id="English">
+</verse>
+<verse num="40">
+<language id="English" verse="40">
             For even the Chaldeans themselves do not honor these, who, when they hear about a mute, unable to speak, they offer him to Bel, asking from him that he may speak,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="40">
             Lagipula orang-orang Kasdim sendiri menghina allah-allahnya. Jika orang Kasdim melihat seorang bisu yang tidak dapat bicara, lalu dibawanya kepada dewa Bel dan diharuskannya orang bisu itu bicara dengan dia, seolah-olah Bel dapat menangkap.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="40">
             بَلِ الْكَلْدَانِيُّونَ أَنْفُسُهُمْ يَزْدَرُونَهَا. فَإِنَّهُمْ إِذَا رَأَوْا أَبْكَمَ لاَ يَنْطِقُ يُقَدِّمُونَهُ إِلَى بَالٍ وَيَطْلُبُونَ مِنْهُ النُّطْقَ كَأَنَّهُ يَشْعُرُ
          </language>
-      </verse>
-
-      <verse num="41">
-         <language id="English">
+</verse>
+<verse num="41">
+<language id="English" verse="41">
             as if these, who are unable to move, would be able to perceive. And even they themselves, when they shall understand this, will abandon them, for, having come to their senses, they do not consider them to be gods.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="41">
             Dan meskipun orang-orang Kasdim mengerti, namun allah-allah itu tidak dapat ditinggalkannya; memang orang-orang Kasdim tidak berakal!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="41">
             وَمَعَ اخْتِبَارِهِمْ لَهَا لاَ يَتْرُكُونَ عِبَادَتَهَا لأَنَّهُمْ لاَ يَشْعُرُونَ.
          </language>
-      </verse>
-
-      <verse num="42">
-         <language id="English">
+</verse>
+<verse num="42">
+<language id="English" verse="42">
             Yet the women, wrapped in cords, sit by the roads, burning olive-stones.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="42">
             Perempuan-perempuan yang berikat pinggang duduk-duduk di tepi jalan membakar sekam.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="42">
             وَالنِّسَاءُ يَقْعُدْنَ عَلَى الطُّرُقِ مُتَحَزِّمَاتٍ بِالْحِبَالِ يُبَخِّرْنَ بِالنُّخَالَةِ
          </language>
-      </verse>
-
-      <verse num="43">
-         <language id="English">
+</verse>
+<verse num="43">
+<language id="English" verse="43">
             And when any one of them, having been attracted by someone passing by, would sleep with him, she reproaches her neighbor because she was not found worthy, as she was, nor was her cord broken.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="43">
             Bila seseorang dari antara mereka dibawa oleh seseorang yang lewat, lalu berseketiduran dengannya, maka perempuan itu menistakan tetangganya oleh karena tetangganya tidak dipandang layak seperti dia dan oleh karena ikat pinggangnya tidaklah koyak.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="43">
             فَإِذَا اجْتَذَبَ مُجْتَازٌ وَاحِدَةً مِنْهُنَّ وَضَاجَعَهَا عَيَّرَتْ صَاحِبَتَهَا بِأَنَّهَا لَمْ تَحْظَ مِثْلَهَا وَلَمْ يُقْطَعْ حَبْلُهَا.
          </language>
-      </verse>
-
-      <verse num="44">
-         <language id="English">
+</verse>
+<verse num="44">
+<language id="English" verse="44">
             But all things that occur with them are false; in what way, then, is it to be considered or said that they are gods?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="44">
             Tetapi semuanya yang terjadi pada mereka adalah penipuan belaka. Bagaimana orang dapat menyangka atau berkata bahwa mereka itu allah adanya?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="44">
             وَكُلُّ مَا يَصْنَعُ لِهذِهِ الآلِهَةِ إِنَّمَا هُوَ زُورٌ فَكَيْفَ يَسُوغُ أَن تُحْسَبَ أَوْ تُسَمَّى آلِهَةً.
          </language>
-      </verse>
-
-      <verse num="45">
-         <language id="English">
+</verse>
+<verse num="45">
+<language id="English" verse="45">
             Yet they have been made by the workmen and the goldsmiths. They will be nothing else but what the priests want them to be.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="45">
             Mereka dibuat oleh tukang kayu dan para pandai emas dan hanya menjadi apa yang dikehendaki para ahli.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="45">
             هِيَ صَنْعَةُ النَّجَّارِ وَالصَّائِغِ فَلاَ تَكُونُ إِلاَّ مَا يُرِيدُ صَانِعُهَا.
          </language>
-      </verse>
-
-      <verse num="46">
-         <language id="English">
+</verse>
+<verse num="46">
+<language id="English" verse="46">
             For the artisans themselves, who make them, do not exist for a long time. So then, can these things, which have been made by them, be gods?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="46">
             Orang-orang yang membuatnya itu sendiri tidak mencapai umur panjang. Bagaimana gerangan buatan mereka itu allah adanya?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="46">
             وَالَّذِينَ صَنَعُوهَا قَصِيرُو بَقَاءٍ فَكَيْفَ يَكُونُ مَا صَنَعُوهُ.
          </language>
-      </verse>
-
-      <verse num="47">
-         <language id="English">
+</verse>
+<verse num="47">
+<language id="English" verse="47">
             Yet they have bequeathed falsehoods and disgrace after this to the future.
-         </language><language id="Indonesian">Sebab mereka hanya meninggalkan penipuan dan nista kepada keturunannya.
          </language>
-         <language id="Arabic">
+<language id="Indonesian" verse="47">Sebab mereka hanya meninggalkan penipuan dan nista kepada keturunannya.
+         </language>
+<language id="Arabic" verse="47">
             إِنَّهُمْ تَرَكُوا لِمَنْ يَلِيهِمْ زُوراً وَعَاراً.
          </language>
-      </verse>
-
-      <verse num="48">
-         <language id="English">
+</verse>
+<verse num="48">
+<language id="English" verse="48">
             For when they are overcome by battle or evil, the priests consider among themselves where they may hide themselves with them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="48">
             Apabila perang atau bencana mendatangi mereka, maka para imam berembuk di mana dapat bersembunyi dengan allah-allahnya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="48">
             وَإِذَا أَتَى عَلَيْهَا حَرْبٌ وَشَرٌّ يَأْتَمِرُ الْكَهَنَةُ فِيمَا بَيْنَهُمْ أَيْنَ يَخْتَبِئُونَ بِهَا
          </language>
-      </verse>
-
-      <verse num="49">
-         <language id="English">
+</verse>
+<verse num="49">
+<language id="English" verse="49">
             Therefore, why would they be perceived to be gods, who can neither free themselves from war, nor rescue themselves from evils?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="49">
             Jadi, bagaimana orang tidak sampai mengerti bahwa allah-allah yang tidak dapat menyelamatkan dirinya dari perang dan bencana itu bukan allah adanya?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="49">
             فَكَيْفَ لاَ يُشْعَرُ أَنَّهَا لَيْسَتْ بِآلِهَةٍ وَهِيَ لاَ تُخَلِّصُ أَنْفُسَهَا مِنَ الْحَرْبِ وَالشَّرِّ.
          </language>
-      </verse>
-
-      <verse num="50">
-         <language id="English">
+</verse>
+<verse num="50">
+<language id="English" verse="50">
             For, in as much as they are only wood, inlaid with gold and silver, so let it be known henceforth, by all nations and kings, that they are false; because it has been revealed that they are not gods, but the work of men’s hands, and there is no work of God in them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="50">
             Karena mereka hanya dari kayu dan disalut dengan emas dan perak saja maka tahulah orang akhirnya bahwa mereka hanya penipuan belaka. Bagi segala bangsa dan segala raja akan menjadi jelaslah bahwa allah-allah itu bukan allah adanya, melainkan buatan tangan manusia dan di dalamnya tidak ada pekerjaan ilahi satupun.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="50">
             وَبِمَا أَنَّهَا مِنَ الْخَشَبِ مُغَشَّاةً بِالذَّهَبِ وَالْفِضَّةِ فَسَيُعْلَمُ فِيمَا بَعْدُ أَنَّهَا زُورٌ وَيَتَبَيَّنُ لِجَمِيعِ الأُمَمِ وَالْمُلُوكِ أَنَّهَا لَيْسَتْ آلِهَةً بَلْ صَنْعَةَ أَيْدِي النَّاسِ وَلاَ شَيْءَ فِيهَا مِنْ صَنْعَةِ اللهِ.
          </language>
-      </verse>
-
-      <verse num="51">
-         <language id="English">
+</verse>
+<verse num="51">
+<language id="English" verse="51">
             For this reason, then, it has been accepted that they are not gods, but are works of the hands of men, and no work of God is in them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="51">
             Bagi siapakah tidak ketahuan bahwa mereka bukan allah adanya?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="51">
             فَهَلْ مِنْ حَاجَةٍ إِلَى التَّنْبِيهِ عَلَى أَنَّهَا لَيْسَتْ بِآلِهَةٍ.
          </language>
-      </verse>
-
-      <verse num="52">
-         <language id="English">
+</verse>
+<verse num="52">
+<language id="English" verse="52">
             They have not raised up a king in the region, nor will they give rain to men.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="52">
             Sebab allah-allah itu tidak mengangkat seorang raja atas suatu negeri dan hujanpun tidak diturunkannya bagi manusia.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="52">
             فَإِنَّهَا لاَ تُقِيمُ مَلِكاً عَلَى بَلَدٍ وَلاَ تُعْطِي النَّاسَ مَطَراً
          </language>
-      </verse>
-
-      <verse num="53">
-         <language id="English">
+</verse>
+<verse num="53">
+<language id="English" verse="53">
             They will not discern a judgment for anyone, nor will they free a region from injury, because they can do nothing, like crows in the middle of heaven and earth.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="53">
             Peradilan tidak mereka berikan dan tidak mereka lepaskan orang yang dianiaya. Sebab mereka sendiri tidak berdaya. Mereka mirip dengan burung gaok yang terbang antara langit dan bumi. </language>
-         <language id="Arabic">
+<language id="Arabic" verse="53">
             وَلاَ تُخَاصِمُ حَتَّى لِخُصُومَةِ أَنْفُسِهَا وَلاَ تُنْقِذُ أَحَداً مِنْ مَظْلِمَةٍ إِذْ لاَ تَسْتَطِيعُ شَيْئاً وَإِنَّمَا هِيَ كَالْغِرْبَانِ الَّتِي بَيْنَ السَّمَاءِ وَالأَرْضِ.
          </language>
-      </verse>
-
-      <verse num="54">
-         <language id="English">
+</verse>
+<verse num="54">
+<language id="English" verse="54">
             And, indeed, when there happens to be a fire in the house of these gods of wood, silver, and gold, the priests will certainly run away and save themselves, but these will truly be burned up like logs in the midst of it.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="54">
             Sebab apabila api jatuh di atas kuil allah-allah dari kayu atau yang disalut dengan emas dan perak itu, niscaya para imamnya melarikan dan menyelamatkan diri, sedangkan allah-allah itu sendiri terbakar di tengah-tengah seperti balok saja.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="54">
             وَإِذَا وَقَعَتْ نَارٌ فِي بَيْتِ هذِهِ الآلِهَةِ الْمَصْنُوعَةِ مِنَ الْخَشَبِ الْمُغَشَّاةِ بِالذَّهَبِ أَوْ الْفِضَّةِ فَكَهَنَتُهَا يَفِرُّونَ وَيَنْجُونَ أَمَّا هِيَ فَتَحْتَرِقُ كَجَوَائِزِ الْبَيْتِ.
          </language>
-      </verse>
-
-      <verse num="55">
-         <language id="English">
+</verse>
+<verse num="55">
+<language id="English" verse="55">
             Yet they cannot withstand a king and war. In what way, then, is it to be considered or accepted that they are gods?
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="55">
             Mereka tidak dapat menentang raja atau seteru. Bagaimana orang dapat menerima atau menyangka bahwa mereka itu allah adanya?
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="55">
             إِنَّهَا لاَ تُقَاوِمُ مَلِكاً وَلاَ عَدُوًّا فَكَيْفَ يَسُوغُ أَنْ تُحْسَبَ أَوْ تُعَدَّ آلِهَةً.
          </language>
-      </verse>
-
-      <verse num="56">
-         <language id="English">
+</verse>
+<verse num="56">
+<language id="English" verse="56">
             These gods of wood and stone, inlaid with gold and silver, can free themselves neither from thieves nor from robbers; whoever is stronger than they are,
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="56">
             Allah-allah kayu yang disalut dengan emas dan perak itu tidak dapat menyelamatkan dirinya dari pencuri dan perampok.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="56">
             وَهذِهِ الآلِهَةُ الْمَصْنُوعَةُ مِنَ الْخَشَبِ الْمُغَشَّاةِ بِالْفِضَّةِ وَالذَّهَبِ لاَ تُنَجِّي أَنْفُسَهَا مِنَ السُّرَّاقِ وَلاَ اللُّصُوصِ
          </language>
-      </verse>
-
-      <verse num="57">
-         <language id="English">
+</verse>
+<verse num="57">
+<language id="English" verse="57">
             will take up these things, the gold and the silver, and the garments which cover them, and will get away; neither will they be able to help themselves.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="57">
             Orang perkasa mengambil emas dan perak itu lalu pergi dengan pakaian yang dikenakan kepada allah-allah itu, sedangkan mereka tidak dapat menolong dirinya.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="57">
             وَالَّذِينَ يَسْتَوْلُونَ عَلَيْهَا يَنْزِعُونَ عَنْهَا الذَّهَبَ وَالْفِضَّةَ وَالثِّيَابَ الَّتِي عَلَيْهَا وَيَذْهَبُونَ بِهَا وَهِيَ لاَ تُدَافِعُ عَنْ أَنْفُسِهَا.
          </language>
-      </verse>
-
-      <verse num="58">
-         <language id="English">
+</verse>
+<verse num="58">
+<language id="English" verse="58">
             Therefore, it is better to be a king displaying his power, or a useful vessel in a house, about which he who owns it will boast, or a door in the house, which keeps safe what is inside, than to be these gods of falsehood.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="58">
             Karena itu maka lebih baiklah seorang raja yang menunjukkan keberaniannya, atau bejana di rumah yang berguna dan dapat dipergunakan oleh pemilik dari pada allah-allah palsu itu. Juga lebih baiklah pintu rumah yang melindungi apa yang ada di dalam rumah itu dari pada allah-allah yang palsu itu. Atau lebih baik pulalah tiang kayu di dalam istana raja dari pada allah-allah palsu itu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="58">
             لاَ جَرَمَ أَنَّ مَلِكاً مِنْ ذَوِي الْبَأْسِ أَوْ إِنَاءً نَافِعاً فِي الْبَيْتِ يَسْتَخْدِمُهُ مَالِكُهُ خَيْرٌ مِنْ آلِهَةِ الزُّورِ. وَبَاباً فِي الْبَيْتِ يَحْفَظُ مَا فِيهِ خَيْرٌ مِنْ آلِهَةِ الزُّورِ. وَعَمُوداً مِنَ الْخَشَبِ فِي قَصْرٍ خَيْرٌ مِنْ آلِهَةِ الزُّورِ.
          </language>
-      </verse>
-
-      <verse num="59">
-         <language id="English">
+</verse>
+<verse num="59">
+<language id="English" verse="59">
             For the sun, and the moon, and the constellations, though they are brilliant and have been sent forth to be useful, are obedient.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="59">
             Matahari, bulan dan bintang-bintang yang berkilau-kilauan dan diberi tugas untuk berguna, adalah patuh.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="59">
             إِنَّ الشَّمْسَ وَالْقَمَرَ وَالنُّجُومَ تُضِيءُ وَتُرْسَلُ لِمَنْفَعَةِ الْخَلْقِ وَتُطِيعُ مُرْسِلَهَا.
          </language>
-      </verse>
-
-      <verse num="60">
-         <language id="English">
+</verse>
+<verse num="60">
+<language id="English" verse="60">
             Similarly, the lightning, when it appears and is evident, and, in like manner, the wind blowing in every region,
-         </language><language id="Indonesian"><div>Halilintarpun kelihatan bagus apabila berkilat. Demikianpun angin bertiup ke segala negeri.</div></language>
-         <language id="Arabic">
+         </language>
+<language id="Indonesian" verse="60">
+Halilintarpun kelihatan bagus apabila berkilat. Demikianpun angin bertiup ke segala negeri.
+</language>
+<language id="Arabic" verse="60">
             وَكَذلِكَ الْبَرْقُ إِذَا لَمَعَ يَرُوقُ الْعَيْنَ وَالرِّيحُ تَهُبُّ فِي كُلِّ نَاحِيَةٍ.
          </language>
-      </verse>
-
-      <verse num="61">
-         <language id="English">
+</verse>
+<verse num="61">
+<language id="English" verse="61">
             and the clouds, when God orders them to make their rounds over the whole world, each carries out what was commanded.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="61">
             Apabila Allah memerintahkan kepada awan-awan untuk berlayang-layang ke seluruh dunia, maka dilaksanakannyalah apa yang disuruh itu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="61">
             وَالسُّحُبُ يَأْمُرُهَا اللهُ أَنْ تَمُرَّ عَلَى كُلِّ الْمَسْكُونَةِ فَتَقْضِي مَا أُمِرَتْ بِهِ.
          </language>
-      </verse>
-
-      <verse num="62">
-         <language id="English">
+</verse>
+<verse num="62">
+<language id="English" verse="62">
             Furthermore, the fire, having been sent from above so that it may consume mountains and woods, does what it has been instructed to do. Yet these are not similar, neither in splendor, nor in power, to any one of them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="62">
             Api yang dikirim dari atas untuk melulur gunung-gemunung dan hutan rimbapun melakukan apa yang disuruh pula. Tetapi allah-allah itu tidak menyerupai semuanya itu baik dalam rupa maupun dalam kekuatan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="62">
             وَالنَّارُ الْمُرْسَلَةُ مِنْ فَوْقُ لِتُفْنِيَ الْجِبَالَ وَالْغَابَ تَفْعَلُ مَا أُوصِيَتْ بِهِ. أَمَّا تِلْكَ فَلاَ تُعْدَلُ بِهذِهِ مَنْظَراً وَلاَ قُوَّةً
          </language>
-      </verse>
-
-      <verse num="63">
-         <language id="English">
+</verse>
+<verse num="63">
+<language id="English" verse="63">
             From this, it should neither be supposed, nor said, that they are gods; since they are neither able to give judgment, nor to accomplish anything for men.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="63">
             Dari sebab itu maka orang tidak dapat menyangka atau berkata bahwa mereka itu allah adanya, oleh karena mereka tidak dapat menjalankan peradilan atau berbuat baik kepada manusia.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="63">
             فَلاَ يَسُوغُ أَنْ تُحْسَبَ أَوْ تُسَمَّى آلِهَةً إِذْ لاَ تَسْتَطِيعُ أَنْ تُجْرِي حُكْماً أَوْ تَصْنَعَ إِحْسَاناً.
          </language>
-      </verse>
-
-      <verse num="64">
-         <language id="English">
+</verse>
+<verse num="64">
+<language id="English" verse="64">
             And so, knowing that they are not gods, therefore, have no fear of them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="64">
             Jadi, karena kamu tahu bahwa mereka bukan allah adanya, maka jangan takut kepada mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="64">
             فَإِذْ قَدْ عَلِمْتُمْ أَنَّهَا لَيْسَتْ بِآلِهَةٍ فَلاَ تَخَافُوهَا
          </language>
-      </verse>
-
-      <verse num="65">
-         <language id="English">
+</verse>
+<verse num="65">
+<language id="English" verse="65">
             For they can neither curse kings, nor bless them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="65">
             Sebab allah-allah itu tidak dapat mengutuk atau memberkati para raja.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="65">
             فَإِنَّهَا لاَ تَلْعَنُ الْمُلُوكَ وَلاَ تُبَارِكُهُمْ
          </language>
-      </verse>
-
-      <verse num="66">
-         <language id="English">
+</verse>
+<verse num="66">
+<language id="English" verse="66">
             Besides, they show no signs in heaven to the nations; they neither shine like the sun, nor give light like the moon.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="66">
             Merekapun tidak dapat mempertunjukkan tanda-tanda di langit di tengah-tengah bangsa-bangsa. Mereka tidak berkilau-kilauan seperti matahari dan tidak bercahaya seperti bulan.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="66">
             وَلاَ تُبْدِي آيَاتٍ فِي الأُمَمِ وَلاَ فِي السَّمَاءِ وَلاَ تُنِيرُ كَالشَّمْسِ وَلاَ تُضِيءُ كَالْقَمَرِ.
          </language>
-      </verse>
-
-      <verse num="67">
-         <language id="English">
+</verse>
+<verse num="67">
+<language id="English" verse="67">
             Beasts are better than they are, for they can flee under a covering, and so protect themselves.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="67">
             Binatang-binatang liar lebih baik dari allah-allah itu, sebab dapat melarikan diri ke perlindungan dan begitu melepaskan diri.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="67">
             الْوُحُوشُ خَيْرٌ مِنْهَا لأَنَّ فِي طَاقَتِهَا أَنْ تَهْرُبَ إِلَى مَلْجَإٍ وَتَنْفَعَ أَنْفُسَهَا.
          </language>
-      </verse>
-
-      <verse num="68">
-         <language id="English">
+</verse>
+<verse num="68">
+<language id="English" verse="68">
             Therefore, in no way is it clear to us that they are gods; because of this, you should not fear them.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="68">
             Sekali-kali tidak terang bagi kita bahwa mereka itu allah adanya. Maka jangan takut kepada mereka.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="68">
             وَبِالْجُمْلَةِ فَلاَ يَتَبَيَّنُ لَنَا بِوَجْهٍ مِنَ الْوُجُوهِ أَنَّهَا آلِهَةٌ فَلاَ تَخَافُوهَا.
          </language>
-      </verse>
-
-      <verse num="69">
-         <language id="English">
+</verse>
+<verse num="69">
+<language id="English" verse="69">
             For just as a scarecrow in a cucumber field protects nothing, so are their gods of wood, and silver, and inlaid gold.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="69">
             Seperti orang-orangan di ladang tidak menjagai sesuatupun, demikian pula halnya allah-allah kayu mereka yang disalut dengan emas dan perak itu.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="69">
             مَثَلُ آلِهَتِهِمِ الْمَصْنُوعَةِ مِنَ الْخَشَبِ الْمُغَشَّاةِ بِالذَّهَبِ وَالْفِضَّةِ مَثَلُ شَخْصٍ مَنْصُوبٍ فِي مَقْثَأَةٍ لاَ يَحْرُسُ شَيْئاً.
          </language>
-      </verse>
-
-      <verse num="70">
-         <language id="English">
+</verse>
+<verse num="70">
+<language id="English" verse="70">
             They are just the same as a white thorn in a garden, on which all the birds sit; they are even like a corpse thrown out into the darkness, just so are these gods of wood, and inlaid gold, and inlaid silver.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="70">
             Dan lagi allah-allah kayu mereka yang disalut dengan emas dan perak itu menyerupai semak berduri di kebun, tempat burung apapun hinggap; ataupun mereka menyerupai mayat yang dibuang ke dalam kegelapan saja.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="70">
             وَأَيْضاً مَثَلُ آلِهَتِهِمِ الْمَصْنُوعَةِ مِنَ الْخَشَبِ الْمُغَشَّاةِ بِالذَّهَبِ وَالْفِضَّةِ مَثَلُ عَوْسَجٍ فِي بُسْتَانٍ يَقَعُ عَلَيْهِ كُلُّ طَيْرٍ أَوْ مَثَلُ مَيْتٍ مَطْرُوحٍ فِي الظُّلْمَةِ.
          </language>
-      </verse>
-
-      <verse num="71">
-         <language id="English">
+</verse>
+<verse num="71">
+<language id="English" verse="71">
             By the purple, and likewise the Royal purple, moth-eaten garments upon them, you will then know that they are not gods. And finally, they themselves are consumed and will be a disgrace in the region.
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="71">
             Dari kain ungu tua dan busana yang lapuk pada tubuh mereka tahulah kamu bahwa mereka itu bukan allah adanya. Akhirnya mereka sendiri dimakan habis dan menjadi suatu nista di negeri.
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="71">
             وَمِنَ الأُرْجُوَانِ وَالْقِرْمِزِ اللَّذَيْنِ يَأْكُلُهُمَا الْعُثُّ عَلَيْهَا يُعْلَمُ أَنَّهَا لَيْسَتْ بِآلِهَةٍ. وَفِي آخِرِ الأَمْرِ هِيَ أَيْضاً تُؤْكَلُ وَتَصِيرُ عَاراً فِي الآفَاقِ.
          </language>
-      </verse>
-
-      <verse num="72">
-         <language id="English">
+</verse>
+<verse num="72">
+<language id="English" verse="72">
             Better is the just man who has no such images, for he will be far from disgrace.”
-         </language><language id="Indonesian">
+         </language>
+<language id="Indonesian" verse="72">
             Jadi lebih baiklah orang benar yang tidak mempunyai berhala-berhala. Ia luput dari nista!
          </language>
-         <language id="Arabic">
+<language id="Arabic" verse="72">
             إِنَّ الرَّجُلَ الصِّدِّيقَ الَّذِي لاَ صَنَمَ لَهُ أَفْضَلُ لأَنَّهُ بِمَعْزِلٍ عَنِ الْعَارِ.
          </language>
-      </verse>
-   </chapter>
+</verse>
+</chapter>
 </book>
