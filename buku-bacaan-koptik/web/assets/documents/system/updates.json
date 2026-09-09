@@ -1,6 +1,9 @@
 {
 	"docs": {
-		"document_uri_here": "1"
+		"bible/Judith": "2",
+		"include/praises/IntroductionMidnight":"1", 
+		"include/praises/ThirdHoos":"1",
+		"include/praises/SecondHoos":"1"
 	},
 
 	"menu": [
@@ -2502,8 +2505,7 @@
 							"uri": "/bible/judith/chapter-16"
 						}
 					],
-					"uri": "/bible/judith",
-					"disabled": true
+					"uri": "/bible/judith"
 				},
 				{
 					"name": "Esther",
