@@ -153,38 +153,39 @@ Role Text Language#English {}
 Role Text Language#Arabic {}
 Role Text Language#Coptic {} */
 
-role text language::before {
+role :is(text, introduction) language::before {
 	display: block;
+	color: var(--accent-yellow);
 	font-weight: 600;
 }
 role#Bishop {
-	& text:first-child #English::before { content: 'Bishop' }
-	& text:first-child #Arabic::before { content: 'الأسقف' }
-	& text:first-child #Indonesian::before { content: 'Uskup' }
-	& text:first-child #Coptic::before { content: 'Piepickopoc' }
+	& :is(text:first-child, introduction) #English::before { content: 'Bishop' }
+	& :is(text:first-child, introduction) #Arabic::before { content: 'الأسقف' }
+	& :is(text:first-child, introduction) #Indonesian::before { content: 'Uskup' }
+	& :is(text:first-child, introduction) #Coptic::before { content: 'Piepickopoc' }
 }
 role#Priest {
-	& text:first-child #English::before { content: 'Priest' }
-	& text:first-child #Arabic::before { content: 'الكاهن' }
-	& text:first-child #Indonesian::before { content: 'Abouna' }
-	& text:first-child #Coptic::before { content: 'Piouhb' }
+	& :is(text:first-child, introduction) #English::before { content: 'Priest' }
+	& :is(text:first-child, introduction) #Arabic::before { content: 'الكاهن' }
+	& :is(text:first-child, introduction) #Indonesian::before { content: 'Abouna' }
+	& :is(text:first-child, introduction) #Coptic::before { content: 'Piouhb' }
 }
 role#Reader {
-	& text:first-child #English::before { content: 'Reader' }
-	& text:first-child #Arabic::before { content: 'القارئ' }
-	& text:first-child #Indonesian::before { content: 'Pembaca' }
+	& :is(text:first-child, introduction) #English::before { content: 'Reader' }
+	& :is(text:first-child, introduction) #Arabic::before { content: 'القارئ' }
+	& :is(text:first-child, introduction) #Indonesian::before { content: 'Pembaca' }
 }
 role#Deacon {
-	& text:first-child #English::before { content: 'Deacon' }
-	& text:first-child #Arabic::before { content: 'الشماس' }
-	& text:first-child #Indonesian::before { content: 'Diakon' }
-	& text:first-child #Coptic::before { content: 'Pidiakwn' }
+	& :is(text:first-child, introduction) #English::before { content: 'Deacon' }
+	& :is(text:first-child, introduction) #Arabic::before { content: 'الشماس' }
+	& :is(text:first-child, introduction) #Indonesian::before { content: 'Diakon' }
+	& :is(text:first-child, introduction) #Coptic::before { content: 'Pidiakwn' }
 }
 role#People {
-	& text:first-child #English::before { content: 'People' }
-	& text:first-child #Arabic::before { content: 'الشعب' }
-	& text:first-child #Indonesian::before { content: 'Umat' }
-	& text:first-child #Coptic::before { content: 'Pilaoc' }
+	& :is(text:first-child, introduction) #English::before { content: 'People' }
+	& :is(text:first-child, introduction) #Arabic::before { content: 'الشعب' }
+	& :is(text:first-child, introduction) #Indonesian::before { content: 'Umat' }
+	& :is(text:first-child, introduction) #Coptic::before { content: 'Pilaoc' }
 }
 
 content main ul { padding-inline-start: 40px; }
