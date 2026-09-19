@@ -22,7 +22,7 @@ export const BibleRef = (function () {
 		const addendums = getAddendums(node);
 		const attrs = [...node.attributes].map(a => `${a.name}="${a.value}"`).join(' ');
 
-		return (addendums.introduction || '') + renderSectionTitle(node) + verses.map(v => renderVerse(v, attrs)).join('') + (addendums.conclusion || '');
+		return renderSectionTitle(node) + (addendums.introduction || '') + verses.map(v => renderVerse(v, attrs)).join('') + (addendums.conclusion || '');
 	}
 
 	function renderVerse(chapterVerse, attrs) {
@@ -98,7 +98,7 @@ export const BibleRef = (function () {
 		name = Translation.of(name);
 
 		// document post-processing is yet to run, so we don't use title-html directly here
-		return `<title class="hidden">
+		return `<title>
 			<language id="English">${name['en']} ${chapaterVerse}</language>
 			<language id="Arabic">${name['ar']} ${chapaterVerse}</language>
 			<language id="Indonesian">${name['id']} ${chapaterVerse}</language>
@@ -140,17 +140,18 @@ export const BibleRef = (function () {
 	}
 	function updateGospelIntroductions(doc) {
 		const gospelIntros = doc.querySelectorAll('Text[type="GospelIntro"], text[type="GospelIntro"]').toArray();
+		const bibleVerses = doc.querySelectorAll('bibleverse:first-of-type:not([reference^="Psalms"]').toArray();
+
 		if (!gospelIntros.length) return;
 
-		// assume only one book!!
-		const ref = doc.querySelector('bibleverse')?.getAttribute('reference');
-		if (!ref) return;
+		gospelIntros.forEach(intro => {
+			const ref = bibleVerses.find(verse => intro.compareDocumentPosition(verse) & Node.DOCUMENT_POSITION_FOLLOWING)?.getAttribute('reference');
+			if (!ref) return;
 
-		const name = getBibleName(ref).name;
-		const title = BibleAddendums.getTitle(name);
+			const name = getBibleName(ref).name;
+			const title = BibleAddendums.getTitle(name);
 
-		gospelIntros.forEach(gi => {
-			gi.children.toArray().forEach(elem => {
+			intro.children.toArray().forEach(elem => {
 				elem.innerHTML = elem.innerHTML.replace(/\[AUTHOR\]/g, title[elem.id]);
 			});
 		});

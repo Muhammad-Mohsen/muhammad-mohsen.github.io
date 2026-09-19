@@ -46,6 +46,7 @@
 	--accent-fg: #fff;
 	--brdr: #c7c7c7;
 	--accent-red: #eb5757;
+	--accent-yellow: #fac600;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
