@@ -3,7 +3,7 @@ import { LS, XML, HTTP, IS_DEBUG } from '../core/util.js';
 export const Repository = (() => {
 
 	const UPDATES_URL = 'https://muhammad-mohsen.github.io/buku-bacaan-koptik/web/assets/documents/system/updates.json';
-	const EXTERNAL_DOCS = 'https://muhammad-mohsen.github.io/buku-bacaan-koptik/web/assets/documents/';
+	const EXTERNAL_DOCS = 'https://ortodokskoptik.id/data/baptism/include/';
 	const INTERNAL_DOCS = 'assets/documents/';
 
 	const DEFAULT_UPDATES = `{ "docs": {}, "menu": "" }`;
